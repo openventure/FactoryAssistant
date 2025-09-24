@@ -1,0 +1,187 @@
+﻿from itertools import count
+import time
+import debugpy
+import sys
+import os
+import streamlit as st
+import json
+import pandas as pd
+import plotly.express as px
+from datetime import datetime
+
+DEBUG_MODE = os.getenv("DEBUG_MODE", "False").lower() == "true"
+print("hey!....")
+if DEBUG_MODE:
+    try:
+        import debugpy
+        debugpy.listen(("localhost", 5678))
+        print("🔍 Debugger in attesa di connessione....")
+        debugpy.wait_for_client()
+        print("✅ Debugger connesso, avvio Streamlit!")
+    except RuntimeError as ex:
+        print("✅ Debugger error, maybe yet called listen: ")
+
+
+from assistente_produzione.modules.request_processing.AssistantLib import handle_request, write_text_to_json
+
+def doLayout(data):
+    try:
+        message = data.get("message", "")
+        if "text" in data:
+            text = data.get("text", "")
+            st.write(text)
+            data = {"Feedback": "True"}
+            
+        elif "Feedback" not in data:
+            if "message" not in data:
+                graphic_displayed = True
+                after_done = True  # Attiviamo la flag per il messaggio successivo
+
+                # 🔹 2. Estrai le sezioni principali del JSON
+                user_request = data.get("user_request", "Richiesta non disponibile")
+                report_title = data.get("report_title", "Titolo non disponibile")
+                summary = data.get("summary", "Nessun riassunto disponibile")
+                table_data = data.get("table_data", [])
+                conclusions = data.get("conclusions", "Nessuna conclusione disponibile")
+
+                # 🔹 3. Visualizza il report
+                with placeholder.container():
+                    
+                    st.write("⌨️ Premi Ctrl+I per avviare la registrazione...")
+                    st.subheader(f"📌 {report_title}")
+                    st.write(f"🔎 **Analisi:** {summary}")
+
+                    if table_data:
+                        df = pd.DataFrame(table_data)
+                        st.subheader("📋 Dati Tabellari")
+                        if 'laboratorydata_ptr_id' in df.columns:
+                           df.drop('laboratorydata_ptr_id', axis=1, inplace=True)
+                        st.dataframe(df)
+                    
+            
+                        numeric_columns = df.select_dtypes(include=['number']).columns
+                        if len(numeric_columns) > 0 and len(df) > 1:
+                            colonne_numeriche = df.select_dtypes(include=['number']).columns.tolist()
+                            colonne_categoriche = df.select_dtypes(include=['object', 'category']).columns.tolist()
+                            header_temporali = ['Data','data','Anno', 'anno','Mese', 'mese', 'Giorno', 'giorno']
+                            colonne_datetime = df.select_dtypes(include=['datetime']).columns.tolist()
+                            colonne_header = [col for col in header_temporali if col in df.columns]
+                            colonne_date = list(set(colonne_datetime + colonne_header))
+                            # una colonna potrebbe essere in entrambe le liste
+                            colonne_numeriche = [c for c in colonne_numeriche if c not in colonne_date]
+                            st.subheader("📈 Visualizzazione Grafica")
+                            if len(colonne_numeriche) >= 1 and len(colonne_date) == 1:
+                                # Grafico a linee
+                                df_sorted = df.sort_values(by=colonne_date[0])
+                                fig = px.line(df, df_sorted[colonne_date[0]], df_sorted[colonne_numeriche[0]])
+                                fig.update_traces(mode='lines+markers', marker=dict(size=6))
+                            elif len(colonne_numeriche) == 1 and len(colonne_categoriche) >= 1:
+                                # Grafico a barre
+                                fig = px.bar(df, x=df[colonne_categoriche[0]], y=df[colonne_numeriche[0]])
+                            elif len(colonne_numeriche) >= 2 and len(colonne_categoriche) >= 1:
+                                # Grafico a dispersione
+                                df_sorted = df.sort_values(by=colonne_categoriche[0])
+                                fig = px.line(df, x=colonne_categoriche[0], y=colonne_numeriche)
+                                fig.update_traces(mode='lines+markers', marker=dict(size=6))
+                            elif len(colonne_numeriche) == 2:
+                                # Grafico a dispersione
+                                fig = px.scatter(df, x=df[colonne_numeriche[0]], y=df[colonne_numeriche[1]])
+                            else:
+                                fig = px.bar(df, x=df.columns[0], y=numeric_columns[1], text_auto=True)
+                                #fig = px.pie(df, names=colonne_categoriche[0], values=colonne_numeriche[0])
+
+                            st.plotly_chart(fig)
+                        else:
+                            st.warning("⚠️ Nessun dato numerico disponibile per il grafico.")
+                    else:
+                        st.warning("⚠️ Nessun dato tabellare disponibile.")
+
+                    st.subheader("📌 Conclusioni")
+                    st.write(conclusions)
+            else:
+                # 🔹 Normalmente, svuotiamo la dashboard e mostriamo i messaggi
+                with placeholder:
+                    st.write(message)
+            
+
+    except Exception as e:
+        placeholder.empty()
+        placeholder.error(f"❌ Errore nel caricamento dei dati: {e}")
+        time.sleep(5)
+
+
+if 'conversation' not in st.session_state:
+    st.session_state.conversation = []
+if 'selected_response' not in st.session_state:
+    st.session_state.selected_response = None
+
+json_path = "data.json"
+if 'input_counter' not in st.session_state:
+    st.session_state.input_counter = 0
+
+# Usa una chiave dinamica basata sul contatore
+nuova_richiesta = st.text_input(
+    "Nuova richiesta all'assistente:", 
+    key=f"input_request_{st.session_state.input_counter}"
+)
+col1, col2 = st.columns([0.6, 2.4])
+
+with col1:
+    st.header("🗒️ Storico richieste")
+    for idx, item in enumerate(st.session_state.conversation):
+        label = f"{idx+1}. [{item['timestamp']}] {item['request']}"
+        if st.button(label, key=f"request_{idx}"):
+            st.session_state.selected_response = idx
+
+with col2:
+    st.header("📊 Dettaglio Risposta")
+    placeholder = st.empty()
+    if st.session_state.selected_response is not None:
+        if st.session_state.selected_response >= 0:
+            # Sto visualizzando una richiesta dallo storico
+            selected_item = st.session_state.conversation[st.session_state.selected_response]
+    
+            # La risposta può essere stringa JSON o già oggetto dict
+            if isinstance(selected_item['response'], str):
+                try:
+                    data = json.loads(selected_item['response'])
+                except Exception:
+                    st.warning("⚠️ Errore nel caricamento della risposta JSON.")
+                    data = {}
+            else:
+                data = selected_item['response']
+        else:
+            # Sto visualizzando l’ultima nuova risposta salvata in data.json
+            with open("data.json", "r", encoding="utf-8") as f:
+                data = json.load(f)
+        doLayout(data)
+        
+
+st.divider()
+
+
+# Inizializza anche la variabile di stato per evitare loop
+if 'last_request_processed' not in st.session_state:
+    st.session_state.last_request_processed = None
+
+if nuova_richiesta and nuova_richiesta != st.session_state.last_request_processed:
+    placeholder.write("⏳ Elaborazione in corso...")
+    write_text_to_json(nuova_richiesta)
+    risposta = handle_request(nuova_richiesta)
+
+    # Salva la richiesta come già processata
+    st.session_state.last_request_processed = nuova_richiesta
+
+    # Aggiungi la risposta alla conversazione
+    #st.session_state.conversation.append({'request': nuova_richiesta, 'response': risposta})
+    data = json.load(open("data.json", "r", encoding="utf-8"))
+    timestamp = datetime.now().strftime("%H:%M:%S")
+    st.session_state.conversation.append({
+        'request': nuova_richiesta,
+        'response': data,
+        'timestamp': timestamp
+    })
+    st.session_state.selected_response = -1 #len(st.session_state.conversation) - 1
+   # Incrementa il contatore per forzare la ricreazione del widget
+    st.session_state.input_counter += 1
+    st.rerun(scope="app")

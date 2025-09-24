@@ -1,0 +1,1 @@
+# Analizza i dati ricevuti
