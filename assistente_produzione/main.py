@@ -1,19 +1,18 @@
 ﻿#Punto di ingresso principale
 import time
-import openai
 from modules.speech_to_text.speech import ascolta_comando, registra_audio, trascrivi_audio, COMANDO_TRIGGER
 from modules.request_processing.AssistantLib import handle_request, write_message_to_json, write_text_to_json
 import keyboard 
 import json
 import datetime
+from uuid import uuid4
 
 
 def main():
     #write_message_to_json("🔊 Assistente in attesa di un comando...")
 
-    # Creazione di un thread una sola volta all'inizio della sessione
-    thread = openai.beta.threads.create()
-    thread_id = thread.id
+    # ID conversazione locale per mantenere il contesto lato applicazione
+    thread_id = f"conv_{uuid4()}"
     json_path = "data.json"
     while True:
         #write_message_to_json("⌨️ Premi Ctrl+I per avviare la registrazione...")
