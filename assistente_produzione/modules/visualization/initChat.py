@@ -8,6 +8,8 @@ import json
 import pandas as pd
 import plotly.express as px
 from datetime import datetime
+from openai import OpenAI
+import hashlib
 
 DEBUG_MODE = os.getenv("DEBUG_MODE", "False").lower() == "true"
 print("hey!....")
@@ -23,6 +25,27 @@ if DEBUG_MODE:
 
 
 from assistente_produzione.modules.request_processing.AssistantLib import handle_request, write_text_to_json
+
+
+def transcribe_streamlit_audio(audio_file):
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        st.error("❌ OPENAI_API_KEY non configurata: impossibile trascrivere il vocale.")
+        return None
+
+    try:
+        client = OpenAI(api_key=api_key)
+        audio_file.seek(0)
+        transcription = client.audio.transcriptions.create(
+            model="whisper-1",
+            file=("streamlit_audio.wav", audio_file.getvalue(), audio_file.type or "audio/wav"),
+            response_format="text",
+            language="it"
+        )
+        return transcription.strip() if isinstance(transcription, str) else str(transcription).strip()
+    except Exception as e:
+        st.error(f"❌ Errore durante la trascrizione vocale: {e}")
+        return None
 
 def doLayout(data):
     try:
@@ -119,10 +142,31 @@ json_path = "data.json"
 if 'input_counter' not in st.session_state:
     st.session_state.input_counter = 0
 
+# Microfono nella chat: registra dal browser e precompila il testo trascritto
+audio_input = st.audio_input("🎤 Registra richiesta vocale")
+if 'last_audio_hash' not in st.session_state:
+    st.session_state.last_audio_hash = None
+if 'prefilled_request' not in st.session_state:
+    st.session_state.prefilled_request = ""
+
+if audio_input is not None:
+    audio_bytes = audio_input.getvalue()
+    current_hash = hashlib.sha256(audio_bytes).hexdigest()
+    if current_hash != st.session_state.last_audio_hash:
+        with st.spinner("⏳ Trascrizione vocale in corso..."):
+            testo_vocale = transcribe_streamlit_audio(audio_input)
+        if testo_vocale:
+            st.success("✅ Trascrizione completata")
+            st.session_state.prefilled_request = testo_vocale
+            st.session_state.last_audio_hash = current_hash
+            st.session_state.input_counter += 1
+            st.rerun(scope="app")
+
 # Usa una chiave dinamica basata sul contatore
 nuova_richiesta = st.text_input(
-    "Nuova richiesta all'assistente:", 
-    key=f"input_request_{st.session_state.input_counter}"
+    "Nuova richiesta all'assistente:",
+    key=f"input_request_{st.session_state.input_counter}",
+    value=st.session_state.prefilled_request
 )
 col1, col2 = st.columns([0.6, 2.4])
 
@@ -171,6 +215,7 @@ if nuova_richiesta and nuova_richiesta != st.session_state.last_request_processe
 
     # Salva la richiesta come già processata
     st.session_state.last_request_processed = nuova_richiesta
+    st.session_state.prefilled_request = ""
 
     # Aggiungi la risposta alla conversazione
     #st.session_state.conversation.append({'request': nuova_richiesta, 'response': risposta})
