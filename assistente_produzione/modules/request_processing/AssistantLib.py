@@ -1,4 +1,5 @@
 ﻿import openai
+from openai import OpenAI
 import os
 from assistente_produzione.modules.request_processing.MaketheQuery import execute_sql_query  # Import della funzione per eseguire query
 from assistente_produzione.modules.visualization.test_ui import datamanger_assistant  # Import della funzione per eseguire query
@@ -9,16 +10,25 @@ import datetime
 import pytz
 import re
 import shutil
-import tiktoken 
+import tiktoken
+from pathlib import Path
 
 # Definisci il fuso orario italiano
 ITALIAN_TZ = pytz.timezone("Europe/Rome")
 # Recupera la chiave API dalla variabile d'ambiente
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 openai.api_key = OPENAI_API_KEY
+client = OpenAI(api_key=OPENAI_API_KEY)
+MODEL_NAME = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+KNOWLEDGE_FILE = Path(__file__).resolve().parents[2] / "knowledge" / "production_assistant_knowledge.md"
+_CONVERSATIONS = {}
 
-# ID dell'assistente già creato
-ASSISTANT_ID = "asst_HU8nHRJeOTlGMglSlByTwV0a" #"asst_AGnvzJdTlvtHtjyMaMEAPock" #<--fatto con mini | fatto con gpt-4o--> "asst_HU8nHRJeOTlGMglSlByTwV0a"  # Sostituisci con il tuo ID se diverso
+
+def load_knowledge_instructions():
+    if KNOWLEDGE_FILE.exists():
+        return KNOWLEDGE_FILE.read_text(encoding="utf-8")
+    return "Sei un assistente per analisi dati produzione. Rispondi in JSON."
+
 # Funzione per calcolare i token di un oggetto Python serializzato in JSON
 def replace_table_data_in_message(last_message, query_result):
     import re
@@ -162,180 +172,138 @@ def write_completejsonresult(json_string, file):
         
     except Exception as e:
            return f"Errore nella trascrizione del JSON: {str(e)}"
-def get_last_assistant_message(thread_id):
-    messages = openai.beta.threads.messages.list(thread_id=thread_id)
-    return messages.data[0] if messages.data else None
+def extract_response_text(response):
+    if hasattr(response, "output_text") and response.output_text:
+        return response.output_text
+
+    chunks = []
+    for item in getattr(response, "output", []) or []:
+        if getattr(item, "type", None) == "message":
+            for content in getattr(item, "content", []) or []:
+                text_value = getattr(content, "text", None)
+                if isinstance(text_value, str):
+                    chunks.append(text_value)
+                elif hasattr(text_value, "value"):
+                    chunks.append(text_value.value)
+    return "\n".join(chunks).strip()
+
+
+def get_tool_calls(response):
+    calls = []
+    for item in getattr(response, "output", []) or []:
+        if getattr(item, "type", None) == "function_call":
+            calls.append(item)
+    return calls
+
+
+def build_tools_schema():
+    return [
+        {
+            "type": "function",
+            "name": "execute_sql_query",
+            "description": "Esegue una query SQL e restituisce i risultati.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "query_sql": {
+                        "type": "string",
+                        "description": "Query SQL da eseguire",
+                    }
+                },
+                "required": ["query_sql"],
+            },
+        }
+    ]
+
+
 def handle_request(user_input, thread_id=None):
-    """
-    Invia una richiesta all'assistente e gestisce eventuali azioni richieste.
-    """
+    """Gestisce una richiesta utente usando Responses API + tool calling."""
+    conversation_id = thread_id or "default"
     try:
-        assistant = openai.beta.assistants.retrieve(ASSISTANT_ID)
+        instructions = load_knowledge_instructions()
+        history = _CONVERSATIONS.setdefault(conversation_id, [])
+        history.append({"role": "user", "content": user_input})
 
-        # Se non esiste un thread, creane uno nuovo (SOLO ALLA PRIMA CHIAMATA)
-        if thread_id is None:
-            thread = openai.beta.threads.create()
-            thread_id = thread.id  # Salva l'ID del thread per le chiamate successive
-
-        # Aggiungi un messaggio al thread esistente
-        message = openai.beta.threads.messages.create(
-            thread_id=thread_id,
-            role="user",
-            content=user_input
+        response = client.responses.create(
+            model=MODEL_NAME,
+            instructions=instructions,
+            input=history,
+            tools=build_tools_schema(),
+            tool_choice="auto",
         )
 
-        # Esegue il run della conversazione
-        run = openai.beta.threads.runs.create(
-            thread_id=thread_id,
-            assistant_id=assistant.id,
-            tool_choice="auto"  # 🔥 Indica all'assistente di usare il tool automaticamente
-        )
+        max_tool_rounds = 5
+        rounds = 0
+        while rounds < max_tool_rounds:
+            rounds += 1
+            tool_calls = get_tool_calls(response)
+            if not tool_calls:
+                break
 
-        # Attendi il completamento dell'elaborazione con timeout
-        max_wait_time = 60  # Secondi massimi di attesa
-        wait_time = 0
-        exit_by_error = False
-        while wait_time < max_wait_time:
-            run_status = openai.beta.threads.runs.retrieve(thread_id=thread_id, run_id=run.id)
-            print(f"Stato attuale: {run_status.status}")  # Debugging
+            tool_outputs = []
+            for tool_call in tool_calls:
+                if tool_call.name != "execute_sql_query":
+                    continue
 
-            if run_status.status == "completed":
-                last_message = get_last_assistant_message(thread_id)
-                write_completejsonresult(f"{last_message.content[0].text.value.strip()}")
-                #write_message_to_json( f"{last_message.content[0].text.value.strip()}")
-                #exit_by_error = True
-                return f"Messaggio: Il processo è terminato con stato {run_status.status}. Dettagli: {last_message.content[0].text.value.strip()}"
-            elif run_status.status in ["failed", "expired", "cancelled"]:
-                messages = openai.beta.threads.messages.list(thread_id=thread_id)
-                for msg in messages.data:
-                    print(f"🔹 Messaggio ricevuto dall'assistente: {msg.role} - {msg.content}")
-                error_details = run_status.incomplete_details if hasattr(run_status, "incomplete_details") else "Nessun dettaglio disponibile"
-                print("⚠️ Errore rilevato, avvio di un nuovo thread...")
-                new_thread = openai.beta.threads.create()
-                thread_id = new_thread.id
-                write_message_to_json( f"Errore: Il processo è terminato con stato {run_status.status}. Dettagli: {error_details}")
-                return f"Errore: Il processo è terminato con stato {run_status.status}. Dettagli: {error_details}"
-                
-            elif run_status.status == "requires_action":
-                # Controlla l'azione richiesta
-                if hasattr(run_status, "required_action"):
-                    print("⚠️ Azione richiesta (struttura oggetto):", run_status.required_action)  # Debug dettagliato
+                arguments = json.loads(tool_call.arguments or "{}")
+                query_sql = arguments.get("query_sql", "")
+                query_result = execute_sql_query(query_sql)
 
-                    # Estrai manualmente i dati
-                    tool_calls = run_status.required_action.submit_tool_outputs.tool_calls
-                    for tool_call in tool_calls:
-                        print(f"🔹 Tool chiamato: {tool_call.function.name}")
-                        print(f"🔹 ID chiamata: {tool_call.id}")
-                        print(f"🔹 Parametri ricevuti: {tool_call.function.arguments}")
-
-                        if tool_call.function.name == "execute_sql_query":
-                            try:
-                                query_sql = json.loads(tool_call.function.arguments)["query_sql"]
-                                print(f"🔹 Query estratta: {query_sql}")
-
-                                # Esegui la query SQL
-                                query_result = execute_sql_query(query_sql)
-                                if not query_result:
-                                    write_message_to_json("⚠️ Nessun dato disponibile per la query richiesta.")
-                                    return "⚠️ Nessun dato disponibile per la query richiesta."
-                                # 🔹 Limita il numero di risultati a 50 per sicurezza
-                                # 🔹 Calcolo token e truncatura dinamica se serve
-                                max_tokens = 10000
-                                truncated_result = query_result[:]
-
-                                while count_tokens(truncated_result) > max_tokens and len(truncated_result) > 1:
-                                    truncated_result = truncated_result[:-1]  # Rimuove una riga alla volta
-
-                                # Verifica se è stato troncato
-                                is_partial = len(truncated_result) < len(query_result)
-                                query_result = truncated_result  # Sostituisce con la versione tagliata
-
-                                # 🔹 Costruisci il messaggio informativo
-                                partial_message = (
-                                    "⚠️ Nota: I risultati mostrati sono parziali. Per una lista completa, restringi la ricerca."
-                                    if is_partial else
-                                    "⚠️ Nota: I risultati mostrati sono completi"
-                                )
-
-                                print(f"📊 Risultato ottenuto dalla query ({len(query_result)} righe, {count_tokens(query_result)} token):")
-
-                                #check and log payload
-                                tool_payload = {
-                                        "user_request": user_input,
-                                        "report_title": "Analisi dei dati richiesti",
-                                        "summary": "Ecco una sintesi dei dati recuperati dalla query eseguita.",
-                                        "table_data": query_result,
-                                        "conclusions": "Analizza questi dati e fornisci una valutazione dei trend e delle informazioni più rilevanti.",
-                                        "format": "JSON"
-                                    }
-                                json_payload = log_json_output(tool_payload)  # Validazione e logging
-
-                                response = openai.beta.threads.runs.submit_tool_outputs(
-                                    thread_id=thread_id,
-                                    run_id=run.id,
-                                    tool_outputs=[{
-                                        "tool_call_id": tool_call.id,
-                                        "output": json_payload
-                                    }]
-                                )
-
-
-                                # 🕒 Attendi che il run venga completato prima di procedere
-                                max_wait_time = 60  # Tempo massimo di attesa in secondi
-                                wait_time = 0
-                                while wait_time < max_wait_time:
-                                    run_status = openai.beta.threads.runs.retrieve(thread_id=thread_id, run_id=run.id)
-                                    print(f"🔄 Stato attuale dopo l'invio del risultato: {run_status.status}")
-
-                                    if run_status.status == "completed":
-                                        break  # Il run è completato, possiamo proseguire
-                                    elif run_status.status in ["failed", "expired", "cancelled"]:
-                                        print("⚠️ Errore rilevato dopo la richiesta del tool, avvio di un nuovo thread...")
-                                        messages = openai.beta.threads.messages.list(thread_id=thread_id)
-                                        for msg in messages.data:
-                                            print(f"🔹 Messaggio ricevuto dall'assistente: {msg.role} - {msg.content}")
-                                        error_details = run_status.incomplete_details if hasattr(run_status, "incomplete_details") else "Nessun dettaglio disponibile"
-                                        new_thread = openai.beta.threads.create()
-                                        thread_id = new_thread.id
-                                        write_message_to_json( f"Errore: Il processo è terminato dopo la richiesta del tool con stato {run_status.status}. Dettagli: {error_details}")
-                                        return f"Errore: Il processo è terminato con stato {run_status.status}. Dettagli: {error_details}"
-                                        
-                                    time.sleep(2)  # Aspetta 2 secondi prima di riprovare
-                                    wait_time += 2
-
-                                # ✅ Ora possiamo recuperare la risposta finale dell'assistente
-                                messages = openai.beta.threads.messages.list(thread_id=thread_id)
-                                last_message = messages.data[0].content  # Prende l'ultimo messaggio dell'assistente
-                                
-                                new_json_output = replace_table_data_in_message(last_message, query_result)
-
-                                
-                                write_completejsonresult(new_json_output, "data.json")
-                                return last_message
-
-
-                            except Exception as e:
-                                error_msg = f"❌ Errore durante l'esecuzione della query: {str(e)}"
-                                print(error_msg)
-                                write_message_to_json(error_msg)
-                                return error_msg
-
+                if not query_result:
+                    output_payload = {
+                        "message": "⚠️ Nessun dato disponibile per la query richiesta."
+                    }
+                    output_json = json.dumps(output_payload, ensure_ascii=False)
                 else:
-                    return "Errore: L'assistente è in stato 'requires_action' ma non ha fornito dettagli."
+                    max_tokens = 10000
+                    truncated_result = query_result[:]
+                    while count_tokens(truncated_result) > max_tokens and len(truncated_result) > 1:
+                        truncated_result = truncated_result[:-1]
 
+                    is_partial = len(truncated_result) < len(query_result)
+                    partial_message = (
+                        "⚠️ Nota: I risultati mostrati sono parziali. Per una lista completa, restringi la ricerca."
+                        if is_partial
+                        else "⚠️ Nota: I risultati mostrati sono completi"
+                    )
 
-            time.sleep(2)  # Aspetta 2 secondi prima di riprovare
-            wait_time += 2
+                    tool_payload = {
+                        "user_request": user_input,
+                        "report_title": "Analisi dei dati richiesti",
+                        "summary": "Ecco una sintesi dei dati recuperati dalla query eseguita.",
+                        "table_data": truncated_result,
+                        "conclusions": "Analizza questi dati e fornisci una valutazione dei trend e delle informazioni più rilevanti.",
+                        "note": partial_message,
+                        "format": "JSON",
+                    }
+                    output_json = log_json_output(tool_payload)
 
-        # Se supera il timeout
-        if wait_time >= max_wait_time:
-            return "Errore: Timeout raggiunto in attesa della risposta dall'assistente."
-        
+                tool_outputs.append(
+                    {
+                        "type": "function_call_output",
+                        "call_id": tool_call.call_id,
+                        "output": output_json,
+                    }
+                )
 
-        #if(exit_by_error):
-        #   write_message_to_json(last_message[0].text.value)
-        return "DO Nothing!"
+            if not tool_outputs:
+                break
+
+            response = client.responses.create(
+                model=MODEL_NAME,
+                instructions=instructions,
+                previous_response_id=response.id,
+                input=tool_outputs,
+            )
+
+        final_text = extract_response_text(response)
+        if not final_text:
+            final_text = json.dumps({"message": "Nessuna risposta generata"}, ensure_ascii=False)
+
+        history.append({"role": "assistant", "content": final_text})
+        write_completejsonresult(final_text, "data.json")
+        return final_text
     except Exception as e:
-        return f"Errore: {str(e)}"
-
-
+        error_msg = f"Errore: {str(e)}"
+        write_message_to_json(error_msg)
+        return error_msg
