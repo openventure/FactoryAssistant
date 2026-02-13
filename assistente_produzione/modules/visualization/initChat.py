@@ -25,6 +25,28 @@ if DEBUG_MODE:
 
 
 from assistente_produzione.modules.request_processing.AssistantLib import handle_request, write_text_to_json
+from assistente_produzione.modules.visualization.report_contract import normalize_report_payload
+
+
+def transcribe_streamlit_audio(audio_file):
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        st.error("❌ OPENAI_API_KEY non configurata: impossibile trascrivere il vocale.")
+        return None
+
+    try:
+        client = OpenAI(api_key=api_key)
+        audio_file.seek(0)
+        transcription = client.audio.transcriptions.create(
+            model="whisper-1",
+            file=("streamlit_audio.wav", audio_file.getvalue(), audio_file.type or "audio/wav"),
+            response_format="text",
+            language="it"
+        )
+        return transcription.strip() if isinstance(transcription, str) else str(transcription).strip()
+    except Exception as e:
+        st.error(f"❌ Errore durante la trascrizione vocale: {e}")
+        return None
 
 
 def transcribe_streamlit_audio(audio_file):
@@ -60,19 +82,22 @@ def doLayout(data):
                 graphic_displayed = True
                 after_done = True  # Attiviamo la flag per il messaggio successivo
 
-                # 🔹 2. Estrai le sezioni principali del JSON
-                user_request = data.get("user_request", "Richiesta non disponibile")
-                report_title = data.get("report_title", "Titolo non disponibile")
-                summary = data.get("summary", "Nessun riassunto disponibile")
-                table_data = data.get("table_data", [])
-                conclusions = data.get("conclusions", "Nessuna conclusione disponibile")
+                parse_result = normalize_report_payload(data)
+                report = parse_result.report
 
                 # 🔹 3. Visualizza il report
                 with placeholder.container():
-                    
+                    if not parse_result.is_valid:
+                        st.warning("⚠️ Risposta parzialmente non conforme allo schema: applicati fallback automatici.")
+                        with st.expander("Dettaglio errori schema"):
+                            st.write(parse_result.errors)
+
                     st.write("⌨️ Premi Ctrl+I per avviare la registrazione...")
-                    st.subheader(f"📌 {report_title}")
-                    st.write(f"🔎 **Analisi:** {summary}")
+                    st.subheader(f"📌 {report.report_title}")
+                    st.write(f"🔎 **Analisi:** {report.summary}")
+                    with st.expander("JSON risposta (debug)"):
+                        st.json(data)
+                    table_data = report.table_data
 
                     if table_data:
                         df = pd.DataFrame(table_data)
@@ -120,7 +145,7 @@ def doLayout(data):
                         st.warning("⚠️ Nessun dato tabellare disponibile.")
 
                     st.subheader("📌 Conclusioni")
-                    st.write(conclusions)
+                    st.write(report.conclusions)
             else:
                 # 🔹 Normalmente, svuotiamo la dashboard e mostriamo i messaggi
                 with placeholder:
