@@ -29,16 +29,8 @@ if __name__ == "__main__":
             timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
             log_file.write(timestamp + ": " + user_query + "\n")
         write_text_to_json(f"📝 Testo trascritto: {user_query}")
-        last_data = None  # Per confrontare i cambiamenti nel file JSON
-        while True:
-            with open("data.json", "r", encoding="utf-8") as f:
-                data = json.load(f)
-            if "Feedback" in data:
-                break
-            if data == last_data:
-                time.sleep(1)
-                continue
-            last_data = data
+        # In modalità CLI non serve attendere un "Feedback" dal front-end Streamlit.
+        # Quel valore non viene scritto su data.json e il loop resta bloccato.
         response = al.handle_request(user_query, thread_id=thread_id)
 
         print("\n🔹 Risposta dell'assistente:")
