@@ -10,6 +10,7 @@ import plotly.express as px
 from datetime import datetime
 from openai import OpenAI
 import hashlib
+import openai
 
 DEBUG_MODE = os.getenv("DEBUG_MODE", "False").lower() == "true"
 print("hey!....")
@@ -26,27 +27,6 @@ if DEBUG_MODE:
 
 from assistente_produzione.modules.request_processing.AssistantLib import handle_request, write_text_to_json
 from assistente_produzione.modules.visualization.report_contract import normalize_report_payload
-
-
-def transcribe_streamlit_audio(audio_file):
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        st.error("❌ OPENAI_API_KEY non configurata: impossibile trascrivere il vocale.")
-        return None
-
-    try:
-        client = OpenAI(api_key=api_key)
-        audio_file.seek(0)
-        transcription = client.audio.transcriptions.create(
-            model="whisper-1",
-            file=("streamlit_audio.wav", audio_file.getvalue(), audio_file.type or "audio/wav"),
-            response_format="text",
-            language="it"
-        )
-        return transcription.strip() if isinstance(transcription, str) else str(transcription).strip()
-    except Exception as e:
-        st.error(f"❌ Errore durante la trascrizione vocale: {e}")
-        return None
 
 
 def transcribe_streamlit_audio(audio_file):
@@ -162,6 +142,8 @@ if 'conversation' not in st.session_state:
     st.session_state.conversation = []
 if 'selected_response' not in st.session_state:
     st.session_state.selected_response = None
+if 'assistant_thread_id' not in st.session_state:
+    st.session_state.assistant_thread_id = openai.beta.threads.create().id
 
 json_path = "data.json"
 if 'input_counter' not in st.session_state:
@@ -197,6 +179,16 @@ col1, col2 = st.columns([0.6, 2.4])
 
 with col1:
     st.header("🗒️ Storico richieste")
+    if st.button("🆕 Nuova conversazione", use_container_width=True):
+        st.session_state.conversation = []
+        st.session_state.selected_response = None
+        st.session_state.last_request_processed = None
+        st.session_state.prefilled_request = ""
+        st.session_state.last_audio_hash = None
+        st.session_state.input_counter += 1
+        st.session_state.assistant_thread_id = openai.beta.threads.create().id
+        st.rerun(scope="app")
+
     for idx, item in enumerate(st.session_state.conversation):
         label = f"{idx+1}. [{item['timestamp']}] {item['request']}"
         if st.button(label, key=f"request_{idx}"):
@@ -236,7 +228,7 @@ if 'last_request_processed' not in st.session_state:
 if nuova_richiesta and nuova_richiesta != st.session_state.last_request_processed:
     placeholder.write("⏳ Elaborazione in corso...")
     write_text_to_json(nuova_richiesta)
-    risposta = handle_request(nuova_richiesta)
+    risposta = handle_request(nuova_richiesta, thread_id=st.session_state.assistant_thread_id)
 
     # Salva la richiesta come già processata
     st.session_state.last_request_processed = nuova_richiesta
