@@ -8,6 +8,8 @@ import json
 import pandas as pd
 import plotly.express as px
 from datetime import datetime
+from openai import OpenAI
+import hashlib
 
 DEBUG_MODE = os.getenv("DEBUG_MODE", "False").lower() == "true"
 print("hey!....")
@@ -23,6 +25,28 @@ if DEBUG_MODE:
 
 
 from assistente_produzione.modules.request_processing.AssistantLib import handle_request, write_text_to_json
+from assistente_produzione.modules.visualization.report_contract import normalize_report_payload
+
+
+def transcribe_streamlit_audio(audio_file):
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        st.error("❌ OPENAI_API_KEY non configurata: impossibile trascrivere il vocale.")
+        return None
+
+    try:
+        client = OpenAI(api_key=api_key)
+        audio_file.seek(0)
+        transcription = client.audio.transcriptions.create(
+            model="whisper-1",
+            file=("streamlit_audio.wav", audio_file.getvalue(), audio_file.type or "audio/wav"),
+            response_format="text",
+            language="it"
+        )
+        return transcription.strip() if isinstance(transcription, str) else str(transcription).strip()
+    except Exception as e:
+        st.error(f"❌ Errore durante la trascrizione vocale: {e}")
+        return None
 
 def doLayout(data):
     try:
@@ -37,19 +61,22 @@ def doLayout(data):
                 graphic_displayed = True
                 after_done = True  # Attiviamo la flag per il messaggio successivo
 
-                # 🔹 2. Estrai le sezioni principali del JSON
-                user_request = data.get("user_request", "Richiesta non disponibile")
-                report_title = data.get("report_title", "Titolo non disponibile")
-                summary = data.get("summary", "Nessun riassunto disponibile")
-                table_data = data.get("table_data", [])
-                conclusions = data.get("conclusions", "Nessuna conclusione disponibile")
+                parse_result = normalize_report_payload(data)
+                report = parse_result.report
 
                 # 🔹 3. Visualizza il report
                 with placeholder.container():
-                    
+                    if not parse_result.is_valid:
+                        st.warning("⚠️ Risposta parzialmente non conforme allo schema: applicati fallback automatici.")
+                        with st.expander("Dettaglio errori schema"):
+                            st.write(parse_result.errors)
+
                     st.write("⌨️ Premi Ctrl+I per avviare la registrazione...")
-                    st.subheader(f"📌 {report_title}")
-                    st.write(f"🔎 **Analisi:** {summary}")
+                    st.subheader(f"📌 {report.report_title}")
+                    st.write(f"🔎 **Analisi:** {report.summary}")
+                    with st.expander("JSON risposta (debug)"):
+                        st.json(data)
+                    table_data = report.table_data
 
                     if table_data:
                         df = pd.DataFrame(table_data)
@@ -97,7 +124,7 @@ def doLayout(data):
                         st.warning("⚠️ Nessun dato tabellare disponibile.")
 
                     st.subheader("📌 Conclusioni")
-                    st.write(conclusions)
+                    st.write(report.conclusions)
             else:
                 # 🔹 Normalmente, svuotiamo la dashboard e mostriamo i messaggi
                 with placeholder:
@@ -119,10 +146,31 @@ json_path = "data.json"
 if 'input_counter' not in st.session_state:
     st.session_state.input_counter = 0
 
+# Microfono nella chat: registra dal browser e precompila il testo trascritto
+audio_input = st.audio_input("🎤 Registra richiesta vocale")
+if 'last_audio_hash' not in st.session_state:
+    st.session_state.last_audio_hash = None
+if 'prefilled_request' not in st.session_state:
+    st.session_state.prefilled_request = ""
+
+if audio_input is not None:
+    audio_bytes = audio_input.getvalue()
+    current_hash = hashlib.sha256(audio_bytes).hexdigest()
+    if current_hash != st.session_state.last_audio_hash:
+        with st.spinner("⏳ Trascrizione vocale in corso..."):
+            testo_vocale = transcribe_streamlit_audio(audio_input)
+        if testo_vocale:
+            st.success("✅ Trascrizione completata")
+            st.session_state.prefilled_request = testo_vocale
+            st.session_state.last_audio_hash = current_hash
+            st.session_state.input_counter += 1
+            st.rerun(scope="app")
+
 # Usa una chiave dinamica basata sul contatore
 nuova_richiesta = st.text_input(
-    "Nuova richiesta all'assistente:", 
-    key=f"input_request_{st.session_state.input_counter}"
+    "Nuova richiesta all'assistente:",
+    key=f"input_request_{st.session_state.input_counter}",
+    value=st.session_state.prefilled_request
 )
 col1, col2 = st.columns([0.6, 2.4])
 
@@ -171,6 +219,7 @@ if nuova_richiesta and nuova_richiesta != st.session_state.last_request_processe
 
     # Salva la richiesta come già processata
     st.session_state.last_request_processed = nuova_richiesta
+    st.session_state.prefilled_request = ""
 
     # Aggiungi la risposta alla conversazione
     #st.session_state.conversation.append({'request': nuova_richiesta, 'response': risposta})
