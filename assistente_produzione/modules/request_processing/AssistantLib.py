@@ -202,6 +202,7 @@ def build_tools_schema():
             "type": "function",
             "name": "execute_sql_query",
             "description": "Esegue una query SQL e restituisce i risultati.",
+            "strict": False,
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -224,11 +225,12 @@ def handle_request(user_input, thread_id=None):
         history = _CONVERSATIONS.setdefault(conversation_id, [])
         history.append({"role": "user", "content": user_input})
 
+        tools_schema = build_tools_schema()
         response = client.responses.create(
             model=MODEL_NAME,
             instructions=instructions,
             input=history,
-            tools=build_tools_schema(),
+            tools=tools_schema,
             tool_choice="auto",
         )
 
@@ -294,6 +296,8 @@ def handle_request(user_input, thread_id=None):
                 instructions=instructions,
                 previous_response_id=response.id,
                 input=tool_outputs,
+                tools=tools_schema,
+                tool_choice="auto",
             )
 
         final_text = extract_response_text(response)
