@@ -1,5 +1,4 @@
-﻿import openai
-import os
+﻿import os
 from modules.request_processing.MaketheQuery import execute_sql_query  # Import della funzione per eseguire query
 from modules.visualization.test_ui import datamanger_assistant  # Import della funzione per eseguire query
 from modules.request_processing.AssistantLib import handle_request, write_message_to_json, write_text_to_json
@@ -10,14 +9,14 @@ import decimal
 import datetime
 import pytz
 import re
+from uuid import uuid4
 
 
 if __name__ == "__main__":
     print("💬 Assistente attivo. Scrivi la tua richiesta o digita 'stop' per terminare.\n")
     
-    # 🔹 Crea un thread una sola volta all'inizio della sessione
-    thread = openai.beta.threads.create()
-    thread_id = thread.id
+    # 🔹 Crea un ID conversazione una sola volta all'inizio della sessione
+    thread_id = f"conv_{uuid4()}"
 
     while True:
         user_query = input("📝 Inserisci la richiesta: ")
