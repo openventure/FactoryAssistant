@@ -32,7 +32,7 @@ def load_knowledge_instructions():
 def get_token_encoding(model_name="gpt-4o"):
     try:
         return tiktoken.encoding_for_model(model_name)
-    except KeyError:
+    except Exception:
         return tiktoken.get_encoding("cl100k_base")
 
 
