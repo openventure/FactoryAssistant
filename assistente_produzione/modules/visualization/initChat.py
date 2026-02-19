@@ -4,6 +4,7 @@ import debugpy
 import sys
 import os
 import streamlit as st
+from uuid import uuid4
 import json
 import pandas as pd
 import plotly.express as px
@@ -143,7 +144,7 @@ if 'conversation' not in st.session_state:
 if 'selected_response' not in st.session_state:
     st.session_state.selected_response = None
 if 'assistant_thread_id' not in st.session_state:
-    st.session_state.assistant_thread_id = openai.beta.threads.create().id
+    st.session_state.assistant_thread_id = f"conv_{uuid4()}"
 
 json_path = "data.json"
 if 'input_counter' not in st.session_state:
@@ -186,7 +187,7 @@ with col1:
         st.session_state.prefilled_request = ""
         st.session_state.last_audio_hash = None
         st.session_state.input_counter += 1
-        st.session_state.assistant_thread_id = openai.beta.threads.create().id
+        st.session_state.assistant_thread_id = f"conv_{uuid4()}"
         st.rerun(scope="app")
 
     for idx, item in enumerate(st.session_state.conversation):
