@@ -193,7 +193,7 @@ def write_completejsonresult(json_string, file):
         print(f"Il file è stato copiato in: {new_file_path}")
         
     except Exception as e:
-           return f"Errore nella trascrizione del JSON: {str(e)}"
+           raise ValueError(f"Errore nella trascrizione del JSON: {str(e)}")
 def extract_response_text(response):
     if hasattr(response, "output_text") and response.output_text:
         return response.output_text
@@ -327,7 +327,10 @@ def handle_request(user_input, thread_id=None):
             final_text = json.dumps({"message": "Nessuna risposta generata"}, ensure_ascii=False)
 
         history.append({"role": "assistant", "content": final_text})
-        write_completejsonresult(final_text, "data.json")
+        try:
+            write_completejsonresult(final_text, "data.json")
+        except ValueError:
+            write_message_to_json(final_text)
         return final_text
     except Exception as e:
         error_msg = f"Errore: {str(e)}"
