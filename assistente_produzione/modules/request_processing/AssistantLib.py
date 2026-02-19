@@ -22,12 +22,34 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 MODEL_NAME = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
 KNOWLEDGE_FILE = Path(__file__).resolve().parents[2] / "knowledge" / "production_assistant_knowledge.md"
 _CONVERSATIONS = {}
+_TOKENIZER_FALLBACK_LOGGED_MODELS = set()
+TOKENIZER_LOG_FILE = Path(__file__).resolve().parents[2] / "logs" / "tokenizer_fallback.log"
 
 
 def load_knowledge_instructions():
     if KNOWLEDGE_FILE.exists():
         return KNOWLEDGE_FILE.read_text(encoding="utf-8")
     return "Sei un assistente per analisi dati produzione. Rispondi in JSON."
+
+
+
+def log_tokenizer_fallback(model_name, error):
+    TOKENIZER_LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open(TOKENIZER_LOG_FILE, "a", encoding="utf-8") as log_file:
+        log_file.write(
+            f"{timestamp} | fallback=cl100k_base | model={model_name} | error={error}\n"
+        )
+
+def get_token_encoding(model_name="gpt-4o"):
+    try:
+        return tiktoken.encoding_for_model(model_name)
+    except Exception as error:
+        if model_name not in _TOKENIZER_FALLBACK_LOGGED_MODELS:
+            log_tokenizer_fallback(model_name, str(error))
+            _TOKENIZER_FALLBACK_LOGGED_MODELS.add(model_name)
+        return tiktoken.get_encoding("cl100k_base")
+
 
 # Funzione per calcolare i token di un oggetto Python serializzato in JSON
 def replace_table_data_in_message(last_message, query_result):
@@ -60,7 +82,7 @@ def replace_table_data_in_message(last_message, query_result):
     return new_json_output
 
 def count_tokens(obj, model="gpt-4o"):
-    encoding = tiktoken.encoding_for_model(model)
+    encoding = get_token_encoding(model)
     json_string = json.dumps(obj, default=convert_decimal, ensure_ascii=False)
     return len(encoding.encode(json_string)) 
 
@@ -70,7 +92,7 @@ def log_json_output(tool_output_dict, max_preview_chars=1000):
         json_string = json.dumps(tool_output_dict, indent=2, ensure_ascii=False, default=convert_decimal)
 
         # ✅ 2. Calcola i token del contenuto (modello GPT-4o)
-        encoding = tiktoken.encoding_for_model("gpt-4o")
+        encoding = get_token_encoding(MODEL_NAME)
         token_count = len(encoding.encode(json_string))
 
         print("✅ JSON valido da inviare all'assistente")
