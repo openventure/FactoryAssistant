@@ -163,18 +163,51 @@ def fix_trailing_comma(json_string):
     json_string = re.sub(r",\s*([\]}])", r"\1", json_string)
     return json_string.strip()
 
+def extract_json_from_text(raw_text):
+    """Estrae JSON valido anche da output markdown (```json ... ```) o testo misto."""
+    if not isinstance(raw_text, str):
+        raise ValueError("Il contenuto da parsare non è una stringa")
+
+    candidate = raw_text.strip()
+    if not candidate:
+        raise ValueError("Contenuto vuoto")
+
+    # 1) Caso ideale: il testo è già JSON puro
+    try:
+        return json.loads(candidate)
+    except json.JSONDecodeError:
+        pass
+
+    # 2) JSON dentro blocco markdown ```json ... ```
+    fenced_match = re.search(r"```(?:json)?\s*(.*?)\s*```", candidate, re.DOTALL | re.IGNORECASE)
+    if fenced_match:
+        fenced_content = fenced_match.group(1).strip()
+        fenced_content = fix_trailing_comma(remove_json_comments(fenced_content))
+        try:
+            return json.loads(fenced_content)
+        except json.JSONDecodeError:
+            pass
+
+    # 3) Estrazione best-effort del primo oggetto/array JSON dentro testo misto
+    decoder = json.JSONDecoder()
+    for token in ("{", "["):
+        start = candidate.find(token)
+        if start >= 0:
+            try:
+                parsed, _ = decoder.raw_decode(candidate[start:])
+                return parsed
+            except json.JSONDecodeError:
+                continue
+
+    raise ValueError("Nessun JSON valido trovato nell'output del modello")
+
+
 def write_completejsonresult(json_string, file):
     try:
         print(f"✅ JSON start saving on '{file}'")
-        
-        # Pulizia della stringa JSON
-        clean_json_string = remove_json_comments(json_string)
-        fixed_json = fix_trailing_comma(clean_json_string)
-        try:
-            # 🔹 2. Converte la stringa JSON in un oggetto Python
-            json_data = json.loads(fixed_json)
-        except json.JSONDecodeError as e:
-            raise ValueError(f"Errore nella conversione del JSON: {e}")
+
+        # Estrae JSON robustamente anche da output markdown/testo misto
+        json_data = extract_json_from_text(json_string)
 
         # 🔹 3. Salva il JSON in un file
         file_path = file
@@ -191,7 +224,7 @@ def write_completejsonresult(json_string, file):
         # Copia il file file_path in new_file_path
         shutil.copy(file_path, new_file_path)
         print(f"Il file è stato copiato in: {new_file_path}")
-        
+
     except Exception as e:
            raise ValueError(f"Errore nella trascrizione del JSON: {str(e)}")
 def extract_response_text(response):
