@@ -1,5 +1,6 @@
 import tiktoken
 import json
+import os
 query_result = """
 [{'CODICE': '003507', 'DESCRIZIONE': '60X120 RTT TRAV. AMBRA MEMENTO', 'GIACENZA': Decimal('4.32'), 'MIN': 516, 'QuantitaDaProdurre': Decimal('511.68')},
 {'CODICE': '003991', 'DESCRIZIONE': '60X120 RTT BEIGE STONE COLL.', 'GIACENZA': Decimal('201.60'), 'MIN': 516, 'QuantitaDaProdurre': Decimal('314.40')},
@@ -77,6 +78,8 @@ query_result = """
 {'CODICE': 'FSN081', 'DESCRIZIONE': '60X120 RTT FUSION BIANCO R11', 'GIACENZA': Decimal('4053.60'), 'MIN': 516, 'QuantitaDaProdurre': Decimal('0.00')},
 {'CODICE': 'PSG071A', 'DESCRIZIONE': 'PRESTIGE TRAMA BLANC 60X120 RTT cl35', 'GIACENZA': Decimal('1473.12'), 'MIN': 516, 'QuantitaDaProdurre': Decimal('0.00')}]
 """
-encoding = tiktoken.encoding_for_model("gpt-4o")
+MODEL_NAME = os.getenv("OPENAI_MODEL", "gpt-4.1")
+
+encoding = tiktoken.encoding_for_model(MODEL_NAME)
 tokens = encoding.encode(json.dumps(query_result))
 print("Token totali nel payload:", len(tokens))

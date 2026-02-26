@@ -13,10 +13,11 @@ import datetime
 
 # Configurazione dei database
 #SQLSERVER_URL = "mssql+pyodbc://dbadmin:dbadmin@(local)/EasyPlanner?driver=ODBC+Driver+17+for+SQL+Server"
+SQL_HOSTNAME = "(local)"
 # Configurazione dei database
 SQLSERVER_CONNECTION_STRING = (
     "Driver={SQL Server};"
-    "Server=(local);"
+    f"Server={SQL_HOSTNAME};"
     "Database=EasyPlanner;"
     "Trusted_Connection=no;"
     "UID=dbadmin;"
@@ -26,7 +27,7 @@ SQLSERVER_CONNECTION_STRING = (
 # Configurazione dei database
 SQLSERVER_CONNECTION_STRING2 = (
     "Driver={SQL Server};"
-    "Server=(local);"
+    f"Server={SQL_HOSTNAME};"
     "Database=Produzione;"
     "Trusted_Connection=no;"
     "UID=dbadmin;"

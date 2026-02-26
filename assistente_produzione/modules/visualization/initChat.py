@@ -12,15 +12,18 @@ from datetime import datetime
 from openai import OpenAI
 import hashlib
 import openai
-
-DEBUG_MODE = os.getenv("DEBUG_MODE", "False").lower() == "true"
-print("hey!....")
+PYTHONPATH = os.getenv("PYTHONPATH", "")
+OPENAI_API_KEY= os.getenv("OPENAI_API_KEY", "")
+DEBUG_MODE = os.getenv("DEBUG_MODE", "True").lower() == "true"
+print(f"hey!....{DEBUG_MODE} - {PYTHONPATH} ->apikey={OPENAI_API_KEY}")
 if DEBUG_MODE:
+    
     try:
         import debugpy
-        debugpy.listen(("localhost", 5678))
+        debugpy.listen(("0.0.0.0", 5678))
         print("🔍 Debugger in attesa di connessione....")
         debugpy.wait_for_client()
+        
         print("✅ Debugger connesso, avvio Streamlit!")
     except RuntimeError as ex:
         print("✅ Debugger error, maybe yet called listen: ")
