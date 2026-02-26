@@ -56,13 +56,15 @@ def transcribe_streamlit_audio(audio_file):
 def doLayout(data):
     try:
         message = data.get("message", "")
+        report_keys = {"table_data", "report_title", "summary", "conclusions", "user_request", "format"}
+        has_report_content = any(key in data for key in report_keys)
         if "text" in data:
             text = data.get("text", "")
             st.write(text)
             data = {"Feedback": "True"}
             
         elif "Feedback" not in data:
-            if "message" not in data:
+            if has_report_content:
                 graphic_displayed = True
                 after_done = True  # Attiviamo la flag per il messaggio successivo
 
@@ -79,6 +81,8 @@ def doLayout(data):
                     st.write("⌨️ Premi Ctrl+I per avviare la registrazione...")
                     st.subheader(f"📌 {report.report_title}")
                     st.write(f"🔎 **Analisi:** {report.summary}")
+                    if message:
+                        st.info(message)
                     with st.expander("JSON risposta (debug)"):
                         st.json(data)
                     table_data = report.table_data
