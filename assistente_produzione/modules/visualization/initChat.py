@@ -157,12 +157,54 @@ json_path = "data.json"
 if 'input_counter' not in st.session_state:
     st.session_state.input_counter = 0
 
-# Microfono nella chat: registra dal browser e precompila il testo trascritto
-audio_input = st.audio_input("🎤 Registra richiesta vocale")
+# Header controlli fisso: nuova conversazione + input vocal/text
+st.markdown(
+    """
+    <style>
+    div[data-testid="stVerticalBlock"]:has(#sticky-controls-marker) {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background: var(--background-color);
+        padding: 0.6rem 0 0.8rem 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 if 'last_audio_hash' not in st.session_state:
     st.session_state.last_audio_hash = None
 if 'prefilled_request' not in st.session_state:
     st.session_state.prefilled_request = ""
+
+with st.container():
+    st.markdown('<div id="sticky-controls-marker"></div>', unsafe_allow_html=True)
+    ctrl_col1, ctrl_col2, ctrl_col3 = st.columns([0.9, 1.2, 2.2])
+
+    with ctrl_col1:
+        if st.button("🆕 Nuova conversazione", use_container_width=True):
+            st.session_state.conversation = []
+            st.session_state.selected_response = None
+            st.session_state.last_request_processed = None
+            st.session_state.prefilled_request = ""
+            st.session_state.last_audio_hash = None
+            st.session_state.input_counter += 1
+            st.session_state.assistant_thread_id = f"conv_{uuid4()}"
+            st.rerun(scope="app")
+
+    with ctrl_col2:
+        # Microfono nella chat: registra dal browser e precompila il testo trascritto
+        audio_input = st.audio_input("🎤 Registra richiesta vocale")
+
+    with ctrl_col3:
+        # Usa una chiave dinamica basata sul contatore
+        nuova_richiesta = st.text_input(
+            "Nuova richiesta all'assistente:",
+            key=f"input_request_{st.session_state.input_counter}",
+            value=st.session_state.prefilled_request
+        )
 
 if audio_input is not None:
     audio_bytes = audio_input.getvalue()
@@ -177,25 +219,11 @@ if audio_input is not None:
             st.session_state.input_counter += 1
             st.rerun(scope="app")
 
-# Usa una chiave dinamica basata sul contatore
-nuova_richiesta = st.text_input(
-    "Nuova richiesta all'assistente:",
-    key=f"input_request_{st.session_state.input_counter}",
-    value=st.session_state.prefilled_request
-)
+
 col1, col2 = st.columns([0.6, 2.4])
 
 with col1:
     st.header("🗒️ Storico richieste")
-    if st.button("🆕 Nuova conversazione", use_container_width=True):
-        st.session_state.conversation = []
-        st.session_state.selected_response = None
-        st.session_state.last_request_processed = None
-        st.session_state.prefilled_request = ""
-        st.session_state.last_audio_hash = None
-        st.session_state.input_counter += 1
-        st.session_state.assistant_thread_id = f"conv_{uuid4()}"
-        st.rerun(scope="app")
 
     for idx, item in enumerate(st.session_state.conversation):
         label = f"{idx+1}. [{item['timestamp']}] {item['request']}"
