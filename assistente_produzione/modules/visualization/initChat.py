@@ -29,7 +29,7 @@ if DEBUG_MODE:
         print("✅ Debugger error, maybe yet called listen: ")
 
 
-from assistente_produzione.modules.request_processing.AssistantLib import handle_request, write_text_to_json
+from assistente_produzione.modules.request_processing.AssistantLib import handle_request, write_text_to_json, log_conversation_event
 from assistente_produzione.modules.visualization.report_contract import normalize_report_payload
 
 
@@ -152,6 +152,7 @@ if 'selected_response' not in st.session_state:
     st.session_state.selected_response = None
 if 'assistant_thread_id' not in st.session_state:
     st.session_state.assistant_thread_id = f"conv_{uuid4()}"
+    log_conversation_event(st.session_state.assistant_thread_id, "conversation_started", payload={"source": "initChat_session_init"})
 
 json_path = "data.json"
 if 'input_counter' not in st.session_state:
@@ -192,6 +193,7 @@ with st.container():
             st.session_state.last_audio_hash = None
             st.session_state.input_counter += 1
             st.session_state.assistant_thread_id = f"conv_{uuid4()}"
+            log_conversation_event(st.session_state.assistant_thread_id, "conversation_started", payload={"source": "initChat_new_conversation_button"})
             st.rerun(scope="app")
 
     with ctrl_col2:
@@ -263,6 +265,11 @@ if 'last_request_processed' not in st.session_state:
 
 if nuova_richiesta and nuova_richiesta != st.session_state.last_request_processed:
     placeholder.write("⏳ Elaborazione in corso...")
+    log_conversation_event(
+        st.session_state.assistant_thread_id,
+        "user_input_submitted",
+        payload={"request_text": nuova_richiesta}
+    )
     write_text_to_json(nuova_richiesta)
     risposta = handle_request(nuova_richiesta, thread_id=st.session_state.assistant_thread_id)
 
