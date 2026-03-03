@@ -304,9 +304,27 @@ def handle_request(user_input, thread_id=None):
 
                 arguments = json.loads(tool_call.arguments or "{}")
                 query_sql = arguments.get("query_sql", "")
-                query_result = execute_sql_query(query_sql)
 
-                if not query_result:
+                query_error = None
+                try:
+                    query_result = execute_sql_query(query_sql)
+                except Exception as exc:
+                    query_result = None
+                    query_error = str(exc)
+
+                if query_error:
+                    output_payload = {
+                        "message": "SQL_ERROR",
+                        "error": query_error,
+                        "failed_query": query_sql,
+                        "hint": (
+                            "Correggi la query e richiama execute_sql_query. "
+                            "Usa una sola SELECT per tool-call; in SQL Server evita STRING_AGG(DISTINCT ...), "
+                            "usa invece SELECT DISTINCT in subquery/CTE e poi STRING_AGG."
+                        ),
+                    }
+                    output_json = json.dumps(output_payload, ensure_ascii=False)
+                elif not query_result:
                     output_payload = {
                         "message": "⚠️ Nessun dato disponibile per la query richiesta."
                     }

@@ -32,6 +32,7 @@ Se l'utente non specifica chiaramente questi attributi, ricavali dalle tabelle c
 - Usa `CAST(colonna AS TYPE)` per conversioni.
 - Per limitare risultati usa `TOP(N)`.
 - Nei calcoli con divisioni controlla sempre denominatore diverso da zero.
+- In SQL Server, `STRING_AGG` **non supporta `DISTINCT` direttamente**: per deduplicare usa una subquery/CTE con `SELECT DISTINCT` e poi applica `STRING_AGG` sul risultato deduplicato.
 
 ### Tabella `PALLET_PRODUCTION`
 > Importante: non fare JOIN con altre tabelle perché è in un altro database SQL Server.
