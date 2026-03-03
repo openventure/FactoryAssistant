@@ -62,6 +62,13 @@ def split_sql_statements(query_sql: str):
     """Divide gli statement SQL su ';' ignorando segmenti vuoti."""
     return [stmt.strip() for stmt in query_sql.split(';') if stmt.strip()]
 
+
+def qualify_unqualified_table(query_sql: str, table_name: str, schema: str = "dbo"):
+    """Qualifica solo riferimenti non già qualificati (evita `dbo.dbo.tabella`)."""
+    pattern = rf"(?<![.\]])\b{re.escape(table_name)}\b"
+    return re.sub(pattern, f"{schema}.{table_name}", query_sql)
+
+
 def execute_sql_query(query_sql: str):
     statements = split_sql_statements(query_sql)
     if len(statements) != 1:
@@ -85,7 +92,7 @@ def execute_sql_query(query_sql: str):
         engine = engine_sqlite        
     elif table_name in ["PALLET_PRODUCTION"]:
         engine = engine_sqlserver2
-        query_sql = query_sql.replace(table_name, f"dbo.{table_name}")
+        query_sql = qualify_unqualified_table(query_sql, table_name, schema="dbo")
     else:
         engine = engine_sqlserver
     
