@@ -1,4 +1,4 @@
-﻿import openai
+import openai
 import os
 import re
 from sqlalchemy import create_engine, text
@@ -47,14 +47,84 @@ engine_sqlserver2 = create_engine(connection_string2)
 
 engine_sqlite = create_engine(SQLITE_URL)
 
+
+class QueryRejectedError(Exception):
+    """Errore esplicito per query rigettate da regole applicative."""
+
+    def __init__(self, reason: str, details=None):
+        self.reason = reason
+        self.details = details or {}
+        super().__init__(f"QUERY_REJECTED reason={reason} details={self.details}")
+
 def extract_table_name(query_sql: str):
-    """Estrae il nome della tabella dalla query SQL."""
-    match = re.search(r'FROM\s+([\w\d_]+)', query_sql, re.IGNORECASE)
-    if match:
-        return match.group(1)
-    return None
+    """Estrae il nome tabella dal primo FROM, supportando schema (es. dbo.PALLET_PRODUCTION)."""
+    match = re.search(r'FROM\s+((?:\[[^\]]+\]|[\w]+)(?:\.(?:\[[^\]]+\]|[\w]+))?)', query_sql, re.IGNORECASE)
+    if not match:
+        return None
+
+    full_name = match.group(1).strip()
+    parts = [p.strip('[] ') for p in full_name.split('.') if p.strip()]
+    return parts[-1] if parts else None
+
+
+def split_sql_statements(query_sql: str):
+    """Divide gli statement SQL su ';' ignorando i ';' dentro stringhe SQL."""
+    statements = []
+    current = []
+    in_single_quote = False
+    i = 0
+    while i < len(query_sql):
+        ch = query_sql[i]
+
+        if ch == "'":
+            # Gestione escape SQL: '' dentro stringa
+            if in_single_quote and i + 1 < len(query_sql) and query_sql[i + 1] == "'":
+                current.append("''")
+                i += 2
+                continue
+            in_single_quote = not in_single_quote
+            current.append(ch)
+            i += 1
+            continue
+
+        if ch == ';' and not in_single_quote:
+            statement = ''.join(current).strip()
+            if statement:
+                statements.append(statement)
+            current = []
+            i += 1
+            continue
+
+        current.append(ch)
+        i += 1
+
+    tail = ''.join(current).strip()
+    if tail:
+        statements.append(tail)
+
+    return statements
+
+
+def qualify_unqualified_table(query_sql: str, table_name: str, schema: str = "dbo"):
+    """Qualifica solo riferimenti non già qualificati (evita `dbo.dbo.tabella`)."""
+    pattern = rf"(?<![.\]])\b{re.escape(table_name)}\b"
+    return re.sub(pattern, f"{schema}.{table_name}", query_sql)
+
 
 def execute_sql_query(query_sql: str):
+    statements = split_sql_statements(query_sql)
+    if len(statements) != 1:
+        raise QueryRejectedError(
+            reason="multiple_statements_detected",
+            details={
+                "statement_count": len(statements),
+                "statement_previews": [s[:120] for s in statements[:3]],
+                "hint": "Usa una sola SELECT per tool-call (CTE/subquery) oppure effettua più tool-call separate.",
+            },
+        )
+
+    query_sql = statements[0]
+
     with open("query.log", "a", encoding="utf-8") as log_file:
         timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
         log_file.write(timestamp + ": " + query_sql + "\n")
@@ -68,7 +138,7 @@ def execute_sql_query(query_sql: str):
         engine = engine_sqlite        
     elif table_name in ["PALLET_PRODUCTION"]:
         engine = engine_sqlserver2
-        query_sql = query_sql.replace(table_name, f"dbo.{table_name}")
+        query_sql = qualify_unqualified_table(query_sql, table_name, schema="dbo")
     else:
         engine = engine_sqlserver
     
