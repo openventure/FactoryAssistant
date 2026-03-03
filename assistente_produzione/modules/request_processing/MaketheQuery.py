@@ -1,4 +1,4 @@
-﻿import openai
+import openai
 import os
 import re
 from sqlalchemy import create_engine, text
@@ -48,13 +48,30 @@ engine_sqlserver2 = create_engine(connection_string2)
 engine_sqlite = create_engine(SQLITE_URL)
 
 def extract_table_name(query_sql: str):
-    """Estrae il nome della tabella dalla query SQL."""
-    match = re.search(r'FROM\s+([\w\d_]+)', query_sql, re.IGNORECASE)
-    if match:
-        return match.group(1)
-    return None
+    """Estrae il nome tabella dal primo FROM, supportando schema (es. dbo.PALLET_PRODUCTION)."""
+    match = re.search(r'FROM\s+((?:\[[^\]]+\]|[\w]+)(?:\.(?:\[[^\]]+\]|[\w]+))?)', query_sql, re.IGNORECASE)
+    if not match:
+        return None
+
+    full_name = match.group(1).strip()
+    parts = [p.strip('[] ') for p in full_name.split('.') if p.strip()]
+    return parts[-1] if parts else None
+
+
+def split_sql_statements(query_sql: str):
+    """Divide gli statement SQL su ';' ignorando segmenti vuoti."""
+    return [stmt.strip() for stmt in query_sql.split(';') if stmt.strip()]
 
 def execute_sql_query(query_sql: str):
+    statements = split_sql_statements(query_sql)
+    if len(statements) != 1:
+        raise ValueError(
+            "La funzione execute_sql_query supporta una sola query per chiamata. "
+            "Unisci la logica in un'unica SELECT (CTE/subquery) oppure effettua più tool-call."
+        )
+
+    query_sql = statements[0]
+
     with open("query.log", "a", encoding="utf-8") as log_file:
         timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
         log_file.write(timestamp + ": " + query_sql + "\n")

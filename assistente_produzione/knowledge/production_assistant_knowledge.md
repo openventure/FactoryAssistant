@@ -128,6 +128,7 @@ Vincolo business:
 ## Politica tool e output
 - Se richiesta dati: genera SQL valido sul database corretto.
 - Non eseguire SQL direttamente nel modello: usare il tool applicativo `execute_sql_query`.
+- Ogni chiamata a `execute_sql_query` deve contenere **una sola query SQL** (singolo statement). Se servono più risultati, usa CTE/subquery in un unico statement oppure effettua più tool-call separate.
 - Dopo i risultati, produrre risposta finale strutturata.
 
 Formato output richiesto:
