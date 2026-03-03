@@ -15,6 +15,15 @@ L'azienda usa due database:
 1. SQL Server (produzione e disponibilità prodotti)
 2. SQLite (dati laboratorio e assorbimento)
 
+## Linee guida operative per interpretare le richieste
+Quando analizzi una richiesta dati, individua e restituisci sempre (se disponibili) le caratteristiche fondamentali dell'articolo:
+- **Formato**
+- **Tono**
+- **Quantità (in m²)**
+- **Famiglia/Serie**
+
+Se l'utente non specifica chiaramente questi attributi, ricavali dalle tabelle corrette e rendi esplicite le assunzioni fatte nella risposta.
+
 ---
 
 ## Regole SQL Server
@@ -50,6 +59,10 @@ Colonne principali:
 Note operative:
 - Alcune colonne numeriche sono `VARCHAR`, fare cast esplicito (es. `SUM(CAST(NrScatoleSuPallet AS INT))`).
 - Prima scelta indicata da `LGV_numeroScelta = 'I'`.
+- Ogni riga rappresenta un **pallet**.
+- La quantità è generalmente da esprimere in **m²** usando `CALC_MQ`.
+- Il formato va ricostruito con `FORMATO_LARG` x `FORMATO_LUNG` sp `FORMATO_SPES`.
+- Il tono articolo è in `LGV_tono`.
 
 ### Tabella `dashboard_productavailability`
 Disponibilità prodotto per tono e deposito.
@@ -64,6 +77,10 @@ Note operative:
 - `FORMATO` può contenere testo aggiuntivo (RTT, L/R...).
 - Se non specificato diversamente, usare formato tipo `60X60`.
 - Usare `LIKE '%contenuto%'` sul formato.
+- `FORMATO` è codificato e include informazioni essenziali (es. `60x60 RTT` = formato 60x60, spessore standard implicito circa 0,8-1,1 cm, prodotto rettificato).
+- Il tono è codificato in `COD_VAR` (es. `1.024.6` corrisponde a tono `R024`).
+- Le colonne `GIACENZA` e `QTA_DA_CONSEGNARE` vanno lette con l'unità in `UM`; quando `UM = m2` i valori sono in metri quadri.
+- Attributi serie disponibili sia descrittivi (`SERIE`) sia codificati (`COD_SERIE`).
 
 ### Tabella `pa_ff_code`
 Riga aggregata per articolo con giacenza/disponibilità e previsioni 30gg.
@@ -75,6 +92,11 @@ Colonne principali:
 - `QTA_DA_CONSEGNARE`
 - `DISPONIBILITA`, `DISPONIBILITA_30`, `DISPONIBILITA_30_TREND`
 - `AVG_QTA_ORDINATA_PER_MONTH`, `AVG_SEASONAL_COMPONENT`, `PREDICTED_TREND_NEXT_MONTH`
+
+Note operative:
+- Anche qui `FORMATO` è codificato come in dashboard_productavailability.
+- Tutte le principali misure quantitative sono in **m²**: `MIN`, `PROD_BY_DAY`, `GIACENZA`, `GIACENZA_30`, `GIACENZA_30_TREND`, `QTA_DA_CONSEGNARE`, `DISPONIBILITA`, `DISPONIBILITA_30`, `DISPONIBILITA_30_TREND`, `AVG_QTA_ORDINATA_PER_MONTH`, `AVG_SEASONAL_COMPONENT`, `PREDICTED_TREND_NEXT_MONTH`.
+- L'informazione di famiglia/serie è disponibile in forma descrittiva (`SERIE`).
 
 ---
 
