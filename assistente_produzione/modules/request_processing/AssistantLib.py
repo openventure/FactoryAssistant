@@ -12,6 +12,7 @@ import re
 import shutil
 import tiktoken
 from pathlib import Path
+from uuid import uuid4
 
 # Definisci il fuso orario italiano
 ITALIAN_TZ = pytz.timezone("Europe/Rome")
@@ -24,6 +25,32 @@ KNOWLEDGE_FILE = Path(__file__).resolve().parents[2] / "knowledge" / "production
 _CONVERSATIONS = {}
 _TOKENIZER_FALLBACK_LOGGED_MODELS = set()
 TOKENIZER_LOG_FILE = Path(__file__).resolve().parents[2] / "logs" / "tokenizer_fallback.log"
+CONVERSATION_LOG_DIR = Path(__file__).resolve().parents[2] / "logs" / "conversations"
+
+
+def _safe_json_dumps(obj):
+    try:
+        return json.dumps(obj, ensure_ascii=False, default=convert_decimal)
+    except Exception:
+        return str(obj)
+
+
+def _get_response_usage(response):
+    usage = getattr(response, "usage", None) or {}
+    input_tokens = getattr(usage, "input_tokens", None) if not isinstance(usage, dict) else usage.get("input_tokens")
+    output_tokens = getattr(usage, "output_tokens", None) if not isinstance(usage, dict) else usage.get("output_tokens")
+    total_tokens = getattr(usage, "total_tokens", None) if not isinstance(usage, dict) else usage.get("total_tokens")
+    return {"input_tokens": input_tokens, "output_tokens": output_tokens, "total_tokens": total_tokens}
+
+
+def log_conversation_event(conversation_id, event, request_id=None, payload=None):
+    CONVERSATION_LOG_DIR.mkdir(parents=True, exist_ok=True)
+    log_file = CONVERSATION_LOG_DIR / f"{conversation_id}.log"
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
+    payload_text = _safe_json_dumps(payload) if payload is not None else ""
+    request_part = f" request_id={request_id}" if request_id else ""
+    with open(log_file, "a", encoding="utf-8") as f:
+        f.write(f"[{timestamp}] event={event}{request_part} payload={payload_text}\n")
 
 
 def load_knowledge_instructions():
@@ -275,12 +302,26 @@ def build_tools_schema():
 def handle_request(user_input, thread_id=None):
     """Gestisce una richiesta utente usando Responses API + tool calling."""
     conversation_id = thread_id or "default"
+    request_id = f"req_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}_{uuid4().hex[:8]}"
+    req_start = time.perf_counter()
     try:
         instructions = load_knowledge_instructions()
         history = _CONVERSATIONS.setdefault(conversation_id, [])
         history.append({"role": "user", "content": user_input})
+        estimated_input_tokens = count_tokens(history, model=MODEL_NAME)
+        log_conversation_event(
+            conversation_id,
+            "request_started",
+            request_id=request_id,
+            payload={
+                "user_input": user_input,
+                "history_len": len(history),
+                "estimated_input_tokens": estimated_input_tokens,
+            },
+        )
 
         tools_schema = build_tools_schema()
+        api_start = time.perf_counter()
         response = client.responses.create(
             model=MODEL_NAME,
             instructions=instructions,
@@ -288,12 +329,25 @@ def handle_request(user_input, thread_id=None):
             tools=tools_schema,
             tool_choice="auto",
         )
+        api_elapsed_ms = round((time.perf_counter() - api_start) * 1000, 2)
+        log_conversation_event(
+            conversation_id,
+            "responses_create_completed",
+            request_id=request_id,
+            payload={"elapsed_ms": api_elapsed_ms, "usage": _get_response_usage(response)},
+        )
 
         max_tool_rounds = 5
         rounds = 0
         while rounds < max_tool_rounds:
             rounds += 1
             tool_calls = get_tool_calls(response)
+            log_conversation_event(
+                conversation_id,
+                "tool_calls_detected",
+                request_id=request_id,
+                payload={"round": rounds, "count": len(tool_calls)},
+            )
             if not tool_calls:
                 break
 
@@ -304,9 +358,43 @@ def handle_request(user_input, thread_id=None):
 
                 arguments = json.loads(tool_call.arguments or "{}")
                 query_sql = arguments.get("query_sql", "")
-                query_result = execute_sql_query(query_sql)
 
-                if not query_result:
+                query_error = None
+                query_estimated_tokens = count_tokens({"query_sql": query_sql}, model=MODEL_NAME)
+                tool_start = time.perf_counter()
+                try:
+                    query_result = execute_sql_query(query_sql)
+                except Exception as exc:
+                    query_result = None
+                    query_error = str(exc)
+                tool_elapsed_ms = round((time.perf_counter() - tool_start) * 1000, 2)
+                log_conversation_event(
+                    conversation_id,
+                    "tool_execute_sql_query_completed",
+                    request_id=request_id,
+                    payload={
+                        "round": rounds,
+                        "elapsed_ms": tool_elapsed_ms,
+                        "query_estimated_tokens": query_estimated_tokens,
+                        "query_sql": query_sql,
+                        "error": query_error,
+                        "result_rows": len(query_result) if isinstance(query_result, list) else (1 if query_result else 0),
+                    },
+                )
+
+                if query_error:
+                    output_payload = {
+                        "message": "SQL_ERROR",
+                        "error": query_error,
+                        "failed_query": query_sql,
+                        "hint": (
+                            "Correggi la query e richiama execute_sql_query. "
+                            "Usa una sola SELECT per tool-call; in SQL Server evita STRING_AGG(DISTINCT ...), "
+                            "usa invece SELECT DISTINCT in subquery/CTE e poi STRING_AGG."
+                        ),
+                    }
+                    output_json = json.dumps(output_payload, ensure_ascii=False)
+                elif not query_result:
                     output_payload = {
                         "message": "⚠️ Nessun dato disponibile per la query richiesta."
                     }
@@ -335,6 +423,19 @@ def handle_request(user_input, thread_id=None):
                     }
                     output_json = log_json_output(tool_payload)
 
+                output_estimated_tokens = count_tokens({"output": output_json}, model=MODEL_NAME)
+                log_conversation_event(
+                    conversation_id,
+                    "tool_output_prepared",
+                    request_id=request_id,
+                    payload={
+                        "round": rounds,
+                        "call_id": tool_call.call_id,
+                        "output_chars": len(output_json),
+                        "output_estimated_tokens": output_estimated_tokens,
+                    },
+                )
+
                 tool_outputs.append(
                     {
                         "type": "function_call_output",
@@ -346,6 +447,7 @@ def handle_request(user_input, thread_id=None):
             if not tool_outputs:
                 break
 
+            api_start = time.perf_counter()
             response = client.responses.create(
                 model=MODEL_NAME,
                 instructions=instructions,
@@ -354,10 +456,31 @@ def handle_request(user_input, thread_id=None):
                 tools=tools_schema,
                 tool_choice="auto",
             )
+            api_elapsed_ms = round((time.perf_counter() - api_start) * 1000, 2)
+            log_conversation_event(
+                conversation_id,
+                "responses_create_after_tools_completed",
+                request_id=request_id,
+                payload={"round": rounds, "elapsed_ms": api_elapsed_ms, "usage": _get_response_usage(response)},
+            )
 
         final_text = extract_response_text(response)
         if not final_text:
             final_text = json.dumps({"message": "Nessuna risposta generata"}, ensure_ascii=False)
+
+        total_elapsed_ms = round((time.perf_counter() - req_start) * 1000, 2)
+        final_estimated_tokens = count_tokens({"final_text": final_text}, model=MODEL_NAME)
+        log_conversation_event(
+            conversation_id,
+            "request_completed",
+            request_id=request_id,
+            payload={
+                "elapsed_ms": total_elapsed_ms,
+                "final_text_chars": len(final_text),
+                "final_estimated_tokens": final_estimated_tokens,
+                "usage": _get_response_usage(response),
+            },
+        )
 
         history.append({"role": "assistant", "content": final_text})
         try:
@@ -366,6 +489,13 @@ def handle_request(user_input, thread_id=None):
             write_message_to_json(final_text)
         return final_text
     except Exception as e:
+        total_elapsed_ms = round((time.perf_counter() - req_start) * 1000, 2)
+        log_conversation_event(
+            conversation_id,
+            "request_failed",
+            request_id=request_id,
+            payload={"elapsed_ms": total_elapsed_ms, "error": str(e)},
+        )
         error_msg = f"Errore: {str(e)}"
         write_message_to_json(error_msg)
         return error_msg
