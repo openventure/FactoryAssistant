@@ -1,7 +1,7 @@
 ﻿import openai
 from openai import OpenAI
 import os
-from assistente_produzione.modules.request_processing.MaketheQuery import execute_sql_query  # Import della funzione per eseguire query
+from assistente_produzione.modules.request_processing.MaketheQuery import execute_sql_query, QueryRejectedError  # Import della funzione per eseguire query
 from assistente_produzione.modules.visualization.test_ui import datamanger_assistant  # Import della funzione per eseguire query
 import time
 import json
@@ -360,10 +360,17 @@ def handle_request(user_input, thread_id=None):
                 query_sql = arguments.get("query_sql", "")
 
                 query_error = None
+                rejection_reason = None
+                rejection_details = None
                 query_estimated_tokens = count_tokens({"query_sql": query_sql}, model=MODEL_NAME)
                 tool_start = time.perf_counter()
                 try:
                     query_result = execute_sql_query(query_sql)
+                except QueryRejectedError as exc:
+                    query_result = None
+                    query_error = str(exc)
+                    rejection_reason = exc.reason
+                    rejection_details = exc.details
                 except Exception as exc:
                     query_result = None
                     query_error = str(exc)
@@ -378,9 +385,22 @@ def handle_request(user_input, thread_id=None):
                         "query_estimated_tokens": query_estimated_tokens,
                         "query_sql": query_sql,
                         "error": query_error,
+                        "rejection_reason": rejection_reason,
+                        "rejection_details": rejection_details,
                         "result_rows": len(query_result) if isinstance(query_result, list) else (1 if query_result else 0),
                     },
                 )
+                if rejection_reason:
+                    log_conversation_event(
+                        conversation_id,
+                        "query_rejected",
+                        request_id=request_id,
+                        payload={
+                            "round": rounds,
+                            "reason": rejection_reason,
+                            "details": rejection_details,
+                        },
+                    )
 
                 if query_error:
                     output_payload = {
@@ -464,7 +484,64 @@ def handle_request(user_input, thread_id=None):
                 payload={"round": rounds, "elapsed_ms": api_elapsed_ms, "usage": _get_response_usage(response)},
             )
 
+        # Se abbiamo raggiunto il limite round e il modello continua a proporre tool-call,
+        # forziamo una risposta finale senza ulteriori tool.
+        pending_tool_calls = get_tool_calls(response)
+        if rounds >= max_tool_rounds and pending_tool_calls:
+            log_conversation_event(
+                conversation_id,
+                "max_tool_rounds_reached",
+                request_id=request_id,
+                payload={"rounds": rounds, "pending_tool_calls": len(pending_tool_calls)},
+            )
+            api_start = time.perf_counter()
+            response = client.responses.create(
+                model=MODEL_NAME,
+                instructions=instructions,
+                previous_response_id=response.id,
+                input=[
+                    {
+                        "role": "system",
+                        "content": "Interrompi ulteriori tool-call e fornisci ora la risposta finale in JSON schema usando solo i dati già disponibili.",
+                    }
+                ],
+                tools=tools_schema,
+                tool_choice="none",
+            )
+            api_elapsed_ms = round((time.perf_counter() - api_start) * 1000, 2)
+            log_conversation_event(
+                conversation_id,
+                "responses_create_forced_finalization_completed",
+                request_id=request_id,
+                payload={"elapsed_ms": api_elapsed_ms, "usage": _get_response_usage(response)},
+            )
+
         final_text = extract_response_text(response)
+        if not final_text:
+            # Fallback estremo: nuovo tentativo senza tool per evitare output vuoto.
+            api_start = time.perf_counter()
+            response = client.responses.create(
+                model=MODEL_NAME,
+                instructions=instructions,
+                previous_response_id=response.id,
+                input=[
+                    {
+                        "role": "system",
+                        "content": "Fornisci ora una risposta finale valida in JSON schema. Non chiamare tool.",
+                    }
+                ],
+                tools=tools_schema,
+                tool_choice="none",
+            )
+            api_elapsed_ms = round((time.perf_counter() - api_start) * 1000, 2)
+            log_conversation_event(
+                conversation_id,
+                "responses_create_empty_output_recovery_completed",
+                request_id=request_id,
+                payload={"elapsed_ms": api_elapsed_ms, "usage": _get_response_usage(response)},
+            )
+            final_text = extract_response_text(response)
+
         if not final_text:
             final_text = json.dumps({"message": "Nessuna risposta generata"}, ensure_ascii=False)
 
