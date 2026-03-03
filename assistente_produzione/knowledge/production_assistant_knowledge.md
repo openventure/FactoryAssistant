@@ -141,4 +141,47 @@ Formato output richiesto:
 }
 ```
 
-Non aggiungere testo fuori dal JSON finale.
+### Formato di risposta (response_format)
+- Usa sempre il parametro `response_format` per dichiarare esplicitamente il formato atteso della risposta.
+- Regola generale: rispondi sempre con `json_schema`.
+- Eccezione: se, per completare la richiesta, devi prima ricorrere al tool applicativo `execute_sql_query`, puoi usare temporaneamente `json_object` nel passaggio tecnico di tool-call; la risposta finale all'utente deve comunque tornare allo schema `json_schema`.
+- Valori ammessi:
+  - `json_schema` (default obbligatorio)
+  - `json_object` (solo eccezione tecnica durante tool-call)
+
+Esempio `response_format` predefinito (JSON Schema):
+```json
+{
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "production_report",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "user_request": {"type": "string"},
+          "report_title": {"type": "string"},
+          "summary": {"type": "string"},
+          "table_data": {
+            "type": "array",
+            "items": {"type": "object"}
+          },
+          "conclusions": {"type": "string"}
+        },
+        "required": ["user_request", "report_title", "summary", "table_data", "conclusions"],
+        "additionalProperties": false
+      }
+    }
+  }
+}
+```
+
+Esempio eccezionale `response_format` durante tool-call:
+```json
+{
+  "response_format": {
+    "type": "json_object"
+  }
+}
+```
+
