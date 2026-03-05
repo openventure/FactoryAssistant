@@ -12,6 +12,7 @@ from datetime import datetime
 from openai import OpenAI
 import hashlib
 import openai
+from pathlib import Path
 PYTHONPATH = os.getenv("PYTHONPATH", "")
 OPENAI_API_KEY= os.getenv("OPENAI_API_KEY", "")
 DEBUG_MODE = os.getenv("DEBUG_MODE", "True").lower() == "true"
@@ -31,6 +32,18 @@ if DEBUG_MODE:
 
 from assistente_produzione.modules.request_processing.AssistantLib import handle_request, write_text_to_json, log_conversation_event
 from assistente_produzione.modules.visualization.report_contract import normalize_report_payload
+
+
+def read_conversation_log_tail(conversation_id, max_lines=120):
+    log_file = Path(__file__).resolve().parents[2] / "logs" / "conversations" / f"{conversation_id}.log"
+    if not log_file.exists():
+        return None, "Nessun log disponibile per questa conversazione."
+
+    with open(log_file, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+
+    tail = lines[-max_lines:] if len(lines) > max_lines else lines
+    return log_file, "".join(tail)
 
 
 def transcribe_streamlit_audio(audio_file):
@@ -254,7 +267,21 @@ with col2:
             with open("data.json", "r", encoding="utf-8") as f:
                 data = json.load(f)
         doLayout(data)
-        
+
+    st.subheader("🧾 Log runtime conversazione")
+    with st.expander("Mostra log tecnico (eventi AI/tool)", expanded=False):
+        log_col1, log_col2 = st.columns([1, 1])
+        with log_col1:
+            max_lines = st.number_input("Righe da visualizzare", min_value=20, max_value=1000, value=120, step=20)
+        with log_col2:
+            st.caption(f"Conversation ID: {st.session_state.assistant_thread_id}")
+
+        log_path, log_tail = read_conversation_log_tail(st.session_state.assistant_thread_id, int(max_lines))
+        if log_path:
+            st.caption(f"File log: {log_path}")
+            st.text_area("Log (tail)", value=log_tail, height=260)
+        else:
+            st.info(log_tail)
 
 st.divider()
 
