@@ -32,6 +32,11 @@ if DEBUG_MODE:
 
 from assistente_produzione.modules.request_processing.AssistantLib import handle_request, write_text_to_json, log_conversation_event
 from assistente_produzione.modules.visualization.report_contract import normalize_report_payload
+from assistente_produzione.modules.visualization.gamma_client import (
+    GammaAPIError,
+    get_generation_status,
+    start_generation_and_wait,
+)
 
 
 def read_conversation_log_tail(conversation_id, max_lines=120):
@@ -65,6 +70,99 @@ def transcribe_streamlit_audio(audio_file):
     except Exception as e:
         st.error(f"❌ Errore durante la trascrizione vocale: {e}")
         return None
+
+
+def _get_report_fingerprint(report_payload):
+    try:
+        raw = json.dumps(report_payload, sort_keys=True, ensure_ascii=False, default=str)
+    except Exception:
+        raw = str(report_payload)
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:12]
+
+
+def _render_gamma_panel(report_payload):
+    st.subheader("🌐 Render su Gamma")
+
+    gamma_api_key = os.getenv("GAMMA_API_KEY", "").strip()
+    default_template_id = os.getenv("GAMMA_TEMPLATE_ID", "").strip()
+    if "gamma_template_id" not in st.session_state:
+        st.session_state.gamma_template_id = default_template_id
+
+    st.caption("Variabili richieste: GAMMA_API_KEY e GAMMA_TEMPLATE_ID")
+    template_id = st.text_input(
+        "Template ID Gamma",
+        value=st.session_state.gamma_template_id,
+        key="gamma_template_input",
+    ).strip()
+    st.session_state.gamma_template_id = template_id
+
+    if not gamma_api_key:
+        st.warning("⚠️ GAMMA_API_KEY mancante: non posso inviare il JSON a Gamma.")
+        return
+
+    report_hash = _get_report_fingerprint(report_payload)
+    state_key = f"gamma_generation_{report_hash}"
+
+    col_generate, col_refresh = st.columns([1.2, 1])
+    with col_generate:
+        generate_clicked = st.button(
+            "🚀 Genera pagina su Gamma",
+            key=f"gamma_generate_{report_hash}",
+            use_container_width=True,
+            disabled=not template_id,
+        )
+
+    with col_refresh:
+        refresh_clicked = st.button(
+            "🔄 Aggiorna stato",
+            key=f"gamma_refresh_{report_hash}",
+            use_container_width=True,
+            disabled=state_key not in st.session_state,
+        )
+
+    if generate_clicked:
+        try:
+            with st.spinner("Invio del JSON a Gamma e attesa rendering..."):
+                generation_data = start_generation_and_wait(
+                    report_payload,
+                    api_key=gamma_api_key,
+                    template_id=template_id,
+                    timeout_sec=150,
+                    poll_seconds=4,
+                )
+            st.session_state[state_key] = generation_data
+        except GammaAPIError as ex:
+            st.error(f"❌ Errore Gamma: {ex}")
+
+    if refresh_clicked:
+        current = st.session_state.get(state_key)
+        generation_id = current.get("generation_id") if isinstance(current, dict) else None
+        if generation_id:
+            try:
+                refreshed = get_generation_status(generation_id, api_key=gamma_api_key)
+                refreshed["creation"] = current.get("creation")
+                st.session_state[state_key] = refreshed
+            except GammaAPIError as ex:
+                st.error(f"❌ Errore aggiornamento Gamma: {ex}")
+
+    generation_data = st.session_state.get(state_key)
+    if not generation_data:
+        return
+
+    status = generation_data.get("status", "unknown")
+    generation_id = generation_data.get("generation_id", "-")
+    st.info(f"Stato Gamma: {status} | generationId: {generation_id}")
+
+    gamma_url = generation_data.get("gamma_url")
+    output_file_url = generation_data.get("output_file_url")
+
+    if gamma_url:
+        st.link_button("Apri pagina renderizzata", gamma_url)
+    if output_file_url:
+        st.link_button("Scarica export", output_file_url)
+
+    with st.expander("Debug risposta Gamma", expanded=False):
+        st.json(generation_data.get("raw", {}))
 
 def doLayout(data):
     try:
@@ -147,6 +245,8 @@ def doLayout(data):
 
                     st.subheader("📌 Conclusioni")
                     st.write(report.conclusions)
+                    st.divider()
+                    _render_gamma_panel(data)
             else:
                 # 🔹 Normalmente, svuotiamo la dashboard e mostriamo i messaggi
                 with placeholder:
@@ -317,3 +417,4 @@ if nuova_richiesta and nuova_richiesta != st.session_state.last_request_processe
    # Incrementa il contatore per forzare la ricreazione del widget
     st.session_state.input_counter += 1
     st.rerun(scope="app")
+

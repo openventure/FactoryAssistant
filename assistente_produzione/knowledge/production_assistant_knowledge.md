@@ -120,6 +120,8 @@ Dati assorbimento collegati 1:1 con `app_laboratorydata`:
 Regole di join:
 - join su `app_laboratorydata.id = app_assorbimento.laboratorydata_ptr_id`.
 
+Vincolo tecnologico:
+- per tutte le richieste relative agli assorbimenti è obbligatorio usare il linguaggio sql compatibile con SQLite e le sopra descritte Regole SQLite
 Vincolo business:
 - su richieste di assorbimento non riportare ID,
 - riportare invece `CodeArt` e `Description`.
