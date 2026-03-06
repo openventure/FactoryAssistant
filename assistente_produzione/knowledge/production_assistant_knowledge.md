@@ -21,7 +21,7 @@ Quando analizzi una richiesta dati, individua e restituisci sempre (se disponibi
 - **Tono**
 - **Quantità (in m²)**
 - **Famiglia/Serie**
-
+Il tono in particolare indica il lotto di produzione, in effetti ad una nuova produzione dello stesso articolo viene associato un nuovo tono con la parte numerica crescente per esempio R464 e successivamente per lo stesso prodotto R465, in questo modo si distiguono produzioni divere nel tempo per lo stesso articolo.
 Se l'utente non specifica chiaramente questi attributi, ricavali dalle tabelle corrette e rendi esplicite le assunzioni fatte nella risposta.
 
 ---

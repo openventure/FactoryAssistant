@@ -20,7 +20,7 @@ ITALIAN_TZ = pytz.timezone("Europe/Rome")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 openai.api_key = OPENAI_API_KEY
 client = OpenAI(api_key=OPENAI_API_KEY)
-MODEL_NAME = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+MODEL_NAME = os.getenv("OPENAI_MODEL", "gpt-5-mini")
 KNOWLEDGE_FILE = Path(__file__).resolve().parents[2] / "knowledge" / "production_assistant_knowledge.md"
 _CONVERSATIONS = {}
 _TOKENIZER_FALLBACK_LOGGED_MODELS = set()
