@@ -15,7 +15,7 @@ def main():
     sys.argv = [
         "streamlit",
         "run",
-        "modules/visualization/initChat.py",
+        "modules/visualization/demo2Chat.py",
         "--server.fileWatcherType",
         "none",
     ]

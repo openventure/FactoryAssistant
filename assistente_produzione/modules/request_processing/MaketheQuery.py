@@ -47,6 +47,8 @@ engine_sqlserver2 = create_engine(connection_string2)
 
 engine_sqlite = create_engine(SQLITE_URL)
 
+MAX_QUERY_ROWS = 10000
+
 
 class QueryRejectedError(Exception):
     """Errore esplicito per query rigettate da regole applicative."""
@@ -144,17 +146,24 @@ def execute_sql_query(query_sql: str):
     
     with engine.connect() as connection:
         result = connection.execute(text(query_sql))
-        rows = result.fetchall()
+        rows = result.fetchmany(MAX_QUERY_ROWS + 1)
 
-        if not rows:  # 🔹 Se la query non ha restituito dati
-            return None  
+        if not rows:  # Se la query non ha restituito dati
+            return None
 
-        # 🔹 Se il risultato è un solo valore numerico (es. COUNT(*))
-        if len(rows) == 1 and isinstance(rows[0], tuple) and len(rows[0]) == 1:
-            return rows[0][0]  # 🔥 Ritorna l'intero direttamente
+        was_truncated = len(rows) > MAX_QUERY_ROWS
+        if was_truncated:
+            rows = rows[:MAX_QUERY_ROWS]
 
-        # 🔹 Se il risultato è una tabella con più colonne
-        return [dict(row._mapping) for row in rows]  # Converte il risultato in dizionario
+        # Se il risultato e un solo valore numerico (es. COUNT(*))
+        if len(rows) == 1 and len(rows[0]) == 1:
+            return rows[0][0]
+
+        # Se il risultato e una tabella con piu colonne
+        mapped_rows = [dict(row._mapping) for row in rows]
+        if was_truncated:
+            print(f"Query troncata a {MAX_QUERY_ROWS} righe per contenere tempi e payload.")
+        return mapped_rows
 
 # Creazione dell'assistente con nuove istruzioni
 """response = openai.beta.assistants.create(
