@@ -1,6 +1,7 @@
 import hashlib
 import json
 import os
+import re
 import time
 from datetime import datetime
 from pathlib import Path
@@ -246,6 +247,40 @@ def inject_demo_styles():
             padding: 0.4rem;
         }
 
+        div[data-testid="stPlotlyChart"] .js-plotly-plot .plotly text {
+            fill: var(--text) !important;
+        }
+
+        div[data-testid="stPlotlyChart"] .js-plotly-plot .plotly .modebar-btn svg {
+            fill: var(--muted) !important;
+        }
+
+        .chart-empty-state {
+            border: 1px dashed var(--border);
+            background: #F8FAFC;
+            color: var(--text);
+            padding: 0.9rem 1rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .chart-empty-state strong {
+            display: block;
+            margin-bottom: 0.2rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.96rem;
+        }
+
+        div[data-testid="stAlert"], .stAlert, div[data-baseweb="notification"] {
+            background: #F8FAFC !important;
+            color: var(--text) !important;
+            border: 1px solid var(--border) !important;
+        }
+
+        div[data-testid="stAlert"] *, .stAlert *, div[data-baseweb="notification"] * {
+            color: var(--text) !important;
+        }
+
         div[data-testid="stExpander"] details {
             border: 1px solid var(--border);
             background: var(--surface);
@@ -405,34 +440,282 @@ def _render_detailed_report_panel(report_payload):
 
 
 def render_chart(df):
-    numeric_columns = df.select_dtypes(include=['number']).columns.tolist()
-    if len(numeric_columns) == 0 or len(df) <= 1:
+    if df.empty or len(df) <= 1:
         return None
-    categorical_columns = df.select_dtypes(include=['object', 'category']).columns.tolist()
-    datetime_columns = df.select_dtypes(include=['datetime']).columns.tolist()
-    date_headers = [col for col in ['Data', 'data', 'Anno', 'anno', 'Mese', 'mese', 'Giorno', 'giorno'] if col in df.columns]
-    date_columns = list(set(datetime_columns + date_headers))
-    numeric_columns = [column for column in numeric_columns if column not in date_columns]
-    if len(numeric_columns) == 0:
+
+    time_hints = ("data", "date", "giorno", "day", "mese", "month", "anno", "year", "ora", "hour", "timestamp")
+    id_hints = ("id", "codice", "code", "codeart", "ptr", "uuid", "guid")
+    description_hints = ("descr", "description", "desc", "toni", "note", "comment")
+    group_hints = ("serie", "formato", "linea", "line", "tono", "reparto", "categoria", "family")
+    support_hints = ("count", "conteggio", "numero", "num_", "n_", "n.", "prove", "records", "righe")
+    metric_hints = (
+        "shortage", "delta", "scost", "diff", "media", "avg", "mean", "tot", "total",
+        "assorb", "giac", "consegn", "produz", "stock", "disp", "valore", "m2", "mq",
+        "perc", "percent", "ratio", "indice", "volume",
+    )
+    priority_metric_hints = ("shortage", "delta", "scost", "diff", "gap", "backlog")
+
+    def _lower_name(column_name):
+        return str(column_name).strip().lower()
+
+    def _contains_hint(column_name, hints):
+        lowered = _lower_name(column_name)
+        return any(hint in lowered for hint in hints)
+
+    def _normalized_tokens(column_name):
+        return [token for token in re.split(r"[^a-z0-9]+", _lower_name(column_name)) if token]
+
+    def _metric_unit(column_name):
+        tokens = _normalized_tokens(column_name)
+        unit_tokens = {"m2", "mq", "perc", "percent", "kg", "tons", "ton", "ore", "hours"}
+        for token in reversed(tokens):
+            if token in unit_tokens:
+                return token
+        return tokens[-1] if tokens else ""
+
+    def _is_datetime_candidate(column_name, series):
+        if pd.api.types.is_datetime64_any_dtype(series):
+            return True
+        if not _contains_hint(column_name, time_hints):
+            return False
+        parsed = pd.to_datetime(series, errors="coerce", dayfirst=True)
+        valid_count = int(parsed.notna().sum())
+        return valid_count >= max(2, int(max(series.notna().sum(), 1) * 0.6))
+
+    def _normalize_chart_df(source_df):
+        chart_df = source_df.copy()
+        for column in chart_df.columns:
+            if _is_datetime_candidate(column, chart_df[column]):
+                parsed = pd.to_datetime(chart_df[column], errors="coerce", dayfirst=True)
+                if parsed.notna().sum() >= 2:
+                    chart_df[column] = parsed
+        return chart_df
+
+    def _profile_columns(chart_df):
+        profiles = []
+        row_count = max(len(chart_df), 1)
+        for column in chart_df.columns:
+            series = chart_df[column]
+            non_null = series.dropna()
+            unique_count = int(non_null.nunique()) if not non_null.empty else 0
+            unique_ratio = unique_count / max(len(non_null), 1)
+            avg_text_length = 0.0
+            if not non_null.empty and (pd.api.types.is_object_dtype(series) or pd.api.types.is_string_dtype(series)):
+                avg_text_length = float(non_null.astype(str).str.len().mean())
+
+            is_numeric = pd.api.types.is_numeric_dtype(series)
+            is_datetime = pd.api.types.is_datetime64_any_dtype(series)
+            is_code_like = _contains_hint(column, id_hints)
+            is_description_like = _contains_hint(column, description_hints)
+            is_group_like = _contains_hint(column, group_hints)
+            is_support_metric = is_numeric and _contains_hint(column, support_hints)
+            is_priority_metric = is_numeric and _contains_hint(column, priority_metric_hints)
+            metric_score = 0
+            label_score = 0
+            group_score = 0
+
+            if is_numeric:
+                metric_score += 2
+                if _contains_hint(column, metric_hints):
+                    metric_score += 2
+                if is_priority_metric:
+                    metric_score += 4
+                if unique_count <= 1:
+                    metric_score -= 4
+                if is_code_like and unique_ratio > 0.9:
+                    metric_score -= 6
+                if is_support_metric:
+                    metric_score -= 2
+            elif not is_datetime and unique_count > 1:
+                if is_description_like and avg_text_length <= 42 and unique_ratio >= 0.45:
+                    label_score += 3
+                if is_code_like and unique_ratio >= 0.45:
+                    label_score += 2
+                if not is_code_like and not is_description_like and unique_ratio >= 0.6 and avg_text_length <= 32:
+                    label_score += 2
+                if avg_text_length > 60:
+                    label_score -= 4
+                elif avg_text_length > 42:
+                    label_score -= 2
+
+                if is_group_like:
+                    group_score += 3
+                if 2 <= unique_count <= 8:
+                    group_score += 2
+                elif 9 <= unique_count <= 15:
+                    group_score += 1
+                elif unique_count > 20:
+                    group_score -= 3
+                if is_code_like:
+                    group_score -= 3
+                if is_description_like and avg_text_length > 35:
+                    group_score -= 2
+
+            profiles.append({
+                "name": column,
+                "unique_count": unique_count,
+                "unique_ratio": unique_ratio,
+                "is_numeric": is_numeric,
+                "is_datetime": is_datetime,
+                "is_support_metric": is_support_metric,
+                "is_priority_metric": is_priority_metric,
+                "metric_score": metric_score,
+                "label_score": label_score,
+                "group_score": group_score,
+                "row_coverage": int(non_null.shape[0]) / row_count,
+            })
+        return profiles
+
+    def _best_metric(metric_profiles):
+        if not metric_profiles:
+            return None
+        return sorted(
+            metric_profiles,
+            key=lambda item: (
+                item["is_priority_metric"],
+                item["metric_score"],
+                item["row_coverage"],
+                item["unique_count"],
+            ),
+            reverse=True,
+        )[0]
+
+    def _select_line_metrics(metric_profiles):
+        primary_metrics = [item for item in metric_profiles if not item["is_support_metric"]]
+        if not primary_metrics:
+            return []
+        primary_metrics = sorted(primary_metrics, key=lambda item: (item["is_priority_metric"], item["metric_score"]), reverse=True)
+        selected = [primary_metrics[0]["name"]]
+        for candidate in primary_metrics[1:]:
+            if candidate["name"] == selected[0]:
+                continue
+            if _metric_unit(candidate["name"]) == _metric_unit(selected[0]):
+                selected.append(candidate["name"])
+                break
+        return selected
+
+    def _select_label_column(label_profiles):
+        if not label_profiles:
+            return None
+        for candidate in sorted(label_profiles, key=lambda item: (item["label_score"], item["row_coverage"], item["unique_ratio"]), reverse=True):
+            if candidate["unique_count"] >= 2:
+                return candidate
         return None
-    if len(date_columns) == 1:
-        chart_df = df.sort_values(by=date_columns[0])
-        fig = px.line(chart_df, x=date_columns[0], y=numeric_columns[:2] if len(numeric_columns) > 1 else numeric_columns[0], template="plotly_white")
+
+    def _select_color_column(group_profiles, excluded_name):
+        candidates = [item for item in group_profiles if item["name"] != excluded_name and 2 <= item["unique_count"] <= 8]
+        if not candidates:
+            return None
+        return sorted(candidates, key=lambda item: (item["group_score"], item["row_coverage"]), reverse=True)[0]
+
+    def _hover_columns(chart_df, excluded_columns):
+        hover_columns = []
+        for column in chart_df.columns:
+            if column in excluded_columns:
+                continue
+            if pd.api.types.is_numeric_dtype(chart_df[column]):
+                hover_columns.append(column)
+                continue
+            if _contains_hint(column, description_hints) or _contains_hint(column, group_hints):
+                hover_columns.append(column)
+        return hover_columns[:5]
+
+    def _build_chart_spec(chart_df):
+        profiles = _profile_columns(chart_df)
+        metric_profiles = [item for item in profiles if item["is_numeric"] and item["metric_score"] > 0 and item["unique_count"] > 1]
+        if not metric_profiles:
+            return None
+
+        time_profiles = [item for item in profiles if item["is_datetime"] and item["unique_count"] > 1]
+        label_profiles = [item for item in profiles if not item["is_numeric"] and not item["is_datetime"] and item["label_score"] > 0]
+        group_profiles = [item for item in profiles if not item["is_numeric"] and not item["is_datetime"] and item["group_score"] > 0]
+
+        if time_profiles:
+            time_profile = sorted(time_profiles, key=lambda item: (item["row_coverage"], item["unique_count"]), reverse=True)[0]
+            line_metrics = _select_line_metrics(metric_profiles)
+            if line_metrics:
+                filtered = chart_df[[time_profile["name"]] + line_metrics].dropna(subset=[time_profile["name"]])
+                if len(filtered) >= 2:
+                    return {
+                        "type": "line",
+                        "data": filtered.sort_values(time_profile["name"]),
+                        "x": time_profile["name"],
+                        "y": line_metrics,
+                    }
+
+        best_metric = _best_metric(metric_profiles)
+        if best_metric is None:
+            return None
+
+        label_profile = _select_label_column(label_profiles)
+        if label_profile is not None:
+            color_profile = _select_color_column(group_profiles, label_profile["name"])
+            plot_columns = [label_profile["name"], best_metric["name"]]
+            if color_profile is not None:
+                plot_columns.append(color_profile["name"])
+            plot_columns.extend(_hover_columns(chart_df, excluded_columns=plot_columns))
+            dedup_columns = list(dict.fromkeys(plot_columns))
+            ranking_df = chart_df[dedup_columns].dropna(subset=[label_profile["name"], best_metric["name"]])
+            ranking_df = ranking_df.sort_values(best_metric["name"], ascending=False).head(12).sort_values(best_metric["name"], ascending=True)
+            if len(ranking_df) >= 2:
+                return {
+                    "type": "bar",
+                    "data": ranking_df,
+                    "x": best_metric["name"],
+                    "y": label_profile["name"],
+                    "color": color_profile["name"] if color_profile is not None else None,
+                    "hover_data": _hover_columns(ranking_df, excluded_columns=[best_metric["name"], label_profile["name"]]),
+                }
+
+        non_support_metrics = [item for item in metric_profiles if not item["is_support_metric"]]
+        if len(non_support_metrics) >= 2:
+            non_support_metrics = sorted(non_support_metrics, key=lambda item: (item["is_priority_metric"], item["metric_score"]), reverse=True)
+            x_metric = non_support_metrics[0]["name"]
+            comparable = None
+            for candidate in non_support_metrics[1:]:
+                if _metric_unit(candidate["name"]) == _metric_unit(x_metric):
+                    comparable = candidate["name"]
+                    break
+            if comparable is None:
+                comparable = non_support_metrics[1]["name"]
+            scatter_df = chart_df[[x_metric, comparable]].dropna()
+            if len(scatter_df) >= 3:
+                return {
+                    "type": "scatter",
+                    "data": scatter_df,
+                    "x": x_metric,
+                    "y": comparable,
+                }
+
+        return None
+
+    chart_df = _normalize_chart_df(df)
+    spec = _build_chart_spec(chart_df)
+    if spec is None:
+        return None
+
+    if spec["type"] == "line":
+        fig = px.line(spec["data"], x=spec["x"], y=spec["y"], template="plotly_white")
         fig.update_traces(mode='lines+markers', marker=dict(size=6))
-    elif len(numeric_columns) == 1 and len(categorical_columns) >= 1:
-        fig = px.bar(df, x=categorical_columns[0], y=numeric_columns[0], template="plotly_white")
-    elif len(numeric_columns) >= 2 and len(categorical_columns) >= 1:
-        fig = px.line(df.sort_values(by=categorical_columns[0]), x=categorical_columns[0], y=numeric_columns[:2], template="plotly_white")
-        fig.update_traces(mode='lines+markers', marker=dict(size=6))
-    elif len(numeric_columns) >= 2:
-        fig = px.scatter(df, x=numeric_columns[0], y=numeric_columns[1], template="plotly_white")
+    elif spec["type"] == "bar":
+        fig = px.bar(
+            spec["data"],
+            x=spec["x"],
+            y=spec["y"],
+            color=spec.get("color"),
+            orientation="h",
+            template="plotly_white",
+            hover_data=spec.get("hover_data"),
+        )
+    elif spec["type"] == "scatter":
+        fig = px.scatter(spec["data"], x=spec["x"], y=spec["y"], template="plotly_white")
     else:
         return None
+
     fig.update_layout(margin=dict(l=10, r=10, t=20, b=10), paper_bgcolor="white", plot_bgcolor="white", font_family="IBM Plex Sans", font_color="#1A202C", legend_title_text="")
     fig.update_xaxes(showgrid=True, gridcolor="#E2E8F0", zeroline=False)
     fig.update_yaxes(showgrid=True, gridcolor="#E2E8F0", zeroline=False)
     return fig
-
 
 def do_layout(data, placeholder, show_technical=False):
     try:
@@ -478,7 +761,10 @@ def do_layout(data, placeholder, show_technical=False):
                     st.markdown("<div class='section-card'><div class='section-title'>Visualizzazione</div></div>", unsafe_allow_html=True)
                     st.plotly_chart(fig, use_container_width=True)
                 else:
-                    st.info("Nessun dato numerico disponibile per il grafico.")
+                    st.markdown(
+                        "<div class='chart-empty-state'><strong>Visualizzazione non disponibile</strong>Nessun dato numerico disponibile per il grafico.</div>",
+                        unsafe_allow_html=True,
+                    )
             else:
                 st.info("Nessun dato tabellare disponibile.")
 
