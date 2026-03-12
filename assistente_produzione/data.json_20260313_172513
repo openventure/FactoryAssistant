@@ -1,0 +1,80 @@
+{
+    "user_request": "e dei 60x60?",
+    "report_title": "Sintesi produzione 60x60 (ultimi 30 giorni) e azioni consigliate",
+    "summary": "Nei ultimi 30 giorni sono stati prodotti principalmente 6 articoli in formato 60x60, per un totale di 16.416,00 m² (prima scelta). Il dato di giacenza/disponibilità non è disponibile a causa di permessi negati sull'anagrafica stock (pa_ff_code), quindi non posso calcolare sottoscorte o suggerire quantità ottimali basate su ordini/giacenze. Per decidere cosa produrre serve almeno la giacenza attuale e gli ordini inevasi per articolo/tono; in assenza di questi, la scelta operativa più prudente è mantenere i ritmi recenti o focalizzarsi sui primi articoli prodotti.",
+    "table_data": [
+        {
+            "article_code": "004151",
+            "format": "60x60",
+            "total_m2_last_30d": 3183.84,
+            "total_pallets_last_30d": 148,
+            "total_pieces_last_30d": 8844,
+            "first_production_date": "2026-02-15",
+            "last_production_date": "2026-02-15",
+            "tone": "unknown",
+            "series": "unknown",
+            "stock_available": "no - permessi negati"
+        },
+        {
+            "article_code": "004154",
+            "format": "60x60",
+            "total_m2_last_30d": 3078.0,
+            "total_pallets_last_30d": 143,
+            "total_pieces_last_30d": 8550,
+            "first_production_date": "2026-02-16",
+            "last_production_date": "2026-02-16",
+            "tone": "unknown",
+            "series": "unknown",
+            "stock_available": "no - permessi negati"
+        },
+        {
+            "article_code": "Q.1022-U",
+            "format": "60x60",
+            "total_m2_last_30d": 2978.64,
+            "total_pallets_last_30d": 138,
+            "total_pieces_last_30d": 8274,
+            "first_production_date": "2026-02-17",
+            "last_production_date": "2026-02-17",
+            "tone": "unknown",
+            "series": "unknown",
+            "stock_available": "no - permessi negati"
+        },
+        {
+            "article_code": "EM28581555",
+            "format": "60x60",
+            "total_m2_last_30d": 2795.04,
+            "total_pallets_last_30d": 130,
+            "total_pieces_last_30d": 7764,
+            "first_production_date": "2026-02-13",
+            "last_production_date": "2026-02-13",
+            "tone": "unknown",
+            "series": "unknown",
+            "stock_available": "no - permessi negati"
+        },
+        {
+            "article_code": "303794",
+            "format": "60x60",
+            "total_m2_last_30d": 2401.92,
+            "total_pallets_last_30d": 112,
+            "total_pieces_last_30d": 6672,
+            "first_production_date": "2026-02-14",
+            "last_production_date": "2026-02-14",
+            "tone": "unknown",
+            "series": "unknown",
+            "stock_available": "no - permessi negati"
+        },
+        {
+            "article_code": "004409",
+            "format": "60x60",
+            "total_m2_last_30d": 1978.56,
+            "total_pallets_last_30d": 92,
+            "total_pieces_last_30d": 5496,
+            "first_production_date": "2026-02-12",
+            "last_production_date": "2026-02-13",
+            "tone": "unknown",
+            "series": "unknown",
+            "stock_available": "no - permessi negati"
+        }
+    ],
+    "conclusions": "Produzione recente: i 6 articoli sopra rappresentano il volume produttivo principale in 60x60 (totale 16.416 m² in 30 giorni). Non potendo accedere alle giacenze e agli ordini, non è possibile raccomandare quantità di produzione target per evitare overstock o rotture. Azioni consigliate:\n1) Abilitare l'accesso alla vista pa_ff_code (o fornire i codici articolo/serie/tono): così posso calcolare sottoscorte e suggerire volumi precisi per ogni articolo.\n2) Se non è possibile accedere allo stock immediatamente, come regola operativa provvisoria mantenere i ritmi recenti di produzione (produrre quantità simili agli ultimi 30 giorni) e dare priorità ai primi 3 articoli (004151, 004154, Q.1022-U) fino a che non riceviamo dati di giacenza/ordini.\n3) Se vuoi una proposta operativa immediata (es. piano settimanale o copertura per X settimane), dimmi l'orizzonte (1, 2 o 4 settimane) e se preferisci proporzionale alla produzione recente o focalizzata su pochi articoli; con accesso alle giacenze posso invece ottimizzare per shortage reale.\nDimmi come preferisci procedere e procedo con l'analisi dettagliata."
+}

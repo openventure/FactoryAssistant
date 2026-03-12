@@ -1,0 +1,16 @@
+{
+    "user_request": "cosa devo produrre degli 80x80?",
+    "report_title": "Indicazioni di produzione per formato 80x80 — verifica dati disponibili",
+    "summary": "Ho verificato la produzione registrata e la disponibilità per il formato 80x80. Nei dati di produzione (PALLET_PRODUCTION) non risultano pallet prodotti negli ultimi 30 giorni per il formato 80x80. Tuttavia, la consultazione delle informazioni di stock/giacenza per articolo (pa_ff_code / dashboard di disponibilità) non è stata possibile a causa di permessi negati sul database: non ho potuto leggere giacenze, minimi o ordini da evadere. Senza questi dati di stock e ordini non posso suggerire un piano di produzione accurato. Per procedere consiglio di abilitare l'accesso alle tabelle di disponibilità o fornire i codici articolo/serie che ti interessano.",
+    "table_data": [
+        {
+            "formato": "80x80",
+            "prod_last_30d_m2": 0,
+            "production_source": "PALLET_PRODUCTION",
+            "stock_data_available": "no - permessi negati su pa_ff_code",
+            "stock_tool_error": "SELECT negata per l'oggetto pa_ff_code (permessi DB)",
+            "next_action_required": "abilitare accesso a pa_ff_code o fornire codici articolo/periodo"
+        }
+    ],
+    "conclusions": "Non ci sono produzioni registrate negli ultimi 30 giorni per il formato 80x80; tuttavia non è possibile valutare il fabbisogno reale perché manca l'accesso ai dati di giacenza e ordini. Per ottenere una raccomandazione operativa suggerisco uno dei seguenti passi: 1) abilitare i permessi di lettura sulle viste di disponibilità (pa_ff_code / dashboard_productavailability) in modo che possa estrarre la lista degli articoli 80x80 con giacenze, minimi e ordini inevasi; 2) indicarmi i codici articolo 80x80 o la serie su cui vuoi un piano (posso calcolare shortage e proporre quantità da produrre); 3) se preferisci una regola rapida senza dati, posso suggerere una produzione iniziale di copertura: produrre quantità pari alla media di vendita mensile (serve però il dato di vendite/ordini). Dimmi quale opzione preferisci (abilito query DB o fornisci codici/periodo) e procedo con l'analisi dettagliata."
+}

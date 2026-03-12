@@ -1,0 +1,16 @@
+{
+    "user_request": "prova con spessore 20",
+    "report_title": "Produzione formato 60x120 spessore 20 mm nel 2025",
+    "summary": "Ho cercato i pallet prodotti nel 2025 per il formato 600x1200 mm (60x120) con spessore 20 mm, escludendo i pallet marcati come espulsi. Non sono state trovate registrazioni corrispondenti: la produzione risultante per l'anno 2025 è nulla con i filtri applicati.",
+    "table_data": [
+        {
+            "Formato": "60x120",
+            "Spessore_mm": 20,
+            "Anno": 2025,
+            "Totale_mq": 0,
+            "Numero_pallet": 0,
+            "Nota": "Query eseguita su PALLET_PRODUCTION con FORMATO_LARG=600, FORMATO_LUNG=1200, FORMATO_SPES=20; Espulso=0"
+        }
+    ],
+    "conclusions": "Risultato operativo: non risultano metri quadri prodotti per 60x120 sp.20 mm nel 2025 nei dati di produzione disponibili con i filtri usati. Azioni consigliate:\n- Vuoi includere anche i pallet espulsi (Espulso = 1)? Posso ripetere la ricerca.\n- Verificare se il formato è registrato in altri campi come FORMATO (stringa) o nelle viste di disponibilità (dashboard_productavailability / pa_ff_code): spesso il formato è codificato diversamente.\n- Posso eseguire ulteriori controlli (es. breakdown per tono/lotto, estendere il periodo agli ultimi 24 mesi, o cercare varianti 600x1200 con spessore diverso). Dimmi quale approfondimento preferisci e rilancio la query."
+}

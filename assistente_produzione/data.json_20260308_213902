@@ -1,0 +1,971 @@
+{
+    "user_request": "Quali articoli hanno ordini superiori alla disponibilità attuale",
+    "report_title": "Articoli con ordini maggiori della disponibilità (analisi aggregata)",
+    "summary": "Ho identificato gli articoli per i quali la quantità da consegnare (ordini aperti) è superiore alla disponibilità attuale. I valori sono espressi in m² e la lista è ordinata per maggior deficit (SHORTAGE_MQ). Ho utilizzato la vista aggregata degli articoli (report pa_ff_code): se desideri l'analisi per deposito o per tono/lotto, posso estendere la query. La lista restituita è limitata ai primi 200 articoli con maggiore scostamento.",
+    "table_data": [
+        {
+            "CODICE": "004990",
+            "DESCRIZIONE": "20X122 RESORT NATURAL RTT",
+            "FORMATO": "20X122 RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "QTA_DA_CONSEGNARE_MQ": 32281.2,
+            "DISPONIBILITA_MQ": -32281.2,
+            "SHORTAGE_MQ": 64562.4
+        },
+        {
+            "CODICE": "SOLWHI68",
+            "DESCRIZIONE": "SOLUTION WHITE 60X60 RETT 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "SOLUTION",
+            "QTA_DA_CONSEGNARE_MQ": 24991.2,
+            "DISPONIBILITA_MQ": -253.8,
+            "SHORTAGE_MQ": 25245.0
+        },
+        {
+            "CODICE": "VENGR68",
+            "DESCRIZIONE": "60X60 RTT. VENEZIA GREY SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "B&B",
+            "QTA_DA_CONSEGNARE_MQ": 9000.0,
+            "DISPONIBILITA_MQ": -9000.0,
+            "SHORTAGE_MQ": 18000.0
+        },
+        {
+            "CODICE": "SOLGR68",
+            "DESCRIZIONE": "60X60 RTT. SOLUTION GREY SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "B&B",
+            "QTA_DA_CONSEGNARE_MQ": 9000.0,
+            "DISPONIBILITA_MQ": -9000.0,
+            "SHORTAGE_MQ": 18000.0
+        },
+        {
+            "CODICE": "76136",
+            "DESCRIZIONE": "+HOLIDAY NATURAL 31X62",
+            "FORMATO": "31X62",
+            "SERIE": "TERM ELLE - NON USARE",
+            "QTA_DA_CONSEGNARE_MQ": 6098.4,
+            "DISPONIBILITA_MQ": -6098.4,
+            "SHORTAGE_MQ": 12196.8
+        },
+        {
+            "CODICE": "302599",
+            "DESCRIZIONE": "CEMENTI TAUPE RETT. 30X60 (112)",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "CEMENTI",
+            "QTA_DA_CONSEGNARE_MQ": 5985.0,
+            "DISPONIBILITA_MQ": -5609.52,
+            "SHORTAGE_MQ": 11594.52
+        },
+        {
+            "CODICE": "3510992A",
+            "DESCRIZIONE": "GALACTIC LIGHT GREY 60X120 RTT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MERKURY",
+            "QTA_DA_CONSEGNARE_MQ": 5505.12,
+            "DISPONIBILITA_MQ": -5001.12,
+            "SHORTAGE_MQ": 10506.24
+        },
+        {
+            "CODICE": "FLALPI60LIGURI",
+            "DESCRIZIONE": "60X60 RTT. ALPI LIGURI",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALI FLAMINIA",
+            "QTA_DA_CONSEGNARE_MQ": 9640.8,
+            "DISPONIBILITA_MQ": 806.4,
+            "SHORTAGE_MQ": 8834.4
+        },
+        {
+            "CODICE": "004183",
+            "DESCRIZIONE": "30X60 RTT PALERMO ANTRAZIT",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "PALERMO",
+            "QTA_DA_CONSEGNARE_MQ": 8852.76,
+            "DISPONIBILITA_MQ": 425.88,
+            "SHORTAGE_MQ": 8426.88
+        },
+        {
+            "CODICE": "303049",
+            "DESCRIZIONE": "TOUCH GREY 30X60 RETT (56)",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "TOUCHFEEL",
+            "QTA_DA_CONSEGNARE_MQ": 4233.6,
+            "DISPONIBILITA_MQ": -4183.2,
+            "SHORTAGE_MQ": 8416.8
+        },
+        {
+            "CODICE": "BNLPE68",
+            "DESCRIZIONE": "BENELUX PEARL 60X60 RETT 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "BENELUX",
+            "QTA_DA_CONSEGNARE_MQ": 8308.8,
+            "DISPONIBILITA_MQ": 28.8,
+            "SHORTAGE_MQ": 8280.0
+        },
+        {
+            "CODICE": "FLS002",
+            "DESCRIZIONE": "FLASH CASTAGNO 20x122 RETT",
+            "FORMATO": "20X122 RTT",
+            "SERIE": "FLASH - PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 4415.18,
+            "DISPONIBILITA_MQ": -3833.24,
+            "SHORTAGE_MQ": 8248.42
+        },
+        {
+            "CODICE": "SOLBE68",
+            "DESCRIZIONE": "60X60 RTT. SOLUTION BEIGE SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "B&B",
+            "QTA_DA_CONSEGNARE_MQ": 8092.8,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 8092.8
+        },
+        {
+            "CODICE": "303620",
+            "DESCRIZIONE": "NEW ULTRA SLATE GREY 60x60 RETT 20mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "OUTDOOR 4.0",
+            "QTA_DA_CONSEGNARE_MQ": 5939.28,
+            "DISPONIBILITA_MQ": -1774.8,
+            "SHORTAGE_MQ": 7714.08
+        },
+        {
+            "CODICE": "3538701A",
+            "DESCRIZIONE": "60X120 ROCK ANTRACITE RETT. cl35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MERKURY",
+            "QTA_DA_CONSEGNARE_MQ": 4101.12,
+            "DISPONIBILITA_MQ": -3474.72,
+            "SHORTAGE_MQ": 7575.84
+        },
+        {
+            "CODICE": "303293",
+            "DESCRIZIONE": "QUARRY TUNDRA 30x60 RETT",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "QUARRY",
+            "QTA_DA_CONSEGNARE_MQ": 4334.4,
+            "DISPONIBILITA_MQ": -2900.52,
+            "SHORTAGE_MQ": 7234.92
+        },
+        {
+            "CODICE": "304161",
+            "DESCRIZIONE": "CEMENTI TAUPE 30x60 Rettificato 8mm",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "CEMENTI",
+            "QTA_DA_CONSEGNARE_MQ": 4723.2,
+            "DISPONIBILITA_MQ": -2336.4,
+            "SHORTAGE_MQ": 7059.6
+        },
+        {
+            "CODICE": "FLALPI60MARITTIME",
+            "DESCRIZIONE": "60X60 RTT. ALPI MARITTIME",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALI FLAMINIA",
+            "QTA_DA_CONSEGNARE_MQ": 6638.4,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 6638.4
+        },
+        {
+            "CODICE": "LGKIMPACT36TO",
+            "DESCRIZIONE": "31X62 IMPACT TORTORA",
+            "FORMATO": "31X62",
+            "SERIE": "MATERIALI LOGIKER SERIE IMPACT",
+            "QTA_DA_CONSEGNARE_MQ": 6067.6,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 6067.6
+        },
+        {
+            "CODICE": "3514182",
+            "DESCRIZIONE": "60X120 ELEGANCE IVORY RT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MERKURY",
+            "QTA_DA_CONSEGNARE_MQ": 3051.36,
+            "DISPONIBILITA_MQ": -2648.16,
+            "SHORTAGE_MQ": 5699.52
+        },
+        {
+            "CODICE": "005496",
+            "DESCRIZIONE": "SHELLSTONE BEIGE 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "SHELLSTONE - ACR",
+            "QTA_DA_CONSEGNARE_MQ": 3744.0,
+            "DISPONIBILITA_MQ": -1708.2,
+            "SHORTAGE_MQ": 5452.2
+        },
+        {
+            "CODICE": "DREAMGR68",
+            "DESCRIZIONE": "60X60 RTT. DREAM GREY SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "B&B",
+            "QTA_DA_CONSEGNARE_MQ": 5387.4,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 5387.4
+        },
+        {
+            "CODICE": "303822",
+            "DESCRIZIONE": "NATURE BIANCO 30x60 RETT",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "NATURE",
+            "QTA_DA_CONSEGNARE_MQ": 2802.24,
+            "DISPONIBILITA_MQ": -2377.44,
+            "SHORTAGE_MQ": 5179.68
+        },
+        {
+            "CODICE": "005445",
+            "DESCRIZIONE": "60X120 IROC GREIGE RTT R11 (CL 35)",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "IROC",
+            "QTA_DA_CONSEGNARE_MQ": 3729.6,
+            "DISPONIBILITA_MQ": -1239.84,
+            "SHORTAGE_MQ": 4969.44
+        },
+        {
+            "CODICE": "005444",
+            "DESCRIZIONE": "60X120 IROC WHITE RTT R11 (CL 35)",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "IROC",
+            "QTA_DA_CONSEGNARE_MQ": 6300.0,
+            "DISPONIBILITA_MQ": 1598.4,
+            "SHORTAGE_MQ": 4701.6
+        },
+        {
+            "CODICE": "303841A",
+            "DESCRIZIONE": "NATURE GRIGIO 60x120 RETT CL 35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "NATURE",
+            "QTA_DA_CONSEGNARE_MQ": 2244.96,
+            "DISPONIBILITA_MQ": -2135.52,
+            "SHORTAGE_MQ": 4380.48
+        },
+        {
+            "CODICE": "PHB6002",
+            "DESCRIZIONE": "60X60 RTT. HOME BEIGE",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALI C.M.I. SERIE HOME",
+            "QTA_DA_CONSEGNARE_MQ": 4320.0,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 4320.0
+        },
+        {
+            "CODICE": "005063",
+            "DESCRIZIONE": "ROCCIONE OUT R11 31X62",
+            "FORMATO": "31X62",
+            "SERIE": "PIETRONE/ROCCIONE",
+            "QTA_DA_CONSEGNARE_MQ": 2539.35,
+            "DISPONIBILITA_MQ": -1676.7,
+            "SHORTAGE_MQ": 4216.05
+        },
+        {
+            "CODICE": "004906",
+            "DESCRIZIONE": "30X60 UNIKA LIGHT GREY RTT",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 2718.72,
+            "DISPONIBILITA_MQ": -1382.4,
+            "SHORTAGE_MQ": 4101.12
+        },
+        {
+            "CODICE": "76137",
+            "DESCRIZIONE": "+HOLIDAY NATURAL OUT 31X62",
+            "FORMATO": "31X62",
+            "SERIE": "TERM ELLE - NON USARE",
+            "QTA_DA_CONSEGNARE_MQ": 2032.8,
+            "DISPONIBILITA_MQ": -2032.8,
+            "SHORTAGE_MQ": 4065.6
+        },
+        {
+            "CODICE": "PHG6001",
+            "DESCRIZIONE": "60X60 RTT. HOME GRIGIO",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALI C.M.I. SERIE HOME",
+            "QTA_DA_CONSEGNARE_MQ": 3916.8,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 3916.8
+        },
+        {
+            "CODICE": "303045",
+            "DESCRIZIONE": "TOUCH GREY 60X60 RETT (115)",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "TOUCHFEEL",
+            "QTA_DA_CONSEGNARE_MQ": 2505.6,
+            "DISPONIBILITA_MQ": -1096.2,
+            "SHORTAGE_MQ": 3601.8
+        },
+        {
+            "CODICE": "303660",
+            "DESCRIZIONE": "IKON AMBER 30x122 RETT",
+            "FORMATO": "30X122 RTT",
+            "SERIE": "IKON",
+            "QTA_DA_CONSEGNARE_MQ": 5020.06,
+            "DISPONIBILITA_MQ": 1465.43,
+            "SHORTAGE_MQ": 3554.63
+        },
+        {
+            "CODICE": "CMT024",
+            "DESCRIZIONE": "COMFORT ZERO40 AVANA 15x60 RETT",
+            "FORMATO": "15X60 RTT",
+            "SERIE": "COMFORT - PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 1765.8,
+            "DISPONIBILITA_MQ": -1765.8,
+            "SHORTAGE_MQ": 3531.6
+        },
+        {
+            "CODICE": "303047",
+            "DESCRIZIONE": "TOUCH WHITE 30X60 RETT (56)",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "TOUCHFEEL",
+            "QTA_DA_CONSEGNARE_MQ": 5796.0,
+            "DISPONIBILITA_MQ": 2300.76,
+            "SHORTAGE_MQ": 3495.24
+        },
+        {
+            "CODICE": "005661",
+            "DESCRIZIONE": "30X122 DOMUS AMBER RETT",
+            "FORMATO": "30X122 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 1739.23,
+            "DISPONIBILITA_MQ": -1739.23,
+            "SHORTAGE_MQ": 3478.46
+        },
+        {
+            "CODICE": "303721",
+            "DESCRIZIONE": "SOLID LIGHT GREY RTT 30X60",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "SOLID",
+            "QTA_DA_CONSEGNARE_MQ": 4608.0,
+            "DISPONIBILITA_MQ": 1440.0,
+            "SHORTAGE_MQ": 3168.0
+        },
+        {
+            "CODICE": "8TB314",
+            "DESCRIZIONE": "ASPEN GRIGIO 31X62 IN",
+            "FORMATO": "31X62",
+            "SERIE": "ASPEN",
+            "QTA_DA_CONSEGNARE_MQ": 8733.15,
+            "DISPONIBILITA_MQ": 5652.6,
+            "SHORTAGE_MQ": 3080.55
+        },
+        {
+            "CODICE": "MTS041A",
+            "DESCRIZIONE": "MYTHOS IVORY 60x120 RETT CL 35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MYTHOS - PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 2314.08,
+            "DISPONIBILITA_MQ": -740.16,
+            "SHORTAGE_MQ": 3054.24
+        },
+        {
+            "CODICE": "005663",
+            "DESCRIZIONE": "30X122 DOMUS WALNUT RETT",
+            "FORMATO": "30X122 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 1475.71,
+            "DISPONIBILITA_MQ": -1475.71,
+            "SHORTAGE_MQ": 2951.42
+        },
+        {
+            "CODICE": "303969",
+            "DESCRIZIONE": "PAINT GREY 60X60 RTT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "PAINT",
+            "QTA_DA_CONSEGNARE_MQ": 2793.6,
+            "DISPONIBILITA_MQ": -155.52,
+            "SHORTAGE_MQ": 2949.12
+        },
+        {
+            "CODICE": "304064",
+            "DESCRIZIONE": "SOLID GREY 31x62 Naturale 7,5mm",
+            "FORMATO": "31X62",
+            "SERIE": "SOLID",
+            "QTA_DA_CONSEGNARE_MQ": 4245.78,
+            "DISPONIBILITA_MQ": 1301.3,
+            "SHORTAGE_MQ": 2944.48
+        },
+        {
+            "CODICE": "303739A",
+            "DESCRIZIONE": "MANSION WARM 60x120 RETT CL 35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MANSION",
+            "QTA_DA_CONSEGNARE_MQ": 3074.4,
+            "DISPONIBILITA_MQ": 148.32,
+            "SHORTAGE_MQ": 2926.08
+        },
+        {
+            "CODICE": "CMT022",
+            "DESCRIZIONE": "COMFORT ZERO20 NATURALE 15x60 RETT",
+            "FORMATO": "15X60 RTT",
+            "SERIE": "COMFORT - PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 1462.05,
+            "DISPONIBILITA_MQ": -1398.6,
+            "SHORTAGE_MQ": 2860.65
+        },
+        {
+            "CODICE": "304122",
+            "DESCRIZIONE": "IKON ALPS 30x122 Rettificato",
+            "FORMATO": "30X122 RTT",
+            "SERIE": "IKON",
+            "QTA_DA_CONSEGNARE_MQ": 2455.13,
+            "DISPONIBILITA_MQ": -244.49,
+            "SHORTAGE_MQ": 2699.62
+        },
+        {
+            "CODICE": "CMT023",
+            "DESCRIZIONE": "COMFORT ZERO30 ROVERE 15x60 RETT",
+            "FORMATO": "15X60 RTT",
+            "SERIE": "COMFORT - PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 1401.3,
+            "DISPONIBILITA_MQ": -1296.0,
+            "SHORTAGE_MQ": 2697.3
+        },
+        {
+            "CODICE": "OO2649",
+            "DESCRIZIONE": "ASSISI BEIGE 31X62 6 Pz colli60",
+            "FORMATO": "31X62",
+            "SERIE": "MURO DI ASSISI",
+            "QTA_DA_CONSEGNARE_MQ": 2910.6,
+            "DISPONIBILITA_MQ": 287.21,
+            "SHORTAGE_MQ": 2623.39
+        },
+        {
+            "CODICE": "004127",
+            "DESCRIZIONE": "60x60 CONTEMPORARY LIGHT GREY RTT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALI DADO",
+            "QTA_DA_CONSEGNARE_MQ": 2253.6,
+            "DISPONIBILITA_MQ": -362.88,
+            "SHORTAGE_MQ": 2616.48
+        },
+        {
+            "CODICE": "005664",
+            "DESCRIZIONE": "31X62 DOMUS AMBER 7,5mm",
+            "FORMATO": "31X62",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 1293.6,
+            "DISPONIBILITA_MQ": -1293.6,
+            "SHORTAGE_MQ": 2587.2
+        },
+        {
+            "CODICE": "005666",
+            "DESCRIZIONE": "31X62 DOMUS WALNUT 7,5mm",
+            "FORMATO": "31X62",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 1293.6,
+            "DISPONIBILITA_MQ": -1293.6,
+            "SHORTAGE_MQ": 2587.2
+        },
+        {
+            "CODICE": "8TB342",
+            "DESCRIZIONE": "ASPEN BIANCO 31X62 OUT",
+            "FORMATO": "31X62",
+            "SERIE": "ASPEN",
+            "QTA_DA_CONSEGNARE_MQ": 5035.5,
+            "DISPONIBILITA_MQ": 2465.1,
+            "SHORTAGE_MQ": 2570.4
+        },
+        {
+            "CODICE": "005652",
+            "DESCRIZIONE": "60X60 MIRROR BIANCO RTT 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 1267.2,
+            "DISPONIBILITA_MQ": -1267.2,
+            "SHORTAGE_MQ": 2534.4
+        },
+        {
+            "CODICE": "005654",
+            "DESCRIZIONE": "60X60 MIRROR TAUPE RTT 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 1267.2,
+            "DISPONIBILITA_MQ": -1267.2,
+            "SHORTAGE_MQ": 2534.4
+        },
+        {
+            "CODICE": "005653",
+            "DESCRIZIONE": "60X60 MIRROR BEIGE RTT 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 1267.2,
+            "DISPONIBILITA_MQ": -1267.2,
+            "SHORTAGE_MQ": 2534.4
+        },
+        {
+            "CODICE": "EX8053A",
+            "DESCRIZIONE": "EXTRA GREY 81X81 RTT",
+            "FORMATO": "81X81 RTT",
+            "SERIE": "EXTRA",
+            "QTA_DA_CONSEGNARE_MQ": 1252.92,
+            "DISPONIBILITA_MQ": -1252.92,
+            "SHORTAGE_MQ": 2505.84
+        },
+        {
+            "CODICE": "304101",
+            "DESCRIZIONE": "31X62 VANILLA",
+            "FORMATO": "31X62",
+            "SERIE": "MERKURY",
+            "QTA_DA_CONSEGNARE_MQ": 2032.8,
+            "DISPONIBILITA_MQ": -462.0,
+            "SHORTAGE_MQ": 2494.8
+        },
+        {
+            "CODICE": "304137",
+            "DESCRIZIONE": "GEOLOGY ARGILLA 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "GEOLOGY",
+            "QTA_DA_CONSEGNARE_MQ": 4005.0,
+            "DISPONIBILITA_MQ": 1539.0,
+            "SHORTAGE_MQ": 2466.0
+        },
+        {
+            "CODICE": "CMT041",
+            "DESCRIZIONE": "ZERO 10 COMFORT BIANCO 30x122 RETT",
+            "FORMATO": "30X122 RTT",
+            "SERIE": "COMFORT - PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 1213.66,
+            "DISPONIBILITA_MQ": -1212.2,
+            "SHORTAGE_MQ": 2425.86
+        },
+        {
+            "CODICE": "304152",
+            "DESCRIZIONE": "RIGAT-ONE GEOLOGY SABBIA 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "GEOLOGY",
+            "QTA_DA_CONSEGNARE_MQ": 1444.32,
+            "DISPONIBILITA_MQ": -961.92,
+            "SHORTAGE_MQ": 2406.24
+        },
+        {
+            "CODICE": "303276A",
+            "DESCRIZIONE": "QUARRY MOON 60x120 RETT CL 35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "QUARRY",
+            "QTA_DA_CONSEGNARE_MQ": 1362.24,
+            "DISPONIBILITA_MQ": -973.44,
+            "SHORTAGE_MQ": 2335.68
+        },
+        {
+            "CODICE": "SOLDA68",
+            "DESCRIZIONE": "60X60 RTT. SOLUTION DARK SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "B&B",
+            "QTA_DA_CONSEGNARE_MQ": 2325.6,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 2325.6
+        },
+        {
+            "CODICE": "005662",
+            "DESCRIZIONE": "30X122 DOMUS ALPS RETT",
+            "FORMATO": "30X122 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 1159.49,
+            "DISPONIBILITA_MQ": -1159.49,
+            "SHORTAGE_MQ": 2318.98
+        },
+        {
+            "CODICE": "005467",
+            "DESCRIZIONE": "ONYX IVORY 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "ONYX - ACR",
+            "QTA_DA_CONSEGNARE_MQ": 2013.12,
+            "DISPONIBILITA_MQ": -198.72,
+            "SHORTAGE_MQ": 2211.84
+        },
+        {
+            "CODICE": "304065",
+            "DESCRIZIONE": "CHARME IVORY 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "CHARME",
+            "QTA_DA_CONSEGNARE_MQ": 3746.88,
+            "DISPONIBILITA_MQ": 1537.92,
+            "SHORTAGE_MQ": 2208.96
+        },
+        {
+            "CODICE": "FLALPI36NORDICHE",
+            "DESCRIZIONE": "31X62 ALPI NORDICHE",
+            "FORMATO": "31X62",
+            "SERIE": "MATERIALI FLAMINIA",
+            "QTA_DA_CONSEGNARE_MQ": 2196.04,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 2196.04
+        },
+        {
+            "CODICE": "PP0022P",
+            "DESCRIZIONE": "31X62 QUARZITE BEIGE OUT",
+            "FORMATO": "31X62",
+            "SERIE": "OUTTLET COTTO PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 7977.2,
+            "DISPONIBILITA_MQ": 5876.64,
+            "SHORTAGE_MQ": 2100.56
+        },
+        {
+            "CODICE": "PSG053A",
+            "DESCRIZIONE": "PRESTIGE TAUPE 81X81 RETT",
+            "FORMATO": "81X81 RTT",
+            "SERIE": "PRESTIGE",
+            "QTA_DA_CONSEGNARE_MQ": 1199.73,
+            "DISPONIBILITA_MQ": -813.61,
+            "SHORTAGE_MQ": 2013.34
+        },
+        {
+            "CODICE": "005062",
+            "DESCRIZIONE": "PIETRONE OUT R11 31X62",
+            "FORMATO": "31X62",
+            "SERIE": "PIETRONE/ROCCIONE",
+            "QTA_DA_CONSEGNARE_MQ": 3017.25,
+            "DISPONIBILITA_MQ": 1019.25,
+            "SHORTAGE_MQ": 1998.0
+        },
+        {
+            "CODICE": "005492",
+            "DESCRIZIONE": "ONYX WHITE 30x60 Rettificato 8mm",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "ONYX - ACR",
+            "QTA_DA_CONSEGNARE_MQ": 1267.2,
+            "DISPONIBILITA_MQ": -703.8,
+            "SHORTAGE_MQ": 1971.0
+        },
+        {
+            "CODICE": "303334A",
+            "DESCRIZIONE": "QUARRY MOON 60x120 RETT LAPP IN CRESTA CL 35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "QUARRY",
+            "QTA_DA_CONSEGNARE_MQ": 1998.72,
+            "DISPONIBILITA_MQ": 195.84,
+            "SHORTAGE_MQ": 1802.88
+        },
+        {
+            "CODICE": "GIG006",
+            "DESCRIZIONE": "GIGA IRON 60X60 RETT 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "GIGA",
+            "QTA_DA_CONSEGNARE_MQ": 3009.6,
+            "DISPONIBILITA_MQ": 1224.0,
+            "SHORTAGE_MQ": 1785.6
+        },
+        {
+            "CODICE": "005660",
+            "DESCRIZIONE": "20X122 DOMUS WALNUT RETT.",
+            "FORMATO": "20X122 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 878.4,
+            "DISPONIBILITA_MQ": -878.4,
+            "SHORTAGE_MQ": 1756.8
+        },
+        {
+            "CODICE": "005659",
+            "DESCRIZIONE": "20X122 DOMUS ALPS RETT.",
+            "FORMATO": "20X122 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 878.4,
+            "DISPONIBILITA_MQ": -878.4,
+            "SHORTAGE_MQ": 1756.8
+        },
+        {
+            "CODICE": "005658",
+            "DESCRIZIONE": "20X122 DOMUS AMBER RETT.",
+            "FORMATO": "20X122 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 878.4,
+            "DISPONIBILITA_MQ": -878.4,
+            "SHORTAGE_MQ": 1756.8
+        },
+        {
+            "CODICE": "303492",
+            "DESCRIZIONE": "VALS DARK 30x60 RETT",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "PIETRA DI VALS",
+            "QTA_DA_CONSEGNARE_MQ": 1678.32,
+            "DISPONIBILITA_MQ": -61.74,
+            "SHORTAGE_MQ": 1740.06
+        },
+        {
+            "CODICE": "LGKIMPACT36BG",
+            "DESCRIZIONE": "31X62 IMPACT BEIGE",
+            "FORMATO": "31X62",
+            "SERIE": "MATERIALI LOGIKER SERIE IMPACT",
+            "QTA_DA_CONSEGNARE_MQ": 1734.04,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 1734.04
+        },
+        {
+            "CODICE": "005655",
+            "DESCRIZIONE": "60X120 MIRROR BIANCO RT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 856.8,
+            "DISPONIBILITA_MQ": -856.8,
+            "SHORTAGE_MQ": 1713.6
+        },
+        {
+            "CODICE": "005656",
+            "DESCRIZIONE": "60X120 MIRROR BEIGE RT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 856.8,
+            "DISPONIBILITA_MQ": -856.8,
+            "SHORTAGE_MQ": 1713.6
+        },
+        {
+            "CODICE": "005657",
+            "DESCRIZIONE": "60X120 MIRROR TAUPE RT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 856.8,
+            "DISPONIBILITA_MQ": -856.8,
+            "SHORTAGE_MQ": 1713.6
+        },
+        {
+            "CODICE": "FLALPI36MARITTIME",
+            "DESCRIZIONE": "31X62 ALPI MARITTIME",
+            "FORMATO": "31X62",
+            "SERIE": "MATERIALI FLAMINIA",
+            "QTA_DA_CONSEGNARE_MQ": 1706.32,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 1706.32
+        },
+        {
+            "CODICE": "LGKIMPACT36GR",
+            "DESCRIZIONE": "31X62 IMPACT GRIGIO",
+            "FORMATO": "31X62",
+            "SERIE": "MATERIALI LOGIKER SERIE IMPACT",
+            "QTA_DA_CONSEGNARE_MQ": 1478.4,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 1478.4
+        },
+        {
+            "CODICE": "GIG001",
+            "DESCRIZIONE": "GIGA CREAM 60x60 RETT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "GIGA",
+            "QTA_DA_CONSEGNARE_MQ": 737.28,
+            "DISPONIBILITA_MQ": -735.84,
+            "SHORTAGE_MQ": 1473.12
+        },
+        {
+            "CODICE": "304058",
+            "DESCRIZIONE": "CHARME PEARL 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "CHARME",
+            "QTA_DA_CONSEGNARE_MQ": 1278.0,
+            "DISPONIBILITA_MQ": -171.0,
+            "SHORTAGE_MQ": 1449.0
+        },
+        {
+            "CODICE": "304028",
+            "DESCRIZIONE": "CHARME INVISIBLE GREY 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "CHARME",
+            "QTA_DA_CONSEGNARE_MQ": 2089.44,
+            "DISPONIBILITA_MQ": 754.56,
+            "SHORTAGE_MQ": 1334.88
+        },
+        {
+            "CODICE": "005665",
+            "DESCRIZIONE": "31X62 DOMUS ALPS 7,5mm",
+            "FORMATO": "31X62",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 646.8,
+            "DISPONIBILITA_MQ": -646.8,
+            "SHORTAGE_MQ": 1293.6
+        },
+        {
+            "CODICE": "304159",
+            "DESCRIZIONE": "CEMENTI WHITE 30x60 Rettificato 8mm",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "CEMENTI",
+            "QTA_DA_CONSEGNARE_MQ": 1036.8,
+            "DISPONIBILITA_MQ": -194.4,
+            "SHORTAGE_MQ": 1231.2
+        },
+        {
+            "CODICE": "005499",
+            "DESCRIZIONE": "SHELLSTONE TAUPE 30x60 Rettificato 8mm",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "SHELLSTONE - ACR",
+            "QTA_DA_CONSEGNARE_MQ": 1229.4,
+            "DISPONIBILITA_MQ": -1.8,
+            "SHORTAGE_MQ": 1231.2
+        },
+        {
+            "CODICE": "303046",
+            "DESCRIZIONE": "TOUCH BEIGE 60X60 RETT (115)",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "TOUCHFEEL",
+            "QTA_DA_CONSEGNARE_MQ": 2502.0,
+            "DISPONIBILITA_MQ": 1310.4,
+            "SHORTAGE_MQ": 1191.6
+        },
+        {
+            "CODICE": "303516",
+            "DESCRIZIONE": "VALS MIX COLD 15,3X31",
+            "FORMATO": "15,3X31",
+            "SERIE": "PIETRA DI VALS",
+            "QTA_DA_CONSEGNARE_MQ": 753.61,
+            "DISPONIBILITA_MQ": -423.96,
+            "SHORTAGE_MQ": 1177.57
+        },
+        {
+            "CODICE": "304027",
+            "DESCRIZIONE": "ULTRA MASK IVORY 60x60 RETT 20mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "OUTDOOR 4.0",
+            "QTA_DA_CONSEGNARE_MQ": 1928.92,
+            "DISPONIBILITA_MQ": 761.0,
+            "SHORTAGE_MQ": 1167.92
+        },
+        {
+            "CODICE": "303509",
+            "DESCRIZIONE": "ARROW 60x60 RETT SP 18mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "HORNBACH",
+            "QTA_DA_CONSEGNARE_MQ": 691.2,
+            "DISPONIBILITA_MQ": -448.56,
+            "SHORTAGE_MQ": 1139.76
+        },
+        {
+            "CODICE": "005466",
+            "DESCRIZIONE": "ONYX GREEN 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "ONYX - ACR",
+            "QTA_DA_CONSEGNARE_MQ": 2018.88,
+            "DISPONIBILITA_MQ": 882.72,
+            "SHORTAGE_MQ": 1136.16
+        },
+        {
+            "CODICE": "304140",
+            "DESCRIZIONE": "GEOLOGY SABBIA 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "GEOLOGY",
+            "QTA_DA_CONSEGNARE_MQ": 3124.8,
+            "DISPONIBILITA_MQ": 1989.0,
+            "SHORTAGE_MQ": 1135.8
+        },
+        {
+            "CODICE": "304019",
+            "DESCRIZIONE": "MASK IVORY 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MASK",
+            "QTA_DA_CONSEGNARE_MQ": 4793.4,
+            "DISPONIBILITA_MQ": 3727.8,
+            "SHORTAGE_MQ": 1065.6
+        },
+        {
+            "CODICE": "FLALPI60NORDICHE",
+            "DESCRIZIONE": "60X60 RTT. ALPI NORDICHE",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALI FLAMINIA",
+            "QTA_DA_CONSEGNARE_MQ": 1022.4,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 1022.4
+        },
+        {
+            "CODICE": "004998",
+            "DESCRIZIONE": "60X60 RTT ERMETICA CREMA",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALI ACR",
+            "QTA_DA_CONSEGNARE_MQ": 3322.08,
+            "DISPONIBILITA_MQ": 2312.64,
+            "SHORTAGE_MQ": 1009.44
+        },
+        {
+            "CODICE": "004911",
+            "DESCRIZIONE": "81X81 UNIKA LIGHT GREY RETT",
+            "FORMATO": "81X81 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 815.58,
+            "DISPONIBILITA_MQ": -191.09,
+            "SHORTAGE_MQ": 1006.67
+        },
+        {
+            "CODICE": "003711",
+            "DESCRIZIONE": "60X60 ASPEN BEIGE RTT  ",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALI DADO",
+            "QTA_DA_CONSEGNARE_MQ": 1494.0,
+            "DISPONIBILITA_MQ": 527.85,
+            "SHORTAGE_MQ": 966.15
+        },
+        {
+            "CODICE": "004889",
+            "DESCRIZIONE": "UNIKA LIGHT GREY 60X60 RTT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALI DADO",
+            "QTA_DA_CONSEGNARE_MQ": 1474.56,
+            "DISPONIBILITA_MQ": 537.12,
+            "SHORTAGE_MQ": 937.44
+        },
+        {
+            "CODICE": "303856",
+            "DESCRIZIONE": "BIANCO MATT 30x60 RETT",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "UNICOLOR",
+            "QTA_DA_CONSEGNARE_MQ": 693.0,
+            "DISPONIBILITA_MQ": -232.2,
+            "SHORTAGE_MQ": 925.2
+        },
+        {
+            "CODICE": "304030",
+            "DESCRIZIONE": "CHARME INVISIBLE GREY 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "CHARME",
+            "QTA_DA_CONSEGNARE_MQ": 2937.6,
+            "DISPONIBILITA_MQ": 2030.4,
+            "SHORTAGE_MQ": 907.2
+        },
+        {
+            "CODICE": "FSN004",
+            "DESCRIZIONE": "FUSION TORTORA 30X60 RETT",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "FUSION - PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 1113.84,
+            "DISPONIBILITA_MQ": 219.24,
+            "SHORTAGE_MQ": 894.6
+        },
+        {
+            "CODICE": "303591",
+            "DESCRIZIONE": "GARE SAND RETT 81X81",
+            "FORMATO": "81X81 RTT",
+            "SERIE": "GARE DU NORD",
+            "QTA_DA_CONSEGNARE_MQ": 929.84,
+            "DISPONIBILITA_MQ": 39.4,
+            "SHORTAGE_MQ": 890.44
+        },
+        {
+            "CODICE": "MTS023",
+            "DESCRIZIONE": "MYTHOS STEEL OUT 60x60 RETT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MYTHOS - PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 622.8,
+            "DISPONIBILITA_MQ": -262.8,
+            "SHORTAGE_MQ": 885.6
+        },
+        {
+            "CODICE": "EMT014",
+            "DESCRIZIONE": "EMOTION ANTRACITE 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "EMOTION",
+            "QTA_DA_CONSEGNARE_MQ": 734.4,
+            "DISPONIBILITA_MQ": -92.6,
+            "SHORTAGE_MQ": 827.0
+        },
+        {
+            "CODICE": "004909",
+            "DESCRIZIONE": "81X81 UNIKA GRAPHITE RETT",
+            "FORMATO": "81X81 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 809.67,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 809.67
+        },
+        {
+            "CODICE": "303801",
+            "DESCRIZIONE": "IKON BIRCH 20X122 RTT",
+            "FORMATO": "20X122 RTT",
+            "SERIE": "IKON",
+            "QTA_DA_CONSEGNARE_MQ": 2136.22,
+            "DISPONIBILITA_MQ": 1348.1,
+            "SHORTAGE_MQ": 788.12
+        }
+    ],
+    "conclusions": "Azioni consigliate: 1) Prioritizzare in produzione gli articoli con maggior shortage (prima righe della lista). 2) Verificare con commerciale la conferma degli ordini più critici o eventuali date di consegna negoziabili. 3) Se necessario, richiedere trasferimenti tra depositi o valutare ordini di integrazione. 4) Per approfondire: posso fornire la stessa analisi per deposito, per tono (lotto) o includere scadenze/PRIORITÀ ordini per decidere l'allocazione delle risorse produttive."
+}

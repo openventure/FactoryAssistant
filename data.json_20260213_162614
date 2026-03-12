@@ -1,0 +1,11 @@
+{
+    "user_request": "vorrei sapere quanti articoli sono sotto scorta per il formato 80x80.",
+    "report_title": "Articoli Sotto Scorta per Formato 80x80",
+    "summary": "La query ha determinato quanti articoli con il formato 80x80 sono attualmente sotto la soglia minima di scorta nei magazzini.",
+    "table_data": [
+        {
+            "articoli_sotto_scorta": 0
+        }
+    ],
+    "conclusions": "Attualmente, nessun articolo con il formato 80x80 è sotto scorta. Pertanto, la disponibilità per questo particolare formato è adeguata e non sono necessarie azioni immediate per il riapprovvigionamento."
+}

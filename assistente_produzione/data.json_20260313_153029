@@ -1,0 +1,52 @@
+{
+    "user_request": "Analizza le prove di laboratorio dell'ultima settimana.",
+    "report_title": "Sintesi prove laboratorio - ultimi 7 giorni",
+    "summary": "Sono state analizzate le prove di assorbimento eseguite negli ultimi 7 giorni (periodo: ultimi 7 giorni). Sono disponibili 4 articoli con almeno 1 prova ciascuno. Tre articoli mostrano valori medi di assorbimento bassi e stabili (intorno a 0.14–0.30%), mentre un articolo (SF0356 - VISION PEARL 60X120) presenta media elevata (1.3225%) e forte variabilità (range 0.7–2.17%, deviazione standard 0.6057), segnale di possibile anomalia di lotto o di prova. I formati sono ricavabili dalla descrizione (es. 60X120). Non sono disponibili informazioni sul tono nei risultati aggregati restituiti.",
+    "table_data": [
+        {
+            "CodeArt": "SF0356",
+            "Description": "VISION PEARL 60X120",
+            "n_prove": 4,
+            "Avg_Assorbimento": 1.3225,
+            "Min_Assorbimento": 0.7,
+            "Max_Assorbimento": 2.17,
+            "Std_Assorbimento": 0.6057,
+            "first_test_date": "2026-03-07",
+            "last_test_date": "2026-03-07"
+        },
+        {
+            "CodeArt": "SF0934",
+            "Description": "VISION STATUARIO GOLD LAPP 60X120 (sfuso)",
+            "n_prove": 4,
+            "Avg_Assorbimento": 0.295,
+            "Min_Assorbimento": 0.25,
+            "Max_Assorbimento": 0.38,
+            "Std_Assorbimento": 0.0502,
+            "first_test_date": "2026-03-07",
+            "last_test_date": "2026-03-09"
+        },
+        {
+            "CodeArt": "SF0795",
+            "Description": "60X120 CHARME GREY (sfuso)",
+            "n_prove": 4,
+            "Avg_Assorbimento": 0.215,
+            "Min_Assorbimento": 0.17,
+            "Max_Assorbimento": 0.28,
+            "Std_Assorbimento": 0.0439,
+            "first_test_date": "2026-03-09",
+            "last_test_date": "2026-03-09"
+        },
+        {
+            "CodeArt": "SF0538",
+            "Description": "GARE GREY 60X120 (sfuso)",
+            "n_prove": 4,
+            "Avg_Assorbimento": 0.1425,
+            "Min_Assorbimento": 0.12,
+            "Max_Assorbimento": 0.16,
+            "Std_Assorbimento": 0.0148,
+            "first_test_date": "2026-03-07",
+            "last_test_date": "2026-03-07"
+        }
+    ],
+    "conclusions": "Azioni raccomandate:\n1) Priorità alta su SF0356 (VISION PEARL): ripetere prove sullo stesso lotto/tono, verificare eventuali errori di pesata o procedura e controllare se le piastrelle provengono dallo stesso A_LOT/tono in produzione. Considerare isolamento del lotto fino a verifica.\n2) Per gli altri articoli (SF0934, SF0795, SF0538) i valori sono bassi e stabili: mantenere monitoraggio standard; nessuna azione immediata richiesta se i valori rientrano nelle specifiche di prodotto.\n3) Ampliare campionamento nelle prossime settimane (aumentare n_prove) per confermare trend e ridurre incertezza statistica.\n4) Se serve, posso fornire il confronto con la media a 90 giorni o il dettaglio delle singole prove (date/valori grezzi) per indagare ulteriormente."
+}

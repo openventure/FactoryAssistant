@@ -1,0 +1,128 @@
+{
+    "user_request": "dammi il numero di assorbimenti per mese degli ultimi 2 anni",
+    "report_title": "Numero di assorbimenti per mese (ultimi 2 anni)",
+    "summary": "Ho contato le prove di assorbimento registrate negli ultimi 24 mesi (periodo: marzo 2024 - febbraio 2026). I conteggi sono aggregati per anno e mese e includono solo le prove con valore di assorbimento presente. Si evidenziano picchi nei mesi primaverili (es. maggio 2024) e cali ricorrenti nei mesi estivi (luglio-agosto). Questi pattern possono indicare variazioni di carico di laboratorio e stagionalità nella produzione.",
+    "table_data": [
+        {
+            "year": "2024",
+            "month": "03",
+            "n_assorbimenti": 160
+        },
+        {
+            "year": "2024",
+            "month": "04",
+            "n_assorbimenti": 211
+        },
+        {
+            "year": "2024",
+            "month": "05",
+            "n_assorbimenti": 256
+        },
+        {
+            "year": "2024",
+            "month": "06",
+            "n_assorbimenti": 177
+        },
+        {
+            "year": "2024",
+            "month": "07",
+            "n_assorbimenti": 79
+        },
+        {
+            "year": "2024",
+            "month": "08",
+            "n_assorbimenti": 64
+        },
+        {
+            "year": "2024",
+            "month": "09",
+            "n_assorbimenti": 179
+        },
+        {
+            "year": "2024",
+            "month": "10",
+            "n_assorbimenti": 189
+        },
+        {
+            "year": "2024",
+            "month": "11",
+            "n_assorbimenti": 136
+        },
+        {
+            "year": "2024",
+            "month": "12",
+            "n_assorbimenti": 143
+        },
+        {
+            "year": "2025",
+            "month": "01",
+            "n_assorbimenti": 150
+        },
+        {
+            "year": "2025",
+            "month": "02",
+            "n_assorbimenti": 186
+        },
+        {
+            "year": "2025",
+            "month": "03",
+            "n_assorbimenti": 141
+        },
+        {
+            "year": "2025",
+            "month": "04",
+            "n_assorbimenti": 190
+        },
+        {
+            "year": "2025",
+            "month": "05",
+            "n_assorbimenti": 198
+        },
+        {
+            "year": "2025",
+            "month": "06",
+            "n_assorbimenti": 179
+        },
+        {
+            "year": "2025",
+            "month": "07",
+            "n_assorbimenti": 80
+        },
+        {
+            "year": "2025",
+            "month": "08",
+            "n_assorbimenti": 49
+        },
+        {
+            "year": "2025",
+            "month": "09",
+            "n_assorbimenti": 181
+        },
+        {
+            "year": "2025",
+            "month": "10",
+            "n_assorbimenti": 191
+        },
+        {
+            "year": "2025",
+            "month": "11",
+            "n_assorbimenti": 162
+        },
+        {
+            "year": "2025",
+            "month": "12",
+            "n_assorbimenti": 110
+        },
+        {
+            "year": "2026",
+            "month": "01",
+            "n_assorbimenti": 145
+        },
+        {
+            "year": "2026",
+            "month": "02",
+            "n_assorbimenti": 170
+        }
+    ],
+    "conclusions": "Nel complesso il laboratorio mostra una stagionalità con concentrazione maggiore di prove in primavera e calo evidente in luglio/agosto. Azioni consigliate: 1) verificare capacità e personale nei mesi di picco per evitare ritardi; 2) analizzare le cause dei cali estivi (ferie, minor produzione, priorità diverse); 3) se serve approfondire, richiedi lo stesso conteggio filtrato per articolo (CodeArt), tono o tipo di prova per identificare quali prodotti guidano il carico di lavoro. Nota: i conteggi includono solo prove con valore di assorbimento registrato."
+}

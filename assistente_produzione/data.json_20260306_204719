@@ -1,0 +1,1048 @@
+{
+    "user_request": "Quali articoli hanno ordini superiori alla disponibilità attuale?",
+    "report_title": "Articoli con ordini > disponibilità (aggregato per articolo)",
+    "summary": "Ho confrontato la quantità da consegnare con la giacenza complessiva per articolo (aggregando i depositi). La tabella riporta gli articoli la cui domanda supera la disponibilità attuale; le colonne GIACENZA, QTA_DA_CONSEGNARE e DEFICIT sono espresse in m². Nella tabella trovi CODICE, DESCRIZIONE, SERIE, GIACENZA, QTA_DA_CONSEGNARE e il DEFICIT (QTA_DA_CONSEGNARE - GIACENZA).",
+    "table_data": [
+        {
+            "CODICE": "8TB314",
+            "DESCRIZIONE": "ASPEN GRIGIO 31X62 IN",
+            "SERIE": "ASPEN",
+            "GIACENZA": 447.0,
+            "QTA_DA_CONSEGNARE": 2471481.45,
+            "DEFICIT": 2471034.45
+        },
+        {
+            "CODICE": "8TB314",
+            "DESCRIZIONE": "31x62 ASPEN GRIGIO",
+            "SERIE": "ASPEN",
+            "GIACENZA": 13938.75,
+            "QTA_DA_CONSEGNARE": 1440969.75,
+            "DEFICIT": 1427031.0
+        },
+        {
+            "CODICE": "303571",
+            "DESCRIZIONE": "NEW SCOUT FOG 60x60 RETT SP 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 212.4,
+            "QTA_DA_CONSEGNARE": 1354193.28,
+            "DEFICIT": 1353980.88
+        },
+        {
+            "CODICE": "8TB339",
+            "DESCRIZIONE": "ASPEN GRIGIO 31X62 OUT",
+            "SERIE": "ASPEN",
+            "GIACENZA": 405.0,
+            "QTA_DA_CONSEGNARE": 1294011.45,
+            "DEFICIT": 1293606.45
+        },
+        {
+            "CODICE": "303627",
+            "DESCRIZIONE": "NEW ULTRA VALS LIGHT 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 123.84,
+            "QTA_DA_CONSEGNARE": 1225173.6,
+            "DEFICIT": 1225049.76
+        },
+        {
+            "CODICE": "8TB334",
+            "DESCRIZIONE": "ASPEN BEIGE 31X62 IN",
+            "SERIE": "ASPEN",
+            "GIACENZA": 464.4,
+            "QTA_DA_CONSEGNARE": 1162984.5,
+            "DEFICIT": 1162520.1
+        },
+        {
+            "CODICE": "303569",
+            "DESCRIZIONE": "NEW SCOUT BEIGE 60x60 RETT SP 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 63.36,
+            "QTA_DA_CONSEGNARE": 1099105.92,
+            "DEFICIT": 1099042.56
+        },
+        {
+            "CODICE": "303620",
+            "DESCRIZIONE": "NEW ULTRA SLATE GREY 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 90.72,
+            "QTA_DA_CONSEGNARE": 1033434.72,
+            "DEFICIT": 1033344.0
+        },
+        {
+            "CODICE": "302891",
+            "DESCRIZIONE": "BASIC LIGHT GREY RETT. 30X60",
+            "SERIE": "BASIC",
+            "GIACENZA": 8595.72,
+            "QTA_DA_CONSEGNARE": 868079.52,
+            "DEFICIT": 859483.8
+        },
+        {
+            "CODICE": "EMT072",
+            "DESCRIZIONE": "EMOTION GRIS 60X60 RETT 8mm",
+            "SERIE": "EMOTION",
+            "GIACENZA": 3061.8,
+            "QTA_DA_CONSEGNARE": 848950.2,
+            "DEFICIT": 845888.4
+        },
+        {
+            "CODICE": "303568",
+            "DESCRIZIONE": "NEW ULTRA BASIC GREY 60x60 RETT SP 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 82.8,
+            "QTA_DA_CONSEGNARE": 686121.12,
+            "DEFICIT": 686038.32
+        },
+        {
+            "CODICE": "SSN001",
+            "DESCRIZIONE": "SASSONE R11 15,3X31 OUT",
+            "SERIE": "SASSONE",
+            "GIACENZA": 3601.21,
+            "QTA_DA_CONSEGNARE": 666013.92,
+            "DEFICIT": 662412.71
+        },
+        {
+            "CODICE": "EMT071",
+            "DESCRIZIONE": "EMOTION BLANC 60X60 RETT 8mm",
+            "SERIE": "EMOTION",
+            "GIACENZA": 2047.32,
+            "QTA_DA_CONSEGNARE": 593712.0,
+            "DEFICIT": 591664.68
+        },
+        {
+            "CODICE": "8TB339",
+            "DESCRIZIONE": "31x62 ASPEN GRIGIO R11",
+            "SERIE": "ASPEN",
+            "GIACENZA": 14638.05,
+            "QTA_DA_CONSEGNARE": 596868.75,
+            "DEFICIT": 582230.7
+        },
+        {
+            "CODICE": "303405A",
+            "DESCRIZIONE": "FABRIC WHITE 60x120 RETT CL 35",
+            "SERIE": "FABRIC",
+            "GIACENZA": 8919.36,
+            "QTA_DA_CONSEGNARE": 588409.92,
+            "DEFICIT": 579490.56
+        },
+        {
+            "CODICE": "8TB334",
+            "DESCRIZIONE": "31x62 ASPEN BEIGE",
+            "SERIE": "ASPEN",
+            "GIACENZA": 12205.35,
+            "QTA_DA_CONSEGNARE": 550003.5,
+            "DEFICIT": 537798.15
+        },
+        {
+            "CODICE": "303716",
+            "DESCRIZIONE": "SOLID LIGHT GREY 60x60 RETT",
+            "SERIE": "SOLID",
+            "GIACENZA": 3864.96,
+            "QTA_DA_CONSEGNARE": 538306.56,
+            "DEFICIT": 534441.6
+        },
+        {
+            "CODICE": "004154",
+            "DESCRIZIONE": "60x60 RTT NEW ULTRA ASPEN GRIGIO SP.20MM",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 13250.88,
+            "QTA_DA_CONSEGNARE": 507965.76,
+            "DEFICIT": 494714.88
+        },
+        {
+            "CODICE": "303467A",
+            "DESCRIZIONE": "BASIC LIGHT GREY 60X120 RETT CL 35",
+            "SERIE": "BASIC",
+            "GIACENZA": 15143.04,
+            "QTA_DA_CONSEGNARE": 506800.8,
+            "DEFICIT": 491657.76
+        },
+        {
+            "CODICE": "303658",
+            "DESCRIZIONE": "IKON AMBER 20x122 Rettificato",
+            "SERIE": "IKON",
+            "GIACENZA": 19377.26,
+            "QTA_DA_CONSEGNARE": 502646.1,
+            "DEFICIT": 483268.84
+        },
+        {
+            "CODICE": "303810",
+            "DESCRIZIONE": "ESSENZE VANIGLIA 20x122 RETT/SPAZZ",
+            "SERIE": "ESSENZE",
+            "GIACENZA": 16904.32,
+            "QTA_DA_CONSEGNARE": 482697.88,
+            "DEFICIT": 465793.56
+        },
+        {
+            "CODICE": "303045",
+            "DESCRIZIONE": "TOUCH GREY 60X60 RETT (115)",
+            "SERIE": "TOUCHFEEL",
+            "GIACENZA": 34.2,
+            "QTA_DA_CONSEGNARE": 461030.4,
+            "DEFICIT": 460996.2
+        },
+        {
+            "CODICE": "302599",
+            "DESCRIZIONE": "CEMENTI TAUPE RETT. 30X60 (112)",
+            "SERIE": "CEMENTI",
+            "GIACENZA": 375.48,
+            "QTA_DA_CONSEGNARE": 442890.0,
+            "DEFICIT": 442514.52
+        },
+        {
+            "CODICE": "EMT073",
+            "DESCRIZIONE": "EMOTION TAUPE 60X60 RETT 8mm",
+            "SERIE": "EMOTION",
+            "GIACENZA": 550.8,
+            "QTA_DA_CONSEGNARE": 442668.6,
+            "DEFICIT": 442117.8
+        },
+        {
+            "CODICE": "004154",
+            "DESCRIZIONE": "60X60 NEW ULTRA ASPEN GRIGIO RTT SP20",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 767.52,
+            "QTA_DA_CONSEGNARE": 437614.56,
+            "DEFICIT": 436847.04
+        },
+        {
+            "CODICE": "8TB336",
+            "DESCRIZIONE": "ASPEN FUME' 31X62 IN",
+            "SERIE": "ASPEN",
+            "GIACENZA": 599.4,
+            "QTA_DA_CONSEGNARE": 433927.8,
+            "DEFICIT": 433328.4
+        },
+        {
+            "CODICE": "8TB338",
+            "DESCRIZIONE": "ASPEN BEIGE 31X62 OUT",
+            "SERIE": "ASPEN",
+            "GIACENZA": 618.3,
+            "QTA_DA_CONSEGNARE": 427593.6,
+            "DEFICIT": 426975.3
+        },
+        {
+            "CODICE": "004990",
+            "DESCRIZIONE": "20X122 RESORT NATURAL RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "GIACENZA": 0.0,
+            "QTA_DA_CONSEGNARE": 419655.6,
+            "DEFICIT": 419655.6
+        },
+        {
+            "CODICE": "303525A",
+            "DESCRIZIONE": "GOLDEN FERN 60x120 RETT CL 35",
+            "SERIE": "WALLPAPERS",
+            "GIACENZA": 9733.68,
+            "QTA_DA_CONSEGNARE": 424670.4,
+            "DEFICIT": 414936.72
+        },
+        {
+            "CODICE": "303014",
+            "DESCRIZIONE": "BASIC D.LIGHT GREY 31X62 NAT (08)",
+            "SERIE": "BASIC DEVELOPMENT",
+            "GIACENZA": 16021.8,
+            "QTA_DA_CONSEGNARE": 427518.0,
+            "DEFICIT": 411496.2
+        },
+        {
+            "CODICE": "303660",
+            "DESCRIZIONE": "IKON AMBER 30x122 RETT",
+            "SERIE": "IKON",
+            "GIACENZA": 6484.03,
+            "QTA_DA_CONSEGNARE": 411644.92,
+            "DEFICIT": 405160.89
+        },
+        {
+            "CODICE": "303043",
+            "DESCRIZIONE": "TOUCH WHITE 60X60 RETT (115)",
+            "SERIE": "TOUCHFEEL",
+            "GIACENZA": 124.2,
+            "QTA_DA_CONSEGNARE": 372160.8,
+            "DEFICIT": 372036.6
+        },
+        {
+            "CODICE": "004151",
+            "DESCRIZIONE": "NEW ULTRA ASPEN BIANCO 60X60 RTT 20MM",
+            "SERIE": "MATERIALI DADO",
+            "GIACENZA": 17138.88,
+            "QTA_DA_CONSEGNARE": 383739.84,
+            "DEFICIT": 366600.96
+        },
+        {
+            "CODICE": "303410",
+            "DESCRIZIONE": "FABRIC GREY 60x60 RETT",
+            "SERIE": "FABRIC",
+            "GIACENZA": 5430.6,
+            "QTA_DA_CONSEGNARE": 367488.0,
+            "DEFICIT": 362057.4
+        },
+        {
+            "CODICE": "303409",
+            "DESCRIZIONE": "FABRIC WHITE 60x60 RETT",
+            "SERIE": "FABRIC",
+            "GIACENZA": 11577.6,
+            "QTA_DA_CONSEGNARE": 359136.0,
+            "DEFICIT": 347558.4
+        },
+        {
+            "CODICE": "004151",
+            "DESCRIZIONE": "60X60 NEW ULTRA ASPEN BIANCO RTT SP20",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 522.0,
+            "QTA_DA_CONSEGNARE": 335515.68,
+            "DEFICIT": 334993.68
+        },
+        {
+            "CODICE": "303047",
+            "DESCRIZIONE": "TOUCH WHITE 30X60 RETT (56)",
+            "SERIE": "TOUCHFEEL",
+            "GIACENZA": 1597.68,
+            "QTA_DA_CONSEGNARE": 336168.0,
+            "DEFICIT": 334570.32
+        },
+        {
+            "CODICE": "303598",
+            "DESCRIZIONE": "GARE LIGHT GREY 60x60 RETT",
+            "SERIE": "GARE DU NORD",
+            "GIACENZA": 6033.6,
+            "QTA_DA_CONSEGNARE": 340469.28,
+            "DEFICIT": 334435.68
+        },
+        {
+            "CODICE": "303570",
+            "DESCRIZIONE": "NEW SCOUT SMOKE 60x60 RETT SP 20mm",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 53.28,
+            "QTA_DA_CONSEGNARE": 332791.92,
+            "DEFICIT": 332738.64
+        },
+        {
+            "CODICE": "303627",
+            "DESCRIZIONE": "60X60 NEW ULTRA VALS LIGHT RT Sp20mm",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 124.56,
+            "QTA_DA_CONSEGNARE": 324266.4,
+            "DEFICIT": 324141.84
+        },
+        {
+            "CODICE": "303627",
+            "DESCRIZIONE": "60x60 RTT NEW ULTRA VALS LIGHT SP 20 MM",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 2001.6,
+            "QTA_DA_CONSEGNARE": 318880.8,
+            "DEFICIT": 316879.2
+        },
+        {
+            "CODICE": "303046",
+            "DESCRIZIONE": "TOUCH BEIGE 60X60 RETT (115)",
+            "SERIE": "TOUCHFEEL",
+            "GIACENZA": 70.2,
+            "QTA_DA_CONSEGNARE": 302742.0,
+            "DEFICIT": 302671.8
+        },
+        {
+            "CODICE": "8TB335",
+            "DESCRIZIONE": "ASPEN BIANCO 31X62 IN",
+            "SERIE": "ASPEN",
+            "GIACENZA": 248.4,
+            "QTA_DA_CONSEGNARE": 300002.4,
+            "DEFICIT": 299754.0
+        },
+        {
+            "CODICE": "302886",
+            "DESCRIZIONE": "BASIC BEIGE RETT. 60X60 (115)",
+            "SERIE": "BASIC",
+            "GIACENZA": 7117.2,
+            "QTA_DA_CONSEGNARE": 300486.6,
+            "DEFICIT": 293369.4
+        },
+        {
+            "CODICE": "303571",
+            "DESCRIZIONE": "60X60 NEW SCOUT FOG RT Sp20mm dado",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 43.2,
+            "QTA_DA_CONSEGNARE": 289710.72,
+            "DEFICIT": 289667.52
+        },
+        {
+            "CODICE": "EMT014",
+            "DESCRIZIONE": "EMOTION ANTRACITE 60X60 RETT.",
+            "SERIE": "EMOTION",
+            "GIACENZA": 38.8,
+            "QTA_DA_CONSEGNARE": 286416.0,
+            "DEFICIT": 286377.2
+        },
+        {
+            "CODICE": "CMT002",
+            "DESCRIZIONE": "COMFORT ZERO20 NATURALE 20x122 RETT",
+            "SERIE": "COMFORT - PETRUS",
+            "GIACENZA": 36194.96,
+            "QTA_DA_CONSEGNARE": 313659.56,
+            "DEFICIT": 277464.6
+        },
+        {
+            "CODICE": "8TB342",
+            "DESCRIZIONE": "ASPEN BIANCO 31X62 OUT",
+            "SERIE": "ASPEN",
+            "GIACENZA": 742.5,
+            "QTA_DA_CONSEGNARE": 276952.5,
+            "DEFICIT": 276210.0
+        },
+        {
+            "CODICE": "303568",
+            "DESCRIZIONE": "60x60 RTT NEW ULTRA BASIC GREY SP 20 MM",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 13173.84,
+            "QTA_DA_CONSEGNARE": 287143.2,
+            "DEFICIT": 273969.36
+        },
+        {
+            "CODICE": "303569",
+            "DESCRIZIONE": "60X60 NEW SCOUT BEIGE RT Sp20mm dado",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 366.48,
+            "QTA_DA_CONSEGNARE": 267724.8,
+            "DEFICIT": 267358.32
+        },
+        {
+            "CODICE": "8TB336",
+            "DESCRIZIONE": "31x62 ASPEN FUME'",
+            "SERIE": "ASPEN",
+            "GIACENZA": 9506.7,
+            "QTA_DA_CONSEGNARE": 273739.5,
+            "DEFICIT": 264232.8
+        },
+        {
+            "CODICE": "303620",
+            "DESCRIZIONE": "60x60 ULTRA SLATE GREY RTT sp.20",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 4073.76,
+            "QTA_DA_CONSEGNARE": 267267.6,
+            "DEFICIT": 263193.84
+        },
+        {
+            "CODICE": "303721",
+            "DESCRIZIONE": "SOLID LIGHT GREY 30x60 RETT",
+            "SERIE": "SOLID",
+            "GIACENZA": 6043.68,
+            "QTA_DA_CONSEGNARE": 267264.0,
+            "DEFICIT": 261220.32
+        },
+        {
+            "CODICE": "303714",
+            "DESCRIZIONE": "SOLID BEIGE 60x60 RETT",
+            "SERIE": "SOLID",
+            "GIACENZA": 8575.2,
+            "QTA_DA_CONSEGNARE": 267684.48,
+            "DEFICIT": 259109.28
+        },
+        {
+            "CODICE": "SSN001",
+            "DESCRIZIONE": "15.3X31 SASSONE R11",
+            "SERIE": "SASSONE",
+            "GIACENZA": 2758.13,
+            "QTA_DA_CONSEGNARE": 259846.34,
+            "DEFICIT": 257088.21
+        },
+        {
+            "CODICE": "303599",
+            "DESCRIZIONE": "GARE GREY 60x60 RETT",
+            "SERIE": "GARE DU NORD",
+            "GIACENZA": 9299.52,
+            "QTA_DA_CONSEGNARE": 261360.0,
+            "DEFICIT": 252060.48
+        },
+        {
+            "CODICE": "303811",
+            "DESCRIZIONE": "ESSENZE CANNELLA 20x122 RETT/SPAZZ",
+            "SERIE": "ESSENZE",
+            "GIACENZA": 9191.48,
+            "QTA_DA_CONSEGNARE": 256738.02,
+            "DEFICIT": 247546.54
+        },
+        {
+            "CODICE": "303571",
+            "DESCRIZIONE": "60x60 RTT NEW SCOUT FOG SP 20 MM",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 4307.04,
+            "QTA_DA_CONSEGNARE": 251812.8,
+            "DEFICIT": 247505.76
+        },
+        {
+            "CODICE": "8TB342",
+            "DESCRIZIONE": "31X62 ASPEN BIANCO OUT",
+            "SERIE": "ASPEN",
+            "GIACENZA": 6758.1,
+            "QTA_DA_CONSEGNARE": 251775.0,
+            "DEFICIT": 245016.9
+        },
+        {
+            "CODICE": "303620",
+            "DESCRIZIONE": "60X60 NEW ULTRA SLATE GREY  RT Sp20mm",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 0.0,
+            "QTA_DA_CONSEGNARE": 243510.48,
+            "DEFICIT": 243510.48
+        },
+        {
+            "CODICE": "302890",
+            "DESCRIZIONE": "BASIC LIGHT GREY RETT. 60X60 (115)",
+            "SERIE": "BASIC",
+            "GIACENZA": 15130.8,
+            "QTA_DA_CONSEGNARE": 238233.6,
+            "DEFICIT": 223102.8
+        },
+        {
+            "CODICE": "TVN011",
+            "DESCRIZIONE": "TAVELLONE VECCHIA FIRENZE 15,3X31 OUT",
+            "SERIE": "TAVELLONE",
+            "GIACENZA": 1785.29,
+            "QTA_DA_CONSEGNARE": 224281.2,
+            "DEFICIT": 222495.91
+        },
+        {
+            "CODICE": "303569",
+            "DESCRIZIONE": "60x60 RTT NEW SCOUT BEIGE SP 20 MM",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 13092.48,
+            "QTA_DA_CONSEGNARE": 231739.2,
+            "DEFICIT": 218646.72
+        },
+        {
+            "CODICE": "303715",
+            "DESCRIZIONE": "SOLID WHITE 60x60 RETT",
+            "SERIE": "SOLID",
+            "GIACENZA": 8356.32,
+            "QTA_DA_CONSEGNARE": 225845.28,
+            "DEFICIT": 217488.96
+        },
+        {
+            "CODICE": "303628",
+            "DESCRIZIONE": "NEW ULTRA VALS DARK 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 54.0,
+            "QTA_DA_CONSEGNARE": 211012.56,
+            "DEFICIT": 210958.56
+        },
+        {
+            "CODICE": "303658",
+            "DESCRIZIONE": "20X122 IKON AMBER RETT.",
+            "SERIE": "IKON",
+            "GIACENZA": 623.42,
+            "QTA_DA_CONSEGNARE": 210029.1,
+            "DEFICIT": 209405.68
+        },
+        {
+            "CODICE": "EMT053",
+            "DESCRIZIONE": "EMOTION TAUPE 81x81 RETT",
+            "SERIE": "EMOTION",
+            "GIACENZA": 66.6,
+            "QTA_DA_CONSEGNARE": 208877.13,
+            "DEFICIT": 208810.53
+        },
+        {
+            "CODICE": "004128",
+            "DESCRIZIONE": "60X60 CONTEMPORARY GREY RTT",
+            "SERIE": "CONTEMPORARY",
+            "GIACENZA": 4811.04,
+            "QTA_DA_CONSEGNARE": 212427.36,
+            "DEFICIT": 207616.32
+        },
+        {
+            "CODICE": "303049",
+            "DESCRIZIONE": "TOUCH GREY 30X60 RETT (56)",
+            "SERIE": "TOUCHFEEL",
+            "GIACENZA": 50.4,
+            "QTA_DA_CONSEGNARE": 207446.4,
+            "DEFICIT": 207396.0
+        },
+        {
+            "CODICE": "303624",
+            "DESCRIZIONE": "NEW ULTRA CULT GREY 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 107.28,
+            "QTA_DA_CONSEGNARE": 202625.28,
+            "DEFICIT": 202518.0
+        },
+        {
+            "CODICE": "OO2649",
+            "DESCRIZIONE": "ASSISI BEIGE 31X62 6 Pz colli60",
+            "SERIE": "MURO DI ASSISI",
+            "GIACENZA": 3197.81,
+            "QTA_DA_CONSEGNARE": 203742.0,
+            "DEFICIT": 200544.19
+        },
+        {
+            "CODICE": "003714",
+            "DESCRIZIONE": "60X60 ASPEN GRIGIO RTT",
+            "SERIE": "ASPEN",
+            "GIACENZA": 73.8,
+            "QTA_DA_CONSEGNARE": 200210.4,
+            "DEFICIT": 200136.6
+        },
+        {
+            "CODICE": "PP0029",
+            "DESCRIZIONE": "17,7X61,5 FOREST BEIGE",
+            "SERIE": "TERM ELLE - NON USARE",
+            "GIACENZA": 9447.95,
+            "QTA_DA_CONSEGNARE": 203509.25,
+            "DEFICIT": 194061.3
+        },
+        {
+            "CODICE": "004431A",
+            "DESCRIZIONE": "31X62 GRANITO NEW BEIGE cl.60",
+            "SERIE": "GRANITI",
+            "GIACENZA": 10728.66,
+            "QTA_DA_CONSEGNARE": 204571.52,
+            "DEFICIT": 193842.86
+        },
+        {
+            "CODICE": "303259",
+            "DESCRIZIONE": "NEW SCOUT BEIGE 31X62 NAT",
+            "SERIE": "SCOUT",
+            "GIACENZA": 102.6,
+            "QTA_DA_CONSEGNARE": 191808.0,
+            "DEFICIT": 191705.4
+        },
+        {
+            "CODICE": "003006",
+            "DESCRIZIONE": "31X62 BRICK RED colli 40",
+            "SERIE": "BRICK",
+            "GIACENZA": 101.23,
+            "QTA_DA_CONSEGNARE": 187299.0,
+            "DEFICIT": 187197.77
+        },
+        {
+            "CODICE": "302958",
+            "DESCRIZIONE": "SCOUT WHITE 31X62 NAT",
+            "SERIE": "SCOUT",
+            "GIACENZA": 211.95,
+            "QTA_DA_CONSEGNARE": 181426.5,
+            "DEFICIT": 181214.55
+        },
+        {
+            "CODICE": "303660",
+            "DESCRIZIONE": "30X122 IKON AMBER RETT",
+            "SERIE": "IKON",
+            "GIACENZA": 1.46,
+            "QTA_DA_CONSEGNARE": 180722.16,
+            "DEFICIT": 180720.7
+        },
+        {
+            "CODICE": "SOLWHI68",
+            "DESCRIZIONE": "60X60 RTT. SOLUTION WHITE SP. 8,5MM",
+            "SERIE": "SOLUTION",
+            "GIACENZA": 24577.2,
+            "QTA_DA_CONSEGNARE": 199929.6,
+            "DEFICIT": 175352.4
+        },
+        {
+            "CODICE": "303904",
+            "DESCRIZIONE": "EXT60-605 GREIGE 60X60X3 R11",
+            "SERIE": "TEGELS 3CM",
+            "GIACENZA": 0.36,
+            "QTA_DA_CONSEGNARE": 173664.0,
+            "DEFICIT": 173663.64
+        },
+        {
+            "CODICE": "PP0001",
+            "DESCRIZIONE": "21X42 QUARZITE BEIGE OUT",
+            "SERIE": "OUTTLET - PETRUS",
+            "GIACENZA": 16973.94,
+            "QTA_DA_CONSEGNARE": 189789.6,
+            "DEFICIT": 172815.66
+        },
+        {
+            "CODICE": "8TB338",
+            "DESCRIZIONE": "31x62 ASPEN BEIGE R11",
+            "SERIE": "ASPEN",
+            "GIACENZA": 14828.4,
+            "QTA_DA_CONSEGNARE": 187617.6,
+            "DEFICIT": 172789.2
+        },
+        {
+            "CODICE": "PP0002",
+            "DESCRIZIONE": "21X42 QUARZITE GRIGIO OUT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "GIACENZA": 14294.26,
+            "QTA_DA_CONSEGNARE": 181080.64,
+            "DEFICIT": 166786.38
+        },
+        {
+            "CODICE": "303810",
+            "DESCRIZIONE": "20X122 ESSENZE VANIGLIA RETT/SPAZZ",
+            "SERIE": "ESSENZE",
+            "GIACENZA": 1305.4,
+            "QTA_DA_CONSEGNARE": 167717.06,
+            "DEFICIT": 166411.66
+        },
+        {
+            "CODICE": "004470",
+            "DESCRIZIONE": "20X122 FRAME MID RTT",
+            "SERIE": "FRAME",
+            "GIACENZA": 38809.42,
+            "QTA_DA_CONSEGNARE": 201461.04,
+            "DEFICIT": 162651.62
+        },
+        {
+            "CODICE": "EMT052",
+            "DESCRIZIONE": "EMOTION GRIS 81x81 RETT",
+            "SERIE": "EMOTION",
+            "GIACENZA": 80.77,
+            "QTA_DA_CONSEGNARE": 159995.52,
+            "DEFICIT": 159914.75
+        },
+        {
+            "CODICE": "304040",
+            "DESCRIZIONE": "CHARME GREY 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "GIACENZA": 8314.56,
+            "QTA_DA_CONSEGNARE": 168220.8,
+            "DEFICIT": 159906.24
+        },
+        {
+            "CODICE": "004183",
+            "DESCRIZIONE": "30X60 PALERMO ANTRAZIT RTT",
+            "SERIE": "PALERMO",
+            "GIACENZA": 9278.64,
+            "QTA_DA_CONSEGNARE": 168202.44,
+            "DEFICIT": 158923.8
+        },
+        {
+            "CODICE": "303525A",
+            "DESCRIZIONE": "GOLDEN FERN 60X120 RTT",
+            "SERIE": "WALLPAPERS",
+            "GIACENZA": 1.44,
+            "QTA_DA_CONSEGNARE": 157620.96,
+            "DEFICIT": 157619.52
+        },
+        {
+            "CODICE": "303011",
+            "DESCRIZIONE": "BASIC D.BEIGE 31X62 NAT (08)",
+            "SERIE": "BASIC DEVELOPMENT",
+            "GIACENZA": 7214.4,
+            "QTA_DA_CONSEGNARE": 161595.0,
+            "DEFICIT": 154380.6
+        },
+        {
+            "CODICE": "303568",
+            "DESCRIZIONE": "60X60 NEW ULTRA BASIC GREY RT Sp20mm dado",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 591.12,
+            "QTA_DA_CONSEGNARE": 152928.0,
+            "DEFICIT": 152336.88
+        },
+        {
+            "CODICE": "EMT074",
+            "DESCRIZIONE": "EMOTION ANTHRACITE 60X60 RETT 8mm",
+            "SERIE": "EMOTION",
+            "GIACENZA": 1558.8,
+            "QTA_DA_CONSEGNARE": 153878.4,
+            "DEFICIT": 152319.6
+        },
+        {
+            "CODICE": "SOLWHI68",
+            "DESCRIZIONE": "SOLUTION WHITE 60X60 RETT 8mm",
+            "SERIE": "SOLUTION",
+            "GIACENZA": 52.2,
+            "QTA_DA_CONSEGNARE": 149947.2,
+            "DEFICIT": 149895.0
+        },
+        {
+            "CODICE": "003778",
+            "DESCRIZIONE": "20X122 SIERRA BEIGE RTT",
+            "SERIE": "SIERRA",
+            "GIACENZA": 10252.88,
+            "QTA_DA_CONSEGNARE": 159956.64,
+            "DEFICIT": 149703.76
+        },
+        {
+            "CODICE": "303619",
+            "DESCRIZIONE": "NEW ULTRA MUSTANG 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 69.84,
+            "QTA_DA_CONSEGNARE": 149598.72,
+            "DEFICIT": 149528.88
+        },
+        {
+            "CODICE": "8TB335",
+            "DESCRIZIONE": "31x62 ASPEN BIANCO",
+            "SERIE": "ASPEN",
+            "GIACENZA": 4862.7,
+            "QTA_DA_CONSEGNARE": 153948.6,
+            "DEFICIT": 149085.9
+        },
+        {
+            "CODICE": "005473",
+            "DESCRIZIONE": "ASPEN BEIGE 30,5x30,5 7mm",
+            "SERIE": "ASPEN",
+            "GIACENZA": 505.92,
+            "QTA_DA_CONSEGNARE": 145228.8,
+            "DEFICIT": 144722.88
+        },
+        {
+            "CODICE": "303716",
+            "DESCRIZIONE": "SOLID LIGHT GREY 60X60 RTT",
+            "SERIE": "SOLID",
+            "GIACENZA": 155.52,
+            "QTA_DA_CONSEGNARE": 141197.76,
+            "DEFICIT": 141042.24
+        },
+        {
+            "CODICE": "303802",
+            "DESCRIZIONE": "IKON BIRCH 30x122 RETT",
+            "SERIE": "IKON",
+            "GIACENZA": 7996.37,
+            "QTA_DA_CONSEGNARE": 148203.8,
+            "DEFICIT": 140207.43
+        },
+        {
+            "CODICE": "304064",
+            "DESCRIZIONE": "SOLID GREY 31x62 Naturale 7,5mm",
+            "SERIE": "SOLID",
+            "GIACENZA": 5547.08,
+            "QTA_DA_CONSEGNARE": 144356.52,
+            "DEFICIT": 138809.44
+        },
+        {
+            "CODICE": "004153",
+            "DESCRIZIONE": "60x60 RTT NEW ULTRA ASPEN ANTRACITE SP 20 MM",
+            "SERIE": "OUTDOOR 4.0",
+            "GIACENZA": 15949.44,
+            "QTA_DA_CONSEGNARE": 146410.56,
+            "DEFICIT": 130461.12
+        },
+        {
+            "CODICE": "303405A",
+            "DESCRIZIONE": "FABRIC WHITE 60X120 RETT. cl35",
+            "SERIE": "FABRIC",
+            "GIACENZA": 342.72,
+            "QTA_DA_CONSEGNARE": 129456.0,
+            "DEFICIT": 129113.28
+        },
+        {
+            "CODICE": "005473",
+            "DESCRIZIONE": "30,5X30,5 ASPEN BEIGE 7mm",
+            "SERIE": "ASPEN",
+            "GIACENZA": 6993.6,
+            "QTA_DA_CONSEGNARE": 134217.6,
+            "DEFICIT": 127224.0
+        },
+        {
+            "CODICE": "005062",
+            "DESCRIZIONE": "31X62 PIETRONE OUT",
+            "SERIE": "PIETRONE/ROCCIONE",
+            "GIACENZA": 3299.4,
+            "QTA_DA_CONSEGNARE": 129741.75,
+            "DEFICIT": 126442.35
+        },
+        {
+            "CODICE": "005474",
+            "DESCRIZIONE": "30,5X30,5 ASPEN GRIGIO 7mm",
+            "SERIE": "ASPEN",
+            "GIACENZA": 3571.2,
+            "QTA_DA_CONSEGNARE": 128340.0,
+            "DEFICIT": 124768.8
+        },
+        {
+            "CODICE": "005055",
+            "DESCRIZIONE": "60X60 NEW ULTRA ASPEN BEIGE RTT SP20",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 734.4,
+            "QTA_DA_CONSEGNARE": 124435.44,
+            "DEFICIT": 123701.04
+        },
+        {
+            "CODICE": "303605",
+            "DESCRIZIONE": "GARE GRAPHITE 30X60 RETT",
+            "SERIE": "GARE DU NORD",
+            "GIACENZA": 2548.8,
+            "QTA_DA_CONSEGNARE": 126191.52,
+            "DEFICIT": 123642.72
+        },
+        {
+            "CODICE": "304041",
+            "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "GIACENZA": 8517.6,
+            "QTA_DA_CONSEGNARE": 131021.28,
+            "DEFICIT": 122503.68
+        },
+        {
+            "CODICE": "303412",
+            "DESCRIZIONE": "FABRIC ANTHRACITE 60x60 RETT",
+            "SERIE": "FABRIC",
+            "GIACENZA": 4753.8,
+            "QTA_DA_CONSEGNARE": 127126.8,
+            "DEFICIT": 122373.0
+        },
+        {
+            "CODICE": "005063",
+            "DESCRIZIONE": "31X62 ROCCIONE OUT",
+            "SERIE": "PIETRONE/ROCCIONE",
+            "GIACENZA": 596.7,
+            "QTA_DA_CONSEGNARE": 121888.8,
+            "DEFICIT": 121292.1
+        },
+        {
+            "CODICE": "303801",
+            "DESCRIZIONE": "IKON BIRCH 20x122 Rettificato",
+            "SERIE": "IKON",
+            "GIACENZA": 902.8,
+            "QTA_DA_CONSEGNARE": 121592.52,
+            "DEFICIT": 120689.72
+        },
+        {
+            "CODICE": "304065",
+            "DESCRIZIONE": "CHARME IVORY 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "GIACENZA": 5284.8,
+            "QTA_DA_CONSEGNARE": 122964.48,
+            "DEFICIT": 117679.68
+        },
+        {
+            "CODICE": "303993",
+            "DESCRIZIONE": "ULTRA SOLID LIGHT GREY 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 63.36,
+            "QTA_DA_CONSEGNARE": 115426.08,
+            "DEFICIT": 115362.72
+        },
+        {
+            "CODICE": "303014",
+            "DESCRIZIONE": "31X62 BASIC D. LIGHT GREY",
+            "SERIE": "BASIC DEVELOPMENT",
+            "GIACENZA": 0.0,
+            "QTA_DA_CONSEGNARE": 115101.0,
+            "DEFICIT": 115101.0
+        },
+        {
+            "CODICE": "EMT072",
+            "DESCRIZIONE": "60X60 EMOTION GRIS RTT 8mm",
+            "SERIE": "EMOTION",
+            "GIACENZA": 0.0,
+            "QTA_DA_CONSEGNARE": 114723.0,
+            "DEFICIT": 114723.0
+        },
+        {
+            "CODICE": "EMT072",
+            "DESCRIZIONE": "60X60 RTT. EMOTION GRIS SP. 8MM",
+            "SERIE": "EMOTION",
+            "GIACENZA": 46391.48,
+            "QTA_DA_CONSEGNARE": 160612.2,
+            "DEFICIT": 114220.72
+        },
+        {
+            "CODICE": "PP0018",
+            "DESCRIZIONE": "30,5X30,5 CEMENTO GRIGIO IN",
+            "SERIE": "MATERIALE PETRUS",
+            "GIACENZA": 5598.6,
+            "QTA_DA_CONSEGNARE": 119784.0,
+            "DEFICIT": 114185.4
+        },
+        {
+            "CODICE": "EMT051",
+            "DESCRIZIONE": "EMOTION BLANC 81x81 RETT",
+            "SERIE": "EMOTION",
+            "GIACENZA": 165.48,
+            "QTA_DA_CONSEGNARE": 113767.5,
+            "DEFICIT": 113602.02
+        },
+        {
+            "CODICE": "303811",
+            "DESCRIZIONE": "20X122 ESSENZE CANNELLA RETT/SPAZZ",
+            "SERIE": "ESSENZE",
+            "GIACENZA": 849.12,
+            "QTA_DA_CONSEGNARE": 113364.84,
+            "DEFICIT": 112515.72
+        },
+        {
+            "CODICE": "303310",
+            "DESCRIZIONE": "SMOT GREY 60x60 RETT",
+            "SERIE": "SMOT",
+            "GIACENZA": 3783.6,
+            "QTA_DA_CONSEGNARE": 114087.6,
+            "DEFICIT": 110304.0
+        },
+        {
+            "CODICE": "303822",
+            "DESCRIZIONE": "NATURE BIANCO 30x60 RETT",
+            "SERIE": "NATURE",
+            "GIACENZA": 424.8,
+            "QTA_DA_CONSEGNARE": 109287.36,
+            "DEFICIT": 108862.56
+        },
+        {
+            "CODICE": "303476",
+            "DESCRIZIONE": "VALS LIGHT 60x60 RETT",
+            "SERIE": "PIETRA DI VALS",
+            "GIACENZA": 6017.4,
+            "QTA_DA_CONSEGNARE": 113004.0,
+            "DEFICIT": 106986.6
+        },
+        {
+            "CODICE": "303904",
+            "DESCRIZIONE": "60x60 RTT EXT60-605 GREIGE SP 30MM",
+            "SERIE": "TEGELS 3CM",
+            "GIACENZA": 3885.12,
+            "QTA_DA_CONSEGNARE": 109987.2,
+            "DEFICIT": 106102.08
+        },
+        {
+            "CODICE": "303104",
+            "DESCRIZIONE": "COUNTRY TAVELLA MIX 15,5X31 OUT",
+            "SERIE": "TAVELLONE",
+            "GIACENZA": 2517.94,
+            "QTA_DA_CONSEGNARE": 108245.8,
+            "DEFICIT": 105727.86
+        },
+        {
+            "CODICE": "303905",
+            "DESCRIZIONE": "EXT60-606 WARM GREY 60X60X3 R11",
+            "SERIE": "TEGELS 3CM",
+            "GIACENZA": 0.0,
+            "QTA_DA_CONSEGNARE": 104515.2,
+            "DEFICIT": 104515.2
+        },
+        {
+            "CODICE": "003710",
+            "DESCRIZIONE": "60X60 ASPEN ANTRACITE RTT",
+            "SERIE": "ASPEN",
+            "GIACENZA": 86.4,
+            "QTA_DA_CONSEGNARE": 103304.0,
+            "DEFICIT": 103217.6
+        },
+        {
+            "CODICE": "303621",
+            "DESCRIZIONE": "NEW ULTRA BARGE 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 5.04,
+            "QTA_DA_CONSEGNARE": 101144.16,
+            "DEFICIT": 101139.12
+        },
+        {
+            "CODICE": "005055",
+            "DESCRIZIONE": "ULTRA ASPEN BEIGE 60X60 RTT 20MM",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 201.6,
+            "QTA_DA_CONSEGNARE": 100893.6,
+            "DEFICIT": 100692.0
+        },
+        {
+            "CODICE": "303012",
+            "DESCRIZIONE": "BASIC D.FUME' 31X62 NAT (08)",
+            "SERIE": "BASIC DEVELOPMENT",
+            "GIACENZA": 8753.4,
+            "QTA_DA_CONSEGNARE": 107730.0,
+            "DEFICIT": 98976.6
+        },
+        {
+            "CODICE": "005089",
+            "DESCRIZIONE": "60X60 PIETRA ANTHRACITE RTT SP20",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": 0.0,
+            "QTA_DA_CONSEGNARE": 96996.24,
+            "DEFICIT": 96996.24
+        }
+    ],
+    "conclusions": "Operativamente: 1) Prioritizzare gli articoli con DEFICIT maggiore (lista sopra) per produzione/approvvigionamento urgente. 2) Verificare ordini duplicati o scadenze clienti sui primi N articoli con deficit elevato. 3) Valutare rilancio produzione sulle serie più impattate (es. ASPEN, OUTDOOR). 4) Se serve, posso fornire: a) top 20 articoli per deficit; b) dettaglio per deposito; c) piano di copertura (produzione necessaria per X giorni)."
+}

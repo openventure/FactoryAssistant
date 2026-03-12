@@ -1,0 +1,7 @@
+{
+    "user_request": "quali formati ho prodotto nell'ultimo mese?",
+    "report_title": "Formati prodotti nell'ultimo mese",
+    "summary": "Elenco dei formati prodotti nel periodo dell'ultimo mese in base ai dati disponibili in PALLET_PRODUCTION.",
+    "table_data": [],
+    "conclusions": "Non sono disponibili dati di produzione relativi all'ultimo mese nella tabella PALLET_PRODUCTION. Potrebbe essere necessario verificare la presenza o l'aggiornamento dei dati nel database."
+}

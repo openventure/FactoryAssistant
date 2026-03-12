@@ -1,0 +1,71 @@
+{
+    "user_request": "Per l'articolo 003938 quanti toni ho prodotto?",
+    "report_title": "Numero di toni prodotti per articolo 003938",
+    "summary": "Per l'articolo 003938 sono stati prodotti 9 toni distinti, distribuiti su 717 pallet per un totale di 30.205,44 m². I formati rilevati sono principalmente 60x120 (con due varianti di spessore riportate). Sono presenti qualità/serie registrate come I, MS e XX. Si segnala la presenza di una voce senza tono associato che rappresenta 79 pallet (3.127,68 m²) e va verificata.",
+    "table_data": [
+        {
+            "NumDistinctToni": 9,
+            "TotalePallet": 717,
+            "Totale_mq": 30205.44,
+            "Totale_Pezzi": 41952,
+            "Formati": [
+                "60.00000x120.00000 sp 0.00000",
+                "60.00000x120.00000 sp 0.95000"
+            ],
+            "Qualita_Serie": [
+                "I",
+                "MS",
+                "XX"
+            ],
+            "DettaglioPerTono": [
+                {
+                    "Tono": "R034",
+                    "Pallet": 29,
+                    "Mq": 1105.92
+                },
+                {
+                    "Tono": "R054",
+                    "Pallet": 137,
+                    "Mq": 5892.48
+                },
+                {
+                    "Tono": "R044",
+                    "Pallet": 96,
+                    "Mq": 4000.32
+                },
+                {
+                    "Tono": "",
+                    "Pallet": 79,
+                    "Mq": 3127.68,
+                    "Nota": "tono non registrato / campo vuoto"
+                },
+                {
+                    "Tono": "R074",
+                    "Pallet": 153,
+                    "Mq": 6566.4
+                },
+                {
+                    "Tono": "R094",
+                    "Pallet": 43,
+                    "Mq": 1784.16
+                },
+                {
+                    "Tono": "R064",
+                    "Pallet": 15,
+                    "Mq": 643.68
+                },
+                {
+                    "Tono": "R104",
+                    "Pallet": 133,
+                    "Mq": 5745.6
+                },
+                {
+                    "Tono": "R084",
+                    "Pallet": 32,
+                    "Mq": 1339.2
+                }
+            ]
+        }
+    ],
+    "conclusions": "Hai prodotto 9 toni per il codice 003938 con un volume complessivo adeguato (30.205 m²). Azioni consigliate: 1) Verificare la voce senza tono (79 pallet, 3.128 m²) per correggere o assegnare il tono corretto; 2) Se ti interessa, posso fornire l'elenco dei lotti/pallet dettagliati per tono o limitare l'analisi alla sola prima scelta; 3) Per valutazioni commerciali, confrontare questa produzione con la giacenza attuale e con gli ordini aperti per decidere eventuali azioni di approvvigionamento o promozione."
+}

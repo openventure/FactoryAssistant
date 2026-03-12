@@ -1,0 +1,7 @@
+{
+    "user_request": "Quali articoli 60x120 sono sottoscorta rispetto alla soglia minima?",
+    "report_title": "Articoli 60x120 sottoscorta rispetto al minimo (esecuzione fallita)",
+    "summary": "Ho tentato di recuperare gli articoli con formato 60x120 per i quali la giacenza è inferiore alla soglia minima. L'operazione utilizza lo strumento di valutazione rischio stock (query su pa_ff_code: condizioni GIACENZA < MIN e FORMATO LIKE '%60x120%'). Tuttavia la connessione al database ha restituito un errore operativo e i dati non sono stati ottenuti. Se la query fosse andata a buon fine, il risultato avrebbe incluso per ogni articolo: codice, descrizione, serie, formato, minimo (m2), giacenza (m2) e quantità di shortage (m2).",
+    "table_data": [],
+    "conclusions": "Non è stato possibile fornire l'elenco richiesto a causa di un problema di connessione al database. Azioni consigliate:\n1) Riprovo l'interrogazione: dimmi se vuoi che ripeta ora la verifica (uso filtro '60x120').\n2) Se il problema persiste, contattare il supporto IT per ripristinare la connessione al SQL Server. Posso fornire la query esatta da eseguire o un file SQL pronto.\n3) Se preferisci, posso eseguire un controllo alternativo (es. ordini vs disponibilità) o limitare il report ai TOP N articoli con maggior shortage.\nDimmi come procedere."
+}

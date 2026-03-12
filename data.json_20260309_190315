@@ -1,0 +1,593 @@
+{
+    "user_request": "dei 60x120 forniscimi i dettagli per serie",
+    "report_title": "Dettaglio giacenza 60x120 per serie",
+    "summary": "Ho estratto la situazione per tutti i record con formato 60x120. Per ciascuna serie sono riportati (tutte le grandezze in m²): giacenza attuale (GIACENZA_MQ), disponibilità effettiva (DISPONIBILITA_MQ), quantità da consegnare (QTA_DA_CONSEGNARE_MQ), giacenza prevista a 30 giorni (GIACENZA_30_MQ), disponibilità prevista a 30 giorni (DISPONIBILITA_30_MQ) e il numero di articoli distinti presenti nella serie (N_ARTICOLI). I valori consentono di valutare dove è concentrata la merce e quali serie potrebbero avere tensioni a breve termine.",
+    "table_data": [
+        {
+            "SERIE": "WALLPAPERS",
+            "GIACENZA_MQ": 64146.76,
+            "DISPONIBILITA_MQ": 56345.56,
+            "QTA_DA_CONSEGNARE_MQ": 7801.2,
+            "GIACENZA_30_MQ": 55868.52,
+            "DISPONIBILITA_30_MQ": 48067.32,
+            "N_ARTICOLI": 20
+        },
+        {
+            "SERIE": "EMOTION",
+            "GIACENZA_MQ": 63372.96,
+            "DISPONIBILITA_MQ": 59473.44,
+            "QTA_DA_CONSEGNARE_MQ": 3899.52,
+            "GIACENZA_30_MQ": 57298.26,
+            "DISPONIBILITA_30_MQ": 53398.74,
+            "N_ARTICOLI": 6
+        },
+        {
+            "SERIE": "MATERIALI ACR",
+            "GIACENZA_MQ": 62624.16,
+            "DISPONIBILITA_MQ": 50528.16,
+            "QTA_DA_CONSEGNARE_MQ": 12096.0,
+            "GIACENZA_30_MQ": 54649.97,
+            "DISPONIBILITA_30_MQ": 42553.97,
+            "N_ARTICOLI": 18
+        },
+        {
+            "SERIE": "GEOLOGY",
+            "GIACENZA_MQ": 57012.48,
+            "DISPONIBILITA_MQ": 39211.92,
+            "QTA_DA_CONSEGNARE_MQ": 17800.56,
+            "GIACENZA_30_MQ": 48857.13,
+            "DISPONIBILITA_30_MQ": 31056.57,
+            "N_ARTICOLI": 15
+        },
+        {
+            "SERIE": "GARE DU NORD",
+            "GIACENZA_MQ": 50155.2,
+            "DISPONIBILITA_MQ": 46340.64,
+            "QTA_DA_CONSEGNARE_MQ": 3814.56,
+            "GIACENZA_30_MQ": 45041.26,
+            "DISPONIBILITA_30_MQ": 41226.7,
+            "N_ARTICOLI": 10
+        },
+        {
+            "SERIE": "CHARME",
+            "GIACENZA_MQ": 45925.92,
+            "DISPONIBILITA_MQ": 30106.08,
+            "QTA_DA_CONSEGNARE_MQ": 15819.84,
+            "GIACENZA_30_MQ": 33119.91,
+            "DISPONIBILITA_30_MQ": 17300.07,
+            "N_ARTICOLI": 6
+        },
+        {
+            "SERIE": "ANNI 70' - PETRUS",
+            "GIACENZA_MQ": 43318.08,
+            "DISPONIBILITA_MQ": 38410.56,
+            "QTA_DA_CONSEGNARE_MQ": 4907.52,
+            "GIACENZA_30_MQ": 36848.04,
+            "DISPONIBILITA_30_MQ": 31940.52,
+            "N_ARTICOLI": 16
+        },
+        {
+            "SERIE": "CULT",
+            "GIACENZA_MQ": 33168.96,
+            "DISPONIBILITA_MQ": 29188.8,
+            "QTA_DA_CONSEGNARE_MQ": 3980.16,
+            "GIACENZA_30_MQ": 27942.93,
+            "DISPONIBILITA_30_MQ": 23962.77,
+            "N_ARTICOLI": 12
+        },
+        {
+            "SERIE": "EVOQ",
+            "GIACENZA_MQ": 33127.2,
+            "DISPONIBILITA_MQ": 30733.92,
+            "QTA_DA_CONSEGNARE_MQ": 2393.28,
+            "GIACENZA_30_MQ": 28951.39,
+            "DISPONIBILITA_30_MQ": 26558.11,
+            "N_ARTICOLI": 4
+        },
+        {
+            "SERIE": "QUEEN STONE - PETRUS",
+            "GIACENZA_MQ": 32192.64,
+            "DISPONIBILITA_MQ": 23816.16,
+            "QTA_DA_CONSEGNARE_MQ": 8376.48,
+            "GIACENZA_30_MQ": 26854.02,
+            "DISPONIBILITA_30_MQ": 18477.54,
+            "N_ARTICOLI": 5
+        },
+        {
+            "SERIE": "SHELLSTONE - ACR",
+            "GIACENZA_MQ": 30666.24,
+            "DISPONIBILITA_MQ": 18652.32,
+            "QTA_DA_CONSEGNARE_MQ": 12013.92,
+            "GIACENZA_30_MQ": 24792.83,
+            "DISPONIBILITA_30_MQ": 12778.91,
+            "N_ARTICOLI": 11
+        },
+        {
+            "SERIE": "BASIC",
+            "GIACENZA_MQ": 30435.84,
+            "DISPONIBILITA_MQ": 23679.36,
+            "QTA_DA_CONSEGNARE_MQ": 6756.48,
+            "GIACENZA_30_MQ": 26364.13,
+            "DISPONIBILITA_30_MQ": 19607.65,
+            "N_ARTICOLI": 8
+        },
+        {
+            "SERIE": "PRESTIGE",
+            "GIACENZA_MQ": 30241.44,
+            "DISPONIBILITA_MQ": 26272.8,
+            "QTA_DA_CONSEGNARE_MQ": 3968.64,
+            "GIACENZA_30_MQ": 27322.63,
+            "DISPONIBILITA_30_MQ": 23353.99,
+            "N_ARTICOLI": 15
+        },
+        {
+            "SERIE": "FABRIC",
+            "GIACENZA_MQ": 29037.6,
+            "DISPONIBILITA_MQ": 20856.96,
+            "QTA_DA_CONSEGNARE_MQ": 8180.64,
+            "GIACENZA_30_MQ": 23322.92,
+            "DISPONIBILITA_30_MQ": 15142.28,
+            "N_ARTICOLI": 10
+        },
+        {
+            "SERIE": "ARGOS",
+            "GIACENZA_MQ": 26220.96,
+            "DISPONIBILITA_MQ": 15674.4,
+            "QTA_DA_CONSEGNARE_MQ": 10546.56,
+            "GIACENZA_30_MQ": 21807.32,
+            "DISPONIBILITA_30_MQ": 11260.76,
+            "N_ARTICOLI": 4
+        },
+        {
+            "SERIE": "SOLID",
+            "GIACENZA_MQ": 25958.88,
+            "DISPONIBILITA_MQ": 21201.12,
+            "QTA_DA_CONSEGNARE_MQ": 4757.76,
+            "GIACENZA_30_MQ": 20723.72,
+            "DISPONIBILITA_30_MQ": 15965.96,
+            "N_ARTICOLI": 11
+        },
+        {
+            "SERIE": "MASK",
+            "GIACENZA_MQ": 23819.04,
+            "DISPONIBILITA_MQ": 20174.4,
+            "QTA_DA_CONSEGNARE_MQ": 3644.64,
+            "GIACENZA_30_MQ": 18447.66,
+            "DISPONIBILITA_30_MQ": 14803.02,
+            "N_ARTICOLI": 4
+        },
+        {
+            "SERIE": "ABITA",
+            "GIACENZA_MQ": 23178.24,
+            "DISPONIBILITA_MQ": 20085.12,
+            "QTA_DA_CONSEGNARE_MQ": 3093.12,
+            "GIACENZA_30_MQ": 20777.9,
+            "DISPONIBILITA_30_MQ": 17684.78,
+            "N_ARTICOLI": 8
+        },
+        {
+            "SERIE": "PORTLAND",
+            "GIACENZA_MQ": 22233.6,
+            "DISPONIBILITA_MQ": 20592.0,
+            "QTA_DA_CONSEGNARE_MQ": 1641.6,
+            "GIACENZA_30_MQ": 20257.09,
+            "DISPONIBILITA_30_MQ": 18615.49,
+            "N_ARTICOLI": 6
+        },
+        {
+            "SERIE": "FUSION - PETRUS",
+            "GIACENZA_MQ": 21856.32,
+            "DISPONIBILITA_MQ": 20052.0,
+            "QTA_DA_CONSEGNARE_MQ": 1804.32,
+            "GIACENZA_30_MQ": 17327.88,
+            "DISPONIBILITA_30_MQ": 15523.56,
+            "N_ARTICOLI": 5
+        },
+        {
+            "SERIE": "QUARRY",
+            "GIACENZA_MQ": 21759.84,
+            "DISPONIBILITA_MQ": 17854.56,
+            "QTA_DA_CONSEGNARE_MQ": 3905.28,
+            "GIACENZA_30_MQ": 19646.73,
+            "DISPONIBILITA_30_MQ": 15741.45,
+            "N_ARTICOLI": 12
+        },
+        {
+            "SERIE": "MANSION",
+            "GIACENZA_MQ": 21103.2,
+            "DISPONIBILITA_MQ": 14268.96,
+            "QTA_DA_CONSEGNARE_MQ": 6834.24,
+            "GIACENZA_30_MQ": 16816.97,
+            "DISPONIBILITA_30_MQ": 9982.73,
+            "N_ARTICOLI": 16
+        },
+        {
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "GIACENZA_MQ": 20154.24,
+            "DISPONIBILITA_MQ": 15805.44,
+            "QTA_DA_CONSEGNARE_MQ": 4348.8,
+            "GIACENZA_30_MQ": 17052.21,
+            "DISPONIBILITA_30_MQ": 12703.41,
+            "N_ARTICOLI": 14
+        },
+        {
+            "SERIE": "ONYX - ACR",
+            "GIACENZA_MQ": 19847.52,
+            "DISPONIBILITA_MQ": 10005.12,
+            "QTA_DA_CONSEGNARE_MQ": 9842.4,
+            "GIACENZA_30_MQ": 14017.14,
+            "DISPONIBILITA_30_MQ": 4174.74,
+            "N_ARTICOLI": 4
+        },
+        {
+            "SERIE": "MINIMAL - PETRUS",
+            "GIACENZA_MQ": 19779.84,
+            "DISPONIBILITA_MQ": 18033.12,
+            "QTA_DA_CONSEGNARE_MQ": 1746.72,
+            "GIACENZA_30_MQ": 17146.62,
+            "DISPONIBILITA_30_MQ": 15399.9,
+            "N_ARTICOLI": 6
+        },
+        {
+            "SERIE": "NATURE",
+            "GIACENZA_MQ": 19307.52,
+            "DISPONIBILITA_MQ": 16100.64,
+            "QTA_DA_CONSEGNARE_MQ": 3206.88,
+            "GIACENZA_30_MQ": 16436.15,
+            "DISPONIBILITA_30_MQ": 13229.27,
+            "N_ARTICOLI": 11
+        },
+        {
+            "SERIE": "PAINT",
+            "GIACENZA_MQ": 18655.2,
+            "DISPONIBILITA_MQ": 15452.24,
+            "QTA_DA_CONSEGNARE_MQ": 3202.96,
+            "GIACENZA_30_MQ": 11956.59,
+            "DISPONIBILITA_30_MQ": 8753.63,
+            "N_ARTICOLI": 5
+        },
+        {
+            "SERIE": "STONE COLLECTION",
+            "GIACENZA_MQ": 17670.24,
+            "DISPONIBILITA_MQ": 14499.36,
+            "QTA_DA_CONSEGNARE_MQ": 3170.88,
+            "GIACENZA_30_MQ": 16696.68,
+            "DISPONIBILITA_30_MQ": 13525.8,
+            "N_ARTICOLI": 9
+        },
+        {
+            "SERIE": "ERMETICA",
+            "GIACENZA_MQ": 17102.88,
+            "DISPONIBILITA_MQ": 15037.92,
+            "QTA_DA_CONSEGNARE_MQ": 2064.96,
+            "GIACENZA_30_MQ": 14922.38,
+            "DISPONIBILITA_30_MQ": 12857.42,
+            "N_ARTICOLI": 8
+        },
+        {
+            "SERIE": "SMOT",
+            "GIACENZA_MQ": 17063.61,
+            "DISPONIBILITA_MQ": 12786.81,
+            "QTA_DA_CONSEGNARE_MQ": 4276.8,
+            "GIACENZA_30_MQ": 13787.36,
+            "DISPONIBILITA_30_MQ": 9510.56,
+            "N_ARTICOLI": 9
+        },
+        {
+            "SERIE": "TRAVERTINO MEMENTO",
+            "GIACENZA_MQ": 15744.96,
+            "DISPONIBILITA_MQ": 13508.64,
+            "QTA_DA_CONSEGNARE_MQ": 2236.32,
+            "GIACENZA_30_MQ": 14396.74,
+            "DISPONIBILITA_30_MQ": 12160.42,
+            "N_ARTICOLI": 8
+        },
+        {
+            "SERIE": "EXTRA",
+            "GIACENZA_MQ": 15307.2,
+            "DISPONIBILITA_MQ": 12404.16,
+            "QTA_DA_CONSEGNARE_MQ": 2903.04,
+            "GIACENZA_30_MQ": 11776.67,
+            "DISPONIBILITA_30_MQ": 8873.63,
+            "N_ARTICOLI": 8
+        },
+        {
+            "SERIE": "PALERMO",
+            "GIACENZA_MQ": 14590.08,
+            "DISPONIBILITA_MQ": 12360.96,
+            "QTA_DA_CONSEGNARE_MQ": 2229.12,
+            "GIACENZA_30_MQ": 13586.63,
+            "DISPONIBILITA_30_MQ": 11357.51,
+            "N_ARTICOLI": 3
+        },
+        {
+            "SERIE": "VISION",
+            "GIACENZA_MQ": 14412.96,
+            "DISPONIBILITA_MQ": 10981.44,
+            "QTA_DA_CONSEGNARE_MQ": 3431.52,
+            "GIACENZA_30_MQ": 10801.74,
+            "DISPONIBILITA_30_MQ": 7370.22,
+            "N_ARTICOLI": 3
+        },
+        {
+            "SERIE": "MERKURY",
+            "GIACENZA_MQ": 13410.72,
+            "DISPONIBILITA_MQ": 97.92,
+            "QTA_DA_CONSEGNARE_MQ": 13312.8,
+            "GIACENZA_30_MQ": 4541.24,
+            "DISPONIBILITA_30_MQ": -8771.56,
+            "N_ARTICOLI": 14
+        },
+        {
+            "SERIE": "ASPEN",
+            "GIACENZA_MQ": 12736.8,
+            "DISPONIBILITA_MQ": 9465.12,
+            "QTA_DA_CONSEGNARE_MQ": 3271.68,
+            "GIACENZA_30_MQ": 10625.36,
+            "DISPONIBILITA_30_MQ": 7353.68,
+            "N_ARTICOLI": 5
+        },
+        {
+            "SERIE": "SHELLSTONE",
+            "GIACENZA_MQ": 11625.12,
+            "DISPONIBILITA_MQ": 10362.24,
+            "QTA_DA_CONSEGNARE_MQ": 1262.88,
+            "GIACENZA_30_MQ": 10027.56,
+            "DISPONIBILITA_30_MQ": 8764.68,
+            "N_ARTICOLI": 2
+        },
+        {
+            "SERIE": "REPLEY",
+            "GIACENZA_MQ": 11345.76,
+            "DISPONIBILITA_MQ": 10573.92,
+            "QTA_DA_CONSEGNARE_MQ": 771.84,
+            "GIACENZA_30_MQ": 9883.12,
+            "DISPONIBILITA_30_MQ": 9111.28,
+            "N_ARTICOLI": 4
+        },
+        {
+            "SERIE": "IROC",
+            "GIACENZA_MQ": 10451.52,
+            "DISPONIBILITA_MQ": 421.92,
+            "QTA_DA_CONSEGNARE_MQ": 10029.6,
+            "GIACENZA_30_MQ": 7959.47,
+            "DISPONIBILITA_30_MQ": -2070.13,
+            "N_ARTICOLI": 5
+        },
+        {
+            "SERIE": "CARTA DA PARATI - PETRUS",
+            "GIACENZA_MQ": 9218.88,
+            "DISPONIBILITA_MQ": 8772.48,
+            "QTA_DA_CONSEGNARE_MQ": 446.4,
+            "GIACENZA_30_MQ": 7711.78,
+            "DISPONIBILITA_30_MQ": 7265.38,
+            "N_ARTICOLI": 6
+        },
+        {
+            "SERIE": "PIETRA DI VALS",
+            "GIACENZA_MQ": 8232.48,
+            "DISPONIBILITA_MQ": 6458.4,
+            "QTA_DA_CONSEGNARE_MQ": 1774.08,
+            "GIACENZA_30_MQ": 6825.29,
+            "DISPONIBILITA_30_MQ": 5051.21,
+            "N_ARTICOLI": 4
+        },
+        {
+            "SERIE": "DECORS",
+            "GIACENZA_MQ": 8004.96,
+            "DISPONIBILITA_MQ": 7889.76,
+            "QTA_DA_CONSEGNARE_MQ": 115.2,
+            "GIACENZA_30_MQ": 5838.49,
+            "DISPONIBILITA_30_MQ": 5723.29,
+            "N_ARTICOLI": 6
+        },
+        {
+            "SERIE": "FUSION",
+            "GIACENZA_MQ": 6645.6,
+            "DISPONIBILITA_MQ": 6645.6,
+            "QTA_DA_CONSEGNARE_MQ": 0.0,
+            "GIACENZA_30_MQ": 6519.6,
+            "DISPONIBILITA_30_MQ": 6519.6,
+            "N_ARTICOLI": 2
+        },
+        {
+            "SERIE": "FLASH - PETRUS",
+            "GIACENZA_MQ": 6402.24,
+            "DISPONIBILITA_MQ": 4101.12,
+            "QTA_DA_CONSEGNARE_MQ": 2301.12,
+            "GIACENZA_30_MQ": 4609.14,
+            "DISPONIBILITA_30_MQ": 2308.02,
+            "N_ARTICOLI": 3
+        },
+        {
+            "SERIE": "HORNBACH CORTINA",
+            "GIACENZA_MQ": 5873.76,
+            "DISPONIBILITA_MQ": 5873.76,
+            "QTA_DA_CONSEGNARE_MQ": 0.0,
+            "GIACENZA_30_MQ": 5569.45,
+            "DISPONIBILITA_30_MQ": 5569.45,
+            "N_ARTICOLI": 4
+        },
+        {
+            "SERIE": "QUEEN STONE",
+            "GIACENZA_MQ": 5214.24,
+            "DISPONIBILITA_MQ": 3803.04,
+            "QTA_DA_CONSEGNARE_MQ": 1411.2,
+            "GIACENZA_30_MQ": 4693.75,
+            "DISPONIBILITA_30_MQ": 3282.55,
+            "N_ARTICOLI": 2
+        },
+        {
+            "SERIE": "REPLAY",
+            "GIACENZA_MQ": 4926.24,
+            "DISPONIBILITA_MQ": 3408.48,
+            "QTA_DA_CONSEGNARE_MQ": 1517.76,
+            "GIACENZA_30_MQ": 3092.3,
+            "DISPONIBILITA_30_MQ": 1574.54,
+            "N_ARTICOLI": 3
+        },
+        {
+            "SERIE": "IKON",
+            "GIACENZA_MQ": 4379.76,
+            "DISPONIBILITA_MQ": 3715.92,
+            "QTA_DA_CONSEGNARE_MQ": 663.84,
+            "GIACENZA_30_MQ": 4027.93,
+            "DISPONIBILITA_30_MQ": 3364.09,
+            "N_ARTICOLI": 2
+        },
+        {
+            "SERIE": "ESPOSITORI",
+            "GIACENZA_MQ": 3977.28,
+            "DISPONIBILITA_MQ": 2836.8,
+            "QTA_DA_CONSEGNARE_MQ": 1140.48,
+            "GIACENZA_30_MQ": 3271.11,
+            "DISPONIBILITA_30_MQ": 2130.63,
+            "N_ARTICOLI": 5
+        },
+        {
+            "SERIE": "MATERIALE PETRUS",
+            "GIACENZA_MQ": 2430.72,
+            "DISPONIBILITA_MQ": 2370.24,
+            "QTA_DA_CONSEGNARE_MQ": 60.48,
+            "GIACENZA_30_MQ": 2155.32,
+            "DISPONIBILITA_30_MQ": 2094.84,
+            "N_ARTICOLI": 1
+        },
+        {
+            "SERIE": "MYTHOS - PETRUS",
+            "GIACENZA_MQ": 1612.8,
+            "DISPONIBILITA_MQ": -701.28,
+            "QTA_DA_CONSEGNARE_MQ": 2314.08,
+            "GIACENZA_30_MQ": 284.94,
+            "DISPONIBILITA_30_MQ": -2029.14,
+            "N_ARTICOLI": 2
+        },
+        {
+            "SERIE": "MATERIALE DADO",
+            "GIACENZA_MQ": 1537.92,
+            "DISPONIBILITA_MQ": 1347.84,
+            "QTA_DA_CONSEGNARE_MQ": 190.08,
+            "GIACENZA_30_MQ": 156.23,
+            "DISPONIBILITA_30_MQ": -33.85,
+            "N_ARTICOLI": 7
+        },
+        {
+            "SERIE": "DOWNTOWN WOOD - ACR",
+            "GIACENZA_MQ": 1000.8,
+            "DISPONIBILITA_MQ": 542.88,
+            "QTA_DA_CONSEGNARE_MQ": 457.92,
+            "GIACENZA_30_MQ": 939.84,
+            "DISPONIBILITA_30_MQ": 481.92,
+            "N_ARTICOLI": 1
+        },
+        {
+            "SERIE": "MYTHOS",
+            "GIACENZA_MQ": 944.64,
+            "DISPONIBILITA_MQ": 941.76,
+            "QTA_DA_CONSEGNARE_MQ": 2.88,
+            "GIACENZA_30_MQ": -154.75,
+            "DISPONIBILITA_30_MQ": -157.63,
+            "N_ARTICOLI": 1
+        },
+        {
+            "SERIE": "MINIMAL",
+            "GIACENZA_MQ": 904.32,
+            "DISPONIBILITA_MQ": 882.72,
+            "QTA_DA_CONSEGNARE_MQ": 21.6,
+            "GIACENZA_30_MQ": 837.0,
+            "DISPONIBILITA_30_MQ": 815.4,
+            "N_ARTICOLI": 1
+        },
+        {
+            "SERIE": "TERM ELLE - NON USARE",
+            "GIACENZA_MQ": 817.92,
+            "DISPONIBILITA_MQ": 817.92,
+            "QTA_DA_CONSEGNARE_MQ": 0.0,
+            "GIACENZA_30_MQ": 486.72,
+            "DISPONIBILITA_30_MQ": 486.72,
+            "N_ARTICOLI": 13
+        },
+        {
+            "SERIE": "MATERIALE M.E.C.",
+            "GIACENZA_MQ": 252.0,
+            "DISPONIBILITA_MQ": 0.0,
+            "QTA_DA_CONSEGNARE_MQ": 252.0,
+            "GIACENZA_30_MQ": -2368.8,
+            "DISPONIBILITA_30_MQ": -2620.8,
+            "N_ARTICOLI": 2
+        },
+        {
+            "SERIE": "WALLPAPERS EVOLUZIONI",
+            "GIACENZA_MQ": 230.4,
+            "DISPONIBILITA_MQ": 192.96,
+            "QTA_DA_CONSEGNARE_MQ": 37.44,
+            "GIACENZA_30_MQ": 133.38,
+            "DISPONIBILITA_30_MQ": 95.94,
+            "N_ARTICOLI": 1
+        },
+        {
+            "SERIE": "MARMI PREGIATI",
+            "GIACENZA_MQ": 195.84,
+            "DISPONIBILITA_MQ": 125.28,
+            "QTA_DA_CONSEGNARE_MQ": 70.56,
+            "GIACENZA_30_MQ": -884.67,
+            "DISPONIBILITA_30_MQ": -955.23,
+            "N_ARTICOLI": 4
+        },
+        {
+            "SERIE": "MARMI",
+            "GIACENZA_MQ": 0.0,
+            "DISPONIBILITA_MQ": 0.0,
+            "QTA_DA_CONSEGNARE_MQ": 0.0,
+            "GIACENZA_30_MQ": 0.0,
+            "DISPONIBILITA_30_MQ": 0.0,
+            "N_ARTICOLI": 1
+        },
+        {
+            "SERIE": "ARTICOLI NON A CATALOGO",
+            "GIACENZA_MQ": 0.0,
+            "DISPONIBILITA_MQ": 0.0,
+            "QTA_DA_CONSEGNARE_MQ": 0.0,
+            "GIACENZA_30_MQ": -1.44,
+            "DISPONIBILITA_30_MQ": -1.44,
+            "N_ARTICOLI": 4
+        },
+        {
+            "SERIE": "CONCEPT STONE",
+            "GIACENZA_MQ": 0.0,
+            "DISPONIBILITA_MQ": 0.0,
+            "QTA_DA_CONSEGNARE_MQ": 0.0,
+            "GIACENZA_30_MQ": -223.68,
+            "DISPONIBILITA_30_MQ": -223.68,
+            "N_ARTICOLI": 3
+        },
+        {
+            "SERIE": "STATION",
+            "GIACENZA_MQ": 0.0,
+            "DISPONIBILITA_MQ": 0.0,
+            "QTA_DA_CONSEGNARE_MQ": 0.0,
+            "GIACENZA_30_MQ": 0.0,
+            "DISPONIBILITA_30_MQ": 0.0,
+            "N_ARTICOLI": 2
+        },
+        {
+            "SERIE": "EKOSTONE - PETRUS",
+            "GIACENZA_MQ": 0.0,
+            "DISPONIBILITA_MQ": 0.0,
+            "QTA_DA_CONSEGNARE_MQ": 0.0,
+            "GIACENZA_30_MQ": -48.67,
+            "DISPONIBILITA_30_MQ": -48.67,
+            "N_ARTICOLI": 1
+        },
+        {
+            "SERIE": "TIME STONE",
+            "GIACENZA_MQ": 0.0,
+            "DISPONIBILITA_MQ": -604.8,
+            "QTA_DA_CONSEGNARE_MQ": 604.8,
+            "GIACENZA_30_MQ": -4393.92,
+            "DISPONIBILITA_30_MQ": -4998.72,
+            "N_ARTICOLI": 3
+        }
+    ],
+    "conclusions": "Osservazioni e raccomandazioni operative:\n1) Le serie con maggiore giacenza (es. WALLPAPERS, EMOTION, MATERIALI ACR) concentrano buona parte del magazzino 60x120; valutare azioni commerciali o promozionali se l’obiettivo è ridurre stock.\n2) Alcune serie mostrano quantità da consegnare elevate rispetto alla giacenza (es. MERKURY, IROC): verificare priorità consegne e possibile necessità di produzione o riallocazione da altri depositi.\n3) Sono presenti valori negativi in DISPONIBILITA_30_MQ o GIACENZA_30_MQ per alcune serie: questo indica discrepanze (ordini inevasi o errori contabili). Suggerisco verifica puntuale delle serie con valori negativi (lista presente sopra).\n4) Prossimi passi consigliati: a) richiedere dettaglio per deposito per le serie critiche; b) controllare movimenti/allocazioni e ordini aperti per le serie con QTA_DA_CONSEGNARE elevata; c) se vuoi, posso fornire l’export CSV o un filtro (solo serie con DISPONIBILITA<GIACENZA, solo valori negativi, top N serie per QTA_DA_CONSEGNARE). Dimmi quale approfondimento preferisci."
+}

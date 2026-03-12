@@ -1,0 +1,18 @@
+{
+    "user_request": "Mostrami in questo momento quanto devo produrre per quanto riguarda il magazzino dei 60x60.",
+    "report_title": "Produzione raccomandata per formato 60x60 - situazione attuale",
+    "summary": "Ho analizzato lo stock aggregato per il formato 60x60 (tutti i toni e le serie). Dati principali: giacenza totale 1.221.401,9 m²; quantità da consegnare 287.176,36 m²; livello minimo totale 242.942 m². Per coprire gli ordini in portafoglio servirebbero 30.233,83 m²; per riportare gli articoli al loro livello minimo servirebbero 114.879,22 m². La raccomandazione complessiva di produzione, calcolata per articolo come il maggiore tra bisogno a copertura ordini e bisogno per raggiungere il minimo e poi sommata, è di 140.203,1 m².",
+    "table_data": [
+        {
+            "formato": "60x60 (aggregato su toni e serie)",
+            "total_giacenza_mq": 1221401.9,
+            "total_qta_da_consegnare_mq": 287176.36,
+            "total_min_mq": 242942,
+            "produce_to_cover_orders_mq": 30233.83,
+            "produce_to_reach_min_mq": 114879.22,
+            "recommended_production_mq": 140203.1,
+            "unit": "m²"
+        }
+    ],
+    "conclusions": "A breve termine conviene programmare la produzione per almeno 140.203,1 m² di 60x60: questa quantità copre sia gli ordini urgenti sia il fabbisogno per riportare gli articoli critici al livello minimo. Azioni pratiche consigliate: 1) dare priorità ai lotti con consegne in sospeso per ridurre il rischio commerciale; 2) verificare i toni/articoli che contribuiscono maggiormente al gap (se desideri posso fornire il dettaglio per tono/serie); 3) pianificare la produzione nelle prossime 1-2 settimane monitorando le eventuali nuove richieste di consegna. Se vuoi, eseguo subito il dettaglio per tono o per deposito."
+}

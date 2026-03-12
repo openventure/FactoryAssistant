@@ -1,0 +1,35 @@
+{
+    "user_request": "Qual è la produzione giornaliera media per linea nell’ultimo mese?",
+    "report_title": "Produzione giornaliera media per linea - ultimi 30 giorni",
+    "summary": "Ho calcolato la produzione degli ultimi 30 giorni (periodo rolling 30 giorni fino a oggi) aggregata per linea dalla tabella di produzione. Per ogni linea riporto la produzione totale in m² nel periodo, i giorni con effettiva produzione (production_days), e due medie giornaliere: media su tutti i giorni del mese (avg_m2_per_calendar_day) e media solo sui giorni in cui la linea ha effettivamente prodotto (avg_m2_per_production_day). Le date di prima e ultima produzione rilevate nel periodo sono state utilizzate per confermare il range operativo di ciascuna linea.",
+    "table_data": [
+        {
+            "Linea": "3",
+            "total_m2": 162083.6,
+            "total_pallets": 3249,
+            "calendar_days": 30,
+            "production_days": 28,
+            "avg_m2_per_calendar_day": 5402.787,
+            "avg_m2_per_production_day": 5788.7
+        },
+        {
+            "Linea": "1",
+            "total_m2": 77676.93,
+            "total_pallets": 2468,
+            "calendar_days": 30,
+            "production_days": 22,
+            "avg_m2_per_calendar_day": 2589.231,
+            "avg_m2_per_production_day": 3530.77
+        },
+        {
+            "Linea": "2",
+            "total_m2": 57042.53,
+            "total_pallets": 1155,
+            "calendar_days": 30,
+            "production_days": 20,
+            "avg_m2_per_calendar_day": 1901.418,
+            "avg_m2_per_production_day": 2852.127
+        }
+    ],
+    "conclusions": "Linea 3 è la più produttiva (≈5.403 m²/giorno su calendario, ≈5.789 m² nei giorni effettivi di produzione). Linea 1 e 2 mostrano volumi inferiori e hanno prodotto in meno giorni nel periodo (22 e 20 giorni rispettivamente). Se l'obiettivo è capacità media su periodo civile usare avg_m2_per_calendar_day; se si vuole valutare efficienza dei giorni operativi usare avg_m2_per_production_day. Prossimi passi consigliati: 1) se serve ridurre gap tra linee, analizzare cause dei giorni non produttivi per le linee 1 e 2; 2) validare pianificazione produzione confrontando questi valori con obiettivi di linea; 3) se vuoi, posso fornire trend giornaliero dettagliato oppure ripetere l'analisi limitando ai soli pallet di prima scelta."
+}

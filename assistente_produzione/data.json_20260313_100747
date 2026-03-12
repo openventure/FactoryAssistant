@@ -1,0 +1,7 @@
+{
+    "user_request": "Quali articoli 60x120 sono sottoscorta rispetto alla soglia minima?",
+    "report_title": "Articoli 60x120 sotto soglia minima (tentativo fallito)",
+    "summary": "Non è stato possibile recuperare i dati dalla fonte centrale: la connessione al database SQL Server è fallita (timeout/istanza non raggiungibile). Di conseguenza non posso calcolare la lista degli articoli 60x120 sotto il minimo in questo momento.",
+    "table_data": [],
+    "conclusions": "Azione consigliata:\n1) Verificare la connettività verso il server dati e riprovare l'analisi (posso rilanciare la query non appena la connessione sarà disponibile).\n2) Se preferisci, fornisci una lista di codici articolo o una serie specifica da controllare manualmente quando il DB sarà accessibile.\n3) Se è urgente, posso preparare la query esatta che verrà eseguita (o i filtri usati: formato=60x120, modalità rischio=min_stock, campo di confronto=giacenza) così da poterla eseguire non appena la connessione viene ristabilita.\nDimmi come preferisci procedere."
+}

@@ -1,0 +1,68 @@
+{
+    "user_request": "reggruppali per formato",
+    "report_title": "Produzione Pallet Raggruppata per Formato 2025-2026",
+    "summary": "Il report evidenzia la produzione totale di pallet raggruppata per le dimensioni formato larghezza e lunghezza per gli anni 2025 e 2026.",
+    "table_data": [
+        {
+            "FormLarghezza": 60.0,
+            "FormLunghezza": 120.0,
+            "TotalePalletProdotti": 1576341
+        },
+        {
+            "FormLarghezza": 60.0,
+            "FormLunghezza": 60.0,
+            "TotalePalletProdotti": 662149
+        },
+        {
+            "FormLarghezza": 20.0,
+            "FormLunghezza": 122.0,
+            "TotalePalletProdotti": 374637
+        },
+        {
+            "FormLarghezza": 40.0,
+            "FormLunghezza": 80.0,
+            "TotalePalletProdotti": 137997
+        },
+        {
+            "FormLarghezza": 80.0,
+            "FormLunghezza": 80.0,
+            "TotalePalletProdotti": 134313
+        },
+        {
+            "FormLarghezza": 60.0,
+            "FormLunghezza": 120.2,
+            "TotalePalletProdotti": 43233
+        },
+        {
+            "FormLarghezza": 30.0,
+            "FormLunghezza": 122.0,
+            "TotalePalletProdotti": 39477
+        },
+        {
+            "FormLarghezza": 20.3,
+            "FormLunghezza": 122.0,
+            "TotalePalletProdotti": 18726
+        },
+        {
+            "FormLarghezza": 81.0,
+            "FormLunghezza": 81.0,
+            "TotalePalletProdotti": 6474
+        },
+        {
+            "FormLarghezza": 20.0,
+            "FormLunghezza": 120.0,
+            "TotalePalletProdotti": 1665
+        },
+        {
+            "FormLarghezza": 40.5,
+            "FormLunghezza": 81.0,
+            "TotalePalletProdotti": 786
+        },
+        {
+            "FormLarghezza": 79.0,
+            "FormLunghezza": 79.0,
+            "TotalePalletProdotti": 56
+        }
+    ],
+    "conclusions": "La maggior parte della produzione di pallet è concentrata su formati comuni come 60x120 e 60x60, che rappresentano la quota più rilevante della produzione totale. Altri formati sono prodotti in quantità minore ma comunque significative. Questi dati sono utili per valutare le preferenze di produzione e pianificare le risorse in base ai formati più richiesti."
+}

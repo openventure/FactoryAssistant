@@ -1,0 +1,20 @@
+{
+    "user_request": "Quali formati stanno producendo più metri quadrati?",
+    "report_title": "Top formati per metri quadri prodotti (ultimi 30 giorni, pallet non espulsi)",
+    "summary": "Nel periodo di riferimento (ultimi 30 giorni, filtro predefinito) i formati sono stati ordinati per metri quadri prodotti (somma CALC_MQ). Sono stati esclusi i pallet marcati come espulsi. Il formato è ricostruito come LARGxLUNG sp SPESSORE. La tabella sotto mostra i primi formati per volume prodotto, il numero di pallet associati e la media m² per pallet.",
+    "table_data": [
+        {
+            "FORMATO": "60x120 sp 0.95",
+            "TOTAL_MQ": 197.0,
+            "N_PALLET": 6,
+            "AVG_MQ_PER_PALLET": 32.833
+        },
+        {
+            "FORMATO": "40x80 sp 2.00",
+            "TOTAL_MQ": 13.44,
+            "N_PALLET": 2,
+            "AVG_MQ_PER_PALLET": 6.72
+        }
+    ],
+    "conclusions": "Il formato 60x120 (sp 0,95) domina la produzione in termini di metri quadri negli ultimi 30 giorni: rappresenta la maggior parte del volume prodotto. Operativamente: verificare che la capacità logistica/stock sia allineata a questo peso produttivo (impatto su stoccaggio e consegne). Se vuoi un'analisi più completa, posso: 1) estendere il periodo (es. 90 giorni o anno-to-date), 2) includere anche pallet espulsi, 3) fornire la suddivisione per Linea, Serie o Tono, oppure 4) restituire la classifica completa (TOP 50). Fammi sapere quale approfondimento preferisci."
+}

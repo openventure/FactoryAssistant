@@ -1,0 +1,18 @@
+{
+    "user_request": "come calcoli lo scostamento?",
+    "report_title": "Metodo di calcolo dello scostamento (m²)",
+    "summary": "Lo scostamento è la differenza in metri quadri tra quanto è stato ordinato (quantità da consegnare) e la disponibilità attuale. Un valore positivo significa che gli ordini superano la disponibilità (mancanza); un valore negativo indica che la disponibilità è maggiore degli ordini (eccedenza). I calcoli sono fatti in m² e arrotondati a due decimali.",
+    "table_data": [
+        {
+            "formula_business": "Scostamento (m²) = Quantità da consegnare (m²) - Disponibilità attuale (m²)",
+            "nota_unita": "Entrambe le grandezze devono essere espresse in m²; se una delle due è nulla/assente si considera 0 per il calcolo (salvo diversa indicazione)."
+        },
+        {
+            "sql_example_sqlserver": "SELECT CODICE, DESCRIZIONE, FORMATO, QTA_DA_CONSEGNARE, DISPONIBILITA,\n       ROUND(QTA_DA_CONSEGNARE - DISPONIBILITA, 2) AS SCOSTAMENTO_MQ\nFROM pa_ff_code\nWHERE FORMATO LIKE '%60X120%'\n  AND QTA_DA_CONSEGNARE > DISPONIBILITA\nORDER BY SCOSTAMENTO_MQ DESC;"
+        },
+        {
+            "error_and_edge_cases": "Se DISPONIBILITA o QTA_DA_CONSEGNARE sono NULL va deciso il comportamento (es. trattare NULL come 0). In presenza di disponibilità negative (allocazioni/backorder), lo scostamento rimane la stessa differenza aritmetica."
+        }
+    ],
+    "conclusions": "Scostamento = ordine meno disponibilità (m²). Se vuoi, eseguo subito la query per: (A) mostrare la top-10 per scostamento sul formato 60x120, (B) dettagliare per deposito e tono, o (C) applicare regole diverse per NULL/valori negativi — indicami quale preferisci."
+}

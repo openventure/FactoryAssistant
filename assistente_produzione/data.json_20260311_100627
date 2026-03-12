@@ -1,0 +1,30 @@
+{
+    "user_request": "Confronta la produzione di questo mese con il mese scorso.",
+    "report_title": "Confronto produzione: mese corrente vs mese precedente",
+    "summary": "Dalla verifica sui dati di produzione non risultano pallet registrati né nel mese corrente (2026-03) né nel mese precedente (2026-02). Di conseguenza non sono disponibili valori di metri quadri prodotti o di prime scelte per i due periodi richiesti. Questo indica che, per il periodo interrogato, il sistema non contiene record di produzione rilevabili con la logica di raccolta attuale.",
+    "table_data": [
+        {
+            "YearMonth": "2026-03",
+            "total_m2": null,
+            "pallets_count": 0,
+            "first_choice_m2": null,
+            "first_choice_pallets": null,
+            "avg_m2_per_pallet": 0.0,
+            "expelled_pallets": null,
+            "distinct_tones": 0,
+            "distinct_articles": 0
+        },
+        {
+            "YearMonth": "2026-02",
+            "total_m2": null,
+            "pallets_count": 0,
+            "first_choice_m2": null,
+            "first_choice_pallets": null,
+            "avg_m2_per_pallet": 0.0,
+            "expelled_pallets": null,
+            "distinct_tones": 0,
+            "distinct_articles": 0
+        }
+    ],
+    "conclusions": "Al momento non è possibile effettuare un confronto quantitativo (m² prodotti, prime scelte, pallet) perché non sono presenti registrazioni di pallet per i due mesi interrogati. Azioni consigliate:\n- Verificare che la produzione del mese corrente sia stata correttamente registrata nel sistema (possibili cause: ritardo nell'inserimento dati o processo di acquisizione non avviato).\n- Controllare se i record sono memorizzati con un altro campo/data (es. END_DATETIME) o in un diverso intervallo temporale rispetto a quello richiesto.\n- Se desideri, posso rieseguire l'analisi con una delle seguenti specifiche: limitazione a una o più linee di produzione, analisi per serie/famiglia, confronto su 3/6/12 mesi, oppure ricerca per tono o codice articolo. Indicami quale approfondimento preferisci e lo eseguo."
+}

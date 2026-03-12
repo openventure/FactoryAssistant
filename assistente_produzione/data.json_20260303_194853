@@ -1,0 +1,89 @@
+{
+    "user_request": "aggiungi anche le date alle produzioni dei toni, va bene anche la data di fine",
+    "report_title": "Produzione articolo 003938 - dettaglio per tono (data di fine produzione)",
+    "summary": "Ho aggregato la produzione dell'articolo 003938 per tono e ho aggiunto la data di fine (ultima produzione) per ogni tono. I toni principali per volume sono R074, R054 e R104. Per ciascun tono riporto numero pallet, metri quadri prodotti, pezzi, metri quadri in prima scelta, i formati prodotti e la data di fine produzione (ultimo END_DATETIME registrato). È presente una porzione rilevante di produzione senza tono registrato che necessita verifica operativa. Informazione su famiglia/serie commerciale non è disponibile nei dati di produzione e può essere ricavata dalle tabelle di magazzino su richiesta.",
+    "table_data": [
+        {
+            "tono": "R074",
+            "num_pallet": 153,
+            "mq_totali": 6566.4,
+            "pezzi_totali": 9120,
+            "mq_prima_scelta": 6566.4,
+            "formati": "60.00000x120.00000 sp0.00000",
+            "ultima_produzione": "2020-11-07 22:41:05"
+        },
+        {
+            "tono": "R054",
+            "num_pallet": 137,
+            "mq_totali": 5892.48,
+            "pezzi_totali": 8184,
+            "mq_prima_scelta": 5892.48,
+            "formati": "60.00000x120.00000 sp0.00000",
+            "ultima_produzione": "2020-09-26 00:06:39"
+        },
+        {
+            "tono": "R104",
+            "num_pallet": 133,
+            "mq_totali": 5745.6,
+            "pezzi_totali": 7980,
+            "mq_prima_scelta": 5745.6,
+            "formati": "60.00000x120.00000 sp0.95000",
+            "ultima_produzione": "2021-05-11 01:56:38"
+        },
+        {
+            "tono": "R044",
+            "num_pallet": 96,
+            "mq_totali": 4000.32,
+            "pezzi_totali": 5556,
+            "mq_prima_scelta": 4000.32,
+            "formati": "60.00000x120.00000 sp0.00000",
+            "ultima_produzione": "2020-05-09 22:12:57"
+        },
+        {
+            "tono": null,
+            "num_pallet": 79,
+            "mq_totali": 3127.68,
+            "pezzi_totali": 4344,
+            "mq_prima_scelta": 0.0,
+            "formati": "60.00000x120.00000 sp0.00000, 60.00000x120.00000 sp0.95000",
+            "ultima_produzione": "2021-05-11 01:56:38"
+        },
+        {
+            "tono": "R094",
+            "num_pallet": 43,
+            "mq_totali": 1784.16,
+            "pezzi_totali": 2478,
+            "mq_prima_scelta": 1784.16,
+            "formati": "60.00000x120.00000 sp0.95000",
+            "ultima_produzione": "2021-04-27 01:49:03"
+        },
+        {
+            "tono": "R084",
+            "num_pallet": 32,
+            "mq_totali": 1339.2,
+            "pezzi_totali": 1860,
+            "mq_prima_scelta": 1339.2,
+            "formati": "60.00000x120.00000 sp0.00000",
+            "ultima_produzione": "2021-01-09 08:21:32"
+        },
+        {
+            "tono": "R034",
+            "num_pallet": 29,
+            "mq_totali": 1105.92,
+            "pezzi_totali": 1536,
+            "mq_prima_scelta": 1019.52,
+            "formati": "60.00000x120.00000 sp0.00000",
+            "ultima_produzione": "2020-05-09 22:12:57"
+        },
+        {
+            "tono": "R064",
+            "num_pallet": 15,
+            "mq_totali": 643.68,
+            "pezzi_totali": 894,
+            "mq_prima_scelta": 643.68,
+            "formati": "60.00000x120.00000 sp0.00000",
+            "ultima_produzione": "2020-10-21 20:27:17"
+        }
+    ],
+    "conclusions": "Punti operativi e azioni consigliate:\n1) Focus commerciale/produzione: R074, R054 e R104 rappresentano la quota maggiore di produzione — usarli come priorità per pianificazione e verifica giacenze.\n2) Dato mancante (tono null): circa 3.128 m² prodotti senza tono. Verificare con produzione/IT se si tratta di errori di registrazione o lotti non etichettati; impatta disponibilità e consegne.\n3) Prima scelta: quasi tutti i toni principali mostrano mq in prima scelta; il tono mancante ha 0 mq in prima scelta — chiarire se è reale seconda scelta o mancanza di registrazione.\n4) Famiglia/serie: non disponibile nel dataset di produzione; se occorre collegare a vendite/giacenze, posso estrarre la serie commerciale dalle tabelle di magazzino (pa_ff_code o dashboard_productavailability).\n5) Prossimi passi suggeriti: a) confermare causa dei toni mancanti; b) eseguire lo stesso report su intervallo (ultimi 30/90 giorni) per trend recenti; c) unire con dati di magazzino per valutare coperture e ordini.\nSe vuoi, genero subito il report filtrato su un periodo (es. ultimi 90 giorni) o estraggo la serie/famiglia commerciale per questo articolo."
+}

@@ -1,0 +1,33 @@
+{
+    "user_request": "lista utlimi 5 assorbimenti",
+    "report_title": "Ultimi 5 valori di assorbimento rilevati",
+    "summary": "Sono stati estratti gli ultimi 5 valori di assorbimento registrati nel database laboratorio, con relativo codice articolo e descrizione.",
+    "table_data": [
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "Assorbimento": 0.13
+        },
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "Assorbimento": 0.15
+        },
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "Assorbimento": 0.15
+        },
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "Assorbimento": 0.11
+        },
+        {
+            "CodeArt": "SF1076",
+            "Description": "BLAZE IVORY 60X120 (sfuso)",
+            "Assorbimento": 0.14
+        }
+    ],
+    "conclusions": "I dati indicano che negli ultimi assorbimenti prevale il prodotto con codice 005100, con valori di assorbimento tra 0.11 e 0.15. Un altro prodotto registrato è SF1076 con assorbimento di 0.14. Questi valori possono essere usati come riferimento per controlli qualità e monitoraggio del materiale."
+}

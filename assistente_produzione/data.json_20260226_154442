@@ -1,0 +1,134 @@
+{
+    "user_request": "Dammi i prodotti 60x60 sottogiacenza",
+    "report_title": "Prodotti Formato 60x60 in Sottogiacenza",
+    "summary": "Elenco dei prodotti con formato 60x60 che risultano attualmente in sottogiacenza (giacenza negativa). Questi dati indicano una carenza di stock disponibile per tali articoli.",
+    "table_data": [
+        {
+            "CODICE": "RPL011",
+            "DESCRIZIONE": "60X60 RTT REPLAY WHITE",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "REPLAY",
+            "GIACENZA": -1301.4
+        },
+        {
+            "CODICE": "303412",
+            "DESCRIZIONE": "60X60 RTT FABRIC ANTHRACITE",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "FABRIC",
+            "GIACENZA": -1069.2
+        },
+        {
+            "CODICE": "FSB100",
+            "DESCRIZIONE": "60x60 RTT BIJOUX DI FUSION",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "FUSION - PETRUS",
+            "GIACENZA": -259.2
+        },
+        {
+            "CODICE": "EMT012",
+            "DESCRIZIONE": "60X60 RTT EMOTION GRIS",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "EMOTION",
+            "GIACENZA": -216
+        },
+        {
+            "CODICE": "EMT011",
+            "DESCRIZIONE": "60X60 RTT EMOTION BLANC",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "EMOTION",
+            "GIACENZA": -172.8
+        },
+        {
+            "CODICE": "EMT013",
+            "DESCRIZIONE": "60X60 RTT EMOTION TAUPE",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "EMOTION",
+            "GIACENZA": -172.8
+        },
+        {
+            "CODICE": "EX2002",
+            "DESCRIZIONE": "60x60 EXTRA FUME' RTT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "ESPOSITORI",
+            "GIACENZA": -108
+        },
+        {
+            "CODICE": "303310",
+            "DESCRIZIONE": "SMOT GREY 60x60 RETT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "SMOT",
+            "GIACENZA": -97.2
+        },
+        {
+            "CODICE": "EMT014",
+            "DESCRIZIONE": "60X60 RTT EMOTION ANTHRACITE",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "EMOTION",
+            "GIACENZA": -86.4
+        },
+        {
+            "CODICE": "PSG032",
+            "DESCRIZIONE": "60X60 RTT PRESTIGE GRIS",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "PRESTIGE",
+            "GIACENZA": -43.2
+        },
+        {
+            "CODICE": "003711",
+            "DESCRIZIONE": "60X60 ASPEN BEIGE RTT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "ASPEN",
+            "GIACENZA": -36
+        },
+        {
+            "CODICE": "303623",
+            "DESCRIZIONE": "60x60 RTT NEW SCOUT WHITE SP 20 MM",
+            "FORMATO": "60X60 SP20",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": -30.24
+        },
+        {
+            "CODICE": "005277",
+            "DESCRIZIONE": "60X60 TEMPO GRIGIO RTT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "CONTEMPORARY",
+            "GIACENZA": -21.6
+        },
+        {
+            "CODICE": "303768",
+            "DESCRIZIONE": "60x60 RTT ULTRA SELCIATO SP 20 MM",
+            "FORMATO": "60X60 SP20",
+            "SERIE": "OUTDOOR",
+            "GIACENZA": -16.56
+        },
+        {
+            "CODICE": "003713",
+            "DESCRIZIONE": "60X60 ASPEN FUME' RTT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "ASPEN",
+            "GIACENZA": -14.4
+        },
+        {
+            "CODICE": "EMT074",
+            "DESCRIZIONE": "EMOTION ANTHRACITE 60X60 RETT 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "EMOTION",
+            "GIACENZA": -10.8
+        },
+        {
+            "CODICE": "304016",
+            "DESCRIZIONE": "MASK TOBACCO 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MASK",
+            "GIACENZA": -9
+        },
+        {
+            "CODICE": "004127",
+            "DESCRIZIONE": "60X60 CONTEMPORARY LIGHT GREY RTT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "CONTEMPORARY",
+            "GIACENZA": -8.64
+        }
+    ],
+    "conclusions": "La presenza di numerosi prodotti in sottogiacenza nel formato 60x60 indica una situazione critica del magazzino per questi articoli, che potrebbe richiedere un intervento immediato per evitare rotture di stock e ritardi nelle consegne. È consigliabile approfondire le cause di queste giacenze negative e pianificare reintegri di prodotto."
+}

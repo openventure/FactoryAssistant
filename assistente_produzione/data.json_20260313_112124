@@ -1,0 +1,21 @@
+{
+    "user_request": "Qual è la produzione giornaliera media per linea nell’ultimo mese?",
+    "report_title": "Produzione media giornaliera per linea — ultimi 30 giorni",
+    "summary": "Ho calcolato la produzione sugli ultimi 30 giorni (definiti come 'ultimo mese' per questa esecuzione). Risultano attività registrate solo sulla Linea 1 nel periodo considerato. Il report mostra per ciascuna linea i metri quadri totali prodotti, i giorni produttivi effettivi, i giorni del periodo (calendarizzati) e le medie sia rispetto ai giorni calendario sia rispetto ai giorni produttivi.",
+    "table_data": [
+        {
+            "Linea": "1",
+            "total_m2": 208.8,
+            "production_days": 1,
+            "calendar_days": 30,
+            "avg_m2_per_calendar_day": 6.96,
+            "avg_m2_per_production_day": 208.8,
+            "total_pallets": 5,
+            "total_pieces": 290,
+            "first_choice_pallets": 4,
+            "first_production_date": "2026-03-12",
+            "last_production_date": "2026-03-12"
+        }
+    ],
+    "conclusions": "Nel periodo considerato la produzione è stata concentrata su una sola linea (Linea 1): totale 208,8 m² prodotti in un giorno operativo. Questo si traduce in una media di 6,96 m²/giorno se si rapporta al periodo di 30 giorni, ma di 208,8 m²/giorno se si considera solo il/ i giorni effettivamente produttivi. Raccomandazioni operative: 1) se vuoi confronti tra linee o valori più stabili, estendi il periodo (es. 90 giorni o mese solare); 2) se interessa isolare la qualità, richiedi l'analisi limitata alla prima scelta o includendo gli espulsi; 3) se vuoi la lista completa delle linee anche con zero produzione, posso rigenerare il report specificando tale preferenza. Vuoi che esegua una di queste varianti?"
+}

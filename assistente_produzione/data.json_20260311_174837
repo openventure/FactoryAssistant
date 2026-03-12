@@ -1,0 +1,18 @@
+{
+    "user_request": "Quali articoli 60x120 hanno ordini superiori alla disponibilita attuale?",
+    "report_title": "Articoli 60x120 con ordini > disponibilità (query consigliata)",
+    "summary": "Non è stato possibile interrogare il database al momento (errore di connessione). Per identificare gli articoli 60x120 con ordini superiori alla disponibilità bisogna confrontare le quantità da consegnare con la disponibilità (valori espressi in m²). In pa_ff_code si confrontano QTA_DA_CONSEGNARE vs DISPONIBILITA; in dashboard_productavailability si può confrontare QTA_DA_CONSEGNARE vs GIACENZA per deposito. Di seguito fornisco le query SQL consigliate da eseguire quando la connessione ai database sarà disponibile e alcune note operative/assunzioni.",
+    "table_data": [
+        {
+            "source": "pa_ff_code (aggregato articolo)",
+            "sql_server_query": "SELECT TOP (200)\n  CODICE,\n  DESCRIZIONE,\n  FORMATO,\n  SERIE,\n  COALESCE(DISPONIBILITA,0) AS DISPONIBILITA_m2,\n  COALESCE(QTA_DA_CONSEGNARE,0) AS QTA_DA_CONSEGNARE_m2,\n  COALESCE(QTA_DA_CONSEGNARE,0) - COALESCE(DISPONIBILITA,0) AS SHORTAGE_m2\nFROM pa_ff_code\nWHERE FORMATO LIKE '%60x120%'\n  AND COALESCE(QTA_DA_CONSEGNARE,0) > COALESCE(DISPONIBILITA,0)\nORDER BY SHORTAGE_m2 DESC;",
+            "notes": "Usa pa_ff_code quando vuoi la vista articolo-aggregata (disponibilità complessiva per articolo/tono/serie). Le quantità sono in m². Adatta TOP(N) se servono più righe."
+        },
+        {
+            "source": "dashboard_productavailability (per tono/deposito)",
+            "sql_server_query": "SELECT TOP (500)\n  CODICE,\n  DESCRIZIONE,\n  FORMATO,\n  COD_VAR,\n  SERIE,\n  DEPOSITO,\n  COALESCE(GIACENZA,0) AS GIACENZA_m2,\n  COALESCE(QTA_DA_CONSEGNARE,0) AS QTA_DA_CONSEGNARE_m2,\n  COALESCE(QTA_DA_CONSEGNARE,0) - COALESCE(GIACENZA,0) AS SHORTAGE_m2\nFROM dashboard_productavailability\nWHERE FORMATO LIKE '%60x120%'\n  AND COALESCE(QTA_DA_CONSEGNARE,0) > COALESCE(GIACENZA,0)\nORDER BY SHORTAGE_m2 DESC;",
+            "notes": "Usa questa query per vedere gap a livello di tono/deposito (utile per allocazioni logistiche)."
+        }
+    ],
+    "conclusions": "A causa di un errore di connessione non ho potuto eseguire le query e restituire la lista reale. Quando vuoi, posso eseguire le query indicate non appena la connessione sarà disponibile. Suggerimenti operativi immediati: 1) eseguire la query su dashboard_productavailability per identificare i depositi con shortage e valutare trasferimenti inter-deposito; 2) eseguire la query su pa_ff_code per il piano commerciale (shortage per articolo/serie/tono); 3) se preferisci, posso fornire anche una vista raggruppata per serie o per tono (TOP N ordini non coperti) o un piano di produzione prioritario basato sul shortage in m². Vuoi che esegua subito le query (quando la connessione sarà disponibile) o preferisci che le lanci tu e me ne incolli i risultati?"
+}

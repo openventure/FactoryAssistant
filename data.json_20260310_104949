@@ -1,0 +1,109 @@
+{
+    "user_request": "dammi la giacenza dell'articolo 304041 con i toni in evidenza",
+    "report_title": "Giacenza per articolo 304041 (suddivisa per tono)",
+    "summary": "Ho recuperato le giacenze disponibili per il codice 304041 (CHARME BLACK 60x120 RTT) e le ho raggruppate per tono. I toni sono stati ricavati dal campo di codifica (COD_VAR) dove possibile; alcune codifiche non standard sono state riportate così come presenti. Il totale giacenza attuale per tutte le locazioni/tipi di deposito è 53,28 m². Nota: ci sono toni con giacenza negativa o valori molto bassi (segno di allocazioni/registrazioni da verificare) e molti toni riportano giacenza 0 nonostante ordini in essere.",
+    "table_data": [
+        {
+            "CODICE": "304041",
+            "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONO": "R074",
+            "GIACENZA_TOTALE_MQ": 1.44,
+            "DEPOSITI": [
+                {
+                    "DEPOSITO": "Deposito DADO",
+                    "GIACENZA_MQ": 1.44
+                }
+            ]
+        },
+        {
+            "CODICE": "304041",
+            "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONO": "R084",
+            "GIACENZA_TOTALE_MQ": 11.52,
+            "DEPOSITI": [
+                {
+                    "DEPOSITO": "Deposito DADO",
+                    "GIACENZA_MQ": 11.52
+                }
+            ]
+        },
+        {
+            "CODICE": "304041",
+            "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONO": "R094",
+            "GIACENZA_TOTALE_MQ": 1.44,
+            "DEPOSITI": [
+                {
+                    "DEPOSITO": "Deposito DADO",
+                    "GIACENZA_MQ": 1.44
+                }
+            ]
+        },
+        {
+            "CODICE": "304041",
+            "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONO": "R114",
+            "GIACENZA_TOTALE_MQ": 7.2,
+            "DEPOSITI": [
+                {
+                    "DEPOSITO": "Deposito DADO",
+                    "GIACENZA_MQ": 15.84
+                },
+                {
+                    "DEPOSITO": "Deposito DADO a locazione",
+                    "GIACENZA_MQ": -8.64
+                }
+            ]
+        },
+        {
+            "CODICE": "304041",
+            "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONO": "R134",
+            "GIACENZA_TOTALE_MQ": 28.8,
+            "DEPOSITI": [
+                {
+                    "DEPOSITO": "Deposito DADO (a locazione)",
+                    "GIACENZA_MQ": 27.36
+                },
+                {
+                    "DEPOSITO": "Deposito Petrus-Trial",
+                    "GIACENZA_MQ": 1.44
+                }
+            ]
+        },
+        {
+            "CODICE": "304041",
+            "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONO": "R14D",
+            "GIACENZA_TOTALE_MQ": 2.88,
+            "DEPOSITI": [
+                {
+                    "DEPOSITO": "Deposito DADO (Castellarano) a locazione",
+                    "GIACENZA_MQ": 2.88
+                }
+            ]
+        },
+        {
+            "CODICE": "304041",
+            "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONO": "ALTRI TONI (0 o valori nulli)",
+            "GIACENZA_TOTALE_MQ": 0.0,
+            "DEPOSITI": "Molte righe per altri toni mostrano GIACENZA = 0.00 (elencate nel dataset di dettaglio)."
+        }
+    ],
+    "conclusions": "Stato operativo e raccomandazioni:\n1) Disponibilità complessiva molto bassa rispetto agli ordini segnalati (v. precedenti richieste: ordini totali molto superiori). Totale giacenza fisica trovata: 53,28 m².\n2) Ci sono toni con giacenza negativa (-8,64 m²) e piccole quantità sparse su più depositi: suggerisco una riconciliazione fisica/contabile per i depositi con valori non nulli (Deposito DADO, Deposito DADO a locazione, Deposito Petrus-Trial) per confermare quantità reali.\n3) Se vuoi, posso:\n   a) fornire il dettaglio riga-per-riga per tutti i depositi/toni (esportabile),\n   b) aggregare la Qta_da_consegnare per tono a confronto con la giacenza per evidenziare i gap per tono, oppure\n   c) verificare i pallet prodotti nelle ultime 2 settimane per i toni con scostamento maggiore — dimmi quale preferisci.\nNota tecnica: i toni sono stati estratti dal campo COD_VAR con una regola euristica (estrazione della parte centrale separata da punti); dove la codifica è non standard, ho riportato il valore così com'era."
+}

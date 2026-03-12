@@ -1,0 +1,44 @@
+{
+    "user_request": "Qual è la disponibilità reale per l'articolo 304040?",
+    "report_title": "Disponibilità reale - articolo 304040 (sintesi deposito)",
+    "summary": "Ho estratto il dettaglio per deposito e tono dall’anagrafica disponibilità. La giacenza fisica totale rilevata nei depositi è di 3.519,36 m². Tuttavia gli ordini/quantità da consegnare registrati su diversi toni/depositi sono molto superiori alla giacenza: esiste quindi un consistente gap tra stock fisico e impegni. Nota: i valori 'qta_da_consegnare' sono registrati per combinazione tono/COD_VAR; per evitare duplicazioni ho riportato per ogni deposito un valore rappresentativo (il valore massimo presente nelle righe per quel deposito). Se vuoi un consolidato preciso sommando tutte le voci per tono (o una somma deduplicata per COD_VAR) posso calcolarlo su richiesta.",
+    "table_data": [
+        {
+            "deposito": "Deposito DADO (Castellarano) a locazione",
+            "giacenza_m2": 2563.2,
+            "qta_da_consegnare_m2_representative": 4825.44,
+            "shortage_m2_representative": 2262.24
+        },
+        {
+            "deposito": "Deposito DADO a locazione",
+            "giacenza_m2": 948.96,
+            "qta_da_consegnare_m2_representative": 4678.56,
+            "shortage_m2_representative": 3729.6
+        },
+        {
+            "deposito": "Deposito DADO",
+            "giacenza_m2": 7.2,
+            "qta_da_consegnare_m2_representative": 4528.8,
+            "shortage_m2_representative": 4521.6
+        },
+        {
+            "deposito": "Deposito principale",
+            "giacenza_m2": 0.0,
+            "qta_da_consegnare_m2_representative": 4678.56,
+            "shortage_m2_representative": 4678.56
+        },
+        {
+            "deposito": "Deposito Petrus-Trial",
+            "giacenza_m2": 0.0,
+            "qta_da_consegnare_m2_representative": 5127.84,
+            "shortage_m2_representative": 5127.84
+        },
+        {
+            "deposito": "TOTAL (tutti i depositi)",
+            "giacenza_m2": 3519.36,
+            "qta_da_consegnare_m2_representative_sum": 23839.2,
+            "net_availability_m2_representative": -20319.84
+        }
+    ],
+    "conclusions": "La disponibilità fisica immediata dell'articolo 304040 è molto bassa: in tutto ci sono circa 3.519 m² in deposito. Gli impegni (ordini da consegnare) superano ampiamente lo stock: usando un valore rappresentativo per deposito si ottiene un fabbisogno complessivo di ~23.840 m² e un gap netto di ~20.320 m². Raccomandazioni operative: 1) confermare se vuoi l’aggregazione precisa sommando tutte le righe per COD_VAR/tono (posso eseguire il consolidato esatto), 2) valutare prioritizzazione consegne/allocazioni sui depositi con giacenza positiva (es. DADO Castellarano), 3) se serve, posso fornire il dettaglio per singolo COD_VAR/tono o calcolare la disponibilità corretta usando il campo DISPONIBILITA aggregato da pa_ff_code. Dimmi quale approfondimento preferisci."
+}

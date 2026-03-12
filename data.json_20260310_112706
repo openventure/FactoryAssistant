@@ -1,0 +1,98 @@
+{
+    "user_request": "dalle giacenze trovami il 60x120 spessore 2cm",
+    "report_title": "Giacenze per formato 60x120 spessore 20 mm (2 cm)",
+    "summary": "Ho estratto le giacenze per prodotti identificati come 60x120 con spessore 20 mm (interpretato come 2 cm). La ricerca considera variazioni testuali del formato (es. 60x120, 60X120, 600x1200) e delle diciture di spessore (20mm, SP20, SP 20mm, 2 cm). Sono stati trovati molti articoli distinti (diversi codici/serie/toni) con stock distribuito su più depositi. I quantitativi sono espressi in m². Nei record emergono prodotti con giacenze rilevanti e altri con giacenze minime ma con ordini da consegnare (QTA_DA_CONSEGNARE) elevati.",
+    "table_data": [
+        {
+            "CODICE": "005617",
+            "DESCRIZIONE": "60X120 ULTRA SHELLSTONE BIANCO RTT SP20MM",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X120 SP20",
+            "DEPOSITO": "Deposito principale",
+            "GIACENZA_MQ": 13623.12,
+            "QTA_DA_CONSEGNARE_MQ": 2040.48
+        },
+        {
+            "CODICE": "TMS012",
+            "DESCRIZIONE": "60X120 ULTRA TIME STONE CENERE RTT SP 20MM",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X120 SP20",
+            "DEPOSITO": "Deposito principale",
+            "GIACENZA_MQ": 11891.52,
+            "QTA_DA_CONSEGNARE_MQ": 869.76
+        },
+        {
+            "CODICE": "004547",
+            "DESCRIZIONE": "60X120 ULTRA ASPEN GRIGIO RTT SP20MM",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X120 SP20",
+            "DEPOSITO": "Deposito principale",
+            "GIACENZA_MQ": 8965.44,
+            "QTA_DA_CONSEGNARE_MQ": 23184.72
+        },
+        {
+            "CODICE": "004548",
+            "DESCRIZIONE": "60X120 ULTRA ASPEN ANTRACITE RTT SP20MM",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X120 SP20",
+            "DEPOSITO": "Deposito principale",
+            "GIACENZA_MQ": 8799.12,
+            "QTA_DA_CONSEGNARE_MQ": 23558.4
+        },
+        {
+            "CODICE": "QST071",
+            "DESCRIZIONE": "60X120 ULTRA QUEEN STONE AVORIO RTT SP 20MM",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X120 SP20",
+            "DEPOSITO": "Deposito principale",
+            "GIACENZA_MQ": 8382.24,
+            "QTA_DA_CONSEGNARE_MQ": 54.72
+        },
+        {
+            "CODICE": "303803",
+            "DESCRIZIONE": "60X120 SCOUT BEIGE RTT SP20MM",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X120 SP20",
+            "DEPOSITO": "Deposito principale",
+            "GIACENZA_MQ": 7657.92,
+            "QTA_DA_CONSEGNARE_MQ": 13250.88
+        },
+        {
+            "CODICE": "NWS233",
+            "DESCRIZIONE": "60X120 ULTRA NEW STONE LEPRE RTT SP 20MM",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X120 SP20",
+            "DEPOSITO": "Deposito principale",
+            "GIACENZA_MQ": 6677.28,
+            "QTA_DA_CONSEGNARE_MQ": 1.44
+        },
+        {
+            "CODICE": "TMS014",
+            "DESCRIZIONE": "60X120 ULTRA TIME STONE SABBIA RTT SP 20MM",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X120 SP20",
+            "DEPOSITO": "Deposito principale",
+            "GIACENZA_MQ": 6525.36,
+            "QTA_DA_CONSEGNARE_MQ": 6199.2
+        },
+        {
+            "CODICE": "NWS232",
+            "DESCRIZIONE": "60X120 ULTRA NEW STONE VISONE RTT SP 20MM",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X120 SP20",
+            "DEPOSITO": "Deposito principale",
+            "GIACENZA_MQ": 5914.8,
+            "QTA_DA_CONSEGNARE_MQ": 0.0
+        },
+        {
+            "CODICE": "005616",
+            "DESCRIZIONE": "60X120 ULTRA ASPEN BEIGE RTT SP20MM",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X120 SP20",
+            "DEPOSITO": "Deposito principale",
+            "GIACENZA_MQ": 4647.6,
+            "QTA_DA_CONSEGNARE_MQ": 871.2
+        }
+    ],
+    "conclusions": "Risultati principali e azioni consigliate:\n- Esistenza: ci sono numerosi articoli 60x120 SP20 con giacenze significative (alcuni codici oltre 10.000 m²). Le giacenze sono distribuite su più depositi.\n- Attenzione agli impegni: alcuni articoli con giacenza elevata hanno anche QTA_DA_CONSEGNARE importante (es. codici 004547, 004548, 303803), che ridurrà rapidamente la disponibilità netta.\n- Proposte operative:\n  1) Se vuoi il totale aggregato (somma m²) per l'intero insieme 60x120 SP20, posso calcolarlo e fornire la cifra precisa.\n  2) Posso fornire la lista completa per deposito o per codice (export CSV / top N), se ti serve dettaglio operativo per pianificazione logistica.\n  3) Se preferisci una corrispondenza più stretta (es. solo FORMATO esatto \"60x120 SP20\" o solo una specifica serie/tono), indicami il filtro e ripeto la ricerca.\n- Note metodologiche: la ricerca ha identificato spessore 2 cm come 20 mm / SP20 nelle descrizioni. Se lo spessore è codificato diversamente in altre tabelle, posso estendere la ricerca anche su pa_ff_code o su altri pattern su richiesta."
+}

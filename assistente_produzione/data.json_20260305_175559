@@ -1,0 +1,15 @@
+{
+    "user_request": "Per l'articolo 3938 quanti toni ho prodotto?",
+    "report_title": "Numero di toni prodotti per articolo 3938",
+    "summary": "Dall'analisi dei dati di produzione non è stata trovata alcuna registrazione per l'articolo 3938. Pertanto, al momento risulta che non sono stati prodotti toni associati a questo codice articolo nei record disponibili. Se ti aspettavi un risultato diverso, potrebbe trattarsi di un codice alternativo, di un intervallo temporale specifico non considerato o di dati registrati in un altro sistema.",
+    "table_data": [
+        {
+            "message": "Nessuna produzione trovata per LGV_CodiceArticolo = '3938'.",
+            "NumDistinctToni": 0,
+            "TotalePallet": 0,
+            "Totale_mq": 0,
+            "Totale_Pezzi": 0
+        }
+    ],
+    "conclusions": "Non risultano toni prodotti per l'articolo 3938 nei dati disponibili. Azioni consigliate: 1) Verificare che il codice articolo sia corretto (es. varianti o zeri iniziali). 2) Se serve, ripetere l'analisi specificando un intervallo temporale (es. ultimi 30/90 giorni). 3) Controllare eventuali altri database/sistemi o descrizioni articolo (es. ricerca per parte del codice o per descrizione). Posso eseguire queste verifiche se mi dai indicazioni aggiuntive."
+}

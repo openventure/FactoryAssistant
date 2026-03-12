@@ -1,0 +1,240 @@
+{
+    "user_request": "catalogali per formato",
+    "report_title": "Articoli passati al palletizzatore nel mese corrente catalogati per formato",
+    "summary": "Elenco degli articoli del mese corrente con relativo formato. Tuttavia, per questi dati il campo formato (LGV_calibro) risulta vuoto o non compilato.",
+    "table_data": [
+        {
+            "Formato": "",
+            "Articolo": "003937A"
+        },
+        {
+            "Formato": "",
+            "Articolo": "003938A"
+        },
+        {
+            "Formato": "",
+            "Articolo": "004151"
+        },
+        {
+            "Formato": "",
+            "Articolo": "004154"
+        },
+        {
+            "Formato": "",
+            "Articolo": "004409"
+        },
+        {
+            "Formato": "",
+            "Articolo": "004471"
+        },
+        {
+            "Formato": "",
+            "Articolo": "005100"
+        },
+        {
+            "Formato": "",
+            "Articolo": "005372"
+        },
+        {
+            "Formato": "",
+            "Articolo": "005426"
+        },
+        {
+            "Formato": "",
+            "Articolo": "005688"
+        },
+        {
+            "Formato": "",
+            "Articolo": "005713"
+        },
+        {
+            "Formato": "",
+            "Articolo": "005716"
+        },
+        {
+            "Formato": "",
+            "Articolo": "005956"
+        },
+        {
+            "Formato": "",
+            "Articolo": "005957"
+        },
+        {
+            "Formato": "",
+            "Articolo": "005958"
+        },
+        {
+            "Formato": "",
+            "Articolo": "303405A"
+        },
+        {
+            "Formato": "",
+            "Articolo": "303569"
+        },
+        {
+            "Formato": "",
+            "Articolo": "303659"
+        },
+        {
+            "Formato": "",
+            "Articolo": "303794"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304065"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304119"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304154"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304155"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304268"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304270"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304279"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304364"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304391"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304394"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304395"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304396"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304400"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304401"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304402"
+        },
+        {
+            "Formato": "",
+            "Articolo": "304403"
+        },
+        {
+            "Formato": "",
+            "Articolo": "3514182"
+        },
+        {
+            "Formato": "",
+            "Articolo": "3538699A"
+        },
+        {
+            "Formato": "",
+            "Articolo": "EE1489"
+        },
+        {
+            "Formato": "",
+            "Articolo": "EE1491"
+        },
+        {
+            "Formato": "",
+            "Articolo": "EM28581555"
+        },
+        {
+            "Formato": "",
+            "Articolo": "FLS001"
+        },
+        {
+            "Formato": "",
+            "Articolo": "FLS002"
+        },
+        {
+            "Formato": "",
+            "Articolo": "MNL031"
+        },
+        {
+            "Formato": "",
+            "Articolo": "MNL032"
+        },
+        {
+            "Formato": "",
+            "Articolo": "MNR122"
+        },
+        {
+            "Formato": "",
+            "Articolo": "MNR179"
+        },
+        {
+            "Formato": "",
+            "Articolo": "MNR187"
+        },
+        {
+            "Formato": "",
+            "Articolo": "MNR194"
+        },
+        {
+            "Formato": "",
+            "Articolo": "MNR196"
+        },
+        {
+            "Formato": "",
+            "Articolo": "MNR197"
+        },
+        {
+            "Formato": "",
+            "Articolo": "MNR201"
+        },
+        {
+            "Formato": "",
+            "Articolo": "MNR202"
+        },
+        {
+            "Formato": "",
+            "Articolo": "MNR206"
+        },
+        {
+            "Formato": "",
+            "Articolo": "Q.1022-U"
+        },
+        {
+            "Formato": "",
+            "Articolo": "RPL137A"
+        },
+        {
+            "Formato": "",
+            "Articolo": "RPL162"
+        },
+        {
+            "Formato": "",
+            "Articolo": "VI28141377"
+        },
+        {
+            "Formato": "",
+            "Articolo": "VSM001"
+        }
+    ],
+    "conclusions": "Il dato formato per gli articoli risulta non valorizzato nel database per il mese corrente. Suggerisco di verificare la presenza o integrità dei dati relativi al campo LGV_calibro nel sistema PALLET_PRODUCTION per una successiva analisi."
+}

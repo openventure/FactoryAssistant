@@ -1,0 +1,34 @@
+{
+    "user_request": "fammi un resoconto delle produzioni del solo articolo 003938",
+    "report_title": "Resoconto produzione articolo 003938 (tabella PALLET_PRODUCTION)",
+    "summary": "Sintesi aggregata dei pallet prodotti per LGV_CodiceArticolo = '003938' dalla tabella PALLET_PRODUCTION: conteggi pallet, mq prodotti, pezzi, prima scelta e range temporale di produzione. I formati e i toni rilevati sono riportati quando presenti in tabella.",
+    "table_data": [
+        {
+            "Articolo": "003938",
+            "total_pallets": 717,
+            "pallets_accepted_(Espulso=0)": 0,
+            "pallets_espulsi_(Espulso=1)": 717,
+            "pallets_first_choice_(LGV_numeroScelta='I')": 636,
+            "total_m2": 30205.44,
+            "avg_m2_per_pallet": 42.127531,
+            "total_pieces": 41952,
+            "first_production": "2020-05-09 02:51:58",
+            "last_production": "2021-05-11 01:56:38",
+            "formats_found": [
+                "60.00000x120.00000 sp0.00000",
+                "60.00000x120.00000 sp0.95000"
+            ],
+            "tones_found": [
+                "R034",
+                "R044",
+                "R054",
+                "R064",
+                "R074",
+                "R084",
+                "R094",
+                "R104"
+            ]
+        }
+    ],
+    "conclusions": "Risultato: l'articolo 003938 ha 717 pallet registrati per un totale di 30.205,44 m² (media ~42,13 m²/pallet). Di questi, 636 pallet sono marcati come prima scelta (LGV_numeroScelta = 'I'). Il campo Espulso mostra 717 pallet a valore 1 e 0 a valore 0: verifica consigliata sul significato/qualifica del campo Espulso (possibile inversione di semantica o dati non normalizzati). Nota dati qualità: uno dei formati riporta spessore = 0.00000 (probabile dato mancante). La tabella PALLET_PRODUCTION non contiene informazioni di famiglia/serie descrittiva; se vuoi la serie/famiglia e la giacenza attuale posso interrogare la tabella pa_ff_code o dashboard_productavailability. Azioni possibili: 1) confermare semantics di Espulso e correggere filtro se necessario; 2) ottenere dettaglio mensile o per tono; 3) estrarre serie/famiglia e giacenza da pa_ff_code. Dimmi quale azione preferisci."
+}

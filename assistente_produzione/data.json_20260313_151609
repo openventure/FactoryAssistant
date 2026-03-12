@@ -1,0 +1,7 @@
+{
+    "user_request": "Confronta la produzione di questo mese con il mese scorso.",
+    "report_title": "Chiarimenti per confronto produzione - mese corrente vs precedente",
+    "summary": "Prima di eseguire il confronto devo chiarire alcuni aspetti per restituire il report corretto. Per default posso fornire: confronto per linea di produzione + totale aziendale, considerando i mesi solari (mese corrente completo fino a oggi vs mese solare precedente) e includendo tutte le scelte (prima scelta + seconde). Posso inoltre: 1) limitare alla sola prima scelta (LGV_numeroScelta = 'I'); 2) fornire il confronto per articolo invece che per linea; 3) includere il numero di pallet e i m² prodotti; 4) mostrare la top N linee o articoli con la variazione maggiore.",
+    "table_data": [],
+    "conclusions": "Dimmi come preferisci il dettaglio: scegli tra (A) confronto per linea + totale azienda (default), (B) confronto per articolo, e indica se vuoi solo prima scelta. Appena confermi procedo e ti restituisco la tabella con m² prodotti per mese, variazione assoluta (m²) e variazione percentuale per ogni riga."
+}

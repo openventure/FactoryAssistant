@@ -1,0 +1,52 @@
+{
+    "user_request": "Analizza le prove di laboratorio dell'ultima settimana.",
+    "report_title": "Analisi assorbimenti laboratorio - ultima settimana (7 giorni)",
+    "summary": "Sono state analizzate le prove di assorbimento raccolte negli ultimi 7 giorni. Sono presenti 4 articoli con almeno 1 prova ciascuno (in pratica 4 prove per articolo). Tre articoli mostrano assorbimenti medi bassi e con bassa variabilità; un articolo (SF0356 - VISION PEARL 60X120) presenta un assorbimento medio significativamente più elevato e alta variabilità tra le prove. Nei dati di laboratorio non è presente il campo 'Tono' strutturato, quindi l'analisi è basata su CodeArt e Description riportati nelle prove. Se serve correlare con lotti/toni o depositi, suggerisco una integrazione con i dati di produzione o disponibilità per incrociare LGV_tono / COD_VAR.",
+    "table_data": [
+        {
+            "CodeArt": "SF0356",
+            "Description": "VISION PEARL 60X120",
+            "N_prove": 4,
+            "Avg_Assorbimento": 1.3225,
+            "Min_Assorbimento": 0.7,
+            "Max_Assorbimento": 2.17,
+            "StdDev_Assorbimento": 0.6057,
+            "First_test_date": "2026-03-07",
+            "Last_test_date": "2026-03-07"
+        },
+        {
+            "CodeArt": "SF0934",
+            "Description": "VISION STATUARIO GOLD LAPP 60X120 (sfuso)",
+            "N_prove": 4,
+            "Avg_Assorbimento": 0.295,
+            "Min_Assorbimento": 0.25,
+            "Max_Assorbimento": 0.38,
+            "StdDev_Assorbimento": 0.0502,
+            "First_test_date": "2026-03-07",
+            "Last_test_date": "2026-03-09"
+        },
+        {
+            "CodeArt": "SF0795",
+            "Description": "60X120 CHARME GREY (sfuso)",
+            "N_prove": 4,
+            "Avg_Assorbimento": 0.215,
+            "Min_Assorbimento": 0.17,
+            "Max_Assorbimento": 0.28,
+            "StdDev_Assorbimento": 0.0439,
+            "First_test_date": "2026-03-09",
+            "Last_test_date": "2026-03-09"
+        },
+        {
+            "CodeArt": "SF0538",
+            "Description": "GARE GREY 60X120 (sfuso)",
+            "N_prove": 4,
+            "Avg_Assorbimento": 0.1425,
+            "Min_Assorbimento": 0.12,
+            "Max_Assorbimento": 0.16,
+            "StdDev_Assorbimento": 0.0148,
+            "First_test_date": "2026-03-07",
+            "Last_test_date": "2026-03-07"
+        }
+    ],
+    "conclusions": "Principali evidenze operative:\n- SF0356 (VISION PEARL 60X120) richiede attenzione: assorbimento medio elevato (≈1.32) e forte variabilità tra prove (std ≈0.61). Suggerisco verificare il lotto/tono corrispondente, controllare processo di smaltatura e ciclo di cottura per eventuali anomalie, e aumentare il numero di prove sul lotto sospetto.\n- Gli altri tre articoli mostrano valori bassi e stabili: al momento non emergono criticità per questi codici.\n- Limiti dei dati: il dataset di laboratorio non contiene il campo 'Tono' collegato in modo esplicito; per azioni correttive servirebbe incrociare con produzione (per ottenere LGV_tono / A_LOT) e con disponibilità (per valutare impatto commerciale sui lotti in stock).\nProssimi passi consigliati:\n1) Incrociare SF0356 con PALLET_PRODUCTION / dashboard_productavailability per identificare tono/lotto e deposito.\n2) Eseguire prove addizionali sullo stesso lotto (almeno 6-10 campioni) per confermare la variabilità.\n3) Se confermata l'anomalia, avviare controllo processo (smalto/cottura) e trattenere lotti a rischio fino a verifica qualità.\nSe vuoi, procedo subito a: (A) trovare i toni/lotto per SF0356 nell'ultima settimana, oppure (B) restituire l'elenco completo delle prove grezze per uno o più articoli."
+}

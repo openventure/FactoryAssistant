@@ -1,0 +1,19 @@
+{
+    "user_request": "Qual è la disponibilità reale per l'articolo 304040?",
+    "report_title": "Disponibilità reale articolo 304040",
+    "summary": "L'articolo 304040 (CHARME GREY 60x120 Rettificato, serie CHARME) mostra una giacenza attuale di 3.519,36 m². Gli ordini da consegnare ammontano a 5.127,84 m², per cui la disponibilità reale risulta negativa: -1.608,48 m². Il minimo di scorta configurato è 500,00 m². In pratica, nonostante ci sia giacenza fisica, gli impegni commerciali superano lo stock disponibile, generando un gap operativo di 1.608,48 m².",
+    "table_data": [
+        {
+            "CODICE": "304040",
+            "DESCRIZIONE": "CHARME GREY 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "MIN_STOCK_M2": 500.0,
+            "GIACENZA_M2": 3519.36,
+            "QTA_DA_CONSEGNARE_M2": 5127.84,
+            "DISPONIBILITA_REALE_M2": -1608.48,
+            "TONO": "N/D"
+        }
+    ],
+    "conclusions": "La disponibilità reale per l'articolo 304040 è negativa (-1.608,48 m²): occorre intervenire per coprire gli ordini. Azioni consigliate: 1) verificare dettaglio per deposito e per tono per identificare eventuali stock allocati o non allocabili (posso eseguire il drill-down per deposito/tono se vuoi); 2) pianificare produzione urgente o riallocazioni da altri depositi/lotti; 3) aggiornare commerciale su possibili date di evasione parziale. Se vuoi, procedo con il dettaglio per deposito/tono dell'articolo (breakdown disponibilità per TONO e DEPOSITO)."
+}

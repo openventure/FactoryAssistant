@@ -1,0 +1,1328 @@
+{
+    "user_request": "Quali articoli 60x120 hanno ordini superiori alla disponibilita attuale?",
+    "report_title": "Articoli 60x120 con ordini > disponibilità (pa_ff_code)",
+    "summary": "Ho identificato 132 articoli in formato 60x120 per i quali la quantità ordinata supera la disponibilità riportata. Per ciascun articolo ho incluso codice, descrizione, serie, formato, giacenza attuale (m²), disponibilità calcolata (m²), quantità da consegnare (m²) e la shortage (m²) risultante dall'evento ordini > disponibilità. La lista può essere usata per prioritizzare riassortimenti, spostamenti depositi o pianificazioni di produzione.",
+    "table_data": [
+        {
+            "codice": "304041",
+            "descrizione": "CHARME BLACK 60x120 Rettificato",
+            "serie": "CHARME",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "2780.64",
+            "disponibilita_m2": "-7480.80",
+            "qta_da_consegnare_m2": "10261.44",
+            "shortage_m2": "17742.24"
+        },
+        {
+            "codice": "005486",
+            "descrizione": "SHELLSTONE BEIGE 60x120 Rettificato",
+            "serie": "SHELLSTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "2112.48",
+            "disponibilita_m2": "-5988.96",
+            "qta_da_consegnare_m2": "8101.44",
+            "shortage_m2": "14090.40"
+        },
+        {
+            "codice": "TMS114",
+            "descrizione": "TIME STONE SABBIA 60x120 Rettificato",
+            "serie": "TIME STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "3525.12",
+            "disponibilita_m2": "-4302.72",
+            "qta_da_consegnare_m2": "7827.84",
+            "shortage_m2": "12130.56"
+        },
+        {
+            "codice": "304124",
+            "descrizione": "ARGOS BLACK 60x120 Rettificato",
+            "serie": "ARGOS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "168.48",
+            "disponibilita_m2": "-3710.88",
+            "qta_da_consegnare_m2": "3879.36",
+            "shortage_m2": "7590.24"
+        },
+        {
+            "codice": "304040",
+            "descrizione": "CHARME GREY 60x120 Rettificato",
+            "serie": "CHARME",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "3519.36",
+            "disponibilita_m2": "-1608.48",
+            "qta_da_consegnare_m2": "5127.84",
+            "shortage_m2": "6736.32"
+        },
+        {
+            "codice": "304139",
+            "descrizione": "GEOLOGY SABBIA 60x120 Rettificato",
+            "serie": "GEOLOGY",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "3885.12",
+            "disponibilita_m2": "-1405.44",
+            "qta_da_consegnare_m2": "5290.56",
+            "shortage_m2": "6696.00"
+        },
+        {
+            "codice": "FSN070A",
+            "descrizione": "60X120 RTT FUSION BOISERIE",
+            "serie": "MATERIALE PETRUS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "862.56",
+            "disponibilita_m2": "-2816.64",
+            "qta_da_consegnare_m2": "3679.20",
+            "shortage_m2": "6495.84"
+        },
+        {
+            "codice": "003507A",
+            "descrizione": "60X120 RTT TRAV AMBRA MEMENTO cl35",
+            "serie": "TRAVERTINO MEMENTO",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "779.04",
+            "disponibilita_m2": "-2659.68",
+            "qta_da_consegnare_m2": "3438.72",
+            "shortage_m2": "6098.40"
+        },
+        {
+            "codice": "304059",
+            "descrizione": "CHARME PEARL 60x120 Rettificato",
+            "serie": "CHARME",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "2571.84",
+            "disponibilita_m2": "-1512.00",
+            "qta_da_consegnare_m2": "4083.84",
+            "shortage_m2": "5595.84"
+        },
+        {
+            "codice": "3510994A",
+            "descrizione": "GALACTIC GREY 60X120 RTT cl35",
+            "serie": "MERKURY",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "735.84",
+            "disponibilita_m2": "-2275.20",
+            "qta_da_consegnare_m2": "3011.04",
+            "shortage_m2": "5286.24"
+        },
+        {
+            "codice": "004410A",
+            "descrizione": "60X120 RTT IROC WHITE",
+            "serie": "IROC",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "5862.24",
+            "disponibilita_m2": "372.96",
+            "qta_da_consegnare_m2": "5489.28",
+            "shortage_m2": "5116.32"
+        },
+        {
+            "codice": "304136",
+            "descrizione": "GEOLOGY ARGILLA 60x120 Rettificato",
+            "serie": "GEOLOGY",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "2777.76",
+            "disponibilita_m2": "-989.28",
+            "qta_da_consegnare_m2": "3767.04",
+            "shortage_m2": "4756.32"
+        },
+        {
+            "codice": "TMS214",
+            "descrizione": "TIME STONE SABBIA OUT 60x120 Rettificato",
+            "serie": "TIME STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "4750.56",
+            "disponibilita_m2": "8.64",
+            "qta_da_consegnare_m2": "4741.92",
+            "shortage_m2": "4733.28"
+        },
+        {
+            "codice": "NWS201",
+            "descrizione": "NEW STONE DAINO 60x120 RETT",
+            "serie": "NEW STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "10329.12",
+            "disponibilita_m2": "2891.52",
+            "qta_da_consegnare_m2": "7437.60",
+            "shortage_m2": "4546.08"
+        },
+        {
+            "codice": "NWS203",
+            "descrizione": "NEW STONE LEPRE 60x120 RETT",
+            "serie": "NEW STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "5297.76",
+            "disponibilita_m2": "506.88",
+            "qta_da_consegnare_m2": "4790.88",
+            "shortage_m2": "4284.00"
+        },
+        {
+            "codice": "005925",
+            "descrizione": "CONTERO STONE IVORY RTT 60X120",
+            "serie": "CONTERO STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "5886.72",
+            "disponibilita_m2": "934.56",
+            "qta_da_consegnare_m2": "4952.16",
+            "shortage_m2": "4017.60"
+        },
+        {
+            "codice": "3510992A",
+            "descrizione": "GALACTIC LIGHT GREY 60X120 RTT",
+            "serie": "MERKURY",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1994.40",
+            "disponibilita_m2": "-1006.56",
+            "qta_da_consegnare_m2": "3000.96",
+            "shortage_m2": "4007.52"
+        },
+        {
+            "codice": "CMP012",
+            "descrizione": "COMPACT DUNE 60X120 RETT",
+            "serie": "COMPACT",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "266.40",
+            "disponibilita_m2": "-1753.92",
+            "qta_da_consegnare_m2": "2020.32",
+            "shortage_m2": "3774.24"
+        },
+        {
+            "codice": "005926",
+            "descrizione": "CONTERO STONE OFF-WHITE RTT 60X120",
+            "serie": "CONTERO STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "4063.68",
+            "disponibilita_m2": "220.32",
+            "qta_da_consegnare_m2": "3843.36",
+            "shortage_m2": "3623.04"
+        },
+        {
+            "codice": "QST023",
+            "descrizione": "QUEEN STONE ACCIAIO 60x120 RETT",
+            "serie": "QUEEN STONE - PETRUS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "957.60",
+            "disponibilita_m2": "-1314.72",
+            "qta_da_consegnare_m2": "2272.32",
+            "shortage_m2": "3587.04"
+        },
+        {
+            "codice": "304149",
+            "descrizione": "GEOLOGY SALVIA 60x120 Rettificato",
+            "serie": "GEOLOGY",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "93.60",
+            "disponibilita_m2": "-1697.76",
+            "qta_da_consegnare_m2": "1791.36",
+            "shortage_m2": "3489.12"
+        },
+        {
+            "codice": "304279",
+            "descrizione": "SERICA IVORY 60x120 Rettificato",
+            "serie": "SERICA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "4752.00",
+            "disponibilita_m2": "688.32",
+            "qta_da_consegnare_m2": "4063.68",
+            "shortage_m2": "3375.36"
+        },
+        {
+            "codice": "004999A",
+            "descrizione": "60X120 RTT ERMETICA BIANCO",
+            "serie": "ERMETICA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "3175.20",
+            "disponibilita_m2": "120.96",
+            "qta_da_consegnare_m2": "3054.24",
+            "shortage_m2": "2933.28"
+        },
+        {
+            "codice": "005188",
+            "descrizione": "PALERMO WEISS 60x120 RETT",
+            "serie": "PALERMO",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "537.12",
+            "disponibilita_m2": "-1126.08",
+            "qta_da_consegnare_m2": "1663.20",
+            "shortage_m2": "2789.28"
+        },
+        {
+            "codice": "TMS112",
+            "descrizione": "TIME STONE CENERE 60x120 Rettificato",
+            "serie": "TIME STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1050.72",
+            "disponibilita_m2": "-868.80",
+            "qta_da_consegnare_m2": "1919.52",
+            "shortage_m2": "2788.32"
+        },
+        {
+            "codice": "EMT091",
+            "descrizione": "EMOTION BLANC 60x120 Rettificato",
+            "serie": "EMOTION",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "2763.36",
+            "disponibilita_m2": "182.88",
+            "qta_da_consegnare_m2": "2580.48",
+            "shortage_m2": "2397.60"
+        },
+        {
+            "codice": "3514183",
+            "descrizione": "60X120 ELEGANCE PEARL RT",
+            "serie": "MERKURY",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "5155.20",
+            "disponibilita_m2": "1404.00",
+            "qta_da_consegnare_m2": "3751.20",
+            "shortage_m2": "2347.20"
+        },
+        {
+            "codice": "QST021",
+            "descrizione": "QUEEN STONE AVORIO 60x120 RETT",
+            "serie": "QUEEN STONE - PETRUS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1740.96",
+            "disponibilita_m2": "-280.80",
+            "qta_da_consegnare_m2": "2021.76",
+            "shortage_m2": "2302.56"
+        },
+        {
+            "codice": "004916A",
+            "descrizione": "60X120 UNIKA LIGHT GREY RETT. cl35",
+            "serie": "MATERIALE EUROBAUSTOF",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "3218.40",
+            "disponibilita_m2": "496.80",
+            "qta_da_consegnare_m2": "2721.60",
+            "shortage_m2": "2224.80"
+        },
+        {
+            "codice": "304407",
+            "descrizione": "TREVISTONE IVORY 60X120 OUT RETT sp 9,5mm",
+            "serie": "TREVISTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-1065.60",
+            "qta_da_consegnare_m2": "1065.60",
+            "shortage_m2": "2131.20"
+        },
+        {
+            "codice": "ELBA22",
+            "descrizione": "ELBA GREY 60X120 RETT",
+            "serie": "ELBA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "858.24",
+            "disponibilita_m2": "-604.80",
+            "qta_da_consegnare_m2": "1463.04",
+            "shortage_m2": "2067.84"
+        },
+        {
+            "codice": "304404",
+            "descrizione": "TREVISTONE IVORY 60X120 RETT sp 9,5mm",
+            "serie": "TREVISTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "6249.60",
+            "disponibilita_m2": "2106.72",
+            "qta_da_consegnare_m2": "4142.88",
+            "shortage_m2": "2036.16"
+        },
+        {
+            "codice": "005189",
+            "descrizione": "PALERMO GRAU 60x120 RETT",
+            "serie": "PALERMO",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "371.52",
+            "disponibilita_m2": "-826.56",
+            "qta_da_consegnare_m2": "1198.08",
+            "shortage_m2": "2024.64"
+        },
+        {
+            "codice": "304406",
+            "descrizione": "RIGATINO TREVISTONE IVORY 60X120 RETT sp 9,5mm",
+            "serie": "TREVISTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1.44",
+            "disponibilita_m2": "-1009.44",
+            "qta_da_consegnare_m2": "1010.88",
+            "shortage_m2": "2020.32"
+        },
+        {
+            "codice": "005190",
+            "descrizione": "PALERMO BEIGE 60x120 RETT",
+            "serie": "PALERMO",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "760.32",
+            "disponibilita_m2": "-626.40",
+            "qta_da_consegnare_m2": "1386.72",
+            "shortage_m2": "2013.12"
+        },
+        {
+            "codice": "005306",
+            "descrizione": "60X120 PORTLAND BABY BLUE RTT",
+            "serie": "PORTLAND",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "241.92",
+            "disponibilita_m2": "-790.56",
+            "qta_da_consegnare_m2": "1032.48",
+            "shortage_m2": "1823.04"
+        },
+        {
+            "codice": "005714",
+            "descrizione": "ASPEN FUME 60X120 RETT CL 35",
+            "serie": "ASPEN",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "3745.44",
+            "disponibilita_m2": "973.44",
+            "qta_da_consegnare_m2": "2772.00",
+            "shortage_m2": "1798.56"
+        },
+        {
+            "codice": "303710A",
+            "descrizione": "SOLID BEIGE 60X120 RTT CL 35",
+            "serie": "SOLID",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "956.16",
+            "disponibilita_m2": "-419.04",
+            "qta_da_consegnare_m2": "1375.20",
+            "shortage_m2": "1794.24"
+        },
+        {
+            "codice": "TMS113",
+            "descrizione": "TIME STONE GRAFITE 60x120 Rettificato",
+            "serie": "TIME STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "2380.32",
+            "disponibilita_m2": "296.64",
+            "qta_da_consegnare_m2": "2083.68",
+            "shortage_m2": "1787.04"
+        },
+        {
+            "codice": "004438A",
+            "descrizione": "60X120 RTT ABITA NICHEL",
+            "serie": "ABITA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1097.28",
+            "disponibilita_m2": "-263.52",
+            "qta_da_consegnare_m2": "1360.80",
+            "shortage_m2": "1624.32"
+        },
+        {
+            "codice": "303945",
+            "descrizione": "PAINT GREY 60x120 RETT",
+            "serie": "PAINT",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "321.12",
+            "disponibilita_m2": "-636.48",
+            "qta_da_consegnare_m2": "957.60",
+            "shortage_m2": "1594.08"
+        },
+        {
+            "codice": "005302",
+            "descrizione": "60X120 PORTLAND IVORY RTT",
+            "serie": "PORTLAND",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "61.92",
+            "disponibilita_m2": "-764.64",
+            "qta_da_consegnare_m2": "826.56",
+            "shortage_m2": "1591.20"
+        },
+        {
+            "codice": "005487",
+            "descrizione": "SHELLSTONE BIANCO 60x120 Rettificato",
+            "serie": "SHELLSTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "6590.88",
+            "disponibilita_m2": "2511.36",
+            "qta_da_consegnare_m2": "4079.52",
+            "shortage_m2": "1568.16"
+        },
+        {
+            "codice": "005843",
+            "descrizione": "60X120 ELEGANCE BLACK RT",
+            "serie": "MERKURY",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "3988.80",
+            "disponibilita_m2": "1224.00",
+            "qta_da_consegnare_m2": "2764.80",
+            "shortage_m2": "1540.80"
+        },
+        {
+            "codice": "005374",
+            "descrizione": "60X120 RTT EVOQ POLVERE",
+            "serie": "EVOQ",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "181.44",
+            "disponibilita_m2": "-665.28",
+            "qta_da_consegnare_m2": "846.72",
+            "shortage_m2": "1512.00"
+        },
+        {
+            "codice": "304029",
+            "descrizione": "CHARME ILLUSION 60x120 Rettificato",
+            "serie": "CHARME",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "4358.88",
+            "disponibilita_m2": "1460.16",
+            "qta_da_consegnare_m2": "2898.72",
+            "shortage_m2": "1438.56"
+        },
+        {
+            "codice": "005001A",
+            "descrizione": "60X120 ERMETICA LAVAGNA RTT cl35",
+            "serie": "ERMETICA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "53.28",
+            "disponibilita_m2": "-685.44",
+            "qta_da_consegnare_m2": "738.72",
+            "shortage_m2": "1424.16"
+        },
+        {
+            "codice": "005002A",
+            "descrizione": "60X120 RTT ERMETICA CREMA",
+            "serie": "ERMETICA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "11.52",
+            "disponibilita_m2": "-705.60",
+            "qta_da_consegnare_m2": "717.12",
+            "shortage_m2": "1422.72"
+        },
+        {
+            "codice": "304028",
+            "descrizione": "CHARME INVISIBLE GREY 60x120 Rettificato",
+            "serie": "CHARME",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "722.88",
+            "disponibilita_m2": "-348.48",
+            "qta_da_consegnare_m2": "1071.36",
+            "shortage_m2": "1419.84"
+        },
+        {
+            "codice": "005874",
+            "descrizione": "RIGATINO TREVISTONE GOLD 60X120 RETT sp 9,5mm",
+            "serie": "TREVISTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-658.08",
+            "qta_da_consegnare_m2": "658.08",
+            "shortage_m2": "1316.16"
+        },
+        {
+            "codice": "005191",
+            "descrizione": "PALERMO ANTRAZIT 60x120 RETT",
+            "serie": "PALERMO",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "201.60",
+            "disponibilita_m2": "-554.40",
+            "qta_da_consegnare_m2": "756.00",
+            "shortage_m2": "1310.40"
+        },
+        {
+            "codice": "304425",
+            "descrizione": "GEOSTONE WHITE 60X120 OUT RETT sp 9,5mm",
+            "serie": "GEOSTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-655.20",
+            "qta_da_consegnare_m2": "655.20",
+            "shortage_m2": "1310.40"
+        },
+        {
+            "codice": "304426",
+            "descrizione": "GEOSTONE IVORY 60X120 OUT RETT sp 9,5mm",
+            "serie": "GEOSTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-655.20",
+            "qta_da_consegnare_m2": "655.20",
+            "shortage_m2": "1310.40"
+        },
+        {
+            "codice": "CMP011",
+            "descrizione": "COMPACT MOON 60X120 RETT",
+            "serie": "COMPACT",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1334.88",
+            "disponibilita_m2": "27.36",
+            "qta_da_consegnare_m2": "1307.52",
+            "shortage_m2": "1280.16"
+        },
+        {
+            "codice": "304296",
+            "descrizione": "SERICA BONE 60x120 OUT Rettificato",
+            "serie": "SERICA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1175.04",
+            "disponibilita_m2": "8.64",
+            "qta_da_consegnare_m2": "1166.40",
+            "shortage_m2": "1157.76"
+        },
+        {
+            "codice": "304422",
+            "descrizione": "RIGATINO GEOSTONE WHITE 60X120 RETT sp 9,5mm",
+            "serie": "GEOSTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1.44",
+            "disponibilita_m2": "-555.84",
+            "qta_da_consegnare_m2": "557.28",
+            "shortage_m2": "1113.12"
+        },
+        {
+            "codice": "ELBA21",
+            "descrizione": "60X120 ELBA BEIGE RTT",
+            "serie": "SOLID",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "151.20",
+            "disponibilita_m2": "-453.60",
+            "qta_da_consegnare_m2": "604.80",
+            "shortage_m2": "1058.40"
+        },
+        {
+            "codice": "304399",
+            "descrizione": "DECORO VERTIGO 3D BLAZE COTTO 60X120 RETT sp 9,5mm",
+            "serie": "BLAZE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1.44",
+            "disponibilita_m2": "-502.56",
+            "qta_da_consegnare_m2": "504.00",
+            "shortage_m2": "1006.56"
+        },
+        {
+            "codice": "005852",
+            "descrizione": "60X120 SAN VICENTE GREY RT",
+            "serie": "SHELLSTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1000.80",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "1000.80",
+            "shortage_m2": "1000.80"
+        },
+        {
+            "codice": "005734",
+            "descrizione": "WALK IVORY 60x120 Rettificato",
+            "serie": "WALK",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "4793.76",
+            "disponibilita_m2": "1905.12",
+            "qta_da_consegnare_m2": "2888.64",
+            "shortage_m2": "983.52"
+        },
+        {
+            "codice": "304390",
+            "descrizione": "BLAZE COTTO 60X120 RETT sp 9,5mm",
+            "serie": "BLAZE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "856.80",
+            "disponibilita_m2": "-51.84",
+            "qta_da_consegnare_m2": "908.64",
+            "shortage_m2": "960.48"
+        },
+        {
+            "codice": "MNL032",
+            "descrizione": "MINIMAL SILVER 60X120 RETT",
+            "serie": "MINIMAL - PETRUS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "2488.32",
+            "disponibilita_m2": "777.60",
+            "qta_da_consegnare_m2": "1710.72",
+            "shortage_m2": "933.12"
+        },
+        {
+            "codice": "NWS223",
+            "descrizione": "60X120 RTT NEW STONE LEPRE OUT R11",
+            "serie": "NEW STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-447.84",
+            "qta_da_consegnare_m2": "447.84",
+            "shortage_m2": "895.68"
+        },
+        {
+            "codice": "FSN031A",
+            "descrizione": "FUSION BIANCO 60x120 RETT CL 35",
+            "serie": "FUSION - PETRUS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "41.76",
+            "disponibilita_m2": "-424.80",
+            "qta_da_consegnare_m2": "466.56",
+            "shortage_m2": "891.36"
+        },
+        {
+            "codice": "005863",
+            "descrizione": "TREVISTONE GOLD RETT 60X120 sp 9,5 mm",
+            "serie": "TREVISTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "5015.52",
+            "disponibilita_m2": "2089.44",
+            "qta_da_consegnare_m2": "2926.08",
+            "shortage_m2": "836.64"
+        },
+        {
+            "codice": "MTS041A",
+            "descrizione": "MYTHOS IVORY 60x120 RETT CL 35",
+            "serie": "MYTHOS - PETRUS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "33.84",
+            "disponibilita_m2": "-399.60",
+            "qta_da_consegnare_m2": "433.44",
+            "shortage_m2": "833.04"
+        },
+        {
+            "codice": "003756A",
+            "descrizione": "60X120 RTT TRAV BIANCO MEMENTO cl35",
+            "serie": "TRAVERTINO MEMENTO",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "3470.40",
+            "disponibilita_m2": "1344.96",
+            "qta_da_consegnare_m2": "2125.44",
+            "shortage_m2": "780.48"
+        },
+        {
+            "codice": "NWS221",
+            "descrizione": "60X120 RTT NEW STONE DAINO OUT R11",
+            "serie": "NEW STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-352.80",
+            "qta_da_consegnare_m2": "352.80",
+            "shortage_m2": "705.60"
+        },
+        {
+            "codice": "303405A",
+            "descrizione": "FABRIC WHITE 60X120 RETT. cl35",
+            "serie": "FABRIC",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "5875.20",
+            "disponibilita_m2": "2599.20",
+            "qta_da_consegnare_m2": "3276.00",
+            "shortage_m2": "676.80"
+        },
+        {
+            "codice": "QST061",
+            "descrizione": "60X120 RTT QUEEN STONE AVORIO R11",
+            "serie": "QUEEN STONE - PETRUS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "51.84",
+            "disponibilita_m2": "-302.40",
+            "qta_da_consegnare_m2": "354.24",
+            "shortage_m2": "656.64"
+        },
+        {
+            "codice": "004188A",
+            "descrizione": "CITY GREY RTT 60X120 (CULT) cl35",
+            "serie": "CULT",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "528.48",
+            "disponibilita_m2": "-48.96",
+            "qta_da_consegnare_m2": "577.44",
+            "shortage_m2": "626.40"
+        },
+        {
+            "codice": "EX1101A",
+            "descrizione": "EXTRA WHITE 60X120 RTT cl35",
+            "serie": "EXTRA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-303.84",
+            "qta_da_consegnare_m2": "303.84",
+            "shortage_m2": "607.68"
+        },
+        {
+            "codice": "NWS222",
+            "descrizione": "60X120 RTT NEW STONE VISONE OUT R11",
+            "serie": "NEW STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-286.56",
+            "qta_da_consegnare_m2": "286.56",
+            "shortage_m2": "573.12"
+        },
+        {
+            "codice": "303841A",
+            "descrizione": "NATURE GRIGIO 60x120 RETT CL 35",
+            "serie": "NATURE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "594.72",
+            "disponibilita_m2": "27.36",
+            "qta_da_consegnare_m2": "567.36",
+            "shortage_m2": "540.00"
+        },
+        {
+            "codice": "EX1103A",
+            "descrizione": "EXTRA GREY 60X120 RTT cl35",
+            "serie": "ESPOSITORI",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "567.36",
+            "disponibilita_m2": "18.72",
+            "qta_da_consegnare_m2": "548.64",
+            "shortage_m2": "529.92"
+        },
+        {
+            "codice": "005723",
+            "descrizione": "DECORO FLORA 60x120 Rettificato",
+            "serie": "TEQA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "7.20",
+            "disponibilita_m2": "-259.20",
+            "qta_da_consegnare_m2": "266.40",
+            "shortage_m2": "525.60"
+        },
+        {
+            "codice": "304423",
+            "descrizione": "RIGATINO GEOSTONE IVORY 60X120 RETT sp 9,5mm",
+            "serie": "GEOSTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1.44",
+            "disponibilita_m2": "-253.44",
+            "qta_da_consegnare_m2": "254.88",
+            "shortage_m2": "508.32"
+        },
+        {
+            "codice": "005950",
+            "descrizione": "MATERIA GREIGE 60X120 RETT sp 9,5mm",
+            "serie": "MATERIA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "4232.16",
+            "disponibilita_m2": "1863.36",
+            "qta_da_consegnare_m2": "2368.80",
+            "shortage_m2": "505.44"
+        },
+        {
+            "codice": "3510995A",
+            "descrizione": "60X120 GALACTIC GRAPHITE RETT.",
+            "serie": "MERKURY",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-252.00",
+            "qta_da_consegnare_m2": "252.00",
+            "shortage_m2": "504.00"
+        },
+        {
+            "codice": "304145",
+            "descrizione": "GEOLOGY TERRA 60x120 Rettificato",
+            "serie": "GEOLOGY",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1611.36",
+            "disponibilita_m2": "558.72",
+            "qta_da_consegnare_m2": "1052.64",
+            "shortage_m2": "493.92"
+        },
+        {
+            "codice": "005000",
+            "descrizione": "60X120 RTT ERMETICA GRIGIO",
+            "serie": "ERMETICA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "34.56",
+            "disponibilita_m2": "-190.08",
+            "qta_da_consegnare_m2": "224.64",
+            "shortage_m2": "414.72"
+        },
+        {
+            "codice": "303946",
+            "descrizione": "PAINT ROSE' 60x120 RETT",
+            "serie": "PAINT",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "283.68",
+            "disponibilita_m2": "-46.08",
+            "qta_da_consegnare_m2": "329.76",
+            "shortage_m2": "375.84"
+        },
+        {
+            "codice": "005505",
+            "descrizione": "RIGAT-ONE SHELLSTONE BIANCO 60x120 Rettificato",
+            "serie": "SHELLSTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "2232.00",
+            "disponibilita_m2": "928.80",
+            "qta_da_consegnare_m2": "1303.20",
+            "shortage_m2": "374.40"
+        },
+        {
+            "codice": "005580",
+            "descrizione": "SHELLSTONE BEIGE 60x120 Rettificato R11",
+            "serie": "SHELLSTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "398.88",
+            "disponibilita_m2": "15.84",
+            "qta_da_consegnare_m2": "383.04",
+            "shortage_m2": "367.20"
+        },
+        {
+            "codice": "005443",
+            "descrizione": "HABITA MIX 60X120 RTT",
+            "serie": "ABITA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "371.52",
+            "disponibilita_m2": "2.88",
+            "qta_da_consegnare_m2": "368.64",
+            "shortage_m2": "365.76"
+        },
+        {
+            "codice": "304283",
+            "descrizione": "RIGATINO SERICA IVORY 60x120 Rettificato",
+            "serie": "SERICA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "329.76",
+            "disponibilita_m2": "-15.84",
+            "qta_da_consegnare_m2": "345.60",
+            "shortage_m2": "361.44"
+        },
+        {
+            "codice": "304396",
+            "descrizione": "BLAZE GREIGE 60X120 RETT sp 9,5mm",
+            "serie": "BLAZE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "5526.72",
+            "disponibilita_m2": "2602.08",
+            "qta_da_consegnare_m2": "2924.64",
+            "shortage_m2": "322.56"
+        },
+        {
+            "codice": "004440A",
+            "descrizione": "60X120 RTT ABITA FERRO",
+            "serie": "ABITA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "322.56",
+            "disponibilita_m2": "10.08",
+            "qta_da_consegnare_m2": "312.48",
+            "shortage_m2": "302.40"
+        },
+        {
+            "codice": "304280",
+            "descrizione": "SERICA CINDER 60x120 Rettificato",
+            "serie": "SERICA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1820.16",
+            "disponibilita_m2": "758.88",
+            "qta_da_consegnare_m2": "1061.28",
+            "shortage_m2": "302.40"
+        },
+        {
+            "codice": "303475A",
+            "descrizione": "VALS LIGHT 60x120 RETT CL 35",
+            "serie": "PIETRA DI VALS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "54.72",
+            "disponibilita_m2": "-122.40",
+            "qta_da_consegnare_m2": "177.12",
+            "shortage_m2": "299.52"
+        },
+        {
+            "codice": "005303",
+            "descrizione": "60X120 PORTLAND GREY RTT",
+            "serie": "PORTLAND",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "18.72",
+            "disponibilita_m2": "-132.48",
+            "qta_da_consegnare_m2": "151.20",
+            "shortage_m2": "283.68"
+        },
+        {
+            "codice": "303525",
+            "descrizione": "GOLDEN FERN 60X120 RTT",
+            "serie": "WALLPAPERS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "34.56",
+            "disponibilita_m2": "-116.64",
+            "qta_da_consegnare_m2": "151.20",
+            "shortage_m2": "267.84"
+        },
+        {
+            "codice": "303406A",
+            "descrizione": "FABRIC GREY 60x120 RETT cl35",
+            "serie": "FABRIC",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "2901.60",
+            "disponibilita_m2": "1319.04",
+            "qta_da_consegnare_m2": "1582.56",
+            "shortage_m2": "263.52"
+        },
+        {
+            "codice": "RPL138A",
+            "descrizione": "DEC.TENTAZIONI 60X120 RETT cl35\\rRipresa grafica tra le diverse lastre contenuta entro una tolleranza di 3 mm \\r",
+            "serie": "REPLAY",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1.44",
+            "disponibilita_m2": "-110.88",
+            "qta_da_consegnare_m2": "112.32",
+            "shortage_m2": "223.20"
+        },
+        {
+            "codice": "303711",
+            "descrizione": "SOLID WHITE 60X120 RTT",
+            "serie": "SOLID",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "12.96",
+            "disponibilita_m2": "-103.68",
+            "qta_da_consegnare_m2": "116.64",
+            "shortage_m2": "220.32"
+        },
+        {
+            "codice": "304424",
+            "descrizione": "RIGATINO GEOSTONE TAUPE 60X120 RETT sp 9,5mm",
+            "serie": "GEOSTONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1.44",
+            "disponibilita_m2": "-103.68",
+            "qta_da_consegnare_m2": "105.12",
+            "shortage_m2": "208.80"
+        },
+        {
+            "codice": "304393",
+            "descrizione": "BLAZE BEIGE 60X120 OUT RETT sp 9,5mm",
+            "serie": "MATERIALE DADO",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-100.80",
+            "qta_da_consegnare_m2": "100.80",
+            "shortage_m2": "201.60"
+        },
+        {
+            "codice": "304398",
+            "descrizione": "BLAZE GREIGE 60X120 OUT RETT sp 9,5mm",
+            "serie": "MATERIALE DADO",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-100.80",
+            "qta_da_consegnare_m2": "100.80",
+            "shortage_m2": "201.60"
+        },
+        {
+            "codice": "304276",
+            "descrizione": "RIGATINO CHARME PEARL 60x120 Rettificato",
+            "serie": "CHARME",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "450.72",
+            "disponibilita_m2": "144.00",
+            "qta_da_consegnare_m2": "306.72",
+            "shortage_m2": "162.72"
+        },
+        {
+            "codice": "303835",
+            "descrizione": "GARE BROWN 60X120 RTT",
+            "serie": "GARE DU NORD",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "12.96",
+            "disponibilita_m2": "-54.72",
+            "qta_da_consegnare_m2": "67.68",
+            "shortage_m2": "122.40"
+        },
+        {
+            "codice": "005732",
+            "descrizione": "WALK WHITE 60x120 Rettificato",
+            "serie": "WALK",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "3975.84",
+            "disponibilita_m2": "1929.60",
+            "qta_da_consegnare_m2": "2046.24",
+            "shortage_m2": "116.64"
+        },
+        {
+            "codice": "RPL159",
+            "descrizione": "60X120 RTT RIGATO PERLATO ANNI 70",
+            "serie": "ANNI 70",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-54.72",
+            "qta_da_consegnare_m2": "54.72",
+            "shortage_m2": "109.44"
+        },
+        {
+            "codice": "RPL160",
+            "descrizione": "60X120 RTT RIGATO SABBIATO ANNI 70",
+            "serie": "ANNI 70",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.96",
+            "disponibilita_m2": "-53.76",
+            "qta_da_consegnare_m2": "54.72",
+            "shortage_m2": "108.48"
+        },
+        {
+            "codice": "005648",
+            "descrizione": "JUMBO MIX 60x120 RETT",
+            "serie": "ABITA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-50.40",
+            "qta_da_consegnare_m2": "50.40",
+            "shortage_m2": "100.80"
+        },
+        {
+            "codice": "EE1493",
+            "descrizione": "RIGATINO ARTE STONE DEEP 60X120 RETT sp 9,5mm",
+            "serie": "ARTE STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-50.40",
+            "qta_da_consegnare_m2": "50.40",
+            "shortage_m2": "100.80"
+        },
+        {
+            "codice": "EE1494",
+            "descrizione": "RIGATINO ARTE STONE DUNE 60X120 RETT sp 9,5mm",
+            "serie": "ARTE STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-50.40",
+            "qta_da_consegnare_m2": "50.40",
+            "shortage_m2": "100.80"
+        },
+        {
+            "codice": "303524",
+            "descrizione": "BRONZE FERN 60X120 RETT",
+            "serie": "WALLPAPERS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "10.08",
+            "disponibilita_m2": "-40.32",
+            "qta_da_consegnare_m2": "50.40",
+            "shortage_m2": "90.72"
+        },
+        {
+            "codice": "303710",
+            "descrizione": "SOLID BEIGE 60X120 RTT",
+            "serie": "SOLID",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-43.20",
+            "qta_da_consegnare_m2": "43.20",
+            "shortage_m2": "86.40"
+        },
+        {
+            "codice": "004915A",
+            "descrizione": "60X120 UNIKA SAND RETT. cl35",
+            "serie": "MATERIALE EUROBAUSTOF",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "325.44",
+            "disponibilita_m2": "125.28",
+            "qta_da_consegnare_m2": "200.16",
+            "shortage_m2": "74.88"
+        },
+        {
+            "codice": "RPL161",
+            "descrizione": "60X120 RTT RIGATO ROSATO ANNI 70",
+            "serie": "ANNI 70",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "-0.24",
+            "disponibilita_m2": "-30.48",
+            "qta_da_consegnare_m2": "30.24",
+            "shortage_m2": "60.72"
+        },
+        {
+            "codice": "NWS213",
+            "descrizione": "RIGATINO NEW STONE LEPRE 60x120 RETT",
+            "serie": "NEW STONE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1965.60",
+            "disponibilita_m2": "954.72",
+            "qta_da_consegnare_m2": "1010.88",
+            "shortage_m2": "56.16"
+        },
+        {
+            "codice": "EX6011A",
+            "descrizione": "60X120 RTT EXTRA TAPPETO GREY",
+            "serie": "EXTRA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "351.36",
+            "disponibilita_m2": "149.76",
+            "qta_da_consegnare_m2": "201.60",
+            "shortage_m2": "51.84"
+        },
+        {
+            "codice": "005957",
+            "descrizione": "MATERIA VERTIGO COTTO 60X120 RETT sp 9,5mm",
+            "serie": "DECORS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1008.00",
+            "disponibilita_m2": "483.84",
+            "qta_da_consegnare_m2": "524.16",
+            "shortage_m2": "40.32"
+        },
+        {
+            "codice": "303921A",
+            "descrizione": "PALMA 60x120 RETT CL 35",
+            "serie": "DECORS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "887.33",
+            "disponibilita_m2": "427.97",
+            "qta_da_consegnare_m2": "459.36",
+            "shortage_m2": "31.39"
+        },
+        {
+            "codice": "004009",
+            "descrizione": "60X120 RTT CULT WHITE",
+            "serie": "CULT",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-12.96",
+            "qta_da_consegnare_m2": "12.96",
+            "shortage_m2": "25.92"
+        },
+        {
+            "codice": "EX6010",
+            "descrizione": "EXTRA TAPPETO BEIGE 60X120 RETT",
+            "serie": "ESPOSITORI",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "5.76",
+            "disponibilita_m2": "-10.08",
+            "qta_da_consegnare_m2": "15.84",
+            "shortage_m2": "25.92"
+        },
+        {
+            "codice": "EX6013A",
+            "descrizione": "EXTRA TAPPETO WHITE RTT 60X120 cl35",
+            "serie": "EXTRA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-12.96",
+            "qta_da_consegnare_m2": "12.96",
+            "shortage_m2": "25.92"
+        },
+        {
+            "codice": "303841",
+            "descrizione": "NATURE GRIGIO 60x120 RETT",
+            "serie": "NATURE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "-21.60",
+            "disponibilita_m2": "-21.60",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "21.60"
+        },
+        {
+            "codice": "RPL134",
+            "descrizione": "DEC.RUSTY SQUARE 60X120 RETT",
+            "serie": "CARTA DA PARATI - PETRUS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-8.64",
+            "qta_da_consegnare_m2": "8.64",
+            "shortage_m2": "17.28"
+        },
+        {
+            "codice": "EX6010A",
+            "descrizione": "EXTRA TAPPETO BEIGE RTT 60X120 cl35",
+            "serie": "EXTRA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "15.84",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "15.84",
+            "shortage_m2": "15.84"
+        },
+        {
+            "codice": "303405",
+            "descrizione": "FABRIC WHITE 60X120 RTT",
+            "serie": "FABRIC",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "2.88",
+            "disponibilita_m2": "-5.76",
+            "qta_da_consegnare_m2": "8.64",
+            "shortage_m2": "14.40"
+        },
+        {
+            "codice": "303407",
+            "descrizione": "FABRIC BEIGE 60X120 RTT",
+            "serie": "FABRIC",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-7.20",
+            "qta_da_consegnare_m2": "7.20",
+            "shortage_m2": "14.40"
+        },
+        {
+            "codice": "303834",
+            "descrizione": "GARE GRAPHITE 60X120 RTT",
+            "serie": "GARE DU NORD",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-7.20",
+            "qta_da_consegnare_m2": "7.20",
+            "shortage_m2": "14.40"
+        },
+        {
+            "codice": "303475",
+            "descrizione": "VALS LIGHT 60x120 RETT",
+            "serie": "PIETRA DI VALS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "1.44",
+            "disponibilita_m2": "-5.76",
+            "qta_da_consegnare_m2": "7.20",
+            "shortage_m2": "12.96"
+        },
+        {
+            "codice": "303405B",
+            "descrizione": "FABRIC WHITE 60X120 RETT. cl35",
+            "serie": "MATERIALE DADO",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "10.08",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "10.08",
+            "shortage_m2": "10.08"
+        },
+        {
+            "codice": "303520",
+            "descrizione": "FOLIAGE 60X120 RTT",
+            "serie": "WALLPAPERS",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-4.32",
+            "qta_da_consegnare_m2": "4.32",
+            "shortage_m2": "8.64"
+        },
+        {
+            "codice": "304394",
+            "descrizione": "BLAZE IVORY 60X120 RETT sp 9,5mm",
+            "serie": "BLAZE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "6264.00",
+            "disponibilita_m2": "3127.68",
+            "qta_da_consegnare_m2": "3136.32",
+            "shortage_m2": "8.64"
+        },
+        {
+            "codice": "303837",
+            "descrizione": "NATURE NERO 60x120 RETT",
+            "serie": "NATURE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "27.36",
+            "disponibilita_m2": "10.08",
+            "qta_da_consegnare_m2": "17.28",
+            "shortage_m2": "7.20"
+        },
+        {
+            "codice": "005001",
+            "descrizione": "60X120 RTT ERMETICA LAVAGNA",
+            "serie": "ERMETICA",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-2.88",
+            "qta_da_consegnare_m2": "2.88",
+            "shortage_m2": "5.76"
+        },
+        {
+            "codice": "005065",
+            "descrizione": "60X120 RTT ASPEN BIANCO",
+            "serie": "ASPEN",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-2.88",
+            "qta_da_consegnare_m2": "2.88",
+            "shortage_m2": "5.76"
+        },
+        {
+            "codice": "003507",
+            "descrizione": "60X120 RTT TRAV. AMBRA MEMENTO",
+            "serie": "TRAVERTINO MEMENTO",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-1.44",
+            "qta_da_consegnare_m2": "1.44",
+            "shortage_m2": "2.88"
+        },
+        {
+            "codice": "PSG043",
+            "descrizione": "PRESTIGE TAUPE 60X120 RTT",
+            "serie": "PRESTIGE",
+            "formato": "60X120 RTT",
+            "giacenza_m2": "5.76",
+            "disponibilita_m2": "1.44",
+            "qta_da_consegnare_m2": "4.32",
+            "shortage_m2": "2.88"
+        }
+    ],
+    "conclusions": "Risultato operativo: 132 articoli 60x120 con ordini che superano la disponibilità. Azioni consigliate: 1) Prioritizzare i primi articoli per shortage in valore assoluto (es. 304041, 005486, TMS114) per valutare produzione extra o trasferimenti da altri depositi; 2) Per ciascun articolo critico richiedere drill-down per deposito per verificare disponibilità locale e possibile riallocazione (posso fornire il dettaglio deposito per un articolo se vuoi); 3) Considerare pianificazione produzione a breve termine per i top-N shortage e informare commerciale sui tempi di evasione previsti. Se vuoi, ordino la lista per shortage decrescente e filtro sui top-10 oppure faccio il dettaglio per deposito per uno o più codici a scelta."
+}

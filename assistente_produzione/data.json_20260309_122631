@@ -1,0 +1,58 @@
+{
+    "user_request": "Quali toni hanno più disponibilità?",
+    "report_title": "Toni con maggiore disponibilità (Top 10)",
+    "summary": "Ho estratto i toni con la maggiore giacenza totale in magazzino (unità in m²). La classifica è ordinata per metri quadri disponibili, mostrando i 10 toni con più disponibilità complessiva. La tonalità è stata ricavata dal codice variabile associato all'articolo; le quantità sono sommate su tutti i depositi presenti nella fonte dati.",
+    "table_data": [
+        {
+            "TONE": "R504",
+            "GIACENZA_MQ": 536203.33,
+            "RECORDS": 4899
+        },
+        {
+            "TONE": "R000",
+            "GIACENZA_MQ": 465358.64,
+            "RECORDS": 2729
+        },
+        {
+            "TONE": "RR14",
+            "GIACENZA_MQ": 285431.47,
+            "RECORDS": 931
+        },
+        {
+            "TONE": "R514",
+            "GIACENZA_MQ": 281340.56,
+            "RECORDS": 3216
+        },
+        {
+            "TONE": "R524",
+            "GIACENZA_MQ": 204148.34,
+            "RECORDS": 2280
+        },
+        {
+            "TONE": "R04D",
+            "GIACENZA_MQ": 192928.43,
+            "RECORDS": 756
+        },
+        {
+            "TONE": "RR24",
+            "GIACENZA_MQ": 189102.46,
+            "RECORDS": 597
+        },
+        {
+            "TONE": "R14D",
+            "GIACENZA_MQ": 179336.85,
+            "RECORDS": 1479
+        },
+        {
+            "TONE": "R24D",
+            "GIACENZA_MQ": 158897.58,
+            "RECORDS": 1061
+        },
+        {
+            "TONE": "R534",
+            "GIACENZA_MQ": 138748.85,
+            "RECORDS": 1838
+        }
+    ],
+    "conclusions": "I toni elencati mostrano la maggiore disponibilità totale in magazzino. Azioni consigliate: (1) verificare ordini inevasi e piani di vendita per i toni con più giacenza per evitare accumulo prolungato; (2) considerare promozioni o riallocazioni tra depositi per i toni sovrabbondanti; (3) se interessa, posso fornire la scomposizione per deposito, per formato/serie o il dettaglio articolo per articolo (utile per valutare obsolescenza o concentrazione su pochi articoli)."
+}

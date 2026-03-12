@@ -1,0 +1,48 @@
+{
+    "user_request": "Qual è la giacenza attuale per formato?",
+    "report_title": "Giacenza attuale per formato (aggregata)",
+    "summary": "Ho aggregato la giacenza corrente per 'base' del campo FORMATO (estratto come prima parte del valore FORMATO, cioè prima dello spazio). I valori riportati sono la somma della colonna GIACENZA e sono espressi in m² secondo le convenzioni aziendali. Di seguito trovi i formati con maggiore giacenza (top 10). Se desideri l'elenco completo, oppure la ripartizione per deposito/serie, posso fornirlo su richiesta.",
+    "table_data": [
+        {
+            "FORMATO_BASE": "60X60",
+            "GIACENZA_MQ": 1855758.87
+        },
+        {
+            "FORMATO_BASE": "60X120",
+            "GIACENZA_MQ": 1291668.61
+        },
+        {
+            "FORMATO_BASE": "31X62",
+            "GIACENZA_MQ": 643226.97
+        },
+        {
+            "FORMATO_BASE": "20X122",
+            "GIACENZA_MQ": 367698.54
+        },
+        {
+            "FORMATO_BASE": "81X81",
+            "GIACENZA_MQ": 343023.14
+        },
+        {
+            "FORMATO_BASE": "30X60",
+            "GIACENZA_MQ": 328608.31
+        },
+        {
+            "FORMATO_BASE": "7,2X60",
+            "GIACENZA_MQ": 97446.03
+        },
+        {
+            "FORMATO_BASE": "21X42",
+            "GIACENZA_MQ": 86980.9
+        },
+        {
+            "FORMATO_BASE": "61X61",
+            "GIACENZA_MQ": 81647.56
+        },
+        {
+            "FORMATO_BASE": "30,5X30,5",
+            "GIACENZA_MQ": 69858.84
+        }
+    ],
+    "conclusions": "I volumi più significativi sono sui formati maggiori (60x60 e 60x120), che rappresentano la quota maggiore della giacenza totale. Segnalazioni operative da verificare: alcuni formati presentano giacenze negative o valori anomali e ci sono molte voci a zero (potrebbe trattarsi di formati non più in uso o di record incompleti). Azioni consigliate: 1) verificare le righe con giacenza negativa e correggere errori di imputazione; 2) richiedere la ripartizione per deposito o per serie per vedere dove fisicamente è stoccata la merce; 3) se ti serve, posso fornirti la lista completa per formato, un export CSV o un filtro (es. esclusione zeri, soli formati rettificati, top N). Dimmi come preferisci procedere."
+}

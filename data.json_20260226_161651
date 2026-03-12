@@ -1,0 +1,356 @@
+{
+    "user_request": "vorrei per mese quanto è stato prodotto per formato nel formato larghezza x lunghezza",
+    "report_title": "Produzione Pallet Mensile per Formato (Larghezza x Lunghezza) Anni 2025-2026",
+    "summary": "Il report mostra la quantità di pallet prodotti ogni mese degli anni 2025 e 2026, suddivisi per il formato rappresentato dalla combinazione larghezza x lunghezza.",
+    "table_data": [
+        {
+            "Anno": 2025,
+            "Mese": 1,
+            "Formato": "20x122",
+            "PalletProdotti": 51066
+        },
+        {
+            "Anno": 2025,
+            "Mese": 1,
+            "Formato": "40x80",
+            "PalletProdotti": 8073
+        },
+        {
+            "Anno": 2025,
+            "Mese": 1,
+            "Formato": "60x120",
+            "PalletProdotti": 27756
+        },
+        {
+            "Anno": 2025,
+            "Mese": 1,
+            "Formato": "60x120.2",
+            "PalletProdotti": 8570
+        },
+        {
+            "Anno": 2025,
+            "Mese": 1,
+            "Formato": "80x80",
+            "PalletProdotti": 43233
+        },
+        {
+            "Anno": 2025,
+            "Mese": 1,
+            "Formato": "81x81",
+            "PalletProdotti": 2463
+        },
+        {
+            "Anno": 2025,
+            "Mese": 2,
+            "Formato": "20x122",
+            "PalletProdotti": 8073
+        },
+        {
+            "Anno": 2025,
+            "Mese": 2,
+            "Formato": "30x122",
+            "PalletProdotti": 3852
+        },
+        {
+            "Anno": 2025,
+            "Mese": 2,
+            "Formato": "40x80",
+            "PalletProdotti": 60828
+        },
+        {
+            "Anno": 2025,
+            "Mese": 2,
+            "Formato": "60x120",
+            "PalletProdotti": 174756
+        },
+        {
+            "Anno": 2025,
+            "Mese": 3,
+            "Formato": "20x122",
+            "PalletProdotti": 77919
+        },
+        {
+            "Anno": 2025,
+            "Mese": 3,
+            "Formato": "20.3x122",
+            "PalletProdotti": 4578
+        },
+        {
+            "Anno": 2025,
+            "Mese": 3,
+            "Formato": "60x120",
+            "PalletProdotti": 191762
+        },
+        {
+            "Anno": 2025,
+            "Mese": 3,
+            "Formato": "60x60",
+            "PalletProdotti": 23799
+        },
+        {
+            "Anno": 2025,
+            "Mese": 4,
+            "Formato": "60x120",
+            "PalletProdotti": 149449
+        },
+        {
+            "Anno": 2025,
+            "Mese": 4,
+            "Formato": "60x60",
+            "PalletProdotti": 120984
+        },
+        {
+            "Anno": 2025,
+            "Mese": 5,
+            "Formato": "20x122",
+            "PalletProdotti": 4242
+        },
+        {
+            "Anno": 2025,
+            "Mese": 5,
+            "Formato": "30x122",
+            "PalletProdotti": 5061
+        },
+        {
+            "Anno": 2025,
+            "Mese": 5,
+            "Formato": "60x120",
+            "PalletProdotti": 125865
+        },
+        {
+            "Anno": 2025,
+            "Mese": 5,
+            "Formato": "60x60",
+            "PalletProdotti": 120587
+        },
+        {
+            "Anno": 2025,
+            "Mese": 6,
+            "Formato": "40x80",
+            "PalletProdotti": 36354
+        },
+        {
+            "Anno": 2025,
+            "Mese": 6,
+            "Formato": "40.5x81",
+            "PalletProdotti": 786
+        },
+        {
+            "Anno": 2025,
+            "Mese": 6,
+            "Formato": "60x120",
+            "PalletProdotti": 121717
+        },
+        {
+            "Anno": 2025,
+            "Mese": 6,
+            "Formato": "60x120.2",
+            "PalletProdotti": 3705
+        },
+        {
+            "Anno": 2025,
+            "Mese": 6,
+            "Formato": "60x60",
+            "PalletProdotti": 58844
+        },
+        {
+            "Anno": 2025,
+            "Mese": 6,
+            "Formato": "80x80",
+            "PalletProdotti": 25940
+        },
+        {
+            "Anno": 2025,
+            "Mese": 7,
+            "Formato": "20x120",
+            "PalletProdotti": 1665
+        },
+        {
+            "Anno": 2025,
+            "Mese": 7,
+            "Formato": "20x122",
+            "PalletProdotti": 59538
+        },
+        {
+            "Anno": 2025,
+            "Mese": 7,
+            "Formato": "20.3x122",
+            "PalletProdotti": 9696
+        },
+        {
+            "Anno": 2025,
+            "Mese": 7,
+            "Formato": "30x122",
+            "PalletProdotti": 7704
+        },
+        {
+            "Anno": 2025,
+            "Mese": 7,
+            "Formato": "60x120",
+            "PalletProdotti": 76188
+        },
+        {
+            "Anno": 2025,
+            "Mese": 7,
+            "Formato": "60x120.2",
+            "PalletProdotti": 2450
+        },
+        {
+            "Anno": 2025,
+            "Mese": 8,
+            "Formato": "20x122",
+            "PalletProdotti": 6528
+        },
+        {
+            "Anno": 2025,
+            "Mese": 8,
+            "Formato": "30x122",
+            "PalletProdotti": 22860
+        },
+        {
+            "Anno": 2025,
+            "Mese": 8,
+            "Formato": "60x120",
+            "PalletProdotti": 30820
+        },
+        {
+            "Anno": 2025,
+            "Mese": 9,
+            "Formato": "20x122",
+            "PalletProdotti": 136962
+        },
+        {
+            "Anno": 2025,
+            "Mese": 9,
+            "Formato": "60x120",
+            "PalletProdotti": 110217
+        },
+        {
+            "Anno": 2025,
+            "Mese": 9,
+            "Formato": "60x60",
+            "PalletProdotti": 10887
+        },
+        {
+            "Anno": 2025,
+            "Mese": 10,
+            "Formato": "60x120",
+            "PalletProdotti": 143349
+        },
+        {
+            "Anno": 2025,
+            "Mese": 10,
+            "Formato": "60x60",
+            "PalletProdotti": 115933
+        },
+        {
+            "Anno": 2025,
+            "Mese": 11,
+            "Formato": "20x122",
+            "PalletProdotti": 4785
+        },
+        {
+            "Anno": 2025,
+            "Mese": 11,
+            "Formato": "60x120",
+            "PalletProdotti": 151702
+        },
+        {
+            "Anno": 2025,
+            "Mese": 11,
+            "Formato": "60x120.2",
+            "PalletProdotti": 4385
+        },
+        {
+            "Anno": 2025,
+            "Mese": 11,
+            "Formato": "60x60",
+            "PalletProdotti": 27231
+        },
+        {
+            "Anno": 2025,
+            "Mese": 11,
+            "Formato": "80x80",
+            "PalletProdotti": 21300
+        },
+        {
+            "Anno": 2025,
+            "Mese": 11,
+            "Formato": "81x81",
+            "PalletProdotti": 4011
+        },
+        {
+            "Anno": 2025,
+            "Mese": 12,
+            "Formato": "40x80",
+            "PalletProdotti": 32742
+        },
+        {
+            "Anno": 2025,
+            "Mese": 12,
+            "Formato": "60x120",
+            "PalletProdotti": 91085
+        },
+        {
+            "Anno": 2025,
+            "Mese": 12,
+            "Formato": "79x79",
+            "PalletProdotti": 56
+        },
+        {
+            "Anno": 2025,
+            "Mese": 12,
+            "Formato": "80x80",
+            "PalletProdotti": 43840
+        },
+        {
+            "Anno": 2026,
+            "Mese": 1,
+            "Formato": "60x120",
+            "PalletProdotti": 91545
+        },
+        {
+            "Anno": 2026,
+            "Mese": 1,
+            "Formato": "60x120.2",
+            "PalletProdotti": 6208
+        },
+        {
+            "Anno": 2026,
+            "Mese": 1,
+            "Formato": "60x60",
+            "PalletProdotti": 112832
+        },
+        {
+            "Anno": 2026,
+            "Mese": 2,
+            "Formato": "20x122",
+            "PalletProdotti": 25524
+        },
+        {
+            "Anno": 2026,
+            "Mese": 2,
+            "Formato": "20.3x122",
+            "PalletProdotti": 4452
+        },
+        {
+            "Anno": 2026,
+            "Mese": 2,
+            "Formato": "60x120",
+            "PalletProdotti": 90130
+        },
+        {
+            "Anno": 2026,
+            "Mese": 2,
+            "Formato": "60x120.2",
+            "PalletProdotti": 17915
+        },
+        {
+            "Anno": 2026,
+            "Mese": 2,
+            "Formato": "60x60",
+            "PalletProdotti": 71052
+        }
+    ],
+    "conclusions": "La produzione dei pallet mostra una distribuzione significativa nei formati 60x120, 60x60, e 20x122, che rappresentano i formati più utilizzati mese per mese. La varietà di formati e la loro produzione mensile evidenziano l'adattamento della produzione alle diverse esigenze di mercato con variazioni stagionali. Questi dati permettono di ottimizzare la gestione delle linee produttive in base alla domanda specifica per formato."
+}

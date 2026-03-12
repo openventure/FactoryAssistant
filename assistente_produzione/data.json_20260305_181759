@@ -1,0 +1,40 @@
+{
+    "user_request": "Mostrami in questo momento quanto devo produrre per quanto riguarda il magazzino dei 60x60.",
+    "report_title": "Produzione richiesta immediata per formato 60x60",
+    "summary": "Ho calcolato, per gli articoli in formato 60x60, la produzione necessaria immediata come differenza positiva tra quantità da consegnare e giacenza (se la consegna supera lo stock). Il totale da produrre in questo istante per il magazzino 60x60 è 576,00 m², distribuito su pochi articoli con backlog effettivo. I valori sono espressi in metri quadri (m²).",
+    "table_data": [
+        {
+            "CODICE": "004127",
+            "DESCRIZIONE": "60X60 CONTEMPORARY LIGHT GREY RTT",
+            "SERIE": "MATERIALI DADO",
+            "GIACENZA_MQ": 1890.72,
+            "QTA_DA_CONSEGNARE_MQ": 2253.6,
+            "PROD_DA_FARE_MQ": 362.88
+        },
+        {
+            "CODICE": "004166",
+            "DESCRIZIONE": "60X60 RTT DEMETRA BEIGE",
+            "SERIE": "OLIMPO",
+            "GIACENZA_MQ": 184.32,
+            "QTA_DA_CONSEGNARE_MQ": 384.48,
+            "PROD_DA_FARE_MQ": 200.16
+        },
+        {
+            "CODICE": "004167",
+            "DESCRIZIONE": "60X60 RTT ADE NERO",
+            "SERIE": "OLIMPO",
+            "GIACENZA_MQ": 46.08,
+            "QTA_DA_CONSEGNARE_MQ": 59.04,
+            "PROD_DA_FARE_MQ": 12.96
+        },
+        {
+            "CODICE": "TOTALE_60X60",
+            "DESCRIZIONE": "Totale produzione richiesta per formato 60x60",
+            "SERIE": "",
+            "GIACENZA_MQ": 2121.12,
+            "QTA_DA_CONSEGNARE_MQ": 2697.12,
+            "PROD_DA_FARE_MQ": 576.0
+        }
+    ],
+    "conclusions": "A breve (adesso) è necessario produrre complessivamente 576,00 m² per il formato 60x60, concentrandosi prioritariamente sui codici 004127 (362,88 m²), 004166 (200,16 m²) e 004167 (12,96 m²). Operativamente: 1) pianificare produzione prioritaria per questi articoli; 2) verificare se sono necessari vincoli di tono/lotto specifici (se presenti, comunicami i toni da considerare); 3) se vuoi posso estendere l'analisi per deposito specifico, per singolo tono o includere scorte di sicurezza (minimi) per valutare produzione aggiuntiva. Nota: la logica usata è QTA_DA_CONSEGNARE - GIACENZA (solo il valore positivo richiede produzione)."
+}

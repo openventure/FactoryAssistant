@@ -1,0 +1,20 @@
+{
+    "user_request": "Analizza le prove di laboratorio dell'ultima settimana.",
+    "report_title": "Analisi prove di laboratorio - ultima settimana",
+    "summary": "Ho analizzato le prove registrate negli ultimi 7 giorni (incluso oggi) sulla base delle tabelle laboratorio e assorbimento. Le informazioni disponibili nelle tabelle sono: CodeArt, Description, Tono, data di inserimento, peso bagnato, peso essiccato e assorbimento. I campi di formato e famiglia/serie non sono presenti nelle tabelle di laboratorio, quindi non sono stati restituiti. Per il periodo richiesto non sono stati trovati record di prova.",
+    "table_data": [
+        {
+            "section": "overall",
+            "CodeArt": null,
+            "Description": null,
+            "Tono": null,
+            "tests_count": 0,
+            "avg_assorb": null,
+            "min_assorb": null,
+            "max_assorb": null,
+            "avg_peso_bagnato": null,
+            "avg_peso_essiccato": null
+        }
+    ],
+    "conclusions": "Non ci sono prove registrate nell'ultima settimana: non è quindi possibile commentare trend o variabilità dei valori di assorbimento. Azioni consigliate: 1) Verificare che l'inserimento dati in app_laboratorydata/app_assorbimento sia avvenuto correttamente (formato data, collegamento id). 2) Se vuoi un'analisi utile operativamente, estendi il periodo (es. ultimi 30 o 90 giorni) oppure fornisci uno o più CodeArt / Tono specifici da analizzare. 3) Se ti interessa anche l'abbinamento con formato e serie, posso eseguire un confronto incrociato con le tabelle di produzione/disponibilità (fornisci periodo o articolo) per recuperare formato e famiglia. Dimmi come procedere e rifaccio l'analisi."
+}

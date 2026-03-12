@@ -1,0 +1,272 @@
+{
+    "user_request": "vorrei solo quelle spessore 20",
+    "report_title": "Articoli 60x60 spessore 20mm con ordini > disponibilità",
+    "summary": "Ho estratto dalla vista di disponibilità (pa_ff_code) gli articoli 60x60 con spessore 20mm (SP20) la cui quantità ordinata supera la disponibilità attuale. Risultano 24 articoli SP20 in shortage (orders_vs_availability, confronto su campo 'disponibilita'). I valori sono espressi in m²; disponibilità negative indicano che gli ordini superano la disponibilità. Alcuni shortage piccoli (<<1 m²) possono essere dovuti ad arrotondamenti o transazioni in corso.",
+    "table_data": [
+        {
+            "codice": "005407",
+            "descrizione": "AVRY GRIS 60x60 RETT 20mm",
+            "serie": "OUTDOOR - NO CATALOGO",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 1235.52,
+            "disponibilita_m2": -5873.76,
+            "qta_da_consegnare_m2": 7109.28,
+            "shortage_m2": 5873.76
+        },
+        {
+            "codice": "303606",
+            "descrizione": "ULTRA GARE GRAPHITE 60X60 RTT 20MM",
+            "serie": "OUTDOOR",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 4127.04,
+            "disponibilita_m2": -5754.96,
+            "qta_da_consegnare_m2": 9882.0,
+            "shortage_m2": 5754.96
+        },
+        {
+            "codice": "EM28723555",
+            "descrizione": "60X60 SARONE CASTAGNO RTT SP20",
+            "serie": "SELTRA",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -4780.8,
+            "qta_da_consegnare_m2": 4780.8,
+            "shortage_m2": 4780.8
+        },
+        {
+            "codice": "304364",
+            "descrizione": "TEKNOGRES CONCRETE BLACK 60x60 RETT SP 20mm",
+            "serie": "OUTDOOR",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 3121.2,
+            "disponibilita_m2": -4227.12,
+            "qta_da_consegnare_m2": 7348.32,
+            "shortage_m2": 4227.12
+        },
+        {
+            "codice": "005425",
+            "descrizione": "60x60 RTT ORBE GRIS SP 20 MM",
+            "serie": "MATERIALE C/TERZI UNA TANTUM",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 635.04,
+            "disponibilita_m2": -3879.36,
+            "qta_da_consegnare_m2": 4514.4,
+            "shortage_m2": 3879.36
+        },
+        {
+            "codice": "304363",
+            "descrizione": "TEKNOGRES CONCRETE GREY 60x60 RETT SP 20mm",
+            "serie": "OUTDOOR",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 1481.76,
+            "disponibilita_m2": -3002.4,
+            "qta_da_consegnare_m2": 4484.16,
+            "shortage_m2": 3002.4
+        },
+        {
+            "codice": "VI28164377",
+            "descrizione": "60x60 RTT DONNA SP 20 MM",
+            "serie": "SELTRA",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 3391.2,
+            "disponibilita_m2": -2404.8,
+            "qta_da_consegnare_m2": 5796.0,
+            "shortage_m2": 2404.8
+        },
+        {
+            "codice": "EM28581555",
+            "descrizione": "60x60 RTT LIBERTY LIGHT SP 20 MM",
+            "serie": "SELTRA",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 2492.64,
+            "disponibilita_m2": -2007.36,
+            "qta_da_consegnare_m2": 4500.0,
+            "shortage_m2": 2007.36
+        },
+        {
+            "codice": "303794",
+            "descrizione": "ULTRA MANSION WARM 60x60 RETT 20mm",
+            "serie": "OUTDOOR",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 3201.84,
+            "disponibilita_m2": -1447.2,
+            "qta_da_consegnare_m2": 4649.04,
+            "shortage_m2": 1447.2
+        },
+        {
+            "codice": "005424",
+            "descrizione": "60X60 VEVEY GRIS RTT SP20",
+            "serie": "MATERIALE C/TERZI UNA TANTUM",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 2610.72,
+            "disponibilita_m2": -1037.52,
+            "qta_da_consegnare_m2": 3648.24,
+            "shortage_m2": 1037.52
+        },
+        {
+            "codice": "005423",
+            "descrizione": "60X60 TRAMELAN SABLE RTT SP20",
+            "serie": "OUTDOOR - NO CATALOGO",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 1987.2,
+            "disponibilita_m2": -965.52,
+            "qta_da_consegnare_m2": 2952.72,
+            "shortage_m2": 965.52
+        },
+        {
+            "codice": "005047",
+            "descrizione": "60x60 RTT ELEMENTO WEISS PLUS SP 20 MM",
+            "serie": "MATERIALE EUROBAUSTOF",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 1272.96,
+            "disponibilita_m2": -804.96,
+            "qta_da_consegnare_m2": 2077.92,
+            "shortage_m2": 804.96
+        },
+        {
+            "codice": "005044",
+            "descrizione": "60x60 RTT ELEMENTO ANTHRAZIT PLUS SP 20 MM",
+            "serie": "MATERIALE EUROBAUSTOF",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 702.72,
+            "disponibilita_m2": -681.84,
+            "qta_da_consegnare_m2": 1384.56,
+            "shortage_m2": 681.84
+        },
+        {
+            "codice": "10531126",
+            "descrizione": "CORTINA PLUS SAND 60x60 Rettificato 20mm",
+            "serie": "OUTDOOR",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 495.72,
+            "disponibilita_m2": -584.28,
+            "qta_da_consegnare_m2": 1080.0,
+            "shortage_m2": 584.28
+        },
+        {
+            "codice": "1840000",
+            "descrizione": "60x60 RTT HOTZERA MATTERHORN SP 20 MM",
+            "serie": "SELTRA",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 1026.72,
+            "disponibilita_m2": -269.28,
+            "qta_da_consegnare_m2": 1296.0,
+            "shortage_m2": 269.28
+        },
+        {
+            "codice": "303507",
+            "descrizione": "BETONGRAU RTT 60X60 20mm (SFUSO)",
+            "serie": "HORNBACH",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 54.72,
+            "disponibilita_m2": -269.28,
+            "qta_da_consegnare_m2": 324.0,
+            "shortage_m2": 269.28
+        },
+        {
+            "codice": "304209",
+            "descrizione": "ULTRA ARGOS GREY 60x60 RETT 20mm",
+            "serie": "OUTDOOR",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 453.6,
+            "disponibilita_m2": -267.12,
+            "qta_da_consegnare_m2": 720.72,
+            "shortage_m2": 267.12
+        },
+        {
+            "codice": "303657",
+            "descrizione": "ULTRA PIETRA DI BAVIERA 60x60 RETT 20mm",
+            "serie": "OUTDOOR",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 491.76,
+            "disponibilita_m2": -184.32,
+            "qta_da_consegnare_m2": 676.08,
+            "shortage_m2": 184.32
+        },
+        {
+            "codice": "004383",
+            "descrizione": "60X60 NEW RIYADH IVORY SP20 RTT",
+            "serie": "MATERIALE EBAA HOUSE",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 92.88,
+            "disponibilita_m2": -166.32,
+            "qta_da_consegnare_m2": 259.2,
+            "shortage_m2": 166.32
+        },
+        {
+            "codice": "004381",
+            "descrizione": "60X60 NEW RIYADH LIGHT GREY SP20 RTT",
+            "serie": "MATERIALE EBAA HOUSE",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 17.28,
+            "disponibilita_m2": -64.8,
+            "qta_da_consegnare_m2": 82.08,
+            "shortage_m2": 64.8
+        },
+        {
+            "codice": "556033",
+            "descrizione": "C-LINE BELGIAN BLUE 60x60 Sp 20mm",
+            "serie": "HORNBACH",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -64.8,
+            "qta_da_consegnare_m2": 64.8,
+            "shortage_m2": 64.8
+        },
+        {
+            "codice": "EM28629555",
+            "descrizione": "60x60 RTT LIBERTY MEDIUM SP 20 MM",
+            "serie": "SELTRA",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -21.6,
+            "qta_da_consegnare_m2": 21.6,
+            "shortage_m2": 21.6
+        },
+        {
+            "codice": "005403",
+            "descrizione": "60X60 VEVEY BEIGE RTT SP20",
+            "serie": "OUTDOOR - NO CATALOGO",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 2797.92,
+            "disponibilita_m2": -0.72,
+            "qta_da_consegnare_m2": 2798.64,
+            "shortage_m2": 0.72
+        },
+        {
+            "codice": "304429",
+            "descrizione": "ULTRA GEOSTONE WHITE 60x60 RETT 20mm",
+            "serie": "OUTDOOR 4.0",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -0.72,
+            "qta_da_consegnare_m2": 0.72,
+            "shortage_m2": 0.72
+        }
+    ],
+    "conclusions": "Sintesi operativa e prossimi passi consigliati:\n1) Priorità alta: pianificare produzione per i top shortage SP20 (005407, 303606, EM28723555, 304364, 005425) per ridurre i gap più grandi.  \n2) Separare batch outdoor (SP20) da eventuali linee indoor: SP20 in genere richiede attrezzature/linee dedicate; verificare capacità disponibile.  \n3) Verificare vincoli: materie prime, pallettizzazione, e tono/deposito dei lotti (se vuoi, posso estrarre dettaglio deposito+tono per questi codici).  \n4) Azioni immediate disponibili (dimmi quale preferisci): A) Genero piano di produzione (mq e pallet) per coprire lo shortage totale o riportare al MIN; B) Estraggo dettaglio per deposito e tono per valutare eventuali spostamenti interni; C) Esporto lista completa in CSV/XLS per pianificazione operativa.  \n5) Nota: i valori provengono da pa_ff_code; se vuoi che consideri solo prima scelta o un sottoinsieme di codici indicami il filtro. Procedo appena mi dici quale azione preferisci."
+}

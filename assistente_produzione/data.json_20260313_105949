@@ -1,0 +1,7 @@
+{
+    "user_request": "Qual è la produzione giornaliera media per linea nell’ultimo mese?",
+    "report_title": "Produzione giornaliera media per linea — ultimo mese",
+    "summary": "Ho provato a recuperare i dati di produzione degli ultimi 30 giorni, ma la connessione al database di produzione non è riuscita (errore di accesso). Di conseguenza non posso calcolare i valori reali in questo momento. Il report richiesto, una volta eseguito, mostrerà per ogni linea: Linea, metri quadri totali prodotti (m²), giorni produttivi nel periodo, produzione media giornaliera (m²/giorno), numero pallet prodotti e numero pezzi; opzionalmente anche m² di prima scelta.",
+    "table_data": [],
+    "conclusions": "Non è stato possibile generare il report a causa di un errore di accesso al database di produzione. Prossimi passi consigliati: 1) Verificare e ripristinare le credenziali/connessione al database di produzione; 2) Confermare la definizione di “ultimo mese” (ultimi 30 giorni vs. mese solare) e se includere solo prima scelta o anche pezzi espulsi; 3) Appena la connessione è disponibile posso eseguire l'analisi automaticamente (uso lo strumento di produzione e restituisco la tabella per linea). Se preferisci, posso anche preparare la query SQL o un esempio di output (anteprima) da validare prima dell'esecuzione. Vuoi che proceda così (e quale definizione di periodo preferisci)?"
+}

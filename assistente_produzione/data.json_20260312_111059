@@ -1,0 +1,104 @@
+{
+    "user_request": "Qual è la giacenza attuale per formato?",
+    "report_title": "Giacenza attuale (m²) raggruppata per formato",
+    "summary": "Ho aggregato la giacenza corrente per formato. I valori sono espressi in metri quadrati (m²). Vengono presentati anche i metri quadrati con ordini aperti (QTA_DA_CONSEGNARE_MQ) e il numero di articoli distinti per formato. I tre formati con maggiore giacenza sono: 60X60 RTT, 60X120 RTT e 60X60 SP20.",
+    "table_data": [
+        {
+            "FORMATO": "60X60 RTT",
+            "GIACENZA_MQ": 1129448.82,
+            "QTA_DA_CONSEGNARE_MQ": 290503.62,
+            "N_ARTICOLI": 421
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "GIACENZA_MQ": 933985.86,
+            "QTA_DA_CONSEGNARE_MQ": 318122.64,
+            "N_ARTICOLI": 476
+        },
+        {
+            "FORMATO": "60X60 SP20",
+            "GIACENZA_MQ": 451586.05,
+            "QTA_DA_CONSEGNARE_MQ": 198362.16,
+            "N_ARTICOLI": 250
+        },
+        {
+            "FORMATO": "31X62",
+            "GIACENZA_MQ": 444627.53,
+            "QTA_DA_CONSEGNARE_MQ": 146202.31,
+            "N_ARTICOLI": 293
+        },
+        {
+            "FORMATO": "30X60 RTT",
+            "GIACENZA_MQ": 284592.05,
+            "QTA_DA_CONSEGNARE_MQ": 54531.78,
+            "N_ARTICOLI": 282
+        },
+        {
+            "FORMATO": "20X122 RTT",
+            "GIACENZA_MQ": 192269.4,
+            "QTA_DA_CONSEGNARE_MQ": 59551.86,
+            "N_ARTICOLI": 74
+        },
+        {
+            "FORMATO": "81X81 RTT",
+            "GIACENZA_MQ": 172014.75,
+            "QTA_DA_CONSEGNARE_MQ": 77998.21,
+            "N_ARTICOLI": 74
+        },
+        {
+            "FORMATO": "30,5X30,5",
+            "GIACENZA_MQ": 159832.88,
+            "QTA_DA_CONSEGNARE_MQ": 94302.72,
+            "N_ARTICOLI": 66
+        },
+        {
+            "FORMATO": "40X80 SP30",
+            "GIACENZA_MQ": 144068.8,
+            "QTA_DA_CONSEGNARE_MQ": 17859.84,
+            "N_ARTICOLI": 61
+        },
+        {
+            "FORMATO": "15,3X31",
+            "GIACENZA_MQ": 94735.12,
+            "QTA_DA_CONSEGNARE_MQ": 9544.75,
+            "N_ARTICOLI": 41
+        },
+        {
+            "FORMATO": "61X61",
+            "GIACENZA_MQ": 79348.14,
+            "QTA_DA_CONSEGNARE_MQ": 29309.54,
+            "N_ARTICOLI": 34
+        },
+        {
+            "FORMATO": "30X122 RTT",
+            "GIACENZA_MQ": 70696.76,
+            "QTA_DA_CONSEGNARE_MQ": 8570.26,
+            "N_ARTICOLI": 44
+        },
+        {
+            "FORMATO": "15X60 RTT",
+            "GIACENZA_MQ": 23354.05,
+            "QTA_DA_CONSEGNARE_MQ": 1248.75,
+            "N_ARTICOLI": 24
+        },
+        {
+            "FORMATO": "59X118 L/R",
+            "GIACENZA_MQ": 12678.34,
+            "QTA_DA_CONSEGNARE_MQ": 1575.74,
+            "N_ARTICOLI": 16
+        },
+        {
+            "FORMATO": "59X59 L/R",
+            "GIACENZA_MQ": 715.14,
+            "QTA_DA_CONSEGNARE_MQ": 407.16,
+            "N_ARTICOLI": 3
+        },
+        {
+            "FORMATO": "15,3X31,",
+            "GIACENZA_MQ": 0.0,
+            "QTA_DA_CONSEGNARE_MQ": 0.0,
+            "N_ARTICOLI": 1
+        }
+    ],
+    "conclusions": "La disponibilità è concentrata principalmente sui formati 60X60 RTT e 60X120 RTT. Per priorità operative: 1) monitorare i formati con elevata QTA_DA_CONSEGNARE rispetto alla giacenza per evitare rischi di stock-out a breve; 2) se serve azione commerciale/logistica, richiedere il dettaglio per articolo e deposito (drill-down per CODICE e DEPOSITO); 3) valutare rotazione scorte per i formati con giacenza molto elevata ma bassa movimentazione. Se vuoi, posso fornire il dettaglio per deposito o per articolo per i formati più critici."
+}

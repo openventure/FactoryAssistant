@@ -1,0 +1,53 @@
+{
+    "user_request": "dammi gli ultimi assorbimenti",
+    "report_title": "Ultimi Assorbimenti dal Laboratorio",
+    "summary": "Gli ultimi dati di assorbimento registrano dettagli sui pesi essiccati e bagnati, insieme ai valori di assorbimento calcolati per i campioni testati. Gli articoli principali riguardano il prodotto '60X60 FOSSIL BLUE STRUCT. RECT SP20' e il 'BLAZE IVORY 60X120'.",
+    "table_data": [
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "PesoEssiccato": 3163,
+            "PesoBagnato": 3167,
+            "Assorbimento": 0.13,
+            "Posizione": "CS",
+            "Prova": "A"
+        },
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "PesoEssiccato": 3381,
+            "PesoBagnato": 3386,
+            "Assorbimento": 0.15,
+            "Posizione": "SX",
+            "Prova": "A"
+        },
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "PesoEssiccato": 4769,
+            "PesoBagnato": 4776,
+            "Assorbimento": 0.15,
+            "Posizione": "CD",
+            "Prova": "A"
+        },
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "PesoEssiccato": 4552,
+            "PesoBagnato": 4557,
+            "Assorbimento": 0.11,
+            "Posizione": "DX",
+            "Prova": "A"
+        },
+        {
+            "CodeArt": "SF1076",
+            "Description": "BLAZE IVORY 60X120 (sfuso)",
+            "PesoEssiccato": 3501,
+            "PesoBagnato": 3506,
+            "Assorbimento": 0.14,
+            "Posizione": "DX",
+            "Prova": "A"
+        }
+    ],
+    "conclusions": "I dati mostrano un assorbimento costante per il 'FOSSIL BLUE STRUCT. RECT SP20' con leggere variazioni, mentre per il 'BLAZE IVORY 60X120', l'assorbimento è leggermente più elevato. Le posizioni diverse dei campioni potrebbero influire sui risultati di assorbimento."
+}

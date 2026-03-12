@@ -1,0 +1,7 @@
+{
+    "user_request": "Quali articoli 60x120 hanno ordini superiori alla disponibilita attuale?",
+    "report_title": "Articoli 60x120 con ordini > disponibilità (tentativo di estrazione dati)",
+    "summary": "Ho tentato di recuperare la lista degli articoli 60x120 con ordini superiori alla disponibilità usando gli strumenti aziendali. L'operazione non ha potuto essere completata perché l'account di servizio non ha i permessi di lettura sulla fonte dati che contiene le informazioni di disponibilità (accesso negato alla vista/dataset delle disponibilità). Di conseguenza non è stato possibile ottenere l'elenco richiesto in questo momento.",
+    "table_data": [],
+    "conclusions": "Non essendo disponibili i dati per problemi di autorizzazione, propongo le seguenti azioni pratiche:\n1) Se puoi, richiedi l'abilitazione del permesso SELECT sulla vista/tabella delle disponibilità (pa_ff_code) per l'account che esegue le analisi; una volta abilitato ri-eseguo la richiesta e ti fornisco l'elenco completo.  \n2) In alternativa, se preferisci eseguire tu stesso la query, posso fornirti il comando SQL pronto da eseguire (ti restituirò i risultati se me li inoltri).  \n3) Se vuoi un'analisi più rapida senza modificare permessi, indicami uno o più codici articolo o una serie specifica e cerco di verificarli con i dati accessibili (se presenti).  \nDimmi quale opzione preferisci e procedo."
+}

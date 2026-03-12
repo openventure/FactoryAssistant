@@ -1,0 +1,52 @@
+{
+    "user_request": "Analizza le prove di laboratorio dell'ultima settimana.",
+    "report_title": "Sintesi prove laboratorio - ultimi 7 giorni",
+    "summary": "Nell'ultima settimana sono stati registrati test di assorbimento per 4 articoli (tutti formato 60x120). La maggior parte degli articoli mostra assorbimenti bassi e consistenti (media 0,14–0,30%). Un articolo (SF0356 - VISION PEARL) mostra una media elevata (1,32%) con ampia variabilità tra prove, indicativa di anomalia o differenze di lotto/finizione.",
+    "table_data": [
+        {
+            "CodeArt": "SF0356",
+            "Description": "VISION PEARL 60X120",
+            "n_prove": 4,
+            "Avg_Assorbimento": 1.3225,
+            "Min_Assorbimento": 0.7,
+            "Max_Assorbimento": 2.17,
+            "Std_Assorbimento": 0.6057,
+            "first_test_date": "2026-03-07",
+            "last_test_date": "2026-03-07"
+        },
+        {
+            "CodeArt": "SF0934",
+            "Description": "VISION STATUARIO GOLD LAPP 60X120 (sfuso)",
+            "n_prove": 4,
+            "Avg_Assorbimento": 0.295,
+            "Min_Assorbimento": 0.25,
+            "Max_Assorbimento": 0.38,
+            "Std_Assorbimento": 0.0502,
+            "first_test_date": "2026-03-07",
+            "last_test_date": "2026-03-09"
+        },
+        {
+            "CodeArt": "SF0795",
+            "Description": "60X120 CHARME GREY (sfuso)",
+            "n_prove": 4,
+            "Avg_Assorbimento": 0.215,
+            "Min_Assorbimento": 0.17,
+            "Max_Assorbimento": 0.28,
+            "Std_Assorbimento": 0.0439,
+            "first_test_date": "2026-03-09",
+            "last_test_date": "2026-03-09"
+        },
+        {
+            "CodeArt": "SF0538",
+            "Description": "GARE GREY 60X120 (sfuso)",
+            "n_prove": 4,
+            "Avg_Assorbimento": 0.1425,
+            "Min_Assorbimento": 0.12,
+            "Max_Assorbimento": 0.16,
+            "Std_Assorbimento": 0.0148,
+            "first_test_date": "2026-03-07",
+            "last_test_date": "2026-03-07"
+        }
+    ],
+    "conclusions": "Azioni consigliate:\n1) Investigare SF0356 (VISION PEARL): la media alta e la deviazione standard elevata suggeriscono variabilità di processo o difetti di finitura. Verificare il tono/lotto collegato alle prove e ripetere test su campioni aggiuntivi dello stesso lotto.\n2) Mantenere monitoraggio settimanale per confermare trend: gli altri articoli presentano valori bassi e stabili, quindi nessuna azione immediata salvo conferma con campionamenti successivi.\n3) Se rilevante per la produzione/commerciale, incrociare con i toni e le giacenze (stock) per priorizzare l'ispezione dei lotti con alta disponibilità.\nLimiti: analisi basata sui test degli ultimi 7 giorni (4 prove per articolo). Se desideri, posso estendere il periodo (es. 30/90 giorni), filtrare per tono o aggregare per lotto per approfondire le cause."
+}

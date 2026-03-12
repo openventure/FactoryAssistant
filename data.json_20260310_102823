@@ -1,0 +1,7 @@
+{
+    "user_request": "Quali articoli 60x120 sono sottoscorta rispetto alla soglia minima?",
+    "report_title": "Articoli 60x120 sottoscorta rispetto alla soglia minima (tentativo di estrazione)",
+    "summary": "Non è stato possibile recuperare i dati richiesti a causa di un problema di connessione al sistema dati. Di conseguenza non posso al momento elencare gli articoli 60x120 che risultano sotto la soglia minima. Per fornire l'elenco servono i dati di giacenza e soglia minima aggiornati dal sistema inventariale.",
+    "table_data": [],
+    "conclusions": "Azione consigliata: riprovare l'estrazione dati (potrebbe essere stato un problema temporaneo di rete). Se preferisci, posso: 1) rilanciare subito la query e fornire la lista ordinata per maggiore sottoscorta; 2) limitare la ricerca a un deposito specifico; 3) fornire una panoramica aggregata (numero articoli sotto soglia e m² totali). Dimmi quale opzione preferisci e procedo con il recupero dati."
+}

@@ -1,0 +1,18 @@
+{
+    "user_request": "vorei gli ultimi 5 assorbimenti di codici articolo diversi",
+    "report_title": "Ultimi 5 valori di assorbimento per codici articolo distinti",
+    "summary": "Sono stati estratti gli ultimi 5 valori di assorbimento registrati con codici articolo diversi, includendo codice articolo, descrizione e valore di assorbimento.",
+    "table_data": [
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "Assorbimento": 0.15
+        },
+        {
+            "CodeArt": "SF1076",
+            "Description": "BLAZE IVORY 60X120 (sfuso)",
+            "Assorbimento": 0.14
+        }
+    ],
+    "conclusions": "Dalle ultime registrazioni distinte per codice articolo risultano dati per due prodotti unici. Il dato sembra parziale e non raggiunge 5 codici articolo distinti, potrebbe essere necessario verificare ulteriormente la disponibilità di dati o eventuali filtri applicati."
+}

@@ -1,0 +1,260 @@
+{
+    "user_request": "dammi il dettaglio di questi articoli",
+    "report_title": "Dettagli degli Articoli Sotto Scorta per Formati Simili a 80x80",
+    "summary": "Dettagli degli articoli con formato simile a 80x80, attualmente sotto la soglia di scorta nei magazzini.",
+    "table_data": [
+        {
+            "CODICE": "004121",
+            "DESCRIZIONE": "CONTEMPORARY GRAPHITE 81X81 RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 309.29,
+            "MIN": 522
+        },
+        {
+            "CODICE": "302888",
+            "DESCRIZIONE": "BASIC LIGHT GREY RETT. 81X81 CL 28",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 133.96,
+            "MIN": 522
+        },
+        {
+            "CODICE": "CNS061",
+            "DESCRIZIONE": "CONCEPT STONE NEVE 81x81 RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "PSG052",
+            "DESCRIZIONE": "PRESTIGE GRIS 81X81 RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "URDG81",
+            "DESCRIZIONE": "URBAN DARK GREY 81X81 10mm RETT.",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "003872",
+            "DESCRIZIONE": "81X81 AGORA' GRIGIO RETT.",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "FSN021",
+            "DESCRIZIONE": "FUSION BIANCO 81x81 RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 41.37,
+            "MIN": 522
+        },
+        {
+            "CODICE": "005193",
+            "DESCRIZIONE": "81X81 BLOCK ONE RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "302830/90",
+            "DESCRIZIONE": "ULTRA MUSTANG 81X81 RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "FOUG81",
+            "DESCRIZIONE": "UNIKA GREY 81X81 10mm RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "CNS062A",
+            "DESCRIZIONE": "CONCEPT STONE CORDA 81X81 RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "FSN024",
+            "DESCRIZIONE": "FUSION TORTORA 81x81 RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 380.21,
+            "MIN": 522
+        },
+        {
+            "CODICE": "004003",
+            "DESCRIZIONE": "81X81 TUSCANY GREY RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "004910",
+            "DESCRIZIONE": "81X81 UNIKA SAND RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "EX8050",
+            "DESCRIZIONE": "EXTRA FUME' RETT. 81X81 (95)",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "FOUD81",
+            "DESCRIZIONE": "UNIKA DARK 81X81 10mm RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "PSG053",
+            "DESCRIZIONE": "PRESTIGE TAUPE 81X81 RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 15.76,
+            "MIN": 522
+        },
+        {
+            "CODICE": "004191",
+            "DESCRIZIONE": "ULTRA ASPEN GRIGIO 81X81 RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "FSN023",
+            "DESCRIZIONE": "FUSION ANTRACITE 81x81 RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 41.37,
+            "MIN": 522
+        },
+        {
+            "CODICE": "PSG053A",
+            "DESCRIZIONE": "PRESTIGE TAUPE 81X81 RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 386.12,
+            "MIN": 522
+        },
+        {
+            "CODICE": "URLG81",
+            "DESCRIZIONE": "URBAN LIGHT GREY 81X81 10mm RETT.",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "GIG010",
+            "DESCRIZIONE": "81X81 RTT R10 GIGA DUSK",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "MTS032",
+            "DESCRIZIONE": "81X81 MYTHOS ECRU RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "EX8051A",
+            "DESCRIZIONE": "EXTRA BEIGE 81X81 RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "PS3",
+            "DESCRIZIONE": "PAN.SERIE PRESTIGE POSATO 81X81 RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 2.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "PSG054",
+            "DESCRIZIONE": "PRESTIGE ANTHRACITE 81X81 RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 19.7,
+            "MIN": 522
+        },
+        {
+            "CODICE": "003389",
+            "DESCRIZIONE": "BELGA LIVING NOIR 81X81 RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "004526",
+            "DESCRIZIONE": "81X81 RT SCOUT BEIGE Sp10",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "EX8051",
+            "DESCRIZIONE": "EXTRA BEIGE RETT. 81X81 (95)",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "EX8053",
+            "DESCRIZIONE": "EXTRA GREY RETT 81X81 (95)",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 27.58,
+            "MIN": 522
+        },
+        {
+            "CODICE": "UKDK81",
+            "DESCRIZIONE": "UNIKA DARK 81X81 10mm RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "004002",
+            "DESCRIZIONE": "81X81 TUSCANY LIGHT GREY RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "302892",
+            "DESCRIZIONE": "BASIC GREY RETT. 81X81 CL 28",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "303689",
+            "DESCRIZIONE": "STATION GREY 81x81 RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "CNS062",
+            "DESCRIZIONE": "CONCEPT STONE CORDA 81x81 RETT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        },
+        {
+            "CODICE": "EX8053A",
+            "DESCRIZIONE": "EXTRA GREY 81X81 RTT",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 522
+        }
+    ],
+    "conclusions": "Gli articoli elencati mostrano giacenze inferiori rispetto alla loro soglia minima. Si consiglia di considerare azioni di riapprovvigionamento per prevenire rotture di stock."
+}

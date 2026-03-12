@@ -1,0 +1,52 @@
+{
+    "user_request": "Analizza le prove di laboratorio dell'ultima settimana.",
+    "report_title": "Analisi assorbimento laboratorio - ultimi 7 giorni",
+    "summary": "Nell'ultima settimana sono state registrate 4 serie di prove su prodotti diversi (tutti formato 60x120). Tutti gli articoli hanno almeno 4 prove. Tre articoli mostrano assorbimenti bassi e costanti (media 0.14–0.30% con deviazioni standard molto contenute). Un articolo (SF0356 - VISION PEARL) evidenzia assorbimento medio elevato (1.32%) con alta variabilità (range 0.7–2.17% e deviazione standard 0.606), potenziale segnale di variabilità di lotto o anomalia di prova.",
+    "table_data": [
+        {
+            "CodeArt": "SF0356",
+            "Description": "VISION PEARL 60X120",
+            "n_prove": 4,
+            "Avg_Assorbimento_pct": 1.3225,
+            "Min_Assorbimento_pct": 0.7,
+            "Max_Assorbimento_pct": 2.17,
+            "StdDev_Assorbimento": 0.6057,
+            "first_test_date": "2026-03-07",
+            "last_test_date": "2026-03-07"
+        },
+        {
+            "CodeArt": "SF0934",
+            "Description": "VISION STATUARIO GOLD LAPP 60X120 (sfuso)",
+            "n_prove": 4,
+            "Avg_Assorbimento_pct": 0.295,
+            "Min_Assorbimento_pct": 0.25,
+            "Max_Assorbimento_pct": 0.38,
+            "StdDev_Assorbimento": 0.0502,
+            "first_test_date": "2026-03-07",
+            "last_test_date": "2026-03-09"
+        },
+        {
+            "CodeArt": "SF0795",
+            "Description": "60X120 CHARME GREY (sfuso)",
+            "n_prove": 4,
+            "Avg_Assorbimento_pct": 0.215,
+            "Min_Assorbimento_pct": 0.17,
+            "Max_Assorbimento_pct": 0.28,
+            "StdDev_Assorbimento": 0.0439,
+            "first_test_date": "2026-03-09",
+            "last_test_date": "2026-03-09"
+        },
+        {
+            "CodeArt": "SF0538",
+            "Description": "GARE GREY 60X120 (sfuso)",
+            "n_prove": 4,
+            "Avg_Assorbimento_pct": 0.1425,
+            "Min_Assorbimento_pct": 0.12,
+            "Max_Assorbimento_pct": 0.16,
+            "StdDev_Assorbimento": 0.0148,
+            "first_test_date": "2026-03-07",
+            "last_test_date": "2026-03-07"
+        }
+    ],
+    "conclusions": "La situazione generale è sotto controllo per la maggior parte degli articoli testati: assorbimenti bassi e stabili per SF0934, SF0795 e SF0538. Tuttavia SF0356 (VISION PEARL) presenta sia un valore medio significativo sia elevata variabilità tra prove — questo richiede approfondimento operativo. Azioni raccomandate: 1) verificare se le prove su SF0356 appartengono a toni/lotti differenti; 2) ripetere prove su campioni dello stesso lotto per confermare l'anomalia; 3) controllare il processo produttivo/essiccazione per i lotti recenti di SF0356; 4) se necessario, aumentare frequenza di campionamento per lotti a rischio. Se vuoi, posso estrarre il dettaglio per tono/lotto delle prove o mostrare il trend mensile per questi articoli."
+}

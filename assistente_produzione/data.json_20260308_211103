@@ -1,0 +1,1098 @@
+{
+    "user_request": "Dammi i prodotti 60x60 sottogiacenza",
+    "report_title": "Prodotti 60x60 con giacenza sotto il minimo",
+    "summary": "Ho estratto i prodotti il cui campo formato contiene '60x60' e la cui giacenza attuale è inferiore al livello minimo definito (sottogiacenza). La lista è limitata ai primi 200 record ordinati per differenza giacenza-minimo più critica. Le colonne principali riportate sono: codice articolo, descrizione, serie, formato, minimo (m²), giacenza (m²), disponibilità (m²) e scarto giacenza-minimo (m²).",
+    "table_data": [
+        {
+            "CODICE": "EMT012",
+            "DESCRIZIONE": "EMOTION GRIS 60X60 RETT.",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": -266.4,
+            "DISPONIBILITA": -496.8,
+            "GIACENZA_MINUS_MIN": -784.4
+        },
+        {
+            "CODICE": "EMT013",
+            "DESCRIZIONE": "EMOTION TAUPE 60X60 RETT.",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": -216.0,
+            "DISPONIBILITA": -284.4,
+            "GIACENZA_MINUS_MIN": -734.0
+        },
+        {
+            "CODICE": "EMT011",
+            "DESCRIZIONE": "EMOTION BLANC 60X60 RETT.",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": -174.71,
+            "DISPONIBILITA": -174.71,
+            "GIACENZA_MINUS_MIN": -692.71
+        },
+        {
+            "CODICE": "003376",
+            "DESCRIZIONE": "60X60 RETT CULT GREY",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003347",
+            "DESCRIZIONE": "60X60 NIRANO  RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003672,",
+            "DESCRIZIONE": "60x60 ULTRA ASPEN BIANCO RETT SP.18",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003903",
+            "DESCRIZIONE": "60X60 RTT LOUNGE BEIGE",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EMT013R",
+            "DESCRIZIONE": "EMOTION TAUPE 60X60 RETT.",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "004169",
+            "DESCRIZIONE": "60X60 RTT URBANY FUME'",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003149",
+            "DESCRIZIONE": "SUPREME CALACATTA 60X60 RETT LAPP",
+            "SERIE": "ARTICOLI NON A CATALOGO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003292",
+            "DESCRIZIONE": "60X60 TEKNO BEIGE  RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003598",
+            "DESCRIZIONE": "RIYADH BEIGE 60X60 RTT sp. 18",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EMT071M",
+            "DESCRIZIONE": "60X60 SABBIADORO BLANC RTT 8mm",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003838",
+            "DESCRIZIONE": "FOLK GRIGIO 60X60 RETT.",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003907",
+            "DESCRIZIONE": "60X60 RTT LOUNGE BROWN",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "FOVERGRG68",
+            "DESCRIZIONE": "60X60 RTT. FORZA VERONA GREIGE SP. 8,5MM",
+            "SERIE": "B&B",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EE1352",
+            "DESCRIZIONE": "ASPEN FUME' RETT 60X60",
+            "SERIE": "ASPEN",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003163",
+            "DESCRIZIONE": "60x60 NAMUR PEARL RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EB0012A",
+            "DESCRIZIONE": "60X60 RTT BAULINE STYLE CAPELLA SAND",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "004162",
+            "DESCRIZIONE": "60X60 RTT SUPREME BEIGE",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003672",
+            "DESCRIZIONE": "60x60ASPEN BIANCO RETT SP.18",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "004579",
+            "DESCRIZIONE": "60X60 MILANO WEISS RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003986",
+            "DESCRIZIONE": "60X60 STONE COLLECTION WHITE RTT",
+            "SERIE": "TILE ART",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "HSAN6R",
+            "DESCRIZIONE": "HOME SPACE ANTRACITE 60X60 RETT",
+            "SERIE": "20X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "004580",
+            "DESCRIZIONE": "60X60 MILANO GRAU RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003165",
+            "DESCRIZIONE": "60x60 NAMUR FOG RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003325",
+            "DESCRIZIONE": "DOMUS FOG 60X60 RTT.",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "005421",
+            "DESCRIZIONE": "60X60 EVOQ NERO R/RTT SP. 8MM",
+            "SERIE": "EVOQ",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "FABU60",
+            "DESCRIZIONE": "FORZA ANTIQUE BLUE STONE BLU 60X60 10mm RETT",
+            "SERIE": "20X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "005207",
+            "DESCRIZIONE": "60X60 MESSINA BIANCO RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "004065A",
+            "DESCRIZIONE": "60X60 TEMPO BIANCO RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "MTS015",
+            "DESCRIZIONE": "60x60 MYTHOS DARK RTT",
+            "SERIE": "MYTHOS",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003258",
+            "DESCRIZIONE": "BELGIAN BLACK 60x60 RETT SP.18",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003237",
+            "DESCRIZIONE": "60x60 NAMUR ANTHRACITE RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EE1409",
+            "DESCRIZIONE": "OLIMPO NERO ADE RETT 60X60",
+            "SERIE": "OLIMPO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "005430",
+            "DESCRIZIONE": "60X60 ASPEN ANTRACITE RTT 8mm",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003745",
+            "DESCRIZIONE": "60X60 TRAV BLACK MEMENTO RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "BSNO6R",
+            "DESCRIZIONE": "60X60 BLUESTONE NOIR 10 MM RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "304090",
+            "DESCRIZIONE": "GARE LIGHT GREY 60X60 Rettificato 8mm",
+            "SERIE": "GARE DU NORD",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "SALGRI",
+            "DESCRIZIONE": "60X60 RETT SALERNO GRIGIO",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "004582",
+            "DESCRIZIONE": "60X60 MILANO ANTHRAZIT RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003388",
+            "DESCRIZIONE": "60x60 BELGA LIVING GRIS RETT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003377",
+            "DESCRIZIONE": "60X60 RETT CULT ANTHRACITE",
+            "SERIE": "ARTICOLI NON A CATALOGO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "005652",
+            "DESCRIZIONE": "60X60 MIRROR BIANCO RTT 8mm",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -1267.2,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "303871",
+            "DESCRIZIONE": "FIUMICINO ANTRACITE 60X60 RTT",
+            "SERIE": "GRUPPO-E",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EE1372A",
+            "DESCRIZIONE": "TOWN 60X60 ANTHRACITE RETT 1,80mq (30sc/plt)",
+            "SERIE": "TOWN",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "3511000",
+            "DESCRIZIONE": "GALACTIC GRAPHITE 60X60 RTT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "TP3622",
+            "DESCRIZIONE": "60X60 BORG.GIALLO LAPP  RTT IN CRESTA",
+            "SERIE": "P. BORGOGNA PAV.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "005210",
+            "DESCRIZIONE": "60X60 MESSINA LAVAGNA RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003691",
+            "DESCRIZIONE": "60x60 LAPP/RTT ONIX AVORIO",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003673",
+            "DESCRIZIONE": "60x60 ASPEN GRIGIO RETT SP.18",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "005653",
+            "DESCRIZIONE": "60X60 MIRROR BEIGE RTT 8mm",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -1267.2,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003750",
+            "DESCRIZIONE": "60X60 TRAV GREY MEMENTO RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EE1404",
+            "DESCRIZIONE": "METROPOLITAN / URBANY BEIGE RETT 60X60 (004170)",
+            "SERIE": "METROPOLITAN",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "60VESU",
+            "DESCRIZIONE": "60x60 VESUVIO RTT",
+            "SERIE": "TILE ART",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "UC0368A",
+            "DESCRIZIONE": "60X60 RTT GREY SQ.",
+            "SERIE": "ITALGRANITI",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "005208",
+            "DESCRIZIONE": "60X60 MESSINA CREMA RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003712",
+            "DESCRIZIONE": "60x60 ASPEN FUME' RETT SP.18",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003677",
+            "DESCRIZIONE": "MATRIX UNIVERSAL OAK RETT 60X60",
+            "SERIE": "HARD ROCKS",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "190109",
+            "DESCRIZIONE": "60X60 RTT GREY WIND MILD",
+            "SERIE": "ARTICOLI NON A CATALOGO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "GM6161R109",
+            "DESCRIZIONE": "CEMENT GRIGIO MEDIO RETT 60X60",
+            "SERIE": "BASIC",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EMT012R",
+            "DESCRIZIONE": "EMOTION GRIS 60X60 RETT.",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EB0010",
+            "DESCRIZIONE": "60X60 RTT LIVINGSTONE DARK GREY (MQ.1,44)",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "UKGR60",
+            "DESCRIZIONE": "UNIKA GREY 60X60 RETT",
+            "SERIE": "20X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "005429",
+            "DESCRIZIONE": "ASPEN GRIGIO 60X60 RETT 8mm",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003747",
+            "DESCRIZIONE": "60X60 TRAV OCRA MEMENTO RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003746",
+            "DESCRIZIONE": "60X60 TRAV BEIGE MEMENTO RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "303031",
+            "DESCRIZIONE": "SUPREME STATUARIO 60X60 RETT. LAPP.",
+            "SERIE": "MARMI PREGIATI",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "ASTONE68",
+            "DESCRIZIONE": "60X60 RTT. ASTONE SP. 8MM",
+            "SERIE": "B&B",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EMT074M",
+            "DESCRIZIONE": "60X60 RTT. SABBIADORO ANTHRACITE SP. 8MM",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003238",
+            "DESCRIZIONE": "60x60 NAMUR BEIGE RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "VENGRG68",
+            "DESCRIZIONE": "60X60 RTT. VENEZIA GREIGE SP. 8,5MM",
+            "SERIE": "B&B",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "3510996",
+            "DESCRIZIONE": "GALACTIC SAND 60X60 RTT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003748",
+            "DESCRIZIONE": "60X60 TRAV AMBRA MEMENTO RTT",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003905",
+            "DESCRIZIONE": "60X60 RTT LOUNGE GREY",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "3510997",
+            "DESCRIZIONE": "GALACTIC LIGHT GREY 60X60 RTT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003136",
+            "DESCRIZIONE": "60X60 RETT NAMUR PEARL",
+            "SERIE": "ARTICOLI NON A CATALOGO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "FOCEMENTIANT68",
+            "DESCRIZIONE": "60X60 RTT. FORZA CEMENTI ANTRACIT SP. 8,5MM",
+            "SERIE": "B&B",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EMT011R",
+            "DESCRIZIONE": "EMOTION BLANC 60X60 RETT.",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "VSN011",
+            "DESCRIZIONE": "60X60 VISION PEARL RTT LAPP",
+            "SERIE": "VISION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -41.76,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "005654",
+            "DESCRIZIONE": "60X60 MIRROR TAUPE RTT 8mm",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -1267.2,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "004021",
+            "DESCRIZIONE": "60x60 ESY18G RETT SP.18",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003989",
+            "DESCRIZIONE": "60X60 STONE COLLECTION LIGHT GREY RTT",
+            "SERIE": "TILE ART",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EB0011",
+            "DESCRIZIONE": "60X60 RTT LIVINGSTONE ANTHRAZIT (MQ.1,44)",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "CNS043",
+            "DESCRIZIONE": "CONCEPT STONE GHISA 60X60 RETT",
+            "SERIE": "CONCEPT STONE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "FOUD60",
+            "DESCRIZIONE": "FORZA UNIKA DARK 60X60 RETT",
+            "SERIE": "20X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EMT015",
+            "DESCRIZIONE": "EMOTION BLANC R10 60X60 RTT",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "VSN012",
+            "DESCRIZIONE": "60X60 VISION ASH RTT LAPP",
+            "SERIE": "VISION",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "ANBK60",
+            "DESCRIZIONE": "ANTIQUE BLUE STONE BLACK 60X60 10mm RETT",
+            "SERIE": "20X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "004170",
+            "DESCRIZIONE": "60X60 RTT URBANY BEIGE",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "004163",
+            "DESCRIZIONE": "60X60 RTT SUPREME GREY",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EE1410",
+            "DESCRIZIONE": "OLIMPO BEIGE DEMETRA RETT 60X60",
+            "SERIE": "OLIMPO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003987",
+            "DESCRIZIONE": "60X60 STONE COLLECTION BEIGE RTT",
+            "SERIE": "TILE ART",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "FOUG60",
+            "DESCRIZIONE": "FORZA UNIKA GREY 60X60 RETT",
+            "SERIE": "20X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "GIG005",
+            "DESCRIZIONE": "60X60 RTT GIGA DUSK R10",
+            "SERIE": "GIGA",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003387",
+            "DESCRIZIONE": "60X60 RTT BELGA LIVING NOIR",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "EUR-5804",
+            "DESCRIZIONE": "60X60 ASPEN GRIGIO RTT SP10",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "BNLDA68",
+            "DESCRIZIONE": "60X60 RTT. BENELUX DARK SP. 8,5MM",
+            "SERIE": "B&B",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "004168",
+            "DESCRIZIONE": "60X60 RTT URBANY ANTRACITE",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "GERO02",
+            "DESCRIZIONE": "EXTRA BEIGE RETT 60X60",
+            "SERIE": "HARD ROCKS 60x60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "005041",
+            "DESCRIZIONE": "60X60 GREEN COAST BEIGE RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "FOVERGR68",
+            "DESCRIZIONE": "60X60 RTT. FORZA VERONA GREY SP. 8,5MM",
+            "SERIE": "B&B",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "HSBG6R",
+            "DESCRIZIONE": "HOME SPACE BEIGE 60X60 RETT",
+            "SERIE": "20X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "003675",
+            "DESCRIZIONE": "60x60 RIDAH BLACK RETT SP.18",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "BNLLI68",
+            "DESCRIZIONE": "BENELUX LIGHT 60X60 RETT 8mm",
+            "SERIE": "BENELUX",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "DREAMANT68",
+            "DESCRIZIONE": "60X60 RTT. DREAM ANTRACITE SP. 8,5MM",
+            "SERIE": "B&B",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "005209",
+            "DESCRIZIONE": "60X60 MESSINA GRIGIO RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "GERO03",
+            "DESCRIZIONE": "EXTRA FANGO RETT 60X60",
+            "SERIE": "HARD ROCKS 60x60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        },
+        {
+            "CODICE": "ANBU60",
+            "DESCRIZIONE": "ANTIQUE BLUE STONE BLU 60X60 10mm RETT",
+            "SERIE": "20X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 518,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0,
+            "GIACENZA_MINUS_MIN": -518.0
+        }
+    ],
+    "conclusions": "Priorità operative consigliate:\n1) Concentrarsi sui primi articoli con scostamento negativo più elevato (es. EMOTION Gris/Taupe/Blanc) per rimettere a livello le scorte a breve termine; valutare produzione urgente o trasferimenti da altri depositi. \n2) Verificare le righe con disponibilità negativa: indicano ordini/picking che superano lo stock fisico e richiedono azioni commerciali/operazionali immediate (conferma ordini, differimento o produzione rapida). \n3) Se desideri, posso fornire: a) una top-list ridotta (es. top 10) con priorità e suggerimento quantità di riordino; b) dettaglio per deposito; c) analisi per serie/tono per valutare se esistono lotti specifici a rischio. Nota: la lista è limitata ai primi 200 record; per l’elenco completo posso eseguire la query senza TOP oppure applicare filtri aggiuntivi (serie, deposito, tono)."
+}

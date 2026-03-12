@@ -1,0 +1,22 @@
+{
+    "user_request": "Qual è la produzione giornaliera media per linea nell’ultimo mese?",
+    "report_title": "Produzione media giornaliera per linea - ultimi 30 giorni",
+    "summary": "Nell'ultimo mese (ultimi 30 giorni) è stata rilevata produzione solo sulla Linea 1. La produzione totale sulla Linea 1 è stata di 208,8 m²; questo si traduce in una media di 6,96 m² al giorno se si considera l'intero periodo di calendario (30 giorni) e di 208,8 m² per ogni giorno effettivamente produttivo (1 giorno). La bassa numerosità di giorni produttivi rende la media su base calendario poco rappresentativa.",
+    "table_data": [
+        {
+            "Linea": "1",
+            "total_m2": 208.8,
+            "production_days": 1,
+            "calendar_days": 30,
+            "avg_m2_per_calendar_day": 6.96,
+            "avg_m2_per_production_day": 208.8,
+            "total_pallets": 5,
+            "total_pieces": 290,
+            "avg_m2_per_pallet": 41.76,
+            "first_choice_pallets": 4,
+            "first_production_date": "2026-03-12",
+            "last_production_date": "2026-03-12"
+        }
+    ],
+    "conclusions": "La media giornaliera calcolata sul periodo calendario è bassa a causa del fatto che la produzione si è concentrata in un solo giorno. Per ottenere una valutazione più robusta suggerisco: 1) estendere l'orizzonte a 60-90 giorni per stabilizzare la media; 2) verificare se altre linee hanno produzione non registrata o se ci sono fermi macchina programmati; 3) se l'obiettivo è valutare capacità produttiva operativa, usare la media per giorno produttivo (o media settimanale) piuttosto che per giorno di calendario."
+}

@@ -1,0 +1,26 @@
+{
+    "user_request": "dammi il dettaglio per deposito",
+    "report_title": "Dettaglio giacenze per deposito - Articolo 304040",
+    "summary": "Ho aggregato la giacenza dell'articolo 304040 per deposito. Il totale disponibile sul sistema è 3.519,36 m2 distribuiti principalmente su due locazioni a contratto e una piccola quantità nel deposito centrale. Numerosi toni risultano con giacenza 0; la maggior parte della disponibilità è concentrata nei toni presenti nelle locazioni.",
+    "table_data": [
+        {
+            "CODICE": "304040",
+            "DESCRIZIONE": "CHARME GREY 60x120 Rettificato",
+            "DEPOSITO": "Deposito DADO (Castellarano) a locazione",
+            "GIACENZA_M2": 2563.2
+        },
+        {
+            "CODICE": "304040",
+            "DESCRIZIONE": "CHARME GREY 60x120 Rettificato",
+            "DEPOSITO": "Deposito DADO a locazione",
+            "GIACENZA_M2": 948.96
+        },
+        {
+            "CODICE": "304040",
+            "DESCRIZIONE": "CHARME GREY 60x120 Rettificato",
+            "DEPOSITO": "Deposito DADO",
+            "GIACENZA_M2": 7.2
+        }
+    ],
+    "conclusions": "La giacenza complessiva confermata dal dettaglio per deposito è 3.519,36 m2 (coerente con il dato aggregato precedente). Ricordo che gli ordini aperti per questo articolo erano pari a 5.127,84 m2, quindi rimane un gap di ~1.608 m2 da coprire. Azioni consigliate: 1) verificare se parte della giacenza nelle locazioni può essere vincolata da clienti o già allocata (controllo ordini x deposito/tono); 2) chiedere al commerciale la prioritizzazione degli ordini; 3) pianificare produzione urgente per ricoprire il gap e riportare lo stock al minimo desiderato. Se vuoi, posso fornirti il dettaglio per tono all'interno di ciascun deposito o estrarre la lista degli ordini per deposito per valutare l'allocazione: dimmi quale preferisci."
+}

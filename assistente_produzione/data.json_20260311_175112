@@ -1,0 +1,299 @@
+{
+    "user_request": "Quali articoli 60x120 hanno ordini superiori alla disponibilita attuale?",
+    "report_title": "Articoli 60x120 con ordini > disponibilità (vista aggregata e per deposito)",
+    "summary": "Ho eseguito il controllo su pa_ff_code (vista articolo-aggregata) e su dashboard_productavailability (vista per tono/deposito) filtrando il formato 60x120. In pa_ff_code sono stati identificati diversi articoli 60x120 con QTA_DA_CONSEGNARE superiore alla DISPONIBILITA (valori espressi in m²). La vista per deposito mostra il dettaglio per tono/deposito utile per valutare trasferimenti o allocazioni logistiche.",
+    "table_data": [
+        {
+            "dataset": "aggregated_pa_ff_code (top 20 risultati)",
+            "rows": [
+                {
+                    "CODICE": "304041",
+                    "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "CHARME",
+                    "DISPONIBILITA_m2": -7480.8,
+                    "QTA_DA_CONSEGNARE_m2": 10261.44,
+                    "SHORTAGE_m2": 17742.24
+                },
+                {
+                    "CODICE": "005486",
+                    "DESCRIZIONE": "SHELLSTONE BEIGE 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "SHELLSTONE",
+                    "DISPONIBILITA_m2": -5988.96,
+                    "QTA_DA_CONSEGNARE_m2": 8101.44,
+                    "SHORTAGE_m2": 14090.4
+                },
+                {
+                    "CODICE": "TMS114",
+                    "DESCRIZIONE": "TIME STONE SABBIA 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "TIME STONE",
+                    "DISPONIBILITA_m2": -4302.72,
+                    "QTA_DA_CONSEGNARE_m2": 7827.84,
+                    "SHORTAGE_m2": 12130.56
+                },
+                {
+                    "CODICE": "304124",
+                    "DESCRIZIONE": "ARGOS BLACK 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "ARGOS",
+                    "DISPONIBILITA_m2": -3710.88,
+                    "QTA_DA_CONSEGNARE_m2": 3879.36,
+                    "SHORTAGE_m2": 7590.24
+                },
+                {
+                    "CODICE": "304040",
+                    "DESCRIZIONE": "CHARME GREY 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "CHARME",
+                    "DISPONIBILITA_m2": -1608.48,
+                    "QTA_DA_CONSEGNARE_m2": 5127.84,
+                    "SHORTAGE_m2": 6736.32
+                },
+                {
+                    "CODICE": "304139",
+                    "DESCRIZIONE": "GEOLOGY SABBIA 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "GEOLOGY",
+                    "DISPONIBILITA_m2": -1405.44,
+                    "QTA_DA_CONSEGNARE_m2": 5290.56,
+                    "SHORTAGE_m2": 6696.0
+                },
+                {
+                    "CODICE": "FSN070A",
+                    "DESCRIZIONE": "60X120 RTT FUSION BOISERIE",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "MATERIALE PETRUS",
+                    "DISPONIBILITA_m2": -2816.64,
+                    "QTA_DA_CONSEGNARE_m2": 3679.2,
+                    "SHORTAGE_m2": 6495.84
+                },
+                {
+                    "CODICE": "003507A",
+                    "DESCRIZIONE": "60X120 RTT TRAV AMBRA MEMENTO cl35",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "TRAVERTINO MEMENTO",
+                    "DISPONIBILITA_m2": -2659.68,
+                    "QTA_DA_CONSEGNARE_m2": 3438.72,
+                    "SHORTAGE_m2": 6098.4
+                },
+                {
+                    "CODICE": "304059",
+                    "DESCRIZIONE": "CHARME PEARL 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "CHARME",
+                    "DISPONIBILITA_m2": -1512.0,
+                    "QTA_DA_CONSEGNARE_m2": 4083.84,
+                    "SHORTAGE_m2": 5595.84
+                },
+                {
+                    "CODICE": "3510994A",
+                    "DESCRIZIONE": "GALACTIC GREY 60X120 RTT cl35",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "MERKURY",
+                    "DISPONIBILITA_m2": -2275.2,
+                    "QTA_DA_CONSEGNARE_m2": 3011.04,
+                    "SHORTAGE_m2": 5286.24
+                },
+                {
+                    "CODICE": "004410A",
+                    "DESCRIZIONE": "60X120 RTT IROC WHITE",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "IROC",
+                    "DISPONIBILITA_m2": 372.96,
+                    "QTA_DA_CONSEGNARE_m2": 5489.28,
+                    "SHORTAGE_m2": 5116.32
+                },
+                {
+                    "CODICE": "304136",
+                    "DESCRIZIONE": "GEOLOGY ARGILLA 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "GEOLOGY",
+                    "DISPONIBILITA_m2": -989.28,
+                    "QTA_DA_CONSEGNARE_m2": 3767.04,
+                    "SHORTAGE_m2": 4756.32
+                },
+                {
+                    "CODICE": "TMS214",
+                    "DESCRIZIONE": "TIME STONE SABBIA OUT 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "TIME STONE",
+                    "DISPONIBILITA_m2": 8.64,
+                    "QTA_DA_CONSEGNARE_m2": 4741.92,
+                    "SHORTAGE_m2": 4733.28
+                },
+                {
+                    "CODICE": "NWS201",
+                    "DESCRIZIONE": "NEW STONE DAINO 60x120 RETT",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "NEW STONE",
+                    "DISPONIBILITA_m2": 2891.52,
+                    "QTA_DA_CONSEGNARE_m2": 7437.6,
+                    "SHORTAGE_m2": 4546.08
+                },
+                {
+                    "CODICE": "NWS203",
+                    "DESCRIZIONE": "NEW STONE LEPRE 60x120 RETT",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "NEW STONE",
+                    "DISPONIBILITA_m2": 506.88,
+                    "QTA_DA_CONSEGNARE_m2": 4790.88,
+                    "SHORTAGE_m2": 4284.0
+                },
+                {
+                    "CODICE": "005925",
+                    "DESCRIZIONE": "CONTERO STONE IVORY RTT 60X120",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "CONTERO STONE",
+                    "DISPONIBILITA_m2": 934.56,
+                    "QTA_DA_CONSEGNARE_m2": 4952.16,
+                    "SHORTAGE_m2": 4017.6
+                },
+                {
+                    "CODICE": "3510992A",
+                    "DESCRIZIONE": "GALACTIC LIGHT GREY 60X120 RTT",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "MERKURY",
+                    "DISPONIBILITA_m2": -1006.56,
+                    "QTA_DA_CONSEGNARE_m2": 3000.96,
+                    "SHORTAGE_m2": 4007.52
+                },
+                {
+                    "CODICE": "CMP012",
+                    "DESCRIZIONE": "COMPACT DUNE 60X120 RETT",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "COMPACT",
+                    "DISPONIBILITA_m2": -1753.92,
+                    "QTA_DA_CONSEGNARE_m2": 2020.32,
+                    "SHORTAGE_m2": 3774.24
+                },
+                {
+                    "CODICE": "005926",
+                    "DESCRIZIONE": "CONTERO STONE OFF-WHITE RTT 60X120",
+                    "FORMATO": "60X120 RTT",
+                    "SERIE": "CONTERO STONE",
+                    "DISPONIBILITA_m2": 220.32,
+                    "QTA_DA_CONSEGNARE_m2": 3843.36,
+                    "SHORTAGE_m2": 3623.04
+                }
+            ]
+        },
+        {
+            "dataset": "by_deposit_dashboard (prime 10 righe)",
+            "rows": [
+                {
+                    "CODICE": "304041",
+                    "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "COD_VAR": "1.R084D.-",
+                    "SERIE": "CHARME",
+                    "DEPOSITO": "Deposito DADO (Castellarano)",
+                    "GIACENZA_m2": -100.8,
+                    "QTA_DA_CONSEGNARE_m2": 10261.44,
+                    "SHORTAGE_m2": 10362.24
+                },
+                {
+                    "CODICE": "304041",
+                    "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "COD_VAR": "1.R084.-",
+                    "SERIE": "CHARME",
+                    "DEPOSITO": "Deposito DADO a locazione",
+                    "GIACENZA_m2": 0.0,
+                    "QTA_DA_CONSEGNARE_m2": 10261.44,
+                    "SHORTAGE_m2": 10261.44
+                },
+                {
+                    "CODICE": "304041",
+                    "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "COD_VAR": "1.R084D.-",
+                    "SERIE": "CHARME",
+                    "DEPOSITO": "Deposito DADO (Cercolor)",
+                    "GIACENZA_m2": 0.0,
+                    "QTA_DA_CONSEGNARE_m2": 10261.44,
+                    "SHORTAGE_m2": 10261.44
+                },
+                {
+                    "CODICE": "304041",
+                    "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "COD_VAR": "1.R054.--",
+                    "SERIE": "CHARME",
+                    "DEPOSITO": "Deposito DADO",
+                    "GIACENZA_m2": 0.0,
+                    "QTA_DA_CONSEGNARE_m2": 10261.44,
+                    "SHORTAGE_m2": 10261.44
+                },
+                {
+                    "CODICE": "304041",
+                    "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "COD_VAR": "1.R084.--",
+                    "SERIE": "CHARME",
+                    "DEPOSITO": "Deposito DADO",
+                    "GIACENZA_m2": 0.0,
+                    "QTA_DA_CONSEGNARE_m2": 10261.44,
+                    "SHORTAGE_m2": 10261.44
+                },
+                {
+                    "CODICE": "304041",
+                    "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "COD_VAR": "1.R084.-",
+                    "SERIE": "CHARME",
+                    "DEPOSITO": "Deposito DADO (Castellarano)",
+                    "GIACENZA_m2": 0.0,
+                    "QTA_DA_CONSEGNARE_m2": 10261.44,
+                    "SHORTAGE_m2": 10261.44
+                },
+                {
+                    "CODICE": "304041",
+                    "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "COD_VAR": "1.R064L.-",
+                    "SERIE": "CHARME",
+                    "DEPOSITO": "Deposito DADO (Castellarano)",
+                    "GIACENZA_m2": 0.0,
+                    "QTA_DA_CONSEGNARE_m2": 10261.44,
+                    "SHORTAGE_m2": 10261.44
+                },
+                {
+                    "CODICE": "304041",
+                    "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "COD_VAR": "1.R074D.-",
+                    "SERIE": "CHARME",
+                    "DEPOSITO": "Deposito DADO (Castellarano)",
+                    "GIACENZA_m2": 0.0,
+                    "QTA_DA_CONSEGNARE_m2": 10261.44,
+                    "SHORTAGE_m2": 10261.44
+                },
+                {
+                    "CODICE": "304041",
+                    "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "COD_VAR": "1.R064.-",
+                    "SERIE": "CHARME",
+                    "DEPOSITO": "Deposito DADO (Castellarano)",
+                    "GIACENZA_m2": 0.0,
+                    "QTA_DA_CONSEGNARE_m2": 10261.44,
+                    "SHORTAGE_m2": 10261.44
+                },
+                {
+                    "CODICE": "304041",
+                    "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+                    "FORMATO": "60X120 RTT",
+                    "COD_VAR": "1.R074D.-",
+                    "SERIE": "CHARME",
+                    "DEPOSITO": "Deposito DADO (Cercolor)",
+                    "GIACENZA_m2": 0.0,
+                    "QTA_DA_CONSEGNARE_m2": 10261.44,
+                    "SHORTAGE_m2": 10261.44
+                }
+            ]
+        }
+    ],
+    "conclusions": "Risultati chiave e azioni consigliate:\n1) Priorità di produzione: gli articoli in testa alla lista (es. CHARME BLACK, SHELLSTONE BEIGE, TIME STONE SABBIA) mostrano i maggiori shortage in m². Valutare priorità produttiva su questi codici/serie.  \n2) Verifica trasferimenti: la vista per deposito evidenzia che la mancanza è distribuita su più depositi e toni; valutare trasferimenti inter-deposito dove possibile per coprire ordini urgenti.  \n3) Controllo toni/allocazioni: per ordini vincolati a toni specifici (COD_VAR) è necessario confermare flessibilità commerciale o sostituzioni prima di spostare stock.  \n4) Azione commerciale: notificare l’area vendite sui clienti/ordini critici e proporre soluzioni (date di consegna alternative, sostituzioni o parziali).  \n5) Prossimi passi analitici suggeriti: fornire la lista completa filtrata per serie/cliente, o generare un piano di priorità di produzione con tempi stimati per coprire lo shortage.  \nAssunzioni: filtro FORMATO LIKE '%60x120%'; confronto fatto tra QTA_DA_CONSEGNARE vs DISPONIBILITA (pa_ff_code) e QTA_DA_CONSEGNARE vs GIACENZA (dashboard_productavailability). Tutte le quantità sono in m²."
+}

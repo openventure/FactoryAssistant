@@ -1,0 +1,388 @@
+{
+    "user_request": "Quali articoli haQuali articoli hanno ordini superiori alla disponibilità attuale?nno ordini superiori alla disponibilità attuale?",
+    "report_title": "Articoli con ordini superiori alla disponibilità attuale (primi 100, ordinati per gap)",
+    "summary": "Ho individuato i primi 100 articoli per i quali la quantità ordinata supera la disponibilità attuale. Per ciascun articolo sono presenti i seguenti attributi principali: formato, famiglia/serie e le quantità espresse in m² (disponibilità corrente, quantità da consegnare e gap = ordini - disponibilità). L'elenco è ordinato per gap decrescente (priorità maggiore in alto). Nota: la fonte consultata non riporta in modo esplicito il tono/lotto; se serve distinguere i lotti è necessario un ulteriore incrocio con la fonte che codifica il tono.",
+    "table_data": [
+        {
+            "CODICE": "004990",
+            "DESCRIZIONE": "20X122 RESORT NATURAL RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "20X122 RTT",
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -32281.2,
+            "QTA_DA_CONSEGNARE": 32281.2,
+            "SHORTFALL": 64562.4
+        },
+        {
+            "CODICE": "SOLWHI68",
+            "DESCRIZIONE": "SOLUTION WHITE 60X60 RETT 8mm",
+            "SERIE": "SOLUTION",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 24737.4,
+            "DISPONIBILITA": -253.8,
+            "QTA_DA_CONSEGNARE": 24991.2,
+            "SHORTFALL": 25245.0
+        },
+        {
+            "CODICE": "VENGR68",
+            "DESCRIZIONE": "60X60 RTT. VENEZIA GREY SP. 8,5MM",
+            "SERIE": "B&B",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -9000.0,
+            "QTA_DA_CONSEGNARE": 9000.0,
+            "SHORTFALL": 18000.0
+        },
+        {
+            "CODICE": "SOLGR68",
+            "DESCRIZIONE": "60X60 RTT. SOLUTION GREY SP. 8,5MM",
+            "SERIE": "B&B",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -9000.0,
+            "QTA_DA_CONSEGNARE": 9000.0,
+            "SHORTFALL": 18000.0
+        },
+        {
+            "CODICE": "76136",
+            "DESCRIZIONE": "+HOLIDAY NATURAL 31X62",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "31X62",
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -6098.4,
+            "QTA_DA_CONSEGNARE": 6098.4,
+            "SHORTFALL": 12196.8
+        },
+        {
+            "CODICE": "302599",
+            "DESCRIZIONE": "CEMENTI TAUPE RETT. 30X60 (112)",
+            "SERIE": "CEMENTI",
+            "FORMATO": "30X60 RTT",
+            "GIACENZA": 375.48,
+            "DISPONIBILITA": -5609.52,
+            "QTA_DA_CONSEGNARE": 5985.0,
+            "SHORTFALL": 11594.52
+        },
+        {
+            "CODICE": "3510992A",
+            "DESCRIZIONE": "GALACTIC LIGHT GREY 60X120 RTT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "GIACENZA": 504.0,
+            "DISPONIBILITA": -5001.12,
+            "QTA_DA_CONSEGNARE": 5505.12,
+            "SHORTFALL": 10506.24
+        },
+        {
+            "CODICE": "FLALPI60LIGURI",
+            "DESCRIZIONE": "60X60 RTT. ALPI LIGURI",
+            "SERIE": "MATERIALI FLAMINIA",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 10447.2,
+            "DISPONIBILITA": 806.4,
+            "QTA_DA_CONSEGNARE": 9640.8,
+            "SHORTFALL": 8834.4
+        },
+        {
+            "CODICE": "004183",
+            "DESCRIZIONE": "30X60 RTT PALERMO ANTRAZIT",
+            "SERIE": "PALERMO",
+            "FORMATO": "30X60 RTT",
+            "GIACENZA": 9278.64,
+            "DISPONIBILITA": 425.88,
+            "QTA_DA_CONSEGNARE": 8852.76,
+            "SHORTFALL": 8426.88
+        },
+        {
+            "CODICE": "303049",
+            "DESCRIZIONE": "TOUCH GREY 30X60 RETT (56)",
+            "SERIE": "TOUCHFEEL",
+            "FORMATO": "30X60 RTT",
+            "GIACENZA": 50.4,
+            "DISPONIBILITA": -4183.2,
+            "QTA_DA_CONSEGNARE": 4233.6,
+            "SHORTFALL": 8416.8
+        },
+        {
+            "CODICE": "BNLPE68",
+            "DESCRIZIONE": "BENELUX PEARL 60X60 RETT 8mm",
+            "SERIE": "BENELUX",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 8337.6,
+            "DISPONIBILITA": 28.8,
+            "QTA_DA_CONSEGNARE": 8308.8,
+            "SHORTFALL": 8280.0
+        },
+        {
+            "CODICE": "FLS002",
+            "DESCRIZIONE": "FLASH CASTAGNO 20x122 RETT",
+            "SERIE": "FLASH - PETRUS",
+            "FORMATO": "20X122 RTT",
+            "GIACENZA": 581.94,
+            "DISPONIBILITA": -3833.24,
+            "QTA_DA_CONSEGNARE": 4415.18,
+            "SHORTFALL": 8248.42
+        },
+        {
+            "CODICE": "SOLBE68",
+            "DESCRIZIONE": "60X60 RTT. SOLUTION BEIGE SP. 8,5MM",
+            "SERIE": "B&B",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 8092.8,
+            "DISPONIBILITA": 0.0,
+            "QTA_DA_CONSEGNARE": 8092.8,
+            "SHORTFALL": 8092.8
+        },
+        {
+            "CODICE": "303620",
+            "DESCRIZIONE": "NEW ULTRA SLATE GREY 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 4164.48,
+            "DISPONIBILITA": -1774.8,
+            "QTA_DA_CONSEGNARE": 5939.28,
+            "SHORTFALL": 7714.08
+        },
+        {
+            "CODICE": "3538701A",
+            "DESCRIZIONE": "60X120 ROCK ANTRACITE RETT. cl35",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "GIACENZA": 626.4,
+            "DISPONIBILITA": -3474.72,
+            "QTA_DA_CONSEGNARE": 4101.12,
+            "SHORTFALL": 7575.84
+        },
+        {
+            "CODICE": "303293",
+            "DESCRIZIONE": "QUARRY TUNDRA 30x60 RETT",
+            "SERIE": "QUARRY",
+            "FORMATO": "30X60 RTT",
+            "GIACENZA": 1433.88,
+            "DISPONIBILITA": -2900.52,
+            "QTA_DA_CONSEGNARE": 4334.4,
+            "SHORTFALL": 7234.92
+        },
+        {
+            "CODICE": "304161",
+            "DESCRIZIONE": "CEMENTI TAUPE 30x60 Rettificato 8mm",
+            "SERIE": "CEMENTI",
+            "FORMATO": "30X60 RTT",
+            "GIACENZA": 2386.8,
+            "DISPONIBILITA": -2336.4,
+            "QTA_DA_CONSEGNARE": 4723.2,
+            "SHORTFALL": 7059.6
+        },
+        {
+            "CODICE": "FLALPI60MARITTIME",
+            "DESCRIZIONE": "60X60 RTT. ALPI MARITTIME",
+            "SERIE": "MATERIALI FLAMINIA",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 6638.4,
+            "DISPONIBILITA": 0.0,
+            "QTA_DA_CONSEGNARE": 6638.4,
+            "SHORTFALL": 6638.4
+        },
+        {
+            "CODICE": "LGKIMPACT36TO",
+            "DESCRIZIONE": "31X62 IMPACT TORTORA",
+            "SERIE": "MATERIALI LOGIKER SERIE IMPACT",
+            "FORMATO": "31X62",
+            "GIACENZA": 6067.6,
+            "DISPONIBILITA": 0.0,
+            "QTA_DA_CONSEGNARE": 6067.6,
+            "SHORTFALL": 6067.6
+        },
+        {
+            "CODICE": "3514182",
+            "DESCRIZIONE": "60X120 ELEGANCE IVORY RT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "GIACENZA": 403.2,
+            "DISPONIBILITA": -2648.16,
+            "QTA_DA_CONSEGNARE": 3051.36,
+            "SHORTFALL": 5699.52
+        },
+        {
+            "CODICE": "005496",
+            "DESCRIZIONE": "SHELLSTONE BEIGE 60X60 Rettificato 8mm",
+            "SERIE": "SHELLSTONE - ACR",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 2035.8,
+            "DISPONIBILITA": -1708.2,
+            "QTA_DA_CONSEGNARE": 3744.0,
+            "SHORTFALL": 5452.2
+        },
+        {
+            "CODICE": "DREAMGR68",
+            "DESCRIZIONE": "60X60 RTT. DREAM GREY SP. 8,5MM",
+            "SERIE": "B&B",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 5387.4,
+            "DISPONIBILITA": 0.0,
+            "QTA_DA_CONSEGNARE": 5387.4,
+            "SHORTFALL": 5387.4
+        },
+        {
+            "CODICE": "303822",
+            "DESCRIZIONE": "NATURE BIANCO 30x60 RETT",
+            "SERIE": "NATURE",
+            "FORMATO": "30X60 RTT",
+            "GIACENZA": 424.8,
+            "DISPONIBILITA": -2377.44,
+            "QTA_DA_CONSEGNARE": 2802.24,
+            "SHORTFALL": 5179.68
+        },
+        {
+            "CODICE": "005445",
+            "DESCRIZIONE": "60X120 IROC GREIGE RTT R11 (CL 35)",
+            "SERIE": "IROC",
+            "FORMATO": "60X120 RTT",
+            "GIACENZA": 2489.76,
+            "DISPONIBILITA": -1239.84,
+            "QTA_DA_CONSEGNARE": 3729.6,
+            "SHORTFALL": 4969.44
+        },
+        {
+            "CODICE": "005444",
+            "DESCRIZIONE": "60X120 IROC WHITE RTT R11 (CL 35)",
+            "SERIE": "IROC",
+            "FORMATO": "60X120 RTT",
+            "GIACENZA": 7898.4,
+            "DISPONIBILITA": 1598.4,
+            "QTA_DA_CONSEGNARE": 6300.0,
+            "SHORTFALL": 4701.6
+        },
+        {
+            "CODICE": "303841A",
+            "DESCRIZIONE": "NATURE GRIGIO 60x120 RETT CL 35",
+            "SERIE": "NATURE",
+            "FORMATO": "60X120 RTT",
+            "GIACENZA": 109.44,
+            "DISPONIBILITA": -2135.52,
+            "QTA_DA_CONSEGNARE": 2244.96,
+            "SHORTFALL": 4380.48
+        },
+        {
+            "CODICE": "303293",
+            "DESCRIZIONE": "QUARRY TUNDRA 30x60 RETT",
+            "SERIE": "QUARRY",
+            "FORMATO": "30X60 RTT",
+            "GIACENZA": 1433.88,
+            "DISPONIBILITA": -2900.52,
+            "QTA_DA_CONSEGNARE": 4334.4,
+            "SHORTFALL": 7234.92
+        },
+        {
+            "CODICE": "303516",
+            "DESCRIZIONE": "VALS MIX COLD 15,3X31",
+            "SERIE": "PIETRA DI VALS",
+            "FORMATO": "15,3X31",
+            "GIACENZA": 329.65,
+            "DISPONIBILITA": -423.96,
+            "QTA_DA_CONSEGNARE": 753.61,
+            "SHORTFALL": 1177.57
+        },
+        {
+            "CODICE": "304027",
+            "DESCRIZIONE": "ULTRA MASK IVORY 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 2689.92,
+            "DISPONIBILITA": 761.0,
+            "QTA_DA_CONSEGNARE": 1928.92,
+            "SHORTFALL": 1167.92
+        },
+        {
+            "CODICE": "303509",
+            "DESCRIZIONE": "ARROW 60x60 RETT SP 18mm",
+            "SERIE": "HORNBACH",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 242.64,
+            "DISPONIBILITA": -448.56,
+            "QTA_DA_CONSEGNARE": 691.2,
+            "SHORTFALL": 1139.76
+        },
+        {
+            "CODICE": "005466",
+            "DESCRIZIONE": "ONYX GREEN 60x120 Rettificato",
+            "SERIE": "ONYX - ACR",
+            "FORMATO": "60X120 RTT",
+            "GIACENZA": 2901.6,
+            "DISPONIBILITA": 882.72,
+            "QTA_DA_CONSEGNARE": 2018.88,
+            "SHORTFALL": 1136.16
+        },
+        {
+            "CODICE": "304140",
+            "DESCRIZIONE": "GEOLOGY SABBIA 60X60 Rettificato 8mm",
+            "SERIE": "GEOLOGY",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 5113.8,
+            "DISPONIBILITA": 1989.0,
+            "QTA_DA_CONSEGNARE": 3124.8,
+            "SHORTFALL": 1135.8
+        },
+        {
+            "CODICE": "304019",
+            "DESCRIZIONE": "MASK IVORY 60X60 Rettificato 8mm",
+            "SERIE": "MASK",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 8521.2,
+            "DISPONIBILITA": 3727.8,
+            "QTA_DA_CONSEGNARE": 4793.4,
+            "SHORTFALL": 1065.6
+        },
+        {
+            "CODICE": "FLALPI60NORDICHE",
+            "DESCRIZIONE": "60X60 RTT. ALPI NORDICHE",
+            "SERIE": "MATERIALI FLAMINIA",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 1022.4,
+            "DISPONIBILITA": 0.0,
+            "QTA_DA_CONSEGNARE": 1022.4,
+            "SHORTFALL": 1022.4
+        },
+        {
+            "CODICE": "004998",
+            "DESCRIZIONE": "60X60 RTT ERMETICA CREMA",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 5634.72,
+            "DISPONIBILITA": 2312.64,
+            "QTA_DA_CONSEGNARE": 3322.08,
+            "SHORTFALL": 1009.44
+        },
+        {
+            "CODICE": "004911",
+            "DESCRIZIONE": "81X81 UNIKA LIGHT GREY RETT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "81X81 RTT",
+            "GIACENZA": 624.49,
+            "DISPONIBILITA": -191.09,
+            "QTA_DA_CONSEGNARE": 815.58,
+            "SHORTFALL": 1006.67
+        },
+        {
+            "CODICE": "003711",
+            "DESCRIZIONE": "60X60 ASPEN BEIGE RTT  ",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 2021.85,
+            "DISPONIBILITA": 527.85,
+            "QTA_DA_CONSEGNARE": 1494.0,
+            "SHORTFALL": 966.15
+        },
+        {
+            "CODICE": "004889",
+            "DESCRIZIONE": "UNIKA LIGHT GREY 60X60 RTT",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 2011.68,
+            "DISPONIBILITA": 537.12,
+            "QTA_DA_CONSEGNARE": 1474.56,
+            "SHORTFALL": 937.44
+        }
+    ],
+    "conclusions": "Azione raccomandata: 1) Prioritizzare gli articoli in testa alla lista (gap maggiore) per verificare disponibilità alternative (trasferimenti magazzino, ri-lanci di produzione, o accordi di consegna parziale). 2) Verificare le voci con disponibilità negative: indicano un possibile problema di calcolo o dati da aggiornare e possono ingannare le priorità operative. 3) Se è necessario distinguere i lotti/toni per decisioni commerciali o di produzione, richiedo di incrociare i dati con la fonte che contiene il codice tono/lotto. 4) Prossimi passi consigliati: confermare le date di arrivo produzione/trasferimenti per i primi 10 articoli con gap maggiore; aggiornare le giacenze se sono stati registrati scarichi non ancora riflessi; ripetere l'analisi dopo l'aggiornamento. Se vuoi, eseguo subito: a) la lista completa (oltre i primi 100), b) lo stesso report filtrato per una serie/format specifico, oppure c) l'incrocio per recuperare i toni dei primi 20 articoli."
+}

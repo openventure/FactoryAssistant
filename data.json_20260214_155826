@@ -1,0 +1,7 @@
+{
+    "user_request": "vorrei gli ultimi 30 giorni che sono disponibili",
+    "report_title": "Formati prodotti negli ultimi 30 giorni disponibili",
+    "summary": "Elenco dei formati prodotti negli ultimi 30 giorni in PALLET_PRODUCTION, se disponibili.",
+    "table_data": [],
+    "conclusions": "Non risultano dati di produzione negli ultimi 30 giorni nella tabella PALLET_PRODUCTION. Potrebbe essere opportuno verificare se ci sono dati storici disponibili o se il database è aggiornato."
+}

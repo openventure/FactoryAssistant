@@ -1,0 +1,7 @@
+{
+    "user_request": "Quali linee producono più metri quadri?",
+    "report_title": "Linee con maggior produzione (m²) - ultimi 30 giorni",
+    "summary": "Ho eseguito un controllo aggregato sulla produzione delle linee negli ultimi 30 giorni (filtro: START_DATETIME >= DATEADD(day,-30,GETDATE())) escludendo i pallet marcati come espulsi. Non sono presenti record nella tabella per il periodo selezionato, quindi non è possibile identificare le linee con maggior produzione su questo intervallo temporale.",
+    "table_data": [],
+    "conclusions": "Non risultano produzioni registrate negli ultimi 30 giorni (con Espulso = 0). Possibili cause: assenza di produzione nel periodo, dati non ancora caricati o filtro temporale troppo restrittivo. Suggerimenti operativi: 1) Confermare se desideri includere pallet espulsi (Espulso = 1) o meno. 2) Specificare un periodo differente (es. ultimi 90 giorni, mese solare, o tutto il periodo storico). 3) Se vuoi, eseguo subito una nuova query modificando il periodo o rimuovendo il filtro temporale e restituisco la classifica Top N delle linee per m² (es. Top 10)."
+}

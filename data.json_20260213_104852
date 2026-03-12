@@ -1,0 +1,11 @@
+{
+    "user_request": "vorrei sapere la data della registrazione dell'ultimo assorbimento",
+    "report_title": "Data dell'ultimo assorbimento registrato",
+    "summary": "La data dell'ultimo test di assorbimento registrato è stata identificata.",
+    "table_data": [
+        {
+            "ultima_data_assorbimento": "2026-02-04"
+        }
+    ],
+    "conclusions": "L'ultimo assorbimento è stato registrato il 4 febbraio 2026."
+}

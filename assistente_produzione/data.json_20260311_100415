@@ -1,0 +1,58 @@
+{
+    "user_request": "Quali formati stanno producendo più metri quadrati?",
+    "report_title": "Top formati per metri quadrati prodotti (aggregato storico)",
+    "summary": "Ho cercato prima la produzione degli ultimi 30 giorni ma non sono stati trovati record validi. Di conseguenza l'analisi riportata è calcolata sull'intera produzione storica presente nella tabella PALLET_PRODUCTION, escludendo i pallet marcati come espulsi. La tabella seguente mostra i 10 formati principali ordinati per metri quadri prodotti (TOT_MQ). Il formato dominante è 60x120 (con spessore 0.95) con oltre 126.000 m² prodotti; seguono altre varianti di 60x120 e diversi formati lunghi tipo 20x120/122.",
+    "table_data": [
+        {
+            "FORMATO": "60.00000x120.00000 sp 0.95000",
+            "TOT_MQ": 126197.28000000106,
+            "N_PALLETS": 2957
+        },
+        {
+            "FORMATO": "60.00000x120.00000 sp 0.00000",
+            "TOT_MQ": 34022.40000000012,
+            "N_PALLETS": 1500
+        },
+        {
+            "FORMATO": "20.00000x120.00000 sp 0.00000",
+            "TOT_MQ": 30716.580000000005,
+            "N_PALLETS": 580
+        },
+        {
+            "FORMATO": "20.30000x122.00000 sp 0.95000",
+            "TOT_MQ": 29752.289999999983,
+            "N_PALLETS": 524
+        },
+        {
+            "FORMATO": "20.00000x122.00000 sp 0.00000",
+            "TOT_MQ": 28785.89999999987,
+            "N_PALLETS": 534
+        },
+        {
+            "FORMATO": "60.00000x120.20000 sp 0.95000",
+            "TOT_MQ": 13235.639999999932,
+            "N_PALLETS": 300
+        },
+        {
+            "FORMATO": "30.00000x122.00000 sp 0.95000",
+            "TOT_MQ": 9978.623999999998,
+            "N_PALLETS": 193
+        },
+        {
+            "FORMATO": "60.00000x60.00000 sp 0.00000",
+            "TOT_MQ": 7521.120000000045,
+            "N_PALLETS": 352
+        },
+        {
+            "FORMATO": "20.00000x120.00000 sp 0.95000",
+            "TOT_MQ": 5892.600000000006,
+            "N_PALLETS": 112
+        },
+        {
+            "FORMATO": "60.00000x60.00000 sp 2.00000",
+            "TOT_MQ": 2259.359999999997,
+            "N_PALLETS": 106
+        }
+    ],
+    "conclusions": "La produzione è fortemente concentrata sul formato 60x120 (diverse varianti di spessore). Prima di trarre conclusioni operative suggerisco di: 1) confermare il periodo di analisi desiderato (es. ultimi 30/90 giorni o mese corrente); 2) decidere se includere solo prima scelta (LGV_numeroScelta = 'I') oppure tutto quanto; 3) verificare e normalizzare i valori di spessore registrati come 0.00000. Posso ripetere l'analisi applicando uno di questi filtri o restituire il dettaglio riga-pallet se vuoi il confronto per linea/tono."
+}

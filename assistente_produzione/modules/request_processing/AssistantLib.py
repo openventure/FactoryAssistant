@@ -2,6 +2,7 @@
 from openai import OpenAI
 import os
 from assistente_produzione.modules.request_processing.MaketheQuery import execute_sql_query, QueryRejectedError  # Import della funzione per eseguire query
+from assistente_produzione.modules.request_processing.mcp_bridge import MCPBridgeError, call_mcp_tool, get_mcp_tool_names, get_openai_tool_schemas
 from assistente_produzione.modules.visualization.test_ui import datamanger_assistant  # Import della funzione per eseguire query
 import time
 import json
@@ -229,6 +230,63 @@ def extract_json_from_text(raw_text):
     raise ValueError("Nessun JSON valido trovato nell'output del modello")
 
 
+def _coerce_scalar_for_table(value):
+    if value is None or isinstance(value, (str, int, float, bool)):
+        return value
+    if isinstance(value, decimal.Decimal):
+        return float(value)
+    if isinstance(value, datetime.datetime):
+        return value.astimezone(ITALIAN_TZ).strftime("%Y-%m-%d %H:%M:%S")
+    if isinstance(value, datetime.date):
+        return value.strftime("%Y-%m-%d")
+    return str(value)
+
+
+def _normalize_table_data_rows(table_data):
+    if not isinstance(table_data, list):
+        return []
+
+    normalized = []
+    for item in table_data:
+        if isinstance(item, dict) and isinstance(item.get("rows"), list):
+            dataset_name = item.get("dataset")
+            for row in item["rows"]:
+                if isinstance(row, dict):
+                    flat_row = {key: _coerce_scalar_for_table(value) for key, value in row.items() if not isinstance(value, (list, dict))}
+                    if dataset_name and "dataset" not in flat_row:
+                        flat_row["dataset"] = dataset_name
+                    normalized.append(flat_row)
+            continue
+
+        if isinstance(item, dict):
+            normalized.append({key: _coerce_scalar_for_table(value) for key, value in item.items() if not isinstance(value, (list, dict))})
+
+    return normalized
+
+
+def _normalize_final_response_json(final_text):
+    try:
+        data = extract_json_from_text(final_text)
+    except Exception:
+        return final_text
+
+    if not isinstance(data, dict):
+        return final_text
+
+    expected_keys = {"user_request", "report_title", "summary", "table_data", "conclusions"}
+    if not expected_keys.issubset(data.keys()):
+        return final_text
+
+    data = {
+        "user_request": str(data.get("user_request", "")),
+        "report_title": str(data.get("report_title", "")),
+        "summary": str(data.get("summary", "")),
+        "table_data": _normalize_table_data_rows(data.get("table_data", [])),
+        "conclusions": str(data.get("conclusions", "")),
+    }
+    return json.dumps(data, ensure_ascii=False, indent=4)
+
+
 def write_completejsonresult(json_string, file):
     try:
         print(f"✅ JSON start saving on '{file}'")
@@ -278,8 +336,197 @@ def get_tool_calls(response):
     return calls
 
 
+def _build_function_call_output(call_id, output_json):
+    return {
+        "type": "function_call_output",
+        "call_id": call_id,
+        "output": output_json,
+    }
+
+
+def _truncate_items_payload(payload, max_tokens=10000):
+    if not isinstance(payload, dict):
+        return payload
+
+    items = payload.get("items")
+    if not isinstance(items, list):
+        return payload
+
+    truncated_payload = dict(payload)
+    truncated_items = list(items)
+    while count_tokens(truncated_payload, model=MODEL_NAME) > max_tokens and len(truncated_items) > 1:
+        truncated_items = truncated_items[:-1]
+        truncated_payload["items"] = truncated_items
+    return truncated_payload
+
+
+def _execute_sql_tool_call(tool_call, user_input, conversation_id, request_id, round_number):
+    arguments = json.loads(tool_call.arguments or "{}")
+    query_sql = arguments.get("query_sql", "")
+
+    query_error = None
+    rejection_reason = None
+    rejection_details = None
+    query_estimated_tokens = count_tokens({"query_sql": query_sql}, model=MODEL_NAME)
+    tool_start = time.perf_counter()
+    try:
+        query_result = execute_sql_query(query_sql)
+    except QueryRejectedError as exc:
+        query_result = None
+        query_error = str(exc)
+        rejection_reason = exc.reason
+        rejection_details = exc.details
+    except Exception as exc:
+        query_result = None
+        query_error = str(exc)
+    tool_elapsed_ms = round((time.perf_counter() - tool_start) * 1000, 2)
+    log_conversation_event(
+        conversation_id,
+        "tool_execute_sql_query_completed",
+        request_id=request_id,
+        payload={
+            "round": round_number,
+            "elapsed_ms": tool_elapsed_ms,
+            "query_estimated_tokens": query_estimated_tokens,
+            "query_sql": query_sql,
+            "error": query_error,
+            "rejection_reason": rejection_reason,
+            "rejection_details": rejection_details,
+            "result_rows": len(query_result) if isinstance(query_result, list) else (1 if query_result else 0),
+        },
+    )
+    if rejection_reason:
+        log_conversation_event(
+            conversation_id,
+            "query_rejected",
+            request_id=request_id,
+            payload={
+                "round": round_number,
+                "reason": rejection_reason,
+                "details": rejection_details,
+            },
+        )
+
+    if query_error:
+        output_payload = {
+            "message": "SQL_ERROR",
+            "error": query_error,
+            "failed_query": query_sql,
+            "hint": (
+                "Correggi la query e richiama execute_sql_query. "
+                "Usa una sola SELECT per tool-call; in SQL Server evita STRING_AGG(DISTINCT ...), "
+                "usa invece SELECT DISTINCT in subquery/CTE e poi STRING_AGG."
+            ),
+        }
+        output_json = json.dumps(output_payload, ensure_ascii=False)
+    elif not query_result:
+        output_payload = {
+            "message": "Nessun dato disponibile per la query richiesta."
+        }
+        output_json = json.dumps(output_payload, ensure_ascii=False)
+    elif isinstance(query_result, list):
+        max_tokens = 10000
+        truncated_result = query_result[:]
+        while count_tokens(truncated_result, model=MODEL_NAME) > max_tokens and len(truncated_result) > 1:
+            truncated_result = truncated_result[:-1]
+
+        is_partial = len(truncated_result) < len(query_result)
+        partial_message = (
+            "Nota: i risultati mostrati sono parziali. Per una lista completa, restringi la ricerca."
+            if is_partial
+            else "Nota: i risultati mostrati sono completi."
+        )
+
+        tool_payload = {
+            "user_request": user_input,
+            "report_title": "Analisi dei dati richiesti",
+            "summary": "Ecco una sintesi dei dati recuperati dalla query eseguita.",
+            "table_data": truncated_result,
+            "conclusions": "Analizza questi dati e fornisci una valutazione dei trend e delle informazioni piu rilevanti.",
+            "note": partial_message,
+            "format": "JSON",
+        }
+        output_json = log_json_output(tool_payload)
+    else:
+        output_payload = {
+            "value": query_result,
+            "format": "scalar",
+        }
+        output_json = json.dumps(output_payload, ensure_ascii=False, default=convert_decimal)
+
+    output_estimated_tokens = count_tokens({"output": output_json}, model=MODEL_NAME)
+    log_conversation_event(
+        conversation_id,
+        "tool_output_prepared",
+        request_id=request_id,
+        payload={
+            "round": round_number,
+            "call_id": tool_call.call_id,
+            "tool_name": tool_call.name,
+            "output_chars": len(output_json),
+            "output_estimated_tokens": output_estimated_tokens,
+        },
+    )
+    return _build_function_call_output(tool_call.call_id, output_json)
+
+
+def _execute_mcp_tool_call(tool_call, conversation_id, request_id, round_number):
+    arguments = json.loads(tool_call.arguments or "{}")
+    tool_error = None
+    tool_result = None
+    tool_start = time.perf_counter()
+    try:
+        tool_result = call_mcp_tool(tool_call.name, arguments)
+        tool_result = _truncate_items_payload(tool_result)
+    except MCPBridgeError as exc:
+        tool_error = str(exc)
+    except Exception as exc:
+        tool_error = str(exc)
+    tool_elapsed_ms = round((time.perf_counter() - tool_start) * 1000, 2)
+
+    log_conversation_event(
+        conversation_id,
+        "tool_execute_mcp_completed",
+        request_id=request_id,
+        payload={
+            "round": round_number,
+            "tool_name": tool_call.name,
+            "elapsed_ms": tool_elapsed_ms,
+            "arguments": arguments,
+            "error": tool_error,
+            "result_keys": sorted(tool_result.keys()) if isinstance(tool_result, dict) else None,
+        },
+    )
+
+    if tool_error:
+        output_payload = {
+            "message": "MCP_ERROR",
+            "tool_name": tool_call.name,
+            "error": tool_error,
+            "arguments": arguments,
+        }
+        output_json = json.dumps(output_payload, ensure_ascii=False)
+    else:
+        output_json = json.dumps(tool_result, ensure_ascii=False, default=convert_decimal)
+
+    output_estimated_tokens = count_tokens({"output": output_json}, model=MODEL_NAME)
+    log_conversation_event(
+        conversation_id,
+        "tool_output_prepared",
+        request_id=request_id,
+        payload={
+            "round": round_number,
+            "call_id": tool_call.call_id,
+            "tool_name": tool_call.name,
+            "output_chars": len(output_json),
+            "output_estimated_tokens": output_estimated_tokens,
+        },
+    )
+    return _build_function_call_output(tool_call.call_id, output_json)
+
+
 def build_tools_schema():
-    return [
+    tools = [
         {
             "type": "function",
             "name": "execute_sql_query",
@@ -297,6 +544,13 @@ def build_tools_schema():
             },
         }
     ]
+
+    try:
+        tools.extend(get_openai_tool_schemas())
+    except Exception as exc:
+        print(f"Impossibile caricare i tool MCP: {exc}")
+
+    return tools
 
 
 def handle_request(user_input, thread_id=None):
@@ -321,6 +575,34 @@ def handle_request(user_input, thread_id=None):
         )
 
         tools_schema = build_tools_schema()
+        try:
+            available_mcp_tool_names = get_mcp_tool_names()
+        except Exception as exc:
+            available_mcp_tool_names = set()
+            log_conversation_event(
+                conversation_id,
+                "mcp_tools_discovery_failed",
+                request_id=request_id,
+                payload={"error": str(exc)},
+            )
+
+        if available_mcp_tool_names:
+            instructions += (
+                "\n\nTool policy update:\n"
+                "- Sono disponibili tool MCP business-oriented per l'accesso ai dati aziendali.\n"
+                f"- Tool MCP disponibili: {', '.join(sorted(available_mcp_tool_names))}.\n"
+                "- Preferisci i tool MCP ai SQL grezzi quando coprono direttamente la richiesta.\n"
+                "- Usa execute_sql_query solo come fallback se i tool MCP disponibili non bastano.\n"
+            )
+
+        instructions += (
+            "\n\nFormato finale obbligatorio:\n"
+            "- Rispondi con un singolo oggetto JSON valido.\n"
+            "- Le sole chiavi di primo livello ammesse sono: user_request, report_title, summary, table_data, conclusions.\n"
+            "- table_data deve essere una lista piatta di oggetti-riga.\n"
+            "- Non usare dataset annidati, non usare rows annidate, non aggiungere altre chiavi di primo livello.\n"
+        )
+
         api_start = time.perf_counter()
         response = client.responses.create(
             model=MODEL_NAME,
@@ -353,115 +635,34 @@ def handle_request(user_input, thread_id=None):
 
             tool_outputs = []
             for tool_call in tool_calls:
-                if tool_call.name != "execute_sql_query":
+                if tool_call.name == "execute_sql_query":
+                    tool_outputs.append(
+                        _execute_sql_tool_call(
+                            tool_call,
+                            user_input=user_input,
+                            conversation_id=conversation_id,
+                            request_id=request_id,
+                            round_number=rounds,
+                        )
+                    )
                     continue
 
-                arguments = json.loads(tool_call.arguments or "{}")
-                query_sql = arguments.get("query_sql", "")
+                if tool_call.name in available_mcp_tool_names:
+                    tool_outputs.append(
+                        _execute_mcp_tool_call(
+                            tool_call,
+                            conversation_id=conversation_id,
+                            request_id=request_id,
+                            round_number=rounds,
+                        )
+                    )
+                    continue
 
-                query_error = None
-                rejection_reason = None
-                rejection_details = None
-                query_estimated_tokens = count_tokens({"query_sql": query_sql}, model=MODEL_NAME)
-                tool_start = time.perf_counter()
-                try:
-                    query_result = execute_sql_query(query_sql)
-                except QueryRejectedError as exc:
-                    query_result = None
-                    query_error = str(exc)
-                    rejection_reason = exc.reason
-                    rejection_details = exc.details
-                except Exception as exc:
-                    query_result = None
-                    query_error = str(exc)
-                tool_elapsed_ms = round((time.perf_counter() - tool_start) * 1000, 2)
                 log_conversation_event(
                     conversation_id,
-                    "tool_execute_sql_query_completed",
+                    "tool_call_ignored",
                     request_id=request_id,
-                    payload={
-                        "round": rounds,
-                        "elapsed_ms": tool_elapsed_ms,
-                        "query_estimated_tokens": query_estimated_tokens,
-                        "query_sql": query_sql,
-                        "error": query_error,
-                        "rejection_reason": rejection_reason,
-                        "rejection_details": rejection_details,
-                        "result_rows": len(query_result) if isinstance(query_result, list) else (1 if query_result else 0),
-                    },
-                )
-                if rejection_reason:
-                    log_conversation_event(
-                        conversation_id,
-                        "query_rejected",
-                        request_id=request_id,
-                        payload={
-                            "round": rounds,
-                            "reason": rejection_reason,
-                            "details": rejection_details,
-                        },
-                    )
-
-                if query_error:
-                    output_payload = {
-                        "message": "SQL_ERROR",
-                        "error": query_error,
-                        "failed_query": query_sql,
-                        "hint": (
-                            "Correggi la query e richiama execute_sql_query. "
-                            "Usa una sola SELECT per tool-call; in SQL Server evita STRING_AGG(DISTINCT ...), "
-                            "usa invece SELECT DISTINCT in subquery/CTE e poi STRING_AGG."
-                        ),
-                    }
-                    output_json = json.dumps(output_payload, ensure_ascii=False)
-                elif not query_result:
-                    output_payload = {
-                        "message": "⚠️ Nessun dato disponibile per la query richiesta."
-                    }
-                    output_json = json.dumps(output_payload, ensure_ascii=False)
-                else:
-                    max_tokens = 10000
-                    truncated_result = query_result[:]
-                    while count_tokens(truncated_result) > max_tokens and len(truncated_result) > 1:
-                        truncated_result = truncated_result[:-1]
-
-                    is_partial = len(truncated_result) < len(query_result)
-                    partial_message = (
-                        "⚠️ Nota: I risultati mostrati sono parziali. Per una lista completa, restringi la ricerca."
-                        if is_partial
-                        else "⚠️ Nota: I risultati mostrati sono completi"
-                    )
-
-                    tool_payload = {
-                        "user_request": user_input,
-                        "report_title": "Analisi dei dati richiesti",
-                        "summary": "Ecco una sintesi dei dati recuperati dalla query eseguita.",
-                        "table_data": truncated_result,
-                        "conclusions": "Analizza questi dati e fornisci una valutazione dei trend e delle informazioni più rilevanti.",
-                        "note": partial_message,
-                        "format": "JSON",
-                    }
-                    output_json = log_json_output(tool_payload)
-
-                output_estimated_tokens = count_tokens({"output": output_json}, model=MODEL_NAME)
-                log_conversation_event(
-                    conversation_id,
-                    "tool_output_prepared",
-                    request_id=request_id,
-                    payload={
-                        "round": rounds,
-                        "call_id": tool_call.call_id,
-                        "output_chars": len(output_json),
-                        "output_estimated_tokens": output_estimated_tokens,
-                    },
-                )
-
-                tool_outputs.append(
-                    {
-                        "type": "function_call_output",
-                        "call_id": tool_call.call_id,
-                        "output": output_json,
-                    }
+                    payload={"round": rounds, "tool_name": tool_call.name},
                 )
 
             if not tool_outputs:
@@ -544,6 +745,8 @@ def handle_request(user_input, thread_id=None):
 
         if not final_text:
             final_text = json.dumps({"message": "Nessuna risposta generata"}, ensure_ascii=False)
+
+        final_text = _normalize_final_response_json(final_text)
 
         total_elapsed_ms = round((time.perf_counter() - req_start) * 1000, 2)
         final_estimated_tokens = count_tokens({"final_text": final_text}, model=MODEL_NAME)

@@ -1,0 +1,47 @@
+{
+    "user_request": "Qual è la produzione giornaliera media per linea nell’ultimo mese?",
+    "report_title": "Produzione giornaliera media per linea - ultimi 30 giorni",
+    "summary": "Ho calcolato le medie di produzione per ciascuna linea sugli ultimi 30 giorni. Per ogni linea riporto la produzione totalizzata (m²), i giorni effettivi di produzione e la media giornaliera espressa su due basi: 1) media sull'intero periodo calendario (30 giorni) e 2) media sui giorni effettivi di produzione (escludendo i giorni fermi). La metrica di riferimento consigliata per valutazioni operative è la media per giorno di produzione; la media su calendario è utile per pianificazioni di capacità e confronti di periodo.",
+    "table_data": [
+        {
+            "Linea": "3",
+            "total_m2": 162083.6,
+            "production_days": 28,
+            "calendar_days": 30,
+            "avg_m2_per_calendar_day": 5402.787,
+            "avg_m2_per_production_day": 5788.7,
+            "total_pallets": 3249,
+            "avg_m2_per_pallet": 49.887,
+            "first_choice_pallets": 3049,
+            "first_production_date": "2026-02-12",
+            "last_production_date": "2026-03-13"
+        },
+        {
+            "Linea": "1",
+            "total_m2": 77676.93,
+            "production_days": 22,
+            "calendar_days": 30,
+            "avg_m2_per_calendar_day": 2589.231,
+            "avg_m2_per_production_day": 3530.77,
+            "total_pallets": 2468,
+            "avg_m2_per_pallet": 31.474,
+            "first_choice_pallets": 2382,
+            "first_production_date": "2026-02-12",
+            "last_production_date": "2026-03-12"
+        },
+        {
+            "Linea": "2",
+            "total_m2": 57042.53,
+            "production_days": 20,
+            "calendar_days": 30,
+            "avg_m2_per_calendar_day": 1901.418,
+            "avg_m2_per_production_day": 2852.127,
+            "total_pallets": 1155,
+            "avg_m2_per_pallet": 49.387,
+            "first_choice_pallets": 1061,
+            "first_production_date": "2026-02-12",
+            "last_production_date": "2026-03-11"
+        }
+    ],
+    "conclusions": "Linea 3 è la più produttiva: ~5.789 m²/giorno nei giorni produttivi (≈5.403 m²/giorno sul calendario). Linea 1 ha una produzione per giorno di produzione inferiore alla 3 (≈3.531 m²/giorno) con pallet più piccoli in media, suggerendo differente mix prodotto o maggior numero di cambi formato. Linea 2 ha meno giorni produttivi (20) e una media per giorno di produzione attorno a 2.852 m²; verificare cause dei fermi per aumentare capacità effettiva. Azioni consigliate: 1) analizzare i fermi sulla Linea 2 per recuperare produzione; 2) verificare mix/format su Linea 1 per capire la differenza di resa per pallet; 3) usare la media per giorno di produzione per confronti operativi e la media su calendario per valutazioni di pianificazione capacitiva. Se vuoi, posso fornire il dettaglio giornaliero per una linea specifica o estendere il periodo di analisi (es. 60 o 90 giorni)."
+}

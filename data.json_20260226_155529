@@ -1,0 +1,14 @@
+{
+    "user_request": "dimmi di oggi quali articoli sono passati per il palletizzatore",
+    "report_title": "Articoli passati al palletizzatore oggi",
+    "summary": "La tabella mostra l'elenco degli articoli che hanno attraversato il processo di palletizzazione nella data odierna.",
+    "table_data": [
+        {
+            "Articolo": "FLS002"
+        },
+        {
+            "Articolo": "RPL162"
+        }
+    ],
+    "conclusions": "Oggi sono stati processati due articoli distinti al palletizzatore. È possibile monitorare ulteriori dettagli come quantità prodotte o tempi associati per analisi più approfondite."
+}

@@ -1,0 +1,78 @@
+{
+    "user_request": "calcola il trend comprendendo anche il 2025",
+    "report_title": "Trend della Produzione Pallet Mensile per gli Anni 2025 e 2026",
+    "summary": "Il report mostra i pallet prodotti per ciascun mese del 2025 e i primi due mesi del 2026, evidenziando le variazioni mensili per valutare il trend produttivo.",
+    "table_data": [
+        {
+            "Anno": 2025,
+            "Mese": 1,
+            "PalletProdotti": 141161
+        },
+        {
+            "Anno": 2025,
+            "Mese": 2,
+            "PalletProdotti": 247509
+        },
+        {
+            "Anno": 2025,
+            "Mese": 3,
+            "PalletProdotti": 298058
+        },
+        {
+            "Anno": 2025,
+            "Mese": 4,
+            "PalletProdotti": 270433
+        },
+        {
+            "Anno": 2025,
+            "Mese": 5,
+            "PalletProdotti": 255755
+        },
+        {
+            "Anno": 2025,
+            "Mese": 6,
+            "PalletProdotti": 247346
+        },
+        {
+            "Anno": 2025,
+            "Mese": 7,
+            "PalletProdotti": 157241
+        },
+        {
+            "Anno": 2025,
+            "Mese": 8,
+            "PalletProdotti": 60208
+        },
+        {
+            "Anno": 2025,
+            "Mese": 9,
+            "PalletProdotti": 258066
+        },
+        {
+            "Anno": 2025,
+            "Mese": 10,
+            "PalletProdotti": 259282
+        },
+        {
+            "Anno": 2025,
+            "Mese": 11,
+            "PalletProdotti": 213414
+        },
+        {
+            "Anno": 2025,
+            "Mese": 12,
+            "PalletProdotti": 167723
+        },
+        {
+            "Anno": 2026,
+            "Mese": 1,
+            "PalletProdotti": 210585
+        },
+        {
+            "Anno": 2026,
+            "Mese": 2,
+            "PalletProdotti": 209073
+        }
+    ],
+    "conclusions": "Nel 2025 si evidenziano mesi con alta produzione, soprattutto da marzo a giugno, seguiti da un calo significativo in agosto, probabilmente per periodi di fermo o manutenzione. La produzione riprende poi da settembre a ottobre per poi calare verso fine anno. I dati dei primi due mesi del 2026 mostrano una ripresa della produzione rispetto all'ultimo trimestre del 2025. Questo andamento stagionale e il confronto tra anni possono essere utili per pianificare e prevedere le attività produttive future."
+}

@@ -1,0 +1,33 @@
+{
+    "user_request": "gli ultimi 5 articoli che hanno avuto degli assorbimenti",
+    "report_title": "Ultimi 5 dati di assorbimento registrati per articoli",
+    "summary": "Sono stati estratti gli ultimi 5 record di assorbimento dal database laboratorio con codice articolo, descrizione e valore di assorbimento.",
+    "table_data": [
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "Assorbimento": 0.13
+        },
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "Assorbimento": 0.15
+        },
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "Assorbimento": 0.11
+        },
+        {
+            "CodeArt": "SF1076",
+            "Description": "BLAZE IVORY 60X120 (sfuso)",
+            "Assorbimento": 0.14
+        },
+        {
+            "CodeArt": "SF1076",
+            "Description": "BLAZE IVORY 60X120 (sfuso)",
+            "Assorbimento": 0.18
+        }
+    ],
+    "conclusions": "I dati mostrano che gli ultimi assorbimenti provengono principalmente da due codici articolo: 005100 e SF1076. Per un'analisi più approfondita sui diversi articoli, potrebbe essere utile estrarre i dati con un criterio che limiti la ripetizione dei codici articolo."
+}

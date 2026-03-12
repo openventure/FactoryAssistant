@@ -1,0 +1,16 @@
+{
+    "user_request": "quanto 60x120  spessore 2 cm è stato prodotto nel 2025",
+    "report_title": "Produzione formato 60x120 spessore 2 cm nel 2025",
+    "summary": "Non è stata trovata produzione registrata nel 2025 per pallet con formato 60x120 e spessore 2 cm nel registro PALLET_PRODUCTION (filtri usati: FORMATO_LARG = 60, FORMATO_LUNG = 120, FORMATO_SPES = 2, YEAR(START_DATETIME) = 2025, Espulso = 0). Questo significa che, secondo i dati disponibili, non risultano metri quadrati prodotti per quel formato e spessore nel periodo richiesto oppure che il formato/spessore è codificato con unità diverse (es. mm) o in campi diversi.",
+    "table_data": [
+        {
+            "Formato": "60x120",
+            "Spessore_cm": 2,
+            "Anno": 2025,
+            "Totale_mq": 0,
+            "Numero_pallet": 0,
+            "Nota": "Nessuna riga corrispondente trovata con i filtri applicati (START_DATETIME anno 2025, Espulso = 0)."
+        }
+    ],
+    "conclusions": "Risultato operativo: al momento non risultano disponibilità di produzione per 60x120 sp.2 cm nel 2025 nei dati di produzione consultati. Raccomandazioni pratiche:\n- Verificare l'unità di misura usata nel database (possibile uso di mm: 600x1200 e spessore = 20). Posso rieseguire la query cercando FORMATO_LARG=600, FORMATO_LUNG=1200, FORMATO_SPES=20.\n- Verificare se il formato è registrato nel campo FORMATO (stringa) in altra tabella di disponibilità (dashboard_productavailability / pa_ff_code) e, se vuoi, posso interrogare quelle viste per avere conferme di stock o produzione aggregata.\n- Se ti interessa il dettaglio per tono/lotto o includere pallets espulsi, comunicamelo e rilancio la query con i nuovi filtri.\nSe vuoi, procedo subito con una delle verifiche suggerite (es. ricerca in mm o controllo su dashboard_productavailability)."
+}

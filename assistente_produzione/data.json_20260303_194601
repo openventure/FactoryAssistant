@@ -1,0 +1,98 @@
+{
+    "user_request": "distingui le produzioni per tono (articolo 003938)",
+    "report_title": "Produzione articolo 003938 - dettaglio per tono",
+    "summary": "Ho suddiviso la produzione dell'articolo 003938 per tono. La produzione è concentrata su pochi toni principali: R074, R054 e R104 coprono la quota maggiore dei metri quadri. La totalità dei formati è riconducibile al 60x120 con due varianti di spessore (sp0.00 e sp0.95). Esiste una porzione consistente di produzione senza tono registrato (tono mancante) che risulta con mq classificati ma con 0 m² in prima scelta. La serie/famiglia commerciale non è presente nei dati di produzione (va ricavata dalle tabelle di magazzino se necessaria).",
+    "table_data": [
+        {
+            "tono": "R074",
+            "num_pallet": 153,
+            "mq_totali": 6566.4,
+            "pezzi_totali": 9120,
+            "mq_prima_scelta": 6566.4,
+            "formati": "60.00000x120.00000 sp0.00000",
+            "prima_produzione": "2020-11-06 22:05:49",
+            "ultima_produzione": "2020-11-07 22:41:05"
+        },
+        {
+            "tono": "R054",
+            "num_pallet": 137,
+            "mq_totali": 5892.48,
+            "pezzi_totali": 8184,
+            "mq_prima_scelta": 5892.48,
+            "formati": "60.00000x120.00000 sp0.00000",
+            "prima_produzione": "2020-09-25 01:01:59",
+            "ultima_produzione": "2020-09-26 00:06:39"
+        },
+        {
+            "tono": "R104",
+            "num_pallet": 133,
+            "mq_totali": 5745.6,
+            "pezzi_totali": 7980,
+            "mq_prima_scelta": 5745.6,
+            "formati": "60.00000x120.00000 sp0.95000",
+            "prima_produzione": "2021-05-10 00:19:19",
+            "ultima_produzione": "2021-05-11 01:56:38"
+        },
+        {
+            "tono": "R044",
+            "num_pallet": 96,
+            "mq_totali": 4000.32,
+            "pezzi_totali": 5556,
+            "mq_prima_scelta": 4000.32,
+            "formati": "60.00000x120.00000 sp0.00000",
+            "prima_produzione": "2020-05-09 07:37:45",
+            "ultima_produzione": "2020-05-09 22:12:57"
+        },
+        {
+            "tono": null,
+            "num_pallet": 79,
+            "mq_totali": 3127.68,
+            "pezzi_totali": 4344,
+            "mq_prima_scelta": 0.0,
+            "formati": "60.00000x120.00000 sp0.00000, 60.00000x120.00000 sp0.95000",
+            "prima_produzione": "2020-05-09 02:51:58",
+            "ultima_produzione": "2021-05-11 01:56:38"
+        },
+        {
+            "tono": "R094",
+            "num_pallet": 43,
+            "mq_totali": 1784.16,
+            "pezzi_totali": 2478,
+            "mq_prima_scelta": 1784.16,
+            "formati": "60.00000x120.00000 sp0.95000",
+            "prima_produzione": "2021-04-26 04:30:55",
+            "ultima_produzione": "2021-04-27 01:49:03"
+        },
+        {
+            "tono": "R084",
+            "num_pallet": 32,
+            "mq_totali": 1339.2,
+            "pezzi_totali": 1860,
+            "mq_prima_scelta": 1339.2,
+            "formati": "60.00000x120.00000 sp0.00000",
+            "prima_produzione": "2021-01-08 22:54:41",
+            "ultima_produzione": "2021-01-09 08:21:32"
+        },
+        {
+            "tono": "R034",
+            "num_pallet": 29,
+            "mq_totali": 1105.92,
+            "pezzi_totali": 1536,
+            "mq_prima_scelta": 1019.52,
+            "formati": "60.00000x120.00000 sp0.00000",
+            "prima_produzione": "2020-05-09 02:51:58",
+            "ultima_produzione": "2020-05-09 22:12:57"
+        },
+        {
+            "tono": "R064",
+            "num_pallet": 15,
+            "mq_totali": 643.68,
+            "pezzi_totali": 894,
+            "mq_prima_scelta": 643.68,
+            "formati": "60.00000x120.00000 sp0.00000",
+            "prima_produzione": "2020-10-21 08:31:27",
+            "ultima_produzione": "2020-10-21 20:27:17"
+        }
+    ],
+    "conclusions": "Punti chiave e raccomandazioni operative:\n1) Priorità: i toni R074, R054 e R104 rappresentano insieme la quota più rilevante di produzione in m² — concentrarsi su questi per pianificazione commerciale e di magazzino.\n2) Dato mancante: c'è una porzione significativa di produzione senza tono registrato (circa 3.127,7 m²). Verificare l'origine di queste righe (errori di codifica, lotti non etichettati) perché possono generare discrepanze in disponibilità e consegne.\n3) Qualità/Prima scelta: il tono mancante mostra 0 m² in prima scelta — è importante capire se si tratta di reale scarto/seconda scelta o di mancata registrazione della scelta.\n4) Formati: produzione quasi esclusiva su 60x120 (due spessori). Se serve, posso aggregare ulteriormente per formato/spessore per capire impatto logistico.\n5) Prossimi passi consigliati: a) confermare con produzione/IT la causa dei toni mancanti; b) ricavare la serie/famiglia commerciale interrogando i dati di magazzino (pa_ff_code o dashboard_productavailability) per collegare produzione a vendite; c) se desideri, genero lo stesso report filtrato su un intervallo (ultimi 30/90 giorni) o un confronto tra toni (trend mensili)."
+}

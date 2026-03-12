@@ -1,0 +1,99 @@
+{
+    "user_request": "dammi gli articoli 60x60 sotto giacenza",
+    "report_title": "Articoli con formato 60x60 sotto soglia di giacenza minima",
+    "summary": "Sono stati estratti gli articoli con formato contenente '60X60' che attualmente hanno una giacenza inferiore alla soglia minima prevista.",
+    "table_data": [
+        {
+            "CODICE": "003149",
+            "DESCRIZIONE": "SUPREME CALACATTA 60X60 RETT LAPP",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 500
+        },
+        {
+            "CODICE": "003838",
+            "DESCRIZIONE": "FOLK GRIGIO 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 500
+        },
+        {
+            "CODICE": "004065A",
+            "DESCRIZIONE": "60X60 TEMPO BIANCO RTT",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 500
+        },
+        {
+            "CODICE": "004166",
+            "DESCRIZIONE": "60X60 RTT DEMETRA BEIGE",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 500
+        },
+        {
+            "CODICE": "004167",
+            "DESCRIZIONE": "60X60 RTT ADE NERO",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 500
+        },
+        {
+            "CODICE": "004178",
+            "DESCRIZIONE": "60X60 PALERMO BEIGE RTT",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 500
+        },
+        {
+            "CODICE": "004579",
+            "DESCRIZIONE": "60X60 MILANO WEISS RTT",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 500
+        },
+        {
+            "CODICE": "004580",
+            "DESCRIZIONE": "60X60 MILANO GRAU RTT",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 0.0,
+            "MIN": 500
+        },
+        {
+            "CODICE": "005277",
+            "DESCRIZIONE": "TEMPO GRIGIO 60x60 RETT",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 2.17,
+            "MIN": 500
+        },
+        {
+            "CODICE": "005654",
+            "DESCRIZIONE": "MIRROR TAUPE 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 480.6,
+            "MIN": 500
+        },
+        {
+            "CODICE": "3538700",
+            "DESCRIZIONE": "ROCK GRIGIO 60x60 RETT",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 3.6,
+            "MIN": 500
+        },
+        {
+            "CODICE": "CMP001",
+            "DESCRIZIONE": "COMPACT MOON 60X60 RETT SP 8MM",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 3.6,
+            "MIN": 500
+        },
+        {
+            "CODICE": "CMP002",
+            "DESCRIZIONE": "COMPACT DUNE 60X60 RETT SP 8MM",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA": 1.8,
+            "MIN": 500
+        }
+    ],
+    "conclusions": "La maggior parte degli articoli 60x60 presenti sono sotto la soglia minima di giacenza impostata a 500 unità. Solo pochi articoli hanno giacenze che si avvicinano ma non raggiungono la soglia. Bisogna valutare eventuali azioni di riassortimento per evitare rotture di stock su questi prodotti critici."
+}

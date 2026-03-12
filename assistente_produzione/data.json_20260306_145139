@@ -1,0 +1,47 @@
+{
+    "user_request": "vorrei le indicazioni per serie cult!",
+    "report_title": "Produzione consigliata formato 60x60 — Serie CULT",
+    "summary": "Ho analizzato gli articoli della serie CULT con formato 60x60. Tutti i codici mostrano una DISPONIBILITA_30 superiore al livello MIN: quindi non è richiesta produzione urgente per riportare la disponibilità al minimo nei prossimi 30 giorni. Tuttavia un codice (003396) rimane vicino al MIN una volta considerate le quantità da consegnare, con un margine residuo limitato.",
+    "table_data": [
+        {
+            "CODICE": "003396",
+            "DESCRIZIONE": "60X60 RT CULT WHITE",
+            "SERIE": "CULT",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA_M2": 3727.99,
+            "MIN_M2": 518.0,
+            "PROD_BY_DAY_M2": 6500.0,
+            "DISPONIBILITA_30_M2": 1925.97,
+            "QTA_DA_CONSEGNARE_M2": 1368.0,
+            "PROD_REQUIRED_M2": 0.0,
+            "PROD_CAPACITY_30D_M2": 195000.0
+        },
+        {
+            "CODICE": "004114",
+            "DESCRIZIONE": "CITY GREY 60X60 RET (CULT)",
+            "SERIE": "CULT",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA_M2": 7837.2,
+            "MIN_M2": 518.0,
+            "PROD_BY_DAY_M2": 6500.0,
+            "DISPONIBILITA_30_M2": 5795.25,
+            "QTA_DA_CONSEGNARE_M2": 819.0,
+            "PROD_REQUIRED_M2": 0.0,
+            "PROD_CAPACITY_30D_M2": 195000.0
+        },
+        {
+            "CODICE": "004115",
+            "DESCRIZIONE": "CITY BEIGE 60X60 RET (CULT)",
+            "SERIE": "CULT",
+            "FORMATO": "60X60 RTT",
+            "GIACENZA_M2": 3117.6,
+            "MIN_M2": 518.0,
+            "PROD_BY_DAY_M2": 6500.0,
+            "DISPONIBILITA_30_M2": 2748.32,
+            "QTA_DA_CONSEGNARE_M2": 0.0,
+            "PROD_REQUIRED_M2": 0.0,
+            "PROD_CAPACITY_30D_M2": 195000.0
+        }
+    ],
+    "conclusions": "A livello operativo non è necessario avviare produzioni urgenti per rispettare il livello MIN nei prossimi 30 giorni. Raccomandazioni pratiche:\n1) Monitorare il codice 003396: dopo le consegne previste il margine sulla soglia MIN è ridotto (~40 m²). Valutare una produzione di sicurezza (es. 50–150 m²) se si vuole preservare un buffer operativo.\n2) Per gli altri codici non sono necessarie azioni immediate; mantenere il monitoraggio settimanale sulle consegne effettive.\n3) Se l’obiettivo commerciale è coprire le QTA_DA_CONSEGNARE senza intaccare le scorte MIN, pianificare produzione pari a QTA_DA_CONSEGNARE + buffer desiderato.\nProssimi passi proposti: vuoi che calcoli una proposta di produzione (m²) per ogni codice basata su target = MIN + buffer (es. buffer = 10% o 1 turno)? Oppure preferisci che estenda l’analisi ad altri depositi o serie?"
+}

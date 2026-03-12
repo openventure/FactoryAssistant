@@ -1,0 +1,1016 @@
+{
+    "user_request": "Quali articoli 60x120 hanno ordini superiori alla disponibilita attuale?",
+    "report_title": "Articoli 60x120 con ordini > disponibilità",
+    "summary": "Ho individuato gli articoli in formato 60x120 per i quali la quantità da consegnare supera la disponibilità attuale. L'elenco è ordinato per scostamento (m²) decrescente e contiene: codice articolo, descrizione, serie, formato, quantità da consegnare (m²), disponibilità attuale (m²) e scostamento (m²). Il dettaglio dei toni non è presente nella sintesi; posso estrarre i toni/lotti su richiesta.",
+    "table_data": [
+        {
+            "CODICE": "304041",
+            "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 10261.44,
+            "DISPONIBILITA": -7480.8,
+            "SCOSTAMENTO_MQ": 17742.24
+        },
+        {
+            "CODICE": "005486",
+            "DESCRIZIONE": "SHELLSTONE BEIGE 60x120 Rettificato",
+            "SERIE": "SHELLSTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 8101.44,
+            "DISPONIBILITA": -5988.96,
+            "SCOSTAMENTO_MQ": 14090.4
+        },
+        {
+            "CODICE": "TMS114",
+            "DESCRIZIONE": "TIME STONE SABBIA 60x120 Rettificato",
+            "SERIE": "TIME STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 7827.84,
+            "DISPONIBILITA": -4302.72,
+            "SCOSTAMENTO_MQ": 12130.56
+        },
+        {
+            "CODICE": "304124",
+            "DESCRIZIONE": "ARGOS BLACK 60x120 Rettificato",
+            "SERIE": "ARGOS",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 3879.36,
+            "DISPONIBILITA": -3710.88,
+            "SCOSTAMENTO_MQ": 7590.24
+        },
+        {
+            "CODICE": "304040",
+            "DESCRIZIONE": "CHARME GREY 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 5127.84,
+            "DISPONIBILITA": -1608.48,
+            "SCOSTAMENTO_MQ": 6736.32
+        },
+        {
+            "CODICE": "304139",
+            "DESCRIZIONE": "GEOLOGY SABBIA 60x120 Rettificato",
+            "SERIE": "GEOLOGY",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 5290.56,
+            "DISPONIBILITA": -1405.44,
+            "SCOSTAMENTO_MQ": 6696.0
+        },
+        {
+            "CODICE": "FSN070A",
+            "DESCRIZIONE": "60X120 RTT FUSION BOISERIE",
+            "SERIE": "MATERIALE PETRUS",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 3679.2,
+            "DISPONIBILITA": -2816.64,
+            "SCOSTAMENTO_MQ": 6495.84
+        },
+        {
+            "CODICE": "003507A",
+            "DESCRIZIONE": "60X120 RTT TRAV AMBRA MEMENTO cl35",
+            "SERIE": "TRAVERTINO MEMENTO",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 3438.72,
+            "DISPONIBILITA": -2659.68,
+            "SCOSTAMENTO_MQ": 6098.4
+        },
+        {
+            "CODICE": "304059",
+            "DESCRIZIONE": "CHARME PEARL 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 4083.84,
+            "DISPONIBILITA": -1512.0,
+            "SCOSTAMENTO_MQ": 5595.84
+        },
+        {
+            "CODICE": "3510994A",
+            "DESCRIZIONE": "GALACTIC GREY 60X120 RTT cl35",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 3011.04,
+            "DISPONIBILITA": -2275.2,
+            "SCOSTAMENTO_MQ": 5286.24
+        },
+        {
+            "CODICE": "004410A",
+            "DESCRIZIONE": "60X120 RTT IROC WHITE",
+            "SERIE": "IROC",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 5489.28,
+            "DISPONIBILITA": 372.96,
+            "SCOSTAMENTO_MQ": 5116.32
+        },
+        {
+            "CODICE": "304136",
+            "DESCRIZIONE": "GEOLOGY ARGILLA 60x120 Rettificato",
+            "SERIE": "GEOLOGY",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 3767.04,
+            "DISPONIBILITA": -989.28,
+            "SCOSTAMENTO_MQ": 4756.32
+        },
+        {
+            "CODICE": "TMS214",
+            "DESCRIZIONE": "TIME STONE SABBIA OUT 60x120 Rettificato",
+            "SERIE": "TIME STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 4741.92,
+            "DISPONIBILITA": 8.64,
+            "SCOSTAMENTO_MQ": 4733.28
+        },
+        {
+            "CODICE": "NWS201",
+            "DESCRIZIONE": "NEW STONE DAINO 60x120 RETT",
+            "SERIE": "NEW STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 7437.6,
+            "DISPONIBILITA": 2891.52,
+            "SCOSTAMENTO_MQ": 4546.08
+        },
+        {
+            "CODICE": "NWS203",
+            "DESCRIZIONE": "NEW STONE LEPRE 60x120 RETT",
+            "SERIE": "NEW STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 4790.88,
+            "DISPONIBILITA": 506.88,
+            "SCOSTAMENTO_MQ": 4284.0
+        },
+        {
+            "CODICE": "005925",
+            "DESCRIZIONE": "CONTERO STONE IVORY RTT 60X120",
+            "SERIE": "CONTERO STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 4952.16,
+            "DISPONIBILITA": 934.56,
+            "SCOSTAMENTO_MQ": 4017.6
+        },
+        {
+            "CODICE": "3510992A",
+            "DESCRIZIONE": "GALACTIC LIGHT GREY 60X120 RTT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 3000.96,
+            "DISPONIBILITA": -1006.56,
+            "SCOSTAMENTO_MQ": 4007.52
+        },
+        {
+            "CODICE": "CMP012",
+            "DESCRIZIONE": "COMPACT DUNE 60X120 RETT",
+            "SERIE": "COMPACT",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2020.32,
+            "DISPONIBILITA": -1753.92,
+            "SCOSTAMENTO_MQ": 3774.24
+        },
+        {
+            "CODICE": "005926",
+            "DESCRIZIONE": "CONTERO STONE OFF-WHITE RTT 60X120",
+            "SERIE": "CONTERO STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 3843.36,
+            "DISPONIBILITA": 220.32,
+            "SCOSTAMENTO_MQ": 3623.04
+        },
+        {
+            "CODICE": "QST023",
+            "DESCRIZIONE": "QUEEN STONE ACCIAIO 60x120 RETT",
+            "SERIE": "QUEEN STONE - PETRUS",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2272.32,
+            "DISPONIBILITA": -1314.72,
+            "SCOSTAMENTO_MQ": 3587.04
+        },
+        {
+            "CODICE": "304149",
+            "DESCRIZIONE": "GEOLOGY SALVIA 60x120 Rettificato",
+            "SERIE": "GEOLOGY",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1791.36,
+            "DISPONIBILITA": -1697.76,
+            "SCOSTAMENTO_MQ": 3489.12
+        },
+        {
+            "CODICE": "304279",
+            "DESCRIZIONE": "SERICA IVORY 60x120 Rettificato",
+            "SERIE": "SERICA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 4063.68,
+            "DISPONIBILITA": 688.32,
+            "SCOSTAMENTO_MQ": 3375.36
+        },
+        {
+            "CODICE": "004999A",
+            "DESCRIZIONE": "60X120 RTT ERMETICA BIANCO",
+            "SERIE": "ERMETICA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 3054.24,
+            "DISPONIBILITA": 120.96,
+            "SCOSTAMENTO_MQ": 2933.28
+        },
+        {
+            "CODICE": "005188",
+            "DESCRIZIONE": "PALERMO WEISS 60x120 RETT",
+            "SERIE": "PALERMO",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1663.2,
+            "DISPONIBILITA": -1126.08,
+            "SCOSTAMENTO_MQ": 2789.28
+        },
+        {
+            "CODICE": "TMS112",
+            "DESCRIZIONE": "TIME STONE CENERE 60x120 Rettificato",
+            "SERIE": "TIME STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1919.52,
+            "DISPONIBILITA": -868.8,
+            "SCOSTAMENTO_MQ": 2788.32
+        },
+        {
+            "CODICE": "EMT091",
+            "DESCRIZIONE": "EMOTION BLANC 60x120 Rettificato",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2580.48,
+            "DISPONIBILITA": 182.88,
+            "SCOSTAMENTO_MQ": 2397.6
+        },
+        {
+            "CODICE": "3514183",
+            "DESCRIZIONE": "60X120 ELEGANCE PEARL RT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 3751.2,
+            "DISPONIBILITA": 1404.0,
+            "SCOSTAMENTO_MQ": 2347.2
+        },
+        {
+            "CODICE": "QST021",
+            "DESCRIZIONE": "QUEEN STONE AVORIO 60x120 RETT",
+            "SERIE": "QUEEN STONE - PETRUS",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2021.76,
+            "DISPONIBILITA": -280.8,
+            "SCOSTAMENTO_MQ": 2302.56
+        },
+        {
+            "CODICE": "004916A",
+            "DESCRIZIONE": "60X120 UNIKA LIGHT GREY RETT. cl35",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2721.6,
+            "DISPONIBILITA": 496.8,
+            "SCOSTAMENTO_MQ": 2224.8
+        },
+        {
+            "CODICE": "304407",
+            "DESCRIZIONE": "TREVISTONE IVORY 60X120 OUT RETT sp 9,5mm",
+            "SERIE": "TREVISTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1065.6,
+            "DISPONIBILITA": -1065.6,
+            "SCOSTAMENTO_MQ": 2131.2
+        },
+        {
+            "CODICE": "ELBA22",
+            "DESCRIZIONE": "ELBA GREY 60X120 RETT",
+            "SERIE": "ELBA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1463.04,
+            "DISPONIBILITA": -604.8,
+            "SCOSTAMENTO_MQ": 2067.84
+        },
+        {
+            "CODICE": "304404",
+            "DESCRIZIONE": "TREVISTONE IVORY 60X120 RETT sp 9,5mm",
+            "SERIE": "TREVISTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 4142.88,
+            "DISPONIBILITA": 2106.72,
+            "SCOSTAMENTO_MQ": 2036.16
+        },
+        {
+            "CODICE": "005189",
+            "DESCRIZIONE": "PALERMO GRAU 60x120 RETT",
+            "SERIE": "PALERMO",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1198.08,
+            "DISPONIBILITA": -826.56,
+            "SCOSTAMENTO_MQ": 2024.64
+        },
+        {
+            "CODICE": "304406",
+            "DESCRIZIONE": "RIGATINO TREVISTONE IVORY 60X120 RETT sp 9,5mm",
+            "SERIE": "TREVISTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1010.88,
+            "DISPONIBILITA": -1009.44,
+            "SCOSTAMENTO_MQ": 2020.32
+        },
+        {
+            "CODICE": "005190",
+            "DESCRIZIONE": "PALERMO BEIGE 60x120 RETT",
+            "SERIE": "PALERMO",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1386.72,
+            "DISPONIBILITA": -626.4,
+            "SCOSTAMENTO_MQ": 2013.12
+        },
+        {
+            "CODICE": "005306",
+            "DESCRIZIONE": "60X120 PORTLAND BABY BLUE RTT",
+            "SERIE": "PORTLAND",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1032.48,
+            "DISPONIBILITA": -790.56,
+            "SCOSTAMENTO_MQ": 1823.04
+        },
+        {
+            "CODICE": "005714",
+            "DESCRIZIONE": "ASPEN FUME 60X120 RETT CL 35",
+            "SERIE": "ASPEN",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2772.0,
+            "DISPONIBILITA": 973.44,
+            "SCOSTAMENTO_MQ": 1798.56
+        },
+        {
+            "CODICE": "303710A",
+            "DESCRIZIONE": "SOLID BEIGE 60X120 RTT CL 35",
+            "SERIE": "SOLID",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1375.2,
+            "DISPONIBILITA": -419.04,
+            "SCOSTAMENTO_MQ": 1794.24
+        },
+        {
+            "CODICE": "TMS113",
+            "DESCRIZIONE": "TIME STONE GRAFITE 60x120 Rettificato",
+            "SERIE": "TIME STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2083.68,
+            "DISPONIBILITA": 296.64,
+            "SCOSTAMENTO_MQ": 1787.04
+        },
+        {
+            "CODICE": "004438A",
+            "DESCRIZIONE": "60X120 RTT ABITA NICHEL",
+            "SERIE": "ABITA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1360.8,
+            "DISPONIBILITA": -263.52,
+            "SCOSTAMENTO_MQ": 1624.32
+        },
+        {
+            "CODICE": "303945",
+            "DESCRIZIONE": "PAINT GREY 60x120 RETT",
+            "SERIE": "PAINT",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 957.6,
+            "DISPONIBILITA": -636.48,
+            "SCOSTAMENTO_MQ": 1594.08
+        },
+        {
+            "CODICE": "005302",
+            "DESCRIZIONE": "60X120 PORTLAND IVORY RTT",
+            "SERIE": "PORTLAND",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 826.56,
+            "DISPONIBILITA": -764.64,
+            "SCOSTAMENTO_MQ": 1591.2
+        },
+        {
+            "CODICE": "005487",
+            "DESCRIZIONE": "SHELLSTONE BIANCO 60x120 Rettificato",
+            "SERIE": "SHELLSTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 4079.52,
+            "DISPONIBILITA": 2511.36,
+            "SCOSTAMENTO_MQ": 1568.16
+        },
+        {
+            "CODICE": "005843",
+            "DESCRIZIONE": "60X120 ELEGANCE BLACK RT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2764.8,
+            "DISPONIBILITA": 1224.0,
+            "SCOSTAMENTO_MQ": 1540.8
+        },
+        {
+            "CODICE": "005374",
+            "DESCRIZIONE": "60X120 RTT EVOQ POLVERE",
+            "SERIE": "EVOQ",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 846.72,
+            "DISPONIBILITA": -665.28,
+            "SCOSTAMENTO_MQ": 1512.0
+        },
+        {
+            "CODICE": "304029",
+            "DESCRIZIONE": "CHARME ILLUSION 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2898.72,
+            "DISPONIBILITA": 1460.16,
+            "SCOSTAMENTO_MQ": 1438.56
+        },
+        {
+            "CODICE": "005001A",
+            "DESCRIZIONE": "60X120 ERMETICA LAVAGNA RTT cl35",
+            "SERIE": "ERMETICA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 738.72,
+            "DISPONIBILITA": -685.44,
+            "SCOSTAMENTO_MQ": 1424.16
+        },
+        {
+            "CODICE": "005002A",
+            "DESCRIZIONE": "60X120 RTT ERMETICA CREMA",
+            "SERIE": "ERMETICA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 717.12,
+            "DISPONIBILITA": -705.6,
+            "SCOSTAMENTO_MQ": 1422.72
+        },
+        {
+            "CODICE": "304028",
+            "DESCRIZIONE": "CHARME INVISIBLE GREY 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1071.36,
+            "DISPONIBILITA": -348.48,
+            "SCOSTAMENTO_MQ": 1419.84
+        },
+        {
+            "CODICE": "005874",
+            "DESCRIZIONE": "RIGATINO TREVISTONE GOLD 60X120 RETT sp 9,5mm",
+            "SERIE": "TREVISTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 658.08,
+            "DISPONIBILITA": -658.08,
+            "SCOSTAMENTO_MQ": 1316.16
+        },
+        {
+            "CODICE": "005191",
+            "DESCRIZIONE": "PALERMO ANTRAZIT 60x120 RETT",
+            "SERIE": "PALERMO",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 756.0,
+            "DISPONIBILITA": -554.4,
+            "SCOSTAMENTO_MQ": 1310.4
+        },
+        {
+            "CODICE": "304425",
+            "DESCRIZIONE": "GEOSTONE WHITE 60X120 OUT RETT sp 9,5mm",
+            "SERIE": "GEOSTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 655.2,
+            "DISPONIBILITA": -655.2,
+            "SCOSTAMENTO_MQ": 1310.4
+        },
+        {
+            "CODICE": "304426",
+            "DESCRIZIONE": "GEOSTONE IVORY 60X120 OUT RETT sp 9,5mm",
+            "SERIE": "GEOSTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 655.2,
+            "DISPONIBILITA": -655.2,
+            "SCOSTAMENTO_MQ": 1310.4
+        },
+        {
+            "CODICE": "CMP011",
+            "DESCRIZIONE": "COMPACT MOON 60X120 RETT",
+            "SERIE": "COMPACT",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1307.52,
+            "DISPONIBILITA": 27.36,
+            "SCOSTAMENTO_MQ": 1280.16
+        },
+        {
+            "CODICE": "304296",
+            "DESCRIZIONE": "SERICA BONE 60x120 OUT Rettificato",
+            "SERIE": "SERICA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1166.4,
+            "DISPONIBILITA": 8.64,
+            "SCOSTAMENTO_MQ": 1157.76
+        },
+        {
+            "CODICE": "304422",
+            "DESCRIZIONE": "RIGATINO GEOSTONE WHITE 60X120 RETT sp 9,5mm",
+            "SERIE": "GEOSTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 557.28,
+            "DISPONIBILITA": -555.84,
+            "SCOSTAMENTO_MQ": 1113.12
+        },
+        {
+            "CODICE": "ELBA21",
+            "DESCRIZIONE": "60X120 ELBA BEIGE RTT",
+            "SERIE": "SOLID",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 604.8,
+            "DISPONIBILITA": -453.6,
+            "SCOSTAMENTO_MQ": 1058.4
+        },
+        {
+            "CODICE": "304399",
+            "DESCRIZIONE": "DECORO VERTIGO 3D BLAZE COTTO 60X120 RETT sp 9,5mm",
+            "SERIE": "BLAZE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 504.0,
+            "DISPONIBILITA": -502.56,
+            "SCOSTAMENTO_MQ": 1006.56
+        },
+        {
+            "CODICE": "005852",
+            "DESCRIZIONE": "60X120 SAN VICENTE GREY RT",
+            "SERIE": "SHELLSTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1000.8,
+            "DISPONIBILITA": 0.0,
+            "SCOSTAMENTO_MQ": 1000.8
+        },
+        {
+            "CODICE": "005734",
+            "DESCRIZIONE": "WALK IVORY 60x120 Rettificato",
+            "SERIE": "WALK",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2888.64,
+            "DISPONIBILITA": 1905.12,
+            "SCOSTAMENTO_MQ": 983.52
+        },
+        {
+            "CODICE": "304390",
+            "DESCRIZIONE": "BLAZE COTTO 60X120 RETT sp 9,5mm",
+            "SERIE": "BLAZE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 908.64,
+            "DISPONIBILITA": -51.84,
+            "SCOSTAMENTO_MQ": 960.48
+        },
+        {
+            "CODICE": "MNL032",
+            "DESCRIZIONE": "MINIMAL SILVER 60X120 RETT",
+            "SERIE": "MINIMAL - PETRUS",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1710.72,
+            "DISPONIBILITA": 777.6,
+            "SCOSTAMENTO_MQ": 933.12
+        },
+        {
+            "CODICE": "NWS223",
+            "DESCRIZIONE": "60X120 RTT NEW STONE LEPRE OUT R11",
+            "SERIE": "NEW STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 447.84,
+            "DISPONIBILITA": -447.84,
+            "SCOSTAMENTO_MQ": 895.68
+        },
+        {
+            "CODICE": "FSN031A",
+            "DESCRIZIONE": "FUSION BIANCO 60x120 RETT CL 35",
+            "SERIE": "FUSION - PETRUS",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 466.56,
+            "DISPONIBILITA": -424.8,
+            "SCOSTAMENTO_MQ": 891.36
+        },
+        {
+            "CODICE": "005863",
+            "DESCRIZIONE": "TREVISTONE GOLD RETT 60X120 sp 9,5 mm",
+            "SERIE": "TREVISTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2926.08,
+            "DISPONIBILITA": 2089.44,
+            "SCOSTAMENTO_MQ": 836.64
+        },
+        {
+            "CODICE": "MTS041A",
+            "DESCRIZIONE": "MYTHOS IVORY 60x120 RETT CL 35",
+            "SERIE": "MYTHOS - PETRUS",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 433.44,
+            "DISPONIBILITA": -399.6,
+            "SCOSTAMENTO_MQ": 833.04
+        },
+        {
+            "CODICE": "003756A",
+            "DESCRIZIONE": "60X120 RTT TRAV BIANCO MEMENTO cl35",
+            "SERIE": "TRAVERTINO MEMENTO",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2125.44,
+            "DISPONIBILITA": 1344.96,
+            "SCOSTAMENTO_MQ": 780.48
+        },
+        {
+            "CODICE": "NWS221",
+            "DESCRIZIONE": "60X120 RTT NEW STONE DAINO OUT R11",
+            "SERIE": "NEW STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 352.8,
+            "DISPONIBILITA": -352.8,
+            "SCOSTAMENTO_MQ": 705.6
+        },
+        {
+            "CODICE": "303405A",
+            "DESCRIZIONE": "FABRIC WHITE 60X120 RETT. cl35",
+            "SERIE": "FABRIC",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 3276.0,
+            "DISPONIBILITA": 2599.2,
+            "SCOSTAMENTO_MQ": 676.8
+        },
+        {
+            "CODICE": "QST061",
+            "DESCRIZIONE": "60X120 RTT QUEEN STONE AVORIO R11",
+            "SERIE": "QUEEN STONE - PETRUS",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 354.24,
+            "DISPONIBILITA": -302.4,
+            "SCOSTAMENTO_MQ": 656.64
+        },
+        {
+            "CODICE": "004188A",
+            "DESCRIZIONE": "CITY GREY RTT 60X120 (CULT) cl35",
+            "SERIE": "CULT",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 577.44,
+            "DISPONIBILITA": -48.96,
+            "SCOSTAMENTO_MQ": 626.4
+        },
+        {
+            "CODICE": "EX1101A",
+            "DESCRIZIONE": "EXTRA WHITE 60X120 RTT cl35",
+            "SERIE": "EXTRA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 303.84,
+            "DISPONIBILITA": -303.84,
+            "SCOSTAMENTO_MQ": 607.68
+        },
+        {
+            "CODICE": "NWS222",
+            "DESCRIZIONE": "60X120 RTT NEW STONE VISONE OUT R11",
+            "SERIE": "NEW STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 286.56,
+            "DISPONIBILITA": -286.56,
+            "SCOSTAMENTO_MQ": 573.12
+        },
+        {
+            "CODICE": "303841A",
+            "DESCRIZIONE": "NATURE GRIGIO 60x120 RETT CL 35",
+            "SERIE": "NATURE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 567.36,
+            "DISPONIBILITA": 27.36,
+            "SCOSTAMENTO_MQ": 540.0
+        },
+        {
+            "CODICE": "EX1103A",
+            "DESCRIZIONE": "EXTRA GREY 60X120 RTT cl35",
+            "SERIE": "ESPOSITORI",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 548.64,
+            "DISPONIBILITA": 18.72,
+            "SCOSTAMENTO_MQ": 529.92
+        },
+        {
+            "CODICE": "005723",
+            "DESCRIZIONE": "DECORO FLORA 60x120 Rettificato",
+            "SERIE": "TEQA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 266.4,
+            "DISPONIBILITA": -259.2,
+            "SCOSTAMENTO_MQ": 525.6
+        },
+        {
+            "CODICE": "304423",
+            "DESCRIZIONE": "RIGATINO GEOSTONE IVORY 60X120 RETT sp 9,5mm",
+            "SERIE": "GEOSTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 254.88,
+            "DISPONIBILITA": -253.44,
+            "SCOSTAMENTO_MQ": 508.32
+        },
+        {
+            "CODICE": "005950",
+            "DESCRIZIONE": "MATERIA GREIGE 60X120 RETT sp 9,5mm",
+            "SERIE": "MATERIA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2368.8,
+            "DISPONIBILITA": 1863.36,
+            "SCOSTAMENTO_MQ": 505.44
+        },
+        {
+            "CODICE": "3510995A",
+            "DESCRIZIONE": "60X120 GALACTIC GRAPHITE RETT.",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 252.0,
+            "DISPONIBILITA": -252.0,
+            "SCOSTAMENTO_MQ": 504.0
+        },
+        {
+            "CODICE": "304145",
+            "DESCRIZIONE": "GEOLOGY TERRA 60x120 Rettificato",
+            "SERIE": "GEOLOGY",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1052.64,
+            "DISPONIBILITA": 558.72,
+            "SCOSTAMENTO_MQ": 493.92
+        },
+        {
+            "CODICE": "005000",
+            "DESCRIZIONE": "60X120 RTT ERMETICA GRIGIO",
+            "SERIE": "ERMETICA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 224.64,
+            "DISPONIBILITA": -190.08,
+            "SCOSTAMENTO_MQ": 414.72
+        },
+        {
+            "CODICE": "303946",
+            "DESCRIZIONE": "PAINT ROSE' 60x120 RETT",
+            "SERIE": "PAINT",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 329.76,
+            "DISPONIBILITA": -46.08,
+            "SCOSTAMENTO_MQ": 375.84
+        },
+        {
+            "CODICE": "005505",
+            "DESCRIZIONE": "RIGAT-ONE SHELLSTONE BIANCO 60x120 Rettificato",
+            "SERIE": "SHELLSTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1303.2,
+            "DISPONIBILITA": 928.8,
+            "SCOSTAMENTO_MQ": 374.4
+        },
+        {
+            "CODICE": "005580",
+            "DESCRIZIONE": "SHELLSTONE BEIGE 60x120 Rettificato R11",
+            "SERIE": "SHELLSTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 383.04,
+            "DISPONIBILITA": 15.84,
+            "SCOSTAMENTO_MQ": 367.2
+        },
+        {
+            "CODICE": "005443",
+            "DESCRIZIONE": "HABITA MIX 60X120 RTT",
+            "SERIE": "ABITA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 368.64,
+            "DISPONIBILITA": 2.88,
+            "SCOSTAMENTO_MQ": 365.76
+        },
+        {
+            "CODICE": "304283",
+            "DESCRIZIONE": "RIGATINO SERICA IVORY 60x120 Rettificato",
+            "SERIE": "SERICA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 345.6,
+            "DISPONIBILITA": -15.84,
+            "SCOSTAMENTO_MQ": 361.44
+        },
+        {
+            "CODICE": "304396",
+            "DESCRIZIONE": "BLAZE GREIGE 60X120 RETT sp 9,5mm",
+            "SERIE": "BLAZE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2924.64,
+            "DISPONIBILITA": 2602.08,
+            "SCOSTAMENTO_MQ": 322.56
+        },
+        {
+            "CODICE": "304280",
+            "DESCRIZIONE": "SERICA CINDER 60x120 Rettificato",
+            "SERIE": "SERICA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1061.28,
+            "DISPONIBILITA": 758.88,
+            "SCOSTAMENTO_MQ": 302.4
+        },
+        {
+            "CODICE": "004440A",
+            "DESCRIZIONE": "60X120 RTT ABITA FERRO",
+            "SERIE": "ABITA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 312.48,
+            "DISPONIBILITA": 10.08,
+            "SCOSTAMENTO_MQ": 302.4
+        },
+        {
+            "CODICE": "303475A",
+            "DESCRIZIONE": "VALS LIGHT 60x120 RETT CL 35",
+            "SERIE": "PIETRA DI VALS",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 177.12,
+            "DISPONIBILITA": -122.4,
+            "SCOSTAMENTO_MQ": 299.52
+        },
+        {
+            "CODICE": "005303",
+            "DESCRIZIONE": "60X120 PORTLAND GREY RTT",
+            "SERIE": "PORTLAND",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 151.2,
+            "DISPONIBILITA": -132.48,
+            "SCOSTAMENTO_MQ": 283.68
+        },
+        {
+            "CODICE": "303525",
+            "DESCRIZIONE": "GOLDEN FERN 60X120 RTT",
+            "SERIE": "WALLPAPERS",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 151.2,
+            "DISPONIBILITA": -116.64,
+            "SCOSTAMENTO_MQ": 267.84
+        },
+        {
+            "CODICE": "303406A",
+            "DESCRIZIONE": "FABRIC GREY 60x120 RETT cl35",
+            "SERIE": "FABRIC",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1582.56,
+            "DISPONIBILITA": 1319.04,
+            "SCOSTAMENTO_MQ": 263.52
+        },
+        {
+            "CODICE": "RPL138A",
+            "DESCRIZIONE": "DEC.TENTAZIONI 60X120 RETT cl35\rRipresa grafica tra le diverse lastre contenuta entro una tolleranza di 3 mm \r",
+            "SERIE": "REPLAY",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 112.32,
+            "DISPONIBILITA": -110.88,
+            "SCOSTAMENTO_MQ": 223.2
+        },
+        {
+            "CODICE": "303711",
+            "DESCRIZIONE": "SOLID WHITE 60X120 RTT",
+            "SERIE": "SOLID",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 116.64,
+            "DISPONIBILITA": -103.68,
+            "SCOSTAMENTO_MQ": 220.32
+        },
+        {
+            "CODICE": "304424",
+            "DESCRIZIONE": "RIGATINO GEOSTONE TAUPE 60X120 RETT sp 9,5mm",
+            "SERIE": "GEOSTONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 105.12,
+            "DISPONIBILITA": -103.68,
+            "SCOSTAMENTO_MQ": 208.8
+        },
+        {
+            "CODICE": "304398",
+            "DESCRIZIONE": "BLAZE GREIGE 60X120 OUT RETT sp 9,5mm",
+            "SERIE": "MATERIALE DADO",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 100.8,
+            "DISPONIBILITA": -100.8,
+            "SCOSTAMENTO_MQ": 201.6
+        },
+        {
+            "CODICE": "304393",
+            "DESCRIZIONE": "BLAZE BEIGE 60X120 OUT RETT sp 9,5mm",
+            "SERIE": "MATERIALE DADO",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 100.8,
+            "DISPONIBILITA": -100.8,
+            "SCOSTAMENTO_MQ": 201.6
+        },
+        {
+            "CODICE": "304276",
+            "DESCRIZIONE": "RIGATINO CHARME PEARL 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 306.72,
+            "DISPONIBILITA": 144.0,
+            "SCOSTAMENTO_MQ": 162.72
+        },
+        {
+            "CODICE": "303835",
+            "DESCRIZIONE": "GARE BROWN 60X120 RTT",
+            "SERIE": "GARE DU NORD",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 67.68,
+            "DISPONIBILITA": -54.72,
+            "SCOSTAMENTO_MQ": 122.4
+        },
+        {
+            "CODICE": "005732",
+            "DESCRIZIONE": "WALK WHITE 60x120 Rettificato",
+            "SERIE": "WALK",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 2046.24,
+            "DISPONIBILITA": 1929.6,
+            "SCOSTAMENTO_MQ": 116.64
+        },
+        {
+            "CODICE": "RPL159",
+            "DESCRIZIONE": "60X120 RTT RIGATO PERLATO ANNI 70",
+            "SERIE": "ANNI 70",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 54.72,
+            "DISPONIBILITA": -54.72,
+            "SCOSTAMENTO_MQ": 109.44
+        },
+        {
+            "CODICE": "RPL160",
+            "DESCRIZIONE": "60X120 RTT RIGATO SABBIATO ANNI 70",
+            "SERIE": "ANNI 70",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 54.72,
+            "DISPONIBILITA": -53.76,
+            "SCOSTAMENTO_MQ": 108.48
+        },
+        {
+            "CODICE": "EE1493",
+            "DESCRIZIONE": "RIGATINO ARTE STONE DEEP 60X120 RETT sp 9,5mm",
+            "SERIE": "ARTE STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 50.4,
+            "DISPONIBILITA": -50.4,
+            "SCOSTAMENTO_MQ": 100.8
+        },
+        {
+            "CODICE": "EE1494",
+            "DESCRIZIONE": "RIGATINO ARTE STONE DUNE 60X120 RETT sp 9,5mm",
+            "SERIE": "ARTE STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 50.4,
+            "DISPONIBILITA": -50.4,
+            "SCOSTAMENTO_MQ": 100.8
+        },
+        {
+            "CODICE": "005648",
+            "DESCRIZIONE": "JUMBO MIX 60x120 RETT",
+            "SERIE": "ABITA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 50.4,
+            "DISPONIBILITA": -50.4,
+            "SCOSTAMENTO_MQ": 100.8
+        },
+        {
+            "CODICE": "303524",
+            "DESCRIZIONE": "BRONZE FERN 60X120 RETT",
+            "SERIE": "WALLPAPERS",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 50.4,
+            "DISPONIBILITA": -40.32,
+            "SCOSTAMENTO_MQ": 90.72
+        },
+        {
+            "CODICE": "303710",
+            "DESCRIZIONE": "SOLID BEIGE 60X120 RTT",
+            "SERIE": "SOLID",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 43.2,
+            "DISPONIBILITA": -43.2,
+            "SCOSTAMENTO_MQ": 86.4
+        },
+        {
+            "CODICE": "004915A",
+            "DESCRIZIONE": "60X120 UNIKA SAND RETT. cl35",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 200.16,
+            "DISPONIBILITA": 125.28,
+            "SCOSTAMENTO_MQ": 74.88
+        },
+        {
+            "CODICE": "RPL161",
+            "DESCRIZIONE": "60X120 RTT RIGATO ROSATO ANNI 70",
+            "SERIE": "ANNI 70",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 30.24,
+            "DISPONIBILITA": -30.48,
+            "SCOSTAMENTO_MQ": 60.72
+        },
+        {
+            "CODICE": "NWS213",
+            "DESCRIZIONE": "RIGATINO NEW STONE LEPRE 60x120 RETT",
+            "SERIE": "NEW STONE",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 1010.88,
+            "DISPONIBILITA": 954.72,
+            "SCOSTAMENTO_MQ": 56.16
+        },
+        {
+            "CODICE": "EX6011A",
+            "DESCRIZIONE": "60X120 RTT EXTRA TAPPETO GREY",
+            "SERIE": "EXTRA",
+            "FORMATO": "60X120 RTT",
+            "QTA_DA_CONSEGNARE": 201.6,
+            "DISPONIBILITA": 149.76,
+            "SCOSTAMENTO_MQ": 51.84
+        }
+    ],
+    "conclusions": "Suggerisco le azioni operative seguenti:\n1) Prioritizzare la produzione/trasferimenti per i codici con maggiore scostamento (prime righe dell'elenco).  \n2) Verificare con commerciale la conferma degli ordini più critici e valutare eventuali postponimenti o frazionamenti di consegna.  \n3) Se necessario, chiedo di confermare se vuoi: (a) il dettaglio per deposito/tono, (b) una top-10 prioritaria, o (c) la riconciliazione con i pallet prodotti nelle ultime 2 settimane per pianificare interventi immediati."
+}

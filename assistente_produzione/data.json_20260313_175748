@@ -1,0 +1,92 @@
+{
+    "user_request": "cosa devo produrre degli 60x60?",
+    "report_title": "Raccomandazione produzione per formato 60x60 (sulla base produzione ultimi 30 giorni)",
+    "summary": "Non ho accesso alle informazioni di giacenza, disponibilità o ordini (vista pa_ff_code non leggibile per permessi), quindi la raccomandazione si basa esclusivamente sulla produzione registrata negli ultimi 30 giorni. I 6 articoli elencati sono stati i principali prodotti in 60x60 nell'ultimo mese: insieme rappresentano il volume produttivo rilevante. Suggerisco un piano operativo provvisorio basato sui volumi recenti (copertura settimanale stimata), prioritizzando i primi 3 articoli. Per ottimizzare realmente le quantità serve conoscere giacenze e ordini inevasi; senza questi dati la proposta mira a mantenere continuità produttiva e ridurre il rischio di rotture immediate.",
+    "table_data": [
+        {
+            "article_code": "004151",
+            "format": "60x60",
+            "recent_m2_30d": 3183.84,
+            "recent_pallets_30d": 148,
+            "recent_pieces_30d": 8844,
+            "first_production_date": "2026-02-15",
+            "last_production_date": "2026-02-15",
+            "tone": "unknown",
+            "series": "unknown",
+            "stock_info": "non disponibile (permessi negati)",
+            "recommended_m2_per_week": 742,
+            "priority": "alta"
+        },
+        {
+            "article_code": "004154",
+            "format": "60x60",
+            "recent_m2_30d": 3078.0,
+            "recent_pallets_30d": 143,
+            "recent_pieces_30d": 8550,
+            "first_production_date": "2026-02-16",
+            "last_production_date": "2026-02-16",
+            "tone": "unknown",
+            "series": "unknown",
+            "stock_info": "non disponibile (permessi negati)",
+            "recommended_m2_per_week": 717,
+            "priority": "alta"
+        },
+        {
+            "article_code": "Q.1022-U",
+            "format": "60x60",
+            "recent_m2_30d": 2978.64,
+            "recent_pallets_30d": 138,
+            "recent_pieces_30d": 8274,
+            "first_production_date": "2026-02-17",
+            "last_production_date": "2026-02-17",
+            "tone": "unknown",
+            "series": "unknown",
+            "stock_info": "non disponibile (permessi negati)",
+            "recommended_m2_per_week": 696,
+            "priority": "alta"
+        },
+        {
+            "article_code": "EM28581555",
+            "format": "60x60",
+            "recent_m2_30d": 2795.04,
+            "recent_pallets_30d": 130,
+            "recent_pieces_30d": 7764,
+            "first_production_date": "2026-02-13",
+            "last_production_date": "2026-02-13",
+            "tone": "unknown",
+            "series": "unknown",
+            "stock_info": "non disponibile (permessi negati)",
+            "recommended_m2_per_week": 651,
+            "priority": "media"
+        },
+        {
+            "article_code": "303794",
+            "format": "60x60",
+            "recent_m2_30d": 2401.92,
+            "recent_pallets_30d": 112,
+            "recent_pieces_30d": 6672,
+            "first_production_date": "2026-02-14",
+            "last_production_date": "2026-02-14",
+            "tone": "unknown",
+            "series": "unknown",
+            "stock_info": "non disponibile (permessi negati)",
+            "recommended_m2_per_week": 560,
+            "priority": "media"
+        },
+        {
+            "article_code": "004409",
+            "format": "60x60",
+            "recent_m2_30d": 1978.56,
+            "recent_pallets_30d": 92,
+            "recent_pieces_30d": 5496,
+            "first_production_date": "2026-02-12",
+            "last_production_date": "2026-02-13",
+            "tone": "unknown",
+            "series": "unknown",
+            "stock_info": "non disponibile (permessi negati)",
+            "recommended_m2_per_week": 461,
+            "priority": "bassa"
+        }
+    ],
+    "conclusions": "Proposta operativa provvisoria: mantieni la produzione in linea con i volumi recenti e prioritizza i primi tre articoli (004151, 004154, Q.1022-U). Le quantità raccomandate sono stime settimanali derivate dalla produzione degli ultimi 30 giorni (arrotondate): servono come piano di continuità, non come target ottimizzato. Azioni consigliate per affinare il piano:\n1) Abilitare l'accesso alle viste di stock (pa_ff_code / dashboard_productavailability) in modo che io possa calcolare shortage reali e suggerire quantità ottimali per articolo/tono.\n2) Se non possibile, fornire per ogni articolo il dato di giacenza attuale e ordini inevasi (m2): aggiornerò immediatamente le raccomandazioni.\n3) Se vuoi un piano operativo distinto (copertura per 1, 2 o 4 settimane) dimmi l'orizzonte e il vincolo di produzione (es. capacità linee in m2/settimana) e trasformo le stime in un piano settimanale dettagliato.\nDimmi quale opzione preferisci e procedo con l'aggiornamento."
+}

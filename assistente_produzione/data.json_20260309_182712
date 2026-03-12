@@ -1,0 +1,160 @@
+{
+    "user_request": "Quali articoli hanno mostrato piu variabilita nelle prove di assorbimento?",
+    "report_title": "Top 20 articoli per variabilità nelle prove di assorbimento (CV%)",
+    "summary": "Ho calcolato per articolo la media, la deviazione standard e il coefficiente di variazione (CV%) delle prove di assorbimento, usando solo articoli con almeno 3 misure per garantire robustezza statistica. La classifica è ordinata per CV% decrescente e mostra i 20 articoli con maggiore variabilità relativa nelle misure di assorbimento.",
+    "table_data": [
+        {
+            "CodeArt": "PT0321",
+            "Description": "60X120 HW DECK MIELE (sfuso)",
+            "n_tests": 6,
+            "avg_abs": 0.0117,
+            "std_abs": 0.3688,
+            "cv_pct": 3160.76
+        },
+        {
+            "CodeArt": "PT0092",
+            "Description": "60X120 SIERRA GRIGIO",
+            "n_tests": 31,
+            "avg_abs": 0.1197,
+            "std_abs": 0.6939,
+            "cv_pct": 579.77
+        },
+        {
+            "CodeArt": "303571",
+            "Description": "60X60 NEW SCOUT FOG RT Sp20mm dado",
+            "n_tests": 9,
+            "avg_abs": 0.9389,
+            "std_abs": 2.0621,
+            "cv_pct": 219.63
+        },
+        {
+            "CodeArt": "SF0030",
+            "Description": "BASIC GREY 81X81 (sfuso)",
+            "n_tests": 10,
+            "avg_abs": 0.724,
+            "std_abs": 1.5614,
+            "cv_pct": 215.66
+        },
+        {
+            "CodeArt": "SF0518",
+            "Description": "GARE LIGHT GREY 81X81 (sfuso)",
+            "n_tests": 22,
+            "avg_abs": 0.1027,
+            "std_abs": 0.2095,
+            "cv_pct": 203.9
+        },
+        {
+            "CodeArt": "SF0077",
+            "Description": "SUPREME CALACATTA",
+            "n_tests": 4,
+            "avg_abs": 0.0207,
+            "std_abs": 0.0359,
+            "cv_pct": 173.21
+        },
+        {
+            "CodeArt": "PT0380",
+            "Description": "IKON ALPS (GREY) 60X120 (sfuso)",
+            "n_tests": 17,
+            "avg_abs": 0.0994,
+            "std_abs": 0.1713,
+            "cv_pct": 172.29
+        },
+        {
+            "CodeArt": "SFO037",
+            "Description": "NEW SCOUT BEIGE 81X81 SP20(sfuso)",
+            "n_tests": 49,
+            "avg_abs": 0.3061,
+            "std_abs": 0.513,
+            "cv_pct": 167.58
+        },
+        {
+            "CodeArt": "SF0701",
+            "Description": "ULTRA ASPEN ANTRACITE 40X80 SP20 (sfuso)",
+            "n_tests": 15,
+            "avg_abs": 0.146,
+            "std_abs": 0.2431,
+            "cv_pct": 166.52
+        },
+        {
+            "CodeArt": "SF0638",
+            "Description": "ULTRA ASPEN GRIGIO SP20 81X81 (sfuso)",
+            "n_tests": 27,
+            "avg_abs": 0.1778,
+            "std_abs": 0.2758,
+            "cv_pct": 155.16
+        },
+        {
+            "CodeArt": "PT0021",
+            "Description": "SANDALO 60X120(sfuso)",
+            "n_tests": 35,
+            "avg_abs": 0.1646,
+            "std_abs": 0.2203,
+            "cv_pct": 133.87
+        },
+        {
+            "CodeArt": "PT0095",
+            "Description": "GELSOMINO Sp17 81X81 (sfuso)",
+            "n_tests": 5,
+            "avg_abs": 0.364,
+            "std_abs": 0.4796,
+            "cv_pct": 131.76
+        },
+        {
+            "CodeArt": "SF0796",
+            "Description": "60X120 CHARME BLACK (sfuso)",
+            "n_tests": 42,
+            "avg_abs": 0.2988,
+            "std_abs": 0.3903,
+            "cv_pct": 130.63
+        },
+        {
+            "CodeArt": "SF0700",
+            "Description": "ULTRA ASPEN GRIGIO 40X80 SP20 (sfuso)",
+            "n_tests": 9,
+            "avg_abs": 0.2644,
+            "std_abs": 0.3442,
+            "cv_pct": 130.16
+        },
+        {
+            "CodeArt": "SF1033",
+            "Description": "NEW STONE DAINO 60X120 (sfuso)",
+            "n_tests": 25,
+            "avg_abs": 0.3812,
+            "std_abs": 0.4685,
+            "cv_pct": 122.89
+        },
+        {
+            "CodeArt": "SF0865",
+            "Description": "FONDO BIANCO ANNI 70 60X120 (sfuso)",
+            "n_tests": 8,
+            "avg_abs": 0.3013,
+            "std_abs": 0.3378,
+            "cv_pct": 112.13
+        },
+        {
+            "CodeArt": "004384",
+            "Description": "60X60 NEW RIYADH BLACK SP20 RT",
+            "n_tests": 8,
+            "avg_abs": 0.1013,
+            "std_abs": 0.112,
+            "cv_pct": 110.58
+        },
+        {
+            "CodeArt": "303627",
+            "Description": "60X60 NEW ULTRA VALS LIGHT RT Sp20mm",
+            "n_tests": 28,
+            "avg_abs": 0.2311,
+            "std_abs": 0.2476,
+            "cv_pct": 107.17
+        },
+        {
+            "CodeArt": "303572",
+            "Description": "NEW SCOUT BLACK 60X60 RETT Sp2",
+            "n_tests": 8,
+            "avg_abs": 0.1088,
+            "std_abs": 0.1149,
+            "cv_pct": 105.69
+        }
+    ],
+    "conclusions": "Gli articoli in cima alla lista mostrano elevata variabilità relativa nelle misure di assorbimento (CV%). Azioni consigliate: 1) verificare per ciascun CodeArt i singoli risultati nel tempo (es. per tono/lotti) per capire se la variabilità è dovuta a lotti diversi o a misure isolate; 2) controllare la procedura di prova e gli operatori sui test con CV molto elevato (possibili errori di misura o outlier); 3) per articoli con media di assorbimento molto bassa ma CV altissimo, valutare se la variabilità ha impatto funzionale/di qualità; 4) se necessario, aumentare il numero di prove su articoli critici per stabilizzare la stima. Se vuoi, posso: fornire il dettaglio delle misure per uno o più CodeArt selezionati, raggruppare la variabilità per tono/lotto o includere anche articoli con meno di 3 prove."
+}

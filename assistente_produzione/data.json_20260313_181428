@@ -1,0 +1,228 @@
+{
+    "user_request": "e dei 60X60?",
+    "report_title": "Articoli 60x60 con ordini superiori alla disponibilità (Top 20 per shortage)",
+    "summary": "Ho verificato gli articoli formato 60x60 confrontando ordini da consegnare con la disponibilità. Risultano 64 articoli con ordini che superano la disponibilità; qui sotto trovi la top 20 ordinata per shortage (m² mancanti rispetto alla disponibilità). I formati includono sia rettificati (RTT) che spessori 20mm (SP20/outdoor). Questi articoli sono i candidati prioritari per produzione urgente o ripianificazione commerciale/di magazzino.",
+    "table_data": [
+        {
+            "codice": "FI60BE",
+            "descrizione": "60X60 RTT. FIRENZE BEIGE SP. 8,5MM",
+            "serie": "B&B",
+            "formato": "60X60 RTT",
+            "min_stock_m2": 500.0,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -9000.0,
+            "qta_da_consegnare_m2": 9000.0,
+            "shortage_m2": 9000.0
+        },
+        {
+            "codice": "FI60L.GRE",
+            "descrizione": "60X60 RTT. FIRENZE LIGHT GREY SP. 8,5MM",
+            "serie": "B&B",
+            "formato": "60X60 RTT",
+            "min_stock_m2": 500.0,
+            "giacenza_m2": 115.2,
+            "disponibilita_m2": -8884.8,
+            "qta_da_consegnare_m2": 9000.0,
+            "shortage_m2": 8884.8
+        },
+        {
+            "codice": "VENGR68",
+            "descrizione": "60X60 RTT. VENEZIA GREY SP. 8,5MM",
+            "serie": "B&B",
+            "formato": "60X60 RTT",
+            "min_stock_m2": 500.0,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -8001.0,
+            "qta_da_consegnare_m2": 8001.0,
+            "shortage_m2": 8001.0
+        },
+        {
+            "codice": "005407",
+            "descrizione": "AVRY GRIS 60x60 RETT 20mm",
+            "serie": "OUTDOOR - NO CATALOGO",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 1235.52,
+            "disponibilita_m2": -5873.76,
+            "qta_da_consegnare_m2": 7109.28,
+            "shortage_m2": 5873.76
+        },
+        {
+            "codice": "303606",
+            "descrizione": "ULTRA GARE GRAPHITE 60X60 RTT 20MM",
+            "serie": "OUTDOOR",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 4127.04,
+            "disponibilita_m2": -5754.96,
+            "qta_da_consegnare_m2": 9882.0,
+            "shortage_m2": 5754.96
+        },
+        {
+            "codice": "BNLLI68",
+            "descrizione": "BENELUX LIGHT 60X60 RETT 8mm",
+            "serie": "BENELUX",
+            "formato": "60X60 RTT",
+            "min_stock_m2": 500.0,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -4838.4,
+            "qta_da_consegnare_m2": 4838.4,
+            "shortage_m2": 4838.4
+        },
+        {
+            "codice": "EM28723555",
+            "descrizione": "60X60 SARONE CASTAGNO RTT SP20",
+            "serie": "SELTRA",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -4780.8,
+            "qta_da_consegnare_m2": 4780.8,
+            "shortage_m2": 4780.8
+        },
+        {
+            "codice": "304364",
+            "descrizione": "TEKNOGRES CONCRETE BLACK 60x60 RETT SP 20mm",
+            "serie": "OUTDOOR",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 3121.2,
+            "disponibilita_m2": -4227.12,
+            "qta_da_consegnare_m2": 7348.32,
+            "shortage_m2": 4227.12
+        },
+        {
+            "codice": "005425",
+            "descrizione": "60x60 RTT ORBE GRIS SP 20 MM",
+            "serie": "MATERIALE C/TERZI UNA TANTUM",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 635.04,
+            "disponibilita_m2": -3879.36,
+            "qta_da_consegnare_m2": 4514.4,
+            "shortage_m2": 3879.36
+        },
+        {
+            "codice": "304363",
+            "descrizione": "TEKNOGRES CONCRETE GREY 60x60 RETT SP 20mm",
+            "serie": "OUTDOOR",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 1481.76,
+            "disponibilita_m2": -3002.4,
+            "qta_da_consegnare_m2": 4484.16,
+            "shortage_m2": 3002.4
+        },
+        {
+            "codice": "VI28164377",
+            "descrizione": "60x60 RTT DONNA SP 20 MM",
+            "serie": "SELTRA",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 3391.2,
+            "disponibilita_m2": -2404.8,
+            "qta_da_consegnare_m2": 5796.0,
+            "shortage_m2": 2404.8
+        },
+        {
+            "codice": "004178",
+            "descrizione": "60X60 PALERMO BEIGE RTT",
+            "serie": "MATERIALE EUROBAUSTOF",
+            "formato": "60X60 RTT",
+            "min_stock_m2": 500.0,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -2291.4,
+            "qta_da_consegnare_m2": 2291.4,
+            "shortage_m2": 2291.4
+        },
+        {
+            "codice": "EE1486",
+            "descrizione": "ARTE STONE DEEP 60X60 Rettificato 8mm",
+            "serie": "ARTE STONE",
+            "formato": "60X60 RTT",
+            "min_stock_m2": 500.0,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -2124.0,
+            "qta_da_consegnare_m2": 2124.0,
+            "shortage_m2": 2124.0
+        },
+        {
+            "codice": "EM28581555",
+            "descrizione": "60x60 RTT LIBERTY LIGHT SP 20 MM",
+            "serie": "SELTRA",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 2492.64,
+            "disponibilita_m2": -2007.36,
+            "qta_da_consegnare_m2": 4500.0,
+            "shortage_m2": 2007.36
+        },
+        {
+            "codice": "BNLPE68",
+            "descrizione": "BENELUX PEARL 60X60 RETT 8mm",
+            "serie": "BENELUX",
+            "formato": "60X60 RTT",
+            "min_stock_m2": 500.0,
+            "giacenza_m2": 99.0,
+            "disponibilita_m2": -1918.8,
+            "qta_da_consegnare_m2": 2017.8,
+            "shortage_m2": 1918.8
+        },
+        {
+            "codice": "EE1485",
+            "descrizione": "ARTE STONE CRYSTAL 60X60 Rettificato 8mm",
+            "serie": "ARTE STONE",
+            "formato": "60X60 RTT",
+            "min_stock_m2": 500.0,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -1843.2,
+            "qta_da_consegnare_m2": 1843.2,
+            "shortage_m2": 1843.2
+        },
+        {
+            "codice": "304381",
+            "descrizione": "BLAZE COTTO 60X60 Rettificato 8mm",
+            "serie": "BLAZE",
+            "formato": "60X60 RTT",
+            "min_stock_m2": 500.0,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -1643.4,
+            "qta_da_consegnare_m2": 1643.4,
+            "shortage_m2": 1643.4
+        },
+        {
+            "codice": "303794",
+            "descrizione": "ULTRA MANSION WARM 60x60 RETT 20mm",
+            "serie": "OUTDOOR",
+            "formato": "60X60 SP20",
+            "min_stock_m2": null,
+            "giacenza_m2": 3201.84,
+            "disponibilita_m2": -1447.2,
+            "qta_da_consegnare_m2": 4649.04,
+            "shortage_m2": 1447.2
+        },
+        {
+            "codice": "QST042",
+            "descrizione": "QUEEN STONE SABBIA 60X60 RETT 8mm",
+            "serie": "QUEEN STONE - PETRUS",
+            "formato": "60X60 RTT",
+            "min_stock_m2": 500.0,
+            "giacenza_m2": 1988.0,
+            "disponibilita_m2": -1442.8,
+            "qta_da_consegnare_m2": 3430.8,
+            "shortage_m2": 1442.8
+        },
+        {
+            "codice": "SOLWHI68",
+            "descrizione": "SOLUTION WHITE 60X60 RETT 8,5 mm",
+            "serie": "SOLUTION",
+            "formato": "60X60 RTT",
+            "min_stock_m2": 500.0,
+            "giacenza_m2": 190.8,
+            "disponibilita_m2": -1346.4,
+            "qta_da_consegnare_m2": 1537.2,
+            "shortage_m2": 1346.4
+        }
+    ],
+    "conclusions": "Operativamente: 1) Priorità alta: partire a produrre gli articoli con shortage maggiori (in particolare FI60BE, FI60L.GRE, VENGR68) per ridurre i gap più grandi. 2) Distinguere indoor (RTT, spessori sottili) da outdoor (SP20): produzione e impianti/linee possono essere diversi; pianificare batch separati. 3) Verificare vincoli di linea e disponibilità materie prime per gli articoli top prima di confermare i lotti. 4) Azioni consigliate subito (scegli cosa vuoi che esegua): A) estrarre la lista completa (tutte le 64 righe) per inviare a pianificazione; B) controllo sottoscorta (GIACENZA < MIN) sul formato 60x60; C) calcolo suggerito di mq da produrre per coprire shortage e riportare a MIN/30 giorni (posso trasformare in piano pallet/turni); D) dettaglio per deposito/tono per valutare movimentazioni interne (serve get_stock_risk_by_deposit). Dimmi quale azione preferisci (A/B/C/D o combinazioni) e procedo con l'analisi richiesta."
+}

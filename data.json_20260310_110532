@@ -1,0 +1,85 @@
+{
+    "user_request": "Confronta la produzione di questo mese con il mese scorso.",
+    "report_title": "Confronto produzione: mese corrente vs mese precedente",
+    "summary": "Nel mese corrente sono stati prodotti complessivamente 210,44 m² su 8 pallet (394 pezzi). Nel mese precedente non risulta produzione registrata per gli stessi aggregati (0 m²). La produzione di questo mese è concentrata soprattutto sulla Linea 3 (180,00 m²) e sul tono R154 (136,80 m²). Per molte righe il confronto percentuale non è calcolabile perché il mese precedente ha valore 0.",
+    "table_data": [
+        {
+            "category": "TOTAL",
+            "category_value": null,
+            "total_m2_cur": 210.44,
+            "total_m2_prev": 0.0,
+            "pallets_cur": 8,
+            "pallets_prev": 0,
+            "pieces_cur": 394,
+            "pieces_prev": 0,
+            "pct_change_m2": null
+        },
+        {
+            "category": "LINEA",
+            "category_value": "1",
+            "total_m2_cur": 17.0,
+            "total_m2_prev": 0.0,
+            "pallets_cur": 2,
+            "pallets_prev": 0,
+            "pieces_cur": 102,
+            "pieces_prev": 0,
+            "pct_change_m2": null
+        },
+        {
+            "category": "LINEA",
+            "category_value": "2",
+            "total_m2_cur": 13.44,
+            "total_m2_prev": 0.0,
+            "pallets_cur": 2,
+            "pallets_prev": 0,
+            "pieces_cur": 42,
+            "pieces_prev": 0,
+            "pct_change_m2": null
+        },
+        {
+            "category": "LINEA",
+            "category_value": "3",
+            "total_m2_cur": 180.0,
+            "total_m2_prev": 0.0,
+            "pallets_cur": 4,
+            "pallets_prev": 0,
+            "pieces_cur": 250,
+            "pieces_prev": 0,
+            "pct_change_m2": null
+        },
+        {
+            "category": "TONO",
+            "category_value": "R044",
+            "total_m2_cur": 7.68,
+            "total_m2_prev": 0.0,
+            "pallets_cur": 1,
+            "pallets_prev": 0,
+            "pieces_cur": 24,
+            "pieces_prev": 0,
+            "pct_change_m2": null
+        },
+        {
+            "category": "TONO",
+            "category_value": "R154",
+            "total_m2_cur": 136.8,
+            "total_m2_prev": 0.0,
+            "pallets_cur": 3,
+            "pallets_prev": 0,
+            "pieces_cur": 190,
+            "pieces_prev": 0,
+            "pct_change_m2": null
+        },
+        {
+            "category": "TONO",
+            "category_value": "R224",
+            "total_m2_cur": 17.0,
+            "total_m2_prev": 0.0,
+            "pallets_cur": 2,
+            "pallets_prev": 0,
+            "pieces_cur": 102,
+            "pieces_prev": 0,
+            "pct_change_m2": null
+        }
+    ],
+    "conclusions": "Osservazioni operative e next steps:\n- Il mese corrente mostra produzione registrata (210,44 m²) mentre il mese precedente risulta a 0 m²: questo rende impossibile un confronto percentuale diretto per la maggior parte delle voci. \n- Azioni consigliate: 1) verificare la completezza dei dati del mese precedente (possibile assenza di registrazioni o filtro non voluto); 2) confermare se l'esecuzione era limitata a certe linee/toni (qui la Linea 3 e il tono R154 sono predominanti); 3) se serve un confronto più robusto, estendere il periodo (ultimi 3–6 mesi) o confrontare su base mobile (es. rolling 30 giorni).\n- Se vuoi, posso: a) fornire il dettaglio pallet per pallet di questi due mesi; b) ripetere il confronto includendo anche i pallet espulsi; c) estendere l’analisi su periodo più lungo o generare grafici di trend."
+}

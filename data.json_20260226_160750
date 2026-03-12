@@ -1,0 +1,18 @@
+{
+    "user_request": "raggruppali per mese per tutto l'anno 2026",
+    "report_title": "Produzione Pallet Mensile nell'Anno 2026",
+    "summary": "Il report mostra la quantità totale di pallet prodotti per ciascun mese dell'anno 2026.",
+    "table_data": [
+        {
+            "Mese": "Gennaio",
+            "Anno": 2026,
+            "PalletProdotti": 6405
+        },
+        {
+            "Mese": "Febbraio",
+            "Anno": 2026,
+            "PalletProdotti": 6021
+        }
+    ],
+    "conclusions": "Dai dati risulta che nei primi due mesi del 2026 la produzione di pallet è stata elevata e abbastanza costante, con gennaio leggermente superiore a febbraio. Non avendo dati per gli altri mesi, non è possibile valutare l'andamento dell'intero anno, ma i valori finora indicano una buona produttività mensile."
+}

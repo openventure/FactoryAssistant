@@ -1,0 +1,15 @@
+{
+    "user_request": "Qual è la produzione giornaliera media per linea nell’ultimo mese?",
+    "report_title": "Produzione giornaliera media per linea - ultimi 30 giorni (tentativo fallito)",
+    "summary": "Ho interpretato \"ultimo mese\" come gli ultimi 30 giorni (periodo: da GETDATE()-30 a ieri). L'analisi prevista restituisce per ogni linea: 1) totale m² prodotti negli ultimi 30 giorni, 2) media giornaliera considerando tutti i 30 giorni (inclusi giorni senza produzione), 3) media giornaliera calcolata solo sui giorni con produzione. Non sono riuscito a eseguire la query sul database a causa di un errore di connessione. Qui sotto trovi la query pronta da eseguire e le opzioni operative proposte.",
+    "table_data": [
+        {
+            "status": "error",
+            "error_message": "Connessione al database SQL Server non riuscita (errore di rete).",
+            "failed_action": "Esecuzione query non completata",
+            "suggested_query": "WITH daily AS (\n  SELECT Line,\n         CAST(START_DATETIME AS DATE) AS prod_day,\n         SUM(CAST(CALC_MQ AS DECIMAL(18,4))) AS daily_mq\n  FROM PALLET_PRODUCTION\n  WHERE START_DATETIME >= DATEADD(DAY, -30, GETDATE())\n    AND START_DATETIME < GETDATE()\n  GROUP BY Line, CAST(START_DATETIME AS DATE)\n),\nTotals AS (\n  SELECT Line,\n         SUM(daily_mq) AS total_mq,\n         AVG(daily_mq) AS avg_active_day_mq\n  FROM daily\n  GROUP BY Line\n)\nSELECT t.Line AS Linea,\n       CAST(t.total_mq AS DECIMAL(18,4)) AS Totale_m2_ultimi_30gg,\n       CAST(t.total_mq / 30.0 AS DECIMAL(18,4)) AS Media_giornaliera_inclusi_zeri_m2,\n       CAST(t.avg_active_day_mq AS DECIMAL(18,4)) AS Media_giornaliera_solo_giorni_con_produzione_m2\nFROM Totals t\nORDER BY Media_giornaliera_inclusi_zeri_m2 DESC;",
+            "notes": "La query restituisce per ogni Linea: Totale m² negli ultimi 30 giorni, media giornaliera su 30 giorni e media sui soli giorni con produzione."
+        }
+    ],
+    "conclusions": "Non avendo potuto interrogare il database per un problema di connessione, non ho valori numerici da riportare. Prossimi passi consigliati: 1) Vuoi che ritenti l'esecuzione ora? Posso riprovare a eseguire la query. 2) Preferisci usare il mese solare precedente (es. 1–ultimo giorno del mese scorso) invece degli ultimi 30 giorni? Posso adattare la query. 3) Vuoi includere anche le linee con zero produzione esplicitamente (attualmente la query mostra solo linee con almeno un pallet negli ultimi 30 giorni)? Dimmi la preferenza e rilancio l'esecuzione."
+}

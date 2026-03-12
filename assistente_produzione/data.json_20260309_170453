@@ -1,0 +1,378 @@
+{
+    "user_request": "Quali articoli 60x120 hanno ordini superiori alla disponibilita attuale?",
+    "report_title": "Articoli 60x120 con ordini > disponibilità",
+    "summary": "Ho estratto gli articoli il cui FORMATO contiene '60x120' e per i quali la somma degli ordini da consegnare supera la giacenza totale (valori aggregati su tutti i depositi). Le quantità sono espresse in m². La colonna TONI riporta i codici tono associati all'articolo (aggregati). Se vuoi che il controllo sia limitato a un deposito specifico o a un singolo tono, posso rifare l'analisi con quel filtro.",
+    "table_data": [
+        {
+            "CODICE": "303405A",
+            "DESCRIZIONE": "FABRIC WHITE 60x120 RETT CL 35",
+            "SERIE": "FABRIC",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.0164.-,1.0184.-,1.0634.-,1.124.-,1.154B.-,1.164.-,1.174B.-,1.184.-,1.194.-,1.198.-,1.204.-,1.214.-,1.224.-,1.234.-,1.254B.-,1.504.1,1.504B.0,1.9504B.0,1.P504.0,1.P504.1,1.P504.9,1.P504B.-,1.P504B.0,1.P504B.1,1.P504B.9,1.P504D.-,1.P504D.0,1.P504D.1,1.P504D.9,1.P505.0,1.P505.1,1.P505.9,1.P505B.-,1.P505B.0,1.P505D.0,1.P505D.1,1.P505D.9,1.P514B.0,1.R0184B.-,1.R0184D.-,1.R074B.-,1.R094E.-,1.R114B.-,1.R124B.-,1.R134.-,1.R134B.-,1.R134D.-,1.R145.-,1.R154.-,1.R154B.-,1.R154BD.-,1.R164.-,1.R164B.-,1.R164E.-,1.R164R.-,1.R174.-,1.R174B.-,1.R174D.-,1.R175B.-,1.R184.-,1.R184B.-,1.R184BD.-,1.R184D.-,1.R184L.-,1.R194.-,1.R194B.-,1.R194D.-,1.R194DE.-,1.R198.-,1.R198B.-,1.R198D.-,1.R204.-,1.R204B.-,1.R204D.-,1.R214.-,1.R214B.-,1.R214D.-,1.R214L.-,1.R224.-,1.R224B.-,1.R224D.-,1.R234.-,1.R234B.-,1.R234E.-,1.R244.-,1.R244B.-,1.R244D.-,1.R254.-,1.R254B.-,1.R254D.-,1.R264.-,1.R264D.-",
+            "total_giacenza_m2": 8919.36,
+            "total_da_consegnare_m2": 588409.92,
+            "shortage_m2": 579490.56
+        },
+        {
+            "CODICE": "303467A",
+            "DESCRIZIONE": "BASIC LIGHT GREY 60X120 RETT CL 35",
+            "SERIE": "BASIC",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.*.72,1.124B.-,1.134B.-,1.P504.0,1.P504.1,1.P504.9,1.P504B.-,1.P504B.0,1.P504D.0,1.R095.-,1.R104.-,1.R114.-,1.R114B.-,1.R114D.-,1.R114L.-,1.R124B.-,1.R124E.-,1.R134.-,1.R134B.-,1.R134D.-,1.R144B.-,1.R144D.-,1.R144E.-,1.R154.-,1.R154B.-,1.R154D.-,1.R154E.-,1.R154L.-,1.R164B.-,1.R164D.-,1.R174.-,1.R174B.-,1.R174E.-,1.R184B.-,1.R184D.-,1.R194B.-,1.R194D.-,1.R204D.-,1.R254B.-",
+            "total_giacenza_m2": 15143.04,
+            "total_da_consegnare_m2": 506800.8,
+            "shortage_m2": 491657.76
+        },
+        {
+            "CODICE": "303525A",
+            "DESCRIZIONE": "GOLDEN FERN 60x120 RETT CL 35",
+            "SERIE": "WALLPAPERS",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.000.*,1.0184.-,1.084.-,1.124.-,1.134.-,1.144.-,1.154.-,1.164.-,1.174.-,1.184.-,1.194.-,1.194L.-,1.204.-,1.214.-,1.R0204L.-,1.R074.-,1.R085L.-,1.R094DL.-,1.R104.-,1.R104L.-,1.R124.-,1.R124L.-,1.R134.-,1.R134D.-,1.R134L.-,1.R134LR.-,1.R144.-,1.R154.-,1.R154E.-,1.R154L.-,1.R154R.-,1.R164.-,1.R164D.-,1.R164DL.-,1.R164L.-,1.R164LD.-,1.R174.-,1.R174D.-,1.R174L.-,1.R174LD.-,1.R184.-,1.R184D.-,1.R184DE.-,1.R184DL.-,1.R184DL.208,1.R184L.-,1.R184L.D,1.R184LD.-,1.R194.-,1.R194.LEROY,1.R194D.-,1.R194D.LEROY,1.R204.-,1.R204.L,1.R204D.-,1.R204L.-,1.R214.-,1.R214D.-,1.R214L.-,1.R224.-,1.R224D.-",
+            "total_giacenza_m2": 9733.68,
+            "total_da_consegnare_m2": 424670.4,
+            "shortage_m2": 414936.72
+        },
+        {
+            "CODICE": "304040",
+            "DESCRIZIONE": "CHARME GREY 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.014.-,1.024.-,1.034.-,1.044.-,1.054.-,1.R004.-,1.R004E.-,1.R004R.-,1.R005.-,1.R014.-,1.R024.-,1.R024D.-,1.R034.-,1.R044.-,1.R044D.-,1.R054.-,1.R054D.-,1.R054E.-,1.R064D.-,1.R14.-,1.R14E.-,1.R14R.-,1.R24.-,1.R24E.-,1.R34.-,1.R34E.-,1.R34R.-,1.R44.-,1.R44E.-,1.R54.-,1.R64.-",
+            "total_giacenza_m2": 8314.56,
+            "total_da_consegnare_m2": 168220.8,
+            "shortage_m2": 159906.24
+        },
+        {
+            "CODICE": "303525A",
+            "DESCRIZIONE": "GOLDEN FERN 60X120 RTT",
+            "SERIE": "WALLPAPERS",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.000.*,1.0184.-,1.084.-,1.124.-,1.134.-,1.144.-,1.154.-,1.164.-,1.174.-,1.184.-,1.194.-,1.194L.-,1.204.-,1.214.-,1.R0204L.-,1.R074.-,1.R085L.-,1.R094DL.-,1.R104.-,1.R104L.-,1.R124.-,1.R124L.-,1.R134.-,1.R134D.-,1.R134L.-,1.R134LR.-,1.R144.-,1.R154.-,1.R154E.-,1.R154L.-,1.R154R.-,1.R164.-,1.R164D.-,1.R164DL.-,1.R164L.-,1.R164LD.-,1.R174.-,1.R174D.-,1.R174L.-,1.R174LD.-,1.R184.-,1.R184D.-,1.R184DE.-,1.R184DL.-,1.R184DL.208,1.R184L.-,1.R184L.D,1.R184LD.-,1.R194.-,1.R194.LEROY,1.R194D.-,1.R194D.LEROY,1.R204.-,1.R204.L,1.R204D.-,1.R204L.-,1.R214.-,1.R214D.-,1.R214L.-,1.R224.-,1.R224D.-",
+            "total_giacenza_m2": 1.44,
+            "total_da_consegnare_m2": 157620.96,
+            "shortage_m2": 157619.52
+        },
+        {
+            "CODICE": "303405A",
+            "DESCRIZIONE": "FABRIC WHITE 60X120 RETT. cl35",
+            "SERIE": "FABRIC",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.0164.-,1.0184.-,1.0634.-,1.124.-,1.154B.-,1.164.-,1.174B.-,1.184.-,1.194.-,1.198.-,1.204.-,1.214.-,1.224.-,1.234.-,1.254B.-,1.504.1,1.504B.0,1.9504B.0,1.P504.0,1.P504.1,1.P504.9,1.P504B.-,1.P504B.0,1.P504B.1,1.P504B.9,1.P504D.-,1.P504D.0,1.P504D.1,1.P504D.9,1.P505.0,1.P505.1,1.P505.9,1.P505B.-,1.P505B.0,1.P505D.0,1.P505D.1,1.P505D.9,1.P514B.0,1.R0184B.-,1.R0184D.-,1.R074B.-,1.R094E.-,1.R114B.-,1.R124B.-,1.R134.-,1.R134B.-,1.R134D.-,1.R145.-,1.R154.-,1.R154B.-,1.R154BD.-,1.R164.-,1.R164B.-,1.R164E.-,1.R164R.-,1.R174.-,1.R174B.-,1.R174D.-,1.R175B.-,1.R184.-,1.R184B.-,1.R184BD.-,1.R184D.-,1.R184L.-,1.R194.-,1.R194B.-,1.R194D.-,1.R194DE.-,1.R198.-,1.R198B.-,1.R198D.-,1.R204.-,1.R204B.-,1.R204D.-,1.R214.-,1.R214B.-,1.R214D.-,1.R214L.-,1.R224.-,1.R224B.-,1.R224D.-,1.R234.-,1.R234B.-,1.R234E.-,1.R244.-,1.R244B.-,1.R244D.-,1.R254.-,1.R254B.-,1.R254D.-,1.R264.-,1.R264D.-",
+            "total_giacenza_m2": 342.72,
+            "total_da_consegnare_m2": 129456.0,
+            "shortage_m2": 129113.28
+        },
+        {
+            "CODICE": "304041",
+            "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.014.-,1.024.-,1.044.-,1.R004.-,1.R004E.-,1.R004R.-,1.R014.-,1.R014D.-,1.R024.-,1.R024D.-,1.R035D.-,1.R044.-,1.R044D.-,1.R054.-,1.R054D.-,1.R054E.-,1.R064D.-,1.R14.-,1.R14E.-,1.R14R.-,1.R24.-,1.R34.-,1.R35.-,1.R44.-,1.R54.-,1.R64.-,1.R94R.-",
+            "total_giacenza_m2": 8517.6,
+            "total_da_consegnare_m2": 131021.28,
+            "shortage_m2": 122503.68
+        },
+        {
+            "CODICE": "304065",
+            "DESCRIZIONE": "CHARME IVORY 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.*,1.024.-,1.034.-,1.044.-,1.054.-,1.R014.-,1.R014D.-,1.R024.-,1.R024D.-,1.R034.-,1.R034D.-,1.R034E.-,1.R044.-,1.R044D.-,1.R054.-,1.R054D.-,1.R055D.-,1.R064.-,1.R064D.-,1.R14.-,1.R24.-,1.r34.-,1.R44.-,1.R54.-,1.R55.-,1.R64.-",
+            "total_giacenza_m2": 5284.8,
+            "total_da_consegnare_m2": 122964.48,
+            "shortage_m2": 117679.68
+        },
+        {
+            "CODICE": "303406A",
+            "DESCRIZIONE": "FABRIC GREY 60x120 RETT CL 35",
+            "SERIE": "FABRIC",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.*,1.074.-,1.094.-,1.114.-,1.P04B.0,1.P504.0,1.P504.1,1.P504.9,1.P504B.-,1.P504B.0,1.P504B.1,1.P504D.0,1.P504D.1,1.P504D.9,1.R074.-,1.R074B.-,1.R074BD.-,1.R074D.-,1.R084.-,1.R084B.-,1.R084D.-,1.R094.-,1.R094B.-,1.R094D.-,1.R094L.-,1.R104.-,1.R104B.-,1.R104B.0,1.R104D.-,1.R104L.-,1.R114.-,1.R114B.-,1.R114D.-,1.R124.-,1.R124B.-,1.R124D.-,1.R74.-,1.R84.-,1.R94.-",
+            "total_giacenza_m2": 2607.84,
+            "total_da_consegnare_m2": 78249.6,
+            "shortage_m2": 75641.76
+        },
+        {
+            "CODICE": "304028",
+            "DESCRIZIONE": "CHARME INVISIBLE GREY 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.*.+,1.*.7,1.004.-,1.024.-,1.044.-,1.054.-,1.R014.-,1.R024.-,1.R04.-,1.R044.-,1.R044D.-,1.R044E.-,1.R04R.-,1.R054.-,1.R054D.-,1.R064D.-,1.R14.-,1.R14R.-,1.R24.-,1.R24E.-,1.R24R.-,1.R34.-,1.R34E.-,1.R44.-,1.R54.-,1.R64.-",
+            "total_giacenza_m2": 2756.16,
+            "total_da_consegnare_m2": 75732.48,
+            "shortage_m2": 72976.32
+        },
+        {
+            "CODICE": "304041",
+            "DESCRIZIONE": "60X120 CHARME BLACK RT",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.014.-,1.024.-,1.044.-,1.R004.-,1.R004E.-,1.R004R.-,1.R014.-,1.R014D.-,1.R024.-,1.R024D.-,1.R035D.-,1.R044.-,1.R044D.-,1.R054.-,1.R054D.-,1.R054E.-,1.R064D.-,1.R14.-,1.R14E.-,1.R14R.-,1.R24.-,1.R34.-,1.R35.-,1.R44.-,1.R54.-,1.R64.-,1.R94R.-",
+            "total_giacenza_m2": 25.92,
+            "total_da_consegnare_m2": 67420.8,
+            "shortage_m2": 67394.88
+        },
+        {
+            "CODICE": "303944",
+            "DESCRIZIONE": "PAINT WHITE 60X120 RETT",
+            "SERIE": "PAINT",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.*.0,1.-.-,1.014.-,1.024.-,1.034.-,1.074.-,1.504.0,1.MAKKA.*,1.P504.0,1.P504.1,1.P504.9,1.P504D.0,1.P504L.0,1.POR014.-,1.R014.-,1.R014D.-,1.R024.-,1.R024D.-,1.R034.-,1.R034D.-,1.R034L.-,1.R044.-,1.R044M.-,1.R054.-,1.R054D.-,1.R054L.-,1.R064.-,1.R074.-,1.R074D.-,1.R14.-,1.R14C.-,1.R24.-,1.R34.-,1.R44.-,1.R44E.-,1.R44L.-,1.R44MAKK.-,1.R54.-,1.R64.-,1.R64R.-,1.R74.-",
+            "total_giacenza_m2": 2557.44,
+            "total_da_consegnare_m2": 69199.28,
+            "shortage_m2": 66641.84
+        },
+        {
+            "CODICE": "304040",
+            "DESCRIZIONE": "60X120 CHARME GREY RT",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.014.-,1.024.-,1.034.-,1.044.-,1.054.-,1.R004.-,1.R004E.-,1.R004R.-,1.R005.-,1.R014.-,1.R024.-,1.R024D.-,1.R034.-,1.R044.-,1.R044D.-,1.R054.-,1.R054D.-,1.R054E.-,1.R064D.-,1.R14.-,1.R14E.-,1.R14R.-,1.R24.-,1.R24E.-,1.R34.-,1.R34E.-,1.R34R.-,1.R44.-,1.R44E.-,1.R54.-,1.R64.-",
+            "total_giacenza_m2": 2171.52,
+            "total_da_consegnare_m2": 68195.52,
+            "shortage_m2": 66024.0
+        },
+        {
+            "CODICE": "303645A",
+            "DESCRIZIONE": "GARE LIGHT GREY 60x120 RETT CL 35",
+            "SERIE": "GARE DU NORD",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.*,1.0104.-,1.034.-,1.094.-,1.104.-,1.114.-,1.134.-,1.144.-,1.R0094LR.-,1.R064D.-,1.R074D.-,1.R084D.-,1.R084L.-,1.R094.-,1.R094D.-,1.R094H.-,1.R094L.-,1.R094LR.-,1.R094RL.-,1.R104.-,1.R104D.-,1.R104L.-,1.R114.-,1.R114D.-,1.R114L.-,1.R124.-,1.R124D.-,1.R124E.-,1.R134.-,1.R134D.-,1.R134L.-,1.R144.-,1.R144B.-,1.R144D.-,1.R144L.-,1.R164.-,1.R174.-,1.R174D.-,1.R184.-,1.R184D.-,1.R186.-,1.R194.-,1.R194D.-,1.R74.-,1.R94.-",
+            "total_giacenza_m2": 9223.2,
+            "total_da_consegnare_m2": 74833.92,
+            "shortage_m2": 65610.72
+        },
+        {
+            "CODICE": "304065",
+            "DESCRIZIONE": "60X120 CHARME IVORY RT",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.*,1.024.-,1.034.-,1.044.-,1.054.-,1.R014.-,1.R014D.-,1.R024.-,1.R024D.-,1.R034.-,1.R034D.-,1.R034E.-,1.R044.-,1.R044D.-,1.R054.-,1.R054D.-,1.R055D.-,1.R064.-,1.R064D.-,1.R14.-,1.R24.-,1.r34.-,1.R44.-,1.R54.-,1.R55.-,1.R64.-",
+            "total_giacenza_m2": 0.0,
+            "total_da_consegnare_m2": 63696.96,
+            "shortage_m2": 63696.96
+        },
+        {
+            "CODICE": "3510992A",
+            "DESCRIZIONE": "GALACTIC LIGHT GREY 60X120 RTT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.*,1.R104.-,1.R114.-,1.R124.-,1.R144.-,1.R154.-,1.R164.-,1.R184.-,1.R194.-,1.R94.-",
+            "total_giacenza_m2": 504.0,
+            "total_da_consegnare_m2": 55051.2,
+            "shortage_m2": 54547.2
+        },
+        {
+            "CODICE": "303947",
+            "DESCRIZIONE": "PAINT BLUE 60X120 RETT",
+            "SERIE": "PAINT",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.000.-,1.0000.-,1.024.-,1.034.-,1.044.-,1.054.-,1.064.-,1.R024.-,1.R024D.-,1.R034.-,1.R034D.-,1.R034L.-,1.R044.-,1.R044D.-,1.R044L.-,1.R054.-,1.R064.-,1.R064D.-,1.R14.-,1.R14C.-,1.R24.-,1.R34.-,1.R44.-,1.R44E.-,1.R44L.-,1.R54.-,1.R54E.-,1.R54R.-,1.R64.-",
+            "total_giacenza_m2": 3834.72,
+            "total_da_consegnare_m2": 55010.88,
+            "shortage_m2": 51176.16
+        },
+        {
+            "CODICE": "303921A",
+            "DESCRIZIONE": "PALMA 60x120 RETT CL 35",
+            "SERIE": "WALLPAPERS",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.*.**,1.024.-,1.034.-,1.044.-,1.054.-,1.064.-,1.074.-,1.084.-,1.094.-,1.104.-,1.R034.-,1.R034E.-,1.R044.-,1.R054.-,1.R064.-,1.R064B.-,1.R064D.-,1.R074.-,1.R074B.-,1.R074D.-,1.R074L.-,1.R0794B.-,1.R084.-,1.R084B.-,1.R084D.-,1.R094.-,1.R094.*,1.R094B.-,1.R094D.-,1.R104.-,1.R104B.-,1.R104D.-,1.R114.-,1.R114D.-,1.R34.-,1.R44.-,1.R54.-,1.R64.-,1.R74.-,1.R74B.-,1.R84.-,1.R94.-,1.R94B.-",
+            "total_giacenza_m2": 8256.24,
+            "total_da_consegnare_m2": 58968.0,
+            "shortage_m2": 50711.76
+        },
+        {
+            "CODICE": "304139",
+            "DESCRIZIONE": "GEOLOGY SABBIA 60x120 Rettificato",
+            "SERIE": "GEOLOGY",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.-.-,1.000.-,1.014.-,1.R014.-,1.R014D.-,1.R024D.-,1.R034.-,1.R034D.-,1.R14.-,1.R24.-,1.R34.-",
+            "total_giacenza_m2": 10360.8,
+            "total_da_consegnare_m2": 60802.56,
+            "shortage_m2": 50441.76
+        },
+        {
+            "CODICE": "004547",
+            "DESCRIZIONE": "60X120 ULTRA ASPEN GRIGIO RTT SP20MM",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X120 SP20",
+            "TONI": "1.*.-,1.*.*,1.014.-,1.R014.-,1.R024.-,1.R24.-,1.R24E.-,1.R25.-,1.R34.-,1.R44.-,1.R44E.-,1.R54.-,1.T014.-,1.T014.0,1.T014C.-,1.T014D.-",
+            "total_giacenza_m2": 13687.2,
+            "total_da_consegnare_m2": 62346.24,
+            "shortage_m2": 48659.04
+        },
+        {
+            "CODICE": "303711A",
+            "DESCRIZIONE": "SOLID WHITE 60X120 RETT CL 35",
+            "SERIE": "SOLID",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.034.-,1.044.-,1.054.-,1.504.0,1.P504.0,1.P504.1,1.P504.9,1.P504D.0,1.P504D.1,1.P504D.9,1.R034.-,1.R044.-,1.R044D.-,1.R054.-,1.R054D.-,1.R064D.-,1.R34.-,1.R44.-,1.R44D.-,1.R54.-,1.R54E.-,1.R64.-",
+            "total_giacenza_m2": 6959.52,
+            "total_da_consegnare_m2": 54504.0,
+            "shortage_m2": 47544.48
+        },
+        {
+            "CODICE": "303301A",
+            "DESCRIZIONE": "SMOT WHITE 60x120 RETT CL 35",
+            "SERIE": "SMOT",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.174.-,1.195.-,1.R174.-,1.R174D.-,1.R184.-,1.R184D.-,1.R194.-,1.R194D.-,1.R195.-,1.R195D.-,1.R204.-,1.R204.*,1.R204E.-,1.R204R.-,1.R214.-,1.R214D.-",
+            "total_giacenza_m2": 6285.6,
+            "total_da_consegnare_m2": 52974.72,
+            "shortage_m2": 46689.12
+        },
+        {
+            "CODICE": "303712A",
+            "DESCRIZIONE": "SOLID LIGHT GREY 60X120 RETT CL 35",
+            "SERIE": "SOLID",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.044.-,1.054.-,1.064.-,1.074.-,1.R014D.-,1.R044.-,1.R044D.-,1.R054.-,1.R054D.-,1.R064.-,1.R064D.-,1.R074.-,1.R074D.-,1.R084D.-,1.R085D.-,1.R44.-,1.R54.-,1.R54d.-,1.R64.-,1.r74.-,1.R84.-,1.R85.-",
+            "total_giacenza_m2": 8056.8,
+            "total_da_consegnare_m2": 54482.4,
+            "shortage_m2": 46425.6
+        },
+        {
+            "CODICE": "303408A",
+            "DESCRIZIONE": "FABRIC ANTHRACITE 60x120 RETT CL 35",
+            "SERIE": "FABRIC",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.*,1.084.-,1.094.-,1.504.0,1.P504.0,1.P504.1,1.P504.9,1.P504B.-,1.P504B.0,1.P504B.1,1.P504B.9,1.P504D.0,1.P504D.1,1.P504D.9,1.P514.0,1.P514.1,1.P514.9,1.P514B.0,1.P514D.0,1.P514D.1,1.P514D.9,1.R074.-,1.R074B.-,1.R084.-,1.R084B.-,1.R084D.-,1.R094.-,1.R094B.-,1.R094D.-,1.R094L.-,1.R103.-,1.R103D.-,1.R104.-,1.R104D.-,1.R74.-,1.R84.-,1.R94.-,1.R94B.-",
+            "total_giacenza_m2": 5738.4,
+            "total_da_consegnare_m2": 46566.72,
+            "shortage_m2": 40828.32
+        },
+        {
+            "CODICE": "3538701A",
+            "DESCRIZIONE": "60X120 ROCK ANTRACITE RETT. cl35",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.*./,1.R104.-,1.R114.-,1.R124.-,1.R134.-,1.R144.-,1.R84.-,1.R94.-",
+            "total_giacenza_m2": 626.4,
+            "total_da_consegnare_m2": 41011.2,
+            "shortage_m2": 40384.8
+        },
+        {
+            "CODICE": "004410A",
+            "DESCRIZIONE": "60X120 IROC WHITE RTT cl35",
+            "SERIE": "IROC",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.R104.-,1.R114.-,1.R124.-,1.R134.-,1.R54.-,1.R64.-,1.R74.-,1.R75.-,1.R84.-,1.R94.-",
+            "total_giacenza_m2": 10931.04,
+            "total_da_consegnare_m2": 50561.28,
+            "shortage_m2": 39630.24
+        },
+        {
+            "CODICE": "303948",
+            "DESCRIZIONE": "PAINT SALVIA 60X120 RETT",
+            "SERIE": "PAINT",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.024.-,1.034.-,1.044.-,1.054.-,1.R024.-,1.R034.-,1.R034D.-,1.R044.-,1.R044.L,1.R044D.-,1.R044L.-,1.R054.-,1.R054D.-,1.R054L.-,1.R14.-,1.R14C.-,1.R24.-,1.R34.-,1.R44.-,1.R44E.-,1.R54.-",
+            "total_giacenza_m2": 2920.32,
+            "total_da_consegnare_m2": 42049.44,
+            "shortage_m2": 39129.12
+        },
+        {
+            "CODICE": "304127",
+            "DESCRIZIONE": "60X120 ARGOS BEIGE RTT",
+            "SERIE": "ARGOS",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.*,1.000.-,1.004.-,1.014.-,1.R014.-,1.R014D.-,1.R024D.-,1.R14.-,1.R24.-",
+            "total_giacenza_m2": 4.32,
+            "total_da_consegnare_m2": 38882.88,
+            "shortage_m2": 38878.56
+        },
+        {
+            "CODICE": "303646A",
+            "DESCRIZIONE": "GARE GREY 60x120 RETT CL 35",
+            "SERIE": "GARE DU NORD",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.084.-,1.094.-,1.114.-,1.1534L.-,1.R074.-,1.R075.-,1.R084.-,1.R084.K,1.R084B.-,1.R084D.-,1.R084K.-,1.R084L.-,1.R094D.-,1.R094L.-,1.R104.-,1.R104D.-,1.R114.-,1.R114.L,1.R114D.-,1.R114DL.-,1.R114L.-,1.R114L.1,1.R124.-,1.R124E.-,1.R134.-,1.R134D.-,1.R144.-,1.R144D.-,1.R154.-,1.R154D.-,1.R75.-,1.R84.-,1.R84E.-,1.R94.-",
+            "total_giacenza_m2": 11083.68,
+            "total_da_consegnare_m2": 48951.36,
+            "shortage_m2": 37867.68
+        },
+        {
+            "CODICE": "303645A",
+            "DESCRIZIONE": "60X120 GARE LIGHT GREY RETT.",
+            "SERIE": "GARE DU NORD",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.*,1.0104.-,1.034.-,1.094.-,1.104.-,1.114.-,1.134.-,1.144.-,1.R0094LR.-,1.R064D.-,1.R074D.-,1.R084D.-,1.R084L.-,1.R094.-,1.R094D.-,1.R094H.-,1.R094L.-,1.R094LR.-,1.R094RL.-,1.R104.-,1.R104D.-,1.R104L.-,1.R114.-,1.R114D.-,1.R114L.-,1.R124.-,1.R124D.-,1.R124E.-,1.R134.-,1.R134D.-,1.R134L.-,1.R144.-,1.R144B.-,1.R144D.-,1.R144L.-,1.R164.-,1.R174.-,1.R174D.-,1.R184.-,1.R184D.-,1.R186.-,1.R194.-,1.R194D.-,1.R74.-,1.R94.-",
+            "total_giacenza_m2": 2.88,
+            "total_da_consegnare_m2": 37416.96,
+            "shortage_m2": 37414.08
+        },
+        {
+            "CODICE": "304059",
+            "DESCRIZIONE": "CHARME PEARL 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.014.-,1.024.-,1.R014.-,1.R014D.-,1.R024.-,1.R024D.-,1.R024E.-,1.R034D.-,1.R044.-,1.R044D.-,1.R054.-,1.R054D.-,1.R064D.-,1.R074.-,1.R074D.-,1.R14.-,1.R24.-,1.R34.-,1.R44.-,1.R54.-,1.R64.-,1.R74.-",
+            "total_giacenza_m2": 13668.48,
+            "total_da_consegnare_m2": 51010.56,
+            "shortage_m2": 37342.08
+        },
+        {
+            "CODICE": "303303A",
+            "DESCRIZIONE": "SMOT BEIGE 60x120 RETT CL 35",
+            "SERIE": "SMOT",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.R044.-,1.R044D.-,1.R054.-,1.R054D.-,1.R064.-,1.R064D.-,1.R074.-,1.R074D.-,1.R084.-,1.R084D.-,1.R74.-,1.R74E.-",
+            "total_giacenza_m2": 3795.84,
+            "total_da_consegnare_m2": 40086.72,
+            "shortage_m2": 36290.88
+        },
+        {
+            "CODICE": "304124",
+            "DESCRIZIONE": "60X120 ARGOS BLACK RTT",
+            "SERIE": "ARGOS",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.*.1,1.000.-,1.004.-,1.014.-,1.R014.-,1.R014D.-,1.R024.-,1.R024D.-,1.R14.-,1.R24.-",
+            "total_giacenza_m2": 21.6,
+            "total_da_consegnare_m2": 36077.76,
+            "shortage_m2": 36056.16
+        },
+        {
+            "CODICE": "303334A",
+            "DESCRIZIONE": "QUARRY MOON 60x120 RETT LAPP IN CRESTA CL 35",
+            "SERIE": "QUARRY",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.*,1.0134.-,1.0134D.-,1.0144.-,1.0164D.-,1.144D.-,1.P144.-,1.P144D.-,1.P154D.-",
+            "total_giacenza_m2": 2194.56,
+            "total_da_consegnare_m2": 37975.68,
+            "shortage_m2": 35781.12
+        },
+        {
+            "CODICE": "004189A",
+            "DESCRIZIONE": "CITY BEIGE RTT 60X120  cl 35 (CULT)",
+            "SERIE": "CULT",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.*,1.R064.-,1.R084.-,1.R084.*,1.R14.-,1.R44.-,1.R64.-,1.R74.-,1.R84.-,1.R84.*,1.R84E.-,1.R94.-,1.R94.*,1.R95.-",
+            "total_giacenza_m2": 234.72,
+            "total_da_consegnare_m2": 34819.2,
+            "shortage_m2": 34584.48
+        },
+        {
+            "CODICE": "303475A",
+            "DESCRIZIONE": "VALS LIGHT 60x120 RETT CL 35",
+            "SERIE": "PIETRA DI VALS",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.*,1.*.1,1.074.-,1.084.-,1.104.-,1.R074.-,1.R074B.-,1.R074D.-,1.R074H.-,1.R084.-,1.R084B.-,1.R084D.-,1.R084H.-,1.R094.-,1.R094B.-,1.R094D.-,1.R104.-,1.R104D.-,1.R114.-,1.R114D.-,1.R74.-,1.R84.-,1.R94.-",
+            "total_giacenza_m2": 4805.28,
+            "total_da_consegnare_m2": 38617.92,
+            "shortage_m2": 33812.64
+        },
+        {
+            "CODICE": "304015",
+            "DESCRIZIONE": "MASK IVORY 60x120 Rettificato",
+            "SERIE": "MASK",
+            "FORMATO": "60X120 RTT",
+            "TONI": "1.*.-,1.*.*,1.004.-,1.012.-,1.014.-,1.034.-,1.514.0,1.P504.0,1.P504.1,1.P504D.0,1.P504D.1,1.P514.0,1.P514.1,1.P514.9,1.P514D.0,1.P514D.1,1.P514D.9,1.R004.-,1.R012D.-,1.R014.-,1.R014D.-,1.R024.-,1.R024D.-,1.R034.-,1.R034D.-,1.R04.-,1.R04R.-,1.R12.-,1.R14.-,1.R14E.-,1.R14R.-,1.R24.-,1.R24R.-,1.R34.-",
+            "total_giacenza_m2": 4037.76,
+            "total_da_consegnare_m2": 37548.0,
+            "shortage_m2": 33510.24
+        }
+    ],
+    "conclusions": "Sono presenti numerosi articoli 60x120 con ordini che superano la disponibilità corrente; le eccedenze variano da piccole (alcuni m²) a criticità molto elevate (centinaia di migliaia di m²). Azioni consigliate: 1) Prioritizzare la lista per shortage_m2 (inizia dai maggiori) per decisioni di produzione e allocazione; 2) Verificare i toni coinvolti per capire se è possibile spillare stock su toni compatibili; 3) Controllare scadenze di consegna e contattare commerciale per possibili riprogrammazioni o conferme parziali; 4) Se necessario, richiedere produzione urgente sui codici con shortage più elevato. Posso fornire: la stessa analisi per singolo deposito, il dettaglio ordini per tono, o una classifica ridotta (TOP 20) se preferisci."
+}

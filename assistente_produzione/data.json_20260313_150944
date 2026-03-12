@@ -1,0 +1,118 @@
+{
+    "user_request": "Quali articoli abbiamo prodotto di più negli ultimi 30 giorni?",
+    "report_title": "Top articoli per metri quadri prodotti - ultimi 30 giorni",
+    "summary": "Analisi degli articoli ordinati per quantità prodotta (m²) negli ultimi 30 giorni. Ho restituito la top 10 per m² prodotti, con formato, pallet totali e pezzi. L'aggregazione è a livello articolo; i dati di tono e di serie non sono presenti nell'aggregato restituito. Se vuoi l'analisi a livello di tono (lotto) o la lista completa top-20, posso estendere la ricerca.",
+    "table_data": [
+        {
+            "article_code": "005486",
+            "format": "60x120",
+            "total_m2": 14666.4,
+            "total_pallets": 296,
+            "total_pieces": 20370,
+            "first_choice_pallets": 279,
+            "active_lines": 3,
+            "first_production_date": "2026-03-03",
+            "last_production_date": "2026-03-03"
+        },
+        {
+            "article_code": "004990",
+            "format": "20x122",
+            "total_m2": 10705.5,
+            "total_pallets": 196,
+            "total_pieces": 43875,
+            "first_choice_pallets": 196,
+            "active_lines": 2,
+            "first_production_date": "2026-03-01",
+            "last_production_date": "2026-03-03"
+        },
+        {
+            "article_code": "SF0934",
+            "format": "60x120",
+            "total_m2": 9494.0,
+            "total_pallets": 352,
+            "total_pieces": 20874,
+            "first_choice_pallets": 350,
+            "active_lines": 1,
+            "first_production_date": "2026-03-05",
+            "last_production_date": "2026-03-12"
+        },
+        {
+            "article_code": "NWS202",
+            "format": "60x120",
+            "total_m2": 8316.0,
+            "total_pallets": 166,
+            "total_pieces": 11550,
+            "first_choice_pallets": 154,
+            "active_lines": 1,
+            "first_production_date": "2026-03-01",
+            "last_production_date": "2026-03-01"
+        },
+        {
+            "article_code": "NWS201",
+            "format": "60x120",
+            "total_m2": 7264.8,
+            "total_pallets": 145,
+            "total_pieces": 10090,
+            "first_choice_pallets": 139,
+            "active_lines": 1,
+            "first_production_date": "2026-02-28",
+            "last_production_date": "2026-02-28"
+        },
+        {
+            "article_code": "MNR196",
+            "format": "60x120",
+            "total_m2": 6726.6,
+            "total_pallets": 131,
+            "total_pieces": 9090,
+            "first_choice_pallets": 123,
+            "active_lines": 2,
+            "first_production_date": "2026-02-16",
+            "last_production_date": "2026-02-16"
+        },
+        {
+            "article_code": "MNR197",
+            "format": "60x120",
+            "total_m2": 6719.2,
+            "total_pallets": 132,
+            "total_pieces": 9080,
+            "first_choice_pallets": 118,
+            "active_lines": 2,
+            "first_production_date": "2026-02-15",
+            "last_production_date": "2026-02-15"
+        },
+        {
+            "article_code": "003937A",
+            "format": "60x120",
+            "total_m2": 6667.2,
+            "total_pallets": 133,
+            "total_pieces": 9260,
+            "first_choice_pallets": 130,
+            "active_lines": 1,
+            "first_production_date": "2026-02-22",
+            "last_production_date": "2026-02-22"
+        },
+        {
+            "article_code": "MNR201",
+            "format": "60x120",
+            "total_m2": 6652.8,
+            "total_pallets": 133,
+            "total_pieces": 9240,
+            "first_choice_pallets": 122,
+            "active_lines": 2,
+            "first_production_date": "2026-02-13",
+            "last_production_date": "2026-02-13"
+        },
+        {
+            "article_code": "MNL031",
+            "format": "60x120",
+            "total_m2": 6530.4,
+            "total_pallets": 132,
+            "total_pieces": 9070,
+            "first_choice_pallets": 117,
+            "active_lines": 2,
+            "first_production_date": "2026-02-17",
+            "last_production_date": "2026-02-17"
+        }
+    ],
+    "conclusions": "Negli ultimi 30 giorni i primi 10 articoli per volume prodotto (m²) sono quelli elencati. Il primo è l'articolo 005486 con ~14.7k m² prodotti, seguito da 004990 (~10.7k m²) e SF0934 (~9.5k m²). La maggior parte dei top-10 è in formato 60x120. La quota di prima scelta è elevata sui principali articoli (es. 005486: 279/296 pallet in prima scelta), il che riduce il rischio qualità sul magazzino produttivo. Prossimi passi consigliati: 1) Verificare per questi articoli la giacenza attuale e gli ordini aperti (posso eseguire la verifica), 2) se ti interessa distinguere per tono/lotto (per es. per rischio qualità o tracciabilità commerciale) posso fornire l'analisi a livello tono, 3) se preferisci la top-20 o l'export completo, dimmi e lo preparo."
+}

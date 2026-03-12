@@ -1,0 +1,88 @@
+{
+    "user_request": "Dammi una lista degli articoli della famiglia o serie Aspen, almeno i primi dieci, grazie.",
+    "report_title": "Primi 10 articoli della serie 'ASPEN'",
+    "summary": "Ho interrogato le tabelle pa_ff_code e dashboard_productavailability (SQL Server) cercando righe con SERIE LIKE '%ASPEN%'. In output ho restituito i primi 10 articoli distinti (privilegiando i risultati presenti in pa_ff_code). Le quantità (GIACENZA) sono espresse in m² come da convenzione del database.",
+    "table_data": [
+        {
+            "CODICE": "003526",
+            "DESCRIZIONE": "ASPEN BIANCO IN RETT 30X60",
+            "FORMATO": "30X60 RTT",
+            "SERIE": "ASPEN",
+            "GIACENZA": 2560.32,
+            "source": "pa_ff_code"
+        },
+        {
+            "CODICE": "003534",
+            "DESCRIZIONE": "GRADINO FRONTALE A L COSTA RETTA 31X62X5 NAT ASPEN ANTRACITE",
+            "FORMATO": "31X62",
+            "SERIE": "ASPEN",
+            "GIACENZA": 0.0,
+            "source": "pa_ff_code"
+        },
+        {
+            "CODICE": "003535",
+            "DESCRIZIONE": "GRAD. FRONTALE L COSTARETTA ASPEN GRIGIO 31X62X5",
+            "FORMATO": "31X62",
+            "SERIE": "ASPEN",
+            "GIACENZA": 0.0,
+            "source": "pa_ff_code"
+        },
+        {
+            "CODICE": "003536",
+            "DESCRIZIONE": "GRADINO FRONTALE A L COSTA RETTA 31X62X5 NAT ASPEN BEIGE",
+            "FORMATO": "31X62",
+            "SERIE": "ASPEN",
+            "GIACENZA": 22.0,
+            "source": "pa_ff_code"
+        },
+        {
+            "CODICE": "003538",
+            "DESCRIZIONE": "GRADINO FRONTALE A L COSTA RETTA 31X62X5 NAT ASPEN FUME'",
+            "FORMATO": "31X62",
+            "SERIE": "ASPEN",
+            "GIACENZA": 0.0,
+            "source": "pa_ff_code"
+        },
+        {
+            "CODICE": "003541",
+            "DESCRIZIONE": "GRADINO ANGOLARE A L COSTA RETTA DX 31X62X5 NAT ASPEN BEIGE",
+            "FORMATO": "31X62",
+            "SERIE": "ASPEN",
+            "GIACENZA": 0.0,
+            "source": "pa_ff_code"
+        },
+        {
+            "CODICE": "003542",
+            "DESCRIZIONE": "GRADINO ANGOLARE A L COSTA RETTA DX 31X62X5 NAT ASPEN BIANCO",
+            "FORMATO": "31X62",
+            "SERIE": "ASPEN",
+            "GIACENZA": 0.0,
+            "source": "pa_ff_code"
+        },
+        {
+            "CODICE": "003543",
+            "DESCRIZIONE": "GRADINO ANGOLARE A L COSTA RETTA DX 31X62X5 NAT ASPEN FUME'",
+            "FORMATO": "31X62",
+            "SERIE": "ASPEN",
+            "GIACENZA": 0.0,
+            "source": "pa_ff_code"
+        },
+        {
+            "CODICE": "003710",
+            "DESCRIZIONE": "60X60 ASPEN ANTRACITE RTT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "ASPEN",
+            "GIACENZA": 7447.4,
+            "source": "pa_ff_code"
+        },
+        {
+            "CODICE": "003711",
+            "DESCRIZIONE": "60X60 ASPEN BEIGE RTT",
+            "FORMATO": "60X60 RTT",
+            "SERIE": "ASPEN",
+            "GIACENZA": 12025.25,
+            "source": "pa_ff_code"
+        }
+    ],
+    "conclusions": "Trovati i primi 10 articoli della serie 'ASPEN' principalmente nella tabella pa_ff_code. Note e possibili azioni successive:\n- Il campo 'GIACENZA' è in m² come da convenzione. Totale m² degli articoli restituiti: 22275.0 m² (somma delle GIACENZE elencate). \n- Nei dataset interrogati non è disponibile un campo esplicito 'Tono' per queste righe; il tono può essere invece codificato in altre tabelle/colonne (es. COD_VAR in dashboard_productavailability o LGV_tono in PALLET_PRODUCTION). Se vuoi, posso:\n  1) estendere la ricerca per includere tutte le occorrenze (non solo i primi 10) e rimuovere duplicati tra le sorgenti;\n  2) cercare i toni associati agli articoli (consultando COD_VAR o PALLET_PRODUCTION) per riportare anche il Tono;\n  3) fornire un ordine per GIACENZA decrescente o filtrare per deposito/UM.\nDimmi quale di queste opzioni preferisci e procedo."
+}

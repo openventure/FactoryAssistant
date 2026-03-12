@@ -1,0 +1,182 @@
+{
+    "user_request": "quali del mese?",
+    "report_title": "Articoli passati al palletizzatore nel mese corrente",
+    "summary": "Elenco degli articoli distinti che sono stati processati attraverso il palletizzatore nel corso del mese corrente.",
+    "table_data": [
+        {
+            "Articolo": "003937A"
+        },
+        {
+            "Articolo": "003938A"
+        },
+        {
+            "Articolo": "004151"
+        },
+        {
+            "Articolo": "004154"
+        },
+        {
+            "Articolo": "004409"
+        },
+        {
+            "Articolo": "004471"
+        },
+        {
+            "Articolo": "005100"
+        },
+        {
+            "Articolo": "005372"
+        },
+        {
+            "Articolo": "005426"
+        },
+        {
+            "Articolo": "005688"
+        },
+        {
+            "Articolo": "005713"
+        },
+        {
+            "Articolo": "005716"
+        },
+        {
+            "Articolo": "005956"
+        },
+        {
+            "Articolo": "005957"
+        },
+        {
+            "Articolo": "005958"
+        },
+        {
+            "Articolo": "303405A"
+        },
+        {
+            "Articolo": "303569"
+        },
+        {
+            "Articolo": "303659"
+        },
+        {
+            "Articolo": "303794"
+        },
+        {
+            "Articolo": "304065"
+        },
+        {
+            "Articolo": "304119"
+        },
+        {
+            "Articolo": "304154"
+        },
+        {
+            "Articolo": "304155"
+        },
+        {
+            "Articolo": "304268"
+        },
+        {
+            "Articolo": "304270"
+        },
+        {
+            "Articolo": "304279"
+        },
+        {
+            "Articolo": "304364"
+        },
+        {
+            "Articolo": "304391"
+        },
+        {
+            "Articolo": "304394"
+        },
+        {
+            "Articolo": "304395"
+        },
+        {
+            "Articolo": "304396"
+        },
+        {
+            "Articolo": "304400"
+        },
+        {
+            "Articolo": "304401"
+        },
+        {
+            "Articolo": "304402"
+        },
+        {
+            "Articolo": "304403"
+        },
+        {
+            "Articolo": "3514182"
+        },
+        {
+            "Articolo": "3538699A"
+        },
+        {
+            "Articolo": "EE1489"
+        },
+        {
+            "Articolo": "EE1491"
+        },
+        {
+            "Articolo": "EM28581555"
+        },
+        {
+            "Articolo": "FLS001"
+        },
+        {
+            "Articolo": "FLS002"
+        },
+        {
+            "Articolo": "MNL031"
+        },
+        {
+            "Articolo": "MNL032"
+        },
+        {
+            "Articolo": "MNR122"
+        },
+        {
+            "Articolo": "MNR179"
+        },
+        {
+            "Articolo": "MNR187"
+        },
+        {
+            "Articolo": "MNR194"
+        },
+        {
+            "Articolo": "MNR196"
+        },
+        {
+            "Articolo": "MNR197"
+        },
+        {
+            "Articolo": "MNR201"
+        },
+        {
+            "Articolo": "MNR202"
+        },
+        {
+            "Articolo": "MNR206"
+        },
+        {
+            "Articolo": "Q.1022-U"
+        },
+        {
+            "Articolo": "RPL137A"
+        },
+        {
+            "Articolo": "RPL162"
+        },
+        {
+            "Articolo": "VI28141377"
+        },
+        {
+            "Articolo": "VSM001"
+        }
+    ],
+    "conclusions": "Nel mese corrente sono stati processati oltre 50 articoli diversi nel palletizzatore, indicando una attività produttiva diversificata. Questi dati possono essere utili per analisi di produzione, gestione scorte e pianificazione."
+}

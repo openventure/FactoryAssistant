@@ -1,0 +1,23 @@
+{
+    "user_request": "Quali formati stanno producendo più metri quadrati?",
+    "report_title": "Formati con maggiore produzione (ultimo periodo osservato)",
+    "summary": "Ho analizzato la produzione articolo-per-articolo sugli ultimi 30 giorni (fonte: PALLET_PRODUCTION) e ho aggregato i metri quadrati prodotti per formato. Risultato: il formato 60x120 domina la produzione con circa il 73% dei m² prodotti, seguito dal 20x122 (~22,5%) e dal 60x60 (~4,8%). Se vuoi un orizzonte diverso (es. 7 o 90 giorni) o il dettaglio per articolo/linea, posso rifare l'analisi con quel filtro.",
+    "table_data": [
+        {
+            "formato": "60x120",
+            "produced_m2": 191176.2,
+            "percent_of_total": 72.69
+        },
+        {
+            "formato": "20x122",
+            "produced_m2": 59262.06,
+            "percent_of_total": 22.53
+        },
+        {
+            "formato": "60x60",
+            "produced_m2": 12657.6,
+            "percent_of_total": 4.81
+        }
+    ],
+    "conclusions": "Nel periodo analizzato i volumi sono fortemente concentrati sul 60x120: questo formato assorbe la maggior parte della capacità produttiva. Operativamente suggerisco di verificare se la domanda commerciale e gli stock supportano questa concentrazione (rischio di sovrapproduzione su alcuni toni o scarsa varietà di offerta). Prossimi passi consigliati: 1) confermare il periodo di interesse oppure ripetere la stessa aggregazione su 7/90 giorni; 2) se serve, ottenere la classifica degli articoli più produttivi all'interno del formato 60x120 o la ripartizione per linea per valutare capacità e colli di bottiglia."
+}

@@ -1,0 +1,1316 @@
+{
+    "user_request": "trovami la media dei valori degli assorbimenti degli ultimi 12 mesi",
+    "report_title": "Media assorbimenti (ultimi 12 mesi) per articolo",
+    "summary": "Ho calcolato la media degli assorbimenti registrati negli ultimi 12 mesi raggruppata per articolo (CodeArt + Description). Per ogni articolo è riportato il numero di prove utilizzate e il valore medio di assorbimento. Nota: sono presenti alcuni valori anomali (es. negativi o significativamente maggiori di 1) che possono indicare errori di inserimento o prove non conformi.",
+    "table_data": [
+        {
+            "CodeArt": "SF0805",
+            "Description": "60X120 CHARME IVORY (sfuso)",
+            "NumProve": 47,
+            "AvgAssorbimento": 0.247
+        },
+        {
+            "CodeArt": "004154",
+            "Description": "60X60 NEW ULTRA ASPEN GRIGIO RTT SP20",
+            "NumProve": 40,
+            "AvgAssorbimento": 0.33
+        },
+        {
+            "CodeArt": "SF0947",
+            "Description": "TIME STONE SABBIA 60X120 (sfuso)",
+            "NumProve": 39,
+            "AvgAssorbimento": 0.201
+        },
+        {
+            "CodeArt": "EMT072",
+            "Description": "60X60 EMOTION GRIS RTT 8mm",
+            "NumProve": 31,
+            "AvgAssorbimento": 0.388
+        },
+        {
+            "CodeArt": "SF1033",
+            "Description": "NEW STONE DAINO 60X120 (sfuso)",
+            "NumProve": 25,
+            "AvgAssorbimento": 0.381
+        },
+        {
+            "CodeArt": "PT0234",
+            "Description": "IKON AMBER 60X120 (sfuso)",
+            "NumProve": 24,
+            "AvgAssorbimento": 0.141
+        },
+        {
+            "CodeArt": "SF0837",
+            "Description": "60X120 FLASH ACERO (sfuso)",
+            "NumProve": 23,
+            "AvgAssorbimento": 0.172
+        },
+        {
+            "CodeArt": "SF0969",
+            "Description": "SERICA BONE 60X120 (sfuso)",
+            "NumProve": 21,
+            "AvgAssorbimento": 0.289
+        },
+        {
+            "CodeArt": "303627",
+            "Description": "60X60 NEW ULTRA VALS LIGHT RT Sp20mm",
+            "NumProve": 20,
+            "AvgAssorbimento": 0.149
+        },
+        {
+            "CodeArt": "EMT073",
+            "Description": "60X60 EMOTION TAUPE RTT 8mm",
+            "NumProve": 20,
+            "AvgAssorbimento": 0.321
+        },
+        {
+            "CodeArt": "SF0769",
+            "Description": "60X120 QUEEN STONE SABBIA (sfuso)",
+            "NumProve": 20,
+            "AvgAssorbimento": 0.206
+        },
+        {
+            "CodeArt": "SF0939",
+            "Description": "60X120 CONCEPT GRIGIO SP20 (sfuso)",
+            "NumProve": 17,
+            "AvgAssorbimento": 0.226
+        },
+        {
+            "CodeArt": "SF0993",
+            "Description": "MEIKE ROVERE 60X120 (sfuso)",
+            "NumProve": 17,
+            "AvgAssorbimento": 0.342
+        },
+        {
+            "CodeArt": "303992",
+            "Description": "60X60 ULTRA SOLID WHITE RT Sp20mm",
+            "NumProve": 16,
+            "AvgAssorbimento": 0.276
+        },
+        {
+            "CodeArt": "EMT071",
+            "Description": "60X60 EMOTION BLANC RTT 8mm",
+            "NumProve": 16,
+            "AvgAssorbimento": 0.231
+        },
+        {
+            "CodeArt": "SF0796",
+            "Description": "60X120 CHARME BLACK (sfuso)",
+            "NumProve": 16,
+            "AvgAssorbimento": 0.25
+        },
+        {
+            "CodeArt": "TMS004",
+            "Description": "60X60 ULTRA TIME STONE SABBIA RTT SP20",
+            "NumProve": 15,
+            "AvgAssorbimento": 0.136
+        },
+        {
+            "CodeArt": "005055",
+            "Description": "60X60 NEW ULTRA ASPEN BEIGE RTT SP20",
+            "NumProve": 14,
+            "AvgAssorbimento": 0.128
+        },
+        {
+            "CodeArt": "SF0684",
+            "Description": "60X120 ULTRA ASPEN ANTRACITE SP20 (sfuso)",
+            "NumProve": 14,
+            "AvgAssorbimento": 0.215
+        },
+        {
+            "CodeArt": "303993",
+            "Description": "60X60 ULTRA SOLID LIGHT GREY RT Sp20mm",
+            "NumProve": 13,
+            "AvgAssorbimento": 0.105
+        },
+        {
+            "CodeArt": "SF0839",
+            "Description": "60X120 FLASH CASTAGNO (sfuso)",
+            "NumProve": 13,
+            "AvgAssorbimento": 0.125
+        },
+        {
+            "CodeArt": "SF0909",
+            "Description": "60X120 ULTRA QUEEN STONE AVORIO SP20 (sfuso)",
+            "NumProve": 13,
+            "AvgAssorbimento": 0.31
+        },
+        {
+            "CodeArt": "004153",
+            "Description": "60X60 NEW ULTRA ASPEN ANTRACITE RTT SP20",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.237
+        },
+        {
+            "CodeArt": "005578",
+            "Description": "60X60 ULTRA SHELLSTONE BEIGE RTT SP20",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.309
+        },
+        {
+            "CodeArt": "005614",
+            "Description": "60X60 ULTRA SHELLSTONE TAUPE RTT SP20",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.088
+        },
+        {
+            "CodeArt": "303606",
+            "Description": "60X60 ULTRA GARE GRAPHITE RT SP 20MM",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.177
+        },
+        {
+            "CodeArt": "BNLLI6018",
+            "Description": "60X60 RTT BENELUX LIGHT 18MM cl32",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.152
+        },
+        {
+            "CodeArt": "BSLIGHT6018",
+            "Description": "60X60 RTT OUT BLUESTONE LIGHT 18MM cl32",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.129
+        },
+        {
+            "CodeArt": "MNR179",
+            "Description": "60X60 2.0 ALEXANDRIA GRIGIO RTT SP20mm",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.333
+        },
+        {
+            "CodeArt": "PT0019",
+            "Description": "VANIGLIA 60X120",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.183
+        },
+        {
+            "CodeArt": "SF0378",
+            "Description": "FABRIC WHITE 60X120",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.112
+        },
+        {
+            "CodeArt": "SF0555",
+            "Description": "IROC WHITE 60X120 (sfuso)",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.323
+        },
+        {
+            "CodeArt": "SF0571",
+            "Description": "ABITA ARGENTO 60X120 (sfuso)",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.114
+        },
+        {
+            "CodeArt": "SF0795",
+            "Description": "60X120 CHARME GREY (sfuso)",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.194
+        },
+        {
+            "CodeArt": "SF0845",
+            "Description": "VISION MATT NERO 60X120 (sfuso)",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.079
+        },
+        {
+            "CodeArt": "SF0945",
+            "Description": "TIME STONE GHIACCIO 60X120 (sfuso)",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.178
+        },
+        {
+            "CodeArt": "SF0973",
+            "Description": "WALK WHITE 60X120 (sfuso)",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.443
+        },
+        {
+            "CodeArt": "SF1066",
+            "Description": "COMPACT LISTADO SHADOW 60X120 (sfuso)",
+            "NumProve": 12,
+            "AvgAssorbimento": 0.19
+        },
+        {
+            "CodeArt": "SF0949",
+            "Description": "TIME STONE SABBIA OUT R11 60X120 (sfuso)",
+            "NumProve": 10,
+            "AvgAssorbimento": 0.254
+        },
+        {
+            "CodeArt": "303619",
+            "Description": "60X60 NEW ULTRA MUSTANG RETT Sp20mm",
+            "NumProve": 9,
+            "AvgAssorbimento": 0.338
+        },
+        {
+            "CodeArt": "PT0092",
+            "Description": "60X120 SIERRA GRIGIO",
+            "NumProve": 9,
+            "AvgAssorbimento": -0.073
+        },
+        {
+            "CodeArt": "SF0325",
+            "Description": "SMOT GREY 60X120 (sfuso)",
+            "NumProve": 9,
+            "AvgAssorbimento": 0.208
+        },
+        {
+            "CodeArt": "SF0558",
+            "Description": "COMFORT ZERO20 NATURALE 60X120 (sfuso)",
+            "NumProve": 9,
+            "AvgAssorbimento": 0.162
+        },
+        {
+            "CodeArt": "SF0768",
+            "Description": "60X120 QUEEN STONE AVORIO (sfuso)",
+            "NumProve": 9,
+            "AvgAssorbimento": 0.139
+        },
+        {
+            "CodeArt": "SF0877",
+            "Description": "ONYX WHITE 60X120 (sfuso)",
+            "NumProve": 9,
+            "AvgAssorbimento": 0.157
+        },
+        {
+            "CodeArt": "SF0956",
+            "Description": "TIME STONE SABBIA 81X81 (sfuso)",
+            "NumProve": 9,
+            "AvgAssorbimento": 0.231
+        },
+        {
+            "CodeArt": "004133",
+            "Description": "60X60 ULTRA CONTEMPORARY LIGHT GREY RTT SP20",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.214
+        },
+        {
+            "CodeArt": "004152",
+            "Description": "60X60 NEW ULTRA ASPEN FUME' RTT SP20",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.301
+        },
+        {
+            "CodeArt": "005100",
+            "Description": "60X60 FOSSIL BLUE STRUCT. RECT SP20",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.158
+        },
+        {
+            "CodeArt": "005866",
+            "Description": "60X60 ULTRA TREVISTONE GOLD RTT SP20",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.228
+        },
+        {
+            "CodeArt": "303568",
+            "Description": "60X60 NEW ULTRA BASIC GREY RT Sp20mm dado",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.188
+        },
+        {
+            "CodeArt": "303598",
+            "Description": "GARE LIGHT GREY 60X60 RTT",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.206
+        },
+        {
+            "CodeArt": "303626",
+            "Description": "60X60 NEW ULTRA LANDSCAPE DAY RETT Sp20mm",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.594
+        },
+        {
+            "CodeArt": "303994",
+            "Description": "60X60 ULTRA SOLID BLACK RT Sp20mm",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.183
+        },
+        {
+            "CodeArt": "EMT074",
+            "Description": "60X60 EMOTION ANTHRACITE RTT 8mm",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.29
+        },
+        {
+            "CodeArt": "PT0064",
+            "Description": "60X120 SCOZZESE FRASSINO",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.13
+        },
+        {
+            "CodeArt": "PT0307",
+            "Description": "CORTECCIA BEIGE 60X120 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.234
+        },
+        {
+            "CodeArt": "PT0379",
+            "Description": "IKON MINDI (WHITE) 60X120 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.169
+        },
+        {
+            "CodeArt": "SF0431",
+            "Description": "ASPEN ANTRACITE 60X120 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.131
+        },
+        {
+            "CodeArt": "SF0452",
+            "Description": "60X120 CULT BEIGE (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.121
+        },
+        {
+            "CodeArt": "SF0673",
+            "Description": "60X120 ERMETICA BIANCO (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.151
+        },
+        {
+            "CodeArt": "SF0697",
+            "Description": "NEW ULTRA ESSENZE CANNELLA 40,5X81 SP20 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.733
+        },
+        {
+            "CodeArt": "SF0746",
+            "Description": "60X120 MINIMAL SILVER (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.18
+        },
+        {
+            "CodeArt": "SF0774",
+            "Description": "60X120 EMOTION BLANC (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.128
+        },
+        {
+            "CodeArt": "SF0776",
+            "Description": "60X120 EMOTION TAUPE (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.134
+        },
+        {
+            "CodeArt": "SF0794",
+            "Description": "60X120 CHARME INVISIBLE GREY (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.308
+        },
+        {
+            "CodeArt": "SF0797",
+            "Description": "60X120 CHARME ILLUSION (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.251
+        },
+        {
+            "CodeArt": "SF0806",
+            "Description": "60X120 CHARME PERLA (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.293
+        },
+        {
+            "CodeArt": "SF0857",
+            "Description": "GEOLOGY ARGILLA 60X120 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.235
+        },
+        {
+            "CodeArt": "SF0858",
+            "Description": "GEOLOGY SABBIA 60X120 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.13
+        },
+        {
+            "CodeArt": "SF0863",
+            "Description": "ARGOS BEIGE 60X120 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.219
+        },
+        {
+            "CodeArt": "SF0891",
+            "Description": "60X120 ULTRA ASPEN BEIGE SP20 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.425
+        },
+        {
+            "CodeArt": "SF0908",
+            "Description": "60X120 ULTRA QUEEN STONE ACCIAIO SP20 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.155
+        },
+        {
+            "CodeArt": "SF0938",
+            "Description": "60X120 CONCEPT BEIGE SP20 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.108
+        },
+        {
+            "CodeArt": "SF0941",
+            "Description": "60X120 ULTRA TIME STONE SABBIA SP20 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.111
+        },
+        {
+            "CodeArt": "SF1008",
+            "Description": "CHARME PEARL LAPP 60X120 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.261
+        },
+        {
+            "CodeArt": "SF1031",
+            "Description": "120TRAVERTINO BEIGE 60X120 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.123
+        },
+        {
+            "CodeArt": "SF1036",
+            "Description": "NEW STONE DAINO OUT 60X120 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.261
+        },
+        {
+            "CodeArt": "SF1039",
+            "Description": "RIGATINO NEW STONE DAINO 60X120 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.298
+        },
+        {
+            "CodeArt": "SF1117",
+            "Description": "60X120 ULTRA TREVISTONE IVORY SP20 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.141
+        },
+        {
+            "CodeArt": "SF1121",
+            "Description": "60X120 MARLY BEIGE SP20 (sfuso)",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.083
+        },
+        {
+            "CodeArt": "TMS002",
+            "Description": "60X60 ULTRA TIME STONE CENERE RTT SP20",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.078
+        },
+        {
+            "CodeArt": "URB002",
+            "Description": "60X60 REKT URBAN STYLE LIGHT GREY RTT SP20",
+            "NumProve": 8,
+            "AvgAssorbimento": 0.219
+        },
+        {
+            "CodeArt": "SF0871",
+            "Description": "SHELLSTONE BEIGE 60X120 (sfuso)",
+            "NumProve": 7,
+            "AvgAssorbimento": 0.101
+        },
+        {
+            "CodeArt": "SF0970",
+            "Description": "SERICA IVORY 60X120 (sfuso)",
+            "NumProve": 7,
+            "AvgAssorbimento": 0.239
+        },
+        {
+            "CodeArt": "303637",
+            "Description": "GARE SAND 60X60",
+            "NumProve": 6,
+            "AvgAssorbimento": 0.065
+        },
+        {
+            "CodeArt": "SF0211",
+            "Description": "CULT WHITE 81X81 (sfuso)",
+            "NumProve": 6,
+            "AvgAssorbimento": 0.143
+        },
+        {
+            "CodeArt": "SF0758",
+            "Description": "60X120 PAINT WHITE (sfuso)",
+            "NumProve": 6,
+            "AvgAssorbimento": 0.337
+        },
+        {
+            "CodeArt": "SF0907",
+            "Description": "RIGAT-ONE AMBER 60X120 (sfuso)",
+            "NumProve": 6,
+            "AvgAssorbimento": 0.115
+        },
+        {
+            "CodeArt": "SF0953",
+            "Description": "TIME STONE CENERE 81X81 (sfuso)",
+            "NumProve": 6,
+            "AvgAssorbimento": 0.143
+        },
+        {
+            "CodeArt": "SF1124",
+            "Description": "POLARIS LUSERNA MISTA 80x80 SP20(sfuso)",
+            "NumProve": 6,
+            "AvgAssorbimento": 0.073
+        },
+        {
+            "CodeArt": "SF1130",
+            "Description": "ULTRA EVOQ AVORIO (C-LINE GREIGE) 80x80 SP20(sfuso)",
+            "NumProve": 6,
+            "AvgAssorbimento": 0.032
+        },
+        {
+            "CodeArt": "SFO037",
+            "Description": "NEW SCOUT BEIGE 81X81 SP20(sfuso)",
+            "NumProve": 6,
+            "AvgAssorbimento": 0.093
+        },
+        {
+            "CodeArt": "MNR194",
+            "Description": "60X60 2.0 60TRAVERTINO BEIGE RTT SP20mm",
+            "NumProve": 5,
+            "AvgAssorbimento": 0.176
+        },
+        {
+            "CodeArt": "SF0886",
+            "Description": "DECORS METAL LEAF 60X120 (sfuso)",
+            "NumProve": 5,
+            "AvgAssorbimento": 0.258
+        },
+        {
+            "CodeArt": "SF0982",
+            "Description": "RIGATINO SERICA BONE 60X120 (sfuso)",
+            "NumProve": 5,
+            "AvgAssorbimento": 0.282
+        },
+        {
+            "CodeArt": "004384",
+            "Description": "60X60 NEW RIYADH BLACK SP20 RTT",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.048
+        },
+        {
+            "CodeArt": "004409",
+            "Description": "60X60 LANDSCAPE SUN SP20 RTT",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.06
+        },
+        {
+            "CodeArt": "005426",
+            "Description": "60X60 ULTRA ERMETICA BIANCO RTT SP20",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.153
+        },
+        {
+            "CodeArt": "005427",
+            "Description": "60X60 ULTRA ERMETICA GRIGIO RTT SP20",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.04
+        },
+        {
+            "CodeArt": "005435",
+            "Description": "60X60 ULTRA EVOQ NERO RTT SP20",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.55
+        },
+        {
+            "CodeArt": "005615",
+            "Description": "60X60 ULTRA SHELLSTONE GRIGIO RTT SP20",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.088
+        },
+        {
+            "CodeArt": "005688",
+            "Description": "60X60 MARLY BEIGE RTT SP20",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.13
+        },
+        {
+            "CodeArt": "005898",
+            "Description": "60X60 ULTRA CONTERO STONE OFF-WHITE RT SP20",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.153
+        },
+        {
+            "CodeArt": "005900",
+            "Description": "60X60 ULTRA CONTERO STONE IVORY RT SP20",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.298
+        },
+        {
+            "CodeArt": "303570",
+            "Description": "60X60 NEW SCOUT SMOKE RT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.198
+        },
+        {
+            "CodeArt": "303596",
+            "Description": "GARE SAND 60X60 RTT",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.28
+        },
+        {
+            "CodeArt": "303597",
+            "Description": "GARE BROWN 60X60 RTT",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.295
+        },
+        {
+            "CodeArt": "303599",
+            "Description": "GARE GREY 60X60 RTT",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.258
+        },
+        {
+            "CodeArt": "303621",
+            "Description": "60X60 NEW ULTRA BARGE RT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.125
+        },
+        {
+            "CodeArt": "303624",
+            "Description": "60X60 NEW ULTRA CULT GREY RETT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.243
+        },
+        {
+            "CodeArt": "303625",
+            "Description": "60X60 NEW ULTRA LANDSCAPE NIGHT RETT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.113
+        },
+        {
+            "CodeArt": "303628",
+            "Description": "60X60 NEW ULTRA VALS DARK  RT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.198
+        },
+        {
+            "CodeArt": "303657",
+            "Description": "60x60 ULTRA PIETRA DI BAVIERA RETT SP20",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.125
+        },
+        {
+            "CodeArt": "303768",
+            "Description": "60x60 ULTRA SELCIATO RETT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.15
+        },
+        {
+            "CodeArt": "303794",
+            "Description": "60x60 ULTRA MANSION WARM RETT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 1.003
+        },
+        {
+            "CodeArt": "303991",
+            "Description": "60X60 ULTRA SOLID BEIGE RT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.165
+        },
+        {
+            "CodeArt": "304026",
+            "Description": "60X60 ULTRA MASK GRAPHITE  RT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.168
+        },
+        {
+            "CodeArt": "304196",
+            "Description": "ARROW BOX RTT 60X60 20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.078
+        },
+        {
+            "CodeArt": "304364",
+            "Description": "60X60 TeknoGRES CONCRETE BLACK RT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.085
+        },
+        {
+            "CodeArt": "304411",
+            "Description": "60X60 ULTRA TREVISTONE IVORY RT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.133
+        },
+        {
+            "CodeArt": "304435",
+            "Description": "60X60 ULTRA GEOSTONE IVORY RT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.053
+        },
+        {
+            "CodeArt": "304441",
+            "Description": "60X60 ULTRA GEOSTONE TAUPE RT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.173
+        },
+        {
+            "CodeArt": "4684143",
+            "Description": "60X60 ALPEN LOOSE SFUSO RTT Sp20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.18
+        },
+        {
+            "CodeArt": "BEAUVSTONEGR6018",
+            "Description": "60X60 RTT BEAUVISTONE GRIS SP18",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.06
+        },
+        {
+            "CodeArt": "BNLDA6018",
+            "Description": "60X60 RTT BENELUX DARK 18MM cl32",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.075
+        },
+        {
+            "CodeArt": "BXBE6618",
+            "Description": "60X60 RTT BENELUX BEIGE SP18",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.063
+        },
+        {
+            "CodeArt": "MNR180",
+            "Description": "60X60 2.0 ALEXANDRIA ANTRACITE RTT SP20mm",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.265
+        },
+        {
+            "CodeArt": "MNR187",
+            "Description": "60X60 2.0 60CONCEPT BEIGE RTT SP2cm  SFUSO",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.223
+        },
+        {
+            "CodeArt": "MNR188",
+            "Description": "60X60 2.0 60CONCEPT GRIGIO RTT SP2cm SFUSO",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.275
+        },
+        {
+            "CodeArt": "MNR206",
+            "Description": "60X60 2.0 ALEXANDRIA BEIGE RTT SP2cm SFUSO",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.118
+        },
+        {
+            "CodeArt": "PT0020",
+            "Description": "CANNELLA 60X120",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.138
+        },
+        {
+            "CodeArt": "PT0090",
+            "Description": "60X120 SIERRA BEIGE",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.283
+        },
+        {
+            "CodeArt": "PT0173",
+            "Description": "60X120 SIERRA ROVERE",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.098
+        },
+        {
+            "CodeArt": "PT0204",
+            "Description": "CHALET CERVINIA HONEY 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.145
+        },
+        {
+            "CodeArt": "PT0235",
+            "Description": "IKON WALNUT 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.325
+        },
+        {
+            "CodeArt": "PT0310",
+            "Description": "CORTECCIA NOCE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.298
+        },
+        {
+            "CodeArt": "PT0323",
+            "Description": "60X120 CHALET CORTINA BEIGE R11 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.508
+        },
+        {
+            "CodeArt": "QST022",
+            "Description": "60X120 QUEEN STONE SABBIA RTT",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.425
+        },
+        {
+            "CodeArt": "SF0120",
+            "Description": "ULTRA BARGE 62X62 SP 18( sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.178
+        },
+        {
+            "CodeArt": "SF0302",
+            "Description": "60X120 TRAV AMBRA MEMENTO (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.218
+        },
+        {
+            "CodeArt": "SF0324",
+            "Description": "SMOT WHITE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.225
+        },
+        {
+            "CodeArt": "SF0446",
+            "Description": "BASIC GREY 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.103
+        },
+        {
+            "CodeArt": "SF0447",
+            "Description": "BASIC LIGHT GREY 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.103
+        },
+        {
+            "CodeArt": "SF0451",
+            "Description": "60X120 CULT GREY (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.26
+        },
+        {
+            "CodeArt": "SF0453",
+            "Description": "60X120 CULT ANTHRACITE (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.063
+        },
+        {
+            "CodeArt": "SF0537",
+            "Description": "GARE LIGHT GREY 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.073
+        },
+        {
+            "CodeArt": "SF0557",
+            "Description": "COMFORT ZERO10 BIANCO  60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.158
+        },
+        {
+            "CodeArt": "SF0560",
+            "Description": "COMFORT ZERO40 AVANA 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.325
+        },
+        {
+            "CodeArt": "SF0566",
+            "Description": "FRAME SUPERIOR",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.1
+        },
+        {
+            "CodeArt": "SF0568",
+            "Description": "SOLID WHITE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.103
+        },
+        {
+            "CodeArt": "SF0570 p",
+            "Description": "SOLID BLACK 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.215
+        },
+        {
+            "CodeArt": "SF0644",
+            "Description": "FUSION GRIGIO 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.158
+        },
+        {
+            "CodeArt": "SF0647",
+            "Description": "FUSION VERDE SALVIA 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.093
+        },
+        {
+            "CodeArt": "SF0648",
+            "Description": "FUSION AZZURRO ANTICO 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.073
+        },
+        {
+            "CodeArt": "SF0667",
+            "Description": "GARE BROWN 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.15
+        },
+        {
+            "CodeArt": "SF0672",
+            "Description": "60X120 120STUDIOS GRIGIO (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.195
+        },
+        {
+            "CodeArt": "SF0675",
+            "Description": "60X120 ERMETICA GRIGIO (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.208
+        },
+        {
+            "CodeArt": "SF0676",
+            "Description": "60X120 ERMETICA LAVAGNA (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.283
+        },
+        {
+            "CodeArt": "SF0677",
+            "Description": "60X120 NATURE BIANCO (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.178
+        },
+        {
+            "CodeArt": "SF0680",
+            "Description": "60X120 NATURE NERO (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.185
+        },
+        {
+            "CodeArt": "SF0681",
+            "Description": "60X120 ULTRA ESSENZE CANNELLA SP20 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.265
+        },
+        {
+            "CodeArt": "SF0685",
+            "Description": "60X120 ULTRA ASPEN GRIGIO SP20 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.308
+        },
+        {
+            "CodeArt": "SF0693",
+            "Description": "FUSION BRONZO RUGGINE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.198
+        },
+        {
+            "CodeArt": "SF0719",
+            "Description": "ASPEN BIANCO 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.185
+        },
+        {
+            "CodeArt": "SF0722",
+            "Description": "60X120 DEC. TENTAZIONI (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.178
+        },
+        {
+            "CodeArt": "SF0745",
+            "Description": "60X120 MINIMAL PLATINUM (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.163
+        },
+        {
+            "CodeArt": "SF0749y",
+            "Description": "60X120 PALMA (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.073
+        },
+        {
+            "CodeArt": "SF0757",
+            "Description": "60X120 PAINT SALVIA (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.103
+        },
+        {
+            "CodeArt": "SF0759",
+            "Description": "60X120 MAGNOLIA (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.155
+        },
+        {
+            "CodeArt": "SF0782",
+            "Description": "60X120 PORTLAND WHITE (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.215
+        },
+        {
+            "CodeArt": "SF0787",
+            "Description": "60X120 PORTLAND BABY BLUE (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.208
+        },
+        {
+            "CodeArt": "SF0790",
+            "Description": "MASK IVORY 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.055
+        },
+        {
+            "CodeArt": "SF0792",
+            "Description": "MASK SILVER 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.32
+        },
+        {
+            "CodeArt": "SF0851",
+            "Description": "120INFINITY BEIGE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.243
+        },
+        {
+            "CodeArt": "SF0859",
+            "Description": "GEOLOGY TERRA 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.218
+        },
+        {
+            "CodeArt": "SF0860",
+            "Description": "GEOLOGY GHIAIA 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.02
+        },
+        {
+            "CodeArt": "SF0861",
+            "Description": "GEOLOGY SALVIA 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.165
+        },
+        {
+            "CodeArt": "SF0862",
+            "Description": "ARGOS BLACK 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.12
+        },
+        {
+            "CodeArt": "SF0865",
+            "Description": "FONDO BIANCO ANNI 70 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.398
+        },
+        {
+            "CodeArt": "SF0866",
+            "Description": "FONDO AZZURRO ANNI 70 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.108
+        },
+        {
+            "CodeArt": "SF0868",
+            "Description": "GEOLOGY COTTO 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.193
+        },
+        {
+            "CodeArt": "SF0872",
+            "Description": "SHELLSTONE TAUPE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.078
+        },
+        {
+            "CodeArt": "SF0873",
+            "Description": "SHELLSTONE BIANCO 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.42
+        },
+        {
+            "CodeArt": "SF0874",
+            "Description": "RIGAT-ONE FRAME MID 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.165
+        },
+        {
+            "CodeArt": "SF0876",
+            "Description": "ONYX IVORY 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.103
+        },
+        {
+            "CodeArt": "SF0878",
+            "Description": "ONYX GREEN 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.23
+        },
+        {
+            "CodeArt": "SF0891",
+            "Description": "SMOT WHITE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.128
+        },
+        {
+            "CodeArt": "SF0897",
+            "Description": "RIGAT-ONE SHELLSTONE BIANCO 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.103
+        },
+        {
+            "CodeArt": "SF0898",
+            "Description": "RIGAT-ONE SHELLSTONE GRIGIO 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.235
+        },
+        {
+            "CodeArt": "SF0899",
+            "Description": "RIGAT-ONE SHELLSTONE BEIGE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.338
+        },
+        {
+            "CodeArt": "SF0900",
+            "Description": "RIGAT-ONE SHELLSTONE TAUPE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.138
+        },
+        {
+            "CodeArt": "SF0904",
+            "Description": "RIGAT-ONE GEOLOGY SABBIA 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.12
+        },
+        {
+            "CodeArt": "SF0906",
+            "Description": "RIGAT-ONE GEOLOGY COTTO 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.115
+        },
+        {
+            "CodeArt": "SF0911",
+            "Description": "FONDO SABBIATO ANNI 70 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.21
+        },
+        {
+            "CodeArt": "SF0924",
+            "Description": "ARGOS WHITE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.12
+        },
+        {
+            "CodeArt": "SF0926",
+            "Description": "DOMUS WALNUT 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.208
+        },
+        {
+            "CodeArt": "SF0930",
+            "Description": "CASSETTONE BIANCO ANNI 70' 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.245
+        },
+        {
+            "CodeArt": "SF0932",
+            "Description": "M. GRIGIO 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.725
+        },
+        {
+            "CodeArt": "SF0934",
+            "Description": "VISION STATUARIO GOLD LAPP 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.4
+        },
+        {
+            "CodeArt": "SF0944",
+            "Description": "TIME STONE CENERE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.313
+        },
+        {
+            "CodeArt": "SF0951",
+            "Description": "CONTEMPORARY LIGHT GREY 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.228
+        },
+        {
+            "CodeArt": "SF0952",
+            "Description": "CONTEMPORARY GREY 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.183
+        },
+        {
+            "CodeArt": "SF0966",
+            "Description": "ASPEN BEIGE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.07
+        },
+        {
+            "CodeArt": "SF0967",
+            "Description": "ASPEN FUME 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.085
+        },
+        {
+            "CodeArt": "SF0971",
+            "Description": "SERICA CINDER 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.143
+        },
+        {
+            "CodeArt": "SF0975",
+            "Description": "WALK IVORY 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.09
+        },
+        {
+            "CodeArt": "SF0983.",
+            "Description": "RIGATINO SERICA IVORY 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.338
+        },
+        {
+            "CodeArt": "SF0986",
+            "Description": "RIGATINO DEC FLORA 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.283
+        },
+        {
+            "CodeArt": "SF0987",
+            "Description": "TEQA LARICE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.198
+        },
+        {
+            "CodeArt": "SF0991",
+            "Description": "MEIKE ACERO 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.105
+        },
+        {
+            "CodeArt": "SF0996",
+            "Description": "RIGATINO CHARME BLACK 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.153
+        },
+        {
+            "CodeArt": "SF1002",
+            "Description": "60X120 ULTRA VALS LIGHT  SP20 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.105
+        },
+        {
+            "CodeArt": "SF1015",
+            "Description": "SERICA IVORY OUT 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.208
+        },
+        {
+            "CodeArt": "SF1016",
+            "Description": "SERICA CINDER OUT 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.198
+        },
+        {
+            "CodeArt": "SF1032",
+            "Description": "120TRAVERTINO PEARL 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.088
+        },
+        {
+            "CodeArt": "SF1034",
+            "Description": "NEW STONE VISONE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.155
+        },
+        {
+            "CodeArt": "SF1035",
+            "Description": "NEW STONE LEPRE 60X120 (sfuso)",
+            "NumProve": 4,
+            "AvgAssorbimento": 0.135
+        }
+    ],
+    "conclusions": "Operativamente: 1) I valori medi per articolo sono disponibili e possono essere usati per controllo qualità o classificazione dei lotti. 2) Si raccomanda di rivedere le prove con valori anomali (es. negativi o >1) prima di usarle per decisioni operative; potrebbero essere errori di misura o inserimento. 3) Per analisi successive suggerisco: a) applicare una soglia minima di prove (es. >=5) per considerare l'articolo affidabile; b) richiedere l'aggregato complessivo aziendale (media generale) o confronti per tono/serie se ti interessa un confronto più mirato; c) segnalare eventuali articoli specifici da approfondire (fornisco istogrammi o trend temporali su richiesta)."
+}

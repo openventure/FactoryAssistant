@@ -1,0 +1,32 @@
+{
+    "user_request": "ultimi 2 anni",
+    "report_title": "Linee con maggior produzione (m²) - ultimi 2 anni",
+    "summary": "Analisi della produzione nell’ultimo biennio (ultimi 2 anni). Ho considerato tutti i pallet non marcati come espulsi. Le tre linee con maggiore produzione sono riportate sotto con metri quadri totali, numero di pallet e pezzi prodotti. Le date indicano la prima produzione registrata nel periodo; alcuni pallet non hanno END_DATETIME registrato.",
+    "table_data": [
+        {
+            "Linea": "1",
+            "Total_m2": 79.2,
+            "NumPallet": 3,
+            "Total_Pieces": 110,
+            "FirstProdDate": "2025-02-09 00:51:53",
+            "LastProdDate": null
+        },
+        {
+            "Linea": "3",
+            "Total_m2": 53.76,
+            "NumPallet": 3,
+            "Total_Pieces": 84,
+            "FirstProdDate": "2025-01-30 16:06:59",
+            "LastProdDate": null
+        },
+        {
+            "Linea": "2",
+            "Total_m2": 24.96,
+            "NumPallet": 2,
+            "Total_Pieces": 78,
+            "FirstProdDate": "2025-02-10 06:52:11",
+            "LastProdDate": null
+        }
+    ],
+    "conclusions": "Nel periodo considerato la Linea 1 è risultata la più produttiva in termini di m², seguita dalle linee 3 e 2. Osservazioni operative: 1) verificare gli END_DATETIME mancanti (possono indicare pallet non chiusi/registrati correttamente); 2) se vuoi un confronto includendo anche i pallet espulsi, posso rieseguire l’analisi; 3) se desideri approfondire, posso fornire la classifica estesa (Top 10), il dettaglio per articolo/tono o una ripartizione mensile per identificare trend e picchi di produzione."
+}

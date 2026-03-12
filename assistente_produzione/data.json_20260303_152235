@@ -1,0 +1,15 @@
+{
+    "user_request": "quante volte ho prodotto la serie aspen?",
+    "report_title": "Conteggio produzione serie 'Aspen' (PALLET_PRODUCTION)",
+    "summary": "Ho cercato nel registro di produzione (tabella PALLET_PRODUCTION) tutte le righe che contengono la parola 'ASPEN' nei campi che solitamente contengono informazioni di serie/articolo (LGV_qualita, LGV_CodiceArticolo, A_LOT, LGV_tono). La ricerca è stata eseguita sull'intera storia presente nella tabella.",
+    "table_data": [
+        {
+            "pallet_count": 0,
+            "total_mq": 0.0,
+            "total_pieces": 0,
+            "first_production": null,
+            "last_production": null
+        }
+    ],
+    "conclusions": "Non risultano produzioni riconducibili alla serie 'Aspen' nella tabella PALLET_PRODUCTION con i criteri di ricerca usati (ricerca testuale '%ASPEN%' su LGV_qualita, LGV_CodiceArticolo, A_LOT, LGV_tono).\n\nPossibili azioni successive consigliate:\n- Verificare la scrittura/esatta codifica della serie (es. 'ASPEN', 'aspen', prefissi/suffissi, codici interni).\n- Controllare la tabella pa_ff_code (colonna SERIE) o dashboard_productavailability se la serie è registrata lì invece che in PALLET_PRODUCTION. Posso eseguire la stessa ricerca su quelle tabelle su richiesta.\n- Se vuoi limitare l'analisi a un intervallo di date (es. anno o range), dimmi il periodo e rilancio la query.\n\nSe confermi, eseguo ricerche aggiuntive (pa_ff_code / dashboard_productavailability) o con filtri temporali."
+}

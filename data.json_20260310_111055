@@ -1,0 +1,1258 @@
+{
+    "user_request": "cosa sta producendo la linea 1",
+    "report_title": "Produzione Linea 1 — produzione in corso e iniziata oggi",
+    "summary": "Ho estratto la produzione per la Linea 1 considerando pallet in corso (END_DATETIME IS NULL o END_DATETIME > ora) e pallet avviati oggi (START_DATETIME >= oggi). Risultano numerosi articoli/toni in produzione: i principali per superficie (m²) prodotti finora sono — 1) 004990 (tono R184) 18.885,6 m²; 2) TMS114 (R064) 11.995,2 m²; 3) 004470 (R224) 11.748,6 m²; 4) 304013 (R014) 10.807,2 m²; 5) 12011539 (R014) 10.368,0 m². La tabella sotto riporta, per ogni articolo/tono, formato, scelta, m² totali, numero pallet, pezzi e numero lotti coinvolti.",
+    "table_data": [
+        {
+            "CodiceArticolo": "004990",
+            "Tono": "R184",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.00000",
+            "MQ": 18885.6,
+            "Pallets": 344,
+            "Pezzi": 77400,
+            "NumeroLotti": 3
+        },
+        {
+            "CodiceArticolo": "TMS114",
+            "Tono": "R064",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 11995.2,
+            "Pallets": 238,
+            "Pezzi": 16660,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004470",
+            "Tono": "R224",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 11748.6,
+            "Pallets": 214,
+            "Pezzi": 48150,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "304013",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 10807.2,
+            "Pallets": 215,
+            "Pezzi": 15010,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "12011539",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 10368.0,
+            "Pallets": 480,
+            "Pezzi": 14400,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "304041",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 10080.0,
+            "Pallets": 200,
+            "Pezzi": 14000,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "6573619",
+            "Tono": "R174",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 1.80000",
+            "MQ": 9806.4,
+            "Pallets": 454,
+            "Pezzi": 27240,
+            "NumeroLotti": 0
+        },
+        {
+            "CodiceArticolo": "EMT091",
+            "Tono": "R034",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 9777.6,
+            "Pallets": 194,
+            "Pezzi": 13580,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004990",
+            "Tono": "R204",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.00000",
+            "MQ": 9717.3,
+            "Pallets": 177,
+            "Pezzi": 39825,
+            "NumeroLotti": 2
+        },
+        {
+            "CodiceArticolo": "004990",
+            "Tono": "R234",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.00000",
+            "MQ": 9717.3,
+            "Pallets": 177,
+            "Pezzi": 39825,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004547",
+            "Tono": "R054",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 9547.2,
+            "Pallets": 450,
+            "Pezzi": 13260,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "12011539",
+            "Tono": "R024",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 9493.2,
+            "Pallets": 440,
+            "Pezzi": 13185,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "EMT092",
+            "Tono": "R024",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 9273.6,
+            "Pallets": 184,
+            "Pezzi": 12880,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "MNR145",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "20.30000x122.00000 sp 0.95000",
+            "MQ": 8465.82,
+            "Pallets": 150,
+            "Pezzi": 33330,
+            "NumeroLotti": 0
+        },
+        {
+            "CodiceArticolo": "TMS012",
+            "Tono": "R034",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 8305.2,
+            "Pallets": 385,
+            "Pezzi": 11535,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004011A",
+            "Tono": "R164",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 8085.6,
+            "Pallets": 161,
+            "Pezzi": 11230,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "CMT004",
+            "Tono": "R184",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 7594.5,
+            "Pallets": 139,
+            "Pezzi": 31125,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "CMT002",
+            "Tono": "R174",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 7137.0,
+            "Pallets": 130,
+            "Pezzi": 29250,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "TMS314B",
+            "Tono": "R034",
+            "Scelta": "I",
+            "Formato": "80.00000x80.00000 sp 0.95000",
+            "MQ": 7127.04,
+            "Pallets": 116,
+            "Pezzi": 11136,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303779",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "81.00000x81.00000 sp 2.00000",
+            "MQ": 6648.96,
+            "Pallets": 212,
+            "Pezzi": 10134,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "SF0831",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "61.00000x61.00000 sp 0.95000",
+            "MQ": 6600.0,
+            "Pallets": 55,
+            "Pezzi": 6600,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "MNR144",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "20.30000x122.00000 sp 0.95000",
+            "MQ": 6210.3,
+            "Pallets": 109,
+            "Pezzi": 24450,
+            "NumeroLotti": 0
+        },
+        {
+            "CodiceArticolo": "CMT002",
+            "Tono": "R144",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 6203.7,
+            "Pallets": 113,
+            "Pezzi": 25425,
+            "NumeroLotti": 2
+        },
+        {
+            "CodiceArticolo": "6567943",
+            "Tono": "",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 5955.12,
+            "Pallets": 278,
+            "Pezzi": 16542,
+            "NumeroLotti": 0
+        },
+        {
+            "CodiceArticolo": "303660",
+            "Tono": "R284",
+            "Scelta": "I",
+            "Formato": "30.00000x122.00000 sp 0.95000",
+            "MQ": 5889.672,
+            "Pallets": 112,
+            "Pezzi": 16092,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "005464",
+            "Tono": "R024",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 5695.2,
+            "Pallets": 113,
+            "Pezzi": 7910,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "QST071",
+            "Tono": "R034",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 5680.8,
+            "Pallets": 263,
+            "Pezzi": 7890,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303521A",
+            "Tono": "R054",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 5594.4,
+            "Pallets": 111,
+            "Pezzi": 7770,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "304018",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 0.80000",
+            "MQ": 5587.2,
+            "Pallets": 97,
+            "Pezzi": 15520,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "003938A",
+            "Tono": "R124",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 5493.6,
+            "Pallets": 109,
+            "Pezzi": 7630,
+            "NumeroLotti": 2
+        },
+        {
+            "CodiceArticolo": "3514182",
+            "Tono": "R054",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 5443.2,
+            "Pallets": 108,
+            "Pezzi": 7560,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004470",
+            "Tono": "R174",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 5380.2,
+            "Pallets": 98,
+            "Pezzi": 22050,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303836A",
+            "Tono": "R064",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 5292.0,
+            "Pallets": 105,
+            "Pezzi": 7350,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "TMS014",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 5270.4,
+            "Pallets": 244,
+            "Pezzi": 7320,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004410",
+            "Tono": "R024",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.00000",
+            "MQ": 5192.64,
+            "Pallets": 121,
+            "Pezzi": 7212,
+            "NumeroLotti": 0
+        },
+        {
+            "CodiceArticolo": "005617",
+            "Tono": "R024",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 5076.0,
+            "Pallets": 235,
+            "Pezzi": 7050,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "3510992A",
+            "Tono": "R224",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 5040.0,
+            "Pallets": 100,
+            "Pezzi": 7000,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "304196",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 0.00000",
+            "MQ": 4838.4,
+            "Pallets": 160,
+            "Pezzi": 9600,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "003778",
+            "Tono": "R234",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 4831.2,
+            "Pallets": 88,
+            "Pezzi": 19800,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "TMS111",
+            "Tono": "R044",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 4737.6,
+            "Pallets": 94,
+            "Pezzi": 6580,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "EMT091",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 4737.6,
+            "Pallets": 94,
+            "Pezzi": 6580,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004471",
+            "Tono": "R124",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 4721.4,
+            "Pallets": 86,
+            "Pezzi": 19350,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303810",
+            "Tono": "R124",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 4666.5,
+            "Pallets": 85,
+            "Pezzi": 19125,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "TMS014",
+            "Tono": "R034",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 4665.6,
+            "Pallets": 216,
+            "Pezzi": 6480,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "003676A",
+            "Tono": "R094",
+            "Scelta": "I",
+            "Formato": "20.00000x120.00000 sp 0.95000",
+            "MQ": 4556.7,
+            "Pallets": 83,
+            "Pezzi": 18675,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303810",
+            "Tono": "R224",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 4501.8,
+            "Pallets": 82,
+            "Pezzi": 18450,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303646A",
+            "Tono": "R114",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 4384.8,
+            "Pallets": 87,
+            "Pezzi": 6090,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "FLS001",
+            "Tono": "R104",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 4333.44,
+            "Pallets": 79,
+            "Pezzi": 17760,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303467A",
+            "Tono": "R164",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 4168.8,
+            "Pallets": 83,
+            "Pezzi": 5790,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004439A",
+            "Tono": "R094",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 4132.8,
+            "Pallets": 82,
+            "Pezzi": 5740,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303803",
+            "Tono": "R054",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 4125.6,
+            "Pallets": 191,
+            "Pezzi": 5730,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "005301",
+            "Tono": "R024",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 4111.2,
+            "Pallets": 82,
+            "Pezzi": 5710,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "3510992A",
+            "Tono": "R144",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 4082.4,
+            "Pallets": 81,
+            "Pezzi": 5670,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "BSLIGHT6018",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 1.80000",
+            "MQ": 4055.04,
+            "Pallets": 177,
+            "Pezzi": 11264,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "3510992A",
+            "Tono": "R114",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 3931.2,
+            "Pallets": 78,
+            "Pezzi": 5460,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "EMT094",
+            "Tono": "R024",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 3931.2,
+            "Pallets": 78,
+            "Pezzi": 5460,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "CMT003",
+            "Tono": "R194",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3788.1,
+            "Pallets": 69,
+            "Pezzi": 15525,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303811",
+            "Tono": "R134",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3678.3,
+            "Pallets": 67,
+            "Pezzi": 15075,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "EF1363",
+            "Tono": "R094",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3674.64,
+            "Pallets": 68,
+            "Pezzi": 15060,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303467A",
+            "Tono": "R204",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 3664.8,
+            "Pallets": 73,
+            "Pezzi": 5090,
+            "NumeroLotti": 0
+        },
+        {
+            "CodiceArticolo": "303810",
+            "Tono": "R174",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3623.4,
+            "Pallets": 66,
+            "Pezzi": 14850,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004151",
+            "Tono": "R214",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 3564.0,
+            "Pallets": 165,
+            "Pezzi": 9900,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303788B",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 3531.6,
+            "Pallets": 164,
+            "Pezzi": 9810,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303658",
+            "Tono": "",
+            "Scelta": "SE",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3524.58,
+            "Pallets": 65,
+            "Pezzi": 14445,
+            "NumeroLotti": 10
+        },
+        {
+            "CodiceArticolo": "304267",
+            "Tono": "R044",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3513.6,
+            "Pallets": 64,
+            "Pezzi": 14400,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303810",
+            "Tono": "R164",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3458.7,
+            "Pallets": 63,
+            "Pezzi": 14175,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "003778",
+            "Tono": "R264",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3458.7,
+            "Pallets": 63,
+            "Pezzi": 14175,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303777",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "81.00000x81.00000 sp 2.00000",
+            "MQ": 3327.712,
+            "Pallets": 84,
+            "Pezzi": 5072,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "003856",
+            "Tono": "R234",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3294.0,
+            "Pallets": 60,
+            "Pezzi": 13500,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "005816",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 3272.4,
+            "Pallets": 152,
+            "Pezzi": 4545,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303810",
+            "Tono": "R144",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3239.1,
+            "Pallets": 59,
+            "Pezzi": 13275,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004990",
+            "Tono": "R264",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.00000",
+            "MQ": 3184.2,
+            "Pallets": 58,
+            "Pezzi": 13050,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "NWS232",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 3175.2,
+            "Pallets": 147,
+            "Pezzi": 4410,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "TMS004",
+            "Tono": "R024",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 3175.2,
+            "Pallets": 147,
+            "Pezzi": 8820,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004990",
+            "Tono": "R244",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.00000",
+            "MQ": 3173.22,
+            "Pallets": 58,
+            "Pezzi": 13005,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "RPL151",
+            "Tono": "R034",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 3117.6,
+            "Pallets": 63,
+            "Pezzi": 4330,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004440A",
+            "Tono": "R074",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 3074.4,
+            "Pallets": 61,
+            "Pezzi": 4270,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004470",
+            "Tono": "R194",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3074.4,
+            "Pallets": 56,
+            "Pezzi": 12600,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004188A",
+            "Tono": "R144",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 3074.4,
+            "Pallets": 61,
+            "Pezzi": 4270,
+            "NumeroLotti": 2
+        },
+        {
+            "CodiceArticolo": "303810",
+            "Tono": "R214",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3074.4,
+            "Pallets": 56,
+            "Pezzi": 12600,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "304040",
+            "Tono": "R064",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 3074.4,
+            "Pallets": 61,
+            "Pezzi": 4270,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "CMT003",
+            "Tono": "R204",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3074.4,
+            "Pallets": 56,
+            "Pezzi": 12600,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303742",
+            "Tono": "R014",
+            "Scelta": "1",
+            "Formato": "60.00000x120.00000 sp 0.00000",
+            "MQ": 3067.2,
+            "Pallets": 71,
+            "Pezzi": null,
+            "NumeroLotti": 0
+        },
+        {
+            "CodiceArticolo": "URB003",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 3045.6,
+            "Pallets": 141,
+            "Pezzi": 8460,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "005000A",
+            "Tono": "R024",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 3031.2,
+            "Pallets": 61,
+            "Pezzi": 4210,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "304012",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 3024.0,
+            "Pallets": 60,
+            "Pezzi": 4200,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "STF031",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 3024.0,
+            "Pallets": 140,
+            "Pezzi": 4200,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303801",
+            "Tono": "R114",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3019.5,
+            "Pallets": 55,
+            "Pezzi": 12375,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "003856",
+            "Tono": "R204",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 3019.5,
+            "Pallets": 55,
+            "Pezzi": 12375,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "556597",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "80.00000x80.00000 sp 2.00000",
+            "MQ": 2968.32,
+            "Pallets": 97,
+            "Pezzi": 4638,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "RANG030",
+            "Tono": "R194",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 2964.6,
+            "Pallets": 54,
+            "Pezzi": 12150,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "304300",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 2959.2,
+            "Pallets": 137,
+            "Pezzi": 8220,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "CMT001",
+            "Tono": "R124",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 2949.96,
+            "Pallets": 54,
+            "Pezzi": 12090,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004011",
+            "Tono": "R054",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 2924.64,
+            "Pallets": 68,
+            "Pezzi": 4062,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "RPL143",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 2923.2,
+            "Pallets": 58,
+            "Pezzi": 4060,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "003780",
+            "Tono": "R314",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 2902.38,
+            "Pallets": 53,
+            "Pezzi": 11895,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "STF003",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 2894.4,
+            "Pallets": 134,
+            "Pezzi": 8040,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004471",
+            "Tono": "R144",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 2873.1,
+            "Pallets": 53,
+            "Pezzi": 11775,
+            "NumeroLotti": 2
+        },
+        {
+            "CodiceArticolo": "CMT002",
+            "Tono": "R154",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 2854.8,
+            "Pallets": 52,
+            "Pezzi": 11700,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "6573619",
+            "Tono": "174",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 1.80000",
+            "MQ": 2829.6,
+            "Pallets": 131,
+            "Pezzi": 7860,
+            "NumeroLotti": 0
+        },
+        {
+            "CodiceArticolo": "303524A",
+            "Tono": "R094",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 2822.4,
+            "Pallets": 56,
+            "Pezzi": 3920,
+            "NumeroLotti": 0
+        },
+        {
+            "CodiceArticolo": "VSM003",
+            "Tono": "R024",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 2815.2,
+            "Pallets": 56,
+            "Pezzi": 3910,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004154",
+            "Tono": "R254",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 2808.0,
+            "Pallets": 130,
+            "Pezzi": 7800,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "304041",
+            "Tono": "R084",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 2786.4,
+            "Pallets": 56,
+            "Pezzi": 3870,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "304299",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 2764.8,
+            "Pallets": 128,
+            "Pezzi": 7680,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303815",
+            "Tono": "R144",
+            "Scelta": "I",
+            "Formato": "30.00000x122.00000 sp 0.95000",
+            "MQ": 2740.608,
+            "Pallets": 52,
+            "Pezzi": 7488,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "304041",
+            "Tono": "R094",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 2721.6,
+            "Pallets": 54,
+            "Pezzi": 3780,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "VI28123377",
+            "Tono": "R034",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 2721.6,
+            "Pallets": 126,
+            "Pezzi": 7560,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "304030",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 0.80000",
+            "MQ": 2707.2,
+            "Pallets": 47,
+            "Pezzi": 7520,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303658",
+            "Tono": "R164",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 2679.12,
+            "Pallets": 50,
+            "Pezzi": 10980,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "MC4154",
+            "Tono": "R264",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 2650.32,
+            "Pallets": 123,
+            "Pezzi": 7362,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "CMT003",
+            "Tono": "R224",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 2635.2,
+            "Pallets": 48,
+            "Pezzi": 10800,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "003780",
+            "Tono": "R324",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 2616.9,
+            "Pallets": 48,
+            "Pezzi": 10725,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "RANG032",
+            "Tono": "R244",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 2609.58,
+            "Pallets": 48,
+            "Pezzi": 10695,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "EF1179",
+            "Tono": "R024",
+            "Scelta": "I",
+            "Formato": "20.00000x120.00000 sp 0.00000",
+            "MQ": 2565.66,
+            "Pallets": 47,
+            "Pezzi": 10515,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303524A",
+            "Tono": "R104",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 2534.4,
+            "Pallets": 51,
+            "Pezzi": 3520,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "TMS004",
+            "Tono": "R034",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 2527.2,
+            "Pallets": 117,
+            "Pezzi": 7020,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004990",
+            "Tono": "R254",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.00000",
+            "MQ": 2525.4,
+            "Pallets": 46,
+            "Pezzi": 10350,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "005463",
+            "Tono": "R014",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 2507.1,
+            "Pallets": 46,
+            "Pezzi": 10275,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "304196",
+            "Tono": "R024",
+            "Scelta": "I",
+            "Formato": "60.00000x60.00000 sp 2.00000",
+            "MQ": 2505.6,
+            "Pallets": 90,
+            "Pezzi": 5400,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004990",
+            "Tono": "R364",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.00000",
+            "MQ": 2470.5,
+            "Pallets": 45,
+            "Pezzi": 10125,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "004916A",
+            "Tono": "R224",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 2469.6,
+            "Pallets": 49,
+            "Pezzi": 3430,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "TMS012",
+            "Tono": "R035",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 2.00000",
+            "MQ": 2462.4,
+            "Pallets": 114,
+            "Pezzi": 3420,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "CMT002",
+            "Tono": "R234",
+            "Scelta": "I",
+            "Formato": "20.00000x122.00000 sp 0.95000",
+            "MQ": 2426.58,
+            "Pallets": 45,
+            "Pezzi": 9945,
+            "NumeroLotti": 1
+        },
+        {
+            "CodiceArticolo": "303525A",
+            "Tono": "R164",
+            "Scelta": "I",
+            "Formato": "60.00000x120.00000 sp 0.95000",
+            "MQ": 2419.2,
+            "Pallets": 48,
+            "Pezzi": 3360,
+            "NumeroLotti": 1
+        }
+    ],
+    "conclusions": "Operativamente: la Linea 1 sta producendo un mix ampio di articoli e toni, con alcuni articoli (es. 004990, TMS114, 004470) che rappresentano le maggiori superfici prodotte. Se vuoi azioni concrete posso: 1) aggregare per famiglia/serie (se utile al commerciale); 2) mostrare solo prima scelta o includere seconde/espulsi; 3) fornire il dettaglio pallet-per-pallet per uno o più articoli selezionati; 4) eseguire lo stesso estratto limitato a un orario preciso o a un intervallo (es. ultima ora / ultime 8 ore). Dimmi quale approfondimento preferisci."
+}

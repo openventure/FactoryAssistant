@@ -1,0 +1,228 @@
+{
+    "user_request": "Quali articoli 60x120 sono sottoscorta rispetto alla soglia minima?",
+    "report_title": "Articoli 60x120 sottoscorta vs soglia minima (risk_mode = min_stock)",
+    "summary": "Ho eseguito l'analisi di rischio sottoscorta per il formato 60x120 usando la logica 'min_stock' confrontando la soglia minima con la giacenza attuale (campo usato: giacenza). Sono stati trovati 167 articoli sotto soglia. Qui sotto riporto i primi 20 articoli a rischio (vista sintetica ordinata per severità / ordine restituito dal sistema). Se vuoi l'elenco completo o un ordinamento diverso (es. per shortage decrescente o per serie/deposito), posso fornirtelo o esportarlo.",
+    "table_data": [
+        {
+            "codice": "003311",
+            "descrizione": "60X120 RTT ONIX CARAMEL",
+            "serie": "MATERIALI ACR",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "003753A",
+            "descrizione": "60X120 RTT TRAV BLACK MEMENTO cl35",
+            "serie": "TRAVERTINO MEMENTO",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-1.44",
+            "qta_da_consegnare_m2": "1.44",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "003757",
+            "descrizione": "60X120 RTT TRAV. GREY MEMENTO",
+            "serie": "TRAVERTINO MEMENTO",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "-1.44",
+            "qta_da_consegnare_m2": "1.44",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "003758",
+            "descrizione": "60X120 RTT / LPP TRAV. BLACK MEMENTO",
+            "serie": "ARTICOLI NON A CATALOGO",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "003759",
+            "descrizione": "60X120 RTT / LAPP TRAV. AMBRA MEMENTO",
+            "serie": "ARTICOLI NON A CATALOGO",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "003760",
+            "descrizione": "60X120 RTT / LPP TRAV. BIANCO MEMENTO",
+            "serie": "ARTICOLI NON A CATALOGO",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "003761",
+            "descrizione": "60X120 RTT / LPP TRAV. GREY MEMENTO",
+            "serie": "ARTICOLI NON A CATALOGO",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "003914A",
+            "descrizione": "60X120 FOLK GRIGIO RETT. NUOVO IMBALLO cl 35",
+            "serie": "TERM ELLE - NON USARE",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "003915A",
+            "descrizione": "60X120 FOLK BIANCO RETT. NUOVO IMBALLO cl 35",
+            "serie": "TERM ELLE - NON USARE",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "003990",
+            "descrizione": "60X120 RTT WHITE STONE COLL.",
+            "serie": "STONE COLLECTION",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "004008",
+            "descrizione": "60X120 RTT CULT ANTHRACITE",
+            "serie": "CULT",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "004043",
+            "descrizione": "60X120 QUANTICO GRIS RTT",
+            "serie": "TERM ELLE - NON USARE",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "004185",
+            "descrizione": "60X120 DEC. FLOWER GREY RT",
+            "serie": "CULT",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "004412",
+            "descrizione": "60X120 RTT IROC MULTICOLOR",
+            "serie": "MATERIALI ACR",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "004439",
+            "descrizione": "60X120 RTT ABITA BRONZO",
+            "serie": "ABITA",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "004440",
+            "descrizione": "60X120 RTT ABITA FERRO",
+            "serie": "ABITA",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "004584",
+            "descrizione": "60X120 STONE COLLECTION LIGHT GREY R11 RTT",
+            "serie": "STONE COLLECTION",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "004914",
+            "descrizione": "60X120 UNIKA GRAPHITE RETT.",
+            "serie": "MATERIALE EUROBAUSTOF",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "004915",
+            "descrizione": "60X120 UNIKA SAND RETT.",
+            "serie": "MATERIALE EUROBAUSTOF",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        },
+        {
+            "codice": "004916",
+            "descrizione": "60X120 UNIKA LIGHT GREY RETT.",
+            "serie": "MATERIALE EUROBAUSTOF",
+            "formato": "60X120 RTT",
+            "min_stock_m2": "516.00",
+            "giacenza_m2": "0.00",
+            "disponibilita_m2": "0.00",
+            "qta_da_consegnare_m2": "0.00",
+            "shortage_m2": "516.00"
+        }
+    ],
+    "conclusions": "Risultato chiave: ci sono 167 articoli 60x120 sotto la soglia minima definita (campo di confronto: giacenza). Ho mostrato i primi 20 a titolo esemplificativo. Azioni consigliate: 1) Prioritizzare ordini di produzione o acquisto per gli articoli con maggior shortage (se vuoi posso ordinarli e mostrarti la top list per shortage decrescente). 2) Verificare ordini aperti (qta_da_consegnare) per valutare coperture imminenti; diversi articoli mostrano disponibilità negativa o ordini rilevanti. 3) Se preferisci, posso esportare l'elenco completo (167 righe) in CSV o filtrarlo per serie/cliente/deposito. Dimmi come procedere."
+}

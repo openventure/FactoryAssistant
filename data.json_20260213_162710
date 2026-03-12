@@ -1,0 +1,11 @@
+{
+    "user_request": "quando dico 80x80 intendo anche 81x81 e valori simili",
+    "report_title": "Articoli Sotto Scorta per Formati Simili a 80x80",
+    "summary": "Abbiamo considerato articoli con formati simili a 80x80, inclusi quelli come 81x81 e valori analoghi, per determinare quanti sono sotto la soglia di scorta.",
+    "table_data": [
+        {
+            "articoli_sotto_scorta": 36
+        }
+    ],
+    "conclusions": "Attualmente, ci sono 36 articoli con formati simili a 80x80 che sono sotto scorta. È consigliabile considerare un'analisi di riapprovvigionamento per questi articoli per evitare carenze future nei magazzini."
+}

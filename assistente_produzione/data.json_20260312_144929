@@ -1,0 +1,7 @@
+{
+    "user_request": "Qual è la giacenza attuale per formato?",
+    "report_title": "Giacenza attuale per formato",
+    "summary": "Non è stato possibile recuperare i dati di giacenza perché la connessione al database di magazzino ha restituito un errore (impossibile stabilire la connessione al server). Normalmente il report restituisce, per ciascun formato, le principali metriche in m²: giacenza corrente, disponibilità, giacenza prevista a 30 giorni e ordini da consegnare, oltre al numero di articoli associati al formato.",
+    "table_data": [],
+    "conclusions": "Azione consigliata: verificare la disponibilità del database/connessione e riprovare l'interrogazione. Se preferisci, posso: 1) ripetere la query appena la connessione è disponibile; 2) eseguire il report filtrando su uno o più formati specifici (es. \"60x60\", \"60x120\"); 3) limitare l'output ai top N formati per giacenza. Dimmi come procedere."
+}

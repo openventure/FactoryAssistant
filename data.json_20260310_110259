@@ -1,0 +1,20 @@
+{
+    "user_request": "Quali formati stanno producendo più metri quadrati? — fammi l'analisi per l'intero anno 2026",
+    "report_title": "Top formati per metri quadri prodotti - Anno 2026 (pallet non espulsi)",
+    "summary": "Analisi aggregata sull'intero anno 2026 dei metri quadri prodotti per formato (sono esclusi i pallet marcati come espulsi). Il formato è ricostruito come LARGxLUNG sp SPESSORE. La classifica mostra quali formati hanno generato il maggior volume produttivo in m² e il numero di pallet associati.",
+    "table_data": [
+        {
+            "FORMATO": "60x120 sp 0.95",
+            "TOTAL_MQ": 197.0,
+            "N_PALLET": 6,
+            "AVG_MQ_PER_PALLET": 32.833
+        },
+        {
+            "FORMATO": "40x80 sp 2.00",
+            "TOTAL_MQ": 13.44,
+            "N_PALLET": 2,
+            "AVG_MQ_PER_PALLET": 6.72
+        }
+    ],
+    "conclusions": "Nel 2026 il formato 60x120 (sp 0,95) è il principale responsabile del volume prodotto (197 m² su 6 pallet). Operativamente: 1) verificare che scorte e spazi logistica siano adeguati per il formato predominante; 2) valutare impatto su piano di produzione e consegne (prioritizzazione dei pallet); 3) se l'obiettivo è bilanciare carichi o ridurre lead time, considerare interventi su schedulazione/linee per i formati più pesanti in termini di m². Nota sugli attributi: in questa analisi ho aggregato per formato; informazioni su Tono (lotto) e Serie non sono state incluse — se desideri, posso ripetere l'analisi con breakdown per Tono, Serie o Linea, oppure includere anche i pallet espulsi o fornire la classifica completa (TOP 50)."
+}

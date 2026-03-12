@@ -1,0 +1,20 @@
+{
+    "user_request": "dammi la giacenza del codice 304041",
+    "report_title": "Giacenza articolo 304041",
+    "summary": "Il codice 304041 (CHARME BLACK 60x120 Rettificato, serie CHARME) ha una giacenza totale di 8.543,52 m². La disponibilità netta (al netto delle quantità già impegnate per consegne) è 5.172,48 m²; la quantità impegnata per consegne è 3.371,04 m², pari a circa il 39,5% della giacenza totale. La scorta minima definita per l'articolo è 516,00 m²: al momento non è in sottoscorta.",
+    "table_data": [
+        {
+            "CODICE": "304041",
+            "DESCRIZIONE": "CHARME BLACK 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 8543.52,
+            "disponibilita_m2": 5172.48,
+            "qta_da_consegnare_m2": 3371.04,
+            "percent_allocated": 39.5,
+            "below_min": false
+        }
+    ],
+    "conclusions": "La disponibilità immediata è sufficiente rispetto al minimo definito. Tuttavia circa il 40% della giacenza è già impegnato in consegne: se prevedi vendite/addizionali impegni nei prossimi giorni, valuta di monitorare le consegne in programma o di pianificare integrazioni di stock. Posso fornire: 1) la suddivisione per deposito; 2) l'andamento storico mensile di giacenza; 3) un piano di riordino basato su consumo medio mensile. Dimmi quale vuoi."
+}

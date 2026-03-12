@@ -1,0 +1,22 @@
+{
+    "user_request": "Quali articoli abbiamo prodotto di più negli ultimi 30 giorni?",
+    "report_title": "Top articoli prodotti - ultimi 30 giorni",
+    "summary": "Nel periodo degli ultimi 30 giorni il sistema di produzione registra un unico articolo con produzione significativa: il codice 005001A (formato 60x120) con 208,8 m² prodotti. La produzione è concentrata in 1 giorno su 1 linea, con 5 pallet totali (4 pallet di prima scelta). Non sono disponibili informazioni sul tono o sulla serie dal dataset consultato.",
+    "table_data": [
+        {
+            "ArticleCode": "005001A",
+            "Format": "60x120",
+            "Tone": "N/D",
+            "Series": "N/D",
+            "Total_m2": 208.8,
+            "Total_pallets": 5,
+            "Total_pieces": 290,
+            "Active_lines": 1,
+            "Production_days": 1,
+            "First_choice_pallets": 4,
+            "First_production_date": "2026-03-12",
+            "Last_production_date": "2026-03-12"
+        }
+    ],
+    "conclusions": "La produzione negli ultimi 30 giorni è molto concentrata su un singolo articolo. Azioni consigliate: 1) verificare se la domanda commerciale giustifica questa concentrazione o se è frutto di programmazioni di linea specifiche; 2) se necessario aumentare la varietà di produzione per coprire altri articoli richiesti dal mercato; 3) richiedere, se serve, un report esteso con filtro su periodo più ampio o con inclusione dei toni/serie per distinguere i lotti di produzione."
+}

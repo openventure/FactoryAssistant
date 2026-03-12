@@ -1,0 +1,35 @@
+{
+    "user_request": "vorrei un confronto della prima scelta per linea di produzione",
+    "report_title": "Confronto produzione (prima scelta) per linea — mese corrente vs mese precedente",
+    "summary": "Confronto della produzione di prima scelta (LGV_numeroScelta = 'I') aggregata per linea. Per ogni linea sono riportati: m² prodotti nel mese corrente (fino a oggi), m² prodotti nel mese solare precedente, variazione assoluta (m²), variazione percentuale e numero di pallet per ciascun mese. Assunzioni e filtri: data produzione = START_DATETIME; mese corrente calcolato su GETDATE() (quindi mese in corso, parziale), mese precedente = mese solare precedente.",
+    "table_data": [
+        {
+            "Linea": "3",
+            "Mq_Mese_Corrente": 59616.0,
+            "Mq_Mese_Precedente": 141159.8,
+            "Variazione_Mq": -81543.8,
+            "Variazione_%": -57.77,
+            "Pallet_Mese_Corrente": 1192,
+            "Pallet_Mese_Precedente": 2811
+        },
+        {
+            "Linea": "1",
+            "Mq_Mese_Corrente": 39247.96,
+            "Mq_Mese_Precedente": 58277.13,
+            "Variazione_Mq": -19029.17,
+            "Variazione_%": -32.65,
+            "Pallet_Mese_Corrente": 1260,
+            "Pallet_Mese_Precedente": 2432
+        },
+        {
+            "Linea": "2",
+            "Mq_Mese_Corrente": 16399.92,
+            "Mq_Mese_Precedente": 51897.93,
+            "Variazione_Mq": -35498.01,
+            "Variazione_%": -68.4,
+            "Pallet_Mese_Corrente": 374,
+            "Pallet_Mese_Precedente": 992
+        }
+    ],
+    "conclusions": "Sintesi e raccomandazioni operative:\n- Tutte le linee mostrano una riduzione della produzione di prima scelta rispetto al mese precedente; la diminuzione è significativa sia in termini assoluti che percentuali.\n- Maggior calo assoluto: Linea 3 (-81.544 m²). Maggior calo percentuale: Linea 2 (-68,4%).\n- Attenzione: il mese corrente è parziale (fino a oggi). Parte della variazione potrebbe dipendere dal numero di giorni lavorativi trascorsi; per un confronto equivalente possiamo confrontare lo stesso numero di giorni o attendere la chiusura del mese.\n- Azioni consigliate: verificare eventuali fermate macchina o manutenzioni nelle linee con calo maggiore; controllare scarti/rigetti e mix di articoli prodotti; confrontare con il piano produzione e con gli ordini clienti per capire se è una riduzione pianificata o un'anomalia; se serve, analizzare le produzioni per articolo/tono sulle linee critiche.\n- Prossimi passi proposti (se vuoi): 1) ripetere il confronto normalizzato per numero di giorni lavorativi o su intervallo dallo stesso giorno del mese precedente; 2) dettagliare per articolo/tono sulle linee 2 e 3; 3) mostrare trend su 3-6 mesi per capire se è una flessione temporanea o tendenza continuativa."
+}

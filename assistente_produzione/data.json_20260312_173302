@@ -1,0 +1,28 @@
+{
+    "user_request": "dammi le ciacenze di questo articolo per deposito",
+    "report_title": "Giacenze per deposito - Articolo 304040",
+    "summary": "Il drill-down su dashboard_productavailability per l'articolo 304040 mostra che, per tutti i depositi rilevati, la giacenza registrata è pari a 0,00 m². I depositi trovati sono: Deposito principale, Deposito DADO, Deposito DADO (Castellarano), Deposito DADO a locazione e Deposito Petrus‑Trial. Nota: il dato per deposito è quello del sistema di disponibilità per tono/deposito; se ti interessa posso fornire il dettaglio ordini (QTA_DA_CONSEGNARE) per ciascun tono o verificare la giacenza aggregata in pa_ff_code per confrontare le fonti.",
+    "table_data": [
+        {
+            "DEPOSITO": "Deposito principale",
+            "GIACENZA_M2": 0.0
+        },
+        {
+            "DEPOSITO": "Deposito DADO",
+            "GIACENZA_M2": 0.0
+        },
+        {
+            "DEPOSITO": "Deposito DADO (Castellarano)",
+            "GIACENZA_M2": 0.0
+        },
+        {
+            "DEPOSITO": "Deposito DADO a locazione",
+            "GIACENZA_M2": 0.0
+        },
+        {
+            "DEPOSITO": "Deposito Petrus-Trial",
+            "GIACENZA_M2": 0.0
+        }
+    ],
+    "conclusions": "Secondo il dettaglio per deposito non ci sono metri quadri disponibili per l'articolo 304040 nei depositi interrogati. Azioni consigliate: 1) richiedere il breakdown per deposito+tono con le quantità da consegnare per verificare impegni per tono; 2) controllare l'aggregato in pa_ff_code (potrebbe contenere giacenza diversa o stock non allocabile); 3) se necessario avviare produzione o riallocazione. Vuoi che estragga il dettaglio ordine per tono/deposito o che verifichi la giacenza aggregata in pa_ff_code?"
+}

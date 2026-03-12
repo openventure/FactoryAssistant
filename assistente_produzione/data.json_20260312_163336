@@ -1,0 +1,152 @@
+{
+    "user_request": "Qual è la giacenza attuale per formato?",
+    "report_title": "Giacenza attuale per formato (aggregata)",
+    "summary": "Riassunto delle giacenze attuali aggregate per formato (unità: m²). La tabella mostra per ogni formato il numero di articoli aggregati, la giacenza corrente, la disponibilità stimata, la giacenza prevista a 30 giorni, la disponibilità prevista a 30 giorni e le quantità da consegnare. Fonte: pa_ff_code. Sono evidenti i formati con giacenze più alte (60X60 RTT e 60X120 RTT) e alcuni casi con valori negativi a 30 giorni che richiedono verifica (potenziali ordini superiori alla disponibilità o incongruenze nei dati).",
+    "table_data": [
+        {
+            "FORMATO": "60X60 RTT",
+            "article_count": 421,
+            "giacenza_m2": 1129448.82,
+            "disponibilita_m2": 838945.2,
+            "giacenza_30_m2": 506208.75,
+            "disponibilita_30_m2": 275249.49,
+            "qta_da_consegnare_m2": 290503.62
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "article_count": 476,
+            "giacenza_m2": 933985.86,
+            "disponibilita_m2": 615863.22,
+            "giacenza_30_m2": 411158.21,
+            "disponibilita_30_m2": 200791.49,
+            "qta_da_consegnare_m2": 318122.64
+        },
+        {
+            "FORMATO": "60X60 SP20",
+            "article_count": 250,
+            "giacenza_m2": 451586.05,
+            "disponibilita_m2": 253223.89,
+            "giacenza_30_m2": 133082.09,
+            "disponibilita_30_m2": -21399.67,
+            "qta_da_consegnare_m2": 198362.16
+        },
+        {
+            "FORMATO": "31X62",
+            "article_count": 293,
+            "giacenza_m2": 444627.53,
+            "disponibilita_m2": 298425.22,
+            "giacenza_30_m2": 209947.1,
+            "disponibilita_30_m2": 88574.51,
+            "qta_da_consegnare_m2": 146202.31
+        },
+        {
+            "FORMATO": "30X60 RTT",
+            "article_count": 282,
+            "giacenza_m2": 284592.05,
+            "disponibilita_m2": 230060.27,
+            "giacenza_30_m2": 193098.86,
+            "disponibilita_30_m2": 146774.28,
+            "qta_da_consegnare_m2": 54531.78
+        },
+        {
+            "FORMATO": "20X122 RTT",
+            "article_count": 74,
+            "giacenza_m2": 192269.4,
+            "disponibilita_m2": 132717.54,
+            "giacenza_30_m2": 73056.1,
+            "disponibilita_30_m2": 20599.76,
+            "qta_da_consegnare_m2": 59551.86
+        },
+        {
+            "FORMATO": "81X81 RTT",
+            "article_count": 74,
+            "giacenza_m2": 172014.75,
+            "disponibilita_m2": 94016.54,
+            "giacenza_30_m2": 137691.71,
+            "disponibilita_30_m2": 62193.43,
+            "qta_da_consegnare_m2": 77998.21
+        },
+        {
+            "FORMATO": "30,5X30,5",
+            "article_count": 66,
+            "giacenza_m2": 159832.88,
+            "disponibilita_m2": 65530.16,
+            "giacenza_30_m2": -93450.27,
+            "disponibilita_30_m2": -161640.09,
+            "qta_da_consegnare_m2": 94302.72
+        },
+        {
+            "FORMATO": "40X80 SP30",
+            "article_count": 61,
+            "giacenza_m2": 144068.8,
+            "disponibilita_m2": 126208.96,
+            "giacenza_30_m2": 0,
+            "disponibilita_30_m2": 0,
+            "qta_da_consegnare_m2": 17859.84
+        },
+        {
+            "FORMATO": "15,3X31",
+            "article_count": 41,
+            "giacenza_m2": 94735.12,
+            "disponibilita_m2": 85190.37,
+            "giacenza_30_m2": 67728.94,
+            "disponibilita_30_m2": 59384.4,
+            "qta_da_consegnare_m2": 9544.75
+        },
+        {
+            "FORMATO": "61X61",
+            "article_count": 34,
+            "giacenza_m2": 79348.14,
+            "disponibilita_m2": 50038.6,
+            "giacenza_30_m2": 48905.09,
+            "disponibilita_30_m2": 30165.93,
+            "qta_da_consegnare_m2": 29309.54
+        },
+        {
+            "FORMATO": "30X122 RTT",
+            "article_count": 44,
+            "giacenza_m2": 70696.76,
+            "disponibilita_m2": 62126.5,
+            "giacenza_30_m2": 31562.8,
+            "disponibilita_30_m2": 23812.38,
+            "qta_da_consegnare_m2": 8570.26
+        },
+        {
+            "FORMATO": "15X60 RTT",
+            "article_count": 24,
+            "giacenza_m2": 23354.05,
+            "disponibilita_m2": 22105.3,
+            "giacenza_30_m2": 16220.6,
+            "disponibilita_30_m2": 15062.3,
+            "qta_da_consegnare_m2": 1248.75
+        },
+        {
+            "FORMATO": "59X118 L/R",
+            "article_count": 16,
+            "giacenza_m2": 12678.34,
+            "disponibilita_m2": 11102.6,
+            "giacenza_30_m2": 191.89,
+            "disponibilita_30_m2": -778.33,
+            "qta_da_consegnare_m2": 1575.74
+        },
+        {
+            "FORMATO": "59X59 L/R",
+            "article_count": 3,
+            "giacenza_m2": 715.14,
+            "disponibilita_m2": 307.98,
+            "giacenza_30_m2": 139.2,
+            "disponibilita_30_m2": -267.96,
+            "qta_da_consegnare_m2": 407.16
+        },
+        {
+            "FORMATO": "15,3X31,",
+            "article_count": 1,
+            "giacenza_m2": 0,
+            "disponibilita_m2": 0,
+            "giacenza_30_m2": 0,
+            "disponibilita_30_m2": 0,
+            "qta_da_consegnare_m2": 0
+        }
+    ],
+    "conclusions": "Principali evidenze e raccomandazioni:\n- I formati con maggiore giacenza attuale sono 60X60 RTT (~1.13M m²) e 60X120 RTT (~0.93M m²). Questi tengono il magazzino nei volumi maggiori.\n- Ci sono formati con valori negativi nella previsione a 30 giorni (es. 30,5X30,5; 60X60 SP20; 59X118 L/R): ciò indica ordini o impegni superiori alla disponibilità o possibili incongruenze nei dati. Suggerisco di verificare gli ordini aperti e la correttezza delle registrazioni per questi formati.\n- Per alcuni formati la disponibilità a 30 giorni è molto inferiore alla giacenza attuale: valutare priorità di produzione o riallocazione scorte per evitare out-of-stock sul breve-medio termine.\nProssimi passi consigliati: 1) Se vuoi, posso fornire il dettaglio per formato con i depositi (drill-down) per i formati critici; 2) posso generare una top list dei formati con ordini > disponibilità; 3) indicami un formato specifico se desideri l'elenco articoli/toni correlati."
+}

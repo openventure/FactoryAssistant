@@ -1,0 +1,7 @@
+{
+    "user_request": "negli ultimi 150 giorni?",
+    "report_title": "Linee con maggior produzione (m²) - ultimi 150 giorni",
+    "summary": "Ho verificato la produzione per le linee negli ultimi 150 giorni escludendo i pallet marcati come espulsi. Non risultano record di produzione validi nel periodo richiesto con il filtro applicato, quindi non è possibile identificare le linee con maggior produzione per questo intervallo.",
+    "table_data": [],
+    "conclusions": "Non risultano produzioni registrate negli ultimi 150 giorni (con Espulso = 0). Possibili spiegazioni operative: 1) non è stata effettuata produzione nel periodo; 2) i dati non sono stati ancora caricati/sincronizzati nel database; 3) il filtro di esclusione dei pallet espulsi rimuove tutte le righe. Azioni consigliate: 1) conferma se vuoi includere anche i pallet espulsi (Espulso = 1) per l’analisi; 2) vuoi estendere il periodo (es. ultimi 365 giorni) o analizzare l’intero storico; 3) vuoi limitare l’output a Top N linee o avere il dettaglio per linea/pallet. Dimmi quale opzione preferisci e rilancio la query."
+}

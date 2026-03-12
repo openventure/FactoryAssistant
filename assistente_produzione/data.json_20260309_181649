@@ -1,0 +1,998 @@
+{
+    "user_request": "Quali articoli sono sottoscorta per il formato 60x120?",
+    "report_title": "Articoli sottoscorta - formato 60x120",
+    "summary": "Ho estratto gli articoli in formato 60x120 che attualmente risultano sotto il livello minimo di stock. L'elenco è ordinato per severità (m² mancanti rispetto al minimo). Nella prima parte della lista si evidenziano alcuni articoli con gap rilevanti che richiedono intervento prioritario.",
+    "table_data": [
+        {
+            "CODICE": "3510992A",
+            "DESCRIZIONE": "GALACTIC LIGHT GREY 60X120 RTT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -5001.12,
+            "GIACENZA_m2": 504.0,
+            "SOTTOCORTA_m2": 5517.12
+        },
+        {
+            "CODICE": "3538701A",
+            "DESCRIZIONE": "60X120 ROCK ANTRACITE RETT. cl35",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -3474.72,
+            "GIACENZA_m2": 626.4,
+            "SOTTOCORTA_m2": 3990.72
+        },
+        {
+            "CODICE": "3514182",
+            "DESCRIZIONE": "60X120 ELEGANCE IVORY RT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -2648.16,
+            "GIACENZA_m2": 403.2,
+            "SOTTOCORTA_m2": 3164.16
+        },
+        {
+            "CODICE": "303841A",
+            "DESCRIZIONE": "NATURE GRIGIO 60x120 RETT CL 35",
+            "SERIE": "NATURE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -2135.52,
+            "GIACENZA_m2": 109.44,
+            "SOTTOCORTA_m2": 2651.52
+        },
+        {
+            "CODICE": "005445",
+            "DESCRIZIONE": "60X120 IROC GREIGE RTT R11 (CL 35)",
+            "SERIE": "IROC",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -1239.84,
+            "GIACENZA_m2": 2489.76,
+            "SOTTOCORTA_m2": 1755.84
+        },
+        {
+            "CODICE": "303276A",
+            "DESCRIZIONE": "QUARRY MOON 60x120 RETT CL 35",
+            "SERIE": "QUARRY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -973.44,
+            "GIACENZA_m2": 388.8,
+            "SOTTOCORTA_m2": 1489.44
+        },
+        {
+            "CODICE": "304152",
+            "DESCRIZIONE": "RIGAT-ONE GEOLOGY SABBIA 60x120 Rettificato",
+            "SERIE": "GEOLOGY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -961.92,
+            "GIACENZA_m2": 482.4,
+            "SOTTOCORTA_m2": 1477.92
+        },
+        {
+            "CODICE": "005656",
+            "DESCRIZIONE": "60X120 MIRROR BEIGE RT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -856.8,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 1372.8
+        },
+        {
+            "CODICE": "005655",
+            "DESCRIZIONE": "60X120 MIRROR BIANCO RT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -856.8,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 1372.8
+        },
+        {
+            "CODICE": "005657",
+            "DESCRIZIONE": "60X120 MIRROR TAUPE RT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -856.8,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 1372.8
+        },
+        {
+            "CODICE": "MTS041A",
+            "DESCRIZIONE": "MYTHOS IVORY 60x120 RETT CL 35",
+            "SERIE": "MYTHOS - PETRUS",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -740.16,
+            "GIACENZA_m2": 1573.92,
+            "SOTTOCORTA_m2": 1256.16
+        },
+        {
+            "CODICE": "303753",
+            "DESCRIZIONE": "MANSION MID OUT 60X120 RTT R11",
+            "SERIE": "MANSION",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -288.0,
+            "GIACENZA_m2": 14.4,
+            "SOTTOCORTA_m2": 804.0
+        },
+        {
+            "CODICE": "304151",
+            "DESCRIZIONE": "RIGAT-ONE GEOLOGY ARGILLA 60x120 Rettificato",
+            "SERIE": "GEOLOGY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -275.76,
+            "GIACENZA_m2": 112.32,
+            "SOTTOCORTA_m2": 791.76
+        },
+        {
+            "CODICE": "TMS113",
+            "DESCRIZIONE": "60X120 RTT TIME STONE GRAFITE",
+            "SERIE": "TIME STONE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -201.6,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 717.6
+        },
+        {
+            "CODICE": "TMS111",
+            "DESCRIZIONE": "60X120 RTT TIME STONE GHIACCIO",
+            "SERIE": "TIME STONE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -201.6,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 717.6
+        },
+        {
+            "CODICE": "TMS114",
+            "DESCRIZIONE": "60X120 RTT TIME STONE SABBIA",
+            "SERIE": "TIME STONE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -201.6,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 717.6
+        },
+        {
+            "CODICE": "005467",
+            "DESCRIZIONE": "ONYX IVORY 60x120 Rettificato",
+            "SERIE": "ONYX - ACR",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -198.72,
+            "GIACENZA_m2": 1814.4,
+            "SOTTOCORTA_m2": 714.72
+        },
+        {
+            "CODICE": "303836",
+            "DESCRIZIONE": "NATURE BIANCO 60x120 RETT",
+            "SERIE": "NATURE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -164.16,
+            "GIACENZA_m2": 17.28,
+            "SOTTOCORTA_m2": 680.16
+        },
+        {
+            "CODICE": "PSG043",
+            "DESCRIZIONE": "PRESTIGE TAUPE 60X120 RTT",
+            "SERIE": "PRESTIGE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -115.2,
+            "GIACENZA_m2": 1.44,
+            "SOTTOCORTA_m2": 631.2
+        },
+        {
+            "CODICE": "303304",
+            "DESCRIZIONE": "SMOT ANTHRACITE 60x120 RETT",
+            "SERIE": "SMOT",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -74.88,
+            "GIACENZA_m2": 227.52,
+            "SOTTOCORTA_m2": 590.88
+        },
+        {
+            "CODICE": "303647",
+            "DESCRIZIONE": "GARE SAND 60X120 RTT",
+            "SERIE": "GARE DU NORD",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -66.24,
+            "GIACENZA_m2": 34.56,
+            "SOTTOCORTA_m2": 582.24
+        },
+        {
+            "CODICE": "302852A",
+            "DESCRIZIONE": "SUPREME CALACATTA 60X120 RETT CL 30",
+            "SERIE": "MARMI PREGIATI",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -60.48,
+            "GIACENZA_m2": 10.08,
+            "SOTTOCORTA_m2": 576.48
+        },
+        {
+            "CODICE": "005516",
+            "DESCRIZIONE": "RIGAT-ONE LAVAGNA ERMETICA 60x120 Rettificato",
+            "SERIE": "SHELLSTONE - ACR",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -18.72,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 534.72
+        },
+        {
+            "CODICE": "RPL034A",
+            "DESCRIZIONE": "REPLAY SAND 60X120 RTT",
+            "SERIE": "REPLAY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -4.32,
+            "GIACENZA_m2": 4.32,
+            "SOTTOCORTA_m2": 520.32
+        },
+        {
+            "CODICE": "005515",
+            "DESCRIZIONE": "RIGAT-ONE BIANCO ERMETICA 60x120 Rettificato",
+            "SERIE": "ERMETICA",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -4.32,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 520.32
+        },
+        {
+            "CODICE": "003757",
+            "DESCRIZIONE": "60X120 RTT TRAV. GREY MEMENTO",
+            "SERIE": "TRAVERTINO MEMENTO",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -1.44,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 517.44
+        },
+        {
+            "CODICE": "003753A",
+            "DESCRIZIONE": "60X120 RTT TRAV BLACK MEMENTO cl35",
+            "SERIE": "TRAVERTINO MEMENTO",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -1.44,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 517.44
+        },
+        {
+            "CODICE": "303520",
+            "DESCRIZIONE": "FOLIAGE 60X120 RTT",
+            "SERIE": "WALLPAPERS",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": -1.44,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 517.44
+        },
+        {
+            "CODICE": "004043",
+            "DESCRIZIONE": "60X120 QUANTICO GRIS RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "CNS052",
+            "DESCRIZIONE": "CONCEPT STONE CORDA 60X120 RETT MM11",
+            "SERIE": "CONCEPT STONE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303406",
+            "DESCRIZIONE": "FABRIC GREY 60X120 RTT",
+            "SERIE": "FABRIC",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "CNS051",
+            "DESCRIZIONE": "CONCEPT STONE NEVE 60X120 RETT MM11",
+            "SERIE": "CONCEPT STONE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "003761",
+            "DESCRIZIONE": "60X120 RTT / LPP TRAV. GREY MEMENTO",
+            "SERIE": "ARTICOLI NON A CATALOGO",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303942",
+            "DESCRIZIONE": "CALACATTA GOLD 60x120 RETT",
+            "SERIE": "MARMI",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "005205",
+            "DESCRIZIONE": "60X120 MESSINA GRIGIO RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "3538701",
+            "DESCRIZIONE": "60X120 ROCK ANTRACITE RETT.",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "004185",
+            "DESCRIZIONE": "60X120 DEC. FLOWER GREY RT",
+            "SERIE": "CULT",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "EKS021",
+            "DESCRIZIONE": "EKOSTONE BIANCO 60x120 RETT",
+            "SERIE": "EKOSTONE - PETRUS",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "004412",
+            "DESCRIZIONE": "60X120 RTT IROC MULTICOLOR",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "005001",
+            "DESCRIZIONE": "60X120 RTT ERMETICA LAVAGNA",
+            "SERIE": "ERMETICA",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "003990",
+            "DESCRIZIONE": "60X120 RTT WHITE STONE COLL.",
+            "SERIE": "STONE COLLECTION",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "004915",
+            "DESCRIZIONE": "60X120 UNIKA SAND RETT.",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "302852",
+            "DESCRIZIONE": "SUPREME CALACATTA 60X120 RETT",
+            "SERIE": "MARMI PREGIATI",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303948M",
+            "DESCRIZIONE": "PAINT SALVIA 60X120 RETT",
+            "SERIE": "MATERIALE DADO",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303836M",
+            "DESCRIZIONE": "NATURE BIANCO 60X120  RETT",
+            "SERIE": "NATURE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "004008",
+            "DESCRIZIONE": "60X120 RTT CULT ANTHRACITE",
+            "SERIE": "CULT",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "004918",
+            "DESCRIZIONE": "60X120 UNIKA BROWN RETT.",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "CNS054",
+            "DESCRIZIONE": "CONCEPT STONE FERRO 60X120 RETT MM11",
+            "SERIE": "CONCEPT STONE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "004440",
+            "DESCRIZIONE": "60X120 RTT ABITA FERRO",
+            "SERIE": "ABITA",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "3510992",
+            "DESCRIZIONE": "GALACTIC LIGHT GREY 60X120 RTT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303465",
+            "DESCRIZIONE": "BASIC BEIGE 60X120 RETT",
+            "SERIE": "BASIC",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "004584",
+            "DESCRIZIONE": "60X120 STONE COLLECTION LIGHT GREY R11 RTT",
+            "SERIE": "STONE COLLECTION",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303946M",
+            "DESCRIZIONE": "PAINT ROSE' 60X120 RETT",
+            "SERIE": "MATERIALE DADO",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "004916",
+            "DESCRIZIONE": "60X120 UNIKA LIGHT GREY RETT.",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "MC3938",
+            "DESCRIZIONE": "60X120 SABBIADORO GRIS RT",
+            "SERIE": "MATERIALE M.E.C.",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "005203",
+            "DESCRIZIONE": "60X120 MESSINA BIANCO RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303841",
+            "DESCRIZIONE": "NATURE GRIGIO 60x120 RETT",
+            "SERIE": "NATURE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "003760",
+            "DESCRIZIONE": "60X120 RTT / LPP TRAV. BIANCO MEMENTO",
+            "SERIE": "ARTICOLI NON A CATALOGO",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303837M",
+            "DESCRIZIONE": "NATURE NERO 60X120  RETT",
+            "SERIE": "NATURE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "004439",
+            "DESCRIZIONE": "60X120 RTT ABITA BRONZO",
+            "SERIE": "ABITA",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "3510994",
+            "DESCRIZIONE": "GALACTIC GREY 60X120 RTT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "005406",
+            "DESCRIZIONE": "60X120 RTT FELCE BRONZO cl35",
+            "SERIE": "DECORS",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "3510991",
+            "DESCRIZIONE": "GALACTIC SAND 60X120 RTT",
+            "SERIE": "MERKURY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "ELBA21",
+            "DESCRIZIONE": "60X120  ELBA BEIGE RTT",
+            "SERIE": "SOLID",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303845M",
+            "DESCRIZIONE": "NATURE GREIGE 60X120  RETT",
+            "SERIE": "NATURE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303696",
+            "DESCRIZIONE": "STATION SAND 60x120 RETT",
+            "SERIE": "STATION",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303947M",
+            "DESCRIZIONE": "PAINT BLUE 60X120 RETT",
+            "SERIE": "MATERIALE DADO",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "005065",
+            "DESCRIZIONE": "60X120 RTT ASPEN BIANCO",
+            "SERIE": "ASPEN",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303521",
+            "DESCRIZIONE": "LINES 60x120 RETT",
+            "SERIE": "WALLPAPERS",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "005204",
+            "DESCRIZIONE": "60X120 MESSINA CREMA RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "003914A",
+            "DESCRIZIONE": "60X120 FOLK GRIGIO RETT. NUOVO IMBALLO cl 35",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "004914",
+            "DESCRIZIONE": "60X120 UNIKA GRAPHITE RETT.",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303522",
+            "DESCRIZIONE": "GEOMETRIC 60x120 RETT",
+            "SERIE": "WALLPAPERS",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 1.44,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "005153",
+            "DESCRIZIONE": "60x120 STONE TTI ITALIAN CALACATTA RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "003311",
+            "DESCRIZIONE": "60X120 RTT ONIX CARAMEL",
+            "SERIE": "MATERIALI ACR",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303690",
+            "DESCRIZIONE": "STATION GREY 60x120 RETT",
+            "SERIE": "STATION",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "003915A",
+            "DESCRIZIONE": "60X120 FOLK BIANCO RETT. NUOVO IMBALLO cl 35",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "005206",
+            "DESCRIZIONE": "60X120 MESSINA LAVAGNA RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "003758",
+            "DESCRIZIONE": "60X120 RTT / LPP TRAV. BLACK MEMENTO",
+            "SERIE": "ARTICOLI NON A CATALOGO",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303334",
+            "DESCRIZIONE": "QUARRY MOON 60x120 RETT LAPP IN CRESTA",
+            "SERIE": "QUARRY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303741",
+            "DESCRIZIONE": "MANSION MID 60X120 RTT",
+            "SERIE": "MANSION",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303710",
+            "DESCRIZIONE": "SOLID BEIGE 60X120 RTT",
+            "SERIE": "SOLID",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "004999",
+            "DESCRIZIONE": "60X120 RTT ERMETICA BIANCO",
+            "SERIE": "ERMETICA",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303752",
+            "DESCRIZIONE": "MANSION COLD OUT 60X120 RTT R11",
+            "SERIE": "MANSION",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "EUR-5902",
+            "DESCRIZIONE": "MILANO GRIGIO NATURALE 60X120 RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "301779A",
+            "DESCRIZIONE": "STONE BLEND GOLDEN 60X120 RETT. cl35",
+            "SERIE": "MATERIALE DADO",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "005273",
+            "DESCRIZIONE": "60x120 STONE TTI ITALIAN PAINT WHITE RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "003759",
+            "DESCRIZIONE": "60X120 RTT / LAPP TRAV. AMBRA MEMENTO",
+            "SERIE": "ARTICOLI NON A CATALOGO",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "ELBA22",
+            "DESCRIZIONE": "60X120  ELBA GREY RTT",
+            "SERIE": "SOLID",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303742A",
+            "DESCRIZIONE": "MANSION EXTREME 60x120 RETT CL 35",
+            "SERIE": "MANSION",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "ELBA23",
+            "DESCRIZIONE": "60X120  ELBA BLACK RTT",
+            "SERIE": "SOLID",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "301774A",
+            "DESCRIZIONE": "STONE BLEND SILVERY 60X120 RETT. cl35",
+            "SERIE": "MATERIALE DADO",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "EUR-5900",
+            "DESCRIZIONE": "MILANO BIANCO NATURALE 60X120 RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "302854",
+            "DESCRIZIONE": "SUPREME CALACATTA 60X120 RETT LAPP",
+            "SERIE": "MARMI PREGIATI",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "MC5065",
+            "DESCRIZIONE": "60X120 SABBIADORO BLANC RT",
+            "SERIE": "MATERIALE M.E.C.",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 252.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "PSG072",
+            "DESCRIZIONE": "PRESTIGE TRAMA GRIS 60X120 RTT",
+            "SERIE": "PRESTIGE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "PSG074",
+            "DESCRIZIONE": "PRESTIGE TRAMA ANTHRACITE 60X120 RTT",
+            "SERIE": "PRESTIGE",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 0.0,
+            "GIACENZA_m2": 0.0,
+            "SOTTOCORTA_m2": 516.0
+        },
+        {
+            "CODICE": "303333",
+            "DESCRIZIONE": "QUARRY CLOUD 60x120 RETT LAPP IN CRESTA",
+            "SERIE": "QUARRY",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 2.88,
+            "GIACENZA_m2": 2.88,
+            "SOTTOCORTA_m2": 513.12
+        },
+        {
+            "CODICE": "303526",
+            "DESCRIZIONE": "IMPACT 60X120 RTT",
+            "SERIE": "WALLPAPERS",
+            "FORMATO": "60X120 RTT",
+            "MIN_m2": 516.0,
+            "DISPONIBILITA_m2": 2.88,
+            "GIACENZA_m2": 4.32,
+            "SOTTOCORTA_m2": 513.12
+        }
+    ],
+    "conclusions": "Azioni consigliate:\n1) Priorità alta ai codici con maggiore gap (es. 3510992A, 3538701A, 3514182): valutare programmazione produzione rapida o ordini straordinari. \n2) Verificare disponibilità negativa o valori anomali (DISPONIBILITA negativa) per possibile errore di contabilizzazione o ordini non riconciliati. \n3) Coordinare commerciale e pianificazione per riallocare stock dai depositi con giacenze non vincolate o rimodulare consegne. \nSe vuoi, posso: a) fornire il dettaglio per deposito e per tono per i primi N articoli; b) preparare una proposta di piano produzione a 30 giorni per ridurre i gap; c) esportare l’intera lista in Excel. Quale preferisci?"
+}

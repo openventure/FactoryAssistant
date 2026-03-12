@@ -1,0 +1,1168 @@
+{
+    "user_request": "dammi gli articoli 60x60 sotto giacenza",
+    "report_title": "Articoli 60x60 con giacenza inferiore al minimo (pa_ff_code)",
+    "summary": "Eseguita query su pa_ff_code filtrando FORMATO contenente '60X60' e GIACENZA < MIN. La tabella restituita contiene gli articoli trovati con i rispettivi MIN, GIACENZA e DISPONIBILITA. I valori mostrati indicano che molti codici hanno giacenza pari a 0 o valori negativi di GIACENZA/DISPONIBILITA, quindi risultano sotto soglia.",
+    "table_data": [
+        {
+            "CODICE": "EMT012",
+            "DESCRIZIONE": "EMOTION GRIS 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": -583.2,
+            "DISPONIBILITA": -1015.2
+        },
+        {
+            "CODICE": "EMT012A",
+            "DESCRIZIONE": "EMOTION GRIS 60X60 RETT CL 30",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EMT012R",
+            "DESCRIZIONE": "EMOTION GRIS 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EMT013R",
+            "DESCRIZIONE": "EMOTION TAUPE 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EE1404",
+            "DESCRIZIONE": "METROPOLITAN / URBANY BEIGE RETT 60X60 (004170)",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EE1407",
+            "DESCRIZIONE": "METROPOLITAN / URBANY ANTRACITE RTT 60X60 (004168)",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EKS012",
+            "DESCRIZIONE": "EKOSTONE CENERE 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EKS013",
+            "DESCRIZIONE": "EKOSTONE ANTRACITE 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "CMP003",
+            "DESCRIZIONE": "COMPACT SHADOW 60X60 RETT SP 8MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -1.8
+        },
+        {
+            "CODICE": "CNS043",
+            "DESCRIZIONE": "CONCEPT STONE GHISA 60X60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "CONCRETEANT68",
+            "DESCRIZIONE": "60X60 CONCRETE ANTRACITE RTT 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -403.2
+        },
+        {
+            "CODICE": "CONCRETEGR68",
+            "DESCRIZIONE": "60X60 CONCRETE GREY RTT 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "DOORWOGR68",
+            "DESCRIZIONE": "60X60 RTT. DOOR WOOD GREY SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "DREAMANT68",
+            "DESCRIZIONE": "60X60 RTT. DREAM ANTRACITE SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "DREAMGR68",
+            "DESCRIZIONE": "60X60 RTT. DREAM GREY SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EB0009",
+            "DESCRIZIONE": "60X60 RTT LIVINGSTONE LIGHT GREY",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EB0010",
+            "DESCRIZIONE": "60X60 RTT LIVINGSTONE DARK GREY (MQ.1,44)",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EB0011",
+            "DESCRIZIONE": "60X60 RTT LIVINGSTONE ANTHRAZIT (MQ.1,44)",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EB0011A",
+            "DESCRIZIONE": "60X60 RTT BAULINE STYLE CAPELLA ANTHRAZIT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EB0012",
+            "DESCRIZIONE": "60X60 RTT LIVINGSTONE SAND",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EB0012A",
+            "DESCRIZIONE": "60X60 RTT BAULINE STYLE CAPELLA SAND",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EE1309",
+            "DESCRIZIONE": "EMOTION BLANC 60X60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "3538702",
+            "DESCRIZIONE": "60X60 ROCK ANTRACITE RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "60VESU",
+            "DESCRIZIONE": "60x60 VESUVIO RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "ANBK60",
+            "DESCRIZIONE": "ANTIQUE BLUE STONE BLACK 60X60 10mm RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "ANBU60",
+            "DESCRIZIONE": "ANTIQUE BLUE STONE BLU 60X60 10mm RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "ASTONE68",
+            "DESCRIZIONE": "60X60 RTT. ASTONE SP. 8MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "BI6060R124",
+            "DESCRIZIONE": "DESIGN BIANCO 60x60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "BLUEBETON68",
+            "DESCRIZIONE": "60X60 RTT. BLUEBETON SP. 8MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "BNLDA68",
+            "DESCRIZIONE": "60X60 RTT. BENELUX DARK SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "BNLLI68",
+            "DESCRIZIONE": "BENELUX LIGHT 60X60 RETT 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -4838.4
+        },
+        {
+            "CODICE": "3510997",
+            "DESCRIZIONE": "GALACTIC LIGHT GREY 60X60 RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "3511000",
+            "DESCRIZIONE": "GALACTIC GRAPHITE 60X60 RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "3516099",
+            "DESCRIZIONE": "60X60 ELEGANCE BLACK RTT 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -1036.8
+        },
+        {
+            "CODICE": "BRG011",
+            "DESCRIZIONE": "60X60 RTT BRIGHTON BEIGE SP. 8MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "BRG012",
+            "DESCRIZIONE": "60X60 RTT BRIGHTON GRIGIO SP. 8MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "BRG013",
+            "DESCRIZIONE": "60X60 RTT BRIGHTON BIANCO SP. 8MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "BRG014",
+            "DESCRIZIONE": "60X60 RTT BRIGHTON TAUPE SP. 8MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "004166",
+            "DESCRIZIONE": "60X60 RTT DEMETRA BEIGE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "004167",
+            "DESCRIZIONE": "60X60 RTT ADE NERO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "004178",
+            "DESCRIZIONE": "60X60 PALERMO BEIGE RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -2291.4
+        },
+        {
+            "CODICE": "004579",
+            "DESCRIZIONE": "60X60 MILANO WEISS RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "004580",
+            "DESCRIZIONE": "60X60 MILANO GRAU RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "004581",
+            "DESCRIZIONE": "60X60 MILANO BEIGE RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "004582",
+            "DESCRIZIONE": "60X60 MILANO ANTHRAZIT RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "005041",
+            "DESCRIZIONE": "60X60 GREEN COAST BEIGE RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "005103",
+            "DESCRIZIONE": "60X60 RTT ASPEN ANTRACITE R11",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "005207",
+            "DESCRIZIONE": "60X60 MESSINA BIANCO RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "005208",
+            "DESCRIZIONE": "60X60 MESSINA CREMA RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "005209",
+            "DESCRIZIONE": "60X60 MESSINA GRIGIO RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "005210",
+            "DESCRIZIONE": "60X60 MESSINA LAVAGNA RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "005276",
+            "DESCRIZIONE": "TEMPO BIANCO 60x60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "003149",
+            "DESCRIZIONE": "SUPREME CALACATTA 60X60 RETT LAPP",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "003838",
+            "DESCRIZIONE": "FOLK GRIGIO 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -86.4
+        },
+        {
+            "CODICE": "004065A",
+            "DESCRIZIONE": "60X60 TEMPO BIANCO RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "005421",
+            "DESCRIZIONE": "60X60 EVOQ NERO R/RTT SP. 8MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "005429",
+            "DESCRIZIONE": "ASPEN GRIGIO 60X60 RETT 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "005430",
+            "DESCRIZIONE": "ASPEN ANTHRACITE 60X60 RETT 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -82.8
+        },
+        {
+            "CODICE": "005861",
+            "DESCRIZIONE": "TREVISTONE GOLD 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -628.2
+        },
+        {
+            "CODICE": "006107",
+            "DESCRIZIONE": "60X60 NAMIBIA SAND RTT 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "12600576",
+            "DESCRIZIONE": "60x60 WANDA SABBIA LOOSE RTT sp.20",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "17749",
+            "DESCRIZIONE": "FG_STREET GREY 9,5 MM 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -255.6
+        },
+        {
+            "CODICE": "190009",
+            "DESCRIZIONE": " 60X60 RTT GREY WIND LIGHT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "190109",
+            "DESCRIZIONE": "60X60 RTT GREY WIND MILD",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "303691",
+            "DESCRIZIONE": "STATION GREY 60x60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "303695",
+            "DESCRIZIONE": "STATION SAND 60x60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "303871",
+            "DESCRIZIONE": "FIUMICINO ANTRACITE 60X60 RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "304090",
+            "DESCRIZIONE": "GARE LIGHT GREY 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "304381",
+            "DESCRIZIONE": "BLAZE COTTO 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -291.6
+        },
+        {
+            "CODICE": "304382",
+            "DESCRIZIONE": "BLAZE BEIGE 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -300.6
+        },
+        {
+            "CODICE": "304383",
+            "DESCRIZIONE": "BLAZE IVORY 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -358.2
+        },
+        {
+            "CODICE": "304384",
+            "DESCRIZIONE": "BLAZE CHOCOLATE 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -183.6
+        },
+        {
+            "CODICE": "304385",
+            "DESCRIZIONE": "BLAZE GREIGE 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -291.6
+        },
+        {
+            "CODICE": "304386",
+            "DESCRIZIONE": "TREVISTONE IVORY 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -921.6
+        },
+        {
+            "CODICE": "304387",
+            "DESCRIZIONE": "GEOSTONE WHITE 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -1.8
+        },
+        {
+            "CODICE": "304388",
+            "DESCRIZIONE": "GEOSTONE IVORY 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -1.8
+        },
+        {
+            "CODICE": "304389",
+            "DESCRIZIONE": "GEOSTONE TAUPE 60X60 Rettificato 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -1.8
+        },
+        {
+            "CODICE": "3510996",
+            "DESCRIZIONE": "GALACTIC SAND 60X60 RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FABK60",
+            "DESCRIZIONE": "FORZA ANTIQUE BLUE STONE BLACK 60X60 10mm RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FABU60",
+            "DESCRIZIONE": "FORZA ANTIQUE BLUE STONE BLU 60X60 10mm RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FBSDA6",
+            "DESCRIZIONE": "FORZA BLUESTONE DARK 10MM 60X60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FBSLI6",
+            "DESCRIZIONE": "FORZA BLUESTONE LIGHT 10MM 60X60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FLALPI60NORDICHE",
+            "DESCRIZIONE": "60X60 RTT. ALPI NORDICHE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FOCEMENTIANT68",
+            "DESCRIZIONE": "60X60 RTT. FORZA CEMENTI ANTRACIT SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FOCEMENTIGR68",
+            "DESCRIZIONE": "60X60 RTT. FORZA CEMENTI GREY SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FOELGRG68",
+            "DESCRIZIONE": "FORZA ELITE GREIGE 60x60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -288.0
+        },
+        {
+            "CODICE": "FOUB60",
+            "DESCRIZIONE": "FORZA UNIKA BEIGE 60X60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FOUD60",
+            "DESCRIZIONE": "FORZA UNIKA DARK 60X60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FOUG60",
+            "DESCRIZIONE": "FORZA UNIKA GREY 60X60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FOVERANT68",
+            "DESCRIZIONE": "60X60 RTT. FORZA VERONA ANTRACITE SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FOVERGR68",
+            "DESCRIZIONE": "60X60 RTT. FORZA VERONA GREY SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "FOVERGRG68",
+            "DESCRIZIONE": "60X60 RTT. FORZA VERONA GREIGE SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "GC6161R109",
+            "DESCRIZIONE": "CEMENT GRIGIO CHIARO RETT 60X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "GERO01",
+            "DESCRIZIONE": "EXTRA GREY RETT 60X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "GERO02",
+            "DESCRIZIONE": "EXTRA BEIGE RETT 60X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "GERO03",
+            "DESCRIZIONE": "EXTRA FANGO RETT 60X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "GIG005",
+            "DESCRIZIONE": "60X60 RTT GIGA DUSK R10",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "GIG007",
+            "DESCRIZIONE": "60X60 RTT. GIGA DUSK SP. 8MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "GIGO08",
+            "DESCRIZIONE": "60X60 GIGA LAND RTT 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "GM6161R109",
+            "DESCRIZIONE": "CEMENT GRIGIO MEDIO RETT 60X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "HDN011",
+            "DESCRIZIONE": "60x60 RTT HOLDEN BEIGE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "HDN012",
+            "DESCRIZIONE": "60x60 RTT HOLDEN BLACK",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "HOMHC60151",
+            "DESCRIZIONE": "60X60 RTT H.C. BEIGE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "HSAN6R",
+            "DESCRIZIONE": "HOME SPACE ANTRACITE 60X60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "HSBG6R",
+            "DESCRIZIONE": "HOME SPACE BEIGE 60X60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "HSGR6R",
+            "DESCRIZIONE": "HOME SPACE GREY 60X60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "HSSI6R",
+            "DESCRIZIONE": "HOME SPACE SILVER 60X60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "IMPACT60BGN",
+            "DESCRIZIONE": "60X60 RTT. IMPACT BEIGE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "IMPACT60GRN",
+            "DESCRIZIONE": "60X60 RTT. IMPACT GRIGIO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "IMPACT60TON",
+            "DESCRIZIONE": "60X60 RTT. IMPACT TORTORA",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "IMPACT60OBG",
+            "DESCRIZIONE": "IMPACT BEIGE 60X60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EMT014R",
+            "DESCRIZIONE": "EMOTION ANTRACITE 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EMT015",
+            "DESCRIZIONE": "EMOTION BLANC R10 60X60 RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EMT071M",
+            "DESCRIZIONE": "60X60 SABBIADORO BLANC RTT 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EMT072M",
+            "DESCRIZIONE": "60X60 SABBIADORO GRIS RTT 8mm",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EMT073M",
+            "DESCRIZIONE": "60X60 RTT. SABBIADORO TAUPE SP. 8MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EMT074M",
+            "DESCRIZIONE": "60X60 RTT. SABBIADORO ANTHRACITE SP. 8MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EV1369",
+            "DESCRIZIONE": "60X60 RT TOWN BEIGE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EMT011A",
+            "DESCRIZIONE": "60X60 SABBIADORO BLANC RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "EMT011R",
+            "DESCRIZIONE": "EMOTION BLANC 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "KI3696",
+            "DESCRIZIONE": "10003696 60X60 RTT BLOCK60 BEIGE NT/SQ",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "KI3697",
+            "DESCRIZIONE": "10003697 60X60 RTT BLOCK60 GRIGIO NT/SQ",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "MTS015",
+            "DESCRIZIONE": "60x60 MYTHOS DARK RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "MTS022",
+            "DESCRIZIONE": "MYTHOS ECRU OUT 60x60 RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -129.6
+        },
+        {
+            "CODICE": "MTX011",
+            "DESCRIZIONE": "60X60 MATRIX AVANA RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "MTX012",
+            "DESCRIZIONE": "60X60 MATRIX GRIGIO RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "MTX013",
+            "DESCRIZIONE": "60X60 MATRIX SBIANCATO RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "NE6060R124",
+            "DESCRIZIONE": "DESIGN NERO 60X60 RTT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "PHB6002",
+            "DESCRIZIONE": "60X60 RTT. HOME BEIGE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "RT CLF600",
+            "DESCRIZIONE": "FEELING AVORIO 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "RT CLF610",
+            "DESCRIZIONE": "FEELING TORTORA 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "RT CLF620",
+            "DESCRIZIONE": "FEELING GRIGIO 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "RT CLF630",
+            "DESCRIZIONE": "FEELING GRIGIO SCURO 60X60 RETT.",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "RTCLF600",
+            "DESCRIZIONE": "60X60 FEELING AVORIO RETT",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "SALGRI",
+            "DESCRIZIONE": "60X60 RETT SALERNO GRIGIO",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "SOLBE68",
+            "DESCRIZIONE": "60X60 RTT. SOLUTION BEIGE SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "SOLGR68",
+            "DESCRIZIONE": "60X60 RTT. SOLUTION GREY SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "STGE66",
+            "DESCRIZIONE": "60X60 RTT. STREET GREIGE SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": -8001.0
+        },
+        {
+            "CODICE": "POLOWHITE60",
+            "DESCRIZIONE": "60X60 RTT. POLO WHITE MATT SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "PSG034B",
+            "DESCRIZIONE": "60X60 RTT PRESTIGE ANTRACITE",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "ROMADG",
+            "DESCRIZIONE": "60X60 RETT ROMA DARK GREY",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "ROMALG",
+            "DESCRIZIONE": "60X60 RETT ROMA LIGHT GREY",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "ROYALSTAT60",
+            "DESCRIZIONE": "60X60 RTT. ROYAL STATUARIO MATT. SP. 8,5MM",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "T6161R109",
+            "DESCRIZIONE": "CEMENT TAUPE RETT 60X60",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        },
+        {
+            "CODICE": "TP3622",
+            "DESCRIZIONE": "60X60 BORG.GIALLO LAPP  RTT IN CRESTA",
+            "FORMATO": "60X60 RTT",
+            "MIN": 500,
+            "GIACENZA": 0.0,
+            "DISPONIBILITA": 0.0
+        }
+    ],
+    "conclusions": "Sono presenti più articoli 60x60 con GIACENZA inferiore al MIN dichiarato. Alcuni casi critici da priorizzare per produzione/approvvigionamento (esempi rilevanti dal risultato):\n- STGE66: DISPONIBILITA = -8001.0 (criticità molto alta)\n- BNLLI68: DISPONIBILITA = -4838.4\n- 004178: DISPONIBILITA = -2291.4\n- 304386: DISPONIBILITA = -921.6\n- EMT012: GIACENZA = -583.2 (giacenza negativa)\nRaccomandazioni: priorizzare azioni (produzione o acquisto) sugli articoli con DISPONIBILITA più negativa e verificare ordini in evasione che generano valori negativi. Se vuoi, posso ordinare la lista per shortage effettivo (MIN - GIACENZA) o mostrarti solo i top N articoli più critici."
+}

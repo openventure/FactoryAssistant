@@ -1,0 +1,184 @@
+{
+    "user_request": "Qual è la giacenza attuale per formato?",
+    "report_title": "Giacenza attuale per formato",
+    "summary": "Ho estratto la giacenza aggregata per formato (fonte: pa_ff_code). Il report riporta, per ciascun formato, il numero di articoli associati, la giacenza corrente (m²), la disponibilità, la giacenza prevista a 30 giorni, la disponibilità a 30 giorni e le quantità da consegnare. I formati con le maggiori giacenze sono 60X60 RTT e 60X120 RTT. Alcuni formati mostrano valori negativi nella disponibilità a 30 giorni (segnale di ordini previsti superiori alla disponibilità stimata) e vanno verificati. Tutte le quantità sono espresse in m².",
+    "table_data": [
+        {
+            "FORMATO": "60X60 RTT",
+            "article_count": 421,
+            "min_stock_m2": 210500,
+            "giacenza_m2": 1129448.82,
+            "disponibilita_m2": 838945.2,
+            "giacenza_30_m2": 506208.75,
+            "disponibilita_30_m2": 275249.49,
+            "qta_da_consegnare_m2": 290503.62,
+            "prod_by_day_m2": 2736500
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "article_count": 476,
+            "min_stock_m2": 238000,
+            "giacenza_m2": 933985.86,
+            "disponibilita_m2": 615863.22,
+            "giacenza_30_m2": 411158.21,
+            "disponibilita_30_m2": 200791.49,
+            "qta_da_consegnare_m2": 318122.64,
+            "prod_by_day_m2": 3094000
+        },
+        {
+            "FORMATO": "60X60 SP20",
+            "article_count": 250,
+            "min_stock_m2": 0,
+            "giacenza_m2": 451586.05,
+            "disponibilita_m2": 253223.89,
+            "giacenza_30_m2": 133082.09,
+            "disponibilita_30_m2": -21399.67,
+            "qta_da_consegnare_m2": 198362.16,
+            "prod_by_day_m2": 0
+        },
+        {
+            "FORMATO": "31X62",
+            "article_count": 293,
+            "min_stock_m2": 146500,
+            "giacenza_m2": 444627.53,
+            "disponibilita_m2": 298425.22,
+            "giacenza_30_m2": 209947.1,
+            "disponibilita_30_m2": 88574.51,
+            "qta_da_consegnare_m2": 146202.31,
+            "prod_by_day_m2": 1904500
+        },
+        {
+            "FORMATO": "30X60 RTT",
+            "article_count": 282,
+            "min_stock_m2": 141000,
+            "giacenza_m2": 284592.05,
+            "disponibilita_m2": 230060.27,
+            "giacenza_30_m2": 193098.86,
+            "disponibilita_30_m2": 146774.28,
+            "qta_da_consegnare_m2": 54531.78,
+            "prod_by_day_m2": 1833000
+        },
+        {
+            "FORMATO": "20X122 RTT",
+            "article_count": 74,
+            "min_stock_m2": 37000,
+            "giacenza_m2": 192269.4,
+            "disponibilita_m2": 132717.54,
+            "giacenza_30_m2": 73056.1,
+            "disponibilita_30_m2": 20599.76,
+            "qta_da_consegnare_m2": 59551.86,
+            "prod_by_day_m2": 481000
+        },
+        {
+            "FORMATO": "81X81 RTT",
+            "article_count": 74,
+            "min_stock_m2": 37000,
+            "giacenza_m2": 172014.75,
+            "disponibilita_m2": 94016.54,
+            "giacenza_30_m2": 137691.71,
+            "disponibilita_30_m2": 62193.43,
+            "qta_da_consegnare_m2": 77998.21,
+            "prod_by_day_m2": 481000
+        },
+        {
+            "FORMATO": "30,5X30,5",
+            "article_count": 66,
+            "min_stock_m2": 0,
+            "giacenza_m2": 159832.88,
+            "disponibilita_m2": 65530.16,
+            "giacenza_30_m2": -93450.27,
+            "disponibilita_30_m2": -161640.09,
+            "qta_da_consegnare_m2": 94302.72,
+            "prod_by_day_m2": 0
+        },
+        {
+            "FORMATO": "40X80 SP30",
+            "article_count": 61,
+            "min_stock_m2": 0,
+            "giacenza_m2": 144068.8,
+            "disponibilita_m2": 126208.96,
+            "giacenza_30_m2": 0,
+            "disponibilita_30_m2": 0,
+            "qta_da_consegnare_m2": 17859.84,
+            "prod_by_day_m2": 0
+        },
+        {
+            "FORMATO": "15,3X31",
+            "article_count": 41,
+            "min_stock_m2": 20500,
+            "giacenza_m2": 94735.12,
+            "disponibilita_m2": 85190.37,
+            "giacenza_30_m2": 67728.94,
+            "disponibilita_30_m2": 59384.4,
+            "qta_da_consegnare_m2": 9544.75,
+            "prod_by_day_m2": 266500
+        },
+        {
+            "FORMATO": "61X61",
+            "article_count": 34,
+            "min_stock_m2": 17000,
+            "giacenza_m2": 79348.14,
+            "disponibilita_m2": 50038.6,
+            "giacenza_30_m2": 48905.09,
+            "disponibilita_30_m2": 30165.93,
+            "qta_da_consegnare_m2": 29309.54,
+            "prod_by_day_m2": 221000
+        },
+        {
+            "FORMATO": "30X122 RTT",
+            "article_count": 44,
+            "min_stock_m2": 22000,
+            "giacenza_m2": 70696.76,
+            "disponibilita_m2": 62126.5,
+            "giacenza_30_m2": 31562.8,
+            "disponibilita_30_m2": 23812.38,
+            "qta_da_consegnare_m2": 8570.26,
+            "prod_by_day_m2": 286000
+        },
+        {
+            "FORMATO": "15X60 RTT",
+            "article_count": 24,
+            "min_stock_m2": 12000,
+            "giacenza_m2": 23354.05,
+            "disponibilita_m2": 22105.3,
+            "giacenza_30_m2": 16220.6,
+            "disponibilita_30_m2": 15062.3,
+            "qta_da_consegnare_m2": 1248.75,
+            "prod_by_day_m2": 156000
+        },
+        {
+            "FORMATO": "59X118 L/R",
+            "article_count": 16,
+            "min_stock_m2": 8000,
+            "giacenza_m2": 12678.34,
+            "disponibilita_m2": 11102.6,
+            "giacenza_30_m2": 191.89,
+            "disponibilita_30_m2": -778.33,
+            "qta_da_consegnare_m2": 1575.74,
+            "prod_by_day_m2": 104000
+        },
+        {
+            "FORMATO": "59X59 L/R",
+            "article_count": 3,
+            "min_stock_m2": 1500,
+            "giacenza_m2": 715.14,
+            "disponibilita_m2": 307.98,
+            "giacenza_30_m2": 139.2,
+            "disponibilita_30_m2": -267.96,
+            "qta_da_consegnare_m2": 407.16,
+            "prod_by_day_m2": 19500
+        },
+        {
+            "FORMATO": "15,3X31,",
+            "article_count": 1,
+            "min_stock_m2": 500,
+            "giacenza_m2": 0,
+            "disponibilita_m2": 0,
+            "giacenza_30_m2": 0,
+            "disponibilita_30_m2": 0,
+            "qta_da_consegnare_m2": 0,
+            "prod_by_day_m2": 6500
+        }
+    ],
+    "conclusions": "Azioni consigliate: 1) Monitorare i formati con maggiore giacenza (60X60 RTT, 60X120 RTT) per valutare rotazione e opportunità commerciali; 2) Indagare i formati con disponibilità a 30 giorni negativa (es. 60X60 SP20, 30,5X30,5, 59X118 L/R, 59X59 L/R) per capire se sono ordini pianificati o errore di previsione; 3) Se vuoi, posso fare un drill-down per formato specifico (dettaglio articoli o depositi) o esportare questo report in CSV. Quale azione preferisci?"
+}

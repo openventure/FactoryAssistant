@@ -1,0 +1,197 @@
+{
+    "user_request": "Dammi la giacenza della serie Cult",
+    "report_title": "Giacenza totale e dettaglio — Serie CULT",
+    "summary": "La giacenza complessiva della serie CULT è 54.293,99 m². La disponibilità immediata (al netto delle quantità impegnate per consegne) è pari a 48.104,15 m². Sono evidenti 6 articoli con giacenza sotto il minimo di scorta definito e 4 articoli a giacenza nulla. Le quantità già impegnate per consegne sommano a 6.189,84 m².",
+    "table_data": [
+        {
+            "report_line": "totals",
+            "total_giacenza_m2": 54293.99,
+            "total_disponibilita_m2": 48104.15,
+            "total_qta_da_consegnare_m2": 6189.84,
+            "items_count": 18,
+            "items_below_min_count": 6,
+            "items_zero_giacenza_count": 4
+        },
+        {
+            "CODICE": "003369",
+            "DESCRIZIONE": "81X81 RETT CULT BEIGE CL32",
+            "FORMATO": "81X81 RTT",
+            "min_stock_m2": 522.0,
+            "giacenza_m2": 5488.42,
+            "disponibilita_m2": 5488.42,
+            "qta_da_consegnare_m2": 0.0,
+            "below_min": false
+        },
+        {
+            "CODICE": "003374",
+            "DESCRIZIONE": "30X60 RETT CULT ANTHRACITE",
+            "FORMATO": "30X60 RTT",
+            "min_stock_m2": 508.0,
+            "giacenza_m2": 953.82,
+            "disponibilita_m2": 931.14,
+            "qta_da_consegnare_m2": 22.68,
+            "below_min": false
+        },
+        {
+            "CODICE": "003396",
+            "DESCRIZIONE": "60X60 RT CULT WHITE",
+            "FORMATO": "60X60 RTT",
+            "min_stock_m2": 518.0,
+            "giacenza_m2": 3727.99,
+            "disponibilita_m2": 2359.99,
+            "qta_da_consegnare_m2": 1368.0,
+            "below_min": false
+        },
+        {
+            "CODICE": "004008",
+            "DESCRIZIONE": "60X120 RTT CULT ANTHRACITE",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": 0.0,
+            "qta_da_consegnare_m2": 0.0,
+            "below_min": true
+        },
+        {
+            "CODICE": "004009",
+            "DESCRIZIONE": "60X120 RTT CULT WHITE",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 8.64,
+            "disponibilita_m2": 8.64,
+            "qta_da_consegnare_m2": 0.0,
+            "below_min": true
+        },
+        {
+            "CODICE": "004009A",
+            "DESCRIZIONE": "CITY WHITE RTT 60X120 (CULT WHITE) cl35",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 5726.88,
+            "disponibilita_m2": 5362.56,
+            "qta_da_consegnare_m2": 364.32,
+            "below_min": false
+        },
+        {
+            "CODICE": "004010",
+            "DESCRIZIONE": "60X120 RTT CULT BEIGE",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 109.44,
+            "disponibilita_m2": 109.44,
+            "qta_da_consegnare_m2": 0.0,
+            "below_min": true
+        },
+        {
+            "CODICE": "004010A",
+            "DESCRIZIONE": "60X120 CULT BEIGE RTT cl35",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 1782.72,
+            "disponibilita_m2": 1386.72,
+            "qta_da_consegnare_m2": 396.0,
+            "below_min": false
+        },
+        {
+            "CODICE": "004011",
+            "DESCRIZIONE": "60X120 RTT CULT GREY",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 102.24,
+            "disponibilita_m2": 102.24,
+            "qta_da_consegnare_m2": 0.0,
+            "below_min": true
+        },
+        {
+            "CODICE": "004011A",
+            "DESCRIZIONE": "60X120 CULT GREY RTT cl35",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 5748.48,
+            "disponibilita_m2": 4744.8,
+            "qta_da_consegnare_m2": 1003.68,
+            "below_min": false
+        },
+        {
+            "CODICE": "004114",
+            "DESCRIZIONE": "CITY GREY 60X60 RET (CULT)",
+            "FORMATO": "60X60 RTT",
+            "min_stock_m2": 518.0,
+            "giacenza_m2": 7837.2,
+            "disponibilita_m2": 7018.2,
+            "qta_da_consegnare_m2": 819.0,
+            "below_min": false
+        },
+        {
+            "CODICE": "004115",
+            "DESCRIZIONE": "CITY BEIGE 60X60 RET (CULT)",
+            "FORMATO": "60X60 RTT",
+            "min_stock_m2": 518.0,
+            "giacenza_m2": 3117.6,
+            "disponibilita_m2": 3117.6,
+            "qta_da_consegnare_m2": 0.0,
+            "below_min": false
+        },
+        {
+            "CODICE": "004184A",
+            "DESCRIZIONE": "CITY BEIGE DEC.FLOWER RTT 60X120",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 2435.04,
+            "disponibilita_m2": 2279.52,
+            "qta_da_consegnare_m2": 155.52,
+            "below_min": false
+        },
+        {
+            "CODICE": "004185",
+            "DESCRIZIONE": "60X120 DEC. FLOWER GREY RT",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": 0.0,
+            "qta_da_consegnare_m2": 0.0,
+            "below_min": true
+        },
+        {
+            "CODICE": "004185A",
+            "DESCRIZIONE": "CITY GREY DEC.FLOWER RTT 60X120",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 3556.8,
+            "disponibilita_m2": 3261.6,
+            "qta_da_consegnare_m2": 295.2,
+            "below_min": false
+        },
+        {
+            "CODICE": "004188A",
+            "DESCRIZIONE": "CITY GREY RTT 60X120 (CULT) cl35",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 6122.88,
+            "disponibilita_m2": 5518.08,
+            "qta_da_consegnare_m2": 604.8,
+            "below_min": false
+        },
+        {
+            "CODICE": "004189A",
+            "DESCRIZIONE": "CITY BEIGE RTT 60X120  cl 35 (CULT)",
+            "FORMATO": "60X120 RTT",
+            "min_stock_m2": 516.0,
+            "giacenza_m2": 7575.84,
+            "disponibilita_m2": 6415.2,
+            "qta_da_consegnare_m2": 1160.64,
+            "below_min": false
+        },
+        {
+            "CODICE": "004339",
+            "DESCRIZIONE": "GRADINO FRONTALE A L COSTA RETTA 30X60X5 RT CULT WHITE",
+            "FORMATO": "30X60 RTT",
+            "min_stock_m2": 508.0,
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": 0.0,
+            "qta_da_consegnare_m2": 0.0,
+            "below_min": true
+        }
+    ],
+    "conclusions": "La serie CULT mostra una giacenza complessiva adeguata (≈54.3k m²) ma con alcune criticità puntuali: 6 articoli sotto scorta minima (inclusi 4 con giacenza nulla). Azioni consigliate: 1) Prioritizzare riordini per gli articoli con giacenza nulla o molto bassa (codici: 004008, 004009, 004010, 004011, 004185, 004339). 2) Verificare le consegne programmate per ridurre l'allocazione su articoli con elevata q.ta da consegnare (es. 004189A, 004011A, 004114) e valutare se spostare scorte tra depositi. 3) Se vuoi, posso fornirti una vista filtrata per deposito, o una classifica TOP10 articoli per giacenza e per q.ta da consegnare, o preparare un piano di riordino calcolato su lead time e consumo medio mensile. Dimmi quale approfondimento preferisci."
+}

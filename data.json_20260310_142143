@@ -1,0 +1,32 @@
+{
+    "user_request": "Qual è la produzione giornaliera media per linea nell’ultimo mese?",
+    "report_title": "Produzione media giornaliera per linea — ultimi 30 giorni",
+    "summary": "Calcolo effettuato sugli ultimi 30 giorni (periodo: ultimi 30 giorni fino a oggi). Sono stati esclusi i pallet contrassegnati come espulsi. Per ogni linea vengono forniti: produzione totale in m² nel periodo, numero di giorni con produzione registrata, numero di giorni del periodo (30) e due medie: media su giorni di calendario (totale/30) e media su giorni con produzione (totale/giorni con produzione). L'analisi è aggregata su tutti gli articoli (nessun filtro per formato/tono/serie).",
+    "table_data": [
+        {
+            "Linea": "3",
+            "total_m2": 86.4,
+            "production_days": 1,
+            "calendar_days": 30,
+            "avg_m2_per_calendar_day": 2.88,
+            "avg_m2_per_production_day": 86.4
+        },
+        {
+            "Linea": "1",
+            "total_m2": 53.0,
+            "production_days": 1,
+            "calendar_days": 30,
+            "avg_m2_per_calendar_day": 1.767,
+            "avg_m2_per_production_day": 53.0
+        },
+        {
+            "Linea": "2",
+            "total_m2": 17.28,
+            "production_days": 1,
+            "calendar_days": 30,
+            "avg_m2_per_calendar_day": 0.576,
+            "avg_m2_per_production_day": 17.28
+        }
+    ],
+    "conclusions": "Nel periodo considerato la produzione è concentrata su pochissimi giorni: ogni linea risulta avere produzione registrata solo in 1 giorno. Questo rende la media su giorni di calendario molto bassa rispetto alla media per giorni con produzione. Azioni consigliate: 1) Verificare l'attendibilità dei dati (possibili giorni mancanti o problemi di registrazione). 2) Se i dati sono corretti, analizzare le cause della bassa frequenza produttiva (fermi macchina, pianificazione, ordini). 3) Per un quadro più stabile raccomando di ripetere l'analisi su un periodo più lungo (es. 3 o 6 mesi) o di considerare la media per giorni con produzione se si vuole valutare la capacità effettiva quando la linea è attiva. Se desideri, posso: a) ripetere l'analisi sul mese solare precedente, b) escludere/ includere solo prima scelta, oppure c) approfondire per singolo articolo/tono per identificare quali prodotti concentrano la produzione."
+}

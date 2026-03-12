@@ -1,0 +1,441 @@
+{
+    "user_request": "Mostra gli articoli con stock basso per formato e serie.",
+    "report_title": "Articoli con stock sotto soglia — raggruppamento per formato e serie",
+    "summary": "Ho individuato gli articoli la cui giacenza è inferiore al livello minimo richiesto, aggregati per formato e serie. Per ogni combinazione formato/serie viene mostrato: numero di articoli sotto soglia, giacenza totale attuale (m²), fabbisogno minimo totale (m²), deficit complessivo in m² e una lista dei principali codici con relativo shortfall. Le combinazioni con deficit maggiore sono in cima alla lista, indicate come prioritarie per intervento.",
+    "table_data": [
+        {
+            "FORMATO": "31X62",
+            "SERIE": "MATERIALI ACR",
+            "NUM_ARTICOLI_BASSI": 102,
+            "TOT_GIACENZA_MQ": 2045.71,
+            "TOT_MIN_MQ": 52020,
+            "TOT_SHORTFALL_MQ": 49974.29,
+            "TOP_ARTICOLI": "002476 (510.00 m2), 002616 (510.00 m2), 002957 (510.00 m2), 002986 (510.00 m2), 003006A (510.00 m2), 003318 (510.00 m2), 003340 (510.00 m2), 003413 (510.00 m2), 003541A (510.00 m2), 002417G (510.00 m2), 002614 (510.00 m2), 002939M (510.00 m2), 002955M (510.00 m2), 002957M (510.00 m2), 003088 (510.00 m2), 003403M (510.00 m2), 003404 (510.00 m2), AWT36 (510.00 m2), 003469 (510.00 m2), 003493 (510.00 m2), 003936 (510.00 m2), 37360 (510.00 m2), 002417 (510.00 m2), 002493 (510.00 m2), 002952 (510.00 m2), 003933 (510.00 m2), PSBG36 (510.00 m2), 003489 (510.00 m2), FOCUSG (510.00 m2), O02405 (510.00 m2), 002407 (510.00 m2), 003007 (510.00 m2), 003231M (510.00 m2), 003233M (510.00 m2), 002418 (510.00 m2), 002648 (510.00 m2), 003338 (510.00 m2), 003412 (510.00 m2), NE3162116 (510.00 m2), 002492 (510.00 m2), 002934 (510.00 m2), 002938 (510.00 m2), 003009 (510.00 m2), 003089 (510.00 m2), 003337 (510.00 m2), 003405 (510.00 m2), 003405M (510.00 m2), 003294 (510.00 m2), 003415 (510.00 m2), 002643 (510.00 m2), 002643M (510.00 m2), 002645 (510.00 m2), 002956M (510.00 m2), 003092 (510.00 m2), 003092M (510.00 m2), 003132 (510.00 m2), 002478 (510.00 m2), 002649 (510.00 m2), 003488 (510.00 m2), 003863 (510.00 m2), 003232M (510.00 m2), 003404M (510.00 m2), 003490 (510.00 m2), 002406 (510.00 m2), 002420 (510.00 m2), 002477 (510.00 m2), 002490 (510.00 m2), 002647 (510.00 m2), 002938M (510.00 m2), 002939 (510.00 m2), 002955 (510.00 m2), BI3162116 (510.00 m2), 002644 (510.00 m2), 002956 (510.00 m2), 003234M (510.00 m2), 003491 (510.00 m2), 003492 (510.00 m2), 003863M (510.00 m2), 004061 (510.00 m2), PSFU36 (510.00 m2), SC0001 (510.00 m2), 002419 (510.00 m2), 002646A (510.00 m2), 002649A (510.00 m2), 002933 (510.00 m2), 003131 (510.00 m2), 003339 (510.00 m2), 003862M (510.00 m2), GR3162116 (501.90 m2), 002652 (491.10 m2), 003474 (489.75 m2), 002475 (481.65 m2), 003008 (478.95 m2), 003224 (439.32 m2), 002646 (438.45 m2), 003934 (419.55 m2), 003414 (410.10 m2), PSGY36 (348.00 m2), 003470 (254.85 m2), PSAN36 (198.26 m2), 003403 (140.01 m2), 003005 (2.40 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALI ACR",
+            "NUM_ARTICOLI_BASSI": 36,
+            "TOT_GIACENZA_MQ": 717.13,
+            "TOT_MIN_MQ": 18648,
+            "TOT_SHORTFALL_MQ": 17930.87,
+            "TOP_ARTICOLI": "004065A (518.00 m2), 003347 (518.00 m2), 003672 (518.00 m2), 003745 (518.00 m2), 003750 (518.00 m2), 003238 (518.00 m2), RTCLF600 (518.00 m2), BSNO6R (518.00 m2), UKDA (518.00 m2), 003672, (518.00 m2), 003387 (518.00 m2), 003675 (518.00 m2), 003832 (518.00 m2), 003163 (518.00 m2), 003165 (518.00 m2), 003237 (518.00 m2), 003388 (518.00 m2), 003691 (518.00 m2), 003712 (518.00 m2), 003747 (518.00 m2), 003748 (518.00 m2), 004021 (518.00 m2), 003258 (518.00 m2), 003292 (518.00 m2), 003325 (518.00 m2), 003746 (518.00 m2), 004513 (518.00 m2), 003673 (518.00 m2), ROMADG (518.00 m2), 003376 (518.00 m2), 003598 (518.00 m2), 003841A (496.40 m2), 004581 (489.20 m2), BSGR6R (474.80 m2), 003749 (388.40 m2), 004444 (24.07 m2)"
+        },
+        {
+            "FORMATO": "31X62",
+            "SERIE": "TERM ELLE - NON USARE",
+            "NUM_ARTICOLI_BASSI": 33,
+            "TOT_GIACENZA_MQ": 2104.59,
+            "TOT_MIN_MQ": 16830,
+            "TOT_SHORTFALL_MQ": 14725.41,
+            "TOP_ARTICOLI": "003245 (510.00 m2), 004068 (510.00 m2), 004067 (510.00 m2), 003313 (510.00 m2), 003233_ (510.00 m2), OO2737 (510.00 m2), 003214 (510.00 m2), EUR-5700 (510.00 m2), 76137 (510.00 m2), 003233 (510.00 m2), 003869 (510.00 m2), 003247 (510.00 m2), EUR-5701 (510.00 m2), 003231, (510.00 m2), 003234 (510.00 m2), 003312 (510.00 m2), EUR-5703 (510.00 m2), 003234_ (510.00 m2), 003246 (510.00 m2), 76136 (510.00 m2), 003297 (510.00 m2), 003232 (510.00 m2), 003232_ (510.00 m2), 303957 (491.10 m2), 003858 (477.66 m2), EUR-5702 (429.00 m2), 003231 (361.50 m2), EUR-5704 (348.00 m2), 003017 (348.00 m2), 003921 (241.35 m2), 005621 (196.80 m2), 005453 (78.00 m2), EUR-5709 (24.00 m2)"
+        },
+        {
+            "FORMATO": "31X62",
+            "SERIE": "ARTICOLI NON A CATALOGO",
+            "NUM_ARTICOLI_BASSI": 27,
+            "TOT_GIACENZA_MQ": 0.0,
+            "TOT_MIN_MQ": 13770,
+            "TOT_SHORTFALL_MQ": 13770.0,
+            "TOP_ARTICOLI": "002732 (510.00 m2), 002734 (510.00 m2), 002755 (510.00 m2), 002997 (510.00 m2), 003000 (510.00 m2), 002648A (510.00 m2), 002738 (510.00 m2), 002992 (510.00 m2), 002996 (510.00 m2), EE0117 (510.00 m2), 002740 (510.00 m2), 003002 (510.00 m2), 002999 (510.00 m2), 003001 (510.00 m2), 002965 (510.00 m2), 002967 (510.00 m2), 002926 (510.00 m2), 002998 (510.00 m2), 002737 (510.00 m2), 002736 (510.00 m2), 003056 (510.00 m2), 002735 (510.00 m2), 002739 (510.00 m2), 002741 (510.00 m2), 002849 (510.00 m2), EE0115 (510.00 m2), 003225 (510.00 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "EMOTION",
+            "NUM_ARTICOLI_BASSI": 24,
+            "TOT_GIACENZA_MQ": 575.97,
+            "TOT_MIN_MQ": 12432,
+            "TOT_SHORTFALL_MQ": 11856.03,
+            "TOP_ARTICOLI": "EMT012 (784.40 m2), EMT013 (734.00 m2), EMT011 (692.71 m2), 005430 (518.00 m2), GIGO08 (518.00 m2), EMT071M (518.00 m2), IMPACT60TON (518.00 m2), 005429 (518.00 m2), EMT011R (518.00 m2), EMT015 (518.00 m2), EMT073M (518.00 m2), SALGRI (518.00 m2), EMT013R (518.00 m2), EMT012R (518.00 m2), EMT074M (518.00 m2), EMT011A (518.00 m2), EMT012A (518.00 m2), EMT014R (518.00 m2), EE1309 (510.80 m2), EE1311 (505.40 m2), EMT011B (392.72 m2), EMT064 (194.00 m2), EMT072M (172.40 m2), EMT062 (99.60 m2)"
+        },
+        {
+            "FORMATO": "31X62",
+            "SERIE": "MATERIALI DADO",
+            "NUM_ARTICOLI_BASSI": 19,
+            "TOT_GIACENZA_MQ": 0.0,
+            "TOT_MIN_MQ": 9690,
+            "TOT_SHORTFALL_MQ": 9690.0,
+            "TOP_ARTICOLI": "003033 (510.00 m2), 003224M (510.00 m2), 003265 (510.00 m2), 6573618 (510.00 m2), 003014 (510.00 m2), 003775 (510.00 m2), 301632M (510.00 m2), 003137 (510.00 m2), 301693M (510.00 m2), 003036 (510.00 m2), 003039 (510.00 m2), 003040 (510.00 m2), 003041 (510.00 m2), 003508M (510.00 m2), 003509M (510.00 m2), 003037 (510.00 m2), 003264 (510.00 m2), 301633M (510.00 m2), 301631M (510.00 m2)"
+        },
+        {
+            "FORMATO": "31X62",
+            "SERIE": "MOMASTELA/NASIBU'",
+            "NUM_ARTICOLI_BASSI": 19,
+            "TOT_GIACENZA_MQ": 160.66,
+            "TOT_MIN_MQ": 9690,
+            "TOT_SHORTFALL_MQ": 9529.34,
+            "TOP_ARTICOLI": "TP7O00 (510.00 m2), O02420 (510.00 m2), O02653 (510.00 m2), TP11O0 (510.00 m2), TP93O0 (510.00 m2), O02417 (510.00 m2), O02477 (510.00 m2), TP3234 (510.00 m2), TP91O0 (510.00 m2), FOCUSA (510.00 m2), TP22O0 (510.00 m2), O02650 (510.00 m2), TP9O00 (510.00 m2), TP3231 (510.00 m2), TP3233 (510.00 m2), FOCUSB (509.99 m2), TP71O0 (487.05 m2), TP735O (450.60 m2), TP92O0 (431.70 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALI DADO",
+            "NUM_ARTICOLI_BASSI": 18,
+            "TOT_GIACENZA_MQ": 509.04,
+            "TOT_MIN_MQ": 9324,
+            "TOT_SHORTFALL_MQ": 8814.96,
+            "TOP_ARTICOLI": "EB0011A (518.00 m2), EB0009 (518.00 m2), EB0012 (518.00 m2), 003905 (518.00 m2), 004163 (518.00 m2), EB0010 (518.00 m2), 004170 (518.00 m2), 003906 (518.00 m2), 004169 (518.00 m2), 003903 (518.00 m2), 003907 (518.00 m2), 004168 (518.00 m2), EB0012A (518.00 m2), 004162 (518.00 m2), EB0011 (518.00 m2), 003904 (492.80 m2), 004171 (425.84 m2), 004890 (126.32 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "20X60",
+            "NUM_ARTICOLI_BASSI": 16,
+            "TOT_GIACENZA_MQ": 194.4,
+            "TOT_MIN_MQ": 8288,
+            "TOT_SHORTFALL_MQ": 8093.6,
+            "TOP_ARTICOLI": "HSGR6R (518.00 m2), HSAN6R (518.00 m2), UKGR60 (518.00 m2), FOUD60 (518.00 m2), FOUG60 (518.00 m2), HSSI6R (518.00 m2), ANBK60 (518.00 m2), FBSDA6 (518.00 m2), FOUB60 (518.00 m2), HSBG6R (518.00 m2), FABK60 (518.00 m2), FBSLI6 (518.00 m2), ANBU60 (518.00 m2), FABU60 (518.00 m2), UKDA60 (518.00 m2), UKBG60 (323.60 m2)"
+        },
+        {
+            "FORMATO": "31X62",
+            "SERIE": "ASPEN",
+            "NUM_ARTICOLI_BASSI": 17,
+            "TOT_GIACENZA_MQ": 982.7,
+            "TOT_MIN_MQ": 8670,
+            "TOT_SHORTFALL_MQ": 7687.3,
+            "TOP_ARTICOLI": "ASP007 (510.00 m2), 004900 (510.00 m2), 003538 (510.00 m2), 003541 (510.00 m2), 003543 (510.00 m2), 004898 (510.00 m2), 004741 (510.00 m2), 004902 (510.00 m2), 004728 (510.00 m2), 004988 (510.00 m2), 005068 (510.00 m2), EE1289 (477.60 m2), 003536 (474.00 m2), EE1285 (451.60 m2), EE1288 (412.80 m2), EE1284 (213.00 m2), EE1287 (48.30 m2)"
+        },
+        {
+            "FORMATO": "61X61",
+            "SERIE": "MATERIALI ACR",
+            "NUM_ARTICOLI_BASSI": 15,
+            "TOT_GIACENZA_MQ": 344.1,
+            "TOT_MIN_MQ": 7815,
+            "TOT_SHORTFALL_MQ": 7470.9,
+            "TOP_ARTICOLI": "004022 (521.00 m2), 003876 (521.00 m2), 003925 (521.00 m2), 003932 (521.00 m2), GR61615116 (521.00 m2), 003931 (521.00 m2), NE61615116 (521.00 m2), 003924 (521.00 m2), 003926 (521.00 m2), BI61615116 (521.00 m2), 004023 (521.00 m2), 003923 (496.82 m2), 003930 (481.94 m2), 004024 (459.62 m2), 003927 (301.52 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "B&B",
+            "NUM_ARTICOLI_BASSI": 13,
+            "TOT_GIACENZA_MQ": 172.8,
+            "TOT_MIN_MQ": 6734,
+            "TOT_SHORTFALL_MQ": 6561.2,
+            "TOP_ARTICOLI": "FOCEMENTIANT68 (518.00 m2), SOLGR68 (518.00 m2), FOVERGR68 (518.00 m2), FOVERGRG68 (518.00 m2), VENGRG68 (518.00 m2), VENGR68 (518.00 m2), BNLDA68 (518.00 m2), DREAMANT68 (518.00 m2), FOVERANT68 (518.00 m2), BLUEBETON68 (518.00 m2), FOCEMENTIGR68 (518.00 m2), ASTONE68 (518.00 m2), VENANT68 (345.20 m2)"
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "NUM_ARTICOLI_BASSI": 12,
+            "TOT_GIACENZA_MQ": 11.52,
+            "TOT_MIN_MQ": 6192,
+            "TOT_SHORTFALL_MQ": 6180.48,
+            "TOP_ARTICOLI": "005273 (516.00 m2), 005203 (516.00 m2), 005204 (516.00 m2), 005206 (516.00 m2), 005153 (516.00 m2), 004043 (516.00 m2), EUR-5900 (516.00 m2), 003914A (516.00 m2), 003915A (516.00 m2), EUR-5902 (516.00 m2), 005205 (516.00 m2), EUR-5907 (504.48 m2)"
+        },
+        {
+            "FORMATO": "30X60 RTT",
+            "SERIE": "MATERIALE DADO",
+            "NUM_ARTICOLI_BASSI": 13,
+            "TOT_GIACENZA_MQ": 1769.4,
+            "TOT_MIN_MQ": 6604,
+            "TOT_SHORTFALL_MQ": 4834.6,
+            "TOP_ARTICOLI": "3O3856 (508.00 m2), EEO182 (508.00 m2), EEO183 (508.00 m2), EE0183 (508.00 m2), EE1374 (508.00 m2), EEO185 (508.00 m2), 304168 (419.80 m2), 304167 (322.60 m2), 304173 (317.20 m2), 304170 (301.00 m2), 304172 (218.20 m2), 304169 (189.40 m2), 304171 (18.40 m2)"
+        },
+        {
+            "FORMATO": "61X61",
+            "SERIE": "CEMENTI",
+            "NUM_ARTICOLI_BASSI": 9,
+            "TOT_GIACENZA_MQ": 72.54,
+            "TOT_MIN_MQ": 4689,
+            "TOT_SHORTFALL_MQ": 4616.46,
+            "TOP_ARTICOLI": "303432 (521.00 m2), 303430 (521.00 m2), 302549A (521.00 m2), 303431 (521.00 m2), 303429 (521.00 m2), 303427 (521.00 m2), 303442 (521.00 m2), 303419 (521.00 m2), 303428 (448.46 m2)"
+        },
+        {
+            "FORMATO": "15,3X31",
+            "SERIE": "FOSSILI",
+            "NUM_ARTICOLI_BASSI": 13,
+            "TOT_GIACENZA_MQ": 1969.87,
+            "TOT_MIN_MQ": 6513,
+            "TOT_SHORTFALL_MQ": 4543.13,
+            "TOP_ARTICOLI": "TP3404 (501.00 m2), TP3202 (501.00 m2), TP3403 (501.00 m2), TP3405 (501.00 m2), TP3302C (372.84 m2), TP3302 (360.75 m2), TP3407 (345.44 m2), TP33O0 (330.95 m2), TP32O0 (321.25 m2), TP33O0C (318.84 m2), TP34O7C (200.36 m2), TP34O7 (192.31 m2), TP3407C (96.39 m2)"
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "NUM_ARTICOLI_BASSI": 8,
+            "TOT_GIACENZA_MQ": 73.44,
+            "TOT_MIN_MQ": 4128,
+            "TOT_SHORTFALL_MQ": 4054.56,
+            "TOP_ARTICOLI": "004915 (516.00 m2), 004918 (516.00 m2), 005655 (516.00 m2), 005657 (516.00 m2), 004914 (516.00 m2), 005656 (516.00 m2), 004916 (516.00 m2), 004917 (442.56 m2)"
+        },
+        {
+            "FORMATO": "20X122 RTT",
+            "SERIE": "MATERIALI ACR",
+            "NUM_ARTICOLI_BASSI": 8,
+            "TOT_GIACENZA_MQ": 0.0,
+            "TOT_MIN_MQ": 4032,
+            "TOT_SHORTFALL_MQ": 4032.0,
+            "TOP_ARTICOLI": "EB0007 (504.00 m2), 003802 (504.00 m2), 003804 (504.00 m2), 004016 (504.00 m2), EB0006 (504.00 m2), 003801 (504.00 m2), 003803 (504.00 m2), EB0005 (504.00 m2)"
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "SERIE": "NATURE",
+            "NUM_ARTICOLI_BASSI": 8,
+            "TOT_GIACENZA_MQ": 318.24,
+            "TOT_MIN_MQ": 4128,
+            "TOT_SHORTFALL_MQ": 3809.76,
+            "TOP_ARTICOLI": "303837M (516.00 m2), 303836M (516.00 m2), 303841 (516.00 m2), 303845M (516.00 m2), 303836 (498.72 m2), 303845 (442.56 m2), 303841A (406.56 m2), 303837 (397.92 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "NUM_ARTICOLI_BASSI": 7,
+            "TOT_GIACENZA_MQ": 0.0,
+            "TOT_MIN_MQ": 3626,
+            "TOT_SHORTFALL_MQ": 3626.0,
+            "TOP_ARTICOLI": "005041 (518.00 m2), 005209 (518.00 m2), 005210 (518.00 m2), EUR-5804 (518.00 m2), 005207 (518.00 m2), 005208 (518.00 m2), 003838 (518.00 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "ARTICOLI NON A CATALOGO",
+            "NUM_ARTICOLI_BASSI": 7,
+            "TOT_GIACENZA_MQ": 25.2,
+            "TOT_MIN_MQ": 3626,
+            "TOT_SHORTFALL_MQ": 3600.8,
+            "TOP_ARTICOLI": "HOMHC60151 (518.00 m2), 190009 (518.00 m2), 003149 (518.00 m2), 003136 (518.00 m2), 003377 (518.00 m2), 190109 (518.00 m2), 003378 (492.80 m2)"
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "SERIE": "WALLPAPERS",
+            "NUM_ARTICOLI_BASSI": 7,
+            "TOT_GIACENZA_MQ": 108.0,
+            "TOT_MIN_MQ": 3612,
+            "TOT_SHORTFALL_MQ": 3504.0,
+            "TOP_ARTICOLI": "303520 (516.00 m2), 303521 (516.00 m2), 303522 (514.56 m2), 303526 (511.68 m2), 303921 (508.80 m2), 303524 (505.92 m2), 303525 (431.04 m2)"
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "SERIE": "SOLID",
+            "NUM_ARTICOLI_BASSI": 7,
+            "TOT_GIACENZA_MQ": 112.32,
+            "TOT_MIN_MQ": 3612,
+            "TOT_SHORTFALL_MQ": 3499.68,
+            "TOP_ARTICOLI": "303710 (516.00 m2), ELBA21 (516.00 m2), ELBA22 (516.00 m2), ELBA23 (516.00 m2), 303713 (497.28 m2), 303712 (471.36 m2), 303711 (467.04 m2)"
+        },
+        {
+            "FORMATO": "31X62",
+            "SERIE": "EVOLUZIONI CERAMICHE",
+            "NUM_ARTICOLI_BASSI": 7,
+            "TOT_GIACENZA_MQ": 211.95,
+            "TOT_MIN_MQ": 3570,
+            "TOT_SHORTFALL_MQ": 3358.05,
+            "TOP_ARTICOLI": "EF1147A (510.00 m2), EE0152 (510.00 m2), EF1319 (510.00 m2), EF1146A (510.00 m2), EF1147 (510.00 m2), EEO153 (501.90 m2), EE1318 (306.15 m2)"
+        },
+        {
+            "FORMATO": "31X62",
+            "SERIE": "GRANITI",
+            "NUM_ARTICOLI_BASSI": 8,
+            "TOT_GIACENZA_MQ": 725.13,
+            "TOT_MIN_MQ": 4080,
+            "TOT_SHORTFALL_MQ": 3354.87,
+            "TOP_ARTICOLI": "O02646 (510.00 m2), RO2646 (510.00 m2), 004431 (510.00 m2), 303093 (474.90 m2), O02645 (456.00 m2), ST2645 (407.40 m2), 303092 (402.00 m2), 004432 (84.57 m2)"
+        },
+        {
+            "FORMATO": "30X60 RTT",
+            "SERIE": "EMOTION",
+            "NUM_ARTICOLI_BASSI": 7,
+            "TOT_GIACENZA_MQ": 278.46,
+            "TOT_MIN_MQ": 3556,
+            "TOT_SHORTFALL_MQ": 3277.54,
+            "TOP_ARTICOLI": "004604 (508.00 m2), 004899 (508.00 m2), EMT201 (508.00 m2), EMT031 (508.00 m2), EMT034 (491.62 m2), EMT030 (466.42 m2), EMT035 (287.50 m2)"
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MERKURY",
+            "NUM_ARTICOLI_BASSI": 8,
+            "TOT_GIACENZA_MQ": 954.72,
+            "TOT_MIN_MQ": 4128,
+            "TOT_SHORTFALL_MQ": 3173.28,
+            "TOP_ARTICOLI": "3510991 (516.00 m2), 3538701 (516.00 m2), 3510992 (516.00 m2), 3510994 (516.00 m2), 3510995 (511.68 m2), 3538699 (472.80 m2), 3514182 (112.80 m2), 3510992A (12.00 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 0.0,
+            "TOT_MIN_MQ": 3108,
+            "TOT_SHORTFALL_MQ": 3108.0,
+            "TOP_ARTICOLI": "005654 (518.00 m2), 004579 (518.00 m2), 004580 (518.00 m2), 004582 (518.00 m2), 005652 (518.00 m2), 005653 (518.00 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "GIGA",
+            "NUM_ARTICOLI_BASSI": 7,
+            "TOT_GIACENZA_MQ": 567.36,
+            "TOT_MIN_MQ": 3626,
+            "TOT_SHORTFALL_MQ": 3058.64,
+            "TOP_ARTICOLI": "GIG005 (518.00 m2), GIG001 (516.56 m2), GIG003 (469.04 m2), GIG002A (461.84 m2), GIG002 (460.40 m2), GIG004A (350.96 m2), GIG004 (281.84 m2)"
+        },
+        {
+            "FORMATO": "30X60 RTT",
+            "SERIE": "MATERIALI DADO",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 0.0,
+            "TOT_MIN_MQ": 3048,
+            "TOT_SHORTFALL_MQ": 3048.0,
+            "TOP_ARTICOLI": "EB0013 (508.00 m2), EB0015A (508.00 m2), EB0014 (508.00 m2), EB0015 (508.00 m2), EB0016 (508.00 m2), EB0016A (508.00 m2)"
+        },
+        {
+            "FORMATO": "30X122 RTT",
+            "SERIE": "FRAME",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 0.0,
+            "TOT_MIN_MQ": 3036,
+            "TOT_SHORTFALL_MQ": 3036.0,
+            "TOP_ARTICOLI": "004481 (506.00 m2), 004485 (506.00 m2), 004486 (506.00 m2), 004479 (506.00 m2), 004478 (506.00 m2), 004484 (506.00 m2)"
+        },
+        {
+            "FORMATO": "31X62",
+            "SERIE": "MURO DI SIENA",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 72.9,
+            "TOT_MIN_MQ": 3060,
+            "TOT_SHORTFALL_MQ": 2987.1,
+            "TOP_ARTICOLI": "002942 (510.00 m2), 005281 (510.00 m2), 002925 (510.00 m2), 002983P (510.00 m2), 002982 (510.00 m2), 002941 (437.10 m2)"
+        },
+        {
+            "FORMATO": "31X62",
+            "SERIE": "OLIMPO",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 81.0,
+            "TOT_MIN_MQ": 3060,
+            "TOT_SHORTFALL_MQ": 2979.0,
+            "TOP_ARTICOLI": "004814 (510.00 m2), EE1280 (510.00 m2), EE1281 (510.00 m2), 004810 (510.00 m2), EE1279 (510.00 m2), EE1278 (429.00 m2)"
+        },
+        {
+            "FORMATO": "20X122 RTT",
+            "SERIE": "TERM ELLE - NON USARE",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 56.12,
+            "TOT_MIN_MQ": 3024,
+            "TOT_SHORTFALL_MQ": 2967.88,
+            "TOP_ARTICOLI": "EB0001 (504.00 m2), EB0004 (504.00 m2), 004990 (504.00 m2), EB0002 (504.00 m2), EB0003 (504.00 m2), 005098 (447.88 m2)"
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MATERIALE DADO",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 131.04,
+            "TOT_MIN_MQ": 3096,
+            "TOT_SHORTFALL_MQ": 2964.96,
+            "TOP_ARTICOLI": "301779A (516.00 m2), 301774A (516.00 m2), 303948M (516.00 m2), 303946M (516.00 m2), 303947M (516.00 m2), 303944M (384.96 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "MERKURY",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 190.8,
+            "TOT_MIN_MQ": 3108,
+            "TOT_SHORTFALL_MQ": 2917.2,
+            "TOP_ARTICOLI": "3510997 (518.00 m2), 3510996 (518.00 m2), 3511000 (518.00 m2), 3538702 (474.80 m2), 3510999 (460.40 m2), 3538700 (428.00 m2)"
+        },
+        {
+            "FORMATO": "31X62",
+            "SERIE": "MATERIALE DADO",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 161.7,
+            "TOT_MIN_MQ": 3060,
+            "TOT_SHORTFALL_MQ": 2898.3,
+            "TOP_ARTICOLI": "301693_ (510.00 m2), 301631, (510.00 m2), EEOO30 (510.00 m2), 301633, (510.00 m2), EEOO32 (503.07 m2), EEO031 (355.23 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "GEOGRAFICA",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 226.8,
+            "TOT_MIN_MQ": 3108,
+            "TOT_SHORTFALL_MQ": 2881.2,
+            "TOP_ARTICOLI": "TP4117 (518.00 m2), TP4119 (518.00 m2), TP4118 (518.00 m2), TP4116 (482.00 m2), TP4144 (424.40 m2), TP4115 (420.80 m2)"
+        },
+        {
+            "FORMATO": "31X62",
+            "SERIE": "GEOGRAFICA",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 190.35,
+            "TOT_MIN_MQ": 3060,
+            "TOT_SHORTFALL_MQ": 2869.65,
+            "TOP_ARTICOLI": "TP4143 (510.00 m2), TP4105 (510.00 m2), TP4107 (510.00 m2), TP4109 (510.00 m2), TP4106 (510.00 m2), TP4108 (319.65 m2)"
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "SERIE": "PRESTIGE",
+            "NUM_ARTICOLI_BASSI": 7,
+            "TOT_GIACENZA_MQ": 758.88,
+            "TOT_MIN_MQ": 3612,
+            "TOT_SHORTFALL_MQ": 2853.12,
+            "TOP_ARTICOLI": "PSG072 (516.00 m2), PSG074 (516.00 m2), PSG043 (514.56 m2), PSG071 (508.80 m2), PSG042 (461.28 m2), PSG073 (216.48 m2), PSG044 (120.00 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "BASIC",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 262.08,
+            "TOT_MIN_MQ": 3108,
+            "TOT_SHORTFALL_MQ": 2845.92,
+            "TOP_ARTICOLI": "GM6161R109 (518.00 m2), 303445 (518.00 m2), GC6161R109 (518.00 m2), 303446 (518.00 m2), T6161R109 (518.00 m2), 302899 (255.92 m2)"
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MANSION",
+            "NUM_ARTICOLI_BASSI": 7,
+            "TOT_GIACENZA_MQ": 853.92,
+            "TOT_MIN_MQ": 3612,
+            "TOT_SHORTFALL_MQ": 2758.08,
+            "TOP_ARTICOLI": "303752 (516.00 m2), 303742A (516.00 m2), 303741 (516.00 m2), 303753 (501.60 m2), 303739 (402.24 m2), 303751 (249.60 m2), 303754A (56.64 m2)"
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "SERIE": "QUARRY",
+            "NUM_ARTICOLI_BASSI": 7,
+            "TOT_GIACENZA_MQ": 865.44,
+            "TOT_MIN_MQ": 3612,
+            "TOT_SHORTFALL_MQ": 2746.56,
+            "TOP_ARTICOLI": "303334 (516.00 m2), 303333 (513.12 m2), 303280 (510.24 m2), 303291 (503.04 m2), 303276 (363.36 m2), 303272 (213.60 m2), 303276A (127.20 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "OLIMPO",
+            "NUM_ARTICOLI_BASSI": 6,
+            "TOT_GIACENZA_MQ": 462.24,
+            "TOT_MIN_MQ": 3108,
+            "TOT_SHORTFALL_MQ": 2645.76,
+            "TOP_ARTICOLI": "EE1410 (518.00 m2), EE1409 (518.00 m2), EE1408 (516.56 m2), 004167 (471.92 m2), 004166 (333.68 m2), 004165 (287.60 m2)"
+        },
+        {
+            "FORMATO": "61X61",
+            "SERIE": "MATERIALI DADO",
+            "NUM_ARTICOLI_BASSI": 5,
+            "TOT_GIACENZA_MQ": 0.0,
+            "TOT_MIN_MQ": 2605,
+            "TOT_SHORTFALL_MQ": 2605.0,
+            "TOP_ARTICOLI": "003995 (521.00 m2), 003928 (521.00 m2), 003983 (521.00 m2), 003984 (521.00 m2), 003861 (521.00 m2)"
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "SERIE": "HARD ROCKS",
+            "NUM_ARTICOLI_BASSI": 5,
+            "TOT_GIACENZA_MQ": 0.0,
+            "TOT_MIN_MQ": 2590,
+            "TOT_SHORTFALL_MQ": 2590.0,
+            "TOP_ARTICOLI": "003677 (518.00 m2), RT CLF610 (518.00 m2), RT CLF620 (518.00 m2), RT CLF600 (518.00 m2), RT CLF630 (518.00 m2)"
+        },
+        {
+            "FORMATO": "31X62",
+            "SERIE": "MATERIALE PETRUS",
+            "NUM_ARTICOLI_BASSI": 5,
+            "TOT_GIACENZA_MQ": 0.0,
+            "TOT_MIN_MQ": 2550,
+            "TOT_SHORTFALL_MQ": 2550.0,
+            "TOP_ARTICOLI": "PR4309 (510.00 m2), PR4308 (510.00 m2), 004826 (510.00 m2), PR4306 (510.00 m2), PR4307 (510.00 m2)"
+        },
+        {
+            "FORMATO": "59X118 L/R",
+            "SERIE": "TERM ELLE - NON USARE",
+            "NUM_ARTICOLI_BASSI": 5,
+            "TOT_GIACENZA_MQ": 52.9,
+            "TOT_MIN_MQ": 2570,
+            "TOT_SHORTFALL_MQ": 2517.1,
+            "TOP_ARTICOLI": "EUR-5901A (514.00 m2), EUR-5912 (514.00 m2), EUR-5903 (505.64 m2), EUR-5903A (497.30 m2), EUR-5901 (486.16 m2)"
+        }
+    ],
+    "conclusions": "1) Priorità operativa: intervenire prima sui gruppi formato/serie con TOT_SHORTFALL_MQ più elevato (es. 31X62 - MATERIALI ACR, 60X60 RTT - MATERIALI ACR). 2) Azioni consigliate: confermare ordini in arrivo, schedulare produzioni prioritarie per i codici con maggiore shortfall e bloccare eventuali allocazioni commerciali non urgenti su quei codici. 3) Verifiche aggiuntive utili: controllare se esistono consegne programmate o pallet in produzione per i codici segnalati; ripianificare commesse dove possibile. 4) Nota operativa: alcuni gruppi mostrano giacenze nulle per più codici (alto rischio di rottura stock) — valutare riassortimento urgente o alternative di prodotto compatibile.",
+    "next_steps_suggestion": "Se vuoi, posso: 1) fornire il dettaglio completo per una specifica combinazione formato+serie (elenco articoli e tono se disponibile), 2) mostrare suddivisione per deposito, o 3) generare una lista prioritaria di riordino con quantità consigliata. Indicami quale approfondimento preferisci."
+}

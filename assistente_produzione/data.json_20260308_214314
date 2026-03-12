@@ -1,0 +1,485 @@
+{
+    "user_request": "ho detto formato 60 per 120",
+    "report_title": "Articoli con ordini > disponibilità — filtro formato 60x120",
+    "summary": "Ho estratto gli articoli per cui la quantità da consegnare supera la disponibilità, filtrando per il formato 60x120 (varianti comuni nel campo FORMATO). I valori sono espressi in m². La lista è ordinata per maggiore shortage (QTA_DA_CONSEGNARE - DISPONIBILITA) e limitata ai primi 200 risultati.",
+    "table_data": [
+        {
+            "CODICE": "3510992A",
+            "DESCRIZIONE": "GALACTIC LIGHT GREY 60X120 RTT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MERKURY",
+            "QTA_DA_CONSEGNARE_MQ": 5505.12,
+            "DISPONIBILITA_MQ": -5001.12,
+            "SHORTAGE_MQ": 10506.24
+        },
+        {
+            "CODICE": "3538701A",
+            "DESCRIZIONE": "60X120 ROCK ANTRACITE RETT. cl35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MERKURY",
+            "QTA_DA_CONSEGNARE_MQ": 4101.12,
+            "DISPONIBILITA_MQ": -3474.72,
+            "SHORTAGE_MQ": 7575.84
+        },
+        {
+            "CODICE": "3514182",
+            "DESCRIZIONE": "60X120 ELEGANCE IVORY RT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MERKURY",
+            "QTA_DA_CONSEGNARE_MQ": 3051.36,
+            "DISPONIBILITA_MQ": -2648.16,
+            "SHORTAGE_MQ": 5699.52
+        },
+        {
+            "CODICE": "005445",
+            "DESCRIZIONE": "60X120 IROC GREIGE RTT R11 (CL 35)",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "IROC",
+            "QTA_DA_CONSEGNARE_MQ": 3729.6,
+            "DISPONIBILITA_MQ": -1239.84,
+            "SHORTAGE_MQ": 4969.44
+        },
+        {
+            "CODICE": "005444",
+            "DESCRIZIONE": "60X120 IROC WHITE RTT R11 (CL 35)",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "IROC",
+            "QTA_DA_CONSEGNARE_MQ": 6300.0,
+            "DISPONIBILITA_MQ": 1598.4,
+            "SHORTAGE_MQ": 4701.6
+        },
+        {
+            "CODICE": "303841A",
+            "DESCRIZIONE": "NATURE GRIGIO 60x120 RETT CL 35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "NATURE",
+            "QTA_DA_CONSEGNARE_MQ": 2244.96,
+            "DISPONIBILITA_MQ": -2135.52,
+            "SHORTAGE_MQ": 4380.48
+        },
+        {
+            "CODICE": "MTS041A",
+            "DESCRIZIONE": "MYTHOS IVORY 60x120 RETT CL 35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MYTHOS - PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 2314.08,
+            "DISPONIBILITA_MQ": -740.16,
+            "SHORTAGE_MQ": 3054.24
+        },
+        {
+            "CODICE": "303739A",
+            "DESCRIZIONE": "MANSION WARM 60x120 RETT CL 35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MANSION",
+            "QTA_DA_CONSEGNARE_MQ": 3074.4,
+            "DISPONIBILITA_MQ": 148.32,
+            "SHORTAGE_MQ": 2926.08
+        },
+        {
+            "CODICE": "304152",
+            "DESCRIZIONE": "RIGAT-ONE GEOLOGY SABBIA 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "GEOLOGY",
+            "QTA_DA_CONSEGNARE_MQ": 1444.32,
+            "DISPONIBILITA_MQ": -961.92,
+            "SHORTAGE_MQ": 2406.24
+        },
+        {
+            "CODICE": "303276A",
+            "DESCRIZIONE": "QUARRY MOON 60x120 RETT CL 35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "QUARRY",
+            "QTA_DA_CONSEGNARE_MQ": 1362.24,
+            "DISPONIBILITA_MQ": -973.44,
+            "SHORTAGE_MQ": 2335.68
+        },
+        {
+            "CODICE": "005467",
+            "DESCRIZIONE": "ONYX IVORY 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "ONYX - ACR",
+            "QTA_DA_CONSEGNARE_MQ": 2013.12,
+            "DISPONIBILITA_MQ": -198.72,
+            "SHORTAGE_MQ": 2211.84
+        },
+        {
+            "CODICE": "304065",
+            "DESCRIZIONE": "CHARME IVORY 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "CHARME",
+            "QTA_DA_CONSEGNARE_MQ": 3746.88,
+            "DISPONIBILITA_MQ": 1537.92,
+            "SHORTAGE_MQ": 2208.96
+        },
+        {
+            "CODICE": "303334A",
+            "DESCRIZIONE": "QUARRY MOON 60x120 RETT LAPP IN CRESTA CL 35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "QUARRY",
+            "QTA_DA_CONSEGNARE_MQ": 1998.72,
+            "DISPONIBILITA_MQ": 195.84,
+            "SHORTAGE_MQ": 1802.88
+        },
+        {
+            "CODICE": "005655",
+            "DESCRIZIONE": "60X120 MIRROR BIANCO RT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 856.8,
+            "DISPONIBILITA_MQ": -856.8,
+            "SHORTAGE_MQ": 1713.6
+        },
+        {
+            "CODICE": "005656",
+            "DESCRIZIONE": "60X120 MIRROR BEIGE RT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 856.8,
+            "DISPONIBILITA_MQ": -856.8,
+            "SHORTAGE_MQ": 1713.6
+        },
+        {
+            "CODICE": "005657",
+            "DESCRIZIONE": "60X120 MIRROR TAUPE RT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "QTA_DA_CONSEGNARE_MQ": 856.8,
+            "DISPONIBILITA_MQ": -856.8,
+            "SHORTAGE_MQ": 1713.6
+        },
+        {
+            "CODICE": "304028",
+            "DESCRIZIONE": "CHARME INVISIBLE GREY 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "CHARME",
+            "QTA_DA_CONSEGNARE_MQ": 2089.44,
+            "DISPONIBILITA_MQ": 754.56,
+            "SHORTAGE_MQ": 1334.88
+        },
+        {
+            "CODICE": "005466",
+            "DESCRIZIONE": "ONYX GREEN 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "ONYX - ACR",
+            "QTA_DA_CONSEGNARE_MQ": 2018.88,
+            "DISPONIBILITA_MQ": 882.72,
+            "SHORTAGE_MQ": 1136.16
+        },
+        {
+            "CODICE": "005505",
+            "DESCRIZIONE": "RIGAT-ONE SHELLSTONE BIANCO 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "SHELLSTONE - ACR",
+            "QTA_DA_CONSEGNARE_MQ": 866.88,
+            "DISPONIBILITA_MQ": 178.56,
+            "SHORTAGE_MQ": 688.32
+        },
+        {
+            "CODICE": "005504",
+            "DESCRIZIONE": "RIGAT-ONE SHELLSTONE BEIGE 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "SHELLSTONE - ACR",
+            "QTA_DA_CONSEGNARE_MQ": 990.72,
+            "DISPONIBILITA_MQ": 311.04,
+            "SHORTAGE_MQ": 679.68
+        },
+        {
+            "CODICE": "304151",
+            "DESCRIZIONE": "RIGAT-ONE GEOLOGY ARGILLA 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "GEOLOGY",
+            "QTA_DA_CONSEGNARE_MQ": 388.08,
+            "DISPONIBILITA_MQ": -275.76,
+            "SHORTAGE_MQ": 663.84
+        },
+        {
+            "CODICE": "303753",
+            "DESCRIZIONE": "MANSION MID OUT 60X120 RTT R11",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MANSION",
+            "QTA_DA_CONSEGNARE_MQ": 302.4,
+            "DISPONIBILITA_MQ": -288.0,
+            "SHORTAGE_MQ": 590.4
+        },
+        {
+            "CODICE": "303406A",
+            "DESCRIZIONE": "FABRIC GREY 60x120 RETT cl35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "FABRIC",
+            "QTA_DA_CONSEGNARE_MQ": 1562.4,
+            "DISPONIBILITA_MQ": 1045.44,
+            "SHORTAGE_MQ": 516.96
+        },
+        {
+            "CODICE": "RPL138A",
+            "DESCRIZIONE": "DEC.TENTAZIONI 60X120 RETT cl35\rRipresa grafica tra le diverse lastre contenuta entro una tolleranza di 3 mm \r",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "REPLAY",
+            "QTA_DA_CONSEGNARE_MQ": 1506.24,
+            "DISPONIBILITA_MQ": 1012.32,
+            "SHORTAGE_MQ": 493.92
+        },
+        {
+            "CODICE": "TMS113",
+            "DESCRIZIONE": "60X120 RTT TIME STONE GRAFITE",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "TIME STONE",
+            "QTA_DA_CONSEGNARE_MQ": 201.6,
+            "DISPONIBILITA_MQ": -201.6,
+            "SHORTAGE_MQ": 403.2
+        },
+        {
+            "CODICE": "TMS111",
+            "DESCRIZIONE": "60X120 RTT TIME STONE GHIACCIO",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "TIME STONE",
+            "QTA_DA_CONSEGNARE_MQ": 201.6,
+            "DISPONIBILITA_MQ": -201.6,
+            "SHORTAGE_MQ": 403.2
+        },
+        {
+            "CODICE": "TMS114",
+            "DESCRIZIONE": "60X120 RTT TIME STONE SABBIA",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "TIME STONE",
+            "QTA_DA_CONSEGNARE_MQ": 201.6,
+            "DISPONIBILITA_MQ": -201.6,
+            "SHORTAGE_MQ": 403.2
+        },
+        {
+            "CODICE": "303304",
+            "DESCRIZIONE": "SMOT ANTHRACITE 60x120 RETT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "SMOT",
+            "QTA_DA_CONSEGNARE_MQ": 302.4,
+            "DISPONIBILITA_MQ": -74.88,
+            "SHORTAGE_MQ": 377.28
+        },
+        {
+            "CODICE": "303836",
+            "DESCRIZIONE": "NATURE BIANCO 60x120 RETT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "NATURE",
+            "QTA_DA_CONSEGNARE_MQ": 181.44,
+            "DISPONIBILITA_MQ": -164.16,
+            "SHORTAGE_MQ": 345.6
+        },
+        {
+            "CODICE": "304148",
+            "DESCRIZIONE": "GEOLOGY COTTO 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "GEOLOGY",
+            "QTA_DA_CONSEGNARE_MQ": 1550.88,
+            "DISPONIBILITA_MQ": 1252.8,
+            "SHORTAGE_MQ": 298.08
+        },
+        {
+            "CODICE": "303742",
+            "DESCRIZIONE": "MANSION EXTREME 60X120 RTT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MANSION",
+            "QTA_DA_CONSEGNARE_MQ": 524.16,
+            "DISPONIBILITA_MQ": 240.48,
+            "SHORTAGE_MQ": 283.68
+        },
+        {
+            "CODICE": "304156",
+            "DESCRIZIONE": "RIGAT-ONE GEOLOGY SALVIA 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "GEOLOGY",
+            "QTA_DA_CONSEGNARE_MQ": 492.48,
+            "DISPONIBILITA_MQ": 215.28,
+            "SHORTAGE_MQ": 277.2
+        },
+        {
+            "CODICE": "MC5065",
+            "DESCRIZIONE": "60X120 SABBIADORO BLANC RT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MATERIALE M.E.C.",
+            "QTA_DA_CONSEGNARE_MQ": 252.0,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 252.0
+        },
+        {
+            "CODICE": "PSG043",
+            "DESCRIZIONE": "PRESTIGE TAUPE 60X120 RTT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "PRESTIGE",
+            "QTA_DA_CONSEGNARE_MQ": 116.64,
+            "DISPONIBILITA_MQ": -115.2,
+            "SHORTAGE_MQ": 231.84
+        },
+        {
+            "CODICE": "005465",
+            "DESCRIZIONE": "ONYX WHITE 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "ONYX - ACR",
+            "QTA_DA_CONSEGNARE_MQ": 3192.48,
+            "DISPONIBILITA_MQ": 2986.56,
+            "SHORTAGE_MQ": 205.92
+        },
+        {
+            "CODICE": "FLS021",
+            "DESCRIZIONE": "FLASH TAPPARELLA ACERO 60x120 RETT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "FLASH - PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 408.96,
+            "DISPONIBILITA_MQ": 221.76,
+            "SHORTAGE_MQ": 187.2
+        },
+        {
+            "CODICE": "303647",
+            "DESCRIZIONE": "GARE SAND 60X120 RTT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "GARE DU NORD",
+            "QTA_DA_CONSEGNARE_MQ": 100.8,
+            "DISPONIBILITA_MQ": -66.24,
+            "SHORTAGE_MQ": 167.04
+        },
+        {
+            "CODICE": "302852A",
+            "DESCRIZIONE": "SUPREME CALACATTA 60X120 RETT CL 30",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MARMI PREGIATI",
+            "QTA_DA_CONSEGNARE_MQ": 70.56,
+            "DISPONIBILITA_MQ": -60.48,
+            "SHORTAGE_MQ": 131.04
+        },
+        {
+            "CODICE": "303944M",
+            "DESCRIZIONE": "PAINT WHITE 60X120 RETT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "MATERIALE DADO",
+            "QTA_DA_CONSEGNARE_MQ": 125.28,
+            "DISPONIBILITA_MQ": 5.76,
+            "SHORTAGE_MQ": 119.52
+        },
+        {
+            "CODICE": "FLS011",
+            "DESCRIZIONE": "FLASH CASSETTONE ACERO 60x120 RETT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "FLASH - PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 403.2,
+            "DISPONIBILITA_MQ": 318.24,
+            "SHORTAGE_MQ": 84.96
+        },
+        {
+            "CODICE": "005514",
+            "DESCRIZIONE": "RIGAT-ONE FRAME MID 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "SHELLSTONE - ACR",
+            "QTA_DA_CONSEGNARE_MQ": 874.08,
+            "DISPONIBILITA_MQ": 794.88,
+            "SHORTAGE_MQ": 79.2
+        },
+        {
+            "CODICE": "303302",
+            "DESCRIZIONE": "SMOT GREY 60X120 RETT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "SMOT",
+            "QTA_DA_CONSEGNARE_MQ": 102.24,
+            "DISPONIBILITA_MQ": 43.2,
+            "SHORTAGE_MQ": 59.04
+        },
+        {
+            "CODICE": "005516",
+            "DESCRIZIONE": "RIGAT-ONE LAVAGNA ERMETICA 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "SHELLSTONE - ACR",
+            "QTA_DA_CONSEGNARE_MQ": 18.72,
+            "DISPONIBILITA_MQ": -18.72,
+            "SHORTAGE_MQ": 37.44
+        },
+        {
+            "CODICE": "303405A",
+            "DESCRIZIONE": "FABRIC WHITE 60X120 RETT. cl35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "FABRIC",
+            "QTA_DA_CONSEGNARE_MQ": 4669.92,
+            "DISPONIBILITA_MQ": 4642.56,
+            "SHORTAGE_MQ": 27.36
+        },
+        {
+            "CODICE": "FSN034",
+            "DESCRIZIONE": "FUSION TORTORA 60x120 RETT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "FUSION - PETRUS",
+            "QTA_DA_CONSEGNARE_MQ": 25.92,
+            "DISPONIBILITA_MQ": 5.76,
+            "SHORTAGE_MQ": 20.16
+        },
+        {
+            "CODICE": "303525",
+            "DESCRIZIONE": "GOLDEN FERN 60X120 RTT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "WALLPAPERS",
+            "QTA_DA_CONSEGNARE_MQ": 50.4,
+            "DISPONIBILITA_MQ": 34.56,
+            "SHORTAGE_MQ": 15.84
+        },
+        {
+            "CODICE": "003938",
+            "DESCRIZIONE": "60X120 RTT ASPEN GRIGIO",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "ASPEN",
+            "QTA_DA_CONSEGNARE_MQ": 63.36,
+            "DISPONIBILITA_MQ": 50.4,
+            "SHORTAGE_MQ": 12.96
+        },
+        {
+            "CODICE": "RPL034A",
+            "DESCRIZIONE": "REPLAY SAND 60X120 RTT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "REPLAY",
+            "QTA_DA_CONSEGNARE_MQ": 8.64,
+            "DISPONIBILITA_MQ": -4.32,
+            "SHORTAGE_MQ": 12.96
+        },
+        {
+            "CODICE": "005515",
+            "DESCRIZIONE": "RIGAT-ONE BIANCO ERMETICA 60x120 Rettificato",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "ERMETICA",
+            "QTA_DA_CONSEGNARE_MQ": 4.32,
+            "DISPONIBILITA_MQ": -4.32,
+            "SHORTAGE_MQ": 8.64
+        },
+        {
+            "CODICE": "003757",
+            "DESCRIZIONE": "60X120 RTT TRAV. GREY MEMENTO",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "TRAVERTINO MEMENTO",
+            "QTA_DA_CONSEGNARE_MQ": 1.44,
+            "DISPONIBILITA_MQ": -1.44,
+            "SHORTAGE_MQ": 2.88
+        },
+        {
+            "CODICE": "303520",
+            "DESCRIZIONE": "FOLIAGE 60X120 RTT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "WALLPAPERS",
+            "QTA_DA_CONSEGNARE_MQ": 1.44,
+            "DISPONIBILITA_MQ": -1.44,
+            "SHORTAGE_MQ": 2.88
+        },
+        {
+            "CODICE": "003753A",
+            "DESCRIZIONE": "60X120 RTT TRAV BLACK MEMENTO cl35",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "TRAVERTINO MEMENTO",
+            "QTA_DA_CONSEGNARE_MQ": 1.44,
+            "DISPONIBILITA_MQ": -1.44,
+            "SHORTAGE_MQ": 2.88
+        },
+        {
+            "CODICE": "303522",
+            "DESCRIZIONE": "GEOMETRIC 60x120 RETT",
+            "FORMATO": "60X120 RTT",
+            "SERIE": "WALLPAPERS",
+            "QTA_DA_CONSEGNARE_MQ": 1.44,
+            "DISPONIBILITA_MQ": 0.0,
+            "SHORTAGE_MQ": 1.44
+        }
+    ],
+    "conclusions": "Azioni consigliate: 1) Prioritizzare la produzione/allocazione per i primi articoli con maggiore shortage (es. GALACTIC LIGHT GREY, ROCK ANTRACITE, ELEGANCE IVORY). 2) Verificare con commerciale le conferme d'ordine e le date di consegna per i casi con shortage elevato. 3) Valutare trasferimenti da altri depositi o ri-pianificare produzione per i toni/serie critici. Se vuoi, procedo con: a) dettaglio per deposito; b) analisi per tono/lotto; c) estrazione degli ordini singoli con scadenze."
+}

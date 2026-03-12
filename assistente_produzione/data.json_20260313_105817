@@ -1,0 +1,7 @@
+{
+    "user_request": "ripeti per gli ultimi 60 giorni",
+    "report_title": "Produzione giornaliera media per linea - ultimi 60 giorni",
+    "summary": "Ho tentato di interrogare la fonte di produzione per calcolare la produzione media giornaliera per linea sugli ultimi 60 giorni (rolling 60 giorni). L'accesso al database di produzione non è riuscito (errore di autenticazione / impossibile aprire il database), pertanto non è stato possibile recuperare i dati richiesti in questo momento.",
+    "table_data": [],
+    "conclusions": "Non potendo accedere ai dati di produzione non posso fornire la media richiesta. Azioni consigliate:\n- Verificare e ripristinare l'accesso al database di produzione (credenziali/permessi) e poi ripetere l'analisi.\n- Confermare se preferisci un periodo diverso (es. ultimo mese civile) o filtri specifici (es. solo prima scelta, includere espulsi, linea/e specifiche). Posso rilanciare l'analisi non appena l'accesso ai dati sarà disponibile.\n- Se hai bisogno di una stima rapida senza accesso diretto al DB, posso preparare la query SQL o lo script da eseguire appena l'accesso è ripristinato."
+}

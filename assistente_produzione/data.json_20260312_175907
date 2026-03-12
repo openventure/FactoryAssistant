@@ -1,0 +1,18 @@
+{
+    "user_request": "Qual è la disponibilità reale per l'articolo 304040?",
+    "report_title": "Disponibilità articolo 304040 - sintesi",
+    "summary": "Per l'articolo 304040 (CHARME GREY 60x120 Rettificato) la giacenza attuale è 3.519,36 m2. Gli ordini da consegnare ammontano a 5.127,84 m2, quindi la disponibilità contabile risulta negativa per -1.608,48 m2. Il minimo di stock impostato è 500,00 m2: l'attuale situazione indica rischio di mancata consegna sugli ordini in portafoglio.",
+    "table_data": [
+        {
+            "CODICE": "304040",
+            "DESCRIZIONE": "CHARME GREY 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "MIN_STOCK_M2": 500.0,
+            "GIACENZA_M2": 3519.36,
+            "QTA_DA_CONSEGNARE_M2": 5127.84,
+            "DISPONIBILITA_M2": -1608.48
+        }
+    ],
+    "conclusions": "La disponibilità reale è insufficiente: manca circa 1.608,48 m2 per coprire gli ordini aperti. Per riportare lo stock al minimo di sicurezza (500 m2) servirebbero complessivamente ~2.108,48 m2 (1.608,48 + 500). Raccomandazioni operative: 1) verificare il dettaglio per deposito/tono (possibili giacenze non aggregate o lotti diversi) per capire se parte degli ordini può essere soddisfatta diversamente; 2) valutare prioritarizzazione o riallocazione ordini con commerciale; 3) pianificare una produzione urgente di almeno 1.609 m2 (preferibilmente ~2.109 m2 per ricostituire il minimo) o fino a copertura definitiva; 4) se vuoi, posso fornire il dettaglio giacenze per deposito e tono o stimare la produzione necessaria per linea — dimmi quale approfondimento preferisci. I valori sono presi dall'aggregato di sistema (unità in m2)."
+}

@@ -1,0 +1,21 @@
+{
+    "user_request": "Qual è la disponibilità reale per l'articolo 304040?",
+    "report_title": "Disponibilità reale articolo 304040",
+    "summary": "Per l'articolo 304040 (serie: CHARME, formato: 60X120 RTT) la disponibilità aggregata corrente risulta pari a 6.697,44 m². La giacenza totale registrata è 10.486,08 m² mentre le quantità da consegnare sommano a 3.788,64 m². Nei depositi sono presenti alcune anomalie (es. giacenze negative e grandi quantità in consegna) che potrebbero influenzare la rappresentazione della disponibilità effettiva.",
+    "table_data": [
+        {
+            "CODICE": "304040",
+            "DESCRIZIONE": "CHARME GREY 60x120 Rettificato",
+            "SERIE": "CHARME",
+            "FORMATO": "60X120 RTT",
+            "GIACENZA_AGGREGATA_m2": 10486.08,
+            "QTA_DA_CONS_AGGREGATA_m2": 3788.64,
+            "DISPONIBILITA_AGGREGATA_m2": 6697.44,
+            "GIACENZA_30_m2": 7841.25,
+            "DISPONIBILITA_30_m2": 4052.61,
+            "DEPOSITI_BREAKDOWN": "Deposito DADO: -100.80 m2 (da consegnare 26167.68 m2); Deposito DADO (Castellarano): 0.00 m2 (da consegnare 48597.12 m2); Deposito DADO (Castellarano) a locazione: 8245.44 m2 (da consegnare 14952.96 m2); Deposito DADO (Cercolor): 0.00 m2 (da consegnare 3738.24 m2); Deposito DADO a locazione: 169.92 m2 (da consegnare 22429.44 m2); Deposito DADO-RUBIERA: 0.00 m2 (da consegnare 37382.40 m2); Deposito Petrus-Trial: 0.00 m2 (da consegnare 22429.44 m2); Deposito principale: 2171.52 m2 (da consegnare 68195.52 m2); GIOTTO: 0.00 m2 (da consegnare 3738.24 m2); NUOVA 2F DI CHEN LINXIANG: 0.00 m2 (da consegnare 7476.48 m2); STUDIO FERRETTI: 0.00 m2 (da consegnare 3738.24 m2)",
+            "TONI_BREAKDOWN": "Elenco codici variazionali/tone presenti (aggregato)."
+        }
+    ],
+    "conclusions": "La disponibilità reale calcolata oggi per il codice 304040 è 6.697,44 m². Tuttavia ci sono segnali di incoerenza (giacenze negative e grandi QTA_DA_CONSEGNARE) che richiedono verifica: 1) ricontrollare le giacenze dei depositi con valori negativi; 2) verificare gli impegni/ordini a consegnare (possibile duplicazione o errori di unità); 3) se serve ottenere conferma operativa, posso fornire il dettaglio per deposito e per tono oppure l'elenco pallet prodotti negli ultimi 30/90 giorni per ricostruire la disponibilità reale per lotti. Vuoi che proceda con uno di questi approfondimenti?"
+}

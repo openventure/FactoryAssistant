@@ -1,0 +1,458 @@
+{
+    "user_request": "cosa devo produrre oggi del 60x60?",
+    "report_title": "Priorità di produzione per formato 60x60 (stato richieste vs giacenza)",
+    "summary": "Ho analizzato le richieste inevase per tutti gli articoli con formato 60x60. L'elenco è ordinato per quantità mancante totale (m2) sommata su tutti i depositi: sono quindi gli articoli per i quali, complessivamente, la quantità da consegnare supera la giacenza disponibile. I valori sono espressi in m². La lista mostra codice articolo, descrizione e serie/famiglia; il campo principale per decisione operativa è “MANCANTE_TOTALE_MQ” (quanto servirebbe produrre per coprire tutte le consegne aperte).",
+    "table_data": [
+        {
+            "CODICE": "303571",
+            "DESCRIZIONE": "NEW SCOUT FOG 60x60 RETT SP 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 1353980.88,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 1354193.28,
+            "GIACENZA_TOT_MQ": 212.4
+        },
+        {
+            "CODICE": "303627",
+            "DESCRIZIONE": "NEW ULTRA VALS LIGHT 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 1225049.76,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 1225173.6,
+            "GIACENZA_TOT_MQ": 123.84
+        },
+        {
+            "CODICE": "303569",
+            "DESCRIZIONE": "NEW SCOUT BEIGE 60x60 RETT SP 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 1099042.56,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 1099105.92,
+            "GIACENZA_TOT_MQ": 63.36
+        },
+        {
+            "CODICE": "303620",
+            "DESCRIZIONE": "NEW ULTRA SLATE GREY 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 1033344.0,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 1033434.72,
+            "GIACENZA_TOT_MQ": 90.72
+        },
+        {
+            "CODICE": "EMT072",
+            "DESCRIZIONE": "EMOTION GRIS 60X60 RETT 8mm",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 845888.4,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 848950.2,
+            "GIACENZA_TOT_MQ": 3061.8
+        },
+        {
+            "CODICE": "303568",
+            "DESCRIZIONE": "NEW ULTRA BASIC GREY 60x60 RETT SP 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 686038.32,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 686121.12,
+            "GIACENZA_TOT_MQ": 82.8
+        },
+        {
+            "CODICE": "EMT071",
+            "DESCRIZIONE": "EMOTION BLANC 60X60 RETT 8mm",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 591664.68,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 593712.0,
+            "GIACENZA_TOT_MQ": 2047.32
+        },
+        {
+            "CODICE": "303716",
+            "DESCRIZIONE": "SOLID LIGHT GREY 60x60 RETT",
+            "SERIE": "SOLID",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 534441.6,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 538306.56,
+            "GIACENZA_TOT_MQ": 3864.96
+        },
+        {
+            "CODICE": "004154",
+            "DESCRIZIONE": "60x60 RTT NEW ULTRA ASPEN GRIGIO SP.20MM",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 494714.88,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 507965.76,
+            "GIACENZA_TOT_MQ": 13250.88
+        },
+        {
+            "CODICE": "303045",
+            "DESCRIZIONE": "TOUCH GREY 60X60 RETT (115)",
+            "SERIE": "TOUCHFEEL",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 460996.2,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 461030.4,
+            "GIACENZA_TOT_MQ": 34.2
+        },
+        {
+            "CODICE": "EMT073",
+            "DESCRIZIONE": "EMOTION TAUPE 60X60 RETT 8mm",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 442117.8,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 442668.6,
+            "GIACENZA_TOT_MQ": 550.8
+        },
+        {
+            "CODICE": "004154",
+            "DESCRIZIONE": "60X60 NEW ULTRA ASPEN GRIGIO RTT SP20",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 436847.04,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 437614.56,
+            "GIACENZA_TOT_MQ": 767.52
+        },
+        {
+            "CODICE": "303043",
+            "DESCRIZIONE": "TOUCH WHITE 60X60 RETT (115)",
+            "SERIE": "TOUCHFEEL",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 372036.6,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 372160.8,
+            "GIACENZA_TOT_MQ": 124.2
+        },
+        {
+            "CODICE": "004151",
+            "DESCRIZIONE": "NEW ULTRA ASPEN BIANCO 60X60 RTT 20MM",
+            "SERIE": "MATERIALI DADO",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 366600.96,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 383739.84,
+            "GIACENZA_TOT_MQ": 17138.88
+        },
+        {
+            "CODICE": "303410",
+            "DESCRIZIONE": "FABRIC GREY 60x60 RETT",
+            "SERIE": "FABRIC",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 364361.4,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 365904.0,
+            "GIACENZA_TOT_MQ": 1542.6
+        },
+        {
+            "CODICE": "303409",
+            "DESCRIZIONE": "FABRIC WHITE 60x60 RETT",
+            "SERIE": "FABRIC",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 357181.2,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 357588.0,
+            "GIACENZA_TOT_MQ": 406.8
+        },
+        {
+            "CODICE": "303598",
+            "DESCRIZIONE": "GARE LIGHT GREY 60x60 RETT",
+            "SERIE": "GARE DU NORD",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 336942.72,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 337880.16,
+            "GIACENZA_TOT_MQ": 937.44
+        },
+        {
+            "CODICE": "004151",
+            "DESCRIZIONE": "60X60 NEW ULTRA ASPEN BIANCO RTT SP20",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 334993.68,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 335515.68,
+            "GIACENZA_TOT_MQ": 522.0
+        },
+        {
+            "CODICE": "303570",
+            "DESCRIZIONE": "NEW SCOUT SMOKE 60x60 RETT SP 20mm",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 332738.64,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 332791.92,
+            "GIACENZA_TOT_MQ": 53.28
+        },
+        {
+            "CODICE": "303627",
+            "DESCRIZIONE": "60X60 NEW ULTRA VALS LIGHT RT Sp20mm",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 324141.84,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 324266.4,
+            "GIACENZA_TOT_MQ": 124.56
+        },
+        {
+            "CODICE": "303627",
+            "DESCRIZIONE": "60x60 RTT NEW ULTRA VALS LIGHT SP 20 MM",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 316879.2,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 318880.8,
+            "GIACENZA_TOT_MQ": 2001.6
+        },
+        {
+            "CODICE": "303046",
+            "DESCRIZIONE": "TOUCH BEIGE 60X60 RETT (115)",
+            "SERIE": "TOUCHFEEL",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 302671.8,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 302742.0,
+            "GIACENZA_TOT_MQ": 70.2
+        },
+        {
+            "CODICE": "302886",
+            "DESCRIZIONE": "BASIC BEIGE RETT. 60X60 (115)",
+            "SERIE": "BASIC",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 295444.8,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 297388.8,
+            "GIACENZA_TOT_MQ": 1944.0
+        },
+        {
+            "CODICE": "303571",
+            "DESCRIZIONE": "60X60 NEW SCOUT FOG RT Sp20mm dado",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 289667.52,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 289710.72,
+            "GIACENZA_TOT_MQ": 43.2
+        },
+        {
+            "CODICE": "EMT014",
+            "DESCRIZIONE": "EMOTION ANTRACITE 60X60 RETT.",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 286377.2,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 286416.0,
+            "GIACENZA_TOT_MQ": 38.8
+        },
+        {
+            "CODICE": "303568",
+            "DESCRIZIONE": "60x60 RTT NEW ULTRA BASIC GREY SP 20 MM",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 276217.2,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 284120.64,
+            "GIACENZA_TOT_MQ": 7903.44
+        },
+        {
+            "CODICE": "303569",
+            "DESCRIZIONE": "60X60 NEW SCOUT BEIGE RT Sp20mm dado",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 267358.32,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 267724.8,
+            "GIACENZA_TOT_MQ": 366.48
+        },
+        {
+            "CODICE": "303620",
+            "DESCRIZIONE": "60x60 ULTRA SLATE GREY RTT sp.20",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 263193.84,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 267267.6,
+            "GIACENZA_TOT_MQ": 4073.76
+        },
+        {
+            "CODICE": "303714",
+            "DESCRIZIONE": "SOLID BEIGE 60x60 RETT",
+            "SERIE": "SOLID",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 262870.56,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 264497.76,
+            "GIACENZA_TOT_MQ": 1627.2
+        },
+        {
+            "CODICE": "303599",
+            "DESCRIZIONE": "GARE GREY 60x60 RETT",
+            "SERIE": "GARE DU NORD",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 259879.68,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 260314.56,
+            "GIACENZA_TOT_MQ": 434.88
+        },
+        {
+            "CODICE": "303571",
+            "DESCRIZIONE": "60x60 RTT NEW SCOUT FOG SP 20 MM",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 247505.76,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 251812.8,
+            "GIACENZA_TOT_MQ": 4307.04
+        },
+        {
+            "CODICE": "303620",
+            "DESCRIZIONE": "60X60 NEW ULTRA SLATE GREY  RT Sp20mm",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 243510.48,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 243510.48,
+            "GIACENZA_TOT_MQ": 0.0
+        },
+        {
+            "CODICE": "302890",
+            "DESCRIZIONE": "BASIC LIGHT GREY RETT. 60X60 (115)",
+            "SERIE": "BASIC",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 236242.8,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 236966.4,
+            "GIACENZA_TOT_MQ": 723.6
+        },
+        {
+            "CODICE": "303569",
+            "DESCRIZIONE": "60x60 RTT NEW SCOUT BEIGE SP 20 MM",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 226675.44,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 228428.64,
+            "GIACENZA_TOT_MQ": 1753.2
+        },
+        {
+            "CODICE": "303715",
+            "DESCRIZIONE": "SOLID WHITE 60x60 RETT",
+            "SERIE": "SOLID",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 218088.0,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 219299.04,
+            "GIACENZA_TOT_MQ": 1211.04
+        },
+        {
+            "CODICE": "303628",
+            "DESCRIZIONE": "NEW ULTRA VALS DARK 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 210958.56,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 211012.56,
+            "GIACENZA_TOT_MQ": 54.0
+        },
+        {
+            "CODICE": "004128",
+            "DESCRIZIONE": "60X60 CONTEMPORARY GREY RTT",
+            "SERIE": "CONTEMPORARY",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 207616.32,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 212427.36,
+            "GIACENZA_TOT_MQ": 4811.04
+        },
+        {
+            "CODICE": "303624",
+            "DESCRIZIONE": "NEW ULTRA CULT GREY 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 202518.0,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 202625.28,
+            "GIACENZA_TOT_MQ": 107.28
+        },
+        {
+            "CODICE": "003714",
+            "DESCRIZIONE": "60X60 ASPEN GRIGIO RTT",
+            "SERIE": "ASPEN",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 200136.6,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 200210.4,
+            "GIACENZA_TOT_MQ": 73.8
+        },
+        {
+            "CODICE": "SOLWHI68",
+            "DESCRIZIONE": "60X60 RTT. SOLUTION WHITE SP. 8,5MM",
+            "SERIE": "SOLUTION",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 175352.4,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 199929.6,
+            "GIACENZA_TOT_MQ": 24577.2
+        },
+        {
+            "CODICE": "303904",
+            "DESCRIZIONE": "EXT60-605 GREIGE 60X60X3 R11",
+            "SERIE": "TEGELS 3CM",
+            "FORMATO": "60X60 SP30",
+            "MANCANTE_TOTALE_MQ": 173663.64,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 173664.0,
+            "GIACENZA_TOT_MQ": 0.36
+        },
+        {
+            "CODICE": "303568",
+            "DESCRIZIONE": "60X60 NEW ULTRA BASIC GREY RT Sp20mm dado",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 152336.88,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 152928.0,
+            "GIACENZA_TOT_MQ": 591.12
+        },
+        {
+            "CODICE": "EMT074",
+            "DESCRIZIONE": "EMOTION ANTHRACITE 60X60 RETT 8mm",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 152319.6,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 153878.4,
+            "GIACENZA_TOT_MQ": 1558.8
+        },
+        {
+            "CODICE": "SOLWHI68",
+            "DESCRIZIONE": "SOLUTION WHITE 60X60 RETT 8mm",
+            "SERIE": "SOLUTION",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 149895.0,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 149947.2,
+            "GIACENZA_TOT_MQ": 52.2
+        },
+        {
+            "CODICE": "303619",
+            "DESCRIZIONE": "NEW ULTRA MUSTANG 60x60 RETT 20mm",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 149528.88,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 149598.72,
+            "GIACENZA_TOT_MQ": 69.84
+        },
+        {
+            "CODICE": "303716",
+            "DESCRIZIONE": "SOLID LIGHT GREY 60X60 RTT",
+            "SERIE": "SOLID",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 141042.24,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 141197.76,
+            "GIACENZA_TOT_MQ": 155.52
+        },
+        {
+            "CODICE": "004153",
+            "DESCRIZIONE": "60x60 RTT NEW ULTRA ASPEN ANTRACITE SP 20 MM",
+            "SERIE": "OUTDOOR 4.0",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 137764.8,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 143886.24,
+            "GIACENZA_TOT_MQ": 6121.44
+        },
+        {
+            "CODICE": "EMT072",
+            "DESCRIZIONE": "60X60 RTT. EMOTION GRIS SP. 8MM",
+            "SERIE": "EMOTION",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 129448.72,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 152964.0,
+            "GIACENZA_TOT_MQ": 23515.28
+        },
+        {
+            "CODICE": "303412",
+            "DESCRIZIONE": "FABRIC ANTHRACITE 60x60 RETT",
+            "SERIE": "FABRIC",
+            "FORMATO": "60X60 RTT",
+            "MANCANTE_TOTALE_MQ": 125580.6,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 126322.2,
+            "GIACENZA_TOT_MQ": 741.6
+        },
+        {
+            "CODICE": "005055",
+            "DESCRIZIONE": "60X60 NEW ULTRA ASPEN BEIGE RTT SP20",
+            "SERIE": "OUTDOOR",
+            "FORMATO": "60X60 SP20",
+            "MANCANTE_TOTALE_MQ": 123701.04,
+            "QTA_DA_CONSEGNARE_TOT_MQ": 124435.44,
+            "GIACENZA_TOT_MQ": 734.4
+        }
+    ],
+    "conclusions": "Operativamente: 1) Priorità alta: iniziare oggi la produzione sugli articoli in testa alla lista (es. NEW SCOUT FOG, NEW ULTRA VALS LIGHT, NEW SCOUT BEIGE, NEW ULTRA SLATE GREY, EMOTION GRIS) perché presentano i maggiori gap m² rispetto alle consegne aperte. 2) Il dato è aggregato su tutti i depositi: valutare priorità per deposito/cliente (alcune righe potrebbero riferirsi a consegne su depositi diversi). 3) Se vuoi trasformare i m² in lotti/pallet da programmare in reparto, posso calcolare il numero di pallet necessario (serve il dato di mq per pallet o possiamo stimarlo dalle produzioni recenti). 4) Se preferisci, preparo un piano di produzione giornaliero convertendo i m² in pallet e turni (includendo primi/secondi scelta) — dimmi il numero di linee/turni disponibili oggi. Limitazioni: l'analisi usa le quantità da consegnare e le giacenze correnti; non include vincoli di capacità forno/linea né priorità cliente. Posso affinare con: ordine di priorità clienti/depositi, capacità giornaliera per linea o trasformazione m²→pallet."
+}

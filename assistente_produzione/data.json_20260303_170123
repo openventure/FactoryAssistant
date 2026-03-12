@@ -1,0 +1,30 @@
+{
+    "user_request": "quante volte ho prodotto l'articolo 003710? / quante volte ho prodotto l'articolo 003938?",
+    "report_title": "Conteggio produzione (pallet) per articoli 003710 e 003938",
+    "summary": "Ho interrogato la tabella PALLET_PRODUCTION (SQL Server). Per ogni articolo ho conteggiato i pallet prodotti (ogni riga = 1 pallet) e restituito anche i metri quadri totali e la media per pallet, oltre a formati/toni presenti e intervallo temporale di produzione quando disponibili. Assunzione: il conteggio principale è sul numero di pallet (righe). Ho inoltre indicato i pallet \"accepted\" (Espulso = 0) separatamente.",
+    "table_data": [
+        {
+            "Articolo": "003710",
+            "pallets_produced_total": 0,
+            "pallets_produced_accepted_(Espulso=0)": 0,
+            "total_mq": 0.0,
+            "avg_mq_per_pallet": 0.0,
+            "formats_found": "non presente in PALLET_PRODUCTION",
+            "tones_found": "non presente in PALLET_PRODUCTION",
+            "first_production": null,
+            "last_production": null
+        },
+        {
+            "Articolo": "003938",
+            "pallets_produced_total": 717,
+            "pallets_produced_accepted_(Espulso=0)": 0,
+            "total_mq": 30205.44,
+            "avg_mq_per_pallet": 42.12753138075313,
+            "formats_found": "60.00000x120.00000 sp0.00000, 60.00000x120.00000 sp0.95000",
+            "tones_found": "R034, R044, R054, R064, R074, R084, R094, R104",
+            "first_production": "2020-05-09 02:51:58",
+            "last_production": "2021-05-11 01:56:38"
+        }
+    ],
+    "conclusions": "Risultati: per l'articolo 003710 non sono presenti righe nella tabella PALLET_PRODUCTION (0 pallet trovati). Per l'articolo 003938 sono presenti 717 pallet per un totale di 30.205,44 m² (media ~42,13 m²/pallet). Nota: il campo Espulso risulta a 0 per 0 pallet di 003938 (ossia tutti i pallet risultano marcati come espulsi o il valore Espulso non è impostato per considerare come \"accepted\"); se desideri considerare o escludere gli \"espulsi\" in modo diverso, dimmelo e rigenero la query. Se vuoi la serie/famiglia descrittiva (SERIE) per questi codici posso queryare la tabella pa_ff_code (senza JOIN con PALLET_PRODUCTION) e riportarti la serie corrispondente. Vuoi che estragga i dati per un intervallo di date specifico o che includa solo prima scelta (LGV_numeroScelta = 'I')?"
+}

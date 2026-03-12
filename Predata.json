@@ -1,0 +1,118 @@
+{
+    "user_request": "dammi i valori degli ultimi 10 assorbimenti con un ordinamento",
+    "report_title": "Ultimi 10 Assorbimenti Ordinati",
+    "summary": "Ecco una sintesi degli ultimi 10 assorbimenti ordinati per data di inserimento. Questi dati mostrano vari articoli testati nella stessa giornata con le loro rispettive caratteristiche.",
+    "table_data": [
+        {
+            "PesoEssiccato": 7830,
+            "PesoBagnato": 7865,
+            "Assorbimento": 0.45,
+            "Posizione": "SX",
+            "Prova": "A",
+            "InsertDate": "2024-11-19",
+            "CodeArt": "MNR187",
+            "Description": "60X60 2.0 60CONCEPT BEIGE RTT SP20mm",
+            "Tono": "R014"
+        },
+        {
+            "PesoEssiccato": 7830,
+            "PesoBagnato": 7863,
+            "Assorbimento": 0.42,
+            "Posizione": "SX",
+            "Prova": "A",
+            "InsertDate": "2024-11-19",
+            "CodeArt": "MNR187",
+            "Description": "60X60 2.0 60CONCEPT BEIGE RTT SP20mm",
+            "Tono": "R014"
+        },
+        {
+            "PesoEssiccato": 5448,
+            "PesoBagnato": 5459,
+            "Assorbimento": 0.2,
+            "Posizione": "CS",
+            "Prova": "A",
+            "InsertDate": "2024-11-19",
+            "CodeArt": "MNR187",
+            "Description": "60X60 2.0 60CONCEPT BEIGE RTT SP20mm",
+            "Tono": "R014"
+        },
+        {
+            "PesoEssiccato": 6673,
+            "PesoBagnato": 6686,
+            "Assorbimento": 0.19,
+            "Posizione": "CD",
+            "Prova": "A",
+            "InsertDate": "2024-11-19",
+            "CodeArt": "MNR187",
+            "Description": "60X60 2.0 60CONCEPT BEIGE RTT SP20mm",
+            "Tono": "R014"
+        },
+        {
+            "PesoEssiccato": 7313,
+            "PesoBagnato": 7366,
+            "Assorbimento": 0.72,
+            "Posizione": "DX",
+            "Prova": "A",
+            "InsertDate": "2024-11-19",
+            "CodeArt": "MNR187",
+            "Description": "60X60 2.0 60CONCEPT BEIGE RTT SP20mm",
+            "Tono": "R014"
+        },
+        {
+            "PesoEssiccato": 6117,
+            "PesoBagnato": 6131,
+            "Assorbimento": 0.23,
+            "Posizione": "SX",
+            "Prova": "A",
+            "InsertDate": "2024-11-19",
+            "CodeArt": "SF0857",
+            "Description": "GEOLOGY ARGILLA 60X120 (sfuso)",
+            "Tono": "R054"
+        },
+        {
+            "PesoEssiccato": 6023,
+            "PesoBagnato": 6034,
+            "Assorbimento": 0.18,
+            "Posizione": "DX",
+            "Prova": "A",
+            "InsertDate": "2024-11-19",
+            "CodeArt": "SF0857",
+            "Description": "GEOLOGY ARGILLA 60X120 (sfuso)",
+            "Tono": "R054"
+        },
+        {
+            "PesoEssiccato": 5676,
+            "PesoBagnato": 5684,
+            "Assorbimento": 0.14,
+            "Posizione": "CD",
+            "Prova": "A",
+            "InsertDate": "2024-11-19",
+            "CodeArt": "SF0857",
+            "Description": "GEOLOGY ARGILLA 60X120 (sfuso)",
+            "Tono": "R054"
+        },
+        {
+            "PesoEssiccato": 3433,
+            "PesoBagnato": 3439,
+            "Assorbimento": 0.17,
+            "Posizione": "CS",
+            "Prova": "A",
+            "InsertDate": "2024-11-19",
+            "CodeArt": "SF0857",
+            "Description": "GEOLOGY ARGILLA 60X120 (sfuso)",
+            "Tono": "R054"
+        },
+        {
+            "PesoEssiccato": 6100,
+            "PesoBagnato": 6116,
+            "Assorbimento": 0.26,
+            "Posizione": "CS",
+            "Prova": "A",
+            "InsertDate": "2024-11-19",
+            "CodeArt": "MNR187",
+            "Description": "60X60 2.0 60CONCEPT BEIGE RTT SP20mm",
+            "Tono": "R014"
+        }
+    ],
+    "conclusions": "Questi assorbimenti evidenziano una gamma di valori che potrebbero rappresentare differenze nei materiali o nei processi. Il rendimento e la qualità del prodotto potrebbero essere valutati ulteriormente in base a questi risultati per migliorare il processo produttivo."
+}

@@ -1,0 +1,141 @@
+{
+    "user_request": "Relaziona il valore medio dell'assorbimento con l'orario in cui è avvenuto",
+    "report_title": "Assorbimento medio per ora del giorno",
+    "summary": "Analisi aggregata delle prove di assorbimento (tutte le rilevazioni disponibili) raggruppata per ora del giorno. Per ogni ora sono riportati il numero di prove, il valore medio di assorbimento e i valori min/max osservati. I dati mostrano variazioni nell'assorbimento medio lungo la giornata, con alcune ore caratterizzate da poche prove (campione ridotto) e la presenza di valori anomali che influenzano le medie. Se occorre una valutazione più robusta, suggerisco di pulire gli outlier o analizzare per articolo/tono o per intervallo temporale definito.",
+    "table_data": [
+        {
+            "hour": "04",
+            "n_prove": 7,
+            "avg_assorbimento": 0.2071,
+            "min_assorbimento": 0.0,
+            "max_assorbimento": 0.41
+        },
+        {
+            "hour": "05",
+            "n_prove": 11,
+            "avg_assorbimento": 0.1936,
+            "min_assorbimento": 0.0,
+            "max_assorbimento": 0.48
+        },
+        {
+            "hour": "06",
+            "n_prove": 22,
+            "avg_assorbimento": 0.2464,
+            "min_assorbimento": 0.0,
+            "max_assorbimento": 0.91
+        },
+        {
+            "hour": "07",
+            "n_prove": 151,
+            "avg_assorbimento": 0.2218,
+            "min_assorbimento": 0.02,
+            "max_assorbimento": 1.14
+        },
+        {
+            "hour": "08",
+            "n_prove": 340,
+            "avg_assorbimento": 0.2049,
+            "min_assorbimento": 0.0,
+            "max_assorbimento": 0.98
+        },
+        {
+            "hour": "09",
+            "n_prove": 875,
+            "avg_assorbimento": 0.2222,
+            "min_assorbimento": 0.0,
+            "max_assorbimento": 5.4
+        },
+        {
+            "hour": "10",
+            "n_prove": 1764,
+            "avg_assorbimento": 0.2326,
+            "min_assorbimento": -0.51,
+            "max_assorbimento": 1.3535
+        },
+        {
+            "hour": "11",
+            "n_prove": 1961,
+            "avg_assorbimento": 0.2241,
+            "min_assorbimento": 0.0,
+            "max_assorbimento": 2.17
+        },
+        {
+            "hour": "12",
+            "n_prove": 1797,
+            "avg_assorbimento": 0.2072,
+            "min_assorbimento": -0.79,
+            "max_assorbimento": 2.82
+        },
+        {
+            "hour": "13",
+            "n_prove": 379,
+            "avg_assorbimento": 0.2037,
+            "min_assorbimento": -3.58,
+            "max_assorbimento": 1.24
+        },
+        {
+            "hour": "14",
+            "n_prove": 655,
+            "avg_assorbimento": 0.2436,
+            "min_assorbimento": 0.01,
+            "max_assorbimento": 6.74
+        },
+        {
+            "hour": "15",
+            "n_prove": 712,
+            "avg_assorbimento": 0.2077,
+            "min_assorbimento": -0.77,
+            "max_assorbimento": 1.9
+        },
+        {
+            "hour": "16",
+            "n_prove": 591,
+            "avg_assorbimento": 0.2219,
+            "min_assorbimento": -5.21,
+            "max_assorbimento": 2.92
+        },
+        {
+            "hour": "17",
+            "n_prove": 484,
+            "avg_assorbimento": 0.2815,
+            "min_assorbimento": 0.0,
+            "max_assorbimento": 3.0
+        },
+        {
+            "hour": "18",
+            "n_prove": 482,
+            "avg_assorbimento": 0.2204,
+            "min_assorbimento": 0.0,
+            "max_assorbimento": 1.79
+        },
+        {
+            "hour": "19",
+            "n_prove": 170,
+            "avg_assorbimento": 0.2698,
+            "min_assorbimento": 0.05,
+            "max_assorbimento": 1.03
+        },
+        {
+            "hour": "20",
+            "n_prove": 16,
+            "avg_assorbimento": 0.1494,
+            "min_assorbimento": 0.0,
+            "max_assorbimento": 0.27
+        },
+        {
+            "hour": "21",
+            "n_prove": 11,
+            "avg_assorbimento": 0.2918,
+            "min_assorbimento": 0.08,
+            "max_assorbimento": 0.72
+        },
+        {
+            "hour": "22",
+            "n_prove": 1,
+            "avg_assorbimento": 0.2,
+            "min_assorbimento": 0.2,
+            "max_assorbimento": 0.2
+        }
+    ],
+    "conclusions": "Sintesi operativa:\n- Le ore con media d'assorbimento più alte (valori medi > ~0.27) sono 21:00, 17:00 e 19:00. Tuttavia alcune di queste hanno poche rilevazioni (es. 21:00 = 11 prove), quindi vanno interpretate con cautela.\n- Le ore con media più bassa sono 20:00 e le prime ore del mattino (05:00), ma anche qui il numero di prove è ridotto per alcune ore.\n- Sono presenti valori anomali (minimi negativi e massimi molto elevati) che probabilmente distorcono le medie: raccomando di verificare la qualità dei dati e applicare filtri per outlier prima di prendere decisioni operative.\nAzioni consigliate:\n1) Ripetere l'analisi escludendo outlier (es. limitando l'intervallo plausibile di assorbimento) e riportare deviazione standard/interval confidence.\n2) Eseguire lo stesso raggruppamento per articolo (CodeArt/Description) o per tono per identificare se il pattern orario è guidato da specifici prodotti o lotti.\n3) Se serve monitoraggio operativo, usare un grafico a linee (media oraria) e una heatmap per le aree/toni con più campioni.\nSe vuoi, posso produrre subito l'analisi per singolo articolo/tono o ripetere l'aggregazione esclusi outlier (indica soglia di assorbimento minima/massima o percentili da usare)."
+}

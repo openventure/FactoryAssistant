@@ -1,0 +1,32 @@
+{
+    "user_request": "Qual è la produzione giornaliera media per linea nell’ultimo mese?",
+    "report_title": "Produzione giornaliera media per linea - ultimi 30 giorni",
+    "summary": "Sintesi sui 30 giorni analizzati (periodo rilevato: 2026-02-12 – 2026-03-13). Per ogni linea è riportata la produzione totale in m², i giorni in cui la linea ha effettivamente prodotto (giorni produttivi), la media calcolata sui 30 giorni di calendario (produzione giornaliera media su periodo) e la media calcolata solo sui giorni effettivamente produttivi. La Linea 3 è la più produttiva in valore assoluto e per giorno, mentre le Linee 1 e 2 mostrano volumi inferiori e meno giorni produttivi.",
+    "table_data": [
+        {
+            "Linea": "1",
+            "total_m2": 77676.93,
+            "total_pallets": 2468,
+            "production_days": 22,
+            "avg_m2_per_calendar_day": 2589.231,
+            "avg_m2_per_production_day": 3530.77
+        },
+        {
+            "Linea": "2",
+            "total_m2": 57042.53,
+            "total_pallets": 1155,
+            "production_days": 20,
+            "avg_m2_per_calendar_day": 1901.418,
+            "avg_m2_per_production_day": 2852.127
+        },
+        {
+            "Linea": "3",
+            "total_m2": 162083.6,
+            "total_pallets": 3249,
+            "production_days": 28,
+            "avg_m2_per_calendar_day": 5402.787,
+            "avg_m2_per_production_day": 5788.7
+        }
+    ],
+    "conclusions": "Nel periodo considerato (ultimi 30 giorni):\n- Produzione giornaliera media per calendario: Linea 3 ≈ 5.403 m²/g, Linea 1 ≈ 2.589 m²/g, Linea 2 ≈ 1.901 m²/g.\n- Se si considerano solo i giorni effettivamente produttivi, le medie aumentano (ad es. Linea 3 ≈ 5.789 m²/g produttivo).\nRaccomandazioni operative:\n- Valutare se è possibile ribilanciare parte della produzione dalla Linea 3 alle Linee 1/2 per ridurre dipendenza da una sola linea.\n- Indagare le cause dei minori giorni produttivi su Linee 1 e 2 (fermi macchina, changeover, manutenzione) per aumentare l'efficienza.\n- Se interessa la capacità utile per pianificazione ordini, suggerisco: (a) ripetere l'analisi su 90 giorni per ridurre la variabilità; (b) eseguire la stessa vista filtrando solo \"prima scelta\" per valutare capacità commerciale effettiva; (c) dettagliare per articolo/tono se serve valutare impatto mix prodotto.\nSe desideri, produco la versione a 90 giorni o la stessa analisi limitata a prima scelta (LGV_numeroScelta = 'I')."
+}

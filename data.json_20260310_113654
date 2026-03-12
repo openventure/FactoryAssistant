@@ -1,0 +1,44 @@
+{
+    "user_request": "time stone sabbia 60-120 quanto consumo mensile abbiamo?",
+    "report_title": "Consumo mensile — TIME STONE SABBIA 60x120",
+    "summary": "Ho cercato le righe corrispondenti a TIME STONE, colore SABBIA, formato 60x120. Il campo che rappresenta il consumo medio mensile è AVG_QTA_ORDINATA_PER_MONTH (unità: m²). Sono stati trovati più codici/varianti della stessa famiglia/serie: tutte riportano FORMATO 60x120 (indicato come 60X120 RTT). Alcune varianti non hanno storico di ordini (valore medio mensile nullo). I valori di giacenza e disponibilità sono espressi in m².",
+    "table_data": [
+        {
+            "CODICE": "TMS214",
+            "DESCRIZIONE": "TIME STONE SABBIA OUT 60x120 Rettificato",
+            "SERIE": "TIME STONE",
+            "FORMATO": "60X120 RTT",
+            "AVG_QTA_ORDINATA_PER_MONTH": 318.24,
+            "GIACENZA": 4750.56,
+            "DISPONIBILITA": 8.64
+        },
+        {
+            "CODICE": "TMS114",
+            "DESCRIZIONE": "TIME STONE SABBIA 60x120 Rettificato",
+            "SERIE": "TIME STONE",
+            "FORMATO": "60X120 RTT",
+            "AVG_QTA_ORDINATA_PER_MONTH": 101.52,
+            "GIACENZA": 3525.12,
+            "DISPONIBILITA": -4302.72
+        },
+        {
+            "CODICE": "TMS124",
+            "DESCRIZIONE": "60X120 RTT RIGATINO TIME STONE SABBIA",
+            "SERIE": "TIME STONE",
+            "FORMATO": "60X120 RTT",
+            "AVG_QTA_ORDINATA_PER_MONTH": null,
+            "GIACENZA": 109.44,
+            "DISPONIBILITA": 109.44
+        },
+        {
+            "CODICE": "TMS110",
+            "DESCRIZIONE": "TIME STONE COLONNATO SABBIA 60x120 Rettificato",
+            "SERIE": "TIME STONE",
+            "FORMATO": "60X120 RTT",
+            "AVG_QTA_ORDINATA_PER_MONTH": null,
+            "GIACENZA": 1067.04,
+            "DISPONIBILITA": 973.44
+        }
+    ],
+    "conclusions": "Sommand o le varianti con storico disponibile, il consumo medio mensile rilevato è 419.76 m²/mese (318.24 + 101.52). Alcune varianti (TMS124, TMS110) non riportano AVG_QTA_ORDINATA_PER_MONTH: significa assenza di ordini storici o dati mancanti per quei codici. La giacenza totale sulle righe trovate è 9.452,16 m²; la disponibilità aggregata risulta negativa (-3.211,20 m²) a causa di una riga con DISPONIBILITA molto negativa (TMS114: -4.302,72 m²). Raccomandazioni operative: 1) Verificare l'anomalia di DISPONIBILITA su TMS114 (controllare prenotazioni/allocazioni e coerenza dati). 2) Se la domanda è sul consumo totale previsto, considerare solo le varianti con AVG_QTA disponibile (419,76 m²/mese) oppure richiedere ulteriori dati per includere le varianti senza storico. 3) Se vuoi, posso fornire: a) dettaglio ordini mensili storici per ogni codice; b) analisi sul trend degli ultimi 6-12 mesi; c) verifica delle cause della disponibilità negativa. Indica quale approfondimento preferisci."
+}

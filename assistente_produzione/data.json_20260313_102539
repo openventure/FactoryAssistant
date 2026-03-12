@@ -1,0 +1,7 @@
+{
+    "user_request": "Qual è la produzione giornaliera media per linea nell’ultimo mese?",
+    "report_title": "Produzione giornaliera media per linea - ultimi 30 giorni",
+    "summary": "Ho interrogato la fonte di produzione (PALLET_PRODUCTION) per gli ultimi 30 giorni (ultimo mese inteso come rolling 30 giorni). Non sono stati trovati record di produzione nel periodo richiesto: non ci sono righe risultanti nella tabella per gli ultimi 30 giorni, quindi non è possibile calcolare una produzione giornaliera media per linea con i dati disponibili.",
+    "table_data": [],
+    "conclusions": "Non essendoci dati registrati negli ultimi 30 giorni, non si può fornire una media giornaliera per linea. Possibili azioni consigliate:\n- Verificare che il periodo richiesto sia corretto (intendevi gli ultimi 30 giorni rolling oppure l'ultimo mese civile, es. febbraio 2026?). Posso rilanciare l'analisi per l'ultimo mese civile se preferisci.\n- Controllare la presenza di eventuali filtri applicati (es. escludere/ includere pallet espulsi o prima scelta). Posso includere pallet espulsi o limitare alla prima scelta se necessario.\n- Verificare l'ingestione/disponibilità dei dati in PALLET_PRODUCTION se ti aspettavi produzione nel periodo. Se confermi, eseguo nuovamente l'analisi con il periodo o i filtri desiderati e restituisco la tabella per linea con la produzione media giornaliera (m²/giorno)."
+}

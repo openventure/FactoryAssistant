@@ -1,0 +1,1345 @@
+{
+    "user_request": "Qual è il valore medio di assorbimento per articolo?",
+    "report_title": "Valore medio di assorbimento per articolo (raggruppato per tono)",
+    "summary": "Ho calcolato la media dell'assorbimento (%) per articolo, raggruppando per CodeArt, Description e Tono. Nella tabella sono riportati: CodeArt, Description, Tono, Avg_Assorbimento (media delle prove disponibili) e N_prove (numero di misure). Sono incluse solo prove con valore di assorbimento non nullo. I risultati con poche prove (N_prove ≤ 3) hanno bassa robustezza statistica e vanno interpretati con cautela.",
+    "table_data": [
+        {
+            "CodeArt": "CP0061",
+            "Description": "30,5X30,5 ROCK STONE GHIACCIO OUT 8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 1.2364,
+            "N_prove": 14
+        },
+        {
+            "CodeArt": "303794",
+            "Description": "60x60 ULTRA MANSION WARM RETT Sp20mm",
+            "Tono": "R094",
+            "Avg_Assorbimento": 1.0025,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0691",
+            "Description": "60X120 BETON SAND SP20 (sfuso)",
+            "Tono": "R044",
+            "Avg_Assorbimento": 1.0025,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "303571",
+            "Description": "60X60 NEW SCOUT FOG RT Sp20mm dado",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.9389,
+            "N_prove": 9
+        },
+        {
+            "CodeArt": "SF0796",
+            "Description": "60X120 CHARME BLACK (sfuso)",
+            "Tono": "R084",
+            "Avg_Assorbimento": 0.9317,
+            "N_prove": 6
+        },
+        {
+            "CodeArt": "STONEDO38o",
+            "Description": "30,5X30,5 STONE DORATO 8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.8771,
+            "N_prove": 7
+        },
+        {
+            "CodeArt": "SF0580",
+            "Description": "MANSION COLD OUT",
+            "Tono": null,
+            "Avg_Assorbimento": 0.8481,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "EMT072",
+            "Description": "60X60 EMOTION GRIS RTT 8mm",
+            "Tono": "R664",
+            "Avg_Assorbimento": 0.83,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "004154",
+            "Description": "60X60 NEW ULTRA ASPEN GRIGIO RTT SP20",
+            "Tono": "R224",
+            "Avg_Assorbimento": 0.825,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "SF0582",
+            "Description": "MANSION EXTREME OUT",
+            "Tono": null,
+            "Avg_Assorbimento": 0.7922,
+            "N_prove": 5
+        },
+        {
+            "CodeArt": "303627",
+            "Description": "60X60 NEW ULTRA VALS LIGHT RT Sp20mm",
+            "Tono": "R044",
+            "Avg_Assorbimento": 0.7625,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0697",
+            "Description": "NEW ULTRA ESSENZE CANNELLA 40,5X81 SP20 (sfuso)",
+            "Tono": "R064",
+            "Avg_Assorbimento": 0.7325,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "SF0932",
+            "Description": "M. GRIGIO 60X120 (sfuso)",
+            "Tono": "R024",
+            "Avg_Assorbimento": 0.725,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0030",
+            "Description": "BASIC GREY 81X81 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.724,
+            "N_prove": 10
+        },
+        {
+            "CodeArt": "4614711",
+            "Description": "BETON ANTHRAZIT RTT 60X60 2 CM",
+            "Tono": null,
+            "Avg_Assorbimento": 0.7075,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0579",
+            "Description": "MANSION WARM OUT",
+            "Tono": null,
+            "Avg_Assorbimento": 0.6791,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF1033",
+            "Description": "NEW STONE DAINO 60X120 (sfuso)",
+            "Tono": "R034",
+            "Avg_Assorbimento": 0.6775,
+            "N_prove": 12
+        },
+        {
+            "CodeArt": "004154",
+            "Description": "60X60 NEW ULTRA ASPEN GRIGIO RTT SP20",
+            "Tono": "R284",
+            "Avg_Assorbimento": 0.67,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "STONEBI38",
+            "Description": "30,5X30,5 STONE BIANCO 8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.669,
+            "N_prove": 21
+        },
+        {
+            "CodeArt": "004517",
+            "Description": "60X120 WILD WHITE HONED PLUS 1",
+            "Tono": null,
+            "Avg_Assorbimento": 0.6625,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0931",
+            "Description": "M. FIORITO 60X120 (sfuso)",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.6275,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "SF0510",
+            "Description": "MYTHOS IVORY 60X120",
+            "Tono": null,
+            "Avg_Assorbimento": 0.615,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "303637",
+            "Description": "BETON SAND",
+            "Tono": null,
+            "Avg_Assorbimento": 0.6149,
+            "N_prove": 20
+        },
+        {
+            "CodeArt": "CP0074",
+            "Description": "30,5X30,5 ROCK STONE SABBIA IN 8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.6,
+            "N_prove": 7
+        },
+        {
+            "CodeArt": "PT0047",
+            "Description": "EXTRA FUME' 60X120",
+            "Tono": null,
+            "Avg_Assorbimento": 0.6,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "303626",
+            "Description": "60X60 NEW ULTRA LANDSCAPE DAY RETT Sp20mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.5938,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "AA7000",
+            "Description": "test",
+            "Tono": null,
+            "Avg_Assorbimento": 0.59,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0700",
+            "Description": "ULTRA ASPEN GRIGIO 40X80 SP20 (sfuso)",
+            "Tono": "R074",
+            "Avg_Assorbimento": 0.58,
+            "N_prove": 3
+        },
+        {
+            "CodeArt": "SF1028",
+            "Description": "WOOD LIGHT MARRONE 40X80 SP20 (sfuso)",
+            "Tono": "R024",
+            "Avg_Assorbimento": 0.5567,
+            "N_prove": 3
+        },
+        {
+            "CodeArt": "005435",
+            "Description": "60X60 ULTRA EVOQ NERO RTT SP20",
+            "Tono": "R084",
+            "Avg_Assorbimento": 0.55,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF1042",
+            "Description": "60X120 ULTRA NEW STONE VISONE SP20 (sfuso)",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.5475,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "MNR190",
+            "Description": "30,8X30,8 30BETON GRIGIO 8mm",
+            "Tono": "R024",
+            "Avg_Assorbimento": 0.5395,
+            "N_prove": 21
+        },
+        {
+            "CodeArt": "SF0555",
+            "Description": "IROC WHITE 60X120 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.5375,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "SF0851",
+            "Description": "120INFINITY BEIGE 60X120 (sfuso)",
+            "Tono": "R034",
+            "Avg_Assorbimento": 0.53,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0794",
+            "Description": "60X120 CHARME INVISIBLE GREY (sfuso)",
+            "Tono": "R194",
+            "Avg_Assorbimento": 0.525,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0805",
+            "Description": "60X120 CHARME IVORY (sfuso)",
+            "Tono": "R174",
+            "Avg_Assorbimento": 0.525,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "PT0323",
+            "Description": "60X120 CHALET CORTINA BEIGE R11 (sfuso)",
+            "Tono": "R034",
+            "Avg_Assorbimento": 0.5075,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "EMT073",
+            "Description": "60X60 EMOTION TAUPE RTT 8mm",
+            "Tono": "R674",
+            "Avg_Assorbimento": 0.505,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "EMT072",
+            "Description": "60X60 EMOTION GRIS RTT 8mm",
+            "Tono": "R744",
+            "Avg_Assorbimento": 0.4975,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF1137",
+            "Description": "GEOSTONE TAUPE 81X81 (sfuso)",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.4933,
+            "N_prove": 3
+        },
+        {
+            "CodeArt": "303763",
+            "Description": "60x60 ULTRA MANSION MID RETT Sp20mm",
+            "Tono": "R054",
+            "Avg_Assorbimento": 0.49,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "EMT072",
+            "Description": "60X60 EMOTION GRIS RTT 8mm",
+            "Tono": "R754",
+            "Avg_Assorbimento": 0.49,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0701",
+            "Description": "ULTRA ASPEN ANTRACITE 40X80 SP20 (sfuso)",
+            "Tono": "R074",
+            "Avg_Assorbimento": 0.4867,
+            "N_prove": 3
+        },
+        {
+            "CodeArt": "CP0021",
+            "Description": "30,5X30,5 CEMENTO TORTORA OUT  8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.4843,
+            "N_prove": 7
+        },
+        {
+            "CodeArt": "CP0050",
+            "Description": "30,5X30,5 LIMESTONE BIANCO OUT  8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.4783,
+            "N_prove": 6
+        },
+        {
+            "CodeArt": "SF0324",
+            "Description": "SMOT WHITE 60X120 (sfuso)",
+            "Tono": "R204",
+            "Avg_Assorbimento": 0.475,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0325",
+            "Description": "SMOT GREY 60X120 (sfuso)",
+            "Tono": "R164",
+            "Avg_Assorbimento": 0.475,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0805",
+            "Description": "60X120 CHARME IVORY (sfuso)",
+            "Tono": "---",
+            "Avg_Assorbimento": 0.47,
+            "N_prove": 3
+        },
+        {
+            "CodeArt": "SF0708",
+            "Description": "GRANITO BEIGE 40,5X81 SP20 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.4667,
+            "N_prove": 9
+        },
+        {
+            "CodeArt": "SF0537",
+            "Description": "GARE LIGHT GREY 60X120 (sfuso)",
+            "Tono": "R154",
+            "Avg_Assorbimento": 0.465,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0797",
+            "Description": "60X120 CHARME ILLUSION (sfuso)",
+            "Tono": "R074",
+            "Avg_Assorbimento": 0.465,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "003693",
+            "Description": "BT EMOTION TAUPE 7,2X60",
+            "Tono": "---",
+            "Avg_Assorbimento": 0.46,
+            "N_prove": 3
+        },
+        {
+            "CodeArt": "Pt0313",
+            "Description": "60x1209 SELECTION BETULLA",
+            "Tono": null,
+            "Avg_Assorbimento": 0.45,
+            "N_prove": 1
+        },
+        {
+            "CodeArt": "SF0322",
+            "Description": "QUARRY MONSOON 60X120 (sfuso)",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.45,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0323",
+            "Description": "QUARRY TUNDRA 60X120 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.45,
+            "N_prove": 1
+        },
+        {
+            "CodeArt": "SF0379",
+            "Description": "FABRIC GREY 60X120",
+            "Tono": "R104",
+            "Avg_Assorbimento": 0.45,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "Sf0931",
+            "Description": "30,5X30,5 ASPEN BEIGE 8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.45,
+            "N_prove": 1
+        },
+        {
+            "CodeArt": "SF0973",
+            "Description": "WALK WHITE 60X120 (sfuso)",
+            "Tono": "R034",
+            "Avg_Assorbimento": 0.4433,
+            "N_prove": 12
+        },
+        {
+            "CodeArt": "CP0017",
+            "Description": "30,5X30,5 COTTO PAGLIERINO OUT 8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.44,
+            "N_prove": 7
+        },
+        {
+            "CodeArt": "OO3678",
+            "Description": "40,5X81 NEW RIYADH IVORY RTT SP20MM",
+            "Tono": null,
+            "Avg_Assorbimento": 0.4367,
+            "N_prove": 3
+        },
+        {
+            "CodeArt": "303768",
+            "Description": "ULTRA SELCIATO 60X60 RETT Sp20mm",
+            "Tono": null,
+            "Avg_Assorbimento": 0.435,
+            "N_prove": 12
+        },
+        {
+            "CodeArt": "SF0334",
+            "Description": "AKABA TEAK 60X120 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.435,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0356",
+            "Description": "COMFORT ZERO10 BIANCO  60X120 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.435,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0495",
+            "Description": "FOLIAGE 60X120 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.435,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0356",
+            "Description": "VISION PEARL 60X120",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.4325,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0763",
+            "Description": "MINIMAL SILVER 61X61 (sfuso)",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.4325,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0077",
+            "Description": "SUPREME CALACATTA X LAPPATO 60X120",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.4275,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0382",
+            "Description": "DECORO FABRIC 60X120",
+            "Tono": null,
+            "Avg_Assorbimento": 0.4267,
+            "N_prove": 6
+        },
+        {
+            "CodeArt": "QST022",
+            "Description": "60X120 QUEEN STONE SABBIA RTT",
+            "Tono": "---",
+            "Avg_Assorbimento": 0.425,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0357",
+            "Description": "VISION ASH 60X120",
+            "Tono": "r184",
+            "Avg_Assorbimento": 0.425,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0418",
+            "Description": "60X120 NUANCE CALACATTA (sfuso",
+            "Tono": null,
+            "Avg_Assorbimento": 0.425,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "303992",
+            "Description": "60X60 ULTRA SOLID WHITE RT Sp20mm",
+            "Tono": "R024",
+            "Avg_Assorbimento": 0.4238,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "SF0501",
+            "Description": "DEC. WHISPER 60X120 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.4225,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0323",
+            "Description": "QUARRY TUNDRA 60X120 (sfuso)",
+            "Tono": "R054",
+            "Avg_Assorbimento": 0.42,
+            "N_prove": 1
+        },
+        {
+            "CodeArt": "SF0536",
+            "Description": "GARE SAND 60X120 (sfuso)",
+            "Tono": "R064",
+            "Avg_Assorbimento": 0.42,
+            "N_prove": 1
+        },
+        {
+            "CodeArt": "SF0774",
+            "Description": "60X120 EMOTION BLANC (sfuso)",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.42,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0873",
+            "Description": "SHELLSTONE BIANCO 60X120 (sfuso)",
+            "Tono": "R064",
+            "Avg_Assorbimento": 0.42,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0557",
+            "Description": "COMFORT ZERO10 BIANCO  60X120",
+            "Tono": null,
+            "Avg_Assorbimento": 0.4175,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0551",
+            "Description": "ECOSTONE GRIGIO",
+            "Tono": null,
+            "Avg_Assorbimento": 0.4164,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "PT0021",
+            "Description": "SANDALO 60X120(sfuso)",
+            "Tono": "r134",
+            "Avg_Assorbimento": 0.416,
+            "N_prove": 5
+        },
+        {
+            "CodeArt": "SF0571",
+            "Description": "ABITA ARGENTO 60X120 (sfuso)",
+            "Tono": "R074",
+            "Avg_Assorbimento": 0.415,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0745",
+            "Description": "60X120 MINIMAL PLATINUM (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.415,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0828",
+            "Description": "PORTLAND PLOMB 61X61 (sfuso)",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.415,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0761",
+            "Description": "BLOCK ONE 81X81 (sfuso)",
+            "Tono": "R034",
+            "Avg_Assorbimento": 0.4117,
+            "N_prove": 6
+        },
+        {
+            "CodeArt": "005704",
+            "Description": "30,5X30,5 SOLID GREY 8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.4114,
+            "N_prove": 7
+        },
+        {
+            "CodeArt": "SF0378",
+            "Description": "FABRIC WHITE",
+            "Tono": null,
+            "Avg_Assorbimento": 0.4106,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "EMT073",
+            "Description": "60X60 EMOTION TAUPE RTT 8mm",
+            "Tono": "---",
+            "Avg_Assorbimento": 0.41,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0414",
+            "Description": "60X120 NUANCE WHITE (sfuso)",
+            "Tono": "R134",
+            "Avg_Assorbimento": 0.41,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0431",
+            "Description": "ASPEN ANTRACITE 60X120 (sfuso)",
+            "Tono": "R114",
+            "Avg_Assorbimento": 0.41,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0649",
+            "Description": "FUSION BOISERIE 60X120 (sfuso)",
+            "Tono": "R054",
+            "Avg_Assorbimento": 0.41,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "005040",
+            "Description": "60X60 COVER GREY SP20 RTT",
+            "Tono": null,
+            "Avg_Assorbimento": 0.4075,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "MNR150",
+            "Description": "120STUDIOS GRIGIO 60,2X120,4 R",
+            "Tono": null,
+            "Avg_Assorbimento": 0.4075,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0806",
+            "Description": "60X120 CHARME PERLA (sfuso)",
+            "Tono": "R114",
+            "Avg_Assorbimento": 0.4075,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0632",
+            "Description": "EMOTION TAUPE 81X81 (sfuso)",
+            "Tono": "R124",
+            "Avg_Assorbimento": 0.4067,
+            "N_prove": 6
+        },
+        {
+            "CodeArt": "FSN031",
+            "Description": "60X120 FUSION BIANCO RTT",
+            "Tono": null,
+            "Avg_Assorbimento": 0.405,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "PT0308",
+            "Description": "CORTECCIA GRIGIO 60X120 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.405,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0406",
+            "Description": "NUANCE GREY 81X81 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.405,
+            "N_prove": 6
+        },
+        {
+            "CodeArt": "SF0891",
+            "Description": "60X120 ULTRA ASPEN BEIGE SP20 (sfuso)",
+            "Tono": "R044",
+            "Avg_Assorbimento": 0.405,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0355",
+            "Description": "VISION CALACATTA BROWN 60X120 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.404,
+            "N_prove": 10
+        },
+        {
+            "CodeArt": "004152",
+            "Description": "60X60 NEW ULTRA ASPEN FUME' RTT SP20",
+            "Tono": "P214",
+            "Avg_Assorbimento": 0.4025,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "Pt0313",
+            "Description": "120 SELECTION BETULLA",
+            "Tono": null,
+            "Avg_Assorbimento": 0.4,
+            "N_prove": 1
+        },
+        {
+            "CodeArt": "SF0754",
+            "Description": "60X120 PAINT BLUE (sfuso)",
+            "Tono": "R044",
+            "Avg_Assorbimento": 0.4,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0808",
+            "Description": "60X120 LANDSCAPE GRIGIO (sfuso)",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.4,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0934",
+            "Description": "VISION STATUARIO GOLD LAPP 60X120 (sfuso)",
+            "Tono": "R044",
+            "Avg_Assorbimento": 0.4,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0640",
+            "Description": "GALATA",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3999,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0865",
+            "Description": "FONDO BIANCO ANNI 70 60X120 (sfuso)",
+            "Tono": "R054",
+            "Avg_Assorbimento": 0.3975,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "PT0037",
+            "Description": "EXTRA GREY ",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3973,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0556",
+            "Description": "DEC. RELAX 60X120 (sfuso)",
+            "Tono": "R054",
+            "Avg_Assorbimento": 0.395,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0651",
+            "Description": "60X120 ULTRA SCOUT BEIGE SP20(sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.395,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "EMT073",
+            "Description": "60X60 EMOTION TAUPE RTT 8mm",
+            "Tono": "694",
+            "Avg_Assorbimento": 0.3938,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "SF0450",
+            "Description": "60X120 CULT WHITE (sfuso)",
+            "Tono": "R104",
+            "Avg_Assorbimento": 0.3925,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0451",
+            "Description": "60X120 CULT GREY (sfuso)",
+            "Tono": "R144",
+            "Avg_Assorbimento": 0.3925,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0743",
+            "Description": "60X120 PALERMO GRAU (sfuso)",
+            "Tono": "R024",
+            "Avg_Assorbimento": 0.3925,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0452",
+            "Description": "60X120 CULT BEIGE (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3918,
+            "N_prove": 17
+        },
+        {
+            "CodeArt": "CP0012",
+            "Description": "30,5X30,5 QUARZITE GRIGIO OUT  8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.3914,
+            "N_prove": 7
+        },
+        {
+            "CodeArt": "ATELBE38",
+            "Description": "30,5X30,5 ATELIER BEIGE 8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.39,
+            "N_prove": 21
+        },
+        {
+            "CodeArt": "SF0309",
+            "Description": "60X120 TRAV AMBRA MEMENTO X LAPPATO (sfuso)",
+            "Tono": "R104",
+            "Avg_Assorbimento": 0.39,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0320",
+            "Description": "QUARRY MOON 60X120 (sfuso)",
+            "Tono": "R154",
+            "Avg_Assorbimento": 0.39,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0757",
+            "Description": "60X120 PAINT SALVIA (sfuso)",
+            "Tono": "R034",
+            "Avg_Assorbimento": 0.39,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0777",
+            "Description": "60X120 EMOTION ANTHRACITE (sfuso)",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.39,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "303598",
+            "Description": "GARE LIGHT GREY 60X60 RTT",
+            "Tono": "R034",
+            "Avg_Assorbimento": 0.3888,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "SF1067",
+            "Description": "RIGATINO CONTERO STONE IVORY 60X120 (sfuso)",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.3875,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0702",
+            "Description": "RIYADH IVORY 40,5X81 SP20 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3867,
+            "N_prove": 3
+        },
+        {
+            "CodeArt": "MNR189",
+            "Description": "30,8X30,8 30BETON BEIGE 8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.385,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "SF0461",
+            "Description": "STONE COLL. WHITE 60X120 (sfuso)",
+            "Tono": "R054",
+            "Avg_Assorbimento": 0.385,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0491",
+            "Description": "BRONZE FERN 60X120 (sfuso)",
+            "Tono": "R174",
+            "Avg_Assorbimento": 0.385,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0512",
+            "Description": "MYTHOS STEEL 60X120",
+            "Tono": null,
+            "Avg_Assorbimento": 0.385,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0947",
+            "Description": "TIME STONE SABBIA 60X120 (sfuso)",
+            "Tono": "R124",
+            "Avg_Assorbimento": 0.385,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0291",
+            "Description": "PRESTIGE BLANC 81X81 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3833,
+            "N_prove": 9
+        },
+        {
+            "CodeArt": "SF0560",
+            "Description": "COMFORT 040",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3833,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "PSG051A",
+            "Description": "PRESTIGE BLANC 81X81 RETT",
+            "Tono": null,
+            "Avg_Assorbimento": 0.38,
+            "N_prove": 3
+        },
+        {
+            "CodeArt": "SF0749",
+            "Description": "60X120 PALMA (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.38,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "PT0307",
+            "Description": "CORTECCIA BEIGE",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3793,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0857",
+            "Description": "GEOLOGY ARGILLA 60X120 (sfuso)",
+            "Tono": "R024",
+            "Avg_Assorbimento": 0.3775,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "304059",
+            "Description": "60X120 CHARME PEARL RT",
+            "Tono": "---",
+            "Avg_Assorbimento": 0.3767,
+            "N_prove": 3
+        },
+        {
+            "CodeArt": "SF0312",
+            "Description": "SMOT WHITE X LAPPATO 60X120 (sfuso)",
+            "Tono": "R214",
+            "Avg_Assorbimento": 0.3767,
+            "N_prove": 6
+        },
+        {
+            "CodeArt": "303408",
+            "Description": "FABRIC ANTHRACITE 60x120 RETT",
+            "Tono": null,
+            "Avg_Assorbimento": 0.375,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "EMT072",
+            "Description": "60X60 EMOTION GRIS RTT 8mm",
+            "Tono": "R734",
+            "Avg_Assorbimento": 0.374,
+            "N_prove": 5
+        },
+        {
+            "CodeArt": "SF0677",
+            "Description": "60X120 NATURE BIANCO (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3733,
+            "N_prove": 3
+        },
+        {
+            "CodeArt": "SF0814",
+            "Description": "WOOD LIGHT GREY 40,5X81 SP20 (sfuso)",
+            "Tono": "R024",
+            "Avg_Assorbimento": 0.3733,
+            "N_prove": 3
+        },
+        {
+            "CodeArt": "SF0758",
+            "Description": "60X120 PAINT WHITE (sfuso)",
+            "Tono": "R054",
+            "Avg_Assorbimento": 0.3725,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0559",
+            "Description": "COMFORT 030",
+            "Tono": null,
+            "Avg_Assorbimento": 0.372,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "303571",
+            "Description": "NEW ULTRA SCOUT FOG",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3715,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "004520",
+            "Description": "60X120 WILD WHITE HONED PLUS 4",
+            "Tono": null,
+            "Avg_Assorbimento": 0.37,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "005680",
+            "Description": "Emotion taupe",
+            "Tono": "---",
+            "Avg_Assorbimento": 0.37,
+            "N_prove": 7
+        },
+        {
+            "CodeArt": "303637",
+            "Description": "BETON SAND RTT 60X60 2 CM",
+            "Tono": null,
+            "Avg_Assorbimento": 0.37,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "PT0050",
+            "Description": "EXTRA TAPPETO FUME' 60X120",
+            "Tono": null,
+            "Avg_Assorbimento": 0.37,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0378",
+            "Description": "FABRIC WHITE 60X120",
+            "Tono": "R234",
+            "Avg_Assorbimento": 0.37,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0643",
+            "Description": "FUSION BIANCO 60X120 (sfuso)",
+            "Tono": "R054",
+            "Avg_Assorbimento": 0.37,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "PT0092",
+            "Description": "60X120 SIERRA GRIGIO",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3688,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "SF0696",
+            "Description": "NEW ULTRA ESSENZE GELSOMINO 40,5X81 SP20 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3683,
+            "N_prove": 6
+        },
+        {
+            "CodeArt": "SF0540",
+            "Description": "DEC. FLOWER GREY 60X120 (sfuso)",
+            "Tono": "R114",
+            "Avg_Assorbimento": 0.365,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "005275",
+            "Description": "BATT. EMOTION ANTRACITE 7,2X60 RT",
+            "Tono": "---",
+            "Avg_Assorbimento": 0.3643,
+            "N_prove": 14
+        },
+        {
+            "CodeArt": "PT0095",
+            "Description": "GELSOMINO Sp17 81X81 (sfuso)",
+            "Tono": "---",
+            "Avg_Assorbimento": 0.364,
+            "N_prove": 5
+        },
+        {
+            "CodeArt": "SFO037",
+            "Description": "NEW SCOUT BEIGE 81X81 SP20(sfuso)",
+            "Tono": "R034",
+            "Avg_Assorbimento": 0.3627,
+            "N_prove": 37
+        },
+        {
+            "CodeArt": "SF0795",
+            "Description": "60X120 CHARME GREY (sfuso)",
+            "Tono": "R124",
+            "Avg_Assorbimento": 0.3625,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "CP0019",
+            "Description": "30,5X30,5 CEMENTO TORTORA IN  8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.3621,
+            "N_prove": 14
+        },
+        {
+            "CodeArt": "SF0860",
+            "Description": "GEOLOGY GHIAIA 60X120 (sfuso)",
+            "Tono": "R024",
+            "Avg_Assorbimento": 0.362,
+            "N_prove": 5
+        },
+        {
+            "CodeArt": "303969",
+            "Description": "PAINT GREY 60X60 RTT",
+            "Tono": "r034",
+            "Avg_Assorbimento": 0.36,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "DA3914",
+            "Description": "GARE LIGHT GREY 60X60 RETT",
+            "Tono": "---",
+            "Avg_Assorbimento": 0.36,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "SF0251",
+            "Description": "60X120 UNIVERSAL OAK",
+            "Tono": "R114",
+            "Avg_Assorbimento": 0.36,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0798",
+            "Description": "60X120 EVOQ AVORIO (sfuso)",
+            "Tono": "R024",
+            "Avg_Assorbimento": 0.36,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "303596",
+            "Description": "GARE SAND 60X60 RTT",
+            "Tono": "644",
+            "Avg_Assorbimento": 0.3575,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "303624",
+            "Description": "60X60 NEW ULTRA CULT GREY RETT Sp20mm",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3575,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0464",
+            "Description": "STONE COLL. LIGHT GREY 60X120 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3575,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0512",
+            "Description": "MYTHOS STEEL 60X120",
+            "Tono": "R064",
+            "Avg_Assorbimento": 0.3575,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0604",
+            "Description": "ABITA FERRO 61X61 (sfuso)",
+            "Tono": "R034",
+            "Avg_Assorbimento": 0.3575,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0723",
+            "Description": "60X120 NIO BEIGE SP20 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3575,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "SF1039",
+            "Description": "RIGATINO NEW STONE DAINO 60X120 (sfuso)",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.3575,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0544",
+            "Description": "PIETRA LEVIGATA GRIGIA",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3564,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "303621",
+            "Description": "60X60 NEW ULTRA BARGE RT Sp20mm",
+            "Tono": "R084",
+            "Avg_Assorbimento": 0.355,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0461",
+            "Description": "STONE COLL. WHITE 60X120 (sfuso)",
+            "Tono": "R044",
+            "Avg_Assorbimento": 0.355,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0729",
+            "Description": "60X120 DEC. RUGIADA (sfuso)",
+            "Tono": "R074",
+            "Avg_Assorbimento": 0.355,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0794",
+            "Description": "60X120 CHARME INVISIBLE GREY (sfuso)",
+            "Tono": "---",
+            "Avg_Assorbimento": 0.355,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0703",
+            "Description": "RIYADH LIGHT GREY 40,5X81 SP20 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3544,
+            "N_prove": 9
+        },
+        {
+            "CodeArt": "CP0018",
+            "Description": "30,5X30,5 CEMENTO GRIGIO IN  8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.3538,
+            "N_prove": 21
+        },
+        {
+            "CodeArt": "SF0559",
+            "Description": "COMFORT ZERO30 ROVERE 60X120 (sfuso)",
+            "Tono": "R064",
+            "Avg_Assorbimento": 0.3525,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0566",
+            "Description": "FRAME SUPERIOR 60X120 (sfuso)",
+            "Tono": "R094",
+            "Avg_Assorbimento": 0.3525,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0784",
+            "Description": "60X120 PORTLAND IVORY (sfuso)",
+            "Tono": "R024",
+            "Avg_Assorbimento": 0.3525,
+            "N_prove": 8
+        },
+        {
+            "CodeArt": "SF0857",
+            "Description": "GEOLOGY ARGILLA 60X120 (sfuso)",
+            "Tono": "R074",
+            "Avg_Assorbimento": 0.3525,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0970",
+            "Description": "SERICA IVORY 60X120 (sfuso)",
+            "Tono": "R064",
+            "Avg_Assorbimento": 0.3525,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "SF0308",
+            "Description": "SMOT ANTRACITE",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3518,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "005696",
+            "Description": "30,5X30,5 RETRO 1960 APUANO 8mm",
+            "Tono": "R014",
+            "Avg_Assorbimento": 0.3514,
+            "N_prove": 7
+        },
+        {
+            "CodeArt": "004572",
+            "Description": "PALERMO BEIGE",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3503,
+            "N_prove": 4
+        },
+        {
+            "CodeArt": "303460",
+            "Description": "GROOVE GRIS CLAIR ",
+            "Tono": null,
+            "Avg_Assorbimento": 0.3503,
+            "N_prove": 10
+        },
+        {
+            "CodeArt": "303607",
+            "Description": "60X60 RT SP20 ULTRA GARE SAND",
+            "Tono": null,
+            "Avg_Assorbimento": 0.35,
+            "N_prove": 24
+        },
+        {
+            "CodeArt": "SF0501",
+            "Description": "DEC. WHISPER 60X120 (sfuso)",
+            "Tono": "R0104",
+            "Avg_Assorbimento": 0.35,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0627",
+            "Description": "ABITA NICHEL 80X80 (sfuso)",
+            "Tono": "R024",
+            "Avg_Assorbimento": 0.35,
+            "N_prove": 1
+        },
+        {
+            "CodeArt": "SF0631",
+            "Description": "EMOTION GRIS 81X81 (sfuso)",
+            "Tono": "R114",
+            "Avg_Assorbimento": 0.35,
+            "N_prove": 6
+        },
+        {
+            "CodeArt": "SF0644",
+            "Description": "FUSION GRIGIO 60X120 (sfuso)",
+            "Tono": null,
+            "Avg_Assorbimento": 0.35,
+            "N_prove": 2
+        },
+        {
+            "CodeArt": "SF0722",
+            "Description": "60X120 DEC. TENTAZIONI (sfuso)",
+            "Tono": "R084",
+            "Avg_Assorbimento": 0.35,
+            "N_prove": 2
+        }
+    ],
+    "conclusions": "Osservazioni e suggerimenti operativi:\n1) Alcuni articoli mostrano assorbimenti medi elevati (es. > 1.0%): sono candidati a verifica urgente sul processo di essiccazione e controllo materie prime.  \n2) Per articoli con N_prove basse (≤ 3) la media è poco affidabile: ripetere le prove prima di prendere decisioni produttive o commerciali.  \n3) Prossimi passi consigliati: filtrare per periodo di interesse (es. ultimi 6 mesi), applicare soglie di minimo numero di prove (es. N_prove ≥ 5) e produrre una classifica Top10 (alto/basso) o un trend temporale per i prodotti critici.  \nSe vuoi, posso fornirti immediatamente una Top10 articoli con assorbimento più alto/basso o ripetere l'analisi limitandola a un periodo o a una serie specifica."
+}

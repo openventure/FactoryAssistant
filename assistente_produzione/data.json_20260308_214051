@@ -1,0 +1,7 @@
+{
+    "user_request": "Adesso li vorrei solo per i 65-20.",
+    "report_title": "Articoli con ordini > disponibilità — filtro formato 65-20",
+    "summary": "Ho cercato gli articoli per i quali la quantità da consegnare è maggiore della disponibilità, filtrando per le notazioni più comuni del formato 65-20 (es. '65X20', '65-20', '65 20'). La ricerca non ha restituito righe: non risultano articoli critici per queste varianti di formato.",
+    "table_data": [],
+    "conclusions": "Nessun articolo trovato con ordini superiori alla disponibilità per il formato esplicitamente cercato (65-20). Possibili motivi: il formato è registrato con notazione diversa (ad es. '20X65', spazi/segni diversi, o con informazioni aggiuntive nello stesso campo). Posso ripetere la ricerca usando altre varianti (es. '20X65'), un filtro più ampio su '%65%' oppure controllare per specifico codice articolo/serie/tono se mi indichi ulteriori dettagli. Quale preferisci?"
+}

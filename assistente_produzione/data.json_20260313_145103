@@ -1,0 +1,35 @@
+{
+    "user_request": "Qual è la produzione giornaliera media per linea nell’ultimo mese?",
+    "report_title": "Produzione giornaliera media per linea - ultimi 30 giorni",
+    "summary": "Analisi della produzione degli ultimi 30 giorni, aggregata per linea. Per ciascuna linea sono riportati i metri quadri totali prodotti, i giorni effettivi di produzione, la media m2 per giorno di calendario (su 30 giorni) e la media m2 per giorno di produzione (considerando solo i giorni con produzione). Queste metriche permettono di valutare la capacità operativa media e l'utilizzo delle linee.",
+    "table_data": [
+        {
+            "Linea": "3",
+            "total_m2": 162083.6,
+            "production_days": 28,
+            "total_pallets": 3249,
+            "avg_m2_per_calendar_day": 5402.787,
+            "avg_m2_per_production_day": 5788.7,
+            "avg_m2_per_pallet": 49.887
+        },
+        {
+            "Linea": "1",
+            "total_m2": 77676.93,
+            "production_days": 22,
+            "total_pallets": 2468,
+            "avg_m2_per_calendar_day": 2589.231,
+            "avg_m2_per_production_day": 3530.77,
+            "avg_m2_per_pallet": 31.474
+        },
+        {
+            "Linea": "2",
+            "total_m2": 57042.53,
+            "production_days": 20,
+            "total_pallets": 1155,
+            "avg_m2_per_calendar_day": 1901.418,
+            "avg_m2_per_production_day": 2852.127,
+            "avg_m2_per_pallet": 49.387
+        }
+    ],
+    "conclusions": "La linea 3 è la più produttiva: ~5.403 m²/giorno considerando il mese intero e ~5.789 m² nei giorni con produzione. Linea 1 ha una media intermedia (~2.589 m²/giorno sul mese; ~3.531 m²/giorno nei giorni produttivi) ma mostra un valore medio per pallet più basso (31,47 m²), segnale di pallet più piccoli o maggior numero di pz per pallet. Linea 2 ha la capacità giornaliera più bassa (~1.901 m²/giorno sul mese; ~2.852 m²/giorno nei giorni produttivi) ma media m2/pallet simile a linea 3. Raccomandazioni operative: 1) verificare se la capacità della linea 3 è sfruttata al massimo e valutare se spostare parte dei carichi da linee meno produttive (1 e 2) per bilanciare ROP; 2) analizzare il motivo dei giorni di fermo (productions_days < 30) per ciascuna linea e ridurre i fermi non programmati; 3) se serve dettaglio per pianificazione (per prodotto, toni o prima scelta), posso fornire la scomposizione per articolo o analisi per turno."
+}

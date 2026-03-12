@@ -1,0 +1,18 @@
+{
+    "user_request": "quante volte ho prodotto l'articolo 003710?",
+    "report_title": "Conteggio produzione articolo 003710 (tabella PALLET_PRODUCTION)",
+    "summary": "Query eseguita sulla tabella PALLET_PRODUCTION per LGV_CodiceArticolo = '003710'. Assunzioni e regole: ogni riga della tabella rappresenta un pallet; la query conta tutti i pallet (colonna total_pallets). Ho fornito anche conteggi aggiuntivi (pallet non espulsi, prima scelta) e aggregati di quantità in m², quando presenti nei dati. Se i campi risultano nulli significa che non ci sono righe corrispondenti con valori popolati per quegli aggregati.",
+    "table_data": [
+        {
+            "total_pallets": 0,
+            "pallets_non_espulso": null,
+            "pallets_first_choice": null,
+            "total_m2": null,
+            "total_pieces": null,
+            "avg_m2_per_pallet": null,
+            "sample_format": null,
+            "sample_tone": null
+        }
+    ],
+    "conclusions": "Non risultano pallet prodotti per il codice articolo 003710 nella tabella PALLET_PRODUCTION (risultato: 0). Possibili azioni successive: 1) Verificare se il codice è memorizzato senza zeri iniziali (es. '3710') e ripetere la ricerca; 2) Cercare su un intervallo di date specifico (es. ultimo mese/anno) se necessario; 3) Consultare le tabelle dashboard_productavailability o pa_ff_code per informazioni su formato/serie/giacenza. Dimmi quale azione preferisci e eseguo la query corrispondente."
+}

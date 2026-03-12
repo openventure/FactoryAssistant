@@ -1,0 +1,68 @@
+{
+    "user_request": "vorrei sapere quanti articoli sono sotto scorta per formato.",
+    "report_title": "Articoli Sotto Scorta per Formato",
+    "summary": "L'analisi evidenzia il numero di articoli che risultano sotto la soglia di scorta per ciascun formato specifico.",
+    "table_data": [
+        {
+            "FORMATO": "59X59 L/R",
+            "ArticoliSottoScorta": 4
+        },
+        {
+            "FORMATO": "15,3X31,",
+            "ArticoliSottoScorta": 1
+        },
+        {
+            "FORMATO": "61X61",
+            "ArticoliSottoScorta": 51
+        },
+        {
+            "FORMATO": "20X122 RTT",
+            "ArticoliSottoScorta": 37
+        },
+        {
+            "FORMATO": "15X60 RTT",
+            "ArticoliSottoScorta": 12
+        },
+        {
+            "FORMATO": "59X118 L/R",
+            "ArticoliSottoScorta": 20
+        },
+        {
+            "FORMATO": "60X120 RTT",
+            "ArticoliSottoScorta": 167
+        },
+        {
+            "FORMATO": "31X62 RTT",
+            "ArticoliSottoScorta": 1
+        },
+        {
+            "FORMATO": "30X60 RTT",
+            "ArticoliSottoScorta": 140
+        },
+        {
+            "FORMATO": "81X81 RTT",
+            "ArticoliSottoScorta": 36
+        },
+        {
+            "FORMATO": "31X62",
+            "ArticoliSottoScorta": 330
+        },
+        {
+            "FORMATO": "60X60 RTT",
+            "ArticoliSottoScorta": 243
+        },
+        {
+            "FORMATO": "15,3X31",
+            "ArticoliSottoScorta": 26
+        },
+        {
+            "FORMATO": "29,5X59 L/R",
+            "ArticoliSottoScorta": 2
+        },
+        {
+            "FORMATO": "30X122 RTT",
+            "ArticoliSottoScorta": 24
+        }
+    ],
+    "conclusions": "Dal report emerge che i formati '31X62' e '60X60 RTT' hanno il maggior numero di articoli sotto la soglia di scorta. Questo potrebbe indicare una necessità maggiore di produzione o ottimizzazione per questi formati specifici."
+}

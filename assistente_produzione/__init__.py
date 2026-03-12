@@ -1,0 +1,1 @@
+"""Factory Assistance application package."""

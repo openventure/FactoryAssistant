@@ -1,0 +1,7 @@
+{
+    "user_request": "ssssss",
+    "report_title": "Richiesta non pertinente",
+    "summary": "Posso rispondere solo a domande inerenti ai dati di produzione aziendali e all’analisi degli stessi. Ti prego di formulare una domanda pertinente.",
+    "table_data": [],
+    "conclusions": "Posso rispondere solo a domande inerenti ai dati di produzione aziendali e all’analisi degli stessi. Ti prego di formulare una domanda pertinente. Esempi utili:\n- \"Mostrami i prodotti 60x120 in sottogiacenza\"\n- \"Produzione mensile per linea negli ultimi 3 mesi (m²)\"\n- \"Top 10 toni con giacenza negativa per deposito\"\n- \"Query SQL per calcolare la produzione giornaliera per articolo dalla tabella PALLET_PRODUCTION\"\nDimmi quale di questi (o altra richiesta pertinente) vuoi eseguire e preparo il report o la query SQL corrispondente."
+}

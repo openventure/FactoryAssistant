@@ -1,0 +1,238 @@
+{
+    "user_request": "Quali articoli 60x120 hanno ordini superiori alla disponibilita attuale?",
+    "report_title": "Articoli 60x120 con ordini superiori alla disponibilità attuale",
+    "summary": "Ho identificato 23 articoli nel formato 60x120 per i quali la quantità ordinata (QTA_DA_CONSEGNARE) è maggiore della disponibilità attuale (DISPONIBILITA). Il totale dell'eccedenza ordini rispetto alla disponibilità è circa 25.236 m². Alcuni articoli mostrano disponibilità negativa (indipendente dagli ordini) e altri una richiesta leggermente superiore alla scorta disponibile. Questi casi richiedono azioni operative immediate per evitare ritardi di consegna.",
+    "table_data": [
+        {
+            "CODICE": "003753A",
+            "DESCRIZIONE": "60X120 RTT TRAV BLACK MEMENTO cl35",
+            "SERIE": "TRAVERTINO MEMENTO",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -1.44,
+            "qta_da_consegnare_m2": 1.44,
+            "shortage_m2": 2.88
+        },
+        {
+            "CODICE": "003757",
+            "DESCRIZIONE": "60X120 RTT TRAV. GREY MEMENTO",
+            "SERIE": "TRAVERTINO MEMENTO",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -1.44,
+            "qta_da_consegnare_m2": 1.44,
+            "shortage_m2": 2.88
+        },
+        {
+            "CODICE": "003938",
+            "DESCRIZIONE": "60X120 RTT ASPEN GRIGIO",
+            "SERIE": "ASPEN",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 113.76,
+            "disponibilita_m2": 50.4,
+            "qta_da_consegnare_m2": 63.36,
+            "shortage_m2": 12.96
+        },
+        {
+            "CODICE": "005444",
+            "DESCRIZIONE": "60X120 IROC WHITE RTT R11 (CL 35)",
+            "SERIE": "IROC",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 7898.4,
+            "disponibilita_m2": 1598.4,
+            "qta_da_consegnare_m2": 6300.0,
+            "shortage_m2": 4701.6
+        },
+        {
+            "CODICE": "005445",
+            "DESCRIZIONE": "60X120 IROC GREIGE RTT R11 (CL 35)",
+            "SERIE": "IROC",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 2489.76,
+            "disponibilita_m2": -1239.84,
+            "qta_da_consegnare_m2": 3729.6,
+            "shortage_m2": 4969.44
+        },
+        {
+            "CODICE": "005465",
+            "DESCRIZIONE": "ONYX WHITE 60x120 Rettificato",
+            "SERIE": "ONYX - ACR",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 6179.04,
+            "disponibilita_m2": 2986.56,
+            "qta_da_consegnare_m2": 3192.48,
+            "shortage_m2": 205.92
+        },
+        {
+            "CODICE": "005466",
+            "DESCRIZIONE": "ONYX GREEN 60x120 Rettificato",
+            "SERIE": "ONYX - ACR",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 2901.6,
+            "disponibilita_m2": 882.72,
+            "qta_da_consegnare_m2": 2018.88,
+            "shortage_m2": 1136.16
+        },
+        {
+            "CODICE": "005467",
+            "DESCRIZIONE": "ONYX IVORY 60x120 Rettificato",
+            "SERIE": "ONYX - ACR",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 1814.4,
+            "disponibilita_m2": -198.72,
+            "qta_da_consegnare_m2": 2013.12,
+            "shortage_m2": 2211.84
+        },
+        {
+            "CODICE": "005504",
+            "DESCRIZIONE": "RIGAT-ONE SHELLSTONE BEIGE 60x120 Rettificato",
+            "SERIE": "SHELLSTONE - ACR",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 1301.76,
+            "disponibilita_m2": 311.04,
+            "qta_da_consegnare_m2": 990.72,
+            "shortage_m2": 679.68
+        },
+        {
+            "CODICE": "005505",
+            "DESCRIZIONE": "RIGAT-ONE SHELLSTONE BIANCO 60x120 Rettificato",
+            "SERIE": "SHELLSTONE - ACR",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 1045.44,
+            "disponibilita_m2": 178.56,
+            "qta_da_consegnare_m2": 866.88,
+            "shortage_m2": 688.32
+        },
+        {
+            "CODICE": "005514",
+            "DESCRIZIONE": "RIGAT-ONE FRAME MID 60x120 Rettificato",
+            "SERIE": "SHELLSTONE - ACR",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 1668.96,
+            "disponibilita_m2": 794.88,
+            "qta_da_consegnare_m2": 874.08,
+            "shortage_m2": 79.2
+        },
+        {
+            "CODICE": "005515",
+            "DESCRIZIONE": "RIGAT-ONE BIANCO ERMETICA 60x120 Rettificato",
+            "SERIE": "ERMETICA",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -4.32,
+            "qta_da_consegnare_m2": 4.32,
+            "shortage_m2": 8.64
+        },
+        {
+            "CODICE": "005516",
+            "DESCRIZIONE": "RIGAT-ONE LAVAGNA ERMETICA 60x120 Rettificato",
+            "SERIE": "SHELLSTONE - ACR",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -18.72,
+            "qta_da_consegnare_m2": 18.72,
+            "shortage_m2": 37.44
+        },
+        {
+            "CODICE": "005655",
+            "DESCRIZIONE": "60X120 MIRROR BIANCO RT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -856.8,
+            "qta_da_consegnare_m2": 856.8,
+            "shortage_m2": 1713.6
+        },
+        {
+            "CODICE": "005656",
+            "DESCRIZIONE": "60X120 MIRROR BEIGE RT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -856.8,
+            "qta_da_consegnare_m2": 856.8,
+            "shortage_m2": 1713.6
+        },
+        {
+            "CODICE": "005657",
+            "DESCRIZIONE": "60X120 MIRROR TAUPE RT",
+            "SERIE": "MATERIALE EUROBAUSTOF",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 0.0,
+            "disponibilita_m2": -856.8,
+            "qta_da_consegnare_m2": 856.8,
+            "shortage_m2": 1713.6
+        },
+        {
+            "CODICE": "302852A",
+            "DESCRIZIONE": "SUPREME CALACATTA 60X120 RETT CL 30",
+            "SERIE": "MARMI PREGIATI",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 10.08,
+            "disponibilita_m2": -60.48,
+            "qta_da_consegnare_m2": 70.56,
+            "shortage_m2": 131.04
+        },
+        {
+            "CODICE": "303276A",
+            "DESCRIZIONE": "QUARRY MOON 60x120 RETT CL 35",
+            "SERIE": "QUARRY",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 388.8,
+            "disponibilita_m2": -973.44,
+            "qta_da_consegnare_m2": 1362.24,
+            "shortage_m2": 2335.68
+        },
+        {
+            "CODICE": "303304",
+            "DESCRIZIONE": "SMOT ANTHRACITE 60x120 RETT",
+            "SERIE": "SMOT",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 227.52,
+            "disponibilita_m2": -74.88,
+            "qta_da_consegnare_m2": 302.4,
+            "shortage_m2": 377.28
+        },
+        {
+            "CODICE": "303334A",
+            "DESCRIZIONE": "QUARRY MOON 60x120 RETT LAPP IN CRESTA CL 35",
+            "SERIE": "QUARRY",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 2194.56,
+            "disponibilita_m2": 195.84,
+            "qta_da_consegnare_m2": 1998.72,
+            "shortage_m2": 1802.88
+        },
+        {
+            "CODICE": "303405A",
+            "DESCRIZIONE": "FABRIC WHITE 60X120 RETT. cl35",
+            "SERIE": "FABRIC",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 9312.48,
+            "disponibilita_m2": 4642.56,
+            "qta_da_consegnare_m2": 4669.92,
+            "shortage_m2": 27.36
+        },
+        {
+            "CODICE": "303406A",
+            "DESCRIZIONE": "FABRIC GREY 60x120 RETT cl35",
+            "SERIE": "FABRIC",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 2607.84,
+            "disponibilita_m2": 1045.44,
+            "qta_da_consegnare_m2": 1562.4,
+            "shortage_m2": 516.96
+        },
+        {
+            "CODICE": "303647",
+            "DESCRIZIONE": "GARE SAND 60X120 RTT",
+            "SERIE": "GARE DU NORD",
+            "FORMATO": "60X120 RTT",
+            "giacenza_m2": 34.56,
+            "disponibilita_m2": -66.24,
+            "qta_da_consegnare_m2": 100.8,
+            "shortage_m2": 167.04
+        }
+    ],
+    "conclusions": "Ci sono 23 articoli 60x120 con ordini che superano la disponibilità per un totale di circa 25.236 m². Azioni raccomandate: 1) Prioritizzare la produzione o il picking per gli articoli con maggiore shortage (es. 005445, 005444, 303276A, 303334A). 2) Verificare se è possibile riallocare scorte da depositi alternativi o da toni/lotti vicini. 3) Contattare l'area commerciale per valutare eventuali conferme/parzializzazioni delle consegne sui clienti con ordini non coperti. 4) Monitorare i toni/lotti in arrivo nelle prossime 48-72 ore per aggiornare la disponibilità. Se vuoi, posso fornire: a) la top10 degli articoli ordinati in eccesso (per costo o priorità cliente), b) dettaglio ordini per cliente per questi codici, o c) suggerire un piano di produzione per coprire lo shortage nei prossimi N giorni."
+}
