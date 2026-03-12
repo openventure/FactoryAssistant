@@ -13,10 +13,10 @@ import datetime
 
 # Configurazione dei database
 #SQLSERVER_URL = "mssql+pyodbc://dbadmin:dbadmin@(local)/EasyPlanner?driver=ODBC+Driver+17+for+SQL+Server"
-SQL_HOSTNAME = "172.16.35.1" #"(local)"
+SQL_HOSTNAME = "172.16.35.1" #"(local)" 
 # Configurazione dei database
 SQLSERVER_CONNECTION_STRING = (
-    "Driver={SQL Server};"
+    "Driver={ODBC Driver 17 for SQL Server};"
     f"Server={SQL_HOSTNAME};"
     "Database=EasyPlanner;"
     "Trusted_Connection=no;"
@@ -26,14 +26,14 @@ SQLSERVER_CONNECTION_STRING = (
 #SQLSERVER_URL2 = "mssql+pyodbc://dbadmin:dbadmin@(local)/Produzione?driver=ODBC+Driver+17+for+SQL+Server"
 # Configurazione dei database
 SQLSERVER_CONNECTION_STRING2 = (
-    "Driver={SQL Server};"
+    "Driver={ODBC Driver 17 for SQL Server};"
     f"Server={SQL_HOSTNAME};"
     "Database=Produzione;"
     "Trusted_Connection=no;"
     "UID=dbadmin;"
     "PWD=dbadmin;"
 )
-sqlite_path = os.getenv("SQLITE_PATH")  #r"C:\projects\GruppoFrascariCeramiche\ACR\prj\triunfo\db_produzione.sqlite3" #os.getenv("SQLITE_PATH")
+sqlite_path = r"C:\projects\openventure\EasyCert\EasyCertWebProject\db_produzione.sqlite3" #os.getenv("SQLITE_PATH")  #r"C:\projects\GruppoFrascariCeramiche\ACR\prj\triunfo\db_produzione.sqlite3" #os.getenv("SQLITE_PATH")
 SQLITE_URL = f"sqlite:///{sqlite_path}"
 
 #engine_sqlserver = create_engine(SQLSERVER_URL)
