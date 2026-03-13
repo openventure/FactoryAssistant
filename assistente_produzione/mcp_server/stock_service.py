@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+import datetime
+import json
+from pathlib import Path
 from typing import Any
 
 from sqlalchemy import text
@@ -8,6 +11,7 @@ from assistente_produzione.modules.request_processing.MaketheQuery import engine
 
 DEFAULT_LIMIT = 50
 MAX_LIMIT = 200
+MCP_SQL_LOG_FILE = Path(__file__).resolve().parents[1] / "logs" / "mcp_sql_queries.log"
 _COMPARE_COLUMN_MAP = {
     "giacenza": "GIACENZA",
     "disponibilita": "DISPONIBILITA",
@@ -34,6 +38,49 @@ def _like_or_none(value: str | None) -> str | None:
     if not cleaned:
         return None
     return f"%{cleaned}%"
+
+
+
+
+def _format_sql_literal(value: Any) -> str:
+    if value is None:
+        return "NULL"
+    if isinstance(value, bool):
+        return "1" if value else "0"
+    if isinstance(value, (int, float)):
+        return str(value)
+    if isinstance(value, datetime.datetime):
+        return "'" + value.strftime("%Y-%m-%d %H:%M:%S") + "'"
+    if isinstance(value, datetime.date):
+        return "'" + value.strftime("%Y-%m-%d") + "'"
+    escaped = str(value).replace("'", "''")
+    return f"'{escaped}'"
+
+
+def _render_sql_with_params(sql: str, params: dict[str, Any]) -> str:
+    rendered = sql
+    for key, value in sorted(params.items(), key=lambda item: len(item[0]), reverse=True):
+        rendered = rendered.replace(f":{key}", _format_sql_literal(value))
+    return rendered.strip()
+
+def _log_sql_query(tool_name: str, sql: str, params: dict[str, Any]) -> None:
+    MCP_SQL_LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
+    payload = {
+        "tool": tool_name,
+        "sql": sql.strip(),
+        "rendered_sql": _render_sql_with_params(sql, params),
+        "params": params,
+    }
+    with open(MCP_SQL_LOG_FILE, "a", encoding="utf-8") as log_file:
+        log_file.write(f"[{timestamp}] {json.dumps(payload, ensure_ascii=False)}\n")
+
+
+def _execute_logged_query(tool_name: str, sql: str, params: dict[str, Any]) -> list[dict[str, Any]]:
+    _log_sql_query(tool_name, sql, params)
+    with engine_sqlserver.connect() as connection:
+        rows = connection.execute(text(sql), params).mappings().all()
+    return [dict(row) for row in rows]
 
 
 def find_articles(
@@ -67,9 +114,35 @@ def find_articles(
         "series": _like_or_none(series),
         "description_contains": _like_or_none(description_contains),
     }
-    with engine_sqlserver.connect() as connection:
-        rows = connection.execute(text(sql), params).mappings().all()
-    return [dict(row) for row in rows]
+    return _execute_logged_query("find_articles", sql, params)
+
+
+def get_stock_summary_by_format(
+    format_filter: str | None = None,
+    series: str | None = None,
+    limit: int | None = None,
+) -> list[dict[str, Any]]:
+    safe_limit = _normalize_limit(limit)
+    sql = f"""
+    SELECT TOP {safe_limit}
+        FORMATO,
+        COUNT(*) AS article_count,
+        CAST(SUM(COALESCE(GIACENZA, 0)) AS DECIMAL(18,2)) AS giacenza_m2,
+        CAST(SUM(COALESCE(DISPONIBILITA, 0)) AS DECIMAL(18,2)) AS disponibilita_m2,
+        CAST(SUM(COALESCE(GIACENZA_30, 0)) AS DECIMAL(18,2)) AS giacenza_30_m2,
+        CAST(SUM(COALESCE(DISPONIBILITA_30, 0)) AS DECIMAL(18,2)) AS disponibilita_30_m2,
+        CAST(SUM(COALESCE(QTA_DA_CONSEGNARE, 0)) AS DECIMAL(18,2)) AS qta_da_consegnare_m2        
+    FROM pa_ff_code
+    WHERE (:format_filter IS NULL OR UPPER(FORMATO) LIKE :format_filter)
+      AND (:series IS NULL OR UPPER(SERIE) LIKE :series)
+    GROUP BY FORMATO
+    ORDER BY giacenza_m2 DESC, FORMATO ASC
+    """
+    params = {
+        "format_filter": _like_or_none(format_filter),
+        "series": _like_or_none(series),
+    }
+    return _execute_logged_query("get_stock_summary_by_format", sql, params)
 
 
 def get_stock_risk_articles(
@@ -137,21 +210,20 @@ def get_stock_risk_articles(
         "compare_key": compare_key,
         "risk_key": risk_key,
     }
-    with engine_sqlserver.connect() as connection:
-        rows = connection.execute(text(sql), params).mappings().all()
-    return [dict(row) for row in rows]
+    return _execute_logged_query("get_stock_risk_articles", sql, params)
 
 
 def get_stock_risk_by_deposit(
-    article_code: str,
+    article_code: str | None = None,
     cod_var: str | None = None,
     deposit_contains: str | None = None,
     format_filter: str | None = None,
     limit: int | None = None,
 ) -> list[dict[str, Any]]:
     normalized_article_code = (article_code or "").strip().upper()
-    if not normalized_article_code:
-        raise ValueError("article_code e obbligatorio per il dettaglio depositi.")
+    normalized_format_filter = _like_or_none(format_filter)
+    if not normalized_article_code and normalized_format_filter is None:
+        raise ValueError("Specifica almeno article_code oppure format_filter per il dettaglio giacenze depositi.")
 
     safe_limit = _normalize_limit(limit)
     sql = f"""
@@ -159,33 +231,23 @@ def get_stock_risk_by_deposit(
         CODICE,
         DESCRIZIONE,
         FORMATO,
-        COD_VAR,
         SERIE,
+        COD_VAR AS TONO,
         DEPOSITO,
-        CAST(GIACENZA AS DECIMAL(18,2)) AS giacenza_m2,
-        CAST(QTA_DA_CONSEGNARE AS DECIMAL(18,2)) AS qta_da_consegnare_m2,
-        CAST(
-            CASE
-                WHEN GIACENZA < QTA_DA_CONSEGNARE THEN QTA_DA_CONSEGNARE - GIACENZA
-                ELSE 0
-            END AS DECIMAL(18,2)
-        ) AS shortage_m2
+        CAST(SUM(COALESCE(GIACENZA, 0)) AS DECIMAL(18,2)) AS giacenza_m2
     FROM dashboard_productavailability
-    WHERE UPPER(CODICE) = :article_code
-      AND GIACENZA IS NOT NULL
-      AND QTA_DA_CONSEGNARE IS NOT NULL
-      AND GIACENZA < QTA_DA_CONSEGNARE
+    WHERE GIACENZA IS NOT NULL
+      AND (:article_code IS NULL OR UPPER(CODICE) = :article_code)
       AND (:cod_var IS NULL OR UPPER(COD_VAR) = :cod_var)
       AND (:deposit_contains IS NULL OR UPPER(DEPOSITO) LIKE :deposit_contains)
       AND (:format_filter IS NULL OR UPPER(FORMATO) LIKE :format_filter)
-    ORDER BY shortage_m2 DESC, DEPOSITO ASC, COD_VAR ASC
+    GROUP BY CODICE, DESCRIZIONE, FORMATO, SERIE, COD_VAR, DEPOSITO
+    ORDER BY giacenza_m2 DESC, CODICE ASC, DEPOSITO ASC, TONO ASC
     """
     params = {
-        "article_code": normalized_article_code,
+        "article_code": normalized_article_code or None,
         "cod_var": cod_var.strip().upper() if cod_var else None,
         "deposit_contains": _like_or_none(deposit_contains),
-        "format_filter": _like_or_none(format_filter),
+        "format_filter": normalized_format_filter,
     }
-    with engine_sqlserver.connect() as connection:
-        rows = connection.execute(text(sql), params).mappings().all()
-    return [dict(row) for row in rows]
+    return _execute_logged_query("get_stock_risk_by_deposit", sql, params)

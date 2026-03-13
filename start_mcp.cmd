@@ -3,7 +3,7 @@ call env\Scripts\activate
 set PYTHONPATH=%CD%
 SET DEBUG_MODE=False
 Set PYDEVD_DISABLE_FILE_VALIDATION=1
-SET GAMMA_TEMPLATE_ID=g_gt47bfh3moq4gnt
-SET GAMMA_THEME_ID=0wz4q3p8x1cvw00
+SET MCP_DEBUGPY=1
 
-env\Scripts\python.exe assistente_produzione\run_streamlit_test_chat.py
+python assistente_produzione/run_mcp_server.py
+pause
