@@ -1,6 +1,9 @@
 ﻿from __future__ import annotations
 
+import datetime
+import json
 from math import sqrt
+from pathlib import Path
 from typing import Any
 
 from sqlalchemy import text
@@ -13,6 +16,7 @@ DEFAULT_DAYS = 90
 MAX_DAYS = 730
 DEFAULT_MONTHS = 24
 MAX_MONTHS = 36
+MCP_SQL_LOG_FILE = Path(__file__).resolve().parents[1] / "logs" / "mcp_sql_queries.log"
 
 
 def _normalize_limit(limit: int | None) -> int:
@@ -50,6 +54,48 @@ def _like_or_none(value: str | None) -> str | None:
         return None
     return f"%{cleaned}%"
 
+
+
+
+def _format_sql_literal(value: Any) -> str:
+    if value is None:
+        return "NULL"
+    if isinstance(value, bool):
+        return "1" if value else "0"
+    if isinstance(value, (int, float)):
+        return str(value)
+    if isinstance(value, datetime.datetime):
+        return "'" + value.strftime("%Y-%m-%d %H:%M:%S") + "'"
+    if isinstance(value, datetime.date):
+        return "'" + value.strftime("%Y-%m-%d") + "'"
+    escaped = str(value).replace("'", "''")
+    return f"'{escaped}'"
+
+
+def _render_sql_with_params(sql: str, params: dict[str, Any]) -> str:
+    rendered = sql
+    for key, value in sorted(params.items(), key=lambda item: len(item[0]), reverse=True):
+        rendered = rendered.replace(f":{key}", _format_sql_literal(value))
+    return rendered.strip()
+
+def _log_sql_query(tool_name: str, sql: str, params: dict[str, Any]) -> None:
+    MCP_SQL_LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
+    payload = {
+        "tool": tool_name,
+        "sql": sql.strip(),
+        "rendered_sql": _render_sql_with_params(sql, params),
+        "params": params,
+    }
+    with open(MCP_SQL_LOG_FILE, "a", encoding="utf-8") as log_file:
+        log_file.write(f"[{timestamp}] {json.dumps(payload, ensure_ascii=False)}\n")
+
+
+def _execute_logged_query(tool_name: str, sql: str, params: dict[str, Any]) -> list[dict[str, Any]]:
+    _log_sql_query(tool_name, sql, params)
+    with engine_sqlite.connect() as connection:
+        rows = connection.execute(text(sql), params).mappings().all()
+    return [dict(row) for row in rows]
 
 def get_absorption_stats_by_article(
     days: int | None = None,
@@ -92,8 +138,7 @@ def get_absorption_stats_by_article(
         "tone": _like_or_none(tone),
         "min_samples": safe_min_samples,
     }
-    with engine_sqlite.connect() as connection:
-        rows = connection.execute(text(sql), params).mappings().all()
+    rows = _execute_logged_query("get_absorption_stats_by_article", sql, params)
 
     items: list[dict[str, Any]] = []
     for row in rows:
@@ -146,6 +191,4 @@ def get_absorption_trend(
         "article_code": article_code.strip().upper() if article_code else None,
         "description_contains": _like_or_none(description_contains),
     }
-    with engine_sqlite.connect() as connection:
-        rows = connection.execute(text(sql), params).mappings().all()
-    return [dict(row) for row in rows]
+    return _execute_logged_query("get_absorption_trend", sql, params)
