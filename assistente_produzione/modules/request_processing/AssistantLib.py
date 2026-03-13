@@ -29,10 +29,6 @@ TOKENIZER_LOG_FILE = Path(__file__).resolve().parents[2] / "logs" / "tokenizer_f
 CONVERSATION_LOG_DIR = Path(__file__).resolve().parents[2] / "logs" / "conversations"
 
 
-class SemanticValidationError(RuntimeError):
-    """Risposta finale del modello strutturalmente valida ma semanticamente incoerente."""
-
-
 def _safe_json_dumps(obj):
     try:
         return json.dumps(obj, ensure_ascii=False, default=convert_decimal)
@@ -266,88 +262,6 @@ def _normalize_table_data_rows(table_data):
             normalized.append({key: _coerce_scalar_for_table(value) for key, value in item.items() if not isinstance(value, (list, dict))})
 
     return normalized
-
-
-def _contains_total_like_text(value):
-    if not isinstance(value, str):
-        return False
-    normalized = value.strip().lower()
-    return normalized in {"total", "totale", "riepilogo", "subtotal", "subtotale"} or normalized.startswith("total ") or normalized.startswith("totale ")
-
-
-def _semantic_validation_reason(message):
-    lowered = str(message).lower()
-    if "chiavi diverse" in lowered:
-        return "table_data_inconsistent_keys"
-    if "totale/riepilogo" in lowered:
-        return "table_data_total_row"
-    if "valori nulli" in lowered:
-        return "narrative_claims_missing_nulls"
-    if "totale reale non verificato" in lowered:
-        return "narrative_unverified_total_count"
-    if "non e un oggetto json" in lowered:
-        return "final_response_not_json_object"
-    if "chiavi obbligatorie mancanti" in lowered:
-        return "missing_required_top_level_keys"
-    if "table_data deve essere una lista" in lowered:
-        return "table_data_not_list"
-    if "non e un oggetto-riga" in lowered:
-        return "table_data_non_object_row"
-    return "semantic_validation_failed"
-
-
-def _validate_final_response_semantics(final_text):
-    data = extract_json_from_text(final_text)
-    if not isinstance(data, dict):
-        raise SemanticValidationError("La risposta finale non e un oggetto JSON.")
-
-    required_keys = {"user_request", "report_title", "summary", "table_data", "conclusions"}
-    missing = required_keys.difference(data.keys())
-    if missing:
-        raise SemanticValidationError(f"Chiavi obbligatorie mancanti: {sorted(missing)}")
-
-    table_data = data.get("table_data")
-    if not isinstance(table_data, list):
-        raise SemanticValidationError("table_data deve essere una lista.")
-
-    expected_keys = None
-    for index, row in enumerate(table_data):
-        if not isinstance(row, dict):
-            raise SemanticValidationError(f"table_data[{index}] non e un oggetto-riga.")
-
-        row_keys = set(row.keys())
-        if expected_keys is None:
-            expected_keys = row_keys
-        elif row_keys != expected_keys:
-            raise SemanticValidationError(
-                f"table_data contiene righe con chiavi diverse: attese {sorted(expected_keys)}, trovate {sorted(row_keys)} alla riga {index}."
-            )
-
-        for value in row.values():
-            if _contains_total_like_text(value):
-                raise SemanticValidationError("table_data contiene una riga di totale/riepilogo non ammessa.")
-
-    summary = str(data.get("summary", ""))
-    conclusions = str(data.get("conclusions", ""))
-    narrative_text = f"{summary}\n{conclusions}".lower()
-
-    if ("valore nullo" in narrative_text or "valori nulli" in narrative_text) and not any(
-        value is None
-        for row in table_data
-        for value in row.values()
-    ):
-        raise SemanticValidationError("La narrativa cita valori nulli non presenti nei dati restituiti.")
-
-    row_count = len(table_data)
-    found_patterns = [
-        f"sono stati trovati {row_count}",
-        f"sono stati individuati {row_count}",
-        f"sono presenti {row_count}",
-    ]
-    if row_count >= 50 and any(pattern in narrative_text for pattern in found_patterns):
-        raise SemanticValidationError("La narrativa presenta il numero di righe restituite come totale reale non verificato.")
-
-    return data
 
 
 def _normalize_final_response_json(final_text):
@@ -833,7 +747,6 @@ def handle_request(user_input, thread_id=None):
             final_text = json.dumps({"message": "Nessuna risposta generata"}, ensure_ascii=False)
 
         final_text = _normalize_final_response_json(final_text)
-        _validate_final_response_semantics(final_text)
 
         total_elapsed_ms = round((time.perf_counter() - req_start) * 1000, 2)
         final_estimated_tokens = count_tokens({"final_text": final_text}, model=MODEL_NAME)
@@ -855,23 +768,6 @@ def handle_request(user_input, thread_id=None):
         except ValueError:
             write_message_to_json(final_text)
         return final_text
-    except SemanticValidationError as e:
-        total_elapsed_ms = round((time.perf_counter() - req_start) * 1000, 2)
-        final_preview = final_text[:2000] if isinstance(locals().get("final_text"), str) else None
-        log_conversation_event(
-            conversation_id,
-            "request_failed_semantic_validation",
-            request_id=request_id,
-            payload={
-                "elapsed_ms": total_elapsed_ms,
-                "error": str(e),
-                "reason_code": _semantic_validation_reason(str(e)),
-                "final_text_preview": final_preview,
-            },
-        )
-        error_msg = "Errore tecnico momentaneo: la risposta generata non ha superato i controlli di coerenza. Riprova tra poco."
-        write_message_to_json(error_msg)
-        return error_msg
     except Exception as e:
         total_elapsed_ms = round((time.perf_counter() - req_start) * 1000, 2)
         log_conversation_event(

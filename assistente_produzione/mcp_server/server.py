@@ -10,7 +10,6 @@ from assistente_produzione.mcp_server.stock_service import (
     find_articles,
     get_stock_risk_articles,
     get_stock_risk_by_deposit,
-    get_stock_summary_by_format,
 )
 import sys
 try:
@@ -44,7 +43,7 @@ def build_server():
         description_contains: str = "",
         limit: int = 20,
     ) -> dict:
-        """Find article-level stock and availability in pa_ff_code by article, format, series, or description."""
+        """Find articles in pa_ff_code by format, code, series, or description."""
         items = find_articles(
             format_filter=format_filter or None,
             article_code=article_code or None,
@@ -86,15 +85,15 @@ def build_server():
 
     @mcp.tool()
     def get_stock_risk_by_deposit_tool(
-        article_code: str = "",
+        article_code: str,
         cod_var: str = "",
         deposit_contains: str = "",
         format_filter: str = "",
         limit: int = 50,
     ) -> dict:
-        """Return stock by article, deposit, and tone from dashboard_productavailability."""
+        """Return deposit-level risk rows from dashboard_productavailability for a specific article code."""
         items = get_stock_risk_by_deposit(
-            article_code=article_code or None,
+            article_code=article_code,
             cod_var=cod_var or None,
             deposit_contains=deposit_contains or None,
             format_filter=format_filter or None,
@@ -104,64 +103,57 @@ def build_server():
             "items": items,
             "count": len(items),
             "source": "dashboard_productavailability",
-            "article_code": article_code or None,
-            "format_filter": format_filter or None,
+            "article_code": article_code,
         }
 
     @mcp.tool()
-    def get_stock_summary_by_format_tool(
-        format_filter: str = "",
-        series: str = "",
-        limit: int = 50,
+    def get_production_by_line_tool(
+        days: int = 30,
+        line_filter: str = "",
+        first_choice_only: bool = False,
+        include_expelled: bool = False,
+        limit: int = 20,
     ) -> dict:
-        """Return aggregated current and 30-day stock by format from pa_ff_code."""
-        items = get_stock_summary_by_format(
-            format_filter=format_filter or None,
-            series=series or None,
+        """Return aggregated production KPIs by line from PALLET_PRODUCTION for the requested period."""
+        items = get_production_summary_by_line(
+            days=days,
+            line_filter=line_filter or None,
+            first_choice_only=first_choice_only,
+            include_expelled=include_expelled,
             limit=limit,
         )
         return {
             "items": items,
             "count": len(items),
-            "source": "pa_ff_code",
+            "source": "PALLET_PRODUCTION",
+            "days": days,
         }
 
     @mcp.tool()
-    def get_production_summary_tool(
-        group_by: str = "line",
+    def get_article_production_tool(
         days: int = 30,
         article_code: str = "",
         format_filter: str = "",
         line_filter: str = "",
         first_choice_only: bool = False,
+        include_expelled: bool = False,
         limit: int = 20,
     ) -> dict:
-        """Return production KPIs from PALLET_PRODUCTION aggregated either by line or by article."""
-        group_key = (group_by or "line").strip().lower()
-        if group_key == "line":
-            items = get_production_summary_by_line(
-                days=days,
-                line_filter=line_filter or None,
-                first_choice_only=first_choice_only,
-                limit=limit,
-            )
-        elif group_key == "article":
-            items = get_article_production(
-                days=days,
-                article_code=article_code or None,
-                format_filter=format_filter or None,
-                line_filter=line_filter or None,
-                first_choice_only=first_choice_only,
-                limit=limit,
-            )
-        else:
-            raise ValueError("group_by non supportato. Valori ammessi: line, article.")
+        """Return top produced articles and volume in square meters from PALLET_PRODUCTION."""
+        items = get_article_production(
+            days=days,
+            article_code=article_code or None,
+            format_filter=format_filter or None,
+            line_filter=line_filter or None,
+            first_choice_only=first_choice_only,
+            include_expelled=include_expelled,
+            limit=limit,
+        )
         return {
             "items": items,
             "count": len(items),
             "source": "PALLET_PRODUCTION",
             "days": days,
-            "group_by": group_key,
         }
 
     @mcp.tool()

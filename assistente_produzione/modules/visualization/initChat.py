@@ -39,101 +39,6 @@ from assistente_produzione.modules.visualization.gamma_client import (
 )
 
 
-def _build_smart_chart(df):
-    if df.empty or len(df) <= 1:
-        return None
-
-    chart_df = df.copy()
-    time_hints = ("data", "date", "giorno", "day", "mese", "month", "anno", "year", "ora", "hour", "timestamp")
-    label_hints = ("linea", "line", "article", "articolo", "article_code", "codice", "code", "formato", "serie", "tono", "deposito")
-    primary_metric_hints = (
-        "total_m2", "giacenza", "disponibilita", "shortage", "avg_m2_per_production_day",
-        "avg_m2_per_calendar_day", "avg_m2", "total", "totale", "volume", "mq", "m2"
-    )
-    support_metric_hints = ("days", "giorni", "day", "pieces", "pezzi", "pallet", "count", "conteggio")
-
-    for column in chart_df.columns:
-        lowered = str(column).strip().lower()
-        if any(hint in lowered for hint in time_hints):
-            parsed = pd.to_datetime(chart_df[column], errors='coerce', dayfirst=True)
-            if parsed.notna().sum() >= max(2, int(max(chart_df[column].notna().sum(), 1) * 0.6)):
-                chart_df[column] = parsed
-
-    numeric_columns = chart_df.select_dtypes(include=['number']).columns.tolist()
-    datetime_columns = chart_df.select_dtypes(include=['datetime', 'datetimetz']).columns.tolist()
-    categorical_columns = chart_df.select_dtypes(include=['object', 'category']).columns.tolist()
-
-    if not numeric_columns:
-        return None
-
-    def _score_label(column_name):
-        lowered = str(column_name).strip().lower()
-        series = chart_df[column_name].dropna()
-        unique_count = int(series.nunique()) if not series.empty else 0
-        score = 0
-        if any(hint in lowered for hint in label_hints):
-            score += 8
-        if 2 <= unique_count <= max(len(chart_df), 2):
-            score += 3
-        if unique_count == len(chart_df):
-            score += 2
-        if not series.empty:
-            avg_len = float(series.astype(str).str.len().mean())
-            if avg_len > 40:
-                score -= 2
-        return score
-
-    def _score_metric(column_name):
-        lowered = str(column_name).strip().lower()
-        series = chart_df[column_name].dropna()
-        unique_count = int(series.nunique()) if not series.empty else 0
-        score = 0
-        if any(hint in lowered for hint in primary_metric_hints):
-            score += 8
-        if any(hint in lowered for hint in support_metric_hints):
-            score -= 3
-        if unique_count <= 1:
-            score -= 5
-        return score
-
-    best_metric = sorted(numeric_columns, key=_score_metric, reverse=True)[0]
-    best_label = None
-    if categorical_columns:
-        best_label = sorted(categorical_columns, key=_score_label, reverse=True)[0]
-
-    if best_label and _score_label(best_label) > 0:
-        plot_df = chart_df[[best_label, best_metric]].dropna(subset=[best_label, best_metric])
-        if len(plot_df) >= 2:
-            plot_df = plot_df.sort_values(best_metric, ascending=True).tail(15)
-            return px.bar(
-                plot_df,
-                x=best_metric,
-                y=best_label,
-                orientation='h',
-                template='plotly_white',
-            )
-
-    if len(datetime_columns) == 1:
-        time_column = datetime_columns[0]
-        plot_df = chart_df[[time_column, best_metric]].dropna(subset=[time_column, best_metric]).sort_values(time_column)
-        if len(plot_df) >= 2:
-            fig = px.line(plot_df, x=time_column, y=best_metric, template='plotly_white')
-            fig.update_traces(mode='lines+markers', marker=dict(size=6))
-            return fig
-
-    if len(numeric_columns) >= 2:
-        comparable_metric = sorted(
-            [col for col in numeric_columns if col != best_metric],
-            key=_score_metric,
-            reverse=True,
-        )[0]
-        plot_df = chart_df[[best_metric, comparable_metric]].dropna()
-        if len(plot_df) >= 3:
-            return px.scatter(plot_df, x=best_metric, y=comparable_metric, template='plotly_white')
-
-    return None
-
-
 def read_conversation_log_tail(conversation_id, max_lines=120):
     log_file = Path(__file__).resolve().parents[2] / "logs" / "conversations" / f"{conversation_id}.log"
     if not log_file.exists():
@@ -301,21 +206,40 @@ def doLayout(data):
                         st.dataframe(df)
                     
             
-                        fig = _build_smart_chart(df)
-                        if fig is not None:
-                            st.subheader("?? Visualizzazione Grafica")
-                            fig.update_layout(
-                                margin=dict(l=10, r=10, t=20, b=10),
-                                paper_bgcolor="white",
-                                plot_bgcolor="white",
-                                font_color="#1A202C",
-                                legend_title_text="",
-                            )
-                            fig.update_xaxes(showgrid=True, gridcolor="#E2E8F0", zeroline=False)
-                            fig.update_yaxes(showgrid=True, gridcolor="#E2E8F0", zeroline=False)
-                            st.plotly_chart(fig, use_container_width=True)
+                        numeric_columns = df.select_dtypes(include=['number']).columns
+                        if len(numeric_columns) > 0 and len(df) > 1:
+                            colonne_numeriche = df.select_dtypes(include=['number']).columns.tolist()
+                            colonne_categoriche = df.select_dtypes(include=['object', 'category']).columns.tolist()
+                            header_temporali = ['Data','data','Anno', 'anno','Mese', 'mese', 'Giorno', 'giorno']
+                            colonne_datetime = df.select_dtypes(include=['datetime']).columns.tolist()
+                            colonne_header = [col for col in header_temporali if col in df.columns]
+                            colonne_date = list(set(colonne_datetime + colonne_header))
+                            # una colonna potrebbe essere in entrambe le liste
+                            colonne_numeriche = [c for c in colonne_numeriche if c not in colonne_date]
+                            st.subheader("📈 Visualizzazione Grafica")
+                            if len(colonne_numeriche) >= 1 and len(colonne_date) == 1:
+                                # Grafico a linee
+                                df_sorted = df.sort_values(by=colonne_date[0])
+                                fig = px.line(df, df_sorted[colonne_date[0]], df_sorted[colonne_numeriche[0]])
+                                fig.update_traces(mode='lines+markers', marker=dict(size=6))
+                            elif len(colonne_numeriche) == 1 and len(colonne_categoriche) >= 1:
+                                # Grafico a barre
+                                fig = px.bar(df, x=df[colonne_categoriche[0]], y=df[colonne_numeriche[0]])
+                            elif len(colonne_numeriche) >= 2 and len(colonne_categoriche) >= 1:
+                                # Grafico a dispersione
+                                df_sorted = df.sort_values(by=colonne_categoriche[0])
+                                fig = px.line(df, x=colonne_categoriche[0], y=colonne_numeriche)
+                                fig.update_traces(mode='lines+markers', marker=dict(size=6))
+                            elif len(colonne_numeriche) == 2:
+                                # Grafico a dispersione
+                                fig = px.scatter(df, x=df[colonne_numeriche[0]], y=df[colonne_numeriche[1]])
+                            else:
+                                fig = px.bar(df, x=df.columns[0], y=numeric_columns[1], text_auto=True)
+                                #fig = px.pie(df, names=colonne_categoriche[0], values=colonne_numeriche[0])
+
+                            st.plotly_chart(fig)
                         else:
-                            st.warning("?? Nessun dato numerico disponibile per il grafico.")
+                            st.warning("⚠️ Nessun dato numerico disponibile per il grafico.")
                     else:
                         st.warning("⚠️ Nessun dato tabellare disponibile.")
 

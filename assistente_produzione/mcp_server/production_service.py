@@ -1,8 +1,5 @@
 ﻿from __future__ import annotations
 
-import datetime
-import json
-from pathlib import Path
 from typing import Any
 
 from sqlalchemy import text
@@ -13,7 +10,6 @@ DEFAULT_LIMIT = 20
 MAX_LIMIT = 100
 DEFAULT_DAYS = 30
 MAX_DAYS = 365
-MCP_SQL_LOG_FILE = Path(__file__).resolve().parents[1] / "logs" / "mcp_sql_queries.log"
 
 
 def _normalize_limit(limit: int | None) -> int:
@@ -43,52 +39,11 @@ def _like_or_none(value: str | None) -> str | None:
     return f"%{cleaned}%"
 
 
-
-
-def _format_sql_literal(value: Any) -> str:
-    if value is None:
-        return "NULL"
-    if isinstance(value, bool):
-        return "1" if value else "0"
-    if isinstance(value, (int, float)):
-        return str(value)
-    if isinstance(value, datetime.datetime):
-        return "'" + value.strftime("%Y-%m-%d %H:%M:%S") + "'"
-    if isinstance(value, datetime.date):
-        return "'" + value.strftime("%Y-%m-%d") + "'"
-    escaped = str(value).replace("'", "''")
-    return f"'{escaped}'"
-
-
-def _render_sql_with_params(sql: str, params: dict[str, Any]) -> str:
-    rendered = sql
-    for key, value in sorted(params.items(), key=lambda item: len(item[0]), reverse=True):
-        rendered = rendered.replace(f":{key}", _format_sql_literal(value))
-    return rendered.strip()
-
-def _log_sql_query(tool_name: str, sql: str, params: dict[str, Any]) -> None:
-    MCP_SQL_LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
-    payload = {
-        "tool": tool_name,
-        "sql": sql.strip(),
-        "rendered_sql": _render_sql_with_params(sql, params),
-        "params": params,
-    }
-    with open(MCP_SQL_LOG_FILE, "a", encoding="utf-8") as log_file:
-        log_file.write(f"[{timestamp}] {json.dumps(payload, ensure_ascii=False)}\n")
-
-
-def _execute_logged_query(tool_name: str, sql: str, params: dict[str, Any]) -> list[dict[str, Any]]:
-    _log_sql_query(tool_name, sql, params)
-    with engine_sqlserver2.connect() as connection:
-        rows = connection.execute(text(sql), params).mappings().all()
-    return [dict(row) for row in rows]
-
 def get_production_summary_by_line(
     days: int | None = None,
     line_filter: str | None = None,
     first_choice_only: bool = False,
+    include_expelled: bool = False,
     limit: int | None = None,
 ) -> list[dict[str, Any]]:
     safe_days = _normalize_days(days)
@@ -129,6 +84,7 @@ def get_production_summary_by_line(
     WHERE p.START_DATETIME >= period.start_date
       AND p.START_DATETIME < DATEADD(day, 1, period.end_date)
       AND (:line_filter IS NULL OR UPPER(p.Linea) LIKE :line_filter)
+      AND (:include_expelled = 1 OR p.Espulso = 0 OR p.Espulso IS NULL)
       AND (:first_choice_only = 0 OR p.LGV_numeroScelta = 'I')
     GROUP BY p.Linea, period.start_date, period.end_date
     ORDER BY total_m2 DESC, total_pallets DESC, p.Linea ASC
@@ -136,9 +92,12 @@ def get_production_summary_by_line(
     params = {
         "days": safe_days,
         "line_filter": _like_or_none(line_filter),
+        "include_expelled": 1 if include_expelled else 0,
         "first_choice_only": 1 if first_choice_only else 0,
     }
-    return _execute_logged_query("get_production_summary_by_line", sql, params)
+    with engine_sqlserver2.connect() as connection:
+        rows = connection.execute(text(sql), params).mappings().all()
+    return [dict(row) for row in rows]
 
 
 def get_article_production(
@@ -147,6 +106,7 @@ def get_article_production(
     format_filter: str | None = None,
     line_filter: str | None = None,
     first_choice_only: bool = False,
+    include_expelled: bool = False,
     limit: int | None = None,
 ) -> list[dict[str, Any]]:
     safe_days = _normalize_days(days)
@@ -192,6 +152,7 @@ def get_article_production(
               )
           ) LIKE :format_filter
       )
+      AND (:include_expelled = 1 OR p.Espulso = 0 OR p.Espulso IS NULL)
       AND (:first_choice_only = 0 OR p.LGV_numeroScelta = 'I')
     GROUP BY
         p.LGV_CodiceArticolo,
@@ -205,6 +166,9 @@ def get_article_production(
         "article_code": article_code.strip().upper() if article_code else None,
         "format_filter": _like_or_none(format_filter),
         "line_filter": _like_or_none(line_filter),
+        "include_expelled": 1 if include_expelled else 0,
         "first_choice_only": 1 if first_choice_only else 0,
     }
-    return _execute_logged_query("get_article_production", sql, params)
+    with engine_sqlserver2.connect() as connection:
+        rows = connection.execute(text(sql), params).mappings().all()
+    return [dict(row) for row in rows]

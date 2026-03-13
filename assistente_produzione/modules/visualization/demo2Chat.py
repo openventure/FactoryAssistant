@@ -246,6 +246,11 @@ def inject_demo_styles():
             background: var(--surface);
             padding: 0.4rem;
         }
+
+        div[data-testid="stPlotlyChart"] .js-plotly-plot .plotly text {
+            fill: var(--text) !important;
+        }
+
         div[data-testid="stPlotlyChart"] .js-plotly-plot .plotly .modebar-btn svg {
             fill: var(--muted) !important;
         }
@@ -442,7 +447,7 @@ def render_chart(df):
     id_hints = ("id", "codice", "code", "codeart", "ptr", "uuid", "guid")
     description_hints = ("descr", "description", "desc", "toni", "note", "comment")
     group_hints = ("serie", "formato", "linea", "line", "tono", "reparto", "categoria", "family")
-    support_hints = ("count", "conteggio", "numero", "num_", "n_", "n.", "prove", "records", "righe", "days", "giorni", "pieces", "pezzi", "pallet")
+    support_hints = ("count", "conteggio", "numero", "num_", "n_", "n.", "prove", "records", "righe")
     metric_hints = (
         "shortage", "delta", "scost", "diff", "media", "avg", "mean", "tot", "total",
         "assorb", "giac", "consegn", "produz", "stock", "disp", "valore", "m2", "mq",
@@ -471,20 +476,6 @@ def render_chart(df):
     def _is_datetime_candidate(column_name, series):
         if pd.api.types.is_datetime64_any_dtype(series):
             return True
-        if pd.api.types.is_numeric_dtype(series):
-            return False
-        lowered = _lower_name(column_name)
-        if lowered in {"hour", "ora"}:
-            return False
-        if any(token in lowered for token in ("production_day", "production_days", "calendar_day", "calendar_days", "avg_")):
-            return False
-        non_null = series.dropna()
-        if not non_null.empty:
-            normalized_values = non_null.astype(str).str.strip()
-            if normalized_values.str.fullmatch(r"\d{1,2}").all():
-                return False
-            if normalized_values.str.fullmatch(r"\d{1,2}:\d{2}(:\d{2})?").all():
-                return False
         if not _contains_hint(column_name, time_hints):
             return False
         parsed = pd.to_datetime(series, errors="coerce", dayfirst=True)
@@ -539,9 +530,7 @@ def render_chart(df):
                 if is_description_like and avg_text_length <= 42 and unique_ratio >= 0.45:
                     label_score += 3
                 if is_code_like and unique_ratio >= 0.45:
-                    label_score += 4
-                if is_group_like and unique_ratio >= 0.45:
-                    label_score += 5
+                    label_score += 2
                 if not is_code_like and not is_description_like and unique_ratio >= 0.6 and avg_text_length <= 32:
                     label_score += 2
                 if avg_text_length > 60:
@@ -605,17 +594,6 @@ def render_chart(df):
                 break
         return selected
 
-    def _should_prefer_time_chart(time_profile, label_profile, line_metrics):
-        if time_profile is None or not line_metrics:
-            return False
-        time_name = str(time_profile["name"]).strip().lower()
-        if time_name.startswith("first_") or time_name.startswith("last_"):
-            return False
-        if label_profile is not None and label_profile.get("label_score", 0) >= 3:
-            if time_profile.get("unique_count", 0) < max(3, label_profile.get("unique_count", 0)):
-                return False
-        return True
-
     def _select_label_column(label_profiles):
         if not label_profiles:
             return None
@@ -642,30 +620,6 @@ def render_chart(df):
                 hover_columns.append(column)
         return hover_columns[:5]
 
-    def _comparison_metric_groups(metric_profiles):
-        grouped = {}
-        for item in metric_profiles:
-            name = item["name"]
-            normalized = re.sub(r"(?i)(corrente|attuale|current|precedente|previous|prior)", "", str(name))
-            normalized = re.sub(r"(?i)mese", "", normalized)
-            normalized = re.sub(r"[_\-\s]+", "_", normalized).strip("_")
-            if not normalized:
-                continue
-            grouped.setdefault(normalized.lower(), []).append(item)
-
-        candidates = []
-        for base_name, items in grouped.items():
-            names = [str(item["name"]).lower() for item in items]
-            has_current = any(any(token in name for token in ("corrente", "attuale", "current")) for name in names)
-            has_previous = any(any(token in name for token in ("precedente", "previous", "prior")) for name in names)
-            if len(items) >= 2 and has_current and has_previous:
-                sorted_items = sorted(items, key=lambda entry: entry["metric_score"], reverse=True)
-                candidates.append((base_name, sorted_items[:3]))
-        if not candidates:
-            return None
-        candidates.sort(key=lambda entry: max(item["metric_score"] for item in entry[1]), reverse=True)
-        return candidates[0][1]
-
     def _build_chart_spec(chart_df):
         profiles = _profile_columns(chart_df)
         metric_profiles = [item for item in profiles if item["is_numeric"] and item["metric_score"] > 0 and item["unique_count"] > 1]
@@ -676,28 +630,12 @@ def render_chart(df):
         label_profiles = [item for item in profiles if not item["is_numeric"] and not item["is_datetime"] and item["label_score"] > 0]
         group_profiles = [item for item in profiles if not item["is_numeric"] and not item["is_datetime"] and item["group_score"] > 0]
 
-        label_profile = _select_label_column(label_profiles)
-
         if time_profiles:
             time_profile = sorted(time_profiles, key=lambda item: (item["row_coverage"], item["unique_count"]), reverse=True)[0]
             line_metrics = _select_line_metrics(metric_profiles)
-            if _should_prefer_time_chart(time_profile, label_profile, line_metrics):
+            if line_metrics:
                 filtered = chart_df[[time_profile["name"]] + line_metrics].dropna(subset=[time_profile["name"]])
                 if len(filtered) >= 2:
-                    if label_profile is not None and len(line_metrics) == 1:
-                        scatter_columns = [time_profile["name"], line_metrics[0], label_profile["name"]]
-                        scatter_columns.extend(_hover_columns(chart_df, excluded_columns=scatter_columns))
-                        scatter_columns = list(dict.fromkeys(scatter_columns))
-                        scatter_df = chart_df[scatter_columns].dropna(subset=[time_profile["name"], line_metrics[0]])
-                        if len(scatter_df) >= 2:
-                            return {
-                                "type": "time_scatter",
-                                "data": scatter_df.sort_values(time_profile["name"]),
-                                "x": line_metrics[0],
-                                "y": time_profile["name"],
-                                "color": label_profile["name"],
-                                "hover_data": _hover_columns(scatter_df, excluded_columns=[line_metrics[0], time_profile["name"], label_profile["name"]]),
-                            }
                     return {
                         "type": "line",
                         "data": filtered.sort_values(time_profile["name"]),
@@ -709,34 +647,8 @@ def render_chart(df):
         if best_metric is None:
             return None
 
+        label_profile = _select_label_column(label_profiles)
         if label_profile is not None:
-            comparison_metrics = _comparison_metric_groups(metric_profiles)
-            if comparison_metrics is not None:
-                metric_names = [item["name"] for item in comparison_metrics]
-                compare_columns = [label_profile["name"]] + metric_names
-                comparison_df = chart_df[compare_columns].dropna(subset=[label_profile["name"]])
-                if len(comparison_df) >= 2:
-                    melted_df = comparison_df.melt(
-                        id_vars=[label_profile["name"]],
-                        value_vars=metric_names,
-                        var_name="series",
-                        value_name="value",
-                    ).dropna(subset=["value"])
-                    if len(melted_df) >= 4:
-                        series_order = sorted(
-                            metric_names,
-                            key=lambda name: ("corrente" not in str(name).lower() and "current" not in str(name).lower(), name),
-                        )
-                        return {
-                            "type": "grouped_bar",
-                            "data": melted_df,
-                            "x": "value",
-                            "y": label_profile["name"],
-                            "color": "series",
-                            "category_orders": {"series": series_order},
-                            "hover_data": _hover_columns(comparison_df, excluded_columns=compare_columns),
-                        }
-
             color_profile = _select_color_column(group_profiles, label_profile["name"])
             plot_columns = [label_profile["name"], best_metric["name"]]
             if color_profile is not None:
@@ -795,69 +707,14 @@ def render_chart(df):
             template="plotly_white",
             hover_data=spec.get("hover_data"),
         )
-    elif spec["type"] == "grouped_bar":
-        fig = px.bar(
-            spec["data"],
-            x=spec["x"],
-            y=spec["y"],
-            color=spec.get("color"),
-            orientation="h",
-            barmode="group",
-            template="plotly_white",
-            hover_data=spec.get("hover_data"),
-            category_orders=spec.get("category_orders"),
-        )
     elif spec["type"] == "scatter":
-        fig = px.scatter(
-            spec["data"],
-            x=spec["x"],
-            y=spec["y"],
-            template="plotly_white",
-            hover_data=spec.get("hover_data"),
-        )
-    elif spec["type"] == "time_scatter":
-        fig = px.scatter(
-            spec["data"],
-            x=spec["x"],
-            y=spec["y"],
-            color=spec.get("color"),
-            template="plotly_white",
-            hover_data=spec.get("hover_data"),
-        )
-        fig.update_traces(marker=dict(size=10, opacity=0.85))
+        fig = px.scatter(spec["data"], x=spec["x"], y=spec["y"], template="plotly_white")
     else:
         return None
 
-    fig.update_layout(
-        margin=dict(l=10, r=10, t=20, b=10),
-        paper_bgcolor="white",
-        plot_bgcolor="white",
-        font_family="IBM Plex Sans",
-        font_color="#1A202C",
-        legend_title_text="",
-        legend=dict(font=dict(color="#111827", size=14), title=dict(font=dict(color="#111827", size=14))),
-        hoverlabel=dict(
-            bgcolor="#111827",
-            font_color="#F9FAFB",
-            bordercolor="#374151",
-            font_size=14,
-            font_family="IBM Plex Sans",
-        ),
-    )
-    fig.update_xaxes(
-        showgrid=True,
-        gridcolor="#E2E8F0",
-        zeroline=False,
-        tickfont=dict(color="#1A202C", size=12),
-        title_font=dict(color="#1A202C", size=13),
-    )
-    fig.update_yaxes(
-        showgrid=True,
-        gridcolor="#E2E8F0",
-        zeroline=False,
-        tickfont=dict(color="#1A202C", size=12),
-        title_font=dict(color="#1A202C", size=13),
-    )
+    fig.update_layout(margin=dict(l=10, r=10, t=20, b=10), paper_bgcolor="white", plot_bgcolor="white", font_family="IBM Plex Sans", font_color="#1A202C", legend_title_text="")
+    fig.update_xaxes(showgrid=True, gridcolor="#E2E8F0", zeroline=False)
+    fig.update_yaxes(showgrid=True, gridcolor="#E2E8F0", zeroline=False)
     return fig
 
 def do_layout(data, placeholder, show_technical=False):

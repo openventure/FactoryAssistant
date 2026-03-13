@@ -13,7 +13,7 @@ import datetime
 
 # Configurazione dei database
 #SQLSERVER_URL = "mssql+pyodbc://dbadmin:dbadmin@(local)/EasyPlanner?driver=ODBC+Driver+17+for+SQL+Server"
-SQL_HOSTNAME = "(local)"  #"172.16.35.1"
+SQL_HOSTNAME = "172.16.35.1" #"(local)" 
 # Configurazione dei database
 SQLSERVER_CONNECTION_STRING = (
     "Driver={ODBC Driver 17 for SQL Server};"
